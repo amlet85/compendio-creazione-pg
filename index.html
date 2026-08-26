@@ -13,17 +13,36 @@
   <header>
     <h1>🛡️ Creazione Personaggio</h1>
     <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Cerca elemento (es. Elfo, Guerriero, Allineamento)...">
+      <input type="text" id="searchInput" placeholder="Cerca elemento (es. Spada Spada Lunga, Corazza in Piastre, Elfo)...">
     </div>
     <div class="filters">
       <select id="categoryFilter">
         <option value="">Tutte le Categorie</option>
         <option value="razza">Razze / Specie</option>
-        <option value="classe">Classi</option>
+        <option value="classe">Classi Base</option>
         <option value="sottoclasse">Sotto-classi</option>
         <option value="background">Background / Origini</option>
-        <option value="talento">Talenti</option>
-        <option value="equipaggiamento">Equipaggiamento</option>
+        <option value="talento d'origine">Talenti d'Origine</option>
+        <option value="talento generale">Talenti Generali</option>
+        <option value="arma">Armi</option>
+        <option value="armatura">Armature</option>
+        <option value="equipaggiamento">Altro Equipaggiamento</option>
+      </select>
+
+      <select id="classFilter">
+        <option value="">Tutte le Classi</option>
+        <option value="bard">Bardo</option>
+        <option value="cleric">Chierico</option>
+        <option value="druid">Druido</option>
+        <option value="wizard">Mago</option>
+        <option value="paladin">Paladino</option>
+        <option value="ranger">Ranger</option>
+        <option value="sorcerer">Stregone</option>
+        <option value="warlock">Warlock</option>
+        <option value="barbarian">Barbaro</option>
+        <option value="fighter">Guerriero</option>
+        <option value="monk">Monaco</option>
+        <option value="rogue">Ladro</option>
       </select>
     </div>
   </header>
