@@ -1,438 +1,141 @@
 {
   "species": [
-    {
-      "id": "human",
-      "name": "Umano",
-      "size": "Media o Piccola",
-      "speed": "9 metri",
-      "traits": [
-        "**Resourceful:** Ottieni Ispirazione Eroica dopo ogni Riposo Lungo.",
-        "**Skillful:** Competenza in un'abilità a tua scelta.",
-        "**Versatile:** Ottieni un Talento di Origine extra a tua scelta."
-      ]
-    },
-    {
-      "id": "elf",
-      "name": "Elfo",
-      "size": "Media",
-      "speed": "9 metri",
-      "traits": [
-        "**Darkvision:** Scurovisione fino a 18 metri.",
-        "**Elven Lineage:** Scegli tra Alto Elfo, Elfo dei Boschi o Drow per ottenere incantesimi o velocità extra.",
-        "**Fey Ancestry:** Vantaggio sui TS contro la condizione Affascinato e immunità al sonno magico.",
-        "**Keen Senses:** Competenza nell'abilità Percezione."
-      ]
-    },
-    {
-      "id": "dwarf",
-      "name": "Nano",
-      "size": "Media",
-      "speed": "9 metri",
-      "traits": [
-        "**Darkvision:** Scurovisione estesa fino a 36 metri.",
-        "**Dwarven Toughness:** I tuoi Punti Ferita massimi aumentano di 1 ad ogni livello.",
-        "**Dwarven Resilience:** Resistenza e vantaggio sui TS contro i danni da Veleno.",
-        "**Stonecunning:** Azione Bonus per ottenere Tremorsense (sensibilità alle vibrazioni su pietra) per 10 minuti."
-      ]
-    },
-    {
-      "id": "halfling",
-      "name": "Halfling",
-      "size": "Piccola",
-      "speed": "9 metri",
-      "traits": [
-        "**Brave:** Vantaggio sui TS per evitare o terminare la condizione Spaventato.",
-        "**Halfling Nimbleness:** Puoi muoverti attraverso lo spazio di qualsiasi creatura più grande di te.",
-        "**Luck:** Rilancia qualsiasi risultato di 1 sul d20 per attacchi, prove di abilità o TS.",
-        "**Naturally Stealthy:** Competenza nell'abilità Furtività."
-      ]
-    },
-    {
-      "id": "gnome",
-      "name": "Gnomo",
-      "size": "Piccola",
-      "speed": "9 metri",
-      "traits": [
-        "**Darkvision:** Scurovisione fino a 18 metri.",
-        "**Gnomish Cunning:** Vantaggio su tutti i TS di Intelligenza, Saggezza e Carisma.",
-        "**Gnomish Lineage:** Scegli tra Gnomo delle Foreste (Trucchetto *Minor Illusion* e parlare con i piccoli animali) o Gnomo delle Rocce (Trucchetti *Mending* e *Prestidigation* per creare congegni)."
-      ]
-    },
-    {
-      "id": "dragonborn",
-      "name": "Dragonide",
-      "size": "Media",
-      "speed": "9 metri",
-      "traits": [
-        "**Draconic Ancestry:** Scegli un tipo di drago per determinare l'elemento di resistenza e dell'arma a soffio.",
-        "**Breath Weapon:** Attacco a soffio sostituibile a un singolo attacco. Uso pari al bonus di competenza.",
-        "**Damage Resistance:** Resistenza al tipo di danno scelto dal retaggio draconico.",
-        "**Darkvision:** Scurovisione fino a 18 metri.",
-        "**Draconic Flight:** Dal livello 5, puoi far germogliare ali spettrali per volare per 10 minuti una volta al giorno."
-      ]
-    },
-    {
-      "id": "tiefling",
-      "name": "Tiefling",
-      "size": "Media o Piccola",
-      "speed": "9 metri",
-      "traits": [
-        "**Darkvision:** Scurovisione fino a 18 metri.",
-        "**Fiendish Legacy:** Scegli tra Abissale (Veleno/Vitalità), Infernale (Fuoco) o Ctonio (Necrotico). Concede resistenza e incantesimi tematici.",
-        "**Otherworldly Presence:** Conosce il trucchetto *Thaumaturgy*."
-      ]
-    },
-    {
-      "id": "orc",
-      "name": "Orco",
-      "size": "Media",
-      "speed": "9 metri",
-      "traits": [
-        "**Darkvision:** Scurovisione avanzata fino a 36 metri.",
-        "**Adrenaline Rush:** Azione Bonus per Scatto (Dash) che fornisce punti ferita temporanei pari al bonus competenza.",
-        "**Relentless Endurance:** Quando vieni ridotto a 0 PF, puoi invece scendere a 1 PF (1 volta per riposo lungo)."
-      ]
-    },
-    {
-      "id": "aasimar",
-      "name": "Aasimar",
-      "size": "Media o Piccola",
-      "speed": "9 metri",
-      "traits": [
-        "**Darkvision:** Scurovisione fino a 18 metri.",
-        "**Celestial Resistance:** Resistenza ai danni Necrotici e Radiosi.",
-        "**Healing Hands:** Azione per curare una creatura di d4 punti ferita pari al tuo bonus competenza.",
-        "**Celestial Revelation:** Dal livello 3, puoi trasformarti per 1 minuto (Ali di luce, Sguardo radioso o Aura fiammeggiante)."
-      ]
-    },
-    {
-      "id": "goliath",
-      "name": "Goliath",
-      "size": "Media",
-      "speed": "10.5 metri",
-      "traits": [
-        "**Giant Ancestry:** Scegli un retaggio da gigante (es. Gigante delle Rune, del Ghiaccio, del Fuoco) per abilità speciali in combattimento.",
-        "**Large Form:** Dal livello 5, puoi diventare di taglia Grande per 10 minuti una volta per riposo lungo.",
-        "**Powerful Build:** Vantaggio sui TS per terminare la condizione Trattenuto e la capacità di carico è raddoppiata."
-      ]
-    }
-  ],
-  "backgrounds": [
-    {
-      "id": "acolyte",
-      "name": "Accolito",
-      "stats": ["Saggezza", "Intelligenza", "Carisma"],
-      "originFeat": "Magic Initiate (Cleric)",
-      "skills": ["Intuizione", "Religione"],
-      "tool": "Strumenti da Calligrafo",
-      "equipment": "Simbolo Sacro, Pergamena, Inchiostro, Vestiti Comuni, 8 GP"
-    },
-    {
-      "id": "artisan",
-      "name": "Artigiano",
-      "stats": ["Destrezza", "Intelligenza", "Carisma"],
-      "originFeat": "Crafter",
-      "skills": ["Indagare", "Persuasione"],
-      "tool": "Strumenti da Artigiano (1 a scelta)",
-      "equipment": "Strumenti da Artigiano, Lettera d'introduzione, Vestiti da Viaggio, 25 GP"
-    },
-    {
-      "id": "criminal",
-      "name": "Criminale",
-      "stats": ["Destrezza", "Costituzione", "Intelligenza"],
-      "originFeat": "Alert",
-      "skills": ["Furtività", "Inganno"],
-      "tool": "Attrezzi da Scasso",
-      "equipment": "Attrezzi da Scasso, piede di porco, abiti scuri con cappuccio, 16 GP"
-    },
-    {
-      "id": "entertainer",
-      "name": "Intrattenitore",
-      "stats": ["Carisma", "Destrezza", "Costituzione"],
-      "originFeat": "Musician",
-      "skills": ["Acrobazia", "Intrattenere"],
-      "tool": "Strumento Musicale (1 a scelta)",
-      "equipment": "Strumento musicale, Abito da scena, Specchio, 11 GP"
-    },
-    {
-      "id": "farmer",
-      "name": "Contadino",
-      "stats": ["Costituzione", "Forza", "Saggezza"],
-      "originFeat": "Tough",
-      "skills": ["Addestrare Animali", "Natura"],
-      "tool": "Veicoli Terrestri",
-      "equipment": "Falce, Utensile da falegname, Vestiti da lavoro, 23 GP"
-    },
-    {
-      "id": "guard",
-      "name": "Guardia",
-      "stats": ["Forza", "Costituzione", "Saggezza"],
-      "originFeat": "Alert",
-      "skills": ["Atletica", "Percezione"],
-      "tool": "Set da Gioco (1 a scelta)",
-      "equipment": "Lancia, Corno di segnale, Manette, Uniforme, 12 GP"
-    },
-    {
-      "id": "guide",
-      "name": "Guida",
-      "stats": ["Destrezza", "Costituzione", "Saggezza"],
-      "originFeat": "Magic Initiate (Druid)",
-      "skills": ["Natura", "Sopravvivenza"],
-      "tool": "Cartografo",
-      "equipment": "Bussola, Mappa regionale, Tenda, Vestiti da viaggio, 3 GP"
-    },
-    {
-      "id": "noble",
-      "name": "Nobile",
-      "stats": ["Carisma", "Intelligenza", "Destrezza"],
-      "originFeat": "Skilled",
-      "skills": ["Storia", "Persuasione"],
-      "tool": "Set da Gioco (1 a scelta)",
-      "equipment": "Abiti pregiati, Anello con sigillo, Lettera di lignaggio, 29 GP"
-    },
-    {
-      "id": "sage",
-      "name": "Sapiente",
-      "stats": ["Intelligenza", "Saggezza", "Costituzione"],
-      "originFeat": "Magic Initiate (Wizard)",
-      "skills": ["Arcano", "Storia"],
-      "tool": "Calligrafo",
-      "equipment": "Libro di consultazione, Boccetta d'inchiostro, Penna, Vestiti semplici, 8 GP"
-    },
-    {
-      "id": "soldier",
-      "name": "Soldato",
-      "stats": ["Forza", "Costituzione", "Destrezza"],
-      "originFeat": "Savage Attacker",
-      "skills": ["Atletica", "Intimidire"],
-      "tool": "Set da Gioco (1 a scelta)",
-      "equipment": "Set da Gioco, Distintivo di grado, Vestiti da Viaggio, 14 GP"
-    }
-  ],
-  "classes": [
-    {
-      "id": "barbarian",
-      "name": "Barbaro",
-      "hitDie": "d12",
-      "primaryStat": "Forza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Path of the Berserker", "Path of the Wild Heart", "Path of the World Tree", "Path of the Zealot"],
-      "features": ["Rage", "Unarmored Defense", "Weapon Mastery", "Reckless Attack", "Primal Knowledge"]
-    },
-    {
-      "id": "bard",
-      "name": "Bardo",
-      "hitDie": "d8",
-      "primaryStat": "Carisma",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["College of Dance", "College of Glamour", "College of Lore", "College of Valor"],
-      "features": ["Spellcasting", "Bardic Inspiration", "Expertise", "Font of Inspiration"]
-    },
-    {
-      "id": "cleric",
-      "name": "Chierico",
-      "hitDie": "d8",
-      "primaryStat": "Saggezza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Life Domain", "Light Domain", "Trickery Domain", "War Domain"],
-      "features": ["Spellcasting", "Divine Order", "Channel Divinity", "Sear Undead"]
-    },
-    {
-      "id": "druid",
-      "name": "Druido",
-      "hitDie": "d8",
-      "primaryStat": "Saggezza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Circle of the Land", "Circle of the Moon", "Circle of the Sea", "Circle of the Stars"],
-      "features": ["Spellcasting", "Primal Order", "Wild Shape", "Wild Companion"]
-    },
-    {
-      "id": "fighter",
-      "name": "Guerriero",
-      "hitDie": "d10",
-      "primaryStat": "Forza o Destrezza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Battle Master", "Champion", "Eldritch Knight", "Psi Warrior"],
-      "features": ["Weapon Mastery", "Second Wind", "Fighting Style", "Action Surge", "Tactical Shift"]
-    },
-    {
-      "id": "monk",
-      "name": "Monaco",
-      "hitDie": "d8",
-      "primaryStat": "Destrezza e Saggezza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Warrior of Mercy", "Warrior of Shadow", "Warrior of the Elements", "Warrior of the Open Hand"],
-      "features": ["Martial Arts", "Unarmored Defense", "Monk's Focus", "Uncanny Metabolism", "Deflect Attacks"]
-    },
-    {
-      "id": "paladin",
-      "name": "Paladino",
-      "hitDie": "d10",
-      "primaryStat": "Forza e Carisma",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Oath of Devotion", "Oath of Glory", "Oath of Ancients", "Oath of Vengeance"],
-      "features": ["Spellcasting", "Lay on Hands", "Weapon Mastery", "Paladin's Smite", "Channel Divinity"]
-    },
-    {
-      "id": "ranger",
-      "name": "Ranger",
-      "hitDie": "d10",
-      "primaryStat": "Destrezza e Saggezza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Beast Master", "Fey Wanderer", "Gloom Stalker", "Hunter"],
-      "features": ["Spellcasting", "Favored Enemy (Hunter's Mark)", "Weapon Mastery", "Deft Explorer"]
-    },
-    {
-      "id": "rogue",
-      "name": "Ladro",
-      "hitDie": "d8",
-      "primaryStat": "Destrezza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Arcane Trickster", "Assassin", "Soulknife", "Thief"],
-      "features": ["Weapon Mastery", "Sneak Attack", "Thieves' Cant", "Cunning Action", "Steady Aim"]
-    },
-    {
-      "id": "sorcerer",
-      "name": "Stregone",
-      "hitDie": "d6",
-      "primaryStat": "Carisma",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Aberrant Sorcery", "Clockwork Sorcery", "Draconic Sorcery", "Wild Magic Sorcery"],
-      "features": ["Spellcasting", "Innate Sorcery", "Font of Magic", "Metamagic"]
-    },
-    {
-      "id": "warlock",
-      "name": "Warlock",
-      "hitDie": "d8",
-      "primaryStat": "Carisma",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Archfey Patron", "Celestial Patron", "Fiend Patron", "Great Old One Patron"],
-      "features": ["Pact Magic", "Eldritch Invocations", "Magical Cunning"]
-    },
-    {
-      "id": "wizard",
-      "name": "Mago",
-      "hitDie": "d6",
-      "primaryStat": "Intelligenza",
-      "subclassLevel": "Livello 3",
-      "subclasses": ["Abjurer", "Diviner", "Evoker", "Illusionist"],
-      "features": ["Spellcasting", "Arcane Recovery", "Scholar", "Ritual Adept"]
-    }
-  ],
-  "originFeats": [
-    {
-      "id": "alert",
-      "name": "Alert",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Aggiungi il tuo bonus di competenza ai tiri di Iniziativa. Subito dopo aver tirato l'iniziativa, puoi scambiare il tuo valore con quello di un alleato volenteroso."
-    },
-    {
-      "id": "crafter",
-      "name": "Crafter",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Ottieni competenza in 3 strumenti da artigiano a scelta. Ottieni un 20% di sconto su acquisti ed equipaggiamenti non magici. Puoi creare oggetti ordinari durante i riposi brevi."
-    },
-    {
-      "id": "healer",
-      "name": "Healer",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Quando usi una borsa del cerusico per stabilizzare una creatura, questa recupera anche 1 PF. Quando tiri i dadi per curare con incantesimi o abilità, puoi rilanciare ogni 1 ottenuto."
-    },
-    {
-      "id": "lucky",
-      "name": "Lucky",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Ottieni punti fortuna pari al tuo bonus di competenza. Puoi spenderli per ottenere Vantaggio su un d20 o per imporre Svantaggio a un attacco che ti prende di mira."
-    },
-    {
-      "id": "magic-initiate",
-      "name": "Magic Initiate",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Scegli una lista incantesimi (Mago, Chierico o Druido). Apprendi 2 Trucchetti e 1 Incantesimo di 1° livello che puoi lanciare gratuitamente una volta per riposo lungo."
-    },
-    {
-      "id": "musician",
-      "name": "Musician",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Competenza in 3 strumenti musicali. Quando finisci un riposo breve o lungo, puoi suonare e dare Ispirazione Eroica a un numero di alleati pari al tuo bonus competenza."
-    },
-    {
-      "id": "savage-attacker",
-      "name": "Savage Attacker",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Una volta per turno, quando colpisci una creatura con un'arma, puoi tirare due volte i dadi di danno dell'arma e scegliere il risultato più alto."
-    },
-    {
-      "id": "skilled",
-      "name": "Skilled",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "Ottieni competenza in 3 abilità o strumenti qualsiasi a tua scelta."
-    },
-    {
-      "id": "tavern-brawler",
-      "name": "Tavern Brawler",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "I tuoi colpi senz'arma infliggono d4 danni. Quando colpisci con un colpo senz'arma, puoi Spingere il bersaglio di 1,5 metri. Rilancia i risultati di 1 sui dadi di danno degli attacchi senz'arma."
-    },
-    {
-      "id": "tough",
-      "name": "Tough",
-      "category": "Origine (Livello 1)",
-      "prerequisite": "Nessuno",
-      "description": "I tuoi Punti Ferita massimi aumentano di un importo pari al doppio del tuo livello quando ottieni questo talento, e di 2 punti per ogni livello successivo."
-    }
-  ],
-  "generalFeats": [
-    {
-      "id": "actor",
-      "name": "Actor",
-      "category": "Generale (Livello 4+)",
-      "prerequisite": "Livello 4+, Carisma 13+",
-      "description": "+1 Carisma. Vantaggio sulle prove di Inganno e Intrattenere per impersonare altre persone. Puoi imitare la voce di altre creature se l'hai ascoltata per almeno 1 minuto."
-    },
-    {
-      "id": "cross-bow-expert",
-      "name": "Crossbow Expert",
-      "category": "Generale (Livello 4+)",
-      "prerequisite": "Livello 4+, Destrezza 13+",
-      "description": "+1 Destrezza. Ignori la proprietà Ricarica delle balestre. Essere a 1,5m da un nemico non infligge svantaggio ai tuoi attacchi a distanza. Puoi fare un attacco con una balestra a mano come Azione Bonus."
-    },
-    {
-      "id": "great-weapon-master",
-      "name": "Great Weapon Master",
-      "category": "Generale (Livello 4+)",
-      "prerequisite": "Livello 4+, Forza 13+",
-      "description": "+1 Forza. Quando infliggi un Colpo Critico o riduci a 0 PF una creatura, puoi fare un attacco aggiuntivo come Azione Bonus. Aggiungi il tuo bonus competenza ai danni delle armi Pesanti."
-    },
-    {
-      "id": "war-caster",
-      "name": "War Caster",
-      "category": "Generale (Livello 4+)",
-      "prerequisite": "Livello 4+, Capacità di lanciare almeno un incantesimo",
-      "description": "+1 a una caratteristica mentale (Int/Sag/Car). Vantaggio sui TS di Costituzione per mantenere la Concentrazione. Esegui componenti somatiche anche con armi o scudo in mano. Usi incantesimi per gli Attacchi di Opportunità."
-    },
-    {
-      "id": "sharpshooter",
-      "name": "Sharpshooter",
-      "category": "Generale (Livello 4+)",
-      "prerequisite": "Livello 4+, Destrezza 13+",
-      "description": "+1 Destrezza. I tuoi attacchi a distanza ignorano coperture parziali e tre quarti. Attaccare alla gittata massima non infligge svantaggio. Non subisci svantaggio se un nemico si trova a 1.5m da te."
-    },
-    {
-      "id": "sentinel",
-      "name": "Sentinel",
-      "category": "Generale (Livello 4+)",
-      "prerequisite": "Livello 4+, Forza o Destrezza 13+",
-      "description": "+1 Forza o Destrezza. Quando colpisci una creatura con un attacco di opportunità, la sua velocità diventa 0 per il turno. Le creature provocano attacchi di opportunità anche se usano la Disimpegno. Attacchi come reazione contro nemici che colpiscono alleati vicini."
-    }
-  ]
-}
+  {
+    "id": "aasimar",
+    "name": "Aasimar",
+    "name_it": "Aasimar",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Resistenza Celeste",
+      "Visione notturna (18m)",
+      "Mani Curative",
+      "Portatore di Luce",
+      "Rivelazione Celeste (Livello 3)"
+    ],
+    "description_it": "Gli Aasimar portano nelle loro anime la luce del divino[cite: 2]. Discendono da umani con un tocco di Potere Celeste e nascono per servire come campioni[cite: 2]. Possiedono un aspetto ultraterreno con tratti luminosi come aloni, ali eteree o occhi brillanti[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media o Piccola[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~160 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Resistenza Celeste:</em> Resistenza ai danni necrotici e radianti[cite: 2].<br>• <em>Visione notturna:</em> Raggio 18 metri[cite: 2].<br>• <em>Mani Curative:</em> Come azione magica tocchi una creatura e tiri un numero di d4 pari al tuo Bonus di Competenza per farle recuperare Punti Ferita (1/Riposo Lungo)[cite: 2].<br>• <em>Portatore di Luce:</em> Conosci il trucco Luce (Carisma da incantatore)[cite: 2].<br>• <em>Rivelazione Celeste (3° liv.):</em> Come Azione Bonus ti trasformi per 1 minuto (1/Riposo Lungo)[cite: 2]. Una volta per turno infliggi danni extra pari al Bonus di Competenza[cite: 2]. Scegli tra: Ali Celesti (volo), Splendore Interiore (luce e danni radianti ad area) o Velo Necrotico (effetto Spaventato ad area)[cite: 2]."
+  },
+  {
+    "id": "dragonborn",
+    "name": "Dragonborn",
+    "name_it": "Sangue di Drago",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Ascendenza Draconica",
+      "Soffio Arma",
+      "Resistenza ai Danni",
+      "Visione notturna (18m)",
+      "Volo Draconico (Livello 5)"
+    ],
+    "description_it": "I Dragonborn assomigliano a draghi bipedi senza ali ricoperti di squame cromatiche o metalliche, con occhi luminosi e corna[cite: 2]. Possono esalare energia magica legata al loro antenato draconico[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~Doppio rispetto alle specie non draconiane[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Ascendenza Draconica:</em> Scegli il tipo di drago (Nero, Blu, Ottone, Bronzo, Rame, Oro, Verde, Rosso, Argento, Bianco) che determina il tipo di danno per Soffio e Resistenza[cite: 2].<br>• <em>Soffio Arma:</em> Sostituisce un attacco con un cono di 4.5m o linea di 9m[cite: 2]. Danni: 1d10 (scala a 2d10 al 5°, 3d10 all'11°, 4d10 al 17°)[cite: 2]. TS su Destrezza[cite: 2]. Usi pari al Bonus di Competenza (ricarica con Riposo Lungo)[cite: 2].<br>• <em>Resistenza ai danni:</em> Resistenza al tipo di danno dell'ascendenza[cite: 2].<br>• <em>Visione notturna:</em> Raggio 60 piedi (18m)[cite: 2].<br>• <em>Volo Draconico (5° liv.):</em> Azione bonus per far spuntare ali spettrali per 10 minuti ottenendo Velocità di Volo (1/Riposo Lungo)[cite: 2]."
+  },
+  {
+    "id": "dwarf",
+    "name": "Dwarf",
+    "name_it": "Nano",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Visione notturna (36m)",
+      "Resistenza nanica",
+      "Robustezza nanica",
+      "Conoscenza della Pietra"
+    ],
+    "description_it": "Resistenti come le montagne, i nani hanno un'affinità innata per la pietra, il metallo e la vita sotterranea[cite: 2]. Tozzi e spesso barbuti, scavano città leggendarie nelle profondità della terra[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~350 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Visione notturna:</em> Raggio 120 piedi (36m)[cite: 2].<br>• <em>Resistenza nanica:</em> Resistenza al veleno e vantaggio ai TS contro la condizione Avvelenato[cite: 2].<br>• <em>Robustezza nanica:</em> I PF massimi aumentano di 1 e di un ulteriore +1 ad ogni livello[cite: 2].<br>• <em>Conoscenza della Pietra:</em> Azione Bonus per ottenere Percezione delle Tremori a 18m su superficie di pietra per 10 minuti[cite: 2]. Usi pari al Bonus di Competenza (ricarica con Riposo Lungo)[cite: 2]."
+  },
+  {
+    "id": "elf",
+    "name": "Elf",
+    "name_it": "Elfo",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Visione notturna (18m)",
+      "Stirpe Elfica (Drow, Alto Elfo, Elfo dei boschi)",
+      "Ascendenza Fatata",
+      "Sensi acuti",
+      "Trance"
+    ],
+    "description_it": "Creature vive e longeve legate al Reame Fatato, agili e senza peli sul viso/corpo[cite: 2]. Entrano in trance meditativa al posto del sonno[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~750 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Visione notturna:</em> Raggio 60 piedi (18m)[cite: 2].<br>• <em>Ascendenza Fatata:</em> Vantaggio ai TS contro l'Incantamento[cite: 2].<br>• <em>Sensi acuti:</em> Competenza in una tra Intuizione, Percezione o Sopravvivenza[cite: 2].<br>• <em>Trance:</strong> Meditazione di 4 ore al posto del sonno; immunità al sonno magico[cite: 2].<br>• <em>Stirpe Elfica:</em> Scegli tra Drow (Scurovisione 36m, Luci Danzanti, Fuoco Fatato, Oscurità), Alto Elfo (Prestidigitazione, Rileva la magia, Passo Nebbioso) o Elfo dei Boschi (Velocità 35ft, Druidcraft, Longstrider, Passare senza lasciare traccia)[cite: 2]."
+  },
+  {
+    "id": "gnome",
+    "name": "Gnome",
+    "name_it": "Gnomo",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Visione notturna (18m)",
+      "Astuzia gnomica",
+      "Stirpe Gnomica (Forestale, Roccia)"
+    ],
+    "description_it": "Creature minute dotate di grandi occhi, orecchie a punta e grande ingegno[cite: 2]. Apprezzano l'invenzione, la magia e il rifugio di una dimora sicura[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Piccola[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~425 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Visione notturna:</em> Raggio 60 piedi (18m)[cite: 2].<br>• <em>Astuzia gnomica:</em> Vantaggio ai tiri salvezza su Intelligenza, Saggezza e Carisma[cite: 2].<br>• <em>Stirpe Gnomica:</em><br>- Gnomo della foresta: Trucco Illusione Minore + Parlare con gli Animali[cite: 2].<br>- Gnomo delle rocce: Trucchetti Riparazione e Prestidigitazione + creazione dispositivi meccanici minuscoli[cite: 2]."
+  },
+  {
+    "id": "goliath",
+    "name": "Goliath",
+    "name_it": "Golia",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Forma Grande (Livello 5)",
+      "Costituzione possente",
+      "Discendenza Gigante"
+    ],
+    "description_it": "Imponenti discendenti dei giganti che portano benedizioni e doni soprannaturali legati alle stirpi elementali dei propri antenati[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media[cite: 2]<br><strong>Velocità:</strong> 35 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~80 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Costituzione possente:</em> Vantaggio sui TS contro Afferrato e capacità di carico calcolata come una taglia superiore[cite: 2].<br>• <em>Forma Grande (5° liv.):</em> Azione Bonus per diventare di taglia Grande per 10 min (+3m velocità e vantaggio prove Forza) (1/Riposo Lungo)[cite: 2].<br>• <em>Discendenza Gigante:</em> Scegli 1 beneficio (Nuvole, Fuoco, Gelo, Collina, Pietra, Tempesta) con usi pari al Bonus di Competenza per Riposo Lungo[cite: 2]."
+  },
+  {
+    "id": "halfling",
+    "name": "Halfling",
+    "name_it": "Halfling",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Coraggioso",
+      "Agilità degli Halfling",
+      "Fortuna",
+      "Naturalmente furtivo"
+    ],
+    "description_it": "Popolo di piccola taglia guidato da uno spirito pacifico ma spesso spinto da un innato coraggio e da un'incredibile fortuna soprannaturale[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Piccola[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~150 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Coraggioso:</em> Vantaggio sui TS contro la condizione Spaventato[cite: 2].<br>• <em>Agilità degli Halfling:</em> Puoi attraversare lo spazio di creature di taglia superiore[cite: 2].<br>• <em>Fortuna:</em> Quando ottieni 1 sul d20 puoi ritirare il dado e usare il nuovo risultato[cite: 2].<br>• <em>Naturalmente furtivo:</em> Puoi nasconderti anche dietro una creatura di almeno una taglia più grande[cite: 2]."
+  },
+  {
+    "id": "human",
+    "name": "Human",
+    "name_it": "Umano",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Pieno di risorse",
+      "Abile",
+      "Versatile"
+    ],
+    "description_it": "La specie più versatile e ambiziosa del multiverso, nota per la grande adattabilità, ingegnosità e determinazione[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media o Piccola[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~80 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Pieno di risorse:</em> Ottieni Ispirazione Eroica dopo ogni Riposo Lungo[cite: 2].<br>• <em>Abile:</em> Competenza in un'abilità a tua scelta[cite: 2].<br>• <em>Versatile:</em> Ottieni un Talento di Origine a tua scelta[cite: 2]."
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "name_it": "Orco",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Scarica di adrenalina",
+      "Visione notturna (36m)",
+      "Resistenza implacabile"
+    ],
+    "description_it": "Guerrieri forti e determinati benedetti dai doni del Dio Monocolo Gruumsh per sopravvivere e prosperare[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~80 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Scarica di adrenalina:</em> Azione Bonus per effettuare Scatto e guadagnare PF Temporanei pari al Bonus Competenza (usi pari al BC per Riposo Breve/Lungo)[cite: 2].<br>• <em>Visione notturna:</em> Raggio 120 piedi (36m)[cite: 2].<br>• <em>Resistenza implacabile:</em> Quando scendi a 0 PF senza morire, scendi invece a 1 PF (1/Riposo Lungo)[cite: 2]."
+  },
+  {
+    "id": "tiefling",
+    "name": "Tiefling",
+    "name_it": "Tiefling",
+    "type": "razza",
+    "source_it": "Manuale del Giocatore",
+    "traits_it": [
+      "Visione notturna (18m)",
+      "Eredità Demoniaca (Abissale, Ctonio, Infernale)",
+      "Presenza ultraterrena"
+    ],
+    "description_it": "Recano nelle loro vene il sangue dei Piani Inferiori, manifestando dettagli fisici diabolici o demoniaci come corna, code e occhi particolari[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media o Piccola[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~100 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Visione notturna:</em> Raggio 60 piedi (18m)[cite: 2].<br>• <em>Presenza ultraterrena:</em> Conosci il trucco Taumaturgia[cite: 2].<br>• <em>Eredità Demoniaca:</em> Scegli una stirpe che sblocca magie e resistenze al 1°, 3° e 5° livello[cite: 2]:<br>- Abissale (Resistenza Veleno, Spruzzo Velenoso, Raggio di malattia, Tenere la persona)[cite: 2]<br>- Ctonio (Resistenza Necrotico, Tocco Gelido, Falsa vita, Raggio di indebolimento)[cite: 2]<br>- Infernale (Resistenza Fuoco, Dardo di Fuoco, Rimprovero infernale, Oscurità)[cite: 2]"
+  }
+]
