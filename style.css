@@ -1,399 +1,55 @@
-/* ==========================================================================
-   1. VARIABILI E RESET BASE
-   ========================================================================== */
-:root {
-  --bg-primary: #121418;
-  --bg-secondary: #1a1d24;
-  --bg-card: #222630;
-  --bg-input: #2a2e3b;
-  
-  --text-main: #e2e8f0;
-  --text-muted: #94a3b8;
-  --text-heading: #f8fafc;
-
-  --accent-red: #e11d48;
-  --accent-gold: #d97706;
-  --accent-green: #10b981;
-  --accent-blue: #2563eb;
-  
-  --border-color: #334155;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --shadow-main: 0 4px 12px rgba(0, 0, 0, 0.4);
-  
-  --transition: all 0.25s ease-in-out;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background-color: var(--bg-primary);
-  color: var(--text-main);
-  line-height: 1.6;
-  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 15px;
 }
-
-/* ==========================================================================
-   2. HEADER & BARRA DI RICERCA GLOBALE
-   ========================================================================== */
-.app-header {
-  background-color: var(--bg-secondary);
-  border-bottom: 1px solid var(--border-color);
-  padding: 1rem 2rem;
+header {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+h1 { color: #e69a28; margin-bottom: 15px; }
+.search-bar input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.filters { display: flex; gap: 10px; }
+#spellsContainer { max-width: 800px; margin: 0 auto; }
+.spell-card {
+  background-color: #1e1e1e;
+  border-left: 4px solid #e69a28;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.spell-card h2 {
+  margin-top: 0;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+.spell-level {
+  font-size: 14px;
+  background-color: #e69a28;
+  color: #121212;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
-
-.logo-container h1 {
-  font-size: 1.5rem;
-  color: var(--accent-red);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.version-badge {
-  background-color: rgba(217, 119, 6, 0.2);
-  color: var(--accent-gold);
-  border: 1px solid var(--accent-gold);
-  font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-  font-weight: 600;
-}
-
-.search-bar {
-  flex-grow: 1;
-  max-width: 400px;
-}
-
-.search-bar input,
-.section-filter,
-.select-filter {
-  width: 100%;
-  padding: 0.6rem 1rem;
-  background-color: var(--bg-input);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  color: var(--text-main);
-  font-size: 0.95rem;
-  transition: var(--transition);
-}
-
-.search-bar input:focus,
-.section-filter:focus,
-.select-filter:focus {
-  outline: none;
-  border-color: var(--accent-red);
-  box-shadow: 0 0 0 2px rgba(225, 29, 72, 0.2);
-}
-
-.select-filter {
-  cursor: pointer;
-  width: auto;
-  min-width: 200px;
-}
-
-/* ==========================================================================
-   3. LAYOUT PRINCIPALE & SIDEBAR
-   ========================================================================== */
-.app-container {
-  display: flex;
-  min-height: calc(100vh - 70px);
-}
-
-.sidebar {
-  width: 260px;
-  background-color: var(--bg-secondary);
-  border-right: 1px solid var(--border-color);
-  padding: 1.5rem 1rem;
-  flex-shrink: 0;
-}
-
-.sidebar ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.nav-btn {
-  width: 100%;
-  text-align: left;
-  padding: 0.8rem 1rem;
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  font-weight: 600;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.nav-btn:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: var(--text-heading);
-}
-
-.nav-btn.active {
-  background-color: var(--accent-red);
-  color: #fff;
-}
-
-.content-area {
-  flex-grow: 1;
-  padding: 2rem;
-  max-width: 1200px;
-}
-
-/* ==========================================================================
-   4. SEZIONI & CARD GRID
-   ========================================================================== */
-.compendium-section {
-  display: none;
-}
-
-.compendium-section.active {
-  display: block;
-}
-
-.compendium-section h2 {
-  font-size: 1.8rem;
-  color: var(--text-heading);
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 0.5rem;
-}
-
-.filter-group {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.filter-group .section-filter {
-  flex-grow: 1;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 1.25rem;
-  box-shadow: var(--shadow-main);
-  transition: var(--transition);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  border-color: var(--accent-red);
-}
-
-.card h3 {
-  color: var(--accent-gold);
-  font-size: 1.2rem;
-  margin-bottom: 0.25rem;
-}
-
-.card p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.card p strong {
-  color: var(--text-main);
-}
-
-.traits-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-top: 0.5rem;
-}
-
-.trait-item {
-  font-size: 0.85rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 0.4rem 0.6rem;
-  border-radius: var(--radius-sm);
-  border-left: 2px solid var(--accent-gold);
-}
-
-.empty-msg {
-  color: var(--text-muted);
-  font-style: italic;
-  grid-column: 1 / -1;
-}
-
-/* ==========================================================================
-   5. FORM BACKGROUND PERSONALIZZATO & MODALE
-   ========================================================================== */
-.btn-primary, .btn-success {
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn-primary {
-  background-color: var(--accent-blue);
-  color: #fff;
-  white-space: nowrap;
-}
-
-.btn-primary:hover {
-  background-color: #1d4ed8;
-}
-
-.btn-success {
-  background-color: var(--accent-green);
-  color: #fff;
-  width: 100%;
-  padding: 0.8rem;
-  margin-top: 1rem;
-}
-
-.btn-success:hover {
-  background-color: #059669;
-}
-
-.custom-bg-card {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--accent-blue);
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow-main);
-}
-
-.custom-bg-card.hidden {
-  display: none;
-}
-
-.custom-bg-card h3 {
-  color: var(--text-heading);
-  margin-bottom: 1rem;
-}
-
-.form-group {
-  margin-bottom: 1.2rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-  color: var(--text-main);
-}
-
-.form-group input[type="text"],
-.form-group select {
-  width: 100%;
-  padding: 0.6rem;
-  background-color: var(--bg-input);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  color: var(--text-main);
-  font-size: 0.9rem;
-}
-
-.form-group small {
-  display: block;
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
-}
-
-.checkbox-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 0.5rem;
-  background-color: var(--bg-input);
-  padding: 0.75rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
-}
-
-.checkbox-group label {
-  font-weight: normal;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  cursor: pointer;
-}
-
-.checkbox-group input:disabled + span,
-.checkbox-group label:has(input:disabled) {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-/* ==========================================================================
-   6. RESPONSIVE DESIGN (MOBILE & TABLET)
-   ========================================================================== */
-@media (max-width: 768px) {
-  .app-container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid var(--border-color);
-    padding: 1rem;
-  }
-
-  .sidebar ul {
-    flex-direction: row;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-  }
-
-  .nav-btn {
-    white-space: nowrap;
-  }
-
-  .content-area {
-    padding: 1rem;
-  }
-
-  .filter-group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .select-filter {
-    width: 100%;
-  }
+.spell-meta p { margin: 4px 0; font-size: 14px; color: #aaa; }
+.spell-description {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+  border-top: 1px solid #333;
+  padding-top: 10px;
 }

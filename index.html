@@ -1,70 +1,37 @@
-let allData = [];
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compendio Creazione Personaggio D&D</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
-}
+  <header>
+    <h1>🛡️ Creazione Personaggio</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Cerca elemento (es. Elfo, Guerriero, Allineamento)...">
+    </div>
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="">Tutte le Categorie</option>
+        <option value="razza">Razze / Specie</option>
+        <option value="classe">Classi</option>
+        <option value="sottoclasse">Sotto-classi</option>
+        <option value="background">Background / Origini</option>
+        <option value="talento">Talenti</option>
+        <option value="equipaggiamento">Equipaggiamento</option>
+      </select>
+    </div>
+  </header>
 
-async function loadData() {
-  try {
-    const response = await fetch('character_data.json');
-    allData = await response.json();
-    renderCards(allData);
-  } catch (error) {
-    console.error('Errore nel caricamento dei dati:', error);
-  }
-}
+  <main id="cardsContainer">
+    <!-- Le schede verranno caricate dinamicamente da app.js -->
+  </main>
 
-function renderCards(items) {
-  const container = document.getElementById('cardsContainer');
-  container.innerHTML = '';
-
-  if (!items || items.length === 0) {
-    container.innerHTML = '<p style="text-align:center; padding: 20px;">Nessun elemento trovato.</p>';
-    return;
-  }
-
-  items.forEach(item => {
-    const card = document.createElement('div');
-    card.className = 'spell-card'; // Manteniamo le stesse classi CSS per uniformità
-
-    const categoryText = item.type ? item.type.toUpperCase() : 'INFO';
-    const descriptionText = item.description_it || item.description || '<em>Nessuna descrizione disponibile.</em>';
-
-    card.innerHTML = `
-      <h2>${item.name_it || item.name} <span class="spell-level">${categoryText}</span></h2>
-      <div class="spell-meta">
-        ${item.source ? `<p><strong>Manuale:</strong> ${item.source}</p>` : ''}
-        ${item.traits ? `<p><strong>Tratti principali:</strong> ${Array.isArray(item.traits) ? item.traits.join(', ') : item.traits}</p>` : ''}
-        ${item.requirements ? `<p><strong>Requisiti:</strong> ${item.requirements}</p>` : ''}
-      </div>
-      <div class="spell-description">
-        ${descriptionText}
-      </div>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-function filterData() {
-  const query = document.getElementById('searchInput').value.toLowerCase().trim();
-  const selectedCategory = document.getElementById('categoryFilter').value.toLowerCase().trim();
-
-  const filtered = allData.filter(item => {
-    const nameIt = (item.name_it || '').toLowerCase();
-    const nameEn = (item.name || '').toLowerCase();
-    const matchesName = query === '' || nameIt.includes(query) || nameEn.includes(query);
-
-    const itemCategory = (item.type || item.category || '').toLowerCase();
-    const matchesCategory = selectedCategory === '' || itemCategory.includes(selectedCategory);
-
-    return matchesName && matchesCategory;
-  });
-
-  renderCards(filtered);
-}
-
-document.getElementById('searchInput').addEventListener('input', filterData);
-document.getElementById('categoryFilter').addEventListener('change', filterData);
-
-loadData();
+  <script src="app.js"></script>
+</body>
+</html>
