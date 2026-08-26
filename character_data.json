@@ -136,9 +136,7 @@
       "Presenza ultraterrena"
     ],
     "description_it": "Recano nelle loro vene il sangue dei Piani Inferiori, manifestando dettagli fisici diabolici o demoniaci come corna, code e occhi particolari[cite: 2].<br><br><strong>Tipo Creatura:</strong> Umanoide[cite: 2]<br><strong>Taglia:</strong> Media o Piccola[cite: 2]<br><strong>Velocità:</strong> 30 piedi[cite: 2]<br><strong>Durata Vita:</strong> ~100 anni[cite: 2]<br><br><strong>Tratti di Specie:</strong><br>• <em>Visione notturna:</em> Raggio 60 piedi (18m)[cite: 2].<br>• <em>Presenza ultraterrena:</em> Conosci il trucco Taumaturgia[cite: 2].<br>• <em>Eredità Demoniaca:</em> Scegli una stirpe che sblocca magie e resistenze al 1°, 3° e 5° livello[cite: 2]:<br>- Abissale (Resistenza Veleno, Spruzzo Velenoso, Raggio di malattia, Tenere la persona)[cite: 2]<br>- Ctonio (Resistenza Necrotico, Tocco Gelido, Falsa vita, Raggio di indebolimento)[cite: 2]<br>- Infernale (Resistenza Fuoco, Dardo di Fuoco, Rimprovero infernale, Oscurità)[cite: 2]"
-  }
-]
-[
+  },
   {
     "id": "acolyte",
     "name": "Acolyte",
@@ -307,9 +305,7 @@
     "tool": "Un Set da Gioco",
     "equipment_gold": 50,
     "description_it": "Sei stato addestrato alla guerra, servendo in un esercito, in una compagnia mercenaria o in una milizia.<br><br><strong>Talento d me Origine:</strong> Combattente Selvaggio / Allerta<br><strong>Competenze Abilità:</strong> Atletica, Intimidire<br><strong>Strumento:</strong> Un set da gioco a scelta<br><strong>Incrementi di Caratteristica:</strong> +2 / +1 (o +1 / +1 / +1) a scelta tra Forza, Costituzione, Destrezza."
-  }
-]
-[
+  },
   {
     "id": "barbarian",
     "name": "Barbarian",
@@ -441,9 +437,7 @@
     "primary_ability": "Intelligenza",
     "saving_throws": ["Intelligenza", "Saggezza"],
     "description_it": "Un supremo studioso delle arti arcane che apprende la magia attraverso lo studio dei libri e memorizza incantesimi devastanti.<br><br><strong>Dado Vita:</strong> d6<br><strong>Caratteristica Primaria:</strong> Intelligenza<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza<br><strong>Tratti di Classe:</strong> Incantesimi, Libro degli Incantesimi, Recupero Arcano, Scuola di Magia."
-  }
-]
-[
+  },
   {
     "id": "sub_barbarian_wildheart",
     "name": "Path of the Wild Heart (Totem Warrior)",
@@ -663,9 +657,7 @@
     "type": "sottoclasse",
     "source_it": "Manuale del Giocatore 2024",
     "description_it": "Specializzato in incantesimi d'attacco devastanti, modulando l'area di effetto per proteggere gli alleati.<br><br><strong>Tratti Chiave:</strong> Plasmare Incantesimi, Potenza Evocativa, Sovraccarico Magico."
-  }
-]
-[
+  },
   {
     "id": "sub_barbarian_berserker",
     "name": "Path of the Berserker",
@@ -1145,9 +1137,7 @@
     "type": "sottoclasse",
     "source_it": "Manuale del Giocatore 2024",
     "description_it": "Manipola la percezione altrui creando inganni visivi ed acustici indistinguibili dalla realtà.<br><br><strong>Tratti Chiave:</strong> Illusione Migliorata, Doppio Illusorio, Illusione Reale."
-  }
-]
-[
+  },
   {
     "id": "feat_alert",
     "name": "Alert",
@@ -1267,9 +1257,7 @@
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Hai una fortuna inspiegabile che ti trae d'intralcio nei momenti critici.<br><br><strong>Benefici:</strong><br>• <strong>Punti Fortuna:</strong> Ottieni un numero di Punti Fortuna pari al tuo Bonus di Competenza (si ricaricano con un riposo lungo).<br>• <strong>Vantaggio di Fortuna:</strong> Quando effettui un tiro per colpire, una prova di caratteristica o un tiro salvezza, puoi spendere 1 Punto Fortuna per ottenere Vantaggio.<br>• <strong>Svantaggio al Nemico:</strong> Quando un attacco ti colpisce, puoi spendere 1 Punto Fortuna per imporre Svantaggio al tiro per colpire del nemico."
-  }
-]
-[
+  },
   {
     "id": "feat_actor",
     "name": "Actor",
@@ -1339,9 +1327,7 @@
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Forza o Destrezza 13+",
     "description_it": "Sei un maestro nel bloccare i nemici e punire chiunque tenti di attaccare i tuoi compagni.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Arresto:</strong> Quando colpisci una creatura con un attacco di opportunità, la sua velocità diventa 0 per il resto del turno.<br>• <strong>Vigilanza:</strong> Puoi effettuare attacchi di opportunità anche se la creatura usa l'azione di Disimpegno.<br>• <strong>Rappresaglia:</strong> Se un nemico adiacente attacca un tuo alleato, puoi usare la Reazione per attaccarlo."
-  }
-]
-[
+  },
   {
     "id": "feat_crusher",
     "name": "Crusher",
@@ -1471,9 +1457,7 @@
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+",
     "description_it": "Hai praticato estensivamente l'uso delle armi da guerra.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Competenza Armi:</strong> Ottieni la competenza in tutte le Armi da Guerra (Martial Weapons)."
-  }
-]
-[
+  },
   {
     "id": "feat_fighting_archery",
     "name": "Fighting Style: Archery",
@@ -1502,7 +1486,7 @@
     "category": "Stile di Combattimento",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Tratto di classe Stile di Combattimento",
-    "description_it": "Quando impugni un'arma da mischia in una mano e nessuna altra arma, ottieni un bonus di +2 ai tiri per il danno con quell'arma."
+    "description_it": "Stile di Combattimento: Quando impugni un'arma da mischia in una mano e nessun'altra arma, ottieni un bonus di +2 ai tiri per il danno con quell'arma."
   },
   {
     "id": "feat_fighting_great_weapon",
@@ -1553,9 +1537,7 @@
     "source_it": "Manuale del Giocatore 2024 / Tasha",
     "prerequisite": "Tratto di classe Stile di Combattimento",
     "description_it": "I tuoi colpi a mani nude infliggono 1d6 + Mod. Forza di danni contundenti (1d8 se non impugni armi o scudi). All'inizio di ogni tuo turno, puoi infliggere 1d4 danni contundenti a una creatura che stai afferrando."
-  }
-]
-[
+  },
   {
     "id": "feat_fighting_blind_fighting",
     "name": "Fighting Style: Blind Fighting",
@@ -1575,9 +1557,7 @@
     "source_it": "Manuale del Giocatore 2024 / Tasha",
     "prerequisite": "Tratto di classe Stile di Combattimento",
     "description_it": "Puoi estrarre un'arma con la proprietà Lancio come parte dell'attacco che effettui con essa. Inoltre, quando metti a segno un attacco a distanza con un'arma da lancio, ottieni un bonus di +2 ai tiri per il danno."
-  }
-]
-[
+  },
   {
     "id": "weapon_light_crossbow",
     "name": "Light Crossbow",
@@ -1969,9 +1949,7 @@
     "properties": ["Munizioni (gittata 9/27)", "Ricarica"],
     "mastery": "Vex",
     "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
-  }
-]
-[
+  },
   {
     "id": "armor_padded",
     "name": "Padded Armor",
