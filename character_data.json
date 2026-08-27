@@ -381,8 +381,80 @@
     { "level": 18, "prof_bonus": "+6", "features": ["Privilegio della Sottoclasse"], "details": "-" },
     { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
     { "level": 20, "prof_bonus": "+6", "features": ["Attacco Extra (3)"], "details": "4 attacchi" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d10 per livello da Guerriero.<br><strong>Armature:</strong> Tutte le armature, scudi.<br><strong>Armi:</strong> Armi semplici, armi da guerra.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Forza, Costituzione.<br><strong>Abilità:</strong> Scegli due abilità tra Acrobazia, Addestrare Animali, Atletica, Storia, Intuizione, Intimidire, Percezione e Sopravvivenza."
+    },
+    {
+      "name": "Stile di Combattimento",
+      "level": 1,
+      "description": "Ottieni un talento da Stile di Combattimento a tua scelta per il quale soddisfi i requisiti."
+    },
+    {
+      "name": "Recuperare Energie (Second Wind)",
+      "level": 1,
+      "description": "Puoi usare un'azione bonus per recuperare punti ferita pari a 1d10 + il tuo livello da guerriero. Puoi usare questo privilegio un numero di volte indicato nella tabella (2 usi al liv. 1, fino a 4 al liv. 10). Riconquisti un uso con un riposo breve e tutti gli usi con un riposo lungo."
+    },
+    {
+      "name": "Maestria nelle Armi (Weapon Mastery)",
+      "level": 1,
+      "description": "La tua formazione ti permette di sbloccare le proprietà di Maestria per 3 tipi di armi a tua scelta con cui sei competente. Puoi cambiare le armi scelte al termine di un riposo lungo. Il numero di armi aumenta a 4 (liv 4), 5 (liv 10) e 6 (liv 16)."
+    },
+    {
+      "name": "Azione Impetuosa (Action Surge)",
+      "level": 2,
+      "description": "Puoi spingerti oltre i tuoi limiti per un istante. Nel tuo turno, puoi effettuare un'azione aggiuntiva oltre alla tua azione normale e a un'eventuale azione bonus. (Non utilizzabile per effettuare l'azione di Cast a Spell). Puoi usarlo 1 volta (2 volte dal livello 17). Si ricarica con un riposo breve o lungo."
+    },
+    {
+      "name": "Mente Tattica (Tactical Mind)",
+      "level": 2,
+      "description": "Quando fallisci una prova di abilità, puoi spendere un uso di Recuperare Energie per tirare un 1d10 e sommarlo al totale. Se la prova fallisce comunque, l'uso di Recuperare Energie non viene consumato."
+    },
+    {
+      "name": "Sottoclasse del Guerriero",
+      "level": 3,
+      "description": "Scegli un archetipo marziale che plasma il tuo stile di combattimento (es. Campione, Maestro di Battaglia, Cavaliere Mistico, PSI Warrior). Ottieni i privilegi della sottoclasse ai livelli 3, 7, 10 e 15."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 6, 8, 12, 14, 16 e 19."
+    },
+    {
+      "name": "Attacco Extra",
+      "level": 5,
+      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+    },
+    {
+      "name": "Spostamento Tattico (Tactical Shift)",
+      "level": 5,
+      "description": "Ogni volta che attivi Recuperare Energie come azione bonus, puoi muoverti fino a metà della tua velocità senza provocare attacchi d'opportunità."
+    },
+    {
+      "name": "Indomabile (Indomitable)",
+      "level": 9,
+      "description": "Quando fallisci un tiro salvezza, puoi ritirarlo con un bonus pari al tuo livello da Guerriero. Devi usare il nuovo risultato. (1 uso al liv 9, 2 usi al liv 13, 3 usi al liv 17)."
+    },
+    {
+      "name": "Attacco Extra Migliorato (2)",
+      "level": 11,
+      "description": "Puoi attaccare tre volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+    },
+    {
+      "name": "Maestro delle Armature / Armi Studiate (Studied Attacks)",
+      "level": 13,
+      "description": "Se manchi un bersaglio con un attacco effettuato con l'azione di Attacco, ottieni vantaggio al tiro per colpire successivo contro quel bersaglio prima della fine del tuo turno successivo."
+    },
+    {
+      "name": "Attacco Extra Migliorato (3)",
+      "level": 20,
+      "description": "Il culmine della maestria marziale. Puoi attaccare quattro volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+    }
   ]
-  },
+},
   {
     "id": "monk",
     "name": "Monk",
