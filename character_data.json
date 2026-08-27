@@ -307,49 +307,365 @@
     "description_it": "Sei stato addestrato alla guerra, servendo in un esercito, in una compagnia mercenaria o in una milizia.<br><br><strong>Talento d me Origine:</strong> Combattente Selvaggio / Allerta<br><strong>Competenze Abilità:</strong> Atletica, Intimidire<br><strong>Strumento:</strong> Un set da gioco a scelta<br><strong>Incrementi di Caratteristica:</strong> +2 / +1 (o +1 / +1 / +1) a scelta tra Forza, Costituzione, Destrezza."
   },
   {
-    "id": "barbarian",
-    "name": "Barbarian",
-    "name_it": "Barbaro",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d12",
-    "primary_ability": "Forza",
-    "saving_throws": ["Forza", "Costituzione"],
-    "description_it": "Un feroce guerriero di origine selvaggia che attinge alla propria Ira per massacrare i nemici e resistere ai colpi più devastanti.<br><br><strong>Dado Vita:</strong> d12<br><strong>Caratteristica Primaria:</strong> Forza<br><strong>Tiri Salvezza:</strong> Forza, Costituzione<br><strong>Tratti di Classe:</strong> Ira Nanica/Selvaggia, Difesa Senza Armatura, Attacco Irruento, Percezione del Pericolo."
-  },
+  "id": "barbarian",
+  "name": "Barbarian",
+  "name_it": "Barbaro",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d12",
+  "primary_ability": "Forza",
+  "saving_throws": ["Forza", "Costituzione"],
+  "description_it": "Un guerriero selvaggio guidato dall'istinto e da una furia primordiale, capace di incanalare la propria rabbia in un potenziale di combattimento sovrumano e di resistere ai colpi più devastanti.<br><br><strong>Dado Vita:</strong> d12<br><strong>Caratteristica Primaria:</strong> Forza<br><strong>Tiri Salvezza:</strong> Forza, Costituzione<br><strong>Tratti di Classe:</strong> Ira, Difesa Senza Armatura, Padronanza delle Armi, Attacco Irruento, Percezione Infallibile.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Ira (2 usi, +2 danni)", "Difesa Senza Armatura", "Padronanza delle Armi (2 armi)"], "details": "2 Usi Ira | +2 Danni Ira | 2 Armi Padroneggiate" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Attacco Irruento (Reckless Attack)", "Percezione Infallibile (Danger Sense)"], "details": "2 Usi Ira | +2 Danni Ira | 2 Armi Padroneggiate" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Barbaro (Cammino Primordiale)", "Conoscenza Primordiale (Primal Knowledge)"], "details": "3 Usi Ira | +2 Danni Ira | 2 Armi Padroneggiate" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "3 Usi Ira | +2 Danni Ira | 3 Armi Padroneggiate" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Extra", "Movimento Veloce"], "details": "3 Usi Ira | +2 Danni Ira | 3 Armi Padroneggiate" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Privilegio del Cammino Primordiale"], "details": "4 Usi Ira | +2 Danni Ira | 3 Armi Padroneggiate" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Istinto Primordiale (Feral Instinct)", "Scatto Furioso (Instinctive Pounce)"], "details": "4 Usi Ira | +2 Danni Ira | 3 Armi Padroneggiate" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Usi Ira | +2 Danni Ira | 3 Armi Padroneggiate" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Colpo Critico Brutale (Brutal Strike)"], "details": "4 Usi Ira | +3 Danni Ira | 3 Armi Padroneggiate" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Privilegio del Cammino Primordiale"], "details": "4 Usi Ira | +3 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Ira Incontenibile (Relentless Rage)"], "details": "5 Usi Ira | +3 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Usi Ira | +3 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Miglioramento Colpo Critico Brutale"], "details": "5 Usi Ira | +3 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Privilegio del Cammino Primordiale"], "details": "5 Usi Ira | +3 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Ira Persistente (Persistent Rage)"], "details": "5 Usi Ira | +3 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Usi Ira | +4 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Miglioramento Colpo Critico Brutale"], "details": "6 Usi Ira | +4 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Forza Indomabile (Indomitable Might)"], "details": "6 Usi Ira | +4 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "6 Usi Ira | +4 Danni Ira | 4 Armi Padroneggiate" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Campione Primordiale (Primal Champion)"], "details": "Usi Ira Illimitati | +4 Danni Ira | 4 Armi Padroneggiate" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d12 per livello da Barbaro.<br><strong>Armature:</strong> Armature leggere, armature medie, scudi.<br><strong>Armi:</strong> Armi semplici, armi da guerra.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Forza, Costituzione.<br><strong>Abilità:</strong> Scegli 2 abilità tra Addestrare Animali, Atletica, Intimidire, Natura, Percezione, Sopravvivenza."
+    },
+    {
+      "name": "Ira (Rage)",
+      "level": 1,
+      "description": "Entri in uno stato di furia con un'**Azione Bonus**. Mentre sei in Ira e non indossi un'armatura pesante, ottieni i seguenti benefici:<br>• <strong>Resistenza ai Danni:</strong> Resistenza a danni contundenti, perforanti e taglienti.<br>• <strong>Danni dell'Ira:</strong> Aggiungi il bonus Danni Ira agli attacchi con armi da mischia che usano la Forza.<br>• <strong>Vantaggio in Forza:</strong> Vantaggio alle prove di Forza e ai tiri salvezza su Forza.<br>• <strong>Durata:</strong> L'Ira dura 1 minuto e si mantiene se attacchi, subisci danni, usi un'azione bonus per mantenerla o imponi un tiro salvezza a un nemico."
+    },
+    {
+      "name": "Difesa Senza Armatura (Unarmored Defense)",
+      "level": 1,
+      "description": "Mentre non indossi alcuna armatura, la tua Classe Armatura (CA) è pari a **10 + Modificatore di Destrezza + Modificatore di Costituzione**. Puoi utilizzare uno scudo e mantenere questo beneficio."
+    },
+    {
+      "name": "Padronanza delle Armi (Weapon Mastery)",
+      "level": 1,
+      "description": "La tua profonda sintonia con il combattimento ti permette di sbloccare le proprietà speciali di padronanza (es. *Cleave*, *Topple*, *Push*, *Graze*) per un numero di armi con cui sei competente pari alla colonna della tabella."
+    },
+    {
+      "name": "Attacco Irruento (Reckless Attack)",
+      "level": 2,
+      "description": "Quando effettui il tuo primo attacco nel tuo turno, puoi abbandonare ogni difesa. Ottieni **Vantaggio** a tutti i tiri per colpire con armi da mischia basati sulla Forza durante questo turno, ma i tiri per colpire contro di te hanno Vantaggio fino all'inizio del tuo turno successivo."
+    },
+    {
+      "name": "Percezione Infallibile (Danger Sense)",
+      "level": 2,
+      "description": "Ottieni **Vantaggio** ai tiri salvezza su Destrezza contro effetti che puoi vedere, come trappole o incantesimi. Non puoi beneficiare di questo tratto se sei Incapacitato."
+    },
+    {
+      "name": "Conoscenza Primordiale (Primal Knowledge)",
+      "level": 3,
+      "description": "Ottieni la competenza in un'ulteriore abilità da Barbaro a tua scelta. Inoltre, mentre la tua **Ira è attiva**, puoi effettuare prove di Acrobazia, Atletica, Intimidire, Natura, Percezione e Sopravvivenza utilizzando la **Forza** al posto della caratteristica normale."
+    },
+    {
+      "name": "Sottoclasse del Barbaro (Cammino Primordiale)",
+      "level": 3,
+      "description": "Scegli un Cammino Primordiale che definisce la natura della tua furia (es. Cammino del Berserker, Cammino dell'Albero del Mondo, Cammino del Guerriero Totemico, Cammino dello Zelota). Ottieni privilegi ai livelli 3, 6, 10 e 14."
+    },
+    {
+      "name": "Colpo Critico Brutale (Brutal Strike)",
+      "level": 9,
+      "description": "Se rinunci al Vantaggio fornito da *Attacco Irruento* su un attacco con la Forza, puoi infliggere **1d10 danni aggiuntivi** dello stesso tipo dell'arma e applicare un effetto speciale a tua scelta (es. spingere il bersaglio di 4,5 metri o ridurne la velocità di movimento)."
+    },
+    {
+      "name": "Ira Incontenibile (Relentless Rage)",
+      "level": 11,
+      "description": "Se scendi a 0 Punti Ferita mentre sei in Ira e non muori all'istante, puoi effettuare un tiro salvezza su Costituzione con CD 10. Se lo superi, scendi a **1 Punto Ferita**. Ogni volta che usi questo privilegio dopo la prima, la CD aumenta di 5. La CD si resetta dopo un riposo breve o lungo."
+    },
+    {
+      "name": "Ira Persistente (Persistent Rage)",
+      "level": 15,
+      "description": "La tua Ira finisce anticipatamente solo se sei Incapacitato o indossi un'armatura pesante. Inoltre, recuperi un uso di Ira una volta per riposo breve quando inizi un combattimento senza usi rimasti."
+    },
+    {
+      "name": "Forza Indomabile (Indomitable Might)",
+      "level": 18,
+      "description": "Se il totale di una tua prova di Forza o di un tiro salvezza su Forza è inferiore al tuo punteggio di Forza, puoi utilizzare il tuo **punteggio di Forza** al posto del risultato del dado."
+    },
+    {
+      "name": "Campione Primordiale (Primal Champion)",
+      "level": 20,
+      "description": "Incarni la potenza della natura. I tuoi punteggi di **Forza** e **Costituzione** aumentano di **4**, fino a un massimo potenziale di **25** per ciascun punteggio. I tuoi usi di Ira diventano **illimitati**."
+    }
+  ]
+},
+ {
+  "id": "bard",
+  "name": "Bard",
+  "name_it": "Bardo",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d8",
+  "primary_ability": "Carisma",
+  "saving_throws": ["Destrezza", "Carisma"],
+  "description_it": "Un virtuoso dell'arte, maestro della parola e incantatore eclettico capaci di manipolare la realtà tramite la musica della creazione, ispirare gli alleati e dominare ogni tipo di abilità.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Carisma<br><strong>Tiri Salvezza:</strong> Destrezza, Carisma<br><strong>Tratti di Classe:</strong> Ispirazione Bardica, Incantesimi, Tuttofare (Jack of All Trades), Maestria (Expertise), Segreti Magici.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Incantesimi", "Trucchetti", "Ispirazione Bardica (d6)"], "details": "2 Trucchetti | 2 Slot L1 | 4 Incantesimi Preparati | Dado Ispirazione: d6" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Tuttofare (Jack of All Trades)", "Canto di Riposo (Song of Rest)"], "details": "2 Trucchetti | 3 Slot L1 | 5 Incantesimi Preparati | Dado Ispirazione: d6" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Bardo (Collegio)", "Maestria (Expertise)"], "details": "2 Trucchetti | 4 Slot L1, 2 Slot L2 | 6 Incantesimi Preparati | Dado Ispirazione: d6" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2 | 7 Incantesimi Preparati | Dado Ispirazione: d6" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Ispirazione Creativa (Font of Inspiration)", "Miglioramento Ispirazione Bardica (d8)"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 2 Slot L3 | 9 Incantesimi Preparati | Dado Ispirazione: d8" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Privilegio del Collegio Bardico"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3 | 10 Incantesimi Preparati | Dado Ispirazione: d8" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Contro-Canto (Countercharm)"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 1 Slot L4 | 11 Incantesimi Preparati | Dado Ispirazione: d8" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4 | 12 Incantesimi Preparati | Dado Ispirazione: d8" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Incantesimi di 5° Livello"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 1 Slot L5 | 14 Incantesimi Preparati | Dado Ispirazione: d8" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Segreti Magici (Magical Secrets)", "Miglioramento Ispirazione Bardica (d10)", "Maestria (Expertise)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5 | 15 Incantesimi Preparati | Dado Ispirazione: d10" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Incantesimi di 6° Livello"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6 | 16 Incantesimi Preparati | Dado Ispirazione: d10" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6 | 16 Incantesimi Preparati | Dado Ispirazione: d10" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Incantesimi di 7° Livello"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7 | 17 Incantesimi Preparati | Dado Ispirazione: d10" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Privilegio del Collegio Bardico"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7 | 17 Incantesimi Preparati | Dado Ispirazione: d10" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Incantesimi di 8° Livello", "Miglioramento Ispirazione Bardica (d12)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8 | 18 Incantesimi Preparati | Dado Ispirazione: d12" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8 | 18 Incantesimi Preparati | Dado Ispirazione: d12" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Incantesimi di 9° Livello"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 19 Incantesimi Preparati | Dado Ispirazione: d12" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Miglioramento Segreti Magici"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 20 Incantesimi Preparati | Dado Ispirazione: d12" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 2 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 21 Incantesimi Preparati | Dado Ispirazione: d12" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Ispirazione Suprema (Words of Creation)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 2 Slot L6, 2 Slot L7, 1 Slot L8, 1 Slot L9 | 22 Incantesimi Preparati | Dado Ispirazione: d12" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d8 per livello da Bardo.<br><strong>Armature:</strong> Armature leggere.<br><strong>Armi:</strong> Armi semplici.<br><strong>Strumenti:</strong> Scegli 3 strumenti musicali.<br><strong>Tiri Salvezza:</strong> Destrezza, Carisma.<br><strong>Abilità:</strong> Scegli 3 abilità qualsiasi."
+    },
+    {
+      "name": "Ispirazione Bardica (Bardic Inspiration)",
+      "level": 1,
+      "description": "Puoi inspirare gli altri tramite la musica, il canto o le parole. Come **Azione Bonus** (o come **Reazione** quando una creatura entro 18 metri fallisce una prova di abilità, un tiro per colpire o un tiro salvezza), puoi conferire a un alleato un dado di Ispirazione Bardica (d6).<br>La creatura può tirare il dado e aggiungerlo al risultato del tiro fallito. In alternativa, se subisce danni, può usare il dado come Reazione per recuperare Punti Ferita pari al valore tirato + il tuo modificatore di Carisma.<br>Hai un numero di utilizzi pari al tuo **modificatore di Carisma** (minimo 1), che si ricaricano al termine di un riposo lungo (e breve dal livello 5)."
+    },
+    {
+      "name": "Incantesimi e Caratteristica da Incantatore",
+      "level": 1,
+      "description": "Attingi alla Musica della Creazione per lanciare incantesimi. Il **Carisma** è la tua caratteristica da incantatore.<br>• <strong>CD Tiro Salvezza:</strong> 8 + Bonus Comp. + Mod. Carisma<br>• <strong>Modificatore di Attacco Incantesimo:</strong> Bonus Comp. + Mod. Carisma<br>• Puoi usare uno strumento musicale come focus per i tuoi incantesimi."
+    },
+    {
+      "name": "Tuttofare (Jack of All Trades)",
+      "level": 2,
+      "description": "Puoi aggiungere metà del tuo bonus di competenza (arrotondato per difetto) a qualsiasi prova di caratteristica che effettui e che non includa già il tuo bonus di competenza."
+    },
+    {
+      "name": "Maestria (Expertise)",
+      "level": 3,
+      "description": "Scegli 2 delle tue competenze nelle abilità: il tuo bonus di competenza viene **raddoppiato** per qualsiasi prova di caratteristica effettuata usando una delle abilità scelte. Scegli altre 2 abilità al livello 10."
+    },
+    {
+      "name": "Sottoclasse del Bardo (Collegio Bardico)",
+      "level": 3,
+      "description": "Scegli un Collegio Bardico che rifletta la tua tradizione artistica (es. Collegio della Sapienza, Collegio del Valore, Collegio del Glamour, Collegio della Danza). Ottieni privilegi ai livelli 3, 6 e 14."
+    },
+    {
+      "name": "Ispirazione Creativa (Font of Inspiration)",
+      "level": 5,
+      "description": "Recuperi tutti i tuoi usi spesi di *Ispirazione Bardica* quando completi un **riposo breve o lungo**. Inoltre, se entri in combattimento senza usi rimasti di Ispirazione Bardica, ne recuperi immediatamente uno."
+    },
+    {
+      "name": "Contro-Canto (Countercharm)",
+      "level": 7,
+      "description": "Come **Reazione** quando tu o un alleato entro 9 metri fallite un tiro salvezza contro l'essere *Affascinato* o *Spaventato*, puoi consentire a chi ha fallito di ritirare il tiro salvezza ottenendo un **vantaggio** al nuovo tiro."
+    },
+    {
+      "name": "Segreti Magici (Magical Secrets)",
+      "level": 10,
+      "description": "La tua padronanza della magia si espande oltre i confini tradizionali. Quando prepari i tuoi incantesimi da Bardo, puoi scegliere di preparare incantesimi dalle liste del **Chierico, Druido o Mago**. Essi contano a tutti gli effetti come incantesimi da Bardo per te."
+    },
+    {
+      "name": "Ispirazione Suprema (Words of Creation)",
+      "level": 20,
+      "description": "Quando tiri un dado di *Ispirazione Bardica* ed esce un **1 o un 2**, puoi considerare il risultato del dado come se fosse un **12** (il massimo valore del d12)."
+    }
+  ]
+},
   {
-    "id": "bard",
-    "name": "Bard",
-    "name_it": "Bardo",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d8",
-    "primary_ability": "Carisma",
-    "saving_throws": ["Destrezza", "Carisma"],
-    "description_it": "Un maestro della magia che intesse musica, parole e incantesimi per ispirare gli alleati, manipolare le menti e ferire i nemici.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Carisma<br><strong>Tiri Salvezza:</strong> Destrezza, Carisma<br><strong>Tratti di Classe:</strong> Ispirazione Bardica, Incantesimi, Tuttofare, Maestria nelle Abilità."
-  },
+  "id": "cleric",
+  "name": "Cleric",
+  "name_it": "Chierico",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d8",
+  "primary_ability": "Saggezza",
+  "saving_throws": ["Saggezza", "Carisma"],
+  "description_it": "Un campione sacerdotale che impugna la magia divina al servizio di un potere superiore, capace di curare le ferite, infondere coraggio negli alleati e scatenare l'ira dei cieli sui nemici.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Saggezza<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma<br><strong>Tratti di Classe:</strong> Incantesimi, Ordine Divino, Incanalare Divinità, Colpi Benedetti, Intervento Divino.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Incantesimi", "Trucchetti", "Ordine Divino (Divine Order)"], "details": "3 Trucchetti | 2 Slot L1 | 4 Incantesimi Preparati" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Incanalare Divinità (2 usi)", "Scintilla Divina", "Scacciare Non Morti"], "details": "3 Trucchetti | 3 Slot L1 | 5 Incantesimi Preparati" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Chierico (Dominio Divino)"], "details": "3 Trucchetti | 4 Slot L1, 2 Slot L2 | 6 Incantesimi Preparati" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2 | 7 Incantesimi Preparati" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Punire i Non Morti (Smite Undead)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 2 Slot L3 | 9 Incantesimi Preparati" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Privilegio del Dominio Divino", "Incanalare Divinità (3 usi)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3 | 10 Incantesimi Preparati" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Colpi Benedetti (Blessed Strikes)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 1 Slot L4 | 11 Incantesimi Preparati" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4 | 12 Incantesimi Preparati" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Incantesimi di 5° Livello"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 1 Slot L5 | 14 Incantesimi Preparati" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Intervento Divino (Divine Intervention)"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5 | 15 Incantesimi Preparati" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Incantesimi di 6° Livello"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6 | 16 Incantesimi Preparati" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6 | 16 Incantesimi Preparati" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Incantesimi di 7° Livello"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7 | 17 Incantesimi Preparati" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Colpi Benedetti Migliorati (Improved Blessed Strikes)"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7 | 17 Incantesimi Preparati" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Incantesimi di 8° Livello"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8 | 18 Incantesimi Preparati" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8 | 18 Incantesimi Preparati" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Privilegio del Dominio Divino", "Incantesimi di 9° Livello"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 19 Incantesimi Preparati" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Incanalare Divinità (4 usi)"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 20 Incantesimi Preparati" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 2 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 21 Incantesimi Preparati" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Intervento Divino Superiore (Greater Divine Intervention)"], "details": "5 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 2 Slot L6, 2 Slot L7, 1 Slot L8, 1 Slot L9 | 22 Incantesimi Preparati" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d8 per livello da Chierico.<br><strong>Armature:</strong> Armature leggere, armature medie, scudi.<br><strong>Armi:</strong> Armi semplici.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma.<br><strong>Abilità:</strong> Scegli 2 abilità tra Intuizione, Medicina, Persuasione, Religione, Storia."
+    },
+    {
+      "name": "Ordine Divino (Divine Order)",
+      "level": 1,
+      "description": "Il tuo modo di servire il divino ti conferisce uno dei seguenti benefici a tua scelta:<br>• <strong>Protettore (Protector):</strong> Ottieni la competenza nelle Armature Pesanti e nelle Armi da Guerra.<br>• <strong>Taumaturgo (Thaumaturge):</strong> Conosci un trucchetto aggiuntivo dalla lista del Chierico e aggiungi il tuo modificatore di Saggezza alle prove di Religione."
+    },
+    {
+      "name": "Incantesimi e Caratteristica da Incantatore",
+      "level": 1,
+      "description": "Incanali la magia della tua divinità o dei tuoi ideali sacri. La **Saggezza** è la tua caratteristica da incantatore per gli incantesimi da Chierico.<br>• <strong>CD Tiro Salvezza:</strong> 8 + Bonus Comp. + Mod. Saggezza<br>• <strong>Modificatore di Attacco Incantesimo:</strong> Bonus Comp. + Mod. Saggezza"
+    },
+    {
+      "name": "Incanalare Divinità (Channel Divinity)",
+      "level": 2,
+      "description": "Puoi canalizzare l'energia divina direttamente dal tuo nume tutelare per alimentare poteri speciali. Inizi con due opzioni base e ottieni recuperi con i riposi brevi o lunghi:<br>• <strong>Scintilla Divina (Divine Spark):</strong> Come azione magica, puoi mirare a una creatura entro 9 metri: curala di 1d8 + Mod. Saggezza Punti Ferita, oppure obbligala a un TS su Costituzione o subire 1d8 + Mod. Saggezza danni radiosi (necrotici se il tuo allineamento è malvagio). I dadi aumentano ai livelli 7 (2d8), 13 (3d8) e 18 (4d8).<br>• <strong>Scacciare Non Morti (Turn Undead):</strong> I non morti entro 9 metri devono superare un TS su Saggezza, altrimenti sono *Spaventati* (Frightened) e *Incapacitati* (Incapacitated) per 1 minuto."
+    },
+    {
+      "name": "Sottoclasse del Chierico (Dominio Divino)",
+      "level": 3,
+      "description": "Scegli un Dominio legato alla tua divinità (es. Dominio della Vita, della Luce, dell'Inganno, della Guerra). Ottieni i privilegi del Dominio ai livelli 3, 6 e 17. Ricevi anche incantesimi di Dominio sempre preparati."
+    },
+    {
+      "name": "Punire i Non Morti (Smite Undead)",
+      "level": 5,
+      "description": "Quando usi *Scacciare Non Morti*, se un non morto fallisce il suo tiro salvezza, subisce un ammontare di danni radiosi pari a **tira un numero di d8 pari al tuo modificatore di Saggezza** (minimo 1d8). Questo sostituisce il vecchio meccanismo di Distruggere Non Morti."
+    },
+    {
+      "name": "Colpi Benedetti (Blessed Strikes)",
+      "level": 7,
+      "description": "L'energia divina infonde le tue abilità. Scegli una di queste opzioni (puoi cambiarla quando ottieni un livello da Chierico):<br>• <strong>Colpo Divino (Divine Strike):</strong> Una volta per turno, quando colpisci una creatura con un attacco con arma, infliggi 1d8 danni radiosi (o necrotici) aggiuntivi.<br>• <strong>Incantesimi Potenti (Potent Spellcasting):</strong> Aggiungi il tuo modificatore di Saggezza ai danni inflitti con i trucchetti da Chierico."
+    },
+    {
+      "name": "Intervento Divino (Divine Intervention)",
+      "level": 10,
+      "description": "Puoi implorare la tua divinità affinché intervenga in tuo favore. Come Azione, puoi scegliere qualsiasi incantesimo dalla lista del Chierico di **5° livello o inferiore** e lanciarlo istantaneamente, senza bisogno di spendere uno slot incantesimo né di fornire alcuna componente (verbale, somatica o materiale). Una volta usato, devi completare un riposo lungo prima di poterlo usare di nuovo."
+    },
+    {
+      "name": "Colpi Benedetti Migliorati",
+      "level": 14,
+      "description": "A seconda dell'opzione scelta al 7° livello, i danni di *Colpo Divino* aumentano a 2d8, oppure *Incantesimi Potenti* ti conferisce Punti Ferita Temporanei (pari al doppio del tuo modificatore di Saggezza) quando infliggi danni con un trucchetto."
+    },
+    {
+      "name": "Intervento Divino Superiore",
+      "level": 20,
+      "description": "Il tuo legame con la divinità è assoluto. Quando usi *Intervento Divino*, puoi ora scegliere di lanciare l'incantesimo **Desiderio (Wish)** al posto di un incantesimo da Chierico di 5° livello. Se lo usi in questo modo, non subisci lo stress associato al lancio di *Desiderio*, ma non potrai usare *Intervento Divino* per 2d4 giorni lunghi."
+    }
+  ]
+},
   {
-    "id": "cleric",
-    "name": "Cleric",
-    "name_it": "Chierico",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d8",
-    "primary_ability": "Saggezza",
-    "saving_throws": ["Saggezza", "Carisma"],
-    "description_it": "Un campione divino che incanala la potenza di una divinità per curare gli alleati, Scacciare i Non Morti e punire gli empi.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Saggezza<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma<br><strong>Tratti di Classe:</strong> Incantesimi, Incanalare Divinità, Ordine Divino, Dominio Sacro."
-  },
-  {
-    "id": "druid",
-    "name": "Druid",
-    "name_it": "Druido",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d8",
-    "primary_ability": "Saggezza",
-    "saving_throws": ["Intelligenza", "Saggezza"],
-    "description_it": "Un sacerdote della Natura in grado di assumere forme animali tramite la Forma Selvatica e piegare le forze primordiali del mondo.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Saggezza<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza<br><strong>Tratti di Classe:</strong> Incantesimi, Forma Selvatica, Ordine Primordiale, Circolo Druidico."
-  },
+  "id": "druid",
+  "name": "Druid",
+  "name_it": "Druido",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d8",
+  "primary_ability": "Saggezza",
+  "saving_throws": ["Intelligenza", "Saggezza"],
+  "description_it": "Un sacerdote del mondo naturale capace di assumere le forme delle bestie selvagge, imbrigliare la furia degli elementi e invocare l'antica magia primitiva per proteggere l'equilibrio della natura.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Saggezza<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza<br><strong>Tratti di Classe:</strong> Incantesimi, Ordine Primitivo (Primal Order), Forma Selvatica (Wild Shape), Compagno Primitivo, Forma Archidruido.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Incantesimi", "Trucchetti", "Ordine Primitivo (Primal Order)"], "details": "2 Trucchetti | 2 Slot L1 | 4 Incantesimi Preparati" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Forma Selvatica (Wild Shape)", "Compagno Primitivo (Wild Companion)"], "details": "2 Trucchetti | 3 Slot L1 | 5 Incantesimi Preparati | 2 Usi Forma Selvatica" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Druido (Circolo)"], "details": "2 Trucchetti | 4 Slot L1, 2 Slot L2 | 6 Incantesimi Preparati | 2 Usi Forma Selvatica" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica", "Miglioramento Forma Selvatica"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2 | 7 Incantesimi Preparati | 2 Usi Forma Selvatica" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Rivitalizzare Forma Selvatica (Wild Resurgence)"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 2 Slot L3 | 9 Incantesimi Preparati | 2 Usi Forma Selvatica" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Privilegio del Circolo Druidico"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3 | 10 Incantesimi Preparati | 3 Usi Forma Selvatica" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Elementalista Primitivo (Elemental Fury)"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 1 Slot L4 | 11 Incantesimi Preparati | 3 Usi Forma Selvatica" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica", "Miglioramento Forma Selvatica (Volo)"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4 | 12 Incantesimi Preparati | 3 Usi Forma Selvatica" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Incantesimi di 5° Livello"], "details": "3 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 1 Slot L5 | 14 Incantesimi Preparati | 3 Usi Forma Selvatica" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Privilegio del Circolo Druidico"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5 | 15 Incantesimi Preparati | 3 Usi Forma Selvatica" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Incantesimi di 6° Livello"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6 | 16 Incantesimi Preparati | 3 Usi Forma Selvatica" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6 | 16 Incantesimi Preparati | 3 Usi Forma Selvatica" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Incantesimi di 7° Livello"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7 | 17 Incantesimi Preparati | 4 Usi Forma Selvatica" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Privilegio del Circolo Druidico"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7 | 17 Incantesimi Preparati | 4 Usi Forma Selvatica" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Incantesimi di 8° Livello"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8 | 18 Incantesimi Preparati | 4 Usi Forma Selvatica" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8 | 18 Incantesimi Preparati | 4 Usi Forma Selvatica" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Incantesimi di 9° Livello", "Elementalista Primitivo Migliorato"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 19 Incantesimi Preparati | 4 Usi Forma Selvatica" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Incantesimi della Natura (Beast Spells)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 1 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 20 Incantesimi Preparati | 4 Usi Forma Selvatica" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 2 Slot L6, 1 Slot L7, 1 Slot L8, 1 Slot L9 | 21 Incantesimi Preparati | 4 Usi Forma Selvatica" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Archidruido (Archdruid)"], "details": "4 Trucchetti | 4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 3 Slot L5, 2 Slot L6, 2 Slot L7, 1 Slot L8, 1 Slot L9 | 22 Incantesimi Preparati | Usi Forma Selvatica Illimitati" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d8 per livello da Druido.<br><strong>Armature:</strong> Armature leggere, scudi (i druidi del 2024 possono indossare anche equipaggiamento in metallo).<br><strong>Armi:</strong> Armi semplici.<br><strong>Strumenti:</strong> Borsa dell'erborista.<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza.<br><strong>Abilità:</strong> Scegli 2 abilità tra Addestrare Animali, Arcana, Intuizione, Medicina, Natura, Percezione, Religione, Sopravvivenza."
+    },
+    {
+      "name": "Ordine Primitivo (Primal Order)",
+      "level": 1,
+      "description": "Scegli una specializzazione per la tua devozione naturale:<br>• <strong>Magus (Warden):</strong> Ottieni la competenza nelle armature medie e nelle armi da guerra.<br>• <strong>Sapiente (Magician):</strong> Conosci un trucchetto aggiuntivo dalla lista del Druido e ottieni un bonus pari al tuo modificatore di Saggezza alle prove di Natura e Arcana."
+    },
+    {
+      "name": "Incantesimi e Caratteristica da Incantatore",
+      "level": 1,
+      "description": "Invochi il potere degli spiriti primordiali e della natura. La **Saggezza** è la tua caratteristica da incantatore.<br>• <strong>CD Tiro Salvezza:</strong> 8 + Bonus Comp. + Mod. Saggezza<br>• <strong>Modificatore di Attacco Incantesimo:</strong> Bonus Comp. + Mod. Saggezza"
+    },
+    {
+      "name": "Forma Selvatica (Wild Shape)",
+      "level": 2,
+      "description": "Come **Azione Bonus**, puoi assumere la forma di una bestia che hai studiato. Ottieni Punti Ferita Temporanei pari al tuo **livello da Druido** (o modificati dalla tua sottoclasse). Mantiene i tuoi punteggi mentali (INT, SAG, CAR) e la tua personalità. Recuperi gli utilizzi spesi al termine di un riposo breve o lungo."
+    },
+    {
+      "name": "Compagno Primitivo (Wild Companion)",
+      "level": 2,
+      "description": "Puoi spendere un uso del tuo privilegio *Forma Selvatica* per lanciare l'incantesimo *Trova Famiglio (Find Familiar)* senza spendere slot incantesimo e senza componenti materiali."
+    },
+    {
+      "name": "Sottoclasse del Druido (Circolo Druidico)",
+      "level": 3,
+      "description": "Scegli un Circolo Druidico a cui legarti (es. Circolo della Terra, Circolo della Luna, Circolo delle Stelle, Circolo del Mare). Ottieni privilegi della sottoclasse ai livelli 3, 6, 10 e 14."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 8, 12, 16 e 19."
+    },
+    {
+      "name": "Rivitalizzare Forma Selvatica (Wild Resurgence)",
+      "level": 5,
+      "description": "Puoi convertire un uso di *Forma Selvatica* per recuperare uno slot incantesimo di 1° livello (una volta per turno). In alternativa, puoi spendere uno slot incantesimo per ricaricare un uso di *Forma Selvatica*."
+    },
+    {
+      "name": "Elementalista Primitivo (Elemental Fury)",
+      "level": 7,
+      "description": "Scegli uno dei seguenti potenziamenti per il tuo stile di combattimento:<br>• <strong>Colpo Potenziate (Potent Cantrip):</strong> Quando infliggi danni con un trucchetto da druido, aggiungi il tuo modificatore di Saggezza al danno.<br>• <strong>Attacco Elementale (Primal Strike):</strong> Una volta per turno, quando colpisci con un attacco con arma o in Forma Selvatica, puoi infliggere 1d8 danni extra di tipo Freddo, Fuoco, Fulmine o Acido."
+    },
+    {
+      "name": "Incantesimi della Natura (Beast Spells)",
+      "level": 18,
+      "description": "Puoi lanciare incantesimi da Druido mentre sei trasformato tramite *Forma Selvatica*, ignorando le componenti Somatiche e Verbali degli incantesimi che non richiedono componenti materiali costose."
+    },
+    {
+      "name": "Archidruido (Archdruid)",
+      "level": 20,
+      "description": "Il tuo legame con la natura diventa assoluto:<br>• Hai **usi illimitati** di *Forma Selvatica*.<br>• Quando tiri l'Iniziativa e non hai usi rimanenti di *Forma Selvatica*, ne recuperi immediatamente uno.<br>• Invecchi molto più lentamente (1 anno ogni 10 trascorsi)."
+    }
+  ]
+},
  {
   "id": "fighter",
   "name": "Fighter",
@@ -455,82 +771,660 @@
   ]
 },
   {
-    "id": "monk",
-    "name": "Monk",
-    "name_it": "Monaco",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d8",
-    "primary_ability": "Destrezza & Saggezza",
-    "saving_throws": ["Forza", "Destrezza"],
-    "description_it": "Un artista marziale che incanala l'energia del Ki (Fuoco Spirituale) nel proprio corpo per compiere attacchi fulminei e prodigi fisici.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Destrezza e Saggezza<br><strong>Tiri Salvezza:</strong> Forza, Destrezza<br><strong>Tratti di Classe:</strong> Arti Marziali, Difesa Senza Armatura, Riserva di Focalizzazione (Ki), Movimento Senza Traccia."
-  },
+  "id": "monk",
+  "name": "Monk",
+  "name_it": "Monaco",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d8",
+  "primary_ability": "Destrezza e Saggezza",
+  "saving_throws": ["Forza", "Destrezza"],
+  "description_it": "Un maestro delle arti marziali che incanala l'energia interiore del proprio corpo per compiere imprese acrobatiche straordinarie, sferrare raffiche di colpi devastanti e superare i limiti mortali.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Destrezza e Saggezza<br><strong>Tiri Salvezza:</strong> Forza, Destrezza<br><strong>Tratti di Classe:</strong> Difesa Senza Armatura, Arti Marziali, Punti Focus, Metabolismo Prodigioso, Deviazione Attacchi.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Difesa Senza Armatura", "Arti Marziali (1d6)"], "details": "Dado Arti Marziali: 1d6 | Punti Focus: 0" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Punti Focus", "Metabolismo Prodigioso (Uncanny Metabolism)", "Passo del Vento / Raffica di Colpi / Pazienza della Difesa"], "details": "Dado Arti Marziali: 1d6 | Punti Focus: 2" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Monaco", "Deviazione Attacchi (Deflect Attacks)"], "details": "Dado Arti Marziali: 1d6 | Punti Focus: 3" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica", "Caduta Lenta"], "details": "Dado Arti Marziali: 1d6 | Punti Focus: 4" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Extra", "Colpo Stordente (Stunning Strike)"], "details": "Dado Arti Marziali: 1d8 | Punti Focus: 5" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Colpi Imbevuti di Focus (Empowered Strikes)", "Privilegio della Sottoclasse"], "details": "Dado Arti Marziali: 1d8 | Punti Focus: 6" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Evasione (Evasion)", "Mente Lucida (Acuteness of Mind)"], "details": "Dado Arti Marziali: 1d8 | Punti Focus: 7" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Dado Arti Marziali: 1d8 | Punti Focus: 8" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Movimento Senza Traccia Avanzato (Heightened Discipline)"], "details": "Dado Arti Marziali: 1d8 | Punti Focus: 9" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Puro Corpo (Self-Restoration)"], "details": "Dado Arti Marziali: 1d10 | Punti Focus: 10" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Privilegio della Sottoclasse"], "details": "Dado Arti Marziali: 1d10 | Punti Focus: 11" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Dado Arti Marziali: 1d10 | Punti Focus: 12" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Deviazione di Energia (Deflect Energy)"], "details": "Dado Arti Marziali: 1d10 | Punti Focus: 13" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Disciplina Inamovibile (Disciplined Survivor)"], "details": "Dado Arti Marziali: 1d10 | Punti Focus: 14" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Corpo Perfetto (Perfect Focus)"], "details": "Dado Arti Marziali: 1d10 | Punti Focus: 15" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Dado Arti Marziali: 1d10 | Punti Focus: 16" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Privilegio della Sottoclasse"], "details": "Dado Arti Marziali: 1d12 | Punti Focus: 17" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Forma Vuota (Empty Body)"], "details": "Dado Arti Marziali: 1d12 | Punti Focus: 18" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Dado Arti Marziali: 1d12 | Punti Focus: 19" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Apice del Corpo e della Mente (Body and Mind)"], "details": "Dado Arti Marziali: 1d12 | Punti Focus: 20" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d8 per livello da Monaco.<br><strong>Armature:</strong> Nessuna.<br><strong>Armi:</strong> Armi semplici, armi marziali con la proprietà *Leggera*.<br><strong>Strumenti:</strong> Un tipo di strumento da artigiano o uno strumento musicale a scelta.<br><strong>Tiri Salvezza:</strong> Forza, Destrezza.<br><strong>Abilità:</strong> Scegli 2 abilità tra Acrobazia, Atletica, Furtività, Insight, Religione, Storia."
+    },
+    {
+      "name": "Difesa Senza Armatura",
+      "level": 1,
+      "description": "Fintanto che non indossi alcuna armatura e non impugni uno scudo, la tua Classe Armatura è pari a **10 + Modificatore di Destrezza + Modificatore di Saggezza**."
+    },
+    {
+      "name": "Arti Marziali",
+      "level": 1,
+      "description": "La tua maestria nel combattimento a mani nude e con le armi da monaco ti garantisce i seguenti benefici:<br>• Puoi usare la **Destrezza** anziché la Forza per i tiri per colpire e per i danni dei tuoi colpi senz'armi e delle armi da monaco.<br>• Puoi tirare un **d6** (che aumenta ai livelli superiori) al posto del normale danno del tuo colpo senz'armi o arma da monaco.<br>• Quando usi l'azione di Attacco con un colpo senz'armi o un'arma da monaco, puoi effettuare un **colpo senz'armi aggiuntivo come Azione Bonus**."
+    },
+    {
+      "name": "Punti Focus e Disciplina Monastica",
+      "level": 2,
+      "description": "Accedi a una riserva speciale di **Punti Focus** (pari al tuo livello da Monaco) che si ricaricano al termine di un riposo breve o lungo. Puoi spendere Punti Focus per attivare varie abilità:<br>• <strong>Raffica di Colpi (Flurry of Blows):</strong> Spendi 1 Punto Focus per effettuare due colpi senz'armi come Azione Bonus.<br>• <strong>Pazienza della Difesa (Patient Defense):</strong> Spendi 1 Punto Focus per usare l'azione di Schivata come Azione Bonus (oppure usarla gratuitamente senza spendere punti).<br>• <strong>Passo del Vento (Step of the Wind):</strong> Spendi 1 Punto Focus per usare Disimpegno e Scatto insieme come Azione Bonus e raddoppiare la distanza di salto."
+    },
+    {
+      "name": "Metabolismo Prodigioso (Uncanny Metabolism)",
+      "level": 2,
+      "description": "Quando tiri l'Iniziativa, puoi ricaricare immediatamente tutti i tuoi **Punti Focus** spesi e recuperare Punti Ferita pari a un tiro del tuo dado Arti Marziali + il tuo livello da Monaco. Una volta utilizzato questo privilegio, non puoi più farlo fino a quando non completi un riposo lungo."
+    },
+    {
+      "name": "Deviazione Attacchi (Deflect Attacks)",
+      "level": 3,
+      "description": "Quando vieni colpito da un attacco con arma a gittata o da mischia che infligge danni contundenti, perforanti o taglienti, puoi usare la tua **Reazione** per ridurre il danno di **1d10 + Mod. Destrezza + Livello da Monaco**.<br>Se riduci il danno a 0, puoi spendere 1 Punto Focus per reindirizzare l'attacco verso una creatura entro 18 metri (se a gittata) o entro la tua portata (se in mischia)."
+    },
+    {
+      "name": "Sottoclasse del Monaco",
+      "level": 3,
+      "description": "Scegli una tradizione monastica (es. Via della Mano Aperta, Via dell'Ombra, Via degli Elementi, Via della Spezzacatene/Mercy). Ottieni privilegi ai livelli 3, 6, 11 e 17."
+    },
+    {
+      "name": "Attacco Extra",
+      "level": 5,
+      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+    },
+    {
+      "name": "Colpo Stordente (Stunning Strike)",
+      "level": 5,
+      "description": "Una volta per turno, quando colpisci una creatura con un colpo senz'armi o un'arma da monaco, puoi spendere 1 Punto Focus per tentare di stordirla. Il bersaglio deve superare un tiro salvezza su Costituzione (CD = 8 + Bonus Comp. + Mod. Saggezza) o rimanere **Stordito** fino all'inizio del tuo turno successivo. Se supera il tiro salvezza, la sua velocità è comunque dimezzata fino al tuo turno successivo."
+    },
+    {
+      "name": "Colpi Imbevuti di Focus (Empowered Strikes)",
+      "level": 6,
+      "description": "I tuoi colpi senz'armi contano come magici ai fini di superare resistenze e immunità. Inoltre, puoi scegliere di far infliggere ai tuoi colpi senz'armi **Danni Radiosi o della Forza** anziché contundenti."
+    },
+    {
+      "name": "Evasione (Evasion)",
+      "level": 7,
+      "description": "Quando sei soggetto a un effetto che ti permette di effettuare un tiro salvezza su Destrezza per dimezzare il danno (es. *Palla di Fuoco*), subisci **nessun danno** se superi il tiro salvezza, e solo **metà danno** se lo fallisci."
+    },
+    {
+      "name": "Deviazione di Energia (Deflect Energy)",
+      "level": 13,
+      "description": "Il tuo privilegio *Deviazione Attacchi* ora funziona contro **qualsiasi tipo di danno** (compresi danni da fuoco, freddo, acido, fulmine, radiosi, ecc.), permettendoti di ridurre e reindirizzare attacchi magici o elementi ad area."
+    },
+    {
+      "name": "Disciplina Inamovibile (Disciplined Survivor)",
+      "level": 14,
+      "description": "Ottieni competenza in **tutti i Tiri Salvezza**. Inoltre, ogni volta che fallisci un tiro salvezza, puoi spendere 1 Punto Focus per ritirarlo e tenere il nuovo risultato."
+    },
+    {
+      "name": "Apice del Corpo e della Mente (Body and Mind)",
+      "level": 20,
+      "description": "I tuoi punteggi di **Destrezza e Saggezza aumentano di 4**, e il loro massimo massimo possibile diventa **24**."
+    }
+  ]
+},
   {
-    "id": "paladin",
-    "name": "Paladin",
-    "name_it": "Paladino",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d10",
-    "primary_ability": "Forza & Carisma",
-    "saving_throws": ["Saggezza", "Carisma"],
-    "description_it": "Un guerriero sacro legato a un giuramento solenne, capace di punire i malvagi con la Punizione Divina e proteggere i compagni.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Forza e Carisma<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma<br><strong>Tratti di Classe:</strong> Imposizione delle Mani, Incantesimi, Punizione Divina, Aura di Protezione."
-  },
+  "id": "paladin",
+  "name": "Paladin",
+  "name_it": "Paladino",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d10",
+  "primary_ability": "Forza e Carisma",
+  "saving_throws": ["Saggezza", "Carisma"],
+  "description_it": "Un guerriero sacro vincolato da un giuramento solenne, capace di combinare la maestria marziale con l'energia divina per proteggere i deboli e punire i malvagi.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Forza e Carisma<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma<br><strong>Tratti di Classe:</strong> Imposizione delle Mani, Incantesimi, Punire Divino (Divine Smite), Incanalare Divinità, Aura di Protezione.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Imposizione delle Mani (Lay on Hands)", "Incantesimi", "Sense Divine (Percezione Divina)", "Proprietà delle Armi (Weapon Mastery)"], "details": "2 Slot Lvl 1 | 2 Incantesimi Preparati" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Stile di Combattimento (Fighting Style)", "Punire Divino (Divine Smite)"], "details": "3 Slot Lvl 1 | 3 Incantesimi Preparati" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Paladino (Giuramento)", "Incanalare Divinità (Channel Divinity)"], "details": "4 Slot Lvl 1 | 4 Incantesimi Preparati" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot Lvl 1 | 5 Incantesimi Preparati" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Extra (Extra Attack)", "Cavaliere Fedele (Faithful Steed)"], "details": "4 Slot L1, 2 Slot L2 | 6 Incantesimi Preparati" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Aura di Protezione (Aura of Protection)"], "details": "4 Slot L1, 3 Slot L2 | 6 Incantesimi Preparati" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse (Aura del Giuramento)"], "details": "4 Slot L1, 3 Slot L2 | 7 Incantesimi Preparati" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2 | 7 Incantesimi Preparati" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Miglioramento Incanalare Divinità"], "details": "4 Slot L1, 3 Slot L2, 2 Slot L3 | 9 Incantesimi Preparati" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Aura di Coraggio (Aura of Courage)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3 | 9 Incantesimi Preparati" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Punire Radioso (Radiant Strikes)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3 | 10 Incantesimi Preparati" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3 | 10 Incantesimi Preparati" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 1 Slot L4 | 11 Incantesimi Preparati" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Tocco Purificante (Restoring Touch)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 1 Slot L4 | 11 Incantesimi Preparati" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4 | 12 Incantesimi Preparati" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4 | 12 Incantesimi Preparati" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Privilegio della Sottoclasse"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4, 1 Slot L5 | 14 Incantesimi Preparati" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Espansione delle Aure (Aura Expansion)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 1 Slot L5 | 14 Incantesimi Preparati" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5 | 15 Incantesimi Preparati" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Campione Divino (Truesight / Sottoclasse Avatar)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5 | 15 Incantesimi Preparati" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d10 per livello da Paladino.<br><strong>Armature:</strong> Tutte le armature (leggere, medie, pesanti), scudi.<br><strong>Armi:</strong> Armi semplici, armi da guerra.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma.<br><strong>Abilità:</strong> Scegli 2 abilità tra Atletica, Intimidire, Intuizione, Medicina, Persuasione, Religione."
+    },
+    {
+      "name": "Imposizione delle Mani (Lay on Hands)",
+      "level": 1,
+      "description": "Possiedi una riserva di potere curativo che si ricarica dopo un riposo lungo. Questa riserva contiene un numero di Punti Ferita pari a <strong>5 × livello da Paladino</strong>.<br>Come **Azione Bonus**, puoi toccare una creatura e ripristinare un numero a tua scelta di Punti Ferita dalla tua riserva. In alternativa, puoi spendere 5 Punti Ferita dalla riserva per curare la creatura da una condizione tra *Avvelenato*, *Accecato*, *Assordato* o *Paralizzato*."
+    },
+    {
+      "name": "Incantesimi e Caratteristica da Incantatore",
+      "level": 1,
+      "description": "Attingi alla magia divina attraverso il tuo giuramento e la tua devozione. Il **Carisma** è la tua caratteristica da incantatore.<br>• <strong>CD Tiro Salvezza:</strong> 8 + Bonus Comp. + Mod. Carisma<br>• <strong>Modificatore di Attacco Incantesimo:</strong> Bonus Comp. + Mod. Carisma"
+    },
+    {
+      "name": "Proprietà delle Armi (Weapon Mastery)",
+      "level": 1,
+      "description": "Ottieni l'accesso alla proprietà di maestria per due tipi di armi a tua scelta con cui sei competente (es. *Topple*, *Push*, *Cleave*). Puoi modificare le selezioni al termine di un riposo lungo."
+    },
+    {
+      "name": "Punire Divino (Divine Smite)",
+      "level": 2,
+      "description": "Hai sempre preparato l'incantesimo *Punire Divino (Divine Smite)* senza che conti per il limite di incantesimi preparati. Puoi anche lanciarlo una volta al giorno senza spendere slot incantesimo. Quando colpisci un bersaglio con un attacco con arma, puoi usare un'azione bonus per lanciare questo incantesimo e infliggere danni radiosi extra."
+    },
+    {
+      "name": "Stile di Combattimento (Fighting Style)",
+      "level": 2,
+      "description": "Ottieni un talento speciale di Stile di Combattimento (es. *Difesa*, *Duellare*, *Combattere con Armi Grandi*, *Protezione*)."
+    },
+    {
+      "name": "Incanalare Divinità (Channel Divinity)",
+      "level": 3,
+      "description": "Puoi incanalare energia divina per alimentare vari effetti magici forniti dal tuo Giuramento o dal privilegio base (es. *Incanalare Divinità: Punire Sacro* per recuperare slot o curare). Recuperi un uso a ogni riposo breve e tutti gli usi dopo un riposo lungo."
+    },
+    {
+      "name": "Sottoclasse del Paladino (Sacred Oath)",
+      "level": 3,
+      "description": "Sottoscrivi un Giuramento Sacro che ti vincola per sempre (es. Giuramento di Devozione, Giuramento degli Antichi, Giuramento di Vendetta, Giuramento di Gloria). Ottieni i privilegi della sottoclasse ai livelli 3, 7, 13 e 17."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 8, 12, 16 e 19."
+    },
+    {
+      "name": "Attacco Extra & Cavaliere Fedele",
+      "level": 5,
+      "description": "• <strong>Attacco Extra:</strong> Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco.<br>• <strong>Cavaliere Fedele:</strong> Hai sempre preparato l me l'incantesimo *Trova Cavalcatura (Find Steed)* senza conteggiarlo nel limite degli incantesimi preparati, e puoi lanciarlo una volta senza spendere slot."
+    },
+    {
+      "name": "Aura di Protezione (Aura of Protection)",
+      "level": 6,
+      "description": "Fintanto che non sei Incapacitato, tu e le creature alleate entro 3 metri da te aggiungete il tuo **modificatore di Carisma** (minimo +1) a tutti i tiri salvezza."
+    },
+    {
+      "name": "Aura di Coraggio (Aura of Courage)",
+      "level": 10,
+      "description": "Tu e gli alleati entro 3 metri da te non potete essere *Spaventati* fintanto che sei cosciente."
+    },
+    {
+      "name": "Punire Radioso (Radiant Strikes)",
+      "level": 11,
+      "description": "I tuoi colpi sono impregnati di potere divino. Ogni volta che colpisci una creatura con un'arma semplice o da guerra, l'attacco infligge **1d8 danni radiosi aggiuntivi**."
+    },
+    {
+      "name": "Tocco Purificante (Restoring Touch)",
+      "level": 14,
+      "description": "Quando usi *Imposizione delle Mani* su una creatura, puoi anche rimuovere una o più delle seguenti condizioni: *Affascinato*, *Spaventato*, *Stordito*."
+    },
+    {
+      "name": "Espansione delle Aure (Aura Expansion)",
+      "level": 18,
+      "description": "Il raggio d'azione di tutte le tue aure (Aura di Protezione, Aura di Coraggio e le aure della tua sottoclasse) aumenta da 3 metri a **9 metri**."
+    }
+  ]
+},
+ {
+  "id": "ranger",
+  "name": "Ranger",
+  "name_it": "Ranger",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d10",
+  "primary_ability": "Destrezza e Saggezza",
+  "saving_throws": ["Forza", "Destrezza"],
+  "description_it": "Un cacciatore esperto e protettore delle terre selvagge, maestro nell'uso delle armi, nella sopravvivenza e nella magia della natura.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Destrezza e Saggezza<br><strong>Tiri Salvezza:</strong> Forza, Destrezza<br><strong>Tratti di Classe:</strong> Nemico Prescelto, Incantesimi, Proprietà delle Armi (Weapon Mastery), Esploratore Esperto (Deft Explorer), Attacco Extra.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Nemico Prescelto (Favored Enemy)", "Incantesimi", "Proprietà delle Armi (Weapon Mastery)"], "details": "2 Slot Lvl 1 | 2 Incantesimi Preparati" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Stile di Combattimento (Fighting Style)", "Esploratore Esperto (Deft Explorer)"], "details": "3 Slot Lvl 1 | 3 Incantesimi Preparati" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Ranger"], "details": "4 Slot Lvl 1 | 4 Incantesimi Preparati" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot Lvl 1 | 5 Incantesimi Preparati" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Extra (Extra Attack)"], "details": "4 Slot L1, 2 Slot L2 | 6 Incantesimi Preparati" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Passo Veloce (Roving)"], "details": "4 Slot L1, 3 Slot L2 | 6 Incantesimi Preparati" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse"], "details": "4 Slot L1, 3 Slot L2 | 7 Incantesimi Preparati" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2 | 7 Incantesimi Preparati" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Miglioramento Nemico Prescelto"], "details": "4 Slot L1, 3 Slot L2, 2 Slot L3 | 9 Incantesimi Preparati" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Mimetismo (Tireless)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3 | 9 Incantesimi Preparati" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Privilegio della Sottoclasse"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3 | 10 Incantesimi Preparati" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3 | 10 Incantesimi Preparati" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Velo della Natura (Nature's Veil)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 1 Slot L4 | 11 Incantesimi Preparati" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Miglioramento Nemico Prescelto"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 1 Slot L4 | 11 Incantesimi Preparati" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4 | 12 Incantesimi Preparati" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4 | 12 Incantesimi Preparati" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Miglioramento Nemico Prescelto"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 2 Slot L4, 1 Slot L5 | 14 Incantesimi Preparati" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Sensi Selvaggi (Feral Senses)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 1 Slot L5 | 14 Incantesimi Preparati" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5 | 15 Incantesimi Preparati" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Cacciatore Intramontabile (Foe Slayer)"], "details": "4 Slot L1, 3 Slot L2, 3 Slot L3, 3 Slot L4, 2 Slot L5 | 15 Incantesimi Preparati" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d10 per livello da Ranger.<br><strong>Armature:</strong> Armature leggere, armature medie, scudi.<br><strong>Armi:</strong> Armi semplici, armi da guerra.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Forza, Destrezza.<br><strong>Abilità:</strong> Scegli 3 abilità tra Addestrare Animali, Atletica, Furtività, Indagare, Intuizione, Natura, Percezione, Sopravvivenza."
+    },
+    {
+      "name": "Nemico Prescelto (Favored Enemy)",
+      "level": 1,
+      "description": "Hai sempre preparato l'incantesimo <em>Marchio del Cacciatore (Hunter's Mark)</em> senza che questo conti per il limite dei tuoi incantesimi preparati. Puoi lanciarlo un numero di volte pari al tuo bonus di competenza senza spendere slot incantesimo (recuperi gli utilizzi con un riposo lungo)."
+    },
+    {
+      "name": "Incantesimi e Caratteristica da Incantatore",
+      "level": 1,
+      "description": "Utilizzi la magia divina attinta dalla natura. La **Saggezza** è la tua caratteristica da incantatore per gli incantesimi da Ranger.<br>• <strong>CD Tiro Salvezza:</strong> 8 + Bonus Comp. + Mod. Saggezza<br>• <strong>Modificatore di Attacco Incantesimo:</strong> Bonus Comp. + Mod. Saggezza"
+    },
+    {
+      "name": "Proprietà delle Armi (Weapon Mastery)",
+      "level": 1,
+      "description": "Ottieni l'accesso alla proprietà di maestria per due tipi di armi a tua scelta con cui sei competente (es. *Slow*, *Vex*, *Push*). Puoi cambiare la tua selezione al termine di un riposo lungo."
+    },
+    {
+      "name": "Stile di Combattimento (Fighting Style)",
+      "level": 2,
+      "description": "Ottieni un talento speciale di Stile di Combattimento (es. *Tiro con l'Arco*, *Combattere con Due Armi*, *Duellare*, *Difesa*)."
+    },
+    {
+      "name": "Esploratore Esperto (Deft Explorer)",
+      "level": 2,
+      "description": "Scegli una delle tue competenze nelle abilità: ottieni **Maestria** in quell'abilità (raddoppi il tuo bonus di competenza per le relative prove). Inoltre, conosci due lingue aggiuntive a tua scelta."
+    },
+    {
+      "name": "Sottoclasse del Ranger (Ranger Archetype)",
+      "level": 3,
+      "description": "Scegli un archetipo da Ranger (es. Cacciatore, Signore delle Bestie, Viandante dell'Ombra, Guardiano Fatato). Ottieni i privilegi della sottoclasse ai livelli 3, 7, 11 e 15."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 8, 12, 16 e 19."
+    },
+    {
+      "name": "Attacco Extra (Extra Attack)",
+      "level": 5,
+      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+    },
+    {
+      "name": "Passo Veloce (Roving)",
+      "level": 6,
+      "description": "La tua velocità di movimento aumenta di 3 metri mentre non indossi un'armatura pesante. Inoltre, ottieni una velocità di **Scalata** e di **Nuoto** pari alla tua velocità di movimento attuale."
+    },
+    {
+      "name": "Mimetismo (Tireless)",
+      "level": 10,
+      "description": "Come azione bonus, puoi conferire a te stesso punti ferita temporanei pari a 1d8 + il tuo modificatore di Saggezza (recuperi gli usi con un riposo lungo). Inoltre, ogni volta che completi un riposo breve, il tuo livello di sfinimento (se ne hai) viene ridotto di 1."
+    },
+    {
+      "name": "Velo della Natura (Nature's Veil)",
+      "level": 13,
+      "description": "Puoi invocare gli spiriti della natura per mimetizzarti all'istante. Come azione bonus, puoi diventare **Invisibile** fino alla fine del tuo turno successivo. Puoi usare questo privilegio un numero di volte pari al tuo bonus di competenza (recuperi gli usi dopo un riposo lungo)."
+    },
+    {
+      "name": "Sensi Selvaggi (Feral Senses)",
+      "level": 18,
+      "description": "I tuoi sensi sono straordinariamente acuti. Ottieni **Vista Cieca** entro un raggio di 9 metri. Inoltre, non hai svantaggio nei tiri per colpire contro creature che non puoi vedere."
+    },
+    {
+      "name": "Cacciatore Intramontabile (Foe Slayer)",
+      "level": 20,
+      "description": "Il dado di danno del tuo *Marchio del Cacciatore (Hunter's Mark)* aumenta da un d6 a un **d10**. Inoltre, una volta in ciascuno dei tuoi turni, puoi aggiungere il tuo modificatore di Saggezza al tiro per colpire o al tiro per i danni effettuato contro il bersaglio del tuo marchio."
+    }
+  ]
+},
   {
-    "id": "ranger",
-    "name": "Ranger",
-    "name_it": "Cacciatore (Ranger)",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d10",
-    "primary_ability": "Destrezza & Saggezza",
-    "saving_throws": ["Forza", "Destrezza"],
-    "description_it": "Un cacciatore ed esploratore esperto della natura selvaggia che combina abilità di tracciamento, magia naturale e maestria con le armi.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Destrezza e Saggezza<br><strong>Tiri Salvezza:</strong> Forza, Destrezza<br><strong>Tratti di Classe:</strong> Nemico Prescelto, Incantesimi, Esploratore Esperto, Stile di Combattimento."
-  },
+  "id": "rogue",
+  "name": "Rogue",
+  "name_it": "Ladro",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d8",
+  "primary_ability": "Destrezza",
+  "saving_throws": ["Destrezza", "Intelligenza"],
+  "description_it": "Un maestro della furtività, della precisione e dell'opportunismo, capace di individuare e sfruttare i punti deboli di ogni avversario o serratura.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Destrezza<br><strong>Tiri Salvezza:</strong> Destrezza, Intelligenza<br><strong>Tratti di Classe:</strong> Attacco Furtivo, Gergo dei Ladri, Maestria, Azione Scaltra, Colpo Scaltro (Cunning Strike).",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Attacco Furtivo (1d6)", "Gergo dei Ladri", "Maestria (2 abilità)", "Armi da Fuoco / Strumenti"], "details": "+1d6 Furtivo" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Azione Scaltra (Cunning Action)"], "details": "+1d6 Furtivo" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Ladro", "Attacco Furtivo (2d6)"], "details": "+2d6 Furtivo" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "+2d6 Furtivo" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Furtivo (3d6)", "Schivata Prodigiosa", "Colpo Scaltro (Cunning Strike)"], "details": "+3d6 Furtivo" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Maestria (2 abilità aggiuntive)"], "details": "+3d6 Furtivo" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Attacco Furtivo (4d6)", "Evasione", "Talento di Movimento"], "details": "+4d6 Furtivo" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "+4d6 Furtivo" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Attacco Furtivo (5d6)", "Privilegio della Sottoclasse"], "details": "+5d6 Furtivo" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "+5d6 Furtivo" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Attacco Furtivo (6d6)", "Talento Affinato (Reliable Talent)"], "details": "+6d6 Furtivo" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "+6d6 Furtivo" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Attacco Furtivo (7d6)", "Privilegio della Sottoclasse"], "details": "+7d6 Furtivo" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Percezione Cieca (Blindsense) / Sesto Senso"], "details": "+7d6 Furtivo" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Attacco Furtivo (8d6)", "Mente Sfuggente"], "details": "+8d6 Furtivo" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "+8d6 Furtivo" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Attacco Furtivo (9d6)", "Privilegio della Sottoclasse"], "details": "+9d6 Furtivo" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Elusività"], "details": "+9d6 Furtivo" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Attacco Furtivo (10d6)", "Aumento dei Punteggi di Caratteristica"], "details": "+10d6 Furtivo" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Colpo di Fortuna (Strike of Luck)"], "details": "+10d6 Furtivo" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d8 per livello da Ladro.<br><strong>Armature:</strong> Armature leggere.<br><strong>Armi:</strong> Armi semplici, armi con la proprietà 'Accurata' o 'Leggera' (tra cui stocco, spada corta, scimitarra, balestra leggera, arco corto).<br><strong>Strumenti:</strong> Attrezzi da Scasso.<br><strong>Tiri Salvezza:</strong> Destrezza, Intelligenza.<br><strong>Abilità:</strong> Scegli 4 abilità tra Acrobazia, Atletica, Furtività, Indagare, Intimidire, Intrattenere, Intuizione, Inganno, Percezione, Persuasione e Rapidità di Mano."
+    },
+    {
+      "name": "Attacco Furtivo (Sneak Attack)",
+      "level": 1,
+      "description": "Una volta per turno, puoi infliggere danni extra a una creatura che colpisci con un attacco se hai vantaggio al tiro per colpire oppure se un altro nemico del bersaglio si trova entro 1,5 metri da esso (e tu non hai svantaggio). L'attacco deve usare un'arma accurata o a gittata. La quantità di danni extra aumenta con il livello, come mostrato nella tabella."
+    },
+    {
+      "name": "Gergo dei Ladri (Thieves' Cant) & Maestria",
+      "level": 1,
+      "description": "• <strong>Gergo dei Ladri:</strong> Conosci il codice segreto dei ladri per nascondere messaggi in conversazioni apparentemente normali.<br>• <strong>Maestria (Expertise):</strong> Scegli due delle tue competenze nelle abilità o negli attrezzi da scasso. Il tuo bonus di competenza viene raddoppiato per qualsiasi prova di abilità che utilizzi una delle competenze scelte. (Ne ottieni altre due al livello 6)."
+    },
+    {
+      "name": "Azione Scaltra (Cunning Action)",
+      "level": 2,
+      "description": "Il tuo pensiero rapido e la tua agilità ti permettono di agire più velocemente. Puoi usare un'azione bonus in ciascuno dei tuoi turni in combattimento per effettuare l'azione di **Disimpegno**, **Nascosto** o **Scatto**."
+    },
+    {
+      "name": "Sottoclasse del Ladro (Rogue Archetype)",
+      "level": 3,
+      "description": "Scegli un archetipo da Ladro (es. Assassino, Furfante, Mistico Arcano, Spadaccino). Ottieni i privilegi della sottoclasse ai livelli 3, 9, 13 e 17."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 8, 10, 12, 16 e 19."
+    },
+    {
+      "name": "Schivata Prodigiosa (Uncanny Dodge)",
+      "level": 5,
+      "description": "Quando un attaccante che puoi vedere ti colpisce con un attacco, puoi usare la tua reazione per dimezzare il danno che quell'attacco ti infligge."
+    },
+    {
+      "name": "Colpo Scaltro (Cunning Strike)",
+      "level": 5,
+      "description": "Hai sviluppato tecniche per sacrificare i danni del tuo Attacco Furtivo per applicare effetti di controllo o tattici. Quando metti a segno un Attacco Furtivo, puoi rinunciare a uno o più dadi d6 di danno per applicare una delle seguenti opzioni (CD = 8 + Mod. Destrezza + Bonus Comp.):<br>• <strong>Avvelenare (Costa 1d6):</strong> Il bersaglio deve superare un TS su Costituzione o essere Avvelenato per 1 minuto.<br>• <strong>Inciampare (Costa 1d6):</strong> Se il bersaglio è di taglia Grande o inferiore, deve superare un TS su Destrezza o cadere A Terra.<br>• <strong>Spostamento (Costa 1d6):</strong> Puoi muoverti fino a metà della tua velocità immediatamente dopo l'attacco senza provocare attacchi d'opportunità."
+    },
+    {
+      "name": "Evasione (Evasion)",
+      "level": 7,
+      "description": "Puoi schivare agilmente gli effetti ad area. Quando sei soggetto a un effetto che ti permette di effettuare un tiro salvezza su Destrezza per dimezzare il danno, non subisci alcun danno se superi il tiro salvezza, e soltanto la metà dei danni se lo fallisci."
+    },
+    {
+      "name": "Talento Affinato (Reliable Talent)",
+      "level": 11,
+      "description": "Hai affinato le tue abilità fino quasi alla perfezione. Ogni volta che effettui una prova di abilità che utilizza il tuo bonus di competenza, puoi considerare un risultato del d20 pari a 9 o inferiore come un 10."
+    },
+    {
+      "name": "Mente Sfuggente (Slippery Mind)",
+      "level": 15,
+      "description": "La tua forza mentale è quasi incrollabile. Ottieni la competenza nei tiri salvezza su **Saggezza** e **Carisma**."
+    },
+    {
+      "name": "Elusività (Elusive)",
+      "level": 18,
+      "description": "Sei così agile che gli avversari raramente riescono ad avere il sopravvento su di te. Nessun tiro per colpire effettuato contro di te può avere vantaggio, a meno che tu non sia Incapacitato."
+    },
+    {
+      "name": "Colpo di Fortuna (Stroke of Luck)",
+      "level": 20,
+      "description": "Hai una straordinaria capacità di strappare il successo dalla sconfitta. Se il tuo attacco manca un bersaglio entro la gittata, puoi trasformare il mancato colpo in un colpo a segno. In alternativa, se fallisci una prova di abilità, puoi considerare il tiro del d20 come un 20 naturale. Una volta utilizzato questo privilegio, non puoi riutilizzarlo fino al termine di un riposo breve o lungo."
+    }
+  ]
+},
   {
-    "id": "rogue",
-    "name": "Rogue",
-    "name_it": "Ladro",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d8",
-    "primary_ability": "Destrezza",
-    "saving_throws": ["Destrezza", "Intelligenza"],
-    "description_it": "Un combattente agile e scaltro specializzato nel colpire i punti deboli dei nemici con l'Attacco Furtivo e nel superare qualsiasi ostacolo.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Destrezza<br><strong>Tiri Salvezza:</strong> Destrezza, Intelligenza<br><strong>Tratti di Classe:</strong> Attacco Furtivo, Gergo dei Ladri, Azione Scaltra, Maestria."
-  },
+  "id": "sorcerer",
+  "name": "Sorcerer",
+  "name_it": "Stregone",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d6",
+  "primary_ability": "Carisma",
+  "saving_throws": ["Costituzione", "Carisma"],
+  "description_it": "Un incantatore innato che trae il suo potere da una magia innata, da una stirpe draconica o da eventi cosmici straordinari.<br><br><strong>Dado Vita:</strong> d6<br><strong>Caratteristica Primaria:</strong> Carisma<br><strong>Tiri Salvezza:</strong> Costituzione, Carisma<br><strong>Tratti di Classe:</strong> Magia Innata, Metamagia, Fonte di Magia, Incantesimi Focalizzati.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Incantesimi", "Magia Innata", "Stirpe Magica"], "details": "4 Trucchetti, 2 Incantesimi Conosciuti, 2 Slot Liv. 1" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Fonte di Magia", "Metamagia (2 opzioni)"], "details": "2 Punti Stregoneria, 3 Incantesimi Conosciuti, 3 Slot Liv. 1" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse dello Stregone"], "details": "3 Punti Stregoneria, 4 Incantesimi Conosciuti, Slot Liv. 2" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Punti Stregoneria, 5 Incantesimi Conosciuti" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Guida Stregonesca"], "details": "5 Punti Stregoneria, 6 Incantesimi Conosciuti, Slot Liv. 3" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse"], "details": "6 Punti Stregoneria, 7 Incantesimi Conosciuti" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Incantesimi di 4° Livello"], "details": "7 Punti Stregoneria, 8 Incantesimi Conosciuti, Slot Liv. 4" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "8 Punti Stregoneria, 9 Incantesimi Conosciuti" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Incantesimi di 5° Livello"], "details": "9 Punti Stregoneria, 10 Incantesimi Conosciuti, Slot Liv. 5" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Metamagia (3ª opzione)"], "details": "10 Punti Stregoneria, 11 Incantesimi Conosciuti" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Incantesimi di 6° Livello"], "details": "11 Punti Stregoneria, 12 Incantesimi Conosciuti, Slot Liv. 6" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "12 Punti Stregoneria, 12 Incantesimi Conosciuti" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Incantesimi di 7° Livello"], "details": "13 Punti Stregoneria, 13 Incantesimi Conosciuti, Slot Liv. 7" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "14 Punti Stregoneria, 13 Incantesimi Conosciuti" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Incantesimi di 8° Livello"], "details": "15 Punti Stregoneria, 14 Incantesimi Conosciuti, Slot Liv. 8" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "16 Punti Stregoneria, 14 Incantesimi Conosciuti" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Incantesimi di 9° Livello", "Metamagia (4ª opzione)"], "details": "17 Punti Stregoneria, 15 Incantesimi Conosciuti, Slot Liv. 9" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Privilegio della Sottoclasse"], "details": "18 Punti Stregoneria, 15 Incantesimi Conosciuti" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "19 Punti Stregoneria, 15 Incantesimi Conosciuti" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Apoteosi Stregonesca (Sorcerous Apotheosis)"], "details": "20 Punti Stregoneria, 15 Incantesimi Conosciuti" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d6 per livello da Stregone.<br><strong>Armature:</strong> Nessuna.<br><strong>Armi:</strong> Armi semplici.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Costituzione, Carisma.<br><strong>Abilità:</strong> Scegli due abilità tra Arcano, Inganno, Intimidire, Intuizione, Persuasione e Religione."
+    },
+    {
+      "name": "Incantesimi (Spellcasting)",
+      "level": 1,
+      "description": "La tua natura magica ti permette di lanciare incantesimi da Stregone. Conosci 4 trucchetti e 2 incantesimi di 1° livello. Usi il Carisma come caratteristica da incantatore per determinare la CD dei tiri salvezza dei tuoi incantesimi (8 + Bonus Competenza + Modificatore Carisma) e il bonus al tiro per colpire."
+    },
+    {
+      "name": "Magia Innata (Innately Sorcerous)",
+      "level": 1,
+      "description": "Come azione bonus, puoi risvegliare la potenza magica entro di te per 1 minuto. Durante questo periodo, ottieni vantaggio ai tiri per colpire con i tuoi incantesimi da Stregone e la CD dei tuoi tiri salvezza aumenta di 1. Puoi usare questo privilegio 2 volte per riposo lungo."
+    },
+    {
+      "name": "Fonte di Magia (Font of Magic)",
+      "level": 2,
+      "description": "Ottieni l'accesso ai **Punti Stregoneria** (pari al tuo livello da Stregone). Puoi convertire i punti in slot incantesimo e viceversa come azione bonus:<br>• <strong>Creare Slot:</strong> 1° liv (2 pti), 2° liv (3 pti), 3° liv (5 pti), 4° liv (6 pti), 5° liv (7 pti).<br>• <strong>Convertire Slot:</strong> Trasforma uno slot incantesimo inutilizzato in Punti Stregoneria pari al livello dello slot."
+    },
+    {
+      "name": "Metamagia (Metamagic)",
+      "level": 2,
+      "description": "Puoi piegare gli incantesimi alle tue esigenze spendendo Punti Stregoneria. Scegli 2 opzioni al livello 2 (altre a liv. 10 e 17):<br>• <strong>Incantesimo Celato (1 pt):</strong> Nessun componente verbale o somatico.<br>• <strong>Incantesimo Raddoppiato (Punti = liv. incantesimo):</strong> Bersaglia un secondo bersaglio.<br>• <strong>Incantesimo Esteso (1 pt):</strong> Raddoppia la durata.<br>• <strong>Incantesimo Potenziato (1 pt):</strong> Ritira un numero di dadi danno fino al tuo mod. Carisma.<br>• <strong>Incantesimo Rapido (2 pti):</strong> Cambia il tempo di lancio da 1 azione a 1 azione bonus."
+    },
+    {
+      "name": "Sottoclasse dello Stregone (Sorcerous Origin)",
+      "level": 3,
+      "description": "Scegli l'origine della tua magia (es. Stirpe Draconica, Magia Selvaggia, Anima Favorevole, Aberrante). Ottieni i privilegi della sottoclasse ai livelli 3, 6, 14 e 18."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 8, 12, 16 e 19."
+    },
+    {
+      "name": "Guida Stregonesca (Sorcerous Vitality)",
+      "level": 5,
+      "description": "Quando incanalati bene, i tuoi Punti Stregoneria possono stabilizzare la tua salute. Quando spendi Punti Stregoneria per lanciare o modificare un incantesimo, puoi anche recuperare un numero di Punti Ferita pari ai punti spendibili x 2."
+    },
+    {
+      "name": "Apoteosi Stregonesca (Sorcerous Apotheosis)",
+      "level": 20,
+      "description": "Mentre la tua Magia Innata è attiva, puoi applicare una delle tue opzioni di Metamagia a un incantesimo senza spendere Punti Stregoneria una volta in ciascuno dei tuoi turni."
+    }
+  ]
+},
   {
-    "id": "sorcerer",
-    "name": "Sorcerer",
-    "name_it": "Stregone",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d6",
-    "primary_ability": "Carisma",
-    "saving_throws": ["Costituzione", "Carisma"],
-    "description_it": "Un incantatore la cui magia nasce da un dono innato, un retaggio draconico o una benedizione cosmica, modificabile tramite la Metamagia.<br><br><strong>Dado Vita:</strong> d6<br><strong>Caratteristica Primaria:</strong> Carisma<br><strong>Tiri Salvezza:</strong> Costituzione, Carisma<br><strong>Tratti di Classe:</strong> Incantesimi, Magia Innata, Punti Stregoneria, Metamagia."
-  },
+  "id": "warlock",
+  "name": "Warlock",
+  "name_it": "Warlock",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d8",
+  "primary_ability": "Carisma",
+  "saving_throws": ["Saggezza", "Carisma"],
+  "description_it": "Un incantatore legato da un patto a un'entità extraplanare superiore, capace di attingere a segreti proibiti, potenti suppliche e una magia peculiare ricaricabile a breve termine.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Carisma<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma<br><strong>Tratti di Classe:</strong> Magia del Patrono, Suppliche Arcane, Patrono Magico, Arcanum Mistico.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Magia del Patrono", "Patrono Magico", "Suppliche Arcane (1)"], "details": "2 Trucchetti, 2 Incantesimi Conosciuti, 1 Slot Liv. 1, 1 Supplica" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Magia Fluida", "Suppliche Arcane (2)"], "details": "2 Trucchetti, 3 Incantesimi Conosciuti, 2 Slot Liv. 1, 2 Suppliche" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Warlock", "Dono del Patto"], "details": "2 Trucchetti, 4 Incantesimi Conosciuti, 2 Slot Liv. 2, 2 Suppliche" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "3 Trucchetti, 5 Incantesimi Conosciuti, 2 Slot Liv. 2, 2 Suppliche" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Incantesimi di 3° Livello", "Suppliche Arcane (3)"], "details": "3 Trucchetti, 6 Incantesimi Conosciuti, 2 Slot Liv. 3, 3 Suppliche" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse"], "details": "3 Trucchetti, 7 Incantesimi Conosciuti, 2 Slot Liv. 3, 3 Suppliche" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Incantesimi di 4° Livello", "Suppliche Arcane (4)"], "details": "3 Trucchetti, 8 Incantesimi Conosciuti, 2 Slot Liv. 4, 4 Suppliche" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "3 Trucchetti, 9 Incantesimi Conosciuti, 2 Slot Liv. 4, 4 Suppliche" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Incantesimi di 5° Livello", "Suppliche Arcane (5)"], "details": "3 Trucchetti, 10 Incantesimi Conosciuti, 2 Slot Liv. 5, 5 Suppliche" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Privilegio della Sottoclasse"], "details": "4 Trucchetti, 10 Incantesimi Conosciuti, 2 Slot Liv. 5, 5 Suppliche" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Arcanum Mistico (6° livello)"], "details": "4 Trucchetti, 11 Incantesimi Conosciuti, 3 Slot Liv. 5, 5 Suppliche" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica", "Suppliche Arcane (6)"], "details": "4 Trucchetti, 11 Incantesimi Conosciuti, 3 Slot Liv. 5, 6 Suppliche" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Arcanum Mistico (7° livello)"], "details": "4 Trucchetti, 12 Incantesimi Conosciuti, 3 Slot Liv. 5, 6 Suppliche" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "4 Trucchetti, 12 Incantesimi Conosciuti, 3 Slot Liv. 5, 6 Suppliche" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Arcanum Mistico (8° livello)", "Suppliche Arcane (7)"], "details": "4 Trucchetti, 13 Incantesimi Conosciuti, 3 Slot Liv. 5, 7 Suppliche" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti, 13 Incantesimi Conosciuti, 3 Slot Liv. 5, 7 Suppliche" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Arcanum Mistico (9° livello)"], "details": "4 Trucchetti, 14 Incantesimi Conosciuti, 4 Slot Liv. 5, 7 Suppliche" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Suppliche Arcane (8)"], "details": "4 Trucchetti, 14 Incantesimi Conosciuti, 4 Slot Liv. 5, 8 Suppliche" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti, 15 Incantesimi Conosciuti, 4 Slot Liv. 5, 8 Suppliche" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Maestro Magico (Eldritch Master)"], "details": "4 Trucchetti, 15 Incantesimi Conosciuti, 4 Slot Liv. 5, 8 Suppliche" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d8 per livello da Warlock.<br><strong>Armature:</strong> Armature leggere.<br><strong>Armi:</strong> Armi semplici.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma.<br><strong>Abilità:</strong> Scegli due abilità tra Arcano, Storia, Intimidire, Indagare, Natura, Religione e Inganno."
+    },
+    {
+      "name": "Magia del Patrono (Pact Magic)",
+      "level": 1,
+      "description": "La tua ricerca arcana e il patto stringato ti concedono la capacità di lanciare incantesimi.<br>• <strong>Slot Incantesimo:</strong> Tutti i tuoi slot incantesimo sono dello stesso livello (indicato nella tabella). Tutti gli incantesimi vengono lanciati al livello massimo disponibile.<br>• <strong>Riposo Breve:</strong> Recuperi **tutti** i tuoi slot incantesimo spesi al termine di un riposo breve o lungo.<br>• <strong>Caratteristica da Incantatore:</strong> Usi il Carisma per la CD dei tiri salvezza (8 + Bonus Competenza + Modificatore Carisma) e per il tiro per colpire."
+    },
+    {
+      "name": "Suppliche Arcane (Eldritch Invocations)",
+      "level": 1,
+      "description": "Nelle tue ricerche hai scoperto le Suppliche Arcane, frammenti di conoscenza proibita che ti infondono capacità magiche permanenti o modificano i tuoi incantesimi (es. *Esplosione Agonizzante*, *Vista del Vuoto*). Ottieni ulteriori suppliche salendo di livello come indicato nella tabella di progressione."
+    },
+    {
+      "name": "Magia Fluida (Magical Cunning)",
+      "level": 2,
+      "description": "Puoi eseguire un rituale di 1 minuto per chiedere al tuo patrono di ripristinare metà dei tuoi slot incantesimo della Magia del Patrono (arrotondati per eccesso). Puoi utilizzare questo privilegio una volta per riposo lungo."
+    },
+    {
+      "name": "Sottoclasse e Dono del Patto (Pact Boon & Subclass)",
+      "level": 3,
+      "description": "Scegli il tuo patrono extraplanare (es. Il Immondo, La Fata Madrina, Il Grande Antico, Il Celestiale). Inoltre scegli un Dono del Patto tramite le Suppliche Arcane dedicate (Lama del Patto, Catena del Patto, Tomo del Patto)."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 8, 12, 16 e 19."
+    },
+    {
+      "name": "Arcanum Mistico (Mystic Arcanum)",
+      "level": 11,
+      "description": "Il tuo patrono ti concede un segreto magico chiamato Arcanum. Scegli un incantesimo da Warlock di 6° livello. Puoi lanciare il tuo incantesimo Arcanum una volta senza spendere slot incantesimo. Ripristini l'uso con un riposo lungo. Ottieni incantesimi Arcanum aggiuntivi ai livelli 13 (7° livello), 15 (8° livello) e 17 (9° livello)."
+    },
+    {
+      "name": "Maestro Magico (Eldritch Master)",
+      "level": 20,
+      "description": "Puoi attingere alla tua riserva interiore di potere per implorare il tuo patrono di ripristinare immediatamente tutti i tuoi slot incantesimo spesi della Magia del Patrono. Una volta usato questo privilegio, non puoi più riutilizzarlo fino a quando non completi un riposo lungo."
+    }
+  ]
+},
   {
-    "id": "warlock",
-    "name": "Warlock",
-    "name_it": "Warlock (Fattucchiere)",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d8",
-    "primary_ability": "Carisma",
-    "saving_throws": ["Saggezza", "Carisma"],
-    "description_it": "Un incantatore che ha stretto un patto con un'entità extraplanare (immondo, fata, grande antico) ottenendo incantesimi e Invocazioni Arcane.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Carisma<br><strong>Tiri Salvezza:</strong> Saggezza, Carisma<br><strong>Tratti di Classe:</strong> Magia del Patto, Invocazioni Arcane, Dono del Patto."
-  },
-  {
-    "id": "wizard",
-    "name": "Wizard",
-    "name_it": "Mago",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d6",
-    "primary_ability": "Intelligenza",
-    "saving_throws": ["Intelligenza", "Saggezza"],
-    "description_it": "Un supremo studioso delle arti arcane che apprende la magia attraverso lo studio dei libri e memorizza incantesimi devastanti.<br><br><strong>Dado Vita:</strong> d6<br><strong>Caratteristica Primaria:</strong> Intelligenza<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza<br><strong>Tratti di Classe:</strong> Incantesimi, Libro degli Incantesimi, Recupero Arcano, Scuola di Magia."
-  },
+  "id": "wizard",
+  "name": "Wizard",
+  "name_it": "Mago",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d6",
+  "primary_ability": "Intelligenza",
+  "saving_throws": ["Intelligenza", "Saggezza"],
+  "description_it": "Un saggio studioso in grado di manipolare la trama della realtà attraverso l'apprendimento rigoroso, la ricerca arcana e l'uso del suo fedele libro degli incantesimi.<br><br><strong>Dado Vita:</strong> d6<br><strong>Caratteristica Primaria:</strong> Intelligenza<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza<br><strong>Tratti di Classe:</strong> Incantesimi, Libro degli Incantesimi, Recupero Arcano, Sapienza Arcana.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Incantesimi", "Libro degli Incantesimi", "Recupero Arcano", "Rituali Arcani"], "details": "3 Trucchetti, 6 Incantesimi sul Libro, 2 Slot Liv. 1" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Sapienza Arcana", "Studio Magico"], "details": "3 Trucchetti, 8 Incantesimi sul Libro, 3 Slot Liv. 1" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse del Mago"], "details": "3 Trucchetti, 10 Incantesimi sul Libro, Slot Liv. 2" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti, 12 Incantesimi sul Libro" },
+    { "level": 5, "prof_bonus": "+3", "features": ["Incantesimi di 3° Livello"], "details": "4 Trucchetti, 14 Incantesimi sul Libro, Slot Liv. 3" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse"], "details": "4 Trucchetti, 16 Incantesimi sul Libro" },
+    { "level": 7, "prof_bonus": "+3", "features": ["Incantesimi di 4° Livello"], "details": "4 Trucchetti, 18 Incantesimi sul Libro, Slot Liv. 4" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "4 Trucchetti, 20 Incantesimi sul Libro" },
+    { "level": 9, "prof_bonus": "+4", "features": ["Incantesimi di 5° Livello"], "details": "4 Trucchetti, 22 Incantesimi sul Libro, Slot Liv. 5" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Privilegio della Sottoclasse"], "details": "5 Trucchetti, 24 Incantesimi sul Libro" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Incantesimi di 6° Livello"], "details": "5 Trucchetti, 26 Incantesimi sul Libro, Slot Liv. 6" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Trucchetti, 28 Incantesimi sul Libro" },
+    { "level": 13, "prof_bonus": "+5", "features": ["Incantesimi di 7° Livello"], "details": "5 Trucchetti, 30 Incantesimi sul Libro, Slot Liv. 7" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "5 Trucchetti, 32 Incantesimi sul Libro" },
+    { "level": 15, "prof_bonus": "+5", "features": ["Incantesimi di 8° Livello"], "details": "5 Trucchetti, 34 Incantesimi sul Libro, Slot Liv. 8" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Trucchetti, 36 Incantesimi sul Libro" },
+    { "level": 17, "prof_bonus": "+6", "features": ["Incantesimi di 9° Livello"], "details": "5 Trucchetti, 38 Incantesimi sul Libro, Slot Liv. 9" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Padronanza degli Incantesimi (Spell Mastery)"], "details": "5 Trucchetti, 40 Incantesimi sul Libro" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "5 Trucchetti, 42 Incantesimi sul Libro" },
+    { "level": 20, "prof_bonus": "+6", "features": ["Signature Spells (Incantesimi Firma)"], "details": "5 Trucchetti, 44 Incantesimi sul Libro" }
+  ],
+  "class_features": [
+    {
+      "name": "Competenze e Punti Ferita",
+      "level": 1,
+      "description": "<strong>Dado Vita:</strong> 1d6 per livello da Mago.<br><strong>Armature:</strong> Nessuna.<br><strong>Armi:</strong> Armi semplici.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza.<br><strong>Abilità:</strong> Scegli due abilità tra Arcano, Storia, Indagare, Intuizione, Medicina e Natura."
+    },
+    {
+      "name": "Incantesimi e Libro degli Incantesimi (Spellcasting & Spellbook)",
+      "level": 1,
+      "description": "Come studioso delle arti arcane, possiedi un Libro degli Incantesimi che al 1° livello contiene 6 incantesimi di 1° livello a tua scelta. Usi l'Intelligenza per determinare la CD dei tiri salvezza dei tuoi incantesimi (8 + Bonus Competenza + Modificatore Intelligenza) e il bonus al tiro per colpire.<br>• <strong>Preparare Incantesimi:</strong> Ogni giorno puoi preparare un numero di incantesimi pari alla lista indicata nella tabella di progressione dal tuo libro.<br>• <strong>Aggiungere Incantesimi:</strong> Ogni volta che sali di livello ottieni 2 nuovi incantesimi gratuiti sul tuo libro. Puoi anche trascrivere altri incantesimi trovati sotto forma di pergamene o libri spendendo tempo (2 ore per livello dell'incantesimo) e monete d'oro (50 mo per livello)."
+    },
+    {
+      "name": "Recupero Arcano (Arcane Recovery)",
+      "level": 1,
+      "description": "Una volta al giorno, al termine di un riposo breve, puoi recuperare alcuni slot incantesimo spesi. La somma dei livelli degli slot recuperati deve essere pari o inferiore a metà del tuo livello da Mago (arrotondato per eccesso) e nessuno slot può essere di 6° livello o superiore."
+    },
+    {
+      "name": "Rituali Arcani (Ritual Casting)",
+      "level": 1,
+      "description": "Puoi lanciare qualsiasi incantesimo dal tuo Libro degli Incantesimi come rituale, a patto che abbia il tag 'Rituale'. Non è necessario che l'incantesimo sia tra quelli preparati per la giornata."
+    },
+    {
+      "name": "Sapienza Arcana (Scholar)",
+      "level": 2,
+      "description": "La tua dedizione allo studio ti garantisce competenza in un'abilità a scelta tra Arcano, Storia, Indagare, Natura o Medicina. Se possiedi già la competenza nell'abilità scelta, ottieni la Maestria (raddoppi il tuo bonus di competenza nelle prove che la utilizzano)."
+    },
+    {
+      "name": "Sottoclasse del Mago (Wizard Arcane Tradition)",
+      "level": 3,
+      "description": "Scegli una scuola di specializzazione arcana (es. Abjuratore, Evocatore, Illusionista, Divinatore). Ottieni i privilegi della sottoclasse ai livelli 3, 6, 10 e 14."
+    },
+    {
+      "name": "Aumento dei Punteggi di Caratteristica / Talento",
+      "level": 4,
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 8, 12, 16 e 19."
+    },
+    {
+      "name": "Padronanza degli Incantesimi (Spell Mastery)",
+      "level": 18,
+      "description": "Hai raggiunto una padronanza tale da poter lanciare due incantesimi a volontà. Scegli un incantesimo di 1° livello e uno di 2° livello presenti nel tuo libro. Puoi lanciare questi due incantesimi al loro livello base senza spendere slot incantesimo quando li hai preparati."
+    },
+    {
+      "name": "Incantesimi Firma (Signature Spells)",
+      "level": 20,
+      "description": "Scegli due incantesimi di 3° livello presenti nel tuo libro degli incantesimi come tuoi incantesimi firma. Li hai sempre preparati, non contano ai fini del numero massimo di incantesimi preparabili e puoi lanciare ciascuno di essi una volta al livello 3 senza spendere uno slot incantesimo. Ripristini questo uso con un riposo breve o lungo."
+    }
+  ]
+},
   {
     "id": "sub_barbarian_wildheart",
     "name": "Path of the Wild Heart (Totem Warrior)",
