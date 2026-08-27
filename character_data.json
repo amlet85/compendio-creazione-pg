@@ -1426,15 +1426,44 @@
   ]
 },
   {
-    "id": "sub_barbarian_wildheart",
-    "name": "Path of the Wild Heart (Totem Warrior)",
-    "name_it": "Cammino del Cuore Selvaggio (ex Guerriero Totemico)",
-    "class": "Barbarian",
-    "class_it": "Barbaro",
-    "type": "sottoclasse",
-    "source_it": "Manuale del Giocatore 2024",
-    "description_it": "Incani la forza spirituale degli animali della natura per proteggere gli alleati e caricare i nemici.<br><br><strong>Tratti Chiave:</strong> Spirito Guida, Aspetto Bestiale, Potenza della Natura."
-  },
+  "id": "subclass_barbarian_wild_heart",
+  "class_id": "barbarian",
+  "name": "Path of the Wild Heart",
+  "name_it": "Cammino del Cuore Selvaggio",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d12",
+  "primary_ability": "Forza",
+  "saving_throws": ["Forza", "Costituzione"],
+  "description_it": "Un guerriero in profonda sintonia con il mondo naturale e gli spiriti animali, capace di attingere alle loro caratteristiche per adattare la propria furia alle necessità del combattimento e dell'esplorazione.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Parlare con gli Animali, Ira del Cuore Selvaggio, Aspetto della Natura, Potenza della Natura.",
+  "features": [
+    {
+      "name": "Parlare con gli Animali (Animal Speaker)",
+      "level": 3,
+      "description": "Puoi lanciare gli incantesimi *Parlare con gli Animali (Beast Sense)* e *Sintonia con la Natura (Speak with Animals)* come **Rituali**, usando la Saggezza come caratteristica da incantatore."
+    },
+    {
+      "name": "Ira del Cuore Selvaggio (Rage of the Wild Heart)",
+      "level": 3,
+      "description": "Ogni volta che **attivi la tua Ira**, scegli una delle seguenti opzioni animali per modificarne i benefici (puoi cambiare opzione ogni volta che entri in Ira):<br>• <strong>Aquila (Eagle):</strong> Quando attivi l'Ira, e come Azione Bonus nei turni successivi, puoi usare l'azione di **Scatto e Disimpegno** contemporaneamente.<br>• <strong>Lupo (Wolf):</strong> I tuoi alleati hanno **Vantaggio** ai tiri per colpire in mischia contro qualsiasi nemico a te adiacente (entro 1,5 metri), a patto che il nemico non sia Incapacitato.<br>• <strong>Orso (Bear):</strong> Mentre sei in Ira, ottieni **Resistenza a tutti i tipi di danno** tranne i danni Psichici."
+    },
+    {
+      "name": "Aspetto della Natura (Aspect of the Beast)",
+      "level": 6,
+      "description": "Ottieni uno dei seguenti benefici a tua scelta (puoi cambiare la tua scelta ogni volta che completi un **riposo lungo**):<br>• <strong>Elefante (Elephant):</strong> Ottieni competenza nelle prove di Atletica o Intimidire (se le hai già, raddoppi il bonus). Inoltre, la tua capacità di trasporto è raddoppiata.<br>• <strong>Gufo (Owl):</strong> Ottieni Scurovisione fino a 18 metri (o ne aumenti la gittata di 18 metri se la possiedi già).<br>• <strong>Pantera (Panther):</strong> Ottieni una velocità di Scalata pari alla tua velocità di movimento sul terreno."
+    },
+    {
+      "name": "Potenza della Natura (Nature's Veil / Wild Power)",
+      "level": 10,
+      "description": "Puoi lanciare l'incantesimo *Comunione con la Natura (Commune with Nature)* come **Rituale**. Inoltre, quando usi il privilegio *Conoscenza Primordiale*, puoi scegliere un'ulteriore abilità da Barbaro in cui aggiungere il tuo bonus di competenza."
+    },
+    {
+      "name": "Attrazione Selvatica (Power of the Wild Heart)",
+      "level": 14,
+      "description": "Mentre sei in Ira, la scelta effettuata al livello 3 si potenzia ulteriormente:<br>• <strong>Aquila (Eagle):</strong> Ottieni una **velocità di Volo** pari alla tua velocità di movimento sul terreno (se finisci il turno in aria e non c'è nulla a sostenerti, cadi).<br>• <strong>Lupo (Wolf):</strong> Quando colpisci una creatura di taglia Grande o inferiore con un attacco in mischia basato sulla Forza, puoi farla cadere a terra **Prona** come Reazione immediata o come parte dell'attacco.<br>• <strong>Orso (Bear):</strong> I nemici entro 1,5 metri da te hanno **Svantaggio** ai tiri per colpire contro chiunque non sia tu."
+    }
+  ]
+},
   {
     "id": "sub_barbarian_zealot",
     "name": "Path of the Zealot",
