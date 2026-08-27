@@ -26,6 +26,62 @@ function getItemDescription(item) {
   return '<em>Descrizione non disponibile.</em>';
 }
 
+// Funzione per generare l'HTML della Tabella di Progressione (Vanilla JS)
+function renderProgressionTable(progression) {
+  if (!progression || progression.length === 0) return '';
+
+  const rows = progression.map(row => `
+    <tr>
+      <td style="text-align: center; font-weight: bold;">${row.level}</td>
+      <td style="text-align: center;">${row.prof_bonus}</td>
+      <td>${Array.isArray(row.features) ? row.features.join(', ') : row.features}</td>
+      <td style="text-align: center;">${row.details || '-'}</td>
+    </tr>
+  `).join('');
+
+  return `
+    <div class="progression-table-container" style="overflow-x: auto; margin-top: 20px;">
+      <h3>Tabella di Progressione</h3>
+      <table class="progression-table" style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+        <thead>
+          <tr style="background-color: #2c3e50; color: #fff;">
+            <th style="padding: 8px; border: 1px solid #ddd;">Livello</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Bonus Comp.</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Privilegi</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Dettagli</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+// Funzione per generare l'HTML dei Privilegi di Classe (Vanilla JS)
+function renderClassFeatures(classFeatures) {
+  if (!classFeatures || classFeatures.length === 0) return '';
+
+  const featuresHTML = classFeatures.map(feature => `
+    <div class="feature-card" style="background: #f8f9fa; border-left: 4px solid #e67e22; padding: 12px 16px; margin-bottom: 12px; border-radius: 4px;">
+      <h3 style="margin-top: 0; margin-bottom: 8px; color: #2c3e50; font-size: 1.1em;">
+        ${feature.name} <span style="font-size: 0.85em; font-weight: normal; color: #7f8c8d;">(Livello ${feature.level})</span>
+      </h3>
+      <div class="feature-description" style="line-height: 1.5;">
+        ${feature.description}
+      </div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="class-features" style="margin-top: 25px;">
+      <h2 style="border-bottom: 2px solid #e67e22; padding-bottom: 5px;">Privilegi di Classe</h2>
+      ${featuresHTML}
+    </div>
+  `;
+}
+
 function renderCards(items) {
   const container = document.getElementById('cardsContainer');
   container.innerHTML = '';
@@ -85,13 +141,18 @@ function renderCards(items) {
 
     const descriptionText = getItemDescription(item);
 
+    // Generazione dinamica della tabella e dei privilegi di classe se presenti nell'oggetto JSON
+    const progressionHTML = item.progression ? renderProgressionTable(item.progression) : '';
+    const classFeaturesHTML = item.class_features ? renderClassFeatures(item.class_features) : '';
+
     // Gestione Link Approfondimento per Classi e Sottoclassi
     let linkHTML = '';
     const rawType = (item.type || '').toLowerCase();
     const rawCat = (item.category || '').toLowerCase();
-    const isClassOrSubclass = rawType.includes('classe') || rawCat.includes('classe') || item.url || item.progression;
+    const isClassOrSubclass = rawType.includes('classe') || rawCat.includes('classe') || item.url;
 
-    if (isClassOrSubclass) {
+    // Se l'elemento è una classe ed è mostrato nella lista principale, aggiungiamo il pulsante per accedere al dettaglio
+    if (isClassOrSubclass && !item.progression) {
       const targetUrl = item.url ? item.url : `dettaglio.html?id=${encodeURIComponent(item.id)}`;
       linkHTML = `
         <div class="card-action" style="margin-top: 15px; text-align: right;">
@@ -108,6 +169,8 @@ function renderCards(items) {
       <div class="spell-description">
         ${descriptionText}
       </div>
+      ${progressionHTML}
+      ${classFeaturesHTML}
       ${linkHTML}
     `;
 
