@@ -361,29 +361,7 @@
   "saving_throws": ["Forza", "Costituzione"],
   "description_it": "Un maestro del combattimento marziale esperto nell'uso di una vasta varietà di armi, armature e tattiche di guerra.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Forza o Destrezza<br><strong>Tiri Salvezza:</strong> Forza, Costituzione<br><strong>Tratti di Classe:</strong> Stile di Combattimento, Recupero Energie, Azione Impetuosa, Maestria nelle Armi.",
   "progression": [
-    { "level": 1, "prof_bonus": "+2", "features": ["Stile di Combattimento", "Seconda Leva", "Maestria nelle Armi"], "details": "1d10 DV" },
-    { "level": 2, "prof_bonus": "+2", "features": ["Azione Impetuosa (1 uso)", "Mente Tattica"], "details": "-" },
-    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse"], "details": "Scelta del modello razionale" },
-    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
-    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Extra", "Spostamento Tattico"], "details": "2 attacchi" },
-    { "level": 6, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
-    { "level": 7, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse"], "details": "-" },
-    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
-    { "level": 9, "prof_bonus": "+4", "features": ["Indomabile (1 uso)"], "details": "-" },
-    { "level": 10, "prof_bonus": "+4", "features": ["Privilegio della Sottoclasse", "Seconda Leva (Migliorata)"], "details": "-" },
-    { "level": 11, "prof_bonus": "+4", "features": ["Attacco Extra (2)"], "details": "3 attacchi" },
-    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
-    { "level": 13, "prof_bonus": "+5", "features": ["Indomabile (2 usi)", "Attacchi Studiati"], "details": "-" },
-    { "level": 14, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
-    { "level": 15, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "-" },
-    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
-    { "level": 17, "prof_bonus": "+6", "features": ["Azione Impetuosa (2 usi)", "Indomabile (3 usi)"], "details": "-" },
-    { "level": 18, "prof_bonus": "+6", "features": ["Privilegio della Sottoclasse"], "details": "-" },
-    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
-    { "level": 20, "prof_bonus": "+6", "features": ["Attacco Extra (3)"], "details": "4 attacchi" }
-  ],
-  "class_features": [
-    {
+        {
       "name": "Competenze e Punti Ferita",
       "level": 1,
       "description": "<strong>Dado Vita:</strong> 1d10 per livello da Guerriero.<br><strong>Armature:</strong> Tutte le armature, scudi.<br><strong>Armi:</strong> Armi semplici, armi da guerra.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Forza, Costituzione.<br><strong>Abilità:</strong> Scegli due abilità tra Acrobazia, Addestrare Animali, Atletica, Storia, Intuizione, Intimidire, Percezione e Sopravvivenza."
