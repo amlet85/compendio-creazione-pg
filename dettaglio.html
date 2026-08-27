@@ -3,153 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Approfondimento Classe - D&D 2024</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dettaglio Classe</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #1a1a1a;
-      color: #e0e0e0;
+      background-color: #f4f6f9;
       margin: 0;
       padding: 20px;
+      color: #333;
     }
-    .detail-container {
+    .container {
       max-width: 900px;
       margin: 0 auto;
-      background: #2a2a2a;
+      background: #fff;
       padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .back-btn {
       display: inline-block;
       margin-bottom: 20px;
-      color: #e67e22;
+      padding: 8px 16px;
+      background-color: #34495e;
+      color: #fff;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
     }
-    h1 { color: #f39c12; margin-top: 0; }
-    h2 { color: #e67e22; border-bottom: 1px solid #444; padding-bottom: 5px; margin-top: 30px; }
-    table {
+    .spell-level {
+      background-color: #e67e22;
+      color: white;
+      font-size: 0.6em;
+      padding: 3px 8px;
+      border-radius: 4px;
+      vertical-align: middle;
+    }
+    /* Tabella */
+    .progression-table-container {
+      overflow-x: auto;
+      margin-top: 25px;
+    }
+    table.progression-table {
       width: 100%;
       border-collapse: collapse;
-      margin: 20px 0;
-      background: #222;
+      margin-top: 10px;
     }
-    th, td {
-      padding: 12px;
+    table.progression-table th, table.progression-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
       text-align: left;
-      border: 1px solid #444;
     }
-    th {
-      background-color: #333;
-      color: #f39c12;
+    table.progression-table th {
+      background-color: #2c3e50;
+      color: white;
     }
-    tr:nth-child(even) { background-color: #282828; }
-    .feature-block {
-      margin-bottom: 20px;
-      background: #242424;
-      padding: 15px;
+    table.progression-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    /* Privilegi di Classe */
+    .class-features {
+      margin-top: 35px;
+    }
+    .feature-card {
+      background: #f8f9fa;
       border-left: 4px solid #e67e22;
+      padding: 15px;
+      margin-bottom: 15px;
       border-radius: 4px;
     }
-    .feature-block h3 { margin-top: 0; color: #fff; }
+    .feature-card h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
   </style>
 </head>
 <body>
 
-  <div class="detail-container">
-    <a href="index.html" class="back-btn">← Torna al Compendio</a>
-    <div id="content">
-      <p>Caricamento informazioni in corso...</p>
+  <div class="container">
+    <a href="index.html" class="back-btn">← Torna alla lista</a>
+    <div id="detailContent">
+      <p style="text-align:center;">Caricamento dettagli...</p>
     </div>
   </div>
 
-  <script>
-    async function loadDetail() {
-      const params = new URLSearchParams(window.location.search);
-      const itemId = params.get('id');
-      const contentDiv = document.getElementById('content');
-
-      if (!itemId) {
-        contentDiv.innerHTML = '<p>Nessun elemento selezionato.</p>';
-        return;
-      }
-
-      try {
-        const response = await fetch('character_data.json');
-        const data = await response.json();
-        const item = data.find(i => i.id === itemId);
-
-        if (!item) {
-          contentDiv.innerHTML = '<p>Scheda non trovata nel database.</p>';
-          return;
-        }
-
-        document.title = `${item.name_it || item.name} - Dettaglio Progressioni`;
-
-        let html = `
-          <h1>${item.name_it || item.name}</h1>
-          <p><em>${item.name || ''}</em></p>
-          <p><strong>Tipo:</strong> ${item.category || item.type}</p>
-          ${item.source_it ? `<p><strong>Manuale:</strong> ${item.source_it}</p>` : ''}
-          ${item.prerequisite ? `<p><strong>Prerequisiti:</strong> ${item.prerequisite}</p>` : ''}
-          
-          <h2>Descrizione Generale</h2>
-          <div>${item.description_it || item.description || 'Nessuna descrizione.'}</div>
-        `;
-
-        // Genera la tabella di progressione se presente nel JSON
-        if (item.progression && Array.isArray(item.progression)) {
-          html += `<h2>Progressione per Livello</h2>`;
-          html += `
-            <table>
-              <thead>
-                <tr>
-                  <th>Livello</th>
-                  <th>Bonus Prof.</th>
-                  <th>Privilegi di Classe</th>
-                  <th>Dettagli Extra</th>
-                </tr>
-              </thead>
-              <tbody>
-          `;
-          item.progression.forEach(row => {
-            html += `
-              <tr>
-                <td><strong>${row.level}°</strong></td>
-                <td>${row.prof_bonus || '+2'}</td>
-                <td>${row.features ? row.features.join(', ') : '-'}</td>
-                <td>${row.details || '-'}</td>
-              </tr>
-            `;
-          });
-          html += `</tbody></table>`;
-        }
-
-        // Se sono elencati i dettagli dei singoli privilegi
-        if (item.features_detail && Array.isArray(item.features_detail)) {
-          html += `<h2>Dettaglio Privilegi</h2>`;
-          item.features_detail.forEach(feat => {
-            html += `
-              <div class="feature-block">
-                <h3>${feat.name} (Livello ${feat.level})</h3>
-                <p>${feat.description}</p>
-              </div>
-            `;
-          });
-        }
-
-        contentDiv.innerHTML = html;
-
-      } catch (err) {
-        console.error(err);
-        contentDiv.innerHTML = '<p>Errore durante il caricamento dei dettagli.</p>';
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', loadDetail);
-  </script>
-
+  <script src="dettaglio.js"></script>
 </body>
 </html>
