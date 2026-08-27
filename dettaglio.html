@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approfondimento Classe - D&D 2024</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 20px;
+    }
+    .detail-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #2a2a2a;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 { color: #f39c12; margin-top: 0; }
+    h2 { color: #e67e22; border-bottom: 1px solid #444; padding-bottom: 5px; margin-top: 30px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: #222;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #444;
+    }
+    th {
+      background-color: #333;
+      color: #f39c12;
+    }
+    tr:nth-child(even) { background-color: #282828; }
+    .feature-block {
+      margin-bottom: 20px;
+      background: #242424;
+      padding: 15px;
+      border-left: 4px solid #e67e22;
+      border-radius: 4px;
+    }
+    .feature-block h3 { margin-top: 0; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <div class="detail-container">
+    <a href="index.html" class="back-btn">← Torna al Compendio</a>
+    <div id="content">
+      <p>Caricamento informazioni in corso...</p>
+    </div>
+  </div>
+
+  <script>
+    async function loadDetail() {
+      const params = new URLSearchParams(window.location.search);
+      const itemId = params.get('id');
+      const contentDiv = document.getElementById('content');
+
+      if (!itemId) {
+        contentDiv.innerHTML = '<p>Nessun elemento selezionato.</p>';
+        return;
+      }
+
+      try {
+        const response = await fetch('character_data.json');
+        const data = await response.json();
+        const item = data.find(i => i.id === itemId);
+
+        if (!item) {
+          contentDiv.innerHTML = '<p>Scheda non trovata nel database.</p>';
+          return;
+        }
+
+        document.title = `${item.name_it || item.name} - Dettaglio Progressioni`;
+
+        let html = `
+          <h1>${item.name_it || item.name}</h1>
+          <p><em>${item.name || ''}</em></p>
+          <p><strong>Tipo:</strong> ${item.category || item.type}</p>
+          ${item.source_it ? `<p><strong>Manuale:</strong> ${item.source_it}</p>` : ''}
+          ${item.prerequisite ? `<p><strong>Prerequisiti:</strong> ${item.prerequisite}</p>` : ''}
+          
+          <h2>Descrizione Generale</h2>
+          <div>${item.description_it || item.description || 'Nessuna descrizione.'}</div>
+        `;
+
+        // Genera la tabella di progressione se presente nel JSON
+        if (item.progression && Array.isArray(item.progression)) {
+          html += `<h2>Progressione per Livello</h2>`;
+          html += `
+            <table>
+              <thead>
+                <tr>
+                  <th>Livello</th>
+                  <th>Bonus Prof.</th>
+                  <th>Privilegi di Classe</th>
+                  <th>Dettagli Extra</th>
+                </tr>
+              </thead>
+              <tbody>
+          `;
+          item.progression.forEach(row => {
+            html += `
+              <tr>
+                <td><strong>${row.level}°</strong></td>
+                <td>${row.prof_bonus || '+2'}</td>
+                <td>${row.features ? row.features.join(', ') : '-'}</td>
+                <td>${row.details || '-'}</td>
+              </tr>
+            `;
+          });
+          html += `</tbody></table>`;
+        }
+
+        // Se sono elencati i dettagli dei singoli privilegi
+        if (item.features_detail && Array.isArray(item.features_detail)) {
+          html += `<h2>Dettaglio Privilegi</h2>`;
+          item.features_detail.forEach(feat => {
+            html += `
+              <div class="feature-block">
+                <h3>${feat.name} (Livello ${feat.level})</h3>
+                <p>${feat.description}</p>
+              </div>
+            `;
+          });
+        }
+
+        contentDiv.innerHTML = html;
+
+      } catch (err) {
+        console.error(err);
+        contentDiv.innerHTML = '<p>Errore durante il caricamento dei dettagli.</p>';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadDetail);
+  </script>
+
+</body>
+</html>

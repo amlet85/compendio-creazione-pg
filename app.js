@@ -1,7 +1,7 @@
 let allData = [];
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
+  navigator.serviceWorker.register('sw.js').catch(err => console.log('SW error:', err));
 }
 
 async function loadData() {
@@ -85,12 +85,30 @@ function renderCards(items) {
 
     const descriptionText = getItemDescription(item);
 
+    // Gestione Link Approfondimento per Classi e Sottoclassi
+    let linkHTML = '';
+    const rawType = (item.type || '').toLowerCase();
+    const rawCat = (item.category || '').toLowerCase();
+    const isClassOrSubclass = rawType.includes('classe') || rawCat.includes('classe') || item.url || item.progression;
+
+    if (isClassOrSubclass) {
+      const targetUrl = item.url ? item.url : `dettaglio.html?id=${encodeURIComponent(item.id)}`;
+      linkHTML = `
+        <div class="card-action" style="margin-top: 15px; text-align: right;">
+          <a href="${targetUrl}" class="detail-btn" style="display: inline-block; padding: 8px 14px; background-color: #e67e22; color: #fff; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em;">
+            📖 Progressioni Livelli & Dettagli →
+          </a>
+        </div>
+      `;
+    }
+
     card.innerHTML = `
       <h2>${item.name_it || item.name} <span class="spell-level">${badgeText}</span></h2>
       ${metaHTML ? `<div class="spell-meta">${metaHTML}</div>` : ''}
       <div class="spell-description">
         ${descriptionText}
       </div>
+      ${linkHTML}
     `;
 
     container.appendChild(card);
@@ -99,7 +117,8 @@ function renderCards(items) {
 
 function filterData() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
-  const selectedCategory = document.getElementById('categoryFilter').value.toLowerCase().trim();
+  const selectedCategoryRaw = document.getElementById('categoryFilter').value.toLowerCase().trim();
+  const selectedCategory = selectedCategoryRaw.replace(/['_ ]/g, '');
   const selectedClass = document.getElementById('classFilter').value.toLowerCase().trim();
 
   const filtered = allData.filter(item => {
@@ -108,25 +127,34 @@ function filterData() {
     const nameEn = (item.name || '').toLowerCase();
     const matchesName = query === '' || nameIt.includes(query) || nameEn.includes(query);
 
-    // 2. Lettura dei tipi e categorie
-    const itemType = (item.type || '').toLowerCase();
-    const itemCat = (item.category || '').toLowerCase();
+    // 2. Lettura dei tipi e categorie normalizzati
+    const rawType = (item.type || '').toLowerCase();
+    const rawCat = (item.category || '').toLowerCase();
+    
+    const itemType = rawType.replace(/['_ ]/g, '');
+    const itemCat = rawCat.replace(/['_ ]/g, '');
+
     let matchesCategory = false;
 
     if (selectedCategory === '') {
       matchesCategory = true;
-    } else if (selectedCategory === "talento d'origine") {
-      matchesCategory = itemType.includes("talento") && itemCat.includes("origine");
-    } else if (selectedCategory === "talento generale") {
-      matchesCategory = itemType.includes("talento") && (itemCat.includes("generale") || !itemCat.includes("origine"));
+    } else if (selectedCategory === "talentoorigine") {
+      matchesCategory = (itemType.includes("talento") || itemCat.includes("talento")) && itemCat.includes("origine");
+    } else if (selectedCategory === "stiledicombattimento") {
+      matchesCategory = itemType.includes("stile") || 
+                        itemCat.includes("stile") || 
+                        itemCat.includes("combattimento") || 
+                        rawType.includes("fighting") || 
+                        rawCat.includes("fighting");
+    } else if (selectedCategory === "talentogenerale") {
+      const isOrigin = itemCat.includes("origine");
+      const isFightingStyle = itemCat.includes("stile") || itemCat.includes("combattimento") || itemType.includes("stile");
+      matchesCategory = itemType.includes("talento") && !isOrigin && !isFightingStyle;
     } else if (selectedCategory === "arma") {
-      // Riconosce le armi da type, category o id
       matchesCategory = itemType.includes("arma") || itemCat.includes("arma") || itemType.includes("weapon") || itemCat.includes("weapon");
     } else if (selectedCategory === "armatura") {
-      // Riconosce le armature da type, category o id
       matchesCategory = itemType.includes("armatura") || itemCat.includes("armatura") || itemType.includes("armor") || itemCat.includes("armor") || itemCat.includes("scudo") || itemCat.includes("shield");
     } else if (selectedCategory === "equipaggiamento") {
-      // Equipaggiamento generico (esclude armi ed armature se già categorizzate)
       const isWeaponOrArmor = itemType.includes("arma") || itemCat.includes("arma") || itemType.includes("armatura") || itemCat.includes("armatura");
       matchesCategory = (itemType.includes("equip") || itemCat.includes("equip")) && !isWeaponOrArmor;
     } else {

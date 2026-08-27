@@ -350,16 +350,38 @@
     "saving_throws": ["Intelligenza", "Saggezza"],
     "description_it": "Un sacerdote della Natura in grado di assumere forme animali tramite la Forma Selvatica e piegare le forze primordiali del mondo.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Saggezza<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza<br><strong>Tratti di Classe:</strong> Incantesimi, Forma Selvatica, Ordine Primordiale, Circolo Druidico."
   },
-  {
-    "id": "fighter",
-    "name": "Fighter",
-    "name_it": "Guerriero",
-    "type": "classe",
-    "source_it": "Manuale del Giocatore 2024",
-    "hit_die": "d10",
-    "primary_ability": "Forza o Destrezza",
-    "saving_throws": ["Forza", "Costituzione"],
-    "description_it": "Un maestro del combattimento marziale esperto nell'uso di una vasta varietà di armi, armature e tattiche di guerra.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Forza o Destrezza<br><strong>Tiri Salvezza:</strong> Forza, Costituzione<br><strong>Tratti di Classe:</strong> Stile di Combattimento, Recupero Energie, Azione Impetuosa, Maestria nelle Armi."
+ {
+  "id": "fighter",
+  "name": "Fighter",
+  "name_it": "Guerriero",
+  "type": "classe",
+  "source_it": "Manuale del Giocatore 2024",
+  "hit_die": "d10",
+  "primary_ability": "Forza o Destrezza",
+  "saving_throws": ["Forza", "Costituzione"],
+  "description_it": "Un maestro del combattimento marziale esperto nell'uso di una vasta varietà di armi, armature e tattiche di guerra.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Forza o Destrezza<br><strong>Tiri Salvezza:</strong> Forza, Costituzione<br><strong>Tratti di Classe:</strong> Stile di Combattimento, Recupero Energie, Azione Impetuosa, Maestria nelle Armi.",
+  "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Stile di Combattimento", "Seconda Leva", "Maestria nelle Armi"], "details": "1d10 DV" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Azione Impetuosa (1 uso)", "Mente Tattica"], "details": "-" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse"], "details": "Scelta del modello razionale" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Extra", "Spostamento Tattico"], "details": "2 attacchi" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 7, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse"], "details": "-" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 9, "prof_bonus": "+4", "features": ["Indomabile (1 uso)"], "details": "-" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Privilegio della Sottoclasse", "Seconda Leva (Migliorata)"], "details": "-" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Attacco Extra (2)"], "details": "3 attacchi" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 13, "prof_bonus": "+5", "features": ["Indomabile (2 usi)", "Attacchi Studiati"], "details": "-" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 15, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "-" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 17, "prof_bonus": "+6", "features": ["Azione Impetuosa (2 usi)", "Indomabile (3 usi)"], "details": "-" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Privilegio della Sottoclasse"], "details": "-" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 20, "prof_bonus": "+6", "features": ["Attacco Extra (3)"], "details": "4 attacchi" }
+  ]
   },
   {
     "id": "monk",
@@ -1570,7 +1592,8 @@
     "weight": "2.25 kg",
     "properties": ["Munizioni (gittata 24/96)", "Ricarica", "Due Mani"],
     "mastery": "Slow",
-    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo."
+    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo.",
+    "description_it": "Costo: 25 mo | Peso: 2.25 kg | Danno: 1d8 perforante | Proprietà: Munizioni (gittata 24/96), Ricarica, Due Mani | Maestria: Slow (Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo)."
   },
   {
     "id": "weapon_dart",
@@ -1584,7 +1607,8 @@
     "weight": "0.1 kg",
     "properties": ["Accurata", "Lancio (gittata 6/18)"],
     "mastery": "Vex",
-    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
+    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita.",
+    "description_it": "Costo: 5 cp | Peso: 0.1 kg | Danno: 1d4 perforante | Proprietà: Accurata, Lancio (gittata 6/18) | Maestria: Vex (Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita)."
   },
   {
     "id": "weapon_shortbow",
@@ -1598,7 +1622,8 @@
     "weight": "0.9 kg",
     "properties": ["Munizioni (gittata 24/96)", "Due Mani"],
     "mastery": "Vex",
-    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
+    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita.",
+    "description_it": "Costo: 25 mo | Peso: 0.9 kg | Danno: 1d6 perforante | Proprietà: Munizioni (gittata 24/96), Due Mani | Maestria: Vex (Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita)."
   },
   {
     "id": "weapon_sling",
@@ -1612,7 +1637,8 @@
     "weight": "0 kg",
     "properties": ["Munizioni (gittata 9/36)"],
     "mastery": "Slow",
-    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo."
+    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo.",
+    "description_it": "Costo: 1 sp | Peso: 0 kg | Danno: 1d4 contundente | Proprietà: Munizioni (gittata 9/36) | Maestria: Slow (Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo)."
   },
   {
     "id": "weapon_battleaxe",
@@ -1626,7 +1652,8 @@
     "weight": "1.8 kg",
     "properties": ["Versatile (1d10)"],
     "mastery": "Topple",
-    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra."
+    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra.",
+    "description_it": "Costo: 10 mo | Peso: 1.8 kg | Danno: 1d8 da taglio | Proprietà: Versatile (1d10) | Maestria: Topple (Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra)."
   },
   {
     "id": "weapon_flail",
@@ -1640,7 +1667,8 @@
     "weight": "0.9 kg",
     "properties": [],
     "mastery": "Sap",
-    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio."
+    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio.",
+    "description_it": "Costo: 10 mo | Peso: 0.9 kg | Danno: 1d8 contundente | Proprietà: Nessuna | Maestria: Sap (Imponi Svantaggio al prossimo tiro per colpire del bersaglio)."
   },
   {
     "id": "weapon_glaive",
@@ -1654,7 +1682,8 @@
     "weight": "2.7 kg",
     "properties": ["Pesante", "Portata", "Due Mani"],
     "mastery": "Graze",
-    "mastery_effect_it": "Graze: Se manchi l'attacco, infliggi comunque danni pari al mod. caratteristica."
+    "mastery_effect_it": "Graze: Se manchi l'attacco, infliggi comunque danni pari al mod. caratteristica.",
+    "description_it": "Costo: 20 mo | Peso: 2.7 kg | Danno: 1d10 da taglio | Proprietà: Pesante, Portata, Due Mani | Maestria: Graze (Se manchi l'attacco, infliggi comunque danni pari al mod. caratteristica)."
   },
   {
     "id": "weapon_greataxe",
@@ -1668,7 +1697,8 @@
     "weight": "3.1 kg",
     "properties": ["Pesante", "Due Mani"],
     "mastery": "Cleave",
-    "mastery_effect_it": "Cleave: Puoi effettuare un secondo attacco contro una creatura adiacente entro la tua portata."
+    "mastery_effect_it": "Cleave: Puoi effettuare un secondo attacco contro una creatura adiacente entro la tua portata.",
+    "description_it": "Costo: 30 mo | Peso: 3.1 kg | Danno: 1d12 da taglio | Proprietà: Pesante, Due Mani | Maestria: Cleave (Puoi effettuare un secondo attacco contro una creatura adiacente entro la tua portata)."
   },
   {
     "id": "weapon_greatsword",
@@ -1682,7 +1712,8 @@
     "weight": "2.7 kg",
     "properties": ["Pesante", "Due Mani"],
     "mastery": "Graze",
-    "mastery_effect_it": "Graze: Se manchi l'attacco, infliggi comunque danni pari al mod. caratteristica."
+    "mastery_effect_it": "Graze: Se manchi l'attacco, infliggi comunque danni pari al mod. caratteristica.",
+    "description_it": "Costo: 50 mo | Peso: 2.7 kg | Danno: 2d6 da taglio | Proprietà: Pesante, Due Mani | Maestria: Graze (Se manchi l'attacco, infliggi comunque danni pari al mod. caratteristica)."
   },
   {
     "id": "weapon_halberd",
@@ -1696,7 +1727,8 @@
     "weight": "2.7 kg",
     "properties": ["Pesante", "Portata", "Due Mani"],
     "mastery": "Cleave",
-    "mastery_effect_it": "Cleave: Puoi effettuare un secondo attacco contro una creatura adiacente entro la tua portata."
+    "mastery_effect_it": "Cleave: Puoi effettuare un secondo attacco contro una creatura adiacente entro la tua portata.",
+    "description_it": "Costo: 20 mo | Peso: 2.7 kg | Danno: 1d10 da taglio | Proprietà: Pesante, Portata, Due Mani | Maestria: Cleave (Puoi effettuare un secondo attacco contro una creatura adiacente entro la tua portata)."
   },
   {
     "id": "weapon_lance",
@@ -1710,7 +1742,8 @@
     "weight": "2.7 kg",
     "properties": ["Pesante", "Portata", "Due Mani (tranne se in sella)"],
     "mastery": "Topple",
-    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra."
+    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra.",
+    "description_it": "Costo: 10 mo | Peso: 2.7 kg | Danno: 1d10 perforante | Proprietà: Pesante, Portata, Due Mani (tranne se in sella) | Maestria: Topple (Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra)."
   },
   {
     "id": "weapon_longsword",
@@ -1724,7 +1757,8 @@
     "weight": "1.3 kg",
     "properties": ["Versatile (1d10)"],
     "mastery": "Sap",
-    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio."
+    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio.",
+    "description_it": "Costo: 15 mo | Peso: 1.3 kg | Danno: 1d8 da taglio | Proprietà: Versatile (1d10) | Maestria: Sap (Imponi Svantaggio al prossimo tiro per colpire del bersaglio)."
   },
   {
     "id": "weapon_maul",
@@ -1738,7 +1772,8 @@
     "weight": "4.5 kg",
     "properties": ["Pesante", "Due Mani"],
     "mastery": "Topple",
-    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra."
+    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra.",
+    "description_it": "Costo: 10 mo | Peso: 4.5 kg | Danno: 2d6 contundente | Proprietà: Pesante, Due Mani | Maestria: Topple (Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra)."
   },
   {
     "id": "weapon_morningstar",
@@ -1752,7 +1787,8 @@
     "weight": "1.8 kg",
     "properties": [],
     "mastery": "Sap",
-    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio."
+    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio.",
+    "description_it": "Costo: 15 mo | Peso: 1.8 kg | Danno: 1d8 perforante | Proprietà: Nessuna | Maestria: Sap (Imponi Svantaggio al prossimo tiro per colpire del bersaglio)."
   },
   {
     "id": "weapon_pike",
@@ -1766,7 +1802,8 @@
     "weight": "8.1 kg",
     "properties": ["Pesante", "Portata", "Due Mani"],
     "mastery": "Push",
-    "mastery_effect_it": "Push: Spingi la creatura fino a 3 metri lontano da te."
+    "mastery_effect_it": "Push: Spingi la creatura fino a 3 metri lontano da te.",
+    "description_it": "Costo: 5 mo | Peso: 8.1 kg | Danno: 1d10 perforante | Proprietà: Pesante, Portata, Due Mani | Maestria: Push (Spingi la creatura fino a 3 metri lontano da te)."
   },
   {
     "id": "weapon_rapier",
@@ -1780,7 +1817,8 @@
     "weight": "0.9 kg",
     "properties": ["Accurata"],
     "mastery": "Vex",
-    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
+    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita.",
+    "description_it": "Costo: 25 mo | Peso: 0.9 kg | Danno: 1d8 perforante | Proprietà: Accurata | Maestria: Vex (Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita)."
   },
   {
     "id": "weapon_scimitar",
@@ -1794,7 +1832,8 @@
     "weight": "1.3 kg",
     "properties": ["Accurata", "Leggera"],
     "mastery": "Nick",
-    "mastery_effect_it": "Nick: Effettui l'attacco extra della proprietà Leggera come parte dell'azione di Attacco anziché con Azione Bonus."
+    "mastery_effect_it": "Nick: Effettui l'attacco extra della proprietà Leggera come parte dell'azione di Attacco anziché con Azione Bonus.",
+    "description_it": "Costo: 25 mo | Peso: 1.3 kg | Danno: 1d6 da taglio | Proprietà: Accurata, Leggera | Maestria: Nick (Effettui l'attacco extra della proprietà Leggera come parte dell'azione di Attacco anziché con Azione Bonus)."
   },
   {
     "id": "weapon_shortsword",
@@ -1808,7 +1847,8 @@
     "weight": "0.9 kg",
     "properties": ["Accurata", "Leggera"],
     "mastery": "Vex",
-    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
+    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita.",
+    "description_it": "Costo: 10 mo | Peso: 0.9 kg | Danno: 1d6 perforante | Proprietà: Accurata, Leggera | Maestria: Vex (Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita)."
   },
   {
     "id": "weapon_trident",
@@ -1822,7 +1862,8 @@
     "weight": "1.8 kg",
     "properties": ["Lancio (gittata 6/18)", "Versatile (1d10)"],
     "mastery": "Topple",
-    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra."
+    "mastery_effect_it": "Topple: Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra.",
+    "description_it": "Costo: 5 mo | Peso: 1.8 kg | Danno: 1d8 perforante | Proprietà: Lancio (gittata 6/18), Versatile (1d10) | Maestria: Topple (Può costringere il bersaglio a effettuare un TS su Costituzione o cadere A Terra)."
   },
   {
     "id": "weapon_warhammer",
@@ -1836,7 +1877,8 @@
     "weight": "0.9 kg",
     "properties": ["Versatile (1d10)"],
     "mastery": "Push",
-    "mastery_effect_it": "Push: Spingi la creatura fino a 3 metri lontano da te."
+    "mastery_effect_it": "Push: Spingi la creatura fino a 3 metri lontano da te.",
+    "description_it": "Costo: 15 mo | Peso: 0.9 kg | Danno: 1d8 contundente | Proprietà: Versatile (1d10) | Maestria: Push (Spingi la creatura fino a 3 metri lontano da te)."
   },
   {
     "id": "weapon_war_pick",
@@ -1850,7 +1892,8 @@
     "weight": "0.9 kg",
     "properties": ["Versatile (1d10)"],
     "mastery": "Sap",
-    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio."
+    "mastery_effect_it": "Sap: Imponi Svantaggio al prossimo tiro per colpire del bersaglio.",
+    "description_it": "Costo: 5 mo | Peso: 0.9 kg | Danno: 1d8 perforante | Proprietà: Versatile (1d10) | Maestria: Sap (Imponi Svantaggio al prossimo tiro per colpire del bersaglio)."
   },
   {
     "id": "weapon_whip",
@@ -1864,7 +1907,8 @@
     "weight": "1.3 kg",
     "properties": ["Accurata", "Portata"],
     "mastery": "Slow",
-    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo."
+    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo.",
+    "description_it": "Costo: 2 mo | Peso: 1.3 kg | Danno: 1d4 da taglio | Proprietà: Accurata, Portata | Maestria: Slow (Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo)."
   },
   {
     "id": "weapon_blowgun",
@@ -1878,7 +1922,8 @@
     "weight": "0.45 kg",
     "properties": ["Munizioni (gittata 7.5/30)", "Ricarica"],
     "mastery": "Vex",
-    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
+    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita.",
+    "description_it": "Costo: 10 mo | Peso: 0.45 kg | Danno: 1 perforante | Proprietà: Munizioni (gittata 7.5/30), Ricarica | Maestria: Vex (Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita)."
   },
   {
     "id": "weapon_hand_crossbow",
@@ -1892,7 +1937,8 @@
     "weight": "1.3 kg",
     "properties": ["Munizioni (gittata 9/36)", "Leggera", "Ricarica"],
     "mastery": "Vex",
-    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
+    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita.",
+    "description_it": "Costo: 75 mo | Peso: 1.3 kg | Danno: 1d6 perforante | Proprietà: Munizioni (gittata 9/36), Leggera, Ricarica | Maestria: Vex (Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita)."
   },
   {
     "id": "weapon_heavy_crossbow",
@@ -1906,7 +1952,8 @@
     "weight": "8.1 kg",
     "properties": ["Munizioni (gittata 30/120)", "Pesante", "Ricarica", "Due Mani"],
     "mastery": "Push",
-    "mastery_effect_it": "Push: Spingi la creatura fino a 3 metri lontano da te."
+    "mastery_effect_it": "Push: Spingi la creatura fino a 3 metri lontano da te.",
+    "description_it": "Costo: 50 mo | Peso: 8.1 kg | Danno: 1d10 perforante | Proprietà: Munizioni (gittata 30/120), Pesante, Ricarica, Due Mani | Maestria: Push (Spingi la creatura fino a 3 metri lontano da te)."
   },
   {
     "id": "weapon_longbow",
@@ -1920,7 +1967,8 @@
     "weight": "0.9 kg",
     "properties": ["Munizioni (gittata 45/180)", "Pesante", "Due Mani"],
     "mastery": "Slow",
-    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo."
+    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo.",
+    "description_it": "Costo: 50 mo | Peso: 0.9 kg | Danno: 1d8 perforante | Proprietà: Munizioni (gittata 45/180), Pesante, Due Mani | Maestria: Slow (Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo)."
   },
   {
     "id": "weapon_musket",
@@ -1934,7 +1982,8 @@
     "weight": "4.5 kg",
     "properties": ["Munizioni (gittata 12/36)", "Ricarica", "Due Mani"],
     "mastery": "Slow",
-    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo."
+    "mastery_effect_it": "Slow: Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo.",
+    "description_it": "Costo: 500 mo | Peso: 4.5 kg | Danno: 1d12 perforante | Proprietà: Munizioni (gittata 12/36), Ricarica, Due Mani | Maestria: Slow (Riduci la velocità del bersaglio di 3 metri fino all'inizio del tuo turno successivo)."
   },
   {
     "id": "weapon_pistol",
@@ -1948,7 +1997,8 @@
     "weight": "1.3 kg",
     "properties": ["Munizioni (gittata 9/27)", "Ricarica"],
     "mastery": "Vex",
-    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita."
+    "mastery_effect_it": "Vex: Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita.",
+    "description_it": "Costo: 250 mo | Peso: 1.3 kg | Danno: 1d10 perforante | Proprietà: Munizioni (gittata 9/27), Ricarica | Maestria: Vex (Ottieni Vantaggio al tuo prossimo tiro per colpire contro la creatura colpita)."
   },
   {
     "id": "armor_padded",
@@ -1961,7 +2011,8 @@
     "ac_formula": "11 + Mod. Des",
     "strength_req": null,
     "stealth_penalty": true,
-    "weight": "3.6 kg"
+    "weight": "3.6 kg",
+    "description_it": "Costo: 5 mo | Peso: 3.6 kg | CA: 11 + Mod. Des | Req. Forza: Nessuno | Svantaggio Furtività: Sì."
   },
   {
     "id": "armor_leather",
@@ -1974,7 +2025,8 @@
     "ac_formula": "11 + Mod. Des",
     "strength_req": null,
     "stealth_penalty": false,
-    "weight": "4.5 kg"
+    "weight": "4.5 kg",
+    "description_it": "Costo: 10 mo | Peso: 4.5 kg | CA: 11 + Mod. Des | Req. Forza: Nessuno | Svantaggio Furtività: No."
   },
   {
     "id": "armor_studded_leather",
@@ -1987,7 +2039,8 @@
     "ac_formula": "12 + Mod. Des",
     "strength_req": null,
     "stealth_penalty": false,
-    "weight": "5.9 kg"
+    "weight": "5.9 kg",
+    "description_it": "Costo: 45 mo | Peso: 5.9 kg | CA: 12 + Mod. Des | Req. Forza: Nessuno | Svantaggio Furtività: No."
   },
   {
     "id": "armor_hide",
@@ -2000,7 +2053,8 @@
     "ac_formula": "12 + Mod. Des (max 2)",
     "strength_req": null,
     "stealth_penalty": false,
-    "weight": "5.4 kg"
+    "weight": "5.4 kg",
+    "description_it": "Costo: 10 mo | Peso: 5.4 kg | CA: 12 + Mod. Des (max 2) | Req. Forza: Nessuno | Svantaggio Furtività: No."
   },
   {
     "id": "armor_chain_shirt",
@@ -2013,7 +2067,8 @@
     "ac_formula": "13 + Mod. Des (max 2)",
     "strength_req": null,
     "stealth_penalty": false,
-    "weight": "9 kg"
+    "weight": "9 kg",
+    "description_it": "Costo: 50 mo | Peso: 9 kg | CA: 13 + Mod. Des (max 2) | Req. Forza: Nessuno | Svantaggio Furtività: No."
   },
   {
     "id": "armor_scale_mail",
@@ -2026,12 +2081,13 @@
     "ac_formula": "14 + Mod. Des (max 2)",
     "strength_req": null,
     "stealth_penalty": true,
-    "weight": "20.4 kg"
+    "weight": "20.4 kg",
+    "description_it": "Costo: 50 mo | Peso: 20.4 kg | CA: 14 + Mod. Des (max 2) | Req. Forza: Nessuno | Svantaggio Furtività: Sì."
   },
   {
     "id": "armor_breastplate",
     "name": "Breastplate",
-    "name_it": "Corazza di Petto",
+    "name_it": "Corazza a piastre",
     "type": "armatura",
     "category": "Media",
     "source_it": "Manuale del Giocatore 2024",
@@ -2039,7 +2095,8 @@
     "ac_formula": "14 + Mod. Des (max 2)",
     "strength_req": null,
     "stealth_penalty": false,
-    "weight": "9 kg"
+    "weight": "9 kg",
+    "description_it": "Costo: 400 mo | Peso: 9 kg | CA: 14 + Mod. Des (max 2) | Req. Forza: Nessuno | Svantaggio Furtività: No."
   },
   {
     "id": "armor_half_plate",
@@ -2052,7 +2109,8 @@
     "ac_formula": "15 + Mod. Des (max 2)",
     "strength_req": null,
     "stealth_penalty": true,
-    "weight": "18.1 kg"
+    "weight": "18.1 kg",
+    "description_it": "Costo: 750 mo | Peso: 18.1 kg | CA: 15 + Mod. Des (max 2) | Req. Forza: Nessuno | Svantaggio Furtività: Sì."
   },
   {
     "id": "armor_ring_mail",
@@ -2065,12 +2123,13 @@
     "ac_formula": "14",
     "strength_req": null,
     "stealth_penalty": true,
-    "weight": "18.1 kg"
+    "weight": "18.1 kg",
+    "description_it": "Costo: 30 mo | Peso: 18.1 kg | CA: 14 | Req. Forza: Nessuno | Svantaggio Furtività: Sì."
   },
   {
     "id": "armor_chain_mail",
     "name": "Chain Mail",
-    "name_it": "Stinco / Maglia di Ferro",
+    "name_it": "Cotta di Maglia",
     "type": "armatura",
     "category": "Pesante",
     "source_it": "Manuale del Giocatore 2024",
@@ -2078,7 +2137,8 @@
     "ac_formula": "16",
     "strength_req": 13,
     "stealth_penalty": true,
-    "weight": "24.9 kg"
+    "weight": "24.9 kg",
+    "description_it": "Costo: 75 mo | Peso: 24.9 kg | CA: 16 | Req. Forza: 13 | Svantaggio Furtività: Sì."
   },
   {
     "id": "armor_splint",
@@ -2091,7 +2151,8 @@
     "ac_formula": "17",
     "strength_req": 15,
     "stealth_penalty": true,
-    "weight": "27.2 kg"
+    "weight": "27.2 kg",
+    "description_it": "Costo: 200 mo | Peso: 27.2 kg | CA: 17 | Req. Forza: 15 | Svantaggio Furtività: Sì."
   },
   {
     "id": "armor_plate",
@@ -2104,7 +2165,8 @@
     "ac_formula": "18",
     "strength_req": 15,
     "stealth_penalty": true,
-    "weight": "29.5 kg"
+    "weight": "29.5 kg",
+    "description_it": "Costo: 1500 mo | Peso: 29.5 kg | CA: 18 | Req. Forza: 15 | Svantaggio Furtività: Sì."
   },
   {
     "id": "armor_shield",
@@ -2117,6 +2179,7 @@
     "ac_formula": "+2",
     "strength_req": null,
     "stealth_penalty": false,
-    "weight": "2.7 kg"
+    "weight": "2.7 kg",
+    "description_it": "Costo: 10 mo | Peso: 2.7 kg | Bonus CA: +2 | Req. Forza: Nessuno | Svantaggio Furtività: No."
   }
 ]
