@@ -1893,134 +1893,160 @@
   ]
 },
 {
-  "id": "subclass_bard_lore",
-  "class_id": "bard",
+  "id": "college_of_lore",
   "name": "College of Lore",
   "name_it": "Collegio della Sapienza",
+  "category": "Sottoclasse",
   "type": "sottoclasse",
+  "class_id": "bard",
+  "parent_class": "Bardo",
   "source_it": "Manuale del Giocatore 2024",
   "description_it": "I bardi del Collegio della Sapienza sondano le profondità della conoscenza magica, raccogliendo incantesimi e segreti da tombi accademici, riti mistici e racconti popolari. Si riuniscono per condividere il proprio sapere, svelare menzogne ed esporre la corruzione.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Parole Taglienti, Scoperte Magiche, Abilità Senza Pari.",
   "features": [
     {
-      "name": "Competenze Bonus (Bonus Proficiencies)",
+      "name": "Bonus Proficiencies",
+      "name_it": "Competenze Bonus",
       "level": 3,
-      "description": "Ottieni la competenza in <strong>tre abilità a tua scelta</strong>."
+      "description_it": "Ottieni la competenza in **tre abilità a tua scelta**."
     },
     {
-      "name": "Parole Taglienti (Cutting Words)",
+      "name": "Cutting Words",
+      "name_it": "Parole Taglienti",
       "level": 3,
-      "description": "Quando una creatura che puoi vedere entro 18 metri effettua un tiro per il danno o supera una prova di caratteristica o un tiro per colpire, puoi usare la tua <strong>Reazione</strong> e spendere un uso dell'Ispirazione Bardica per tirare il dado e <strong>sottrarre il risultato dal tiro della creatura</strong>, riducendo il danno o trasformando un successo in un fallimento."
+      "description_it": "Quando una creatura che puoi vedere entro 18 metri effettua un tiro per il danno o supera una prova di caratteristica o un tiro per colpire, puoi usare la tua **Reazione** e spendere un uso dell'Ispirazione Bardica per tirare il dado e **sottrarre il risultato dal tiro della creatura**, riducendo il danno o trasformando un successo in un fallimento."
     },
     {
-      "name": "Scoperte Magiche (Magical Discoveries)",
+      "name": "Magical Discoveries",
+      "name_it": "Scoperte Magiche",
       "level": 6,
-      "description": "Impari <strong>due incantesimi a tua scelta</strong> appartenenti alle liste del Chierico, del Druido o del Mago (o una qualsiasi combinazione di esse). Gli incantesimi scelti devono essere trucchetti o incantesimi di livello pari o inferiore agli slot che puoi lanciare. Li hai <strong>sempre preparati</strong> e ogni volta che guadagni un livello da Bardo puoi sostituirne uno con un altro che rispetti i medesimi requisiti."
+      "description_it": "Impari **due incantesimi a tua scelta** appartenenti alle liste del Chierico, del Druido o del Mago (o una qualsiasi combinazione di esse). Gli incantesimi scelti devono essere trucchetti o incantesimi di livello pari o inferiore agli slot che puoi lanciare. Li hai **sempre preparati** e ogni volta che guadagni un livello da Bardo puoi sostituirne uno con un altro che rispetti i medesimi requisiti."
     },
     {
-      "name": "Abilità Senza Pari (Peerless Skill)",
+      "name": "Peerless Skill",
+      "name_it": "Abilità Senza Pari",
       "level": 14,
-      "description": "Quando effettui una prova di caratteristica o un tiro per colpire e <strong>fallisci</strong>, puoi spendere un uso dell'Ispirazione Bardica, tirare il relativo dado e aggiungere il risultato al d20 per tentare di trasformare il fallimento in un successo. <strong>Se continui a fallire, l'uso dell'Ispirazione Bardica non viene consumato</strong>."
+      "description_it": "Quando effettui una prova di caratteristica o un tiro per colpire e **fallisci**, puoi spendere un uso dell'Ispirazione Bardica, tirare il relativo dado e aggiungere il risultato al d20 per tentare di trasformare il fallimento in un successo. **Se continui a fallire, l'uso dell'Ispirazione Bardica non viene consumato**."
     }
   ]
 },
 {
-  "id": "subclass_bard_valor",
-  "class_id": "bard",
+  "id": "college_of_valor",
   "name": "College of Valor",
   "name_it": "Collegio del Valore",
+  "category": "Sottoclasse",
   "type": "sottoclasse",
+  "class_id": "bard",
+  "parent_class": "Bardo",
   "source_it": "Manuale del Giocatore 2024",
   "description_it": "I bardi del Collegio del Valore sono audaci narratori che mantengono viva la memoria dei grandi eroi del passato. Viaggiano per assistere in prima persona ai grandi eventi e con i loro canti ispirano le nuove generazioni a raggiungere le medesime vette di eroismo.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Ispirazione da Combattimento, Addestramento Marziale, Attacco Extra, Magia da Battaglia.",
   "features": [
     {
-      "name": "Ispirazione da Combattimento (Combat Inspiration)",
+      "name": "Combat Inspiration",
+      "name_it": "Ispirazione da Combattimento",
       "level": 3,
-      "description": "Una creatura che possiede un tuo dado di Ispirazione Bardica può utilizzarlo per uno dei seguenti effetti aggiuntivi:<br>- <strong>Difesa:</strong> Quando la creatura viene colpita da un tiro per colpire, può usare la sua <strong>Reazione</strong> per tirare il dado di Ispirazione Bardica e sommarne il risultato alla propria CA contro quell'attacco, con la possibilità di farlo fallire.<br>- <strong>Offesa:</strong> Subito dopo aver colpito un bersaglio con un tiro per colpire, la creatura può tirare il dado di Ispirazione Bardica e sommare il risultato ai <strong>danni dell'attacco</strong> contro il bersaglio."
+      "description_it": "Una creatura che possiede un tuo dado di Ispirazione Bardica può utilizzarlo per uno dei seguenti effetti aggiuntivi:<br>• <strong>Difesa:</strong> Quando la creatura viene colpita da un tiro per colpire, può usare la sua **Reazione** per tirare il dado di Ispirazione Bardica e sommarne il risultato alla propria CA contro quell'attacco, con la possibilità di farlo fallire.<br>• <strong>Offesa:</strong> Subito dopo aver colpito un bersaglio con un tiro per colpire, la creatura può tirare il dado di Ispirazione Bardica e sommare il risultato ai **danni dell'attacco** contro il bersaglio."
     },
     {
-      "name": "Addestramento Marziale (Martial Training)",
+      "name": "Martial Training",
+      "name_it": "Addestramento Marziale",
       "level": 3,
-      "description": "Ottieni la competenza nelle <strong>Armi da Guerra</strong>, nelle <strong>Armature Medie</strong> e negli <strong>Scudi</strong>.<br><br>Inoltre, puoi utilizzare un'arma semplice o da guerra come <strong>Focus per Incantesimi</strong> per lanciare gli incantesimi della tua lista da Bardo."
+      "description_it": "Ottieni la competenza nelle **Armi da Guerra**, nelle **Armature Medie** e negli **Scudi**.<br><br>Inoltre, puoi utilizzare un'arma semplice o da guerra come **Focus per Incantesimi** per lanciare gli incantesimi della tua lista da Bardo."
     },
     {
-      "name": "Attacco Extra (Extra Attack)",
+      "name": "Extra Attack",
+      "name_it": "Attacco Extra",
       "level": 6,
-      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno.<br><br>Inoltre, puoi <strong>sostituire uno di questi attacchi con il lancio di un tuo trucchetto</strong> che abbia un tempo di lancio di 1 azione."
+      "description_it": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno.<br><br>Inoltre, puoi **sostituire uno di questi attacchi con il lancio di un tuo trucchetto** che abbia un tempo di lancio di 1 azione."
     },
     {
-      "name": "Magia da Battaglia (Battle Magic)",
+      "name": "Battle Magic",
+      "name_it": "Magia da Battaglia",
       "level": 14,
-      "description": "Subito dopo aver lanciato un incantesimo con tempo di lancio pari a 1 azione, puoi effettuare <strong>un attacco con un'arma</strong> come <strong>Azione Bonus</strong>."
+      "description_it": "Subito dopo aver lanciato un incantesimo con tempo di lancio pari a 1 azione, puoi effettuare **un attacco con un'arma** come **Azione Bonus**."
     }
   ]
 },
 {
-  "id": "subclass_bard_creation",
-  "class_id": "bard",
+  "id": "college_of_creation",
   "name": "College of Creation",
   "name_it": "Collegio della Creazione",
+  "category": "Sottoclasse",
   "type": "sottoclasse",
+  "class_id": "bard",
+  "parent_class": "Bardo",
   "source_it": "Manuale Integrativo",
   "description_it": "I bardi del Collegio della Creazione attingono al Canone della Creazione, la melodia primordiale che ha dato origine al cosmo. Attraverso la musica, la danza e la poesia, essi sono in grado di dare forma alla materia, animare oggetti inanimati e conferire una carica celestiale alle proprie ispirazioni.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Nota di Potenziale, Esibizione della Creazione, Esibizione Animante, Crescendo Creativo.",
   "features": [
     {
-      "name": "Nota di Potenziale (Note of Potential)",
+      "name": "Note of Potential",
+      "name_it": "Nota di Potenziale",
       "level": 3,
-      "description": "Ogni volta che assegni un dado di Ispirazione Bardica, crei un piccolo granello di potenziale intangibile che orbita attorno al bersaglio entro 1,5 metri. Quando la creatura usa il dado, il granello applica un effetto aggiuntivo a seconda del tiro:<br>- <strong>Prova di Caratteristica:</strong> La creatura può tirare due volte il dado di Ispirazione Bardica e scegliere quale risultato utilizzare.<br>- <strong>Tiro per Colpire:</strong> Il bersaglio dell'attacco e le creature a scelta entro 1,5 metri da esso devono superare un TS su Costituzione (CD dei tuoi incantesimi) o subire <strong>danni da tuono pari al risultato del dado di Ispirazione Bardica</strong>.<br>- <strong>Tiro Salvezza:</strong> La creatura ottiene <strong>Punti Ferita Temporanei pari al risultato del dado + il tuo Modificatore di Carisma</strong> (minimo 1)."
+      "description_it": "Ogni volta che assegni un dado di Ispirazione Bardica, crei un piccolo granello di potenziale intangibile che orbita attorno al bersaglio entro 1,5 metri. Quando la creatura usa il dado, il granello applica un effetto aggiuntivo a seconda del tiro:<br>• <strong>Prova di Caratteristica:</strong> La creatura può tirare due volte il dado di Ispirazione Bardica e scegliere quale risultato utilizzare.<br>• <strong>Tiro per Colpire:</strong> Il bersaglio dell'attacco e le creature a scelta entro 1,5 metri da esso devono superare un TS su Costituzione (CD dei tuoi incantesimi) o subire **danni da tuono pari al risultato del dado di Ispirazione Bardica**.<br>• <strong>Tiro Salvezza:</strong> La creatura ottiene **Punti Ferita Temporanei pari al risultato del dado + il tuo Modificatore di Carisma** (minimo 1)."
     },
     {
-      "name": "Esibizione della Creazione (Performance of Creation)",
+      "name": "Performance of Creation",
+      "name_it": "Esibizione della Creazione",
       "level": 3,
-      "description": "Con un'<strong>Azione</strong>, puoi creare un oggetto non magico di taglia Media o inferiore in uno spazio libero entro 3 metri. Il valore in monete d'oro non può superare <strong>20 volte il tuo livello da Bardo</strong> e l'oggetto scompare dopo un numero di ore pari al tuo <strong>Bonus Competenza</strong>. Puoi mantenere un solo oggetto creato alla volta.<br><br>La taglia massima aumenta a <strong>Grande al 6° livello</strong> e <strong>Enorme al 14° livello</strong>. Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo uno <strong>slot incantesimo di 2° livello o superiore</strong>."
+      "description_it": "Con un'**Azione**, puoi creare un oggetto non magico di taglia Media o inferiore in uno spazio libero entro 3 metri. Il valore in monete d'oro non può superare **20 volte il tuo livello da Bardo** e l'oggetto scompare dopo un numero di ore pari al tuo **Bonus Competenza**. Puoi mantenere un solo oggetto creato alla volta.<br><br>La taglia massima aumenta a **Grande al 6° livello** e **Enorme al 14° livello**. Usabile una volta per **Riposto Lungo**, oppure spendendo uno **slot incantesimo di 2° livello o superiore**."
     },
     {
-      "name": "Esibizione Animante (Animating Performance)",
+      "name": "Animating Performance",
+      "name_it": "Esibizione Animante",
       "level": 6,
-      "description": "Con un'<strong>Azione</strong>, puoi animare un oggetto non magico di taglia Grande o inferiore entro 9 metri da te. L'oggetto utilizza la scheda del <em>Dancing Item</em> (basata sul tuo Bonus Competenza), è alleato e dura per 1 ora, finché non scende a 0 PF o finché non muori.<br><br>In combattimento agisce subito dopo di te. Utilizza l'azione <em>Schivata</em> a meno che tu non usi un'<strong>Azione Bonus</strong> per impartirgli un ordine (puoi impartire l'ordine come parte della stessa Azione Bonus usata per l'Ispirazione Bardica). Usabile una volta per <strong>Riposo Lungo</strong>, o spendendo uno <strong>slot incantesimo di 3° livello o superiore</strong>."
+      "description_it": "Con un'**Azione**, puoi animare un oggetto non magico di taglia Grande o inferiore entro 9 metri da te. L'oggetto utilizza la scheda del *Dancing Item* (basata sul tuo Bonus Competenza), è alleato e dura per 1 ora, finché non scende a 0 PF o finché non muori.<br><br>In combattimento agisce subito dopo di te. Uilizza l'azione *Schivata* a meno che tu non usi un'**Azione Bonus** per impartirgli un ordine (puoi impartire l'ordine come parte della stessa Azione Bonus usata per l'Ispirazione Bardica). Usabile una volta per **Riposo Lungo**, o spendendo uno **slot incantesimo di 3° livello o superiore**."
     },
     {
-      "name": "Crescendo Creativo (Creative Crescendo)",
+      "name": "Creative Crescendo",
+      "name_it": "Crescendo Creativo",
       "level": 14,
-      "description": "Quando usi <em>Esibizione della Creazione</em>, puoi creare un numero di oggetti contemporaneamente pari al tuo <strong>Modificatore di Carisma</strong> (minimo 2). Soltanto uno degli oggetti può essere della taglia massima consentita, mentre gli altri devono essere di taglia Piccola o Minuta.<br><br>Inoltre, <strong>non sei più limitato dal valore in monete d'oro</strong> per gli oggetti creati."
+      "description_it": "Quando usi *Esibizione della Creazione*, puoi creare un numero di oggetti contemporaneamente pari al tuo **Modificatore di Carisma** (minimo 2). Soltanto uno degli oggetti può essere della taglia massima consentita, mentre gli altri devono essere di taglia Piccola o Minuta.<br><br>Inoltre, **non sei più limitato dal valore in monete d'oro** per gli oggetti creati."
     }
   ]
 },
 {
-  "id": "subclass_bard_eloquence",
-  "class_id": "bard",
+  "id": "college_of_eloquence",
   "name": "College of Eloquence",
   "name_it": "Collegio dell'Eloquenza",
+  "category": "Sottoclasse",
   "type": "sottoclasse",
+  "class_id": "bard",
+  "parent_class": "Bardo",
   "source_it": "Manuale Integrativo",
   "description_it": "I bardi del Collegio dell'Eloquenza padroneggiano l'arte dell'oratoria con argomentazioni logiche ed esibizioni teatrali. Per loro la persuasione è una forma d'arte superiore, capace di far leva sulle emozioni e convertire anche i detrattori più scettici.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Parlantina Sciolta, Parole Inquietanti, Ispirazione Infallibile, Parlato Universale, Ispirazione Contagiosa.",
   "features": [
     {
-      "name": "Parlantina Sciolta (Silver Tongue)",
+      "name": "Silver Tongue",
+      "name_it": "Parlantina Sciolta",
       "level": 3,
-      "description": "Sei un maestro nell'affermare la cosa giusta al momento giusto. Ogni volta che effettui una prova di <strong>Carisma (Persuasione)</strong> o <strong>Carisma (Inganno)</strong>, puoi considerare qualsiasi risultato pari o inferiore a 9 ottenuto sul d20 come se fosse un <strong>10</strong>."
+      "description_it": "Sei un maestro nell'affermare la cosa giusta al momento giusto. Ogni volta che effettui una prova di **Carisma (Persuasione)** o **Carisma (Inganno)**, puoi considerare qualsiasi risultato pari o inferiore a 9 ottenuto sul d20 come se fosse un **10**."
     },
     {
-      "name": "Parole Inquietanti (Unsettling Words)",
+      "name": "Unsettling Words",
+      "name_it": "Parole Inquietanti",
       "level": 3,
-      "description": "Con un'<strong>Azione Bonus</strong>, puoi spendere un uso dell'Ispirazione Bardica e scegliere una creatura che puoi vedere entro 18 metri da te, tirando il dado di Ispirazione Bardica. La creatura deve <strong>sottrarre il risultato ottenuto al prossimo Tiro Salvezza</strong> che effettuerà prima dell'inizio del tuo turno successivo."
+      "description_it": "Con un'**Azione Bonus**, puoi spendere un uso dell'Ispirazione Bardica e scegliere una creatura che puoi vedere entro 18 metri da te, tirando il dado di Ispirazione Bardica. La creatura deve **sottrarre il risultato ottenuto al prossimo Tiro Salvezza** che effettuerà prima dell'inizio del tuo turno successivo."
     },
     {
-      "name": "Ispirazione Infallibile (Unfailing Inspiration)",
+      "name": "Unfailing Inspiration",
+      "name_it": "Ispirazione Infallibile",
       "level": 3,
-      "description": "Le tue parole sono talmente persuasive che spingono gli altri al successo. Quando una creatura aggiunge un tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e <strong>la prova fallisce comunque</strong>, la creatura <strong>non consuma il dado di Ispirazione Bardica</strong> e può conservarlo."
+      "description_it": "Le tue parole sono talmente persuasive che spingono gli altri al successo. Quando una creatura aggiunge un tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e **la prova fallisce comunque**, la creatura **non consuma il dado di Ispirazione Bardica** e può conservarlo."
     },
     {
-      "name": "Parlato Universale (Universal Speech)",
+      "name": "Universal Speech",
+      "name_it": "Parlato Universale",
       "level": 6,
-      "description": "Con un'<strong>Azione</strong>, puoi rendere le tue parole intelligibili a un numero di creature entro 18 metri pari al tuo <strong>Modificatore di Carisma</strong> (minimo 1). Le creature scelte riescono a comprenderti magicamente per <strong>1 ora</strong>, a prescindere dalla lingua che parli.<br><br>Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo uno <strong>slot incantesimo</strong> di qualsiasi livello per riattivarlo."
+      "description_it": "Con un'**Azione**, puoi rendere le tue parole intelligibili a un numero di creature entro 18 metri pari al tuo **Modificatore di Carisma** (minimo 1). Le creature scelte riescono a comprenderti magicamente per **1 ora**, a prescindere dalla lingua che parli.<br><br>Usabile una volta per **Riposo Lungo**, oppure spendendo uno **slot incantesimo** di qualsiasi livello per riattivarlo."
     },
     {
-      "name": "Ispirazione Contagiosa (Infectious Inspiration)",
+      "name": "Infectious Inspiration",
+      "name_it": "Ispirazione Contagiosa",
       "level": 14,
-      "description": "Quando una creatura entro 18 metri aggiunge il tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e <strong>ottiene un successo</strong>, puoi usare la tua <strong>Reazione</strong> per incoraggiare un'altra creatura entro 18 metri che possa sentirti.<br><br>La nuova creatura ottiene un <strong>dado di Ispirazione Bardica senza consumare i tuoi usi</strong>. Puoi usare questa reazione un numero di volte pari al tuo <strong>Modificatore di Carisma</strong> per Riposo Lungo."
+      "description_it": "Quando una creatura entro 18 metri aggiunge il tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e **ottiene un successo**, puoi usare la tua **Reazione** per incoraggiare un'altra creatura entro 18 metri che possa sentirti.<br><br>La nuova creatura ottiene un **dado di Ispirazione Bardica senza consumare i tuoi usi**. Puoi usare questa reazione un numero di volte pari al tuo **Modificatore di Carisma** per Riposo Lungo."
     }
   ]
-}{
+},
+{
     "id": "sub_bard_eloquence",
     "name": "College of Eloquence",
     "name_it": "Collegio dell'Eloquenza",
