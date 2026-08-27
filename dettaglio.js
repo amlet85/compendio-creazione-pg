@@ -1,7 +1,7 @@
 async function loadDetail() {
   const contentDiv = document.getElementById('detailContent');
   
-  // 1. Estrae l'ID dai parametri dell'URL (es. dettaglio.html?id=guerriero)
+  // 1. Estrae l'ID dai parametri dell'URL (es. dettaglio.html?id=subclass_barbarian_wild_heart)
   const urlParams = new URLSearchParams(window.location.search);
   const itemId = urlParams.get('id');
 
@@ -35,8 +35,16 @@ async function loadDetail() {
 function renderDetailView(item, container) {
   const badgeText = (item.category || item.type || 'CLASSE').toUpperCase();
   
-  // Metadati (Fonte, Requisiti, ecc.)
+  // Metadati (Classe Madre, Manuale, Competenze)
   let metaHTML = '';
+  
+  // Se è una sottoclasse, mostra la classe d'appartenenza
+  const parentClass = item.class_it || item.parent_class || item.class_id || item.class;
+  if (parentClass) {
+    const formattedClass = Array.isArray(parentClass) ? parentClass.join(', ') : parentClass;
+    metaHTML += `<p><strong>Classe d'appartenenza:</strong> ${formattedClass.toUpperCase()}</p>`;
+  }
+
   if (item.source_it || item.source) {
     metaHTML += `<p><strong>Manuale:</strong> ${item.source_it || item.source}</p>`;
   }
@@ -45,10 +53,10 @@ function renderDetailView(item, container) {
     metaHTML += `<p><strong>Competenze:</strong> ${Array.isArray(profs) ? profs.join(', ') : profs}</p>`;
   }
 
-  // Descrizione
+  // Descrizione principale
   const descriptionText = item.description_it || item.description || '<em>Nessuna descrizione.</em>';
 
-  // 1. Tabella Progressione
+  // 1. Tabella Progressione (Solo se presente, es. per le Classi Base)
   let progressionHTML = '';
   if (item.progression && item.progression.length > 0) {
     const rows = item.progression.map(row => `
@@ -61,7 +69,7 @@ function renderDetailView(item, container) {
     `).join('');
 
     progressionHTML = `
-      <div class="progression-table-container">
+      <div class="progression-table-container" style="margin-top: 20px;">
         <h2>Tabella Progressione Livelli</h2>
         <table class="progression-table">
           <thead>
@@ -80,19 +88,28 @@ function renderDetailView(item, container) {
     `;
   }
 
-  // 2. Sezione Privilegi di Classe
+  // 2. Sezione Privilegi (Supporta sia 'class_features' che 'features' della Sottoclasse)
   let featuresHTML = '';
-  if (item.class_features && item.class_features.length > 0) {
-    const featureCards = item.class_features.map(feature => `
-      <div class="feature-card">
-        <h3>${feature.name} <span style="font-size: 0.85em; font-weight: normal; color: #7f8c8d;">(Livello ${feature.level})</span></h3>
-        <div>${feature.description}</div>
-      </div>
-    `).join('');
+  const featuresList = item.class_features || item.features;
+
+  if (featuresList && featuresList.length > 0) {
+    const titleText = item.type === 'sottoclasse' ? 'Privilegi di Sottoclasse' : 'Privilegi di Classe';
+
+    const featureCards = featuresList.map(feature => {
+      const featName = feature.name_it || feature.name;
+      const featDesc = feature.description_it || feature.description || feature.desc_it || '<em>Nessuna descrizione.</em>';
+      
+      return `
+        <div class="feature-card" style="margin-bottom: 15px; padding: 12px; background: rgba(255,255,255,0.05); border-left: 4px solid #e67e22; border-radius: 4px;">
+          <h3 style="margin-bottom: 5px;">${featName} ${feature.level ? `<span style="font-size: 0.85em; font-weight: normal; color: #7f8c8d;">(Livello ${feature.level})</span>` : ''}</h3>
+          <div style="line-height: 1.5;">${featDesc}</div>
+        </div>
+      `;
+    }).join('');
 
     featuresHTML = `
-      <div class="class-features">
-        <h2 style="border-bottom: 2px solid #e67e22; padding-bottom: 5px;">Privilegi di Classe</h2>
+      <div class="class-features" style="margin-top: 25px;">
+        <h2 style="border-bottom: 2px solid #e67e22; padding-bottom: 5px; margin-bottom: 15px;">${titleText}</h2>
         ${featureCards}
       </div>
     `;
