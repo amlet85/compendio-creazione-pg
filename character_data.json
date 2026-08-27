@@ -350,7 +350,7 @@
     "saving_throws": ["Intelligenza", "Saggezza"],
     "description_it": "Un sacerdote della Natura in grado di assumere forme animali tramite la Forma Selvatica e piegare le forze primordiali del mondo.<br><br><strong>Dado Vita:</strong> d8<br><strong>Caratteristica Primaria:</strong> Saggezza<br><strong>Tiri Salvezza:</strong> Intelligenza, Saggezza<br><strong>Tratti di Classe:</strong> Incantesimi, Forma Selvatica, Ordine Primordiale, Circolo Druidico."
   },
-  {
+ {
   "id": "fighter",
   "name": "Fighter",
   "name_it": "Guerriero",
@@ -358,199 +358,99 @@
   "source_it": "Manuale del Giocatore 2024",
   "hit_die": "d10",
   "primary_ability": "Forza o Destrezza",
-  "saving_throws": [
-    "Forza",
-    "Costituzione"
-  ],
+  "saving_throws": ["Forza", "Costituzione"],
   "description_it": "Un maestro del combattimento marziale esperto nell'uso di una vasta varietà di armi, armature e tattiche di guerra.<br><br><strong>Dado Vita:</strong> d10<br><strong>Caratteristica Primaria:</strong> Forza o Destrezza<br><strong>Tiri Salvezza:</strong> Forza, Costituzione<br><strong>Tratti di Classe:</strong> Stile di Combattimento, Recupero Energie, Azione Impetuosa, Maestria nelle Armi.",
   "progression": [
+    { "level": 1, "prof_bonus": "+2", "features": ["Stile di Combattimento", "Seconda Leva", "Maestria nelle Armi"], "details": "1d10 DV" },
+    { "level": 2, "prof_bonus": "+2", "features": ["Azione Impetuosa (1 uso)", "Mente Tattica"], "details": "-" },
+    { "level": 3, "prof_bonus": "+2", "features": ["Sottoclasse"], "details": "Scelta del modello razionale" },
+    { "level": 4, "prof_bonus": "+2", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 5, "prof_bonus": "+3", "features": ["Attacco Extra", "Spostamento Tattico"], "details": "2 attacchi" },
+    { "level": 6, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 7, "prof_bonus": "+3", "features": ["Privilegio della Sottoclasse"], "details": "-" },
+    { "level": 8, "prof_bonus": "+3", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 9, "prof_bonus": "+4", "features": ["Indomabile (1 uso)"], "details": "-" },
+    { "level": 10, "prof_bonus": "+4", "features": ["Privilegio della Sottoclasse", "Seconda Leva (Migliorata)"], "details": "-" },
+    { "level": 11, "prof_bonus": "+4", "features": ["Attacco Extra (2)"], "details": "3 attacchi" },
+    { "level": 12, "prof_bonus": "+4", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 13, "prof_bonus": "+5", "features": ["Indomabile (2 usi)", "Attacchi Studiati"], "details": "-" },
+    { "level": 14, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 15, "prof_bonus": "+5", "features": ["Privilegio della Sottoclasse"], "details": "-" },
+    { "level": 16, "prof_bonus": "+5", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 17, "prof_bonus": "+6", "features": ["Azione Impetuosa (2 usi)", "Indomabile (3 usi)"], "details": "-" },
+    { "level": 18, "prof_bonus": "+6", "features": ["Privilegio della Sottoclasse"], "details": "-" },
+    { "level": 19, "prof_bonus": "+6", "features": ["Aumento dei Punteggi di Caratteristica"], "details": "Talento o +2 car." },
+    { "level": 20, "prof_bonus": "+6", "features": ["Attacco Extra (3)"], "details": "4 attacchi" }
+  ],
+  "class_features": [
     {
+      "name": "Competenze e Punti Ferita",
       "level": 1,
-      "prof_bonus": "+2",
-      "features": [
-        "Competenze e Punti Ferita",
-        "Stile di Combattimento",
-        "Recuperare Energie",
-        "Maestria nelle Armi"
-      ],
-      "details": "1d10 DV",
-      "description": "<strong>Competenze e Punti Ferita:</strong><br>• <strong>Dado Vita:</strong> 1d10 per livello da Guerriero.<br>• <strong>Punti Ferita al 1° livello:</strong> 10 + il tuo modificatore di Costituzione.<br>• <strong>Punti Ferita ai livelli successivi:</strong> 1d10 (o 6) + il tuo modificatore di Costituzione per ogni livello da Guerriero dopo il 1°.<br>• <strong>Armature:</strong> Tutte le armature (leggere, medie, pesanti) e scudi.<br>• <strong>Armi:</strong> Armi semplici, armi da guerra.<br>• <strong>Strumenti:</strong> Nessuno.<br>• <strong>Tiri Salvezza:</strong> Forza, Costituzione.<br>• <strong>Abilità:</strong> Scegli due abilità a tua scelta tra <em>Acrobazia, Addestrare Animali, Atletica, Intimidire, Intuizione, Percezione, Sopravvivenza</em> e <em>Storia</em>.<br><br><strong>Stile di Combattimento (Fighting Style):</strong><br>Ottieni un talento da Stile di Combattimento a tua scelta per il quale soddisfi i requisiti (es. Tiratore Scelto, Difesa, Duellare, Combattere con Due Armi, Combattere con Armi Grandi, Protezione). Ogni volta che raggiungi un livello da Guerriero che ti concede un Aumento dei Punteggi di Caratteristica, puoi sostituire questo talento con un altro talento da Stile di Combattimento.<br><br><strong>Recuperare Energie (Second Wind):</strong><br>Hai un fondo di riserva di resistenza a cui puoi attingere per proteggerti dal pericolo. Come azione bonus, puoi recuperare un numero di Punti Ferita pari a <strong>1d10 + il tuo livello da Guerriero</strong>.<br>Il numero massimo di utilizzi è pari a 2 al livello 1, e aumenta a 3 al livello 4 e a 4 al livello 10. Riconquisti un uso consumato al termine di un Riposo Breve, e riconquisti tutti gli usi consumati al termine di un Riposo Lungo.<br><br><strong>Maestria nelle Armi (Weapon Mastery):</strong><br>La tua intensa formazione ti permette di sbloccare la proprietà di Maestria per un numero di tipi di armi a tua scelta pari a <strong>3</strong> (con cui sei competente, ad esempio: Spada Lunga, Arco Lungo, Alabarda). Ogni volta che completi un Riposo Lungo, puoi cambiare i tipi di armi selezionati. Il numero di armi designate aumenta quando raggiungi determinati livelli da Guerriero: 4 armi al livello 4, 5 armi al livello 10 e 6 armi al livello 16."
+      "description": "<strong>Dado Vita:</strong> 1d10 per livello da Guerriero.<br><strong>Armature:</strong> Tutte le armature, scudi.<br><strong>Armi:</strong> Armi semplici, armi da guerra.<br><strong>Strumenti:</strong> Nessuno.<br><strong>Tiri Salvezza:</strong> Forza, Costituzione.<br><strong>Abilità:</strong> Scegli due abilità tra Acrobazia, Addestrare Animali, Atletica, Storia, Intuizione, Intimidire, Percezione e Sopravvivenza."
     },
     {
+      "name": "Stile di Combattimento",
+      "level": 1,
+      "description": "Ottieni un talento da Stile di Combattimento a tua scelta per il quale soddisfi i requisiti."
+    },
+    {
+      "name": "Recuperare Energie (Second Wind)",
+      "level": 1,
+      "description": "Puoi usare un'azione bonus per recuperare punti ferita pari a 1d10 + il tuo livello da guerriero. Puoi usare questo privilegio un numero di volte indicato nella tabella (2 usi al liv. 1, fino a 4 al liv. 10). Riconquisti un uso con un riposo breve e tutti gli usi con un riposo lungo."
+    },
+    {
+      "name": "Maestria nelle Armi (Weapon Mastery)",
+      "level": 1,
+      "description": "La tua formazione ti permette di sbloccare le proprietà di Maestria per 3 tipi di armi a tua scelta con cui sei competente. Puoi cambiare le armi scelte al termine di un riposo lungo. Il numero di armi aumenta a 4 (liv 4), 5 (liv 10) e 6 (liv 16)."
+    },
+    {
+      "name": "Azione Impetuosa (Action Surge)",
       "level": 2,
-      "prof_bonus": "+2",
-      "features": [
-        "Azione Impetuosa (1 uso)",
-        "Mente Tattica"
-      ],
-      "details": "-",
-      "description": "<strong>Azione Impetuosa (Action Surge):</strong><br>Puoi spingerti oltre i tuoi limiti normali per un istante. Nel tuo turno, puoi effettuare un'<strong>azione aggiuntiva</strong> oltre alla tua azione normale e all'eventuale azione bonus.<br><em>Nota (Regole 2024):</em> Questa azione aggiuntiva non può essere usata per effettuare l'azione 'Cast a Spell' (Incantare), ad eccezione dei cantrip con tempo di lancio di 1 azione.<br>Una volta utilizzato questo privilegio, devi completare un Riposo Breve o Lungo per poterlo riutilizzare. Dal livello 17 puoi usarlo 2 volte prima di un riposo, ma solo una volta per turno.<br><br><strong>Mente Tattica (Tactical Mind):</strong><br>La tua mente brillante per la tattica può aiutarti a superare gli ostacoli fuori dal combattimento. Quando effettui una prova di abilità e fallisci, puoi spendere un uso di <em>Recuperare Energie</em> per tirare un <strong>d10</strong> e sommare il risultato al totale della prova di abilità, con la possibilità di trasformare il fallimento in un successo.<br>Se la prova fallisce comunque dopo aver aggiunto il d10, l'uso di Recuperare Energie <strong>non viene consumato</strong>."
+      "description": "Puoi spingerti oltre i tuoi limiti per un istante. Nel tuo turno, puoi effettuare un'azione aggiuntiva oltre alla tua azione normale e a un'eventuale azione bonus. (Non utilizzabile per effettuare l'azione di Cast a Spell). Puoi usarlo 1 volta (2 volte dal livello 17). Si ricarica con un riposo breve o lungo."
     },
     {
+      "name": "Mente Tattica (Tactical Mind)",
+      "level": 2,
+      "description": "Quando fallisci una prova di abilità, puoi spendere un uso di Recuperare Energie per tirare un 1d10 e sommarlo al totale. Se la prova fallisce comunque, l'uso di Recuperare Energie non viene consumato."
+    },
+    {
+      "name": "Sottoclasse del Guerriero",
       "level": 3,
-      "prof_bonus": "+2",
-      "features": [
-        "Sottoclasse del Guerriero (Archetipo Marziale)"
-      ],
-      "details": "Scelta Sottoclasse",
-      "description": "<strong>Sottoclasse del Guerriero (Subclass):</strong><br>Scegli una sottoclasse (Archetipo Marziale) che definisce il tuo approccio al combattimento tra quelle disponibili (es. <em>Campione / Champion, Maestro di Battaglia / Battle Master, Cavaliere Mistico / Eldritch Knight, Guerriero Psionico / Psi Warrior</em>).<br>La sottoclasse ti concede privilegi speciali a questo livello e ai livelli 7, 10 e 15."
+      "description": "Scegli un archetipo marziale che plasma il tuo stile di combattimento (es. Campione, Maestro di Battaglia, Cavaliere Mistico, PSI Warrior). Ottieni i privilegi della sottoclasse ai livelli 3, 7, 10 e 15."
     },
-    {
+    { "name": "Aumento dei Punteggi di Caratteristica / Talento",
       "level": 4,
-      "prof_bonus": "+2",
-      "features": [
-        "Aumento dei Punteggi di Caratteristica / Talento"
-      ],
-      "details": "Talento o +2 car.",
-      "description": "<strong>Aumento dei Punteggi di Caratteristica (Ability Score Improvement / Feat):</strong><br>Ottieni il talento Aumento dei Punteggi di Caratteristica o un altro talento a tua scelta per il quale soddisfi i requisiti.<br>Se scegli l'Aumento dei Punteggi di Caratteristica, puoi aumentare un punteggio di caratteristica a tua scelta di 2, oppure due punteggi di caratteristica a tua scelta di 1. Non puoi portare una caratteristica al di sopra di 20 tramite questo privilegio.<br><br><strong>Incremento Maestria nelle Armi:</strong> Il numero di tipi di armi per cui puoi attivare le proprietà di Maestria aumenta a <strong>4</strong>.<br><strong>Incremento Recuperare Energie:</strong> Il numero massimo di usi di Recuperare Energie aumenta a <strong>3</strong>."
+      "description": "Ottieni un Aumento dei Punteggi di Caratteristica o un Talento. Ulteriori aumenti si ottengono ai livelli 6, 8, 12, 14, 16 e 19."
     },
     {
+      "name": "Attacco Extra",
       "level": 5,
-      "prof_bonus": "+3",
-      "features": [
-        "Attacco Extra",
-        "Spostamento Tattico"
-      ],
-      "details": "2 attacchi",
-      "description": "<strong>Attacco Extra (Extra Attack):</strong><br>Puoi attaccare <strong>due volte</strong> anziché una ogni volta che effettui l'azione di Attacco nel tuo turno.<br><br><strong>Spostamento Tattico (Tactical Shift):</strong><br>La tua prontezza tattica ti permette di riposizionarti velocemente nei momenti critici. Ogni volta che attivi <em>Recuperare Energie</em> come azione bonus nel tuo turno, puoi muoverti fino a <strong>metà della tua velocità</strong> senza provocare attacchi d'opportunità."
+      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
     },
     {
-      "level": 6,
-      "prof_bonus": "+3",
-      "features": [
-        "Aumento dei Punteggi di Caratteristica / Talento"
-      ],
-      "details": "Talento o +2 car.",
-      "description": "<strong>Aumento dei Punteggi di Caratteristica / Talento:</strong><br>Ottieni un ulteriore Aumento dei Punteggi di Caratteristica o un Talento a tua scelta per il quale soddisfi i requisiti. Il Guerriero ottiene più aumenti di caratteristica rispetto alle altre classi."
+      "name": "Spostamento Tattico (Tactical Shift)",
+      "level": 5,
+      "description": "Ogni volta che attivi Recuperare Energie come azione bonus, puoi muoverti fino a metà della tua velocità senza provocare attacchi d'opportunità."
     },
     {
-      "level": 7,
-      "prof_bonus": "+3",
-      "features": [
-        "Privilegio della Sottoclasse"
-      ],
-      "details": "-",
-      "description": "<strong>Privilegio della Sottoclasse:</strong><br>Ottieni un nuovo privilegio specifico determinato dall'Archetipo Marziale scelto al livello 3."
-    },
-    {
-      "level": 8,
-      "prof_bonus": "+3",
-      "features": [
-        "Aumento dei Punteggi di Caratteristica / Talento"
-      ],
-      "details": "Talento o +2 car.",
-      "description": "<strong>Aumento dei Punteggi di Caratteristica / Talento:</strong><br>Ottieni un ulteriore Aumento dei Punteggi di Caratteristica o un Talento a tua scelta per il quale soddisfi i requisiti."
-    },
-    {
+      "name": "Indomabile (Indomitable)",
       "level": 9,
-      "prof_bonus": "+4",
-      "features": [
-        "Indomabile (1 uso)"
-      ],
-      "details": "-",
-      "description": "<strong>Indomabile (Indomitable):</strong><br>La tua forza di volontà ti permette di resistere a effetti che piegherebbero altri. Quando fallisci un tiro salvezza, puoi scegliere di <strong>ritirarlo</strong>.<br>Quando lo fai, aggiungi un bonus pari al tuo <strong>livello da Guerriero</strong> al nuovo tiro salvezza. Devi utilizzare il nuovo risultato e non puoi riutilizzare Indomabile sullo stesso tiro salvezza.<br>Una volta utilizzato, non puoi più usarlo finché non completi un Riposo Lungo. Puoi usarlo 1 volta al livello 9, 2 volte dal livello 13 e 3 volte dal livello 17."
+      "description": "Quando fallisci un tiro salvezza, puoi ritirarlo con un bonus pari al tuo livello da Guerriero. Devi usare il nuovo risultato. (1 uso al liv 9, 2 usi al liv 13, 3 usi al liv 17)."
     },
     {
-      "level": 10,
-      "prof_bonus": "+4",
-      "features": [
-        "Privilegio della Sottoclasse",
-        "Recuperare Energie (Migliorato)"
-      ],
-      "details": "-",
-      "description": "<strong>Privilegio della Sottoclasse:</strong><br>Ottieni un nuovo privilegio specifico conferito dal tuo Archetipo Marziale.<br><br><strong>Recuperare Energie (Miglioramento):</strong><br>Il numero massimo di usi di <em>Recuperare Energie</em> aumenta a <strong>4</strong>.<br><br><strong>Incremento Maestria nelle Armi:</strong> Il numero di tipi di armi per cui puoi attivare le proprietà di Maestria aumenta a <strong>5</strong>."
-    },
-    {
+      "name": "Attacco Extra Migliorato (2)",
       "level": 11,
-      "prof_bonus": "+4",
-      "features": [
-        "Attacco Extra Migliorato (2)"
-      ],
-      "details": "3 attacchi",
-      "description": "<strong>Attacco Extra Migliorato (Two Extra Attacks):</strong><br>Puoi attaccare <strong>tre volte</strong> anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+      "description": "Puoi attaccare tre volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
     },
     {
-      "level": 12,
-      "prof_bonus": "+4",
-      "features": [
-        "Aumento dei Punteggi di Caratteristica / Talento"
-      ],
-      "details": "Talento o +2 car.",
-      "description": "<strong>Aumento dei Punteggi di Caratteristica / Talento:</strong><br>Ottieni un ulteriore Aumento dei Punteggi di Caratteristica o un Talento a tua scelta per il quale soddisfi i requisiti."
-    },
-    {
+      "name": "Maestro delle Armature / Armi Studiate (Studied Attacks)",
       "level": 13,
-      "prof_bonus": "+5",
-      "features": [
-        "Indomabile (2 usi)",
-        "Armi Studiate"
-      ],
-      "details": "-",
-      "description": "<strong>Indomabile (2 usi):</strong><br>Puoi usare il privilegio <em>Indomabile</em> due volte tra un Riposo Lungo e l'altro.<br><br><strong>Armi Studiate (Studied Attacks):</strong><br>Studi attentamente i movimenti dei tuoi nemici mentre combatti. Se effettui un tiro per colpire contro una creatura come parte dell'azione di Attacco e manchi il bersaglio, ottieni <strong>Vantaggio</strong> al tiro per colpire successivo effettuato contro quella stessa creatura prima della fine del tuo turno successivo."
+      "description": "Se manchi un bersaglio con un attacco effettuato con l'azione di Attacco, ottieni vantaggio al tiro per colpire successivo contro quel bersaglio prima della fine del tuo turno successivo."
     },
     {
-      "level": 14,
-      "prof_bonus": "+5",
-      "features": [
-        "Aumento dei Punteggi di Caratteristica / Talento"
-      ],
-      "details": "Talento o +2 car.",
-      "description": "<strong>Aumento dei Punteggi di Caratteristica / Talento:</strong><br>Ottieni un ulteriore Aumento dei Punteggi di Caratteristica o un Talento a tua scelta per il quale soddisfi i requisiti."
-    },
-    {
-      "level": 15,
-      "prof_bonus": "+5",
-      "features": [
-        "Privilegio della Sottoclasse"
-      ],
-      "details": "-",
-      "description": "<strong>Privilegio della Sottoclasse:</strong><br>Ottieni un nuovo privilegio specifico conferito dal tuo Archetipo Marziale."
-    },
-    {
-      "level": 16,
-      "prof_bonus": "+5",
-      "features": [
-        "Aumento dei Punteggi di Caratteristica / Talento"
-      ],
-      "details": "Talento o +2 car.",
-      "description": "<strong>Aumento dei Punteggi di Caratteristica / Talento:</strong><br>Ottieni un ulteriore Aumento dei Punteggi di Caratteristica o un Talento a tua scelta per il quale soddisfi i requisiti.<br><br><strong>Incremento Maestria nelle Armi:</strong> Il numero di tipi di armi per cui puoi attivare le proprietà di Maestria aumenta a <strong>6</strong>."
-    },
-    {
-      "level": 17,
-      "prof_bonus": "+6",
-      "features": [
-        "Azione Impetuosa (2 usi)",
-        "Indomabile (3 usi)"
-      ],
-      "details": "-",
-      "description": "<strong>Azione Impetuosa (2 usi):</strong><br>Puoi usare <em>Azione Impetuosa</em> due volte prima di dover effettuare un Riposo Breve o Lungo. Tuttavia, puoi utilizzarla soltanto una volta nello stesso turno.<br><br><strong>Indomabile (3 usi):</strong><br>Puoi usare il privilegio <em>Indomabile</em> tre volte tra un Riposo Lungo e l'altro."
-    },
-    {
-      "level": 18,
-      "prof_bonus": "+6",
-      "features": [
-        "Privilegio della Sottoclasse"
-      ],
-      "details": "-",
-      "description": "<strong>Privilegio della Sottoclasse:</strong><br>Ottieni il privilegio finale conferito dal tuo Archetipo Marziale."
-    },
-    {
-      "level": 19,
-      "prof_bonus": "+6",
-      "features": [
-        "Aumento dei Punteggi di Caratteristica / Talento Epico"
-      ],
-      "details": "Talento Epico o +2 car.",
-      "description": "<strong>Aumento dei Punteggi di Caratteristica / Talento Epico (Epic Boon):</strong><br>Ottieni un Aumento dei Punteggi di Caratteristica oppure un <strong>Talento Epico (Epic Boon Feat)</strong> a tua scelta o un altro talento per il quale soddisfi i requisiti. I Talenti Epici offrono capacità di potere semidivino riservate ai personaggi di altissimo livello."
-    },
-    {
+      "name": "Attacco Extra Migliorato (3)",
       "level": 20,
-      "prof_bonus": "+6",
-      "features": [
-        "Attacco Extra Migliorato (3)"
-      ],
-      "details": "4 attacchi",
-      "description": "<strong>Attacco Extra Migliorato (Three Extra Attacks):</strong><br>Hai raggiunto il picco assoluto della maestria marziale. Puoi attaccare <strong>quattro volte</strong> anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+      "description": "Il culmine della maestria marziale. Puoi attaccare quattro volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
     }
   ]
 },
