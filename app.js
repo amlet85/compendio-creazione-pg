@@ -37,8 +37,8 @@ function renderCards(items) {
 
   // Ordinamento: raggruppa prima per classe/categoria e poi per nome
   const sortedItems = [...items].sort((a, b) => {
-    const classA = (a.class_it || a.parent_class || a.class || '').toLowerCase();
-    const classB = (b.class_it || b.parent_class || b.class || '').toLowerCase();
+    const classA = (a.class_it || a.parent_class || a.class_id || a.class || '').toLowerCase();
+    const classB = (b.class_it || b.parent_class || b.class_id || b.class || '').toLowerCase();
     
     if (classA !== classB) {
       return classA.localeCompare(classB);
@@ -58,7 +58,8 @@ function renderCards(items) {
     // Metadati dinamici
     let metaHTML = '';
     
-    const parentClass = item.class_it || item.parent_class || item.class;
+    // Supporto esteso a class_id
+    const parentClass = item.class_it || item.parent_class || item.class_id || item.class;
     if (parentClass) {
       const formattedClass = Array.isArray(parentClass) ? parentClass.join(', ') : parentClass;
       metaHTML += `<p><strong>Classe d'appartenenza:</strong> ${formattedClass}</p>`;
@@ -85,6 +86,22 @@ function renderCards(items) {
 
     const descriptionText = getItemDescription(item);
 
+    // Render dei Privilegi / Features (Se presenti nel JSON)
+    let featuresHTML = '';
+    if (item.features && Array.isArray(item.features)) {
+      featuresHTML = '<div class="features-container" style="margin-top: 15px; border-top: 1px solid #444; padding-top: 10px;">';
+      featuresHTML += '<h3>Privilegi di Sottoclasse:</h3>';
+      item.features.forEach(feat => {
+        featuresHTML += `
+          <div class="feature-item" style="margin-bottom: 12px; background: rgba(255,255,255,0.05); padding: 8px; border-radius: 4px;">
+            <strong style="color: #e67e22;">${feat.name}</strong> ${feat.level ? `<small>(Livello ${feat.level})</small>` : ''}
+            <div style="margin-top: 4px;">${feat.description}</div>
+          </div>
+        `;
+      });
+      featuresHTML += '</div>';
+    }
+
     // Gestione Link Approfondimento per Classi e Sottoclassi
     let linkHTML = '';
     const rawType = (item.type || '').toLowerCase();
@@ -108,6 +125,7 @@ function renderCards(items) {
       <div class="spell-description">
         ${descriptionText}
       </div>
+      ${featuresHTML}
       ${linkHTML}
     `;
 
@@ -161,16 +179,17 @@ function filterData() {
       matchesCategory = itemType.includes(selectedCategory) || itemCat.includes(selectedCategory);
     }
 
-    // 3. Classe di appartenenza
+    // 3. Classe di appartenenza (AGGIUNTO class_id PER MATCHARE LE SOTTOCLASSI)
     let parentClassString = '';
-    const parentClass = item.class_it || item.parent_class || item.class || item.classes;
+    const parentClass = item.class_it || item.parent_class || item.class_id || item.class || item.classes;
     if (Array.isArray(parentClass)) {
       parentClassString = parentClass.join(' ').toLowerCase();
     } else if (typeof parentClass === 'string') {
       parentClassString = parentClass.toLowerCase();
     }
 
-    const matchesClass = selectedClass === '' || parentClassString.includes(selectedClass);
+    // Risoluzione per match tra "barbarian" (del menu select) e "Barbaro" o "barbarian"
+    const matchesClass = selectedClass === '' || parentClassString.includes(selectedClass) || (selectedClass === 'barbarian' && parentClassString.includes('barbaro'));
 
     return matchesName && matchesCategory && matchesClass;
   });
