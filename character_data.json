@@ -3139,6 +3139,233 @@
       }
     ]
   },
+{
+    "id": "subclass_monk_warrior_of_shadow",
+    "class_id": "monk",
+    "name": "Warrior of Shadow",
+    "name_it": "Guerriero delle Ombre",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Guerrieri delle Ombre praticano la furtività e il sotterfugio, incanalando le proprie riserve di potere per imbrigliare la forza della Selva Oscura (Shadowfell). Si trovano a proprio agio nell'oscurità, capaci di evocare l'ombra attorno a sé per nascondersi, di balzare da un'ombra all'altra e persino di assumere una forma spettrale di ombra vivente.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Arti Ombrose, Passo dell'Ombra, Passo dell'Ombra Migliorato, Mantello di Ombre.",
+    "features": [
+      {
+        "name": "Arti Ombrose (Shadow Arts)",
+        "level": 3,
+        "description": "Impari a tirare fuori il potere dalla Selva Oscura, ottenendo i seguenti benefici:<br>- <strong>Oscurità:</strong> Puoi spendere 1 Punto Focalizzazione per lanciare l'incantesimo <em>Oscurità</em> senza componenti magiche. Puoi vedere all'interno dell'area dell'incantesimo quando lo lanci con questo privilegio. Finché l'incantesimo persiste, puoi muovere la sua area di Oscurità in uno spazio entro 18 metri da te all'inizio di ciascuno dei tuoi turni.<br>- <strong>Scurovisione:</strong> Ottieni Scurovisione con una gittata di 18 metri. Se possiedi già Scurovisione, la sua gittata aumenta di 18 metri.<br>- <strong>Finzioni Ombrose:</strong> Conosci l'incantesimo <em>Illusione Minore</em>. Saggezza è la tua abilità da incantatore per esso."
+      },
+      {
+        "name": "Passo dell'Ombra (Shadow Step)",
+        "level": 6,
+        "description": "Mentre ti trovi interamente all'interno di Luce Vaga o Oscurità, puoi usare un'<strong>Azione Bonus</strong> per teletrasportarti fino a 18 metri in uno spazio non occupato che puoi vedere, anch'esso in Luce Vaga o Oscurità. Ottieni poi <strong>Vantaggio</strong> al prossimo attacco da mischia che effettui prima della fine del turno corrente."
+      },
+      {
+        "name": "Passo dell'Ombra Migliorato (Improved Shadow Step)",
+        "level": 11,
+        "description": "Puoi attingere alla tua connessione con la Selva Oscura per potenziare il tuo teletrasporto. Quando usi Passo dell'Ombra, puoi spendere <strong>1 Punto Focalizzazione</strong> per rimuovere il requisito di dover iniziare e finire in Luce Vaga o Oscurità per quell'utilizzo del privilegio.<br><br>Come parte di questa Azione Bonus, puoi effettuare un <strong>Attacco Senz'Armi</strong> immediatamente dopo il teletrasporto."
+      },
+      {
+        "name": "Mantello di Ombre (Cloak of Shadows)",
+        "level": 17,
+        "description": "Come <strong>Azione Magica</strong> mentre ti trovi interamente all'interno di Luce Vaga o Oscurità, puoi spendere <strong>3 Punti Focalizzazione</strong> per avvolgerti di ombre per 1 minuto, finché non ottieni la condizione Incapacitato o finché non termini il tuo turno in Luce Intensa. Finché sei avvolto da queste ombre, ottieni i seguenti benefici:<br>- <strong>Invisibilità:</strong> Ottieni la condizione Invisibile.<br>- <strong>Parzialmente Incorporeo:</strong> Puoi muoverti attraverso spazi occupati come se fossero Terreno Difficile. Se termini il tuo turno in uno spazio occupato, vieni spinto nell'ultimo spazio libero in cui ti trovavi.<br>- <strong>Raffica di Ombre:</strong> Puoi usare la tua Raffica di Colpi senza spendere Punti Focalizzazione."
+      }
+    ]
+  },
+  {
+    "id": "subclass_monk_warrior_of_the_elements",
+    "class_id": "monk",
+    "name": "Warrior of the Elements",
+    "name_it": "Guerriero degli Elementi",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "La tradizione dei Quattro Elementi racchiude i Monaci che attingono al potere dei Piani Elementali attraverso la pratica delle arti marziali. Alcuni di questi monaci si concentrano su un singolo elemento, imparando ad avvolgere i propri pugni nel fuoco e a causare esplosioni di fiamme, o a manovrare potenti raffiche di vento gelido. Altri intrecciano gli elementi tra loro e imparano una varietà di tecniche per imbrigliare la forza elementale appropriata a ciascuna circostanza.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Manipolare Elementi, Sintonizzazione Elementale, Esplosione Ambientale, Passo degli Elementi, Incarnazione Elementale.",
+    "features": [
+      {
+        "name": "Manipolare Elementi (Manipulate Elements)",
+        "level": 3,
+        "description": "Conosci l'incantesimo <em>Elementaleismo</em>. Saggezza è la tua abilità da incantatore per esso."
+      },
+      {
+        "name": "Sintonizzazione Elementale (Elemental Attunement)",
+        "level": 3,
+        "description": "All'inizio del tuo turno, puoi spendere <strong>1 Punto Focalizzazione</strong> per imbeviti di energia elementale. L'energia dura per 10 minuti o finché non ottieni la condizione Incapacitato. Ottieni i seguenti benefici mentre il privilegio è attivo:<br>- <strong>Colpi Elementali:</strong> Ogni volta che colpisci con un Attacco Senz'Armi, puoi fare in modo che infligga danni da <strong>Acido, Freddo, Fuoco, Fulmine o Tuono</strong> a tua scelta anziché il suo normale tipo di danno. Quando infliggi uno di questi tipi di danno, puoi anche costringere il bersaglio a effettuare un tiro di salvezza su <strong>Forza</strong>: se lo fallisce, puoi muovere il bersaglio fino a 3 metri verso di te o lontano da te, mentre l'energia elementale gli si vortica intorno.<br>- <strong>Portata:</strong> Quando effettui un Attacco Senz'Armi, la tua portata è superiore di <strong>3 metri</strong> rispetto al normale, poiché l'energia elementale si estende da te."
+      },
+      {
+        "name": "Esplosione Ambientale (Environmental Burst)",
+        "level": 6,
+        "description": "Come <strong>Azione Magica</strong>, puoi spendere <strong>2 Punti Focalizzazione</strong> per far esplodere energia ambientale in una sfera di 6 metri di raggio centrata su un punto entro 36 metri da te. Scegli un tipo di danno tra <strong>Acido, Freddo, Fuoco, Fulmine o Tuono</strong>.<br><br>Ogni creatura nella sfera deve effettuare un tiro di salvezza su <strong>Destrezza</strong>. Se lo fallisce, la creatura subisce danni del tipo scelto pari a <strong>tre tiri del tuo dado di Arti Marziali</strong>; se lo supera, subisce la metà dei danni."
+      },
+      {
+        "name": "Passo degli Elementi (Stride of the Elements)",
+        "level": 11,
+        "description": "Mentre la tua Sintonizzazione Elementale è attiva, ottieni anche una <strong>Velocità di Volo</strong> e una <strong>Velocità di Nuoto</strong> pari alla tua Velocità di movimento."
+      },
+      {
+        "name": "Incarnazione Elementale (Elemental Epitome)",
+        "level": 17,
+        "description": "Quando la tua Sintonizzazione Elementale è attiva, ottieni anche i seguenti benefici:<br>- <strong>Resistenza ai Danni:</strong> Ottieni Resistenza a un tipo di danno a tua scelta tra Acido, Freddo, Fuoco, Fulmine o Tuono. All'inizio di ciascuno dei tuoi turni, puoi cambiare questa scelta.<br>- <strong>Passo Distruttivo:</strong> Quando usi Passo del Vento, la tua Velocità aumenta di 6 metri fino alla fine del turno. Per tale durata, qualsiasi creatura a tua scelta subisce danni pari a <strong>un tiro del tuo dado di Arti Marziali</strong> quando entri in uno spazio entro 1,5 metri da essa. Il tipo di danno è a tua scelta tra Acido, Freddo, Fuoco, Fulmine o Tuono (una creatura può subire questo danno solo una volta per turno).<br>- <strong>Colpi Potenziati:</strong> Una volta in ciascuno dei tuoi turni, puoi infliggere danni extra a un bersaglio pari a <strong>un tiro del tuo dado di Arti Marziali</strong> quando lo colpisci con un Attacco Senz'Armi. Il danno extra è dello stesso tipo inflitto da quel colpo."
+      }
+    ]
+  },
+  {
+    "id": "subclass_monk_warrior_of_the_hand",
+    "class_id": "monk",
+    "name": "Warrior of the Hand",
+    "name_it": "Guerriero della Mano",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Guerrieri della Mano sono maestri del combattimento a mani nude. Imparano tecniche per spingere e far sbilanciare gli avversari, oltre a manipolare la propria energia per proteggersi dai pericoli.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Tecnica della Mano Aperta, Integrità del Corpo, Passo Fluido, Palmo Tremante.",
+    "features": [
+      {
+        "name": "Tecnica della Mano Aperta (Open Hand Technique)",
+        "level": 3,
+        "description": "Ogni volta che colpisci una creatura con un attacco concesso dalla tua Raffica di Colpi, puoi imporre uno dei seguenti effetti a quel bersaglio:<br>- <strong>Ostacolare:</strong> Il bersaglio non può effettuare Attacchi di Opportunità fino all'inizio del suo turno successivo.<br>- <strong>Spingere:</strong> Il bersaglio deve superare un tiro di salvezza su <strong>Forza</strong>, altrimenti viene spinto fino a 4,5 metri lontano da te.<br>- <strong>Atterrare:</strong> Il bersaglio deve superare un tiro di salvezza su <strong>Destrezza</strong>, altrimenti subisce la condizione Prono."
+      },
+      {
+        "name": "Integrità del Corpo (Wholeness of Body)",
+        "level": 6,
+        "description": "Ottieni la capacità di guarire te stesso. Come <strong>Azione Bonus</strong>, puoi tirare il tuo dado di Arti Marziali. Recuperi un numero di Punti Ferita pari al risultato del tiro più il tuo <strong>modificatore di Saggezza</strong> (minimo 1 Punto Ferita recuperato).<br><br>Puoi usare questo privilegio un numero di volte pari al tuo modificatore di Saggezza (minimo una volta) e recuperi tutti gli utilizzi spesi quando completi un <strong>riposo lungo</strong>."
+      },
+      {
+        "name": "Passo Fluido (Fleet Step)",
+        "level": 11,
+        "description": "Quando usi un'Azione Bonus diversa da Passo del Vento, puoi anche usare <strong>Passo del Vento</strong> immediatamente dopo tale Azione Bonus."
+      },
+      {
+        "name": "Palmo Tremante (Quivering Palm)",
+        "level": 17,
+        "description": "Ottieni la capacità di innescare vibrazioni letali nel corpo di un nemico. Quando colpisci una creatura con un Attacco Senz'Armi, puoi spendere <strong>4 Punti Focalizzazione</strong> per avviare queste impercettibili vibrazioni, che durano per un numero di giorni pari al tuo livello da Monaco. Le vibrazioni sono innocue a meno che tu non usi la tua Azione per terminarle. In alternativa, quando effettui l'azione di Attacco nel tuo turno, puoi rinunciare a uno degli attacchi per terminare le vibrazioni. Per terminarle, tu e il bersaglio dovete trovarvi nello stesso piano di esistenza.<br><br>Quando le termini, il bersaglio deve effettuare un tiro di salvezza su <strong>Costituzione</strong>: subisce <strong>10d12 danni da Forza</strong> se lo fallisce, o la metà dei danni se lo supera.<br><br>Puoi avere solo una creatura alla volta sotto l'effetto di questo privilegio. Puoi terminare le vibrazioni in modo innocuo (nessuna azione richiesta)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_monk_warrior_of_the_astral_self",
+    "class_id": "monk",
+    "name": "Warrior of the Astral Self",
+    "name_it": "Guerriero del Sé Astrale",
+    "type": "sottoclasse",
+    "source_it": "Tel'Dorei / Tasha's Cauldron of Everything",
+    "description_it": "Un monaco del Sé Astrale crede che il proprio corpo sia solo un'illusione. Vede il proprio ki come la rappresentazione della propria vera forma, un sé astrale. Questo sé astrale ha la capacità di essere una forza di ordine o disordine: alcuni monasteri addestrano gli studenti a usare questo potere per proteggere i deboli, mentre altri insegnano ad manifestarlo al servizio dei potenti.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Braccia del Sé Astrale, Volto del Sé Astrale, Corpo del Sé Astrale, Sé Astrale Risvegliato.",
+    "features": [
+      {
+        "name": "Braccia del Sé Astrale (Arms of the Astral Self)",
+        "level": 3,
+        "description": "La tua padronanza del ki ti permette di evocare una porzione del tuo sé astrale. Come <strong>Azione Bonus</strong>, puoi spendere <strong>1 punto ki</strong> per evocare le braccia del tuo sé astrale. Quando lo fai, ogni creatura a tua scelta che puoi vedere entro 3 metri da te deve superare un tiro di salvezza su <strong>Destrezza</strong> o subire danni da Forza pari a <strong>due tiri del tuo dado di Arti Marziali</strong>.<br><br>Per 10 minuti, queste braccia spettrali fluttuano vicino alle tue spalle o circondano le tue braccia (a tua scelta). Determini l'aspetto delle braccia, ed esse svaniscono prima se sei incapacitato o muori. Finché le braccia spettrali sono presenti, ottieni i seguenti benefici:<br>- Puoi usare il tuo <strong>modificatore di Saggezza</strong> al posto del modificatore di Forza quando effettui prove di Forza e tiri di salvezza su Forza.<br>- Puoi usare le braccia spettrali per effettuare attacchi senz'armi.<br>- Quando effettui un attacco senz'armi con le braccia nel tuo turno, la tua portata è superiore di <strong>1,5 metri</strong> rispetto al normale.<br>- Gli attacchi senz'armi che effettui con le braccia possono usare il tuo modificatore di Saggezza al posto del modificatore di Forza o Destrezza per i tiri per colpire e per i danni, e il loro tipo di danno è <strong>Forza</strong>."
+      },
+      {
+        "name": "Volto del Sé Astrale (Visage of the Astral Self)",
+        "level": 6,
+        "description": "Puoi evocare il volto del tuo sé astrale. Come <strong>Azione Bonus</strong>, o come parte dell'Azione Bonus che usi per attivare Braccia del Sé Astrale, puoi spendere <strong>1 punto ki</strong> per evocare questo volto per 10 minuti. Svanisce prima se sei incapacitato o muori. Il volto spettrale copre il tuo viso come un elmo o una maschera. Ne determini l'aspetto. Finché il volto spettrale è presente, ottieni i seguenti benefici:<br>- <strong>Vista Astrale:</strong> Puoi vedere normalmente nell'oscurità, sia magica che non magica, fino a una distanza di 36 metri.<br>- <strong>Saggezza dello Spirito:</strong> Ottieni Vantaggio alle prove di Saggezza (<strong>Intuizione</strong>) e Carisma (<strong>Intimidire</strong>).<br>- <strong>Parola dello Spirito:</strong> Quando parli, puoi dirigere le tue parole a una creatura a tua scelta che puoi vedere entro 18 metri da te, facendo in modo che solo quella creatura possa sentirti. In alternativa, puoi amplificare la tua voce in modo che tutte le creature entro 180 metri possano sentirti."
+      },
+      {
+        "name": "Corpo del Sé Astrale (Body of the Astral Self)",
+        "level": 11,
+        "description": "Quando hai evocato sia le braccia che il volto astrale, puoi far apparire il corpo del tuo sé astrale (nessuna azione richiesta). Questo corpo spettrale copre la tua forma fisica come un'armatura, collegandosi con le braccia e il volto. Ne determini l'aspetto. Finché il corpo spettrale è presente, ottieni i seguenti benefici:<br>- <strong>Deviare Energia:</strong> Quando subisci danni da acido, freddo, fuoco, forza, fulmine o tuono, puoi usare la tua <strong>Reazione</strong> per deviarli. Quando lo fai, il danno che subisci è ridotto di <strong>1d10 + il tuo modificatore di Saggezza</strong> (riduzione minima di 1).<br>- <strong>Braccia Potenziate:</strong> Una volta in ciascuno dei tuoi turni quando colpisci un bersaglio con le Braccia del Sé Astrale, puoi infliggere danni extra al bersaglio pari al tuo <strong>dado di Arti Marziali</strong>."
+      },
+      {
+        "name": "Sé Astrale Risvegliato (Awakened Astral Self)",
+        "level": 17,
+        "description": "La tua connessione con il tuo sé astrale è completa, permettendoti di scatenare il suo pieno potenziale. Come <strong>Azione Bonus</strong>, puoi spendere <strong>5 punti ki</strong> per evocare le braccia, il volto e il corpo del tuo sé astrale e risvegliarlo per 10 minuti. Questo risveglio termina prima se sei incapacitato o muori. Finché il tuo sé astrale è risvegliato, ottieni i seguenti benefici:<br>- <strong>Armatura dello Spirito:</strong> Ottieni un bonus di <strong>+2 alla Classe Armatura</strong>.<br>- <strong>Raffica Astrale:</strong> Ogni volta che usi il privilegio Attacco Extra per attaccare due volte, puoi invece attaccare <strong>tre volte</strong> se tutti gli attacchi vengono effettuati con le tue braccia astrali."
+      }
+    ]
+  },
+  {
+    "id": "subclass_monk_warrior_of_the_drunken_master",
+    "class_id": "monk",
+    "name": "Warrior of the Drunken Master",
+    "name_it": "Guerriero del Maestro Ubriaco",
+    "type": "sottoclasse",
+    "source_it": "Guida Omnicomprensiva di Xanathar",
+    "description_it": "La Via del Maestro Ubriaco insegna ai suoi studenti a muoversi con i movimenti a scatti e imprevedibili di un ubriaco. Un maestro ubriaco oscilla, vacillando su gambe instabili, per apparire come un combattente incompetente che si rivela poi frustrante da affrontare. I suoi capitomboli erratici nascondono una danza attentamente eseguita fatta di parate, blocchi, avanzate, attacchi e ritirate.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Tecnica dell'Ubriaco, Oscillazione Instabile, Fortuna dell'Ubriaco, Frenesia Intossicata.",
+    "features": [
+      {
+        "name": "Competenze Bonus (Bonus Proficiencies)",
+        "level": 3,
+        "description": "Ottieni la competenza nell'abilità <strong>Intrattenere</strong> se non la possiedi già. La tua tecnica nelle arti marziali fonde l'addestramento al combattimento con la precisione di un ballerino e le bravate di un giullare. Ottieni inoltre la competenza con gli <strong>strumenti da birraio</strong> se non la possiedi già."
+      },
+      {
+        "name": "Tecnica dell'Ubriaco (Drunken Technique)",
+        "level": 3,
+        "description": "Impari a sterzare e girarti rapidamente come parte della tua Raffica di Colpi. Ogni volta che usi Raffica di Colpi, ottieni il beneficio dell'azione di <strong>Disimpegno</strong> e la tua velocità di movimento a piedi aumenta di <strong>3 metri</strong> fino alla fine del turno corrente."
+      },
+      {
+        "name": "Oscillazione Instabile (Tipsy Sway)",
+        "level": 6,
+        "description": "Puoi muoverti con oscillazioni improvvise. Ottieni i seguenti benefici:<br>- <strong>Balzo in Piedi:</strong> Quando sei prono, puoi alzarti spendendo <strong>1,5 metri</strong> di movimento, anziché metà della tua velocità.<br>- <strong>Ridirigere Attacco:</strong> Quando una creatura ti manca con un tiro per colpire da mischia, puoi spendere <strong>1 punto ki</strong> come <strong>Reazione</strong> per fare in modo che quell'attacco colpisca una creatura a tua scelta (diversa dall'attaccante) che puoi vedere entro 1,5 metri da te."
+      },
+      {
+        "name": "Fortuna dell'Ubriaco (Drunkard's Luck)",
+        "level": 11,
+        "description": "Sembri sempre beneficiare di un rimbalzo fortunato al momento giusto. Quando effettui una prova di abilità, un tiro per colpire o un tiro di salvezza e hai Svantaggio, puoi spendere <strong>2 punti ki</strong> per cancellare lo Svantaggio per quel tiro."
+      },
+      {
+        "name": "Frenesia Intossicata (Intoxicated Frenzy)",
+        "level": 17,
+        "description": "Ottieni la capacità di effettuare un numero travolgente di attacchi contro un gruppo di nemici. Quando usi la tua Raffica di Colpi, puoi effettuare fino a <strong>tre attacchi aggiuntivi</strong> con essa (fino a un totale di cinque attacchi di Raffica di Colpi), a condizione che ogni attacco della Raffica di Colpi abbia come bersaglio una creatura diversa in questo turno."
+      }
+    ]
+  },
+{
+    "id": "subclass_monk_warrior_of_the_kensei",
+    "class_id": "monk",
+    "name": "Warrior of the Kensei",
+    "name_it": "Guerriero Kensei",
+    "type": "sottoclasse",
+    "source_it": "Guida Omnicomprensiva di Xanathar",
+    "description_it": "I monaci della Via del Kensei si addestrano incessantemente con le loro armi, al punto che l'arma diventa come un'estensione del loro corpo. Fondata sulla padronanza del combattimento con la spada, la tradizione si è espansa fino a includere molte armi diverse. Un kensei considera un'arma allo stesso modo in cui un calligrafo o un pittore considera una penna o un pennello.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Via del Kensei, Uno con la Lama, Affilare la Lama, Precisione Infallibile.",
+    "features": [
+      {
+        "name": "Via del Kensei (Path of the Kensei)",
+        "level": 3,
+        "description": "Il tuo speciale addestramento nelle arti marziali ti porta a padroneggiare l'uso di determinate armi. Questo percorso include anche l'istruzione nei tratti destri della calligrafia o della pittura. Ottieni i seguenti benefici:<br>- <strong>Armi da Kensei:</strong> Scegli due tipi di armi come tue armi da kensei: un'arma da mischia e un'arma a distanza. Ciascuna di queste armi può essere qualsiasi arma semplice o da guerra che priva della proprietà Pesante e Speciale. Anche l'arco lungo è una scelta valida. Ottieni la competenza in queste armi se non la possiedi già. Le armi dei tipi scelti sono armi da monaco per te. Quando raggiungi il 6°, 11° e 17° livello in questa classe, puoi scegliere un altro tipo di arma (da mischia o a distanza) come arma da kensei.<br>- <strong>Parata Agile:</strong> Se effettui un attacco senz'armi come parte dell'azione di Attacco nel tuo turno e impugni un'arma da kensei da mischia, puoi usarla per difenderti. Ottieni un bonus di <strong>+2 alla CA</strong> fino all'inizio del tuo turno successivo, finché l'arma è nella tua mano e non sei incapacitato.<br>- <strong>Tiro del Kensei:</strong> Puoi usare un'<strong>Azione Bonus</strong> nel tuo turno per rendere più letali i tuoi attacchi a distanza con un'arma da kensei. Quando lo fai, qualsiasi bersaglio colpito da un attacco a distanza con un'arma da kensei subisce <strong>1d4 danni extra</strong> del tipo di danno dell'arma fino alla fine del turno corrente.<br>- <strong>Via del Pennello:</strong> Ottieni la competenza in uno strumento a tua scelta tra <strong>strumenti da calligrafo</strong> o <strong>strumenti da pittore</strong>."
+      },
+      {
+        "name": "Uno con la Lama (One with the Blade)",
+        "level": 6,
+        "description": "Estendi il tuo ki nelle tue armi da kensei, ottenendo i seguenti benefici:<br>- <strong>Armi da Kensei Magiche:</strong> I tuoi attacchi con le armi da kensei contano come magici ai fini di superare la resistenza e l'immunità agli attacchi e ai danni non magici.<br>- <strong>Colpo Destro:</strong> Quando colpisci un bersaglio con un'arma da kensei, puoi spendere <strong>1 punto ki</strong> per fare in modo che l'arma infligga danni extra al bersaglio pari al tuo <strong>dado di Arti Marziali</strong>. Puoi usare questo privilegio solo una volta per turno."
+      },
+      {
+        "name": "Affilare la Lama (Sharpen the Blade)",
+        "level": 11,
+        "description": "Ottieni la capacità di potenziare ulteriormente le tue armi con il tuo ki. Come <strong>Azione Bonus</strong>, puoi spendere fino a <strong>3 punti ki</strong> per concedere a un'arma da kensei che tocchi un bonus ai tiri per colpire e ai danni pari al numero di punti ki spesi. Questo bonus dura per 1 minuto o finché non usi nuovamente questo privilegio. Questo privilegio non ha effetto su un'arma magica che possiede già un bonus ai tiri per colpire e ai danni."
+      },
+      {
+        "name": "Precisione Infallibile (Unerring Accuracy)",
+        "level": 17,
+        "description": "La tua padronanza delle armi ti concede una precisione straordinaria. Se manchi con un tiro per colpire usando un'arma da monaco nel tuo turno, puoi ritirarlo. Puoi usare questo privilegio solo una volta per turno."
+      }
+    ]
+  },
+  {
+    "id": "subclass_monk_warrior_of_the_sun_soul",
+    "class_id": "monk",
+    "name": "Warrior of the Sun Soul",
+    "name_it": "Guerriero dell'Anima del Sole",
+    "type": "sottoclasse",
+    "source_it": "Guida Omnicomprensiva di Xanathar",
+    "description_it": "I monaci della Via dell'Anima del Sole imparano a incanalare la propria energia vitale in dardi di luce accecante. Insegnano che la meditazione può sbloccare la capacità di scatenare l'indomabile luce emanata dall'anima di ogni creatura vivente.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Dardo Solare Raggiante, Colpo dell'Arco Accecante, Esplosione Solare Accecante, Scudo Solare.",
+    "features": [
+      {
+        "name": "Dardo Solare Raggiante (Radiant Sun Bolt)",
+        "level": 3,
+        "description": "Puoi scagliare dardi accecanti di radianza magica. Ottieni una nuova opzione di attacco che puoi usare con l'azione di Attacco. Questo attacco speciale è un <strong>attacco d'incantesimo a distanza</strong> con una gittata di 9 metri. Vi sei competente e aggiungi il tuo modificatore di <strong>Destrezza</strong> ai tiri per colpire e ai danni. Il suo tipo di danno è <strong>Radioso</strong> e il dado di danno è un d4 (che cambia man mano che guadagni livelli da monaco, come mostrato nella colonna Arti Marziali).<br><br>Quando effettui l'azione di Attacco nel tuo turno e usi questo attacco speciale come parte di essa, puoi spendere <strong>1 Punto Focalizzazione</strong> per effettuare l'attacco speciale due volte come <strong>Azione Bonus</strong>. Quando ottieni il privilegio Attacco Extra, questo attacco speciale può essere usato per qualsiasi attacco effettuato come parte dell'azione di Attacco."
+      },
+      {
+        "name": "Colpo dell'Arco Accecante (Searing Arc Strike)",
+        "level": 6,
+        "description": "Ottieni la capacità di incanalare la tua focalizzazione in onde di energia accecante. Immediatamente dopo aver effettuato l'azione di Attacco nel tuo turno, puoi spendere <strong>2 Punti Focalizzazione</strong> per lanciare l'incantesimo <em>Mani Brucianti</em> come <strong>Azione Bonus</strong>.<br><br>Puoi spendere Punti Focalizzazione aggiuntivi per lanciare <em>Mani Brucianti</em> come incantesimo di livello superiore. Ogni punto aggiuntivo speso aumenta il livello dell'incantesimo di 1. Il numero massimo di Punti Focalizzazione spesi non può superare la metà del tuo livello da Monaco."
+      },
+      {
+        "name": "Esplosione Solare Accecante (Searing Sunburst)",
+        "level": 11,
+        "description": "Ottieni la capacità di creare una sfera di luce che esplode in una devastante deflagrazione. Come <strong>Azione</strong>, crei magicamente una sfera e la scagli in un punto a tua scelta entro 45 metri, dove esplode in una sfera di luce radiosa di 6 metri di raggio.<br><br>Ogni creatura nell'area deve superare un tiro di salvezza su <strong>Costituzione</strong> o subire <strong>2d6 danni radiosi</strong> (non è richiesto il tiro di salvezza se la creatura si trova dietro una copertura totale opaca). Puoi aumentare i danni della sfera spendendo Punti Focalizzazione: ogni punto speso (fino a un massimo di 3) aumenta i danni di <strong>2d6</strong>."
+      },
+      {
+        "name": "Scudo Solare (Sun Shield)",
+        "level": 17,
+        "description": "Diventi avvolto da un'aura luminosa e magica. Emani <strong>Luce Intensa</strong> in un raggio di 9 metri e <strong>Luce Vaga</strong> per ulteriori 9 metri. Puoi estinguere o ripristinare la luce come <strong>Azione Bonus</strong>.<br><br>Se una creatura ti colpisce con un attacco da mischia mentre questa luce risplende, puoi usare la tua <strong>Reazione</strong> per infliggere danni radiosi a quella creatura pari a <strong>5 + il tuo modificatore di Saggezza</strong>."
+      }
+    ]
+  },
   {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
