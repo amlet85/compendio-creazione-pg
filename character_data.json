@@ -2365,6 +2365,335 @@
     ]
   },
   {
+    "id": "subclass_druid_wildfire",
+    "class_id": "druid",
+    "name": "Circle of Wildfire",
+    "name_it": "Circolo del Fuoco Infernale",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "I druidi del Circolo del Fuoco Infernale comprendono che la distruzione è talvolta il presagio della creazione, proprio come un incendio boschivo favorisce la crescita futura. Si legano a uno spirito primordiale di fuoco che racchiude sia potere distruttivo che curativo, consentendo loro di purificare e rigenerare il mondo.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo, Evocare Spirito del Fuoco Infernale, Legame Potenziato, Fiamme Cauterizzanti, Rinascita Ardente.",
+    "features": [
+      {
+        "name": "Incantesimi del Circolo (Circle Spells)",
+        "level": 3,
+        "description": "Il tuo legame con lo spirito ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> <em>Mani Brucianti (Burning Hands)</em>, <em>Cura Ferite (Cure Wounds)</em>, <em>Sfera Infuocata (Flaming Sphere)</em>, <em>Raggio Rovente (Scorching Ray)</em><br>• <strong>5° Livello:</strong> <em>Crescita Vegetale (Plant Growth)</em>, <em>Rinascita (Revivify)</em><br>• <strong>7° Livello:</strong> <em>Aura di Vita (Aura of Life)</em>, <em>Scudo di Fuoco (Fire Shield)</em><br>• <strong>9° Livello:</strong> <em>Colpo Infuocato (Flame Strike)</em>, <em>Cura Ferite di Massa (Mass Cure Wounds)</em>"
+      },
+      {
+        "name": "Evocare Spirito del Fuoco Infernale (Summon Wildfire Spirit)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, puoi spendere un uso di Forma Selvatica per evocare lo spirito del fuoco infernale in uno spazio libero entro 9 metri da te.<br><br>Ogni creatura (tranne te) entro 3 metri dallo spirito alla sua comparsa deve superare un <strong>Tiro Salvezza su Destrezza</strong> contro la tua CD Incantesimi o subire <strong>2d6 danni da Fuoco</strong>.<br><br>Lo spirito condivide il tuo conteggio di Iniziativa (agisce subito dopo di te) e dura per <strong>1 ora</strong>, finché non scende a 0 PF o finché non muori. In combattimento esegue l'azione di <em>Schivata</em>, a meno che non usi un'<strong>Azione Bonus</strong> nel tuo turno per comandargli di eseguire un'azione dalla sua scheda."
+      },
+      {
+        "name": "Legame Potenziato (Enhanced Bond)",
+        "level": 6,
+        "description": "Ogni volta che lanci un incantesimo che infligge danni da fuoco o fa recuperare Punti Ferita mentre lo spirito è evocato, <strong>tira un d8</strong>: aggiungi il risultato a un tiro di danno o di cura dell'incantesimo.<br><br>Inoltre, quando lanci un incantesimo con gittata diversa da <em>Sguardo (Self)</em>, l'incantesimo può <strong>originarsi da te oppure dal tuo spirito del fuoco infernale</strong>."
+      },
+      {
+        "name": "Fiamme Cauterizzanti (Cauterizing Flames)",
+        "level": 10,
+        "description": "Quando una creatura Piccola o più grande muore entro 9 metri da te o dal tuo spirito, nel suo spazio appare una fiamma spettrale innocua per 1 minuto.<br><br>Quando una creatura che puoi vedere entra in quello spazio, puoi usare la tua <strong>Reazione</strong> per estinguere la fiamma e scegliere uno dei seguenti effetti:<br>• La creatura <strong>recupera Punti Ferita</strong> pari a <strong>2d10 + il tuo Modificatore di Saggezza</strong>.<br>• La creatura <strong>subisce danni da Fuoco</strong> pari a <strong>2d10 + il tuo Modificatore di Saggezza</strong>.<br><br>Usabile un numero di volte pari al tuo <strong>Bonus di Competenza</strong> per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Rinascita Ardente (Blazing Revival)",
+        "level": 14,
+        "description": "Se lo spirito si trova entro 36 metri da te quando vieni ridotto a 0 Punti Ferita e svieni, puoi far sì che lo spirito scenda a 0 Punti Ferita.<br><br>Se lo fai, <strong>recuperi immediatamente metà dei tuoi Punti Ferita massimi</strong> e ti rimetto in piedi all'istante. Usabile una volta per <strong>Riposo Lungo</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_druid_shepherd",
+    "class_id": "druid",
+    "name": "Circle of the Shepherd",
+    "name_it": "Circolo del Pastore",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "I druidi del Circolo del Pastore comunicano con gli spiriti della natura, proteggendo le bestie e i folletti incapaci di difendersi da soli. Evocano totem spettrali per potenziare gli alleati e potenziano le creature evocate per difendere la natura e i luoghi sacri.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Linguaggio dei Boschi, Totem dello Spirito, Evocatore Possente, Spirito Custode, Evocazioni Fedeli.",
+    "features": [
+      {
+        "name": "Linguaggio dei Boschi (Speech of the Woods)",
+        "level": 3,
+        "description": "Impari a parlare, leggere e scrivere il <strong>Silvano</strong>.<br><br>Inoltre, le bestie riescono a comprendere il tuo linguaggio e tu sei in grado di decifrare i loro rumori e movimenti. Questo ti permette di comunicare concetti semplici con le bestie e chiedere informazioni su ciò che hanno visto o sentito di recente."
+      },
+      {
+        "name": "Totem dello Spirito (Spirit Totem)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi evocare magicamente uno spirito incorporale in un punto a scelta entro 18 metri da te, che crea un'<strong>aura con raggio di 9 metri</strong> per <strong>1 minuto</strong>. Con un'ulteriore Azione Bonus puoi spostare lo spirito fino a 18 metri. Usabile una volta per <strong>Riposo Breve o Lungo</strong>.<br><br>Scegli il tipo di spirito al momento dell'evocazione:<br>• <strong>Spirito dell'Orso:</strong> Ogni creatura a tua scelta nell'aura quando lo spirito appare ottiene <strong>Punti Ferita Temporanei pari a 5 + il tuo livello da Druido</strong>. Tu e i tuoi alleati avete <strong>Vantaggio alle prove di Forza e ai tiri salvezza su Forza</strong> mentre vi trovate nell'aura.<br>• <strong>Spirito del Falco:</strong> Quando una creatura effettua un tiro per colpire contro un bersaglio nell'aura, puoi usare la tua <strong>Reazione</strong> per conferire <strong>Vantaggio a quel tiro per colpire</strong>. Tu e i tuoi alleati avete <strong>Vantaggio alle prove di Saggezza (Percezione)</strong> nell'aura.<br>• <strong>Spirito dell'Unicorno:</strong> Tu e i tuoi alleati avete <strong>Vantaggio a tutte le prove di caratteristica effettuate per individuare creature</strong> nell'aura. Inoltre, se lanci un incantesimo usando uno slot che fa recuperare Punti Ferita a una qualsiasi creatura, ogni creatura a tua scelta nell'aura <strong>recupera Punti Ferita pari al tuo livello da Druido</strong>."
+      },
+      {
+        "name": "Evocatore Possente (Mighty Summoner)",
+        "level": 6,
+        "description": "Qualsiasi bestia o folletto evocato o creato da un tuo incantesimo ottiene due benefici:<br>• <strong>Punti Ferita Aumentati:</strong> La creatura appare con <strong>2 Punti Ferita aggiuntivi per ogni Dado Vita</strong> posseduto.<br>• <strong>Attacchi Magici:</strong> I danni delle sue armi naturali sono considerati <strong>magici</strong> ai fini di superare l'immunità e la resistenza agli attacchi e ai danni non magici."
+      },
+      {
+        "name": "Spirito Custode (Guardian Spirit)",
+        "level": 10,
+        "description": "Quando una bestia o un folletto che hai evocato o creato con un incantesimo termina il proprio turno all'interno dell'aura del tuo Totem dello Spirito, quella creatura <strong>recupera un numero di Punti Ferita pari a metà del tuo livello da Druido</strong>."
+      },
+      {
+        "name": "Evocazioni Fedeli (Faithful Summons)",
+        "level": 14,
+        "description": "Se vieni ridotto a <strong>0 Punti Ferita</strong> o vieni <strong>Incapacitato contro la tua volontà</strong>, ottieni immediatamente i benefici dell'incantesimo <em>Evoca Animali</em> come se fosse lanciato con uno <strong>slot di 9° livello</strong>.<br><br>L'incantesimo evoca <strong>4 bestie a tua scelta</strong> con Grado di Sfida 2 o inferiore entro 6 metri da te. Le creature ti proteggono e attaccano i tuoi nemici senza richiedere Concentrazione per <strong>1 ora</strong>. Usabile una volta per <strong>Riposo Lungo</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_druid_moon",
+    "class_id": "druid",
+    "name": "Circle of the Moon",
+    "name_it": "Circolo della Luna",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I druidi del Circolo della Luna attingono alla magia lunare per trasformarsi e proteggere le terre selvagge. Capaci di assumere forme di bestia eccezionalmente potenti, combattono in prima linea canalizzando la potenza radiosa della luna e scomparendo in fasci di luce argentata.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo della Luna, Forme del Circolo, Forme del Circolo Migliorate, Passo Lunare, Forma Lunare.",
+    "features": [
+      {
+        "name": "Incantesimi del Circolo della Luna (Circle of the Moon Spells)",
+        "level": 3,
+        "description": "La tua connessione con la luna ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> <em>Cura Ferite (Cure Wounds)</em>, <em>Raggio di Luna (Moonbeam)</em>, <em>Fascio Stellare (Starry Wisp)</em><br>• <strong>5° Livello:</strong> <em>Evoca Animali (Conjure Animals)</em><br>• <strong>7° Livello:</strong> <em>Sorgente di Luce Lunare (Fount of Moonlight)</em><br>• <strong>9° Livello:</strong> <em>Cura Ferite di Massa (Mass Cure Wounds)</em><br><br>Inoltre, puoi <strong>lanciare gli incantesimi concessi da questo privilegio mentre ti trovi in Forma Selvatica</strong>."
+      },
+      {
+        "name": "Forme del Circolo (Circle Forms)",
+        "level": 3,
+        "description": "Canali la magia lunare quando assumi una Forma Selvatica, ottenendo i seguenti benefici:<br>• <strong>Grado di Sfida:</strong> Il Grado di Sfida massimo per la forma è pari al tuo <strong>livello da Druido diviso 3</strong> (arrotondato per difetto).<br>• <strong>Classe Armatura:</strong> Finché rimani nella forma, la tua <strong>CA è pari a 13 + il tuo Modificatore di Saggezza</strong>, se questo totale è superiore alla CA base della Bestia.<br>• <strong>Punti Ferita Temporanei:</strong> Ottieni un numero di <strong>Punti Ferita Temporanei pari a tre volte il tuo livello da Druido</strong>."
+      },
+      {
+        "name": "Forme del Circolo Migliorate (Improved Circle Forms)",
+        "level": 6,
+        "description": "Mentre ti trovi in Forma Selvatica, ottieni i seguenti benefici:<br>• <strong>Radianza Lunare:</strong> Ciascuno dei tuoi attacchi in Forma Selvatica può infliggere il suo normale tipo di danno oppure <strong>Danno Radioso</strong>. Effettui questa scelta ogni volta che colpisci.<br>• <strong>Robustezza Incrementata:</strong> Puoi aggiungere il tuo <strong>Modificatore di Saggezza ai tiri salvezza su Costituzione</strong>."
+      },
+      {
+        "name": "Passo Lunare (Moonlight Step)",
+        "level": 10,
+        "description": "Con un'<strong>Azione Bonus</strong>, ti teleporti fino a <strong>9 metri</strong> in uno spazio libero che puoi vedere e ottieni <strong>Vantaggio al tiro per colpire successivo</strong> che effettui prima della fine di questo turno.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1). Recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>.<br><br>Puoi anche recuperare usi spendendo uno <strong>slot incantesimo di 2° livello o superiore</strong> per ciascun uso che desideri ripristinare (nessuna azione richiesta)."
+      },
+      {
+        "name": "Forma Lunare (Lunar Form)",
+        "level": 14,
+        "description": "Il potere della luna ti permea completamente, garantendoti i seguenti benefici:<br>• <strong>Radianza Lunare Migliorata:</strong> Una volta per turno, puoi infliggere <strong>2d10 danni Radiosi aggiuntivi</strong> a un bersaglio che colpisci con un attacco della tua Forma Selvatica.<br>• <strong>Luce Lunare Condivisa:</strong> Ogni volta che usi <em>Passo Lunare</em>, puoi teleportare anche una creatura consensuale situata entro 3 metri da te. La creatura viene teleportata in uno spazio libero a tua scelta entro 3 metri dalla tua destinazione."
+      }
+    ]
+  },
+  {
+    "id": "subclass_druid_land",
+    "class_id": "druid",
+    "name": "Circle of the Land",
+    "name_it": "Circolo della Terra",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Circolo della Terra è composto da mistici e saggi che custodiscono le antiche tradizioni e i riti della natura. Questi druidi traggono potere dai diversi biomi del mondo — arido, polare, temperato o tropicale — adattando la propria magia al terreno circostante per curare gli alleati, manipolare gli elementi e proteggere l'equilibrio naturale.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo della Terra, Aiuto della Terra, Recupero Naturale, Protezione della Natura, Santuario della Natura.",
+    "features": [
+      {
+        "name": "Incantesimi del Circolo della Terra (Circle of the Land Spells)",
+        "level": 3,
+        "description": "Ogni volta che completi un <strong>Riposo Lungo</strong>, scegli un tipo di terreno: <strong>Arido</strong>, <strong>Polare</strong>, <strong>Temperato</strong> o <strong>Tropicale</strong>. Hai sempre pronti gli incantesimi elencati per il tipo di terreno scelto fino al tuo livello da Druido attuale:<br><br>• <strong>Terreno Arido (Arid):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> <em>Sfocatura (Blur)</em>, <em>Mani Brucianti (Burning Hands)</em>, <em>Dardo Infuocato (Fire Bolt)</em><br>&nbsp;&nbsp;- <i>5° Livello:</i> <em>Palla di Fuoco (Fireball)</em><br>&nbsp;&nbsp;- <i>7° Livello:</i> <em>Devastazione (Blight)</em><br>&nbsp;&nbsp;- <i>9° Livello:</i> <em>Muro di Pietra (Wall of Stone)</em><br><br>• <strong>Terreno Polare (Polar):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> <em>Nube di Nebbia (Fog Cloud)</em>, <em>Blocca Persone (Hold Person)</em>, <em>Raggio di Gelo (Ray of Frost)</em><br>&nbsp;&nbsp;- <i>5° Livello:</i> <em>Tempesta di Pietrisco (Sleet Storm)</em><br>&nbsp;&nbsp;- <i>7° Livello:</i> <em>Tempesta di Ghiaccio (Ice Storm)</em><br>&nbsp;&nbsp;- <i>9° Livello:</i> <em>Cono di Freddo (Cone of Cold)</em><br><br>• <strong>Terreno Temperato (Temperate):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> <em>Passo Nebbioso (Misty Step)</em>, <em>Stretta Folgorante (Shocking Grasp)</em>, <em>Sonno (Sleep)</em><br>&nbsp;&nbsp;- <i>5° Livello:</i> <em>Fulmine (Lightning Bolt)</em><br>&nbsp;&nbsp;- <i>7° Livello:</i> <em>Libertà di Movimento (Freedom of Movement)</em><br>&nbsp;&nbsp;- <i>9° Livello:</i> <em>Passo tra gli Alberi (Tree Stride)</em><br><br>• <strong>Terreno Tropicale (Tropical):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> <em>Spruzzo Acido (Acid Splash)</em>, <em>Raggio di Malattia (Ray of Sickness)</em>, <em>Ragnatela (Web)</em><br>&nbsp;&nbsp;- <i>5° Livello:</i> <em>Nube Puzzolente (Stinking Cloud)</em><br>&nbsp;&nbsp;- <i>7° Livello:</i> <em>Metamorfosi (Polymorph)</em><br>&nbsp;&nbsp;- <i>9° Livello:</i> <em>Piaga delle Locuste (Insect Plague)</em>"
+      },
+      {
+        "name": "Aiuto della Terra (Land’s Aid)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Magica</strong>, puoi spendere un uso di Forma Selvatica e scegliere un punto entro 18 metri da te. In una sfera di 3 metri di raggio centrata su quel punto appaiono momentaneamente fiori rigeneranti e spine prosciuganti.<br><br>Ogni creatura a tua scelta nell'area deve effettuare un <strong>Tiro Salvezza su Costituzione</strong> contro la tua CD Incantesimi: subisce <strong>2d6 danni Necrotici</strong> se lo fallisce, o la metà se lo supera. Inoltre, <strong>una creatura a tua scelta</strong> in quell'area recupera <strong>2d6 Punti Ferita</strong>.<br><br>I danni e le cure aumentano di 1d6 al <strong>10° livello (3d6)</strong> e al <strong>14° livello (4d6)</strong>."
+      },
+      {
+        "name": "Recupero Naturale (Natural Recovery)",
+        "level": 6,
+        "description": "Puoi lanciare uno degli incantesimi di 1° livello o superiore che hai preparato tramite il privilegio <em>Incantesimi del Circolo della Terra</em> <strong>senza spendere uno slot incantesimo</strong> (una volta per Riposo Lungo).<br><br>Inoltre, quando completi un <strong>Riposo Breve</strong>, puoi recuperare slot incantesimo spesi fino a un livello combinato pari o inferiore a <strong>metà del tuo livello da Druido</strong> (arrotondato per eccesso), e nessuno di essi può essere di 6° livello o superiore. Questa parte del privilegio si recupera dopo un <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Protezione della Natura (Nature’s Ward)",
+        "level": 10,
+        "description": "Sei <strong>immune alla condizione Avvelenato</strong> e ottieni <strong>Resistenza a un tipo di danno</strong> associato alla tua scelta attuale del terreno del Circolo della Terra:<br>• <strong>Arido:</strong> Fuoco<br>• <strong>Polare:</strong> Freddo<br>• <strong>Temperato:</strong> Elettricità<br>• <strong>Tropicale:</strong> Veleno"
+      },
+      {
+        "name": "Santuario della Natura (Nature’s Sanctuary)",
+        "level": 14,
+        "description": "Con un'<strong>Azione Magica</strong>, puoi spendere un uso di Forma Selvatica per far apparire alberi e liane spettrali in un cubo di 4,5 metri su un terreno entro 36 metri da te. Durano per <strong>1 minuto</strong> (o finché non sei Incapace o muori).<br><br>Tu e i tuoi alleati avete <strong>Copertura Mezza</strong> mentre vi trovate nell'area, e i tuoi alleati ottengono la <strong>resistenza ai danni attualmente fornita dal tuo privilegio <em>Protezione della Natura</em></strong>.<br><br>Con un'<strong>Azione Bonus</strong>, puoi spostare il cubo fino a 18 metri in un punto sul terreno entro 36 metri da te."
+      }
+    ]
+  },
+  {
+    "id": "subclass_druid_sea",
+    "class_id": "druid",
+    "name": "Circle of the Sea",
+    "name_it": "Circolo del Mare",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I druidi del Circolo del Mare attingono alle forze tempestose degli oceani e dei venti del mondo. Alcuni si considerano l'incarnazione dell'ira della natura in cerca di vendetta, mentre altri cercano l'unione mistica sintonizzandosi con il flusso delle maree, le correnti e i ruggiti delle tempeste.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo del Mare, Ira del Mare, Affinità Acquatica, Nato dalla Tempesta, Dono Oceanico.",
+    "features": [
+      {
+        "name": "Incantesimi del Circolo del Mare (Circle of the Sea Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo circolo ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> <em>Nube di Nebbia (Fog Cloud)</em>, <em>Raffica di Vento (Gust of Wind)</em>, <em>Raggio di Gelo (Ray of Frost)</em>, <em>Frantumare (Shatter)</em>, <em>Onda Sonora (Thunderwave)</em><br>• <strong>5° Livello:</strong> <em>Fulmine (Lightning Bolt)</em>, <em>Respirare in Acqua (Water Breathing)</em><br>• <strong>7° Livello:</strong> <em>Controllare Acqua (Control Water)</em>, <em>Tempesta di Ghiaccio (Ice Storm)</em><br>• <strong>9° Livello:</strong> <em>Evoca Elementale (Conjure Elemental)</em>, <em>Blocca Mostri (Hold Monster)</em>"
+      },
+      {
+        "name": "Ira del Mare (Wrath of the Sea)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi spendere un uso di Forma Selvatica per manifestare un'Emanazione di <strong>1,5 metri</strong> sotto forma di spruzzi oceanici che ti circondano per <strong>10 minuti</strong> (o finché non sei Incapace, non la congedi o non la attivi di nuovo).<br><br>Quando manifesti l'Emanazione e come Azione Bonus nei turni successivi, puoi scegliere una creatura che puoi vedere nell'Emanazione. Il bersaglio deve superare un <strong>Tiro Salvezza su Costituzione</strong> contro la tua CD Incantesimi:<br>• Subisce <strong>danni da Freddo</strong> pari a un numero di d6 pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1d6).<br>• Se la creatura è di taglia Grande o inferiore, viene <strong>spinta fino a 4,5 metri di distanza da te</strong>."
+      },
+      {
+        "name": "Affinità Acquatica (Aquatic Affinity)",
+        "level": 6,
+        "description": "La dimensione dell'Emanazione creata dalla tua <em>Ira del Mare</em> aumenta a <strong>3 metri</strong>.<br><br>Inoltre, ottieni una <strong>Velocità di Nuoto</strong> pari alla tua Velocità."
+      },
+      {
+        "name": "Nato dalla Tempesta (Stormborn)",
+        "level": 10,
+        "description": "La tua <em>Ira del Mare</em> ti conferisce due benefici aggiuntivi mentre è attiva:<br>• <strong>Volo:</strong> Ottieni una <strong>Velocità di Volo</strong> pari alla tua Velocità.<br>• <strong>Resistenze:</strong> Ottieni <strong>Resistenza ai danni da Freddo, Elettricità e Tuono</strong>."
+      },
+      {
+        "name": "Dono Oceanico (Oceanic Gift)",
+        "level": 14,
+        "description": "Invece di manifestare l'Emanazione di <em>Ira del Mare</em> attorno a te, puoi manifestarla attorno a <strong>una creatura consensuale entro 18 metri da te</strong>. Quella creatura ottiene tutti i benefici dell'Emanazione e usa la tua CD Incantesimi e il tuo Modificatore di Saggezza.<br><br>Inoltre, puoi manifestare l'Emanazione sia su di te che sull'altra creatura spendendo <strong>due usi di Forma Selvatica</strong> anziché uno."
+      }
+    ]
+  },
+  {
+    "id": "subclass_druid_stars",
+    "class_id": "druid",
+    "name": "Circle of Stars",
+    "name_it": "Circolo delle Stelle",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "I druidi del Circolo delle Stelle attingono al potere della luce stellare, tracciando i modelli celesti e scoprendo i segreti nascosti tra le costellazioni. Sfruttando la forza del cosmo, questi druidi possono assumere forme luminose, canalizzare presagi cosmici e plasmare la propria magia in dardi di luce o flussi rigeneranti.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Mappa Stellare, Forma Stellare, Presagio Cosmico, Costellazioni Scintillanti, Pleno di Stelle.",
+    "features": [
+      {
+        "name": "Mappa Stellare (Star Map)",
+        "level": 3,
+        "description": "Crei una mappa stellare di taglia Minustola che puoi usare come <strong>Focus di Incantamento</strong> per i tuoi incantesimi da Druido. Finché la impugni:<br>• Hai sempre pronti gli incantesimi <em>Guida (Guidance)</em> e <em>Dardo Tracciante (Guiding Bolt)</em>.<br>• Puoi lanciare <em>Dardo Tracciante</em> <strong>senza spendere uno slot incantesimo</strong> un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1) per <strong>Riposo Lungo</strong>.<br><br>Se perdi la mappa, puoi eseguire una cerimonia di 1 ora durante un Riposo Breve o Lungo per crearne una nuova."
+      },
+      {
+        "name": "Forma Stellare (Starry Form)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi spendere un uso di Forma Selvatica per assumere una forma stellare anziché trasformarti in una bestia. Il tuo corpo diventa luminoso, emettendo <strong>Luce Intensa nel raggio di 3 metri</strong> e <strong>Luce Fievole per altri 3 metri</strong>. Dura per <strong>10 minuti</strong> (o finché non sei Incapace, non la congedi o non la usi di nuovo).<br><br>Quando assumi la forma stellare, scegli quale costellazione luccica sul tuo corpo per ottenerne i benefici:<br>• <strong>Arciere (Archer):</strong> Quando attivi la forma e come <strong>Azione Bonus</strong> nei turni successivi, puoi effettuare un attacco incantesimo a distanza contro una creatura entro 18 metri: se la colpisci, infliggi <strong>1d8 + Modificatore di Saggezza danni Radiosi</strong>.<br>• <strong>Calice (Chalice):</strong> Ogni volta che lanci un incantesimo usando uno slot che fa recuperare Punti Ferita, tu o un'altra creatura entro 9 metri da te potete <strong>recuperare 1d8 + Modificatore di Saggezza Punti Ferita</strong>.<br>• <strong>Drago (Dragon):</strong> Quando effettui una prova di Intelligenza o Saggezza, oppure un tiro salvezza su Costituzione per mantenere la <strong>Concentrazione</strong>, se ottieni 9 o meno sul d20 puoi <strong>considerare il risultato come un 10</strong>."
+      },
+      {
+        "name": "Presagio Cosmico (Cosmic Omen)",
+        "level": 6,
+        "description": "Quando completi un <strong>Riposo Lungo</strong>, consulta la tua Mappa Stellare e tira un dado per determinare il tipo di <strong>Reazione</strong> a cui hai accesso fino al prossimo Riposo Lungo:<br>• <strong>Fortuna / Weal (Numero Pari):</strong> Quando una creatura entro 9 metri da te sta per effettuare un Test D20, puoi usare la Reazione per tirare <strong>1d6 e aggiungere il risultato al totale</strong>.<br>• <strong>Sfortuna / Woe (Numero Dispari):</strong> Quando una creatura entro 9 metri da te sta per effettuare un Test D20, puoi usare la Reazione per tirare <strong>1d6 e sottrarre il risultato dal totale</strong>.<br><br>Puoi usare questa Reazione un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Costellazioni Scintillanti (Twinkling Constellations)",
+        "level": 10,
+        "description": "Le costellazioni della tua <em>Forma Stellare</em> migliorano:<br>• Il dado da d8 dell'<strong>Arciere</strong> e del <strong>Calice</strong> diventa <strong>2d8</strong>.<br>• Mentre il <strong>Drago</strong> è attivo, ottieni una <strong>Velocità di Volo di 6 metri</strong> e puoi fluttuare (hover).<br><br>Inoltre, <strong>all'inizio di ciascun tuo turno</strong> mentre ti trovi in Forma Stellare, puoi <strong>cambiare la costellazione</strong> attiva sul tuo corpo."
+      },
+      {
+        "name": "Pieno di Stelle (Full of Stars)",
+        "level": 14,
+        "description": "Mentre ti trovi nella tua <em>Forma Stellare</em>, diventi parzialmente incorporale, ottenendo <strong>Resistenza ai danni Conundenti, Perforanti e Taglienti</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_druid_dreams",
+    "class_id": "druid",
+    "name": "Circle of Dreams",
+    "name_it": "Circolo dei Sogni",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "I druidi del Circolo dei Sogni provengono da regioni strettamente legate alla Selva Fatata e ai suoi reami onirici. Attraverso l'alleanza con i folletti benefici, questi druidi riempiono il mondo di meraviglia, curando le ferite, offrendo rifugio sicuro ai viaggiatori e valicando i confini dello spazio e dei sogni.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Balsamo della Corte dell'Estate, Focolare di Luce Lunare e Ombra, Sentieri Nascosti, Viandante dei Sogni.",
+    "features": [
+      {
+        "name": "Balsamo della Corte dell'Estate (Balm of the Summer Court)",
+        "level": 3,
+        "description": "Possiedi una riserva di energia fatata rappresentata da un <strong>numero di d6 pari al tuo livello da Druido</strong>.<br><br>Con un'<strong>Azione Bonus</strong>, puoi scegliere un alleato che puoi vedere entro 36 metri da te e spendere un numero di d6 pari o inferiore a <strong>metà del tuo livello da Druido</strong>.<br><br>Tira i dadi spesi: il bersaglio <strong>recupera un numero di Punti Ferita pari al totale ottenuto</strong> e guadagna <strong>1 Punto Ferita Temporaneo per ogni dado speso</strong>.<br><br>Recuperi tutti i dadi spesi quando completi un <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Focolare di Luce Lunare e Ombra (Hearth of Moonlight and Shadow)",
+        "level": 6,
+        "description": "All'inizio di un <strong>Riposo Breve o Lungo</strong>, puoi toccare un punto nello spazio per evocare una sfera magica invisibile di 9 metri di raggio centrata su quel punto.<br><br>Finché vi trovate nella sfera, tu e i tuoi alleati ottenete un <strong>bonus di +5 alle prove di Destrezza (Furtività) e Saggezza (Percezione)</strong>, e qualsiasi luce prodotta da fiamme libere (come un falò o torce) <strong>non è visibile dall'esterno</strong>.<br><br>La sfera scompare al termine del riposo o quando esci da essa."
+      },
+      {
+        "name": "Sentieri Nascosti (Hidden Paths)",
+        "level": 10,
+        "description": "Sfrutti i passaggi magici della Selva Fatata per spostarti in un istante:<br>• Con un'<strong>Azione Bonus</strong>, puoi <strong>teleportarti fino a 18 metri</strong> in uno spazio libero che puoi vedere.<br>• In alternativa, puoi usare la tua <strong>Azione</strong> per <strong>teleportare una creatura consensuale che tocchi fino a 9 metri</strong> in uno spazio libero che puoi vedere.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1) per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Viandante dei Sogni (Walker in Dreams)",
+        "level": 14,
+        "description": "Quando completi un <strong>Riposo Breve</strong>, puoi lanciare uno dei seguenti incantesimi <strong>senza spendere uno slot incantesimo e senza componenti materiali</strong>:<br>• <em>Sogno (Dream)</em> (con te come messaggero)<br>• <em>Scrutare (Scrying)</em><br>• <em>Cerchio di Teletrasporto (Teleportation Circle)</em><br><br>Questo uso di <em>Cerchio di Teletrasporto</em> è speciale: anziché aprire un portale verso un cerchio permanente, apre un portale verso l'<strong>ultimo luogo in cui hai completato un Riposo Lungo</strong> sul tuo attuale piano di esistenza.<br><br>Usabile una volta per <strong>Riposo Lungo</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_druid_spores",
+    "class_id": "druid",
+    "name": "Circle of Spores",
+    "name_it": "Circolo delle Spore",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "I druidi del Circolo delle Spore scorgono la bellezza nel decadimento e vedono nelle muffe e nei funghi la capacità di trasformare la materia inerte in una vita rigogliosa. Considerano la morte non come una fine, ma come una transizione, e sfruttano spore necrotiche e simbiosi fungine per combattere e persino animare i morti.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo, Alone di Spore, Entità Simbiotica, Infestazione Fungina, Diffusione delle Spore, Corpo Fungino.",
+    "features": [
+      {
+        "name": "Incantesimi del Circolo (Circle Spells)",
+        "level": 3,
+        "description": "Il tuo legame simbiotico con i funghi ti garantisce di avere sempre pronti determinati incantesimi. Impari il trucchetto <em>Tocco del Gelo (Chill Touch)</em> e ottieni gli incantesimi elencati al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> <em>Tocco del Gelo (Chill Touch)</em>, <em>Cecità/Sordità (Blindness/Deafness)</em>, <em>Riposo Inviolato (Gentle Repose)</em><br>• <strong>5° Livello:</strong> <em>Animare Morti (Animate Dead)</em>, <em>Forma Gassosa (Gaseous Form)</em><br>• <strong>7° Livello:</strong> <em>Devastazione (Blight)</em>, <em>Confusione (Confusion)</em><br>• <strong>9° Livello:</strong> <em>Nube Uccidente (Cloudkill)</em>, <em>Contagio (Contagion)</em>"
+      },
+      {
+        "name": "Alone di Spore (Halo of Spores)",
+        "level": 3,
+        "description": "Sei circondato da spore necrotiche invisibili. Quando una creatura che puoi vedere si sposta in uno spazio entro 3 metri da te o vi inizia il suo turno, puoi usare la tua <strong>Reazione</strong> per infliggerle <strong>1d4 danni Necrotici</strong>, a meno che non superi un <strong>Tiro Salvezza su Costituzione</strong> contro la tua CD Incantesimi.<br><br>I danni necrotici aumentano a <strong>1d6 al 6° livello</strong>, <strong>1d8 al 10° livello</strong> e <strong>1d10 al 14° livello</strong>."
+      },
+      {
+        "name": "Entità Simbiotica (Symbiotic Entity)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, puoi spendere un uso di Forma Selvatica per risvegliare le tue spore anziché trasformarti in una bestia, ottenendo <strong>4 Punti Ferita Temporanei per ogni livello da Druido</strong>.<br><br>Finché questo privilegio è attivo, ottieni i seguenti benefici:<br>• Quando infliggi i danni del tuo <em>Alone di Spore</em>, <strong>tiri il dado dei danni una seconda volta</strong> e lo aggiungi al totale.<br>• I tuoi attacchi con armi da mischia infliggono <strong>1d6 danni Necrotici aggiuntivi</strong> al bersaglio colpito.<br><br>Questi benefici durano per <strong>10 minuti</strong>, finché non perdi tutti questi Punti Ferita Temporanei o finché non usi di nuovo Forma Selvatica."
+      },
+      {
+        "name": "Infestazione Fungina (Fungal Infestation)",
+        "level": 6,
+        "description": "Quando una bestia o un umanoide di taglia Piccola o Media muore entro 3 metri da te, puoi usare la tua <strong>Reazione</strong> per animare quel corpo facendolo rialzare immediatamente come <strong>Zombie</strong> con <strong>1 Punto Ferita</strong>.<br><br>Lo zombie segue i tuoi comandi mentali, agisce subito dopo il tuo turno in combattimento e muore automaticamente dopo <strong>1 ora</strong>.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Diffusione delle Spore (Spore Spread)",
+        "level": 10,
+        "description": "Mentre la tua <em>Entità Simbiotica</em> è attiva, puoi usare un'<strong>Azione Bonus</strong> per lanciare una nube di spore verso uno spazio non occupato entro 9 metri da te. La nube crea un cubo di 3 metri di raggio che dura finché la tua <em>Entità Simbiotica</em> rimane attiva o finché non usi di nuovo questo privilegio.<br><br>Finché la nube persiste, non puoi usare la Reazione di <em>Alone di Spore</em>, ma qualsiasi creatura che inizia il suo turno all'interno del cubo subisce i danni del tuo <em>Alone di Spore</em>."
+      },
+      {
+        "name": "Corpo Fungino (Fungal Body)",
+        "level": 14,
+        "description": "Le spore fungine ti alterano a livello fisico: sei <strong>immune alle condizioni Accecato, Sordo, Spaventato e Avvelenato</strong> e qualsiasi <strong>Colpo Critico</strong> effettuato contro di te viene considerato come un <strong>colpo normale</strong>, a meno che tu non sia Incapacitato."
+      }
+    ]
+  },
+  {
+    "id": "subclass_fighter_battle_master",
+    "class_id": "fighter",
+    "name": "Battle Master",
+    "name_it": "Maestro d'Armi",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Maestri d'Armi studiano l'arte della battaglia come una vera e propria disciplina accademica, combinando tecniche marziali tramandate di generazione in generazione con la conoscenza teorica e tattica del combattimento.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Superiorità in Combattimento, Studente di Guerra, Conosci il tuo Nemico, Superiorità in Combattimento Migliorata, Inarrestabile, Superiorità in Combattimento Suprema.",
+    "features": [
+      {
+        "name": "Superiorità in Combattimento (Combat Superiority)",
+        "level": 3,
+        "description": "La tua esperienza sul campo di battaglia ti permette di padroneggiare speciali Manovre alimentate dai <strong>Dadi Superiorità</strong>:<br><br>• <strong>Manovre:</strong> Impari <strong>3 Manovre a tua scelta</strong> dalle opzioni disponibili. Puoi usare solo una Manovra per ciascun attacco. Impari 2 Manovre aggiuntive al 7°, 10° e 15° livello da Guerriero. Ogni volta che impari nuove Manovre, puoi sostituirne una già nota con un'altra.<br>• <strong>Dadi Superiorità:</strong> Possiedi <strong>quattro Dadi Superiorità (d8)</strong>. Un dado viene speso quando lo usi e recuperi tutti i dadi spesi al termine di un <strong>Riposo Breve o Lungo</strong>. Ottieni un dado aggiuntivo al 7° livello (5 dadi) e al 15° livello (6 dadi).<br>• <strong>Tiri Salvezza:</strong> Se una Manovra richiede un tiro salvezza, la <strong>CD è pari a 8 + il tuo Bonus di Competenza + il tuo Modificatore di Forza o Destrezza</strong> (a tua scelta)."
+      },
+      {
+        "name": "Studente di Guerra (Student of War)",
+        "level": 3,
+        "description": "Ottieni la <strong>competenza in un tipo di Strumenti da Artigiano</strong> a tua scelta e la <strong>competenza in un'abilità a tua scelta</strong> tra quelle disponibili per il Guerriero al 1° livello."
+      },
+      {
+        "name": "Conosci il tuo Nemico (Know Your Enemy)",
+        "level": 7,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi analizzare una creatura che puoi vedere entro 9 metri da te per scoprirne punti di forza e debolezze: vieni a conoscenza di eventuali <strong>Immunità, Resistenze o Vulnerabilità ai danni</strong> possedute dalla creatura e di quali tipi si tratti.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>. Puoi anche ripristinarne un uso <strong>spendendo un Dado Superiorità</strong> (nessuna azione richiesta)."
+      },
+      {
+        "name": "Superiorità in Combattimento Migliorata (Improved Combat Superiority)",
+        "level": 10,
+        "description": "I tuoi Dadi Superiorità <strong>diventano d10</strong>."
+      },
+      {
+        "name": "Inarrestabile (Relentless)",
+        "level": 15,
+        "description": "Una volta per turno, quando usi una Manovra, puoi <strong>tirare 1d8 e usare il risultato ottenuto anziché spendere un Dado Superiorità</strong>."
+      },
+      {
+        "name": "Superiorità in Combattimento Suprema (Ultimate Combat Superiority)",
+        "level": 18,
+        "description": "I tuoi Dadi Superiorità <strong>diventano d12</strong>."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
