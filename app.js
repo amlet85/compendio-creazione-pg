@@ -30,6 +30,8 @@ const classTranslationMap = {
   'sorcerer': 'Stregone',
   'stregone': 'Stregone',
   'warlock': 'Warlock',
+  'warlock (fattucchiere)': 'Warlock',
+  'fattucchiere': 'Warlock',
   'wizard': 'Mago',
   'mago': 'Mago'
 };
@@ -300,8 +302,8 @@ function filterData() {
     const isSorcerer = selectedClass.includes('sorcerer') || selectedClass.includes('stregone');
     const matchesSorcerer = isSorcerer && (parentClassString.includes('sorcerer') || parentClassString.includes('stregone'));
 
-    const isWarlock = selectedClass.includes('warlock');
-    const matchesWarlock = isWarlock && parentClassString.includes('warlock');
+    const isWarlock = selectedClass.includes('warlock') || selectedClass.includes('fattucchiere');
+    const matchesWarlock = isWarlock && (parentClassString.includes('warlock') || parentClassString.includes('fattucchiere'));
 
     const matchesClass = parentClassString.includes(selectedClass) || 
                          matchesArtificer || matchesBarbarian || matchesBard || 
