@@ -1562,1869 +1562,286 @@
   ]
 },
 {
-  "id": "subclass_barbarian_berserker",
-  "class_id": "barbarian",
-  "name": "Path of the Berserker",
-  "name_it": "Cammino del Berserker",
-  "type": "sottoclasse",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Per i barbari che seguono il Cammino del Berserker, l'Ira è una forza indirizzata verso la violenza pura. Il loro è un cammino di furia incontrollata e traggono gioia dal caos della battaglia lasciando che la propria Ira li domini e li potenzi.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Furia, Ira Inconsapevole, Ritorsione, Presenza Intimidatoria.",
-  "features": [
-    {
-      "name": "Furia (Frenzy)",
-      "level": 3,
-      "description": "Se usi <em>Attacco Irruento</em> mentre la tua Ira è attiva, infliggi danni extra al primo bersaglio che colpisci nel tuo turno con un attacco basato sulla Forza. Tira un numero di <strong>d6 pari al tuo bonus Danni dell'Ira</strong> e sommali al danno. Il tipo di danno è lo stesso dell'arma o del colpo senz'arma utilizzato."
-    },
-    {
-      "name": "Ira Inconsapevole (Mindless Rage)",
-      "level": 6,
-      "description": "Mentre la tua Ira è attiva, sei <strong>immune alle condizioni Affascinato e Spaventato</strong>. Se sei già Affascinato o Spaventato quando entri in Ira, tale condizione termina immediatamente per la durata dell'Ira."
-    },
-    {
-      "name": "Ritorsione (Retaliation)",
-      "level": 10,
-      "description": "Quando subisci danni da una creatura situata entro 1,5 metri da te, puoi usare la tua <strong>Reazione</strong> per effettuare un attacco con arma in mischia o un colpo senz'arma contro quella creatura."
-    },
-    {
-      "name": "Presenza Intimidatoria (Intimidating Presence)",
-      "level": 14,
-      "description": "Come <strong>Azione Bonus</strong>, puoi manifestare la tua furia: ciascuna creatura a tua scelta in un'Emanazione di 9 metri attorno a te deve effettuare un tiro salvezza su Saggezza (CD pari a 8 + il tuo bonus di competenza + il tuo modificatore di Forza). Se fallisce, la creatura subisce la condizione <strong>Spaventato</strong> per 1 minuto. La creatura può ripetere il tiro salvezza alla fine di ciascun suo turno, ponendo fine all'effetto se lo supera.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>, a meno che tu non spenda <strong>1 uso della tua Ira</strong> (nessuna azione richiesta) per ripristinarne l'uso."
-    }
-  ]
-},
+    "id": "sub_monk_mercy",
+    "name": "Way of Mercy",
+    "name_it": "Via della Misericordia",
+    "class": "Monk",
+    "class_it": "Monaco",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024 / Tasha",
+    "description_it": "Manipola l'energia vitale per curare le ferite o infliggere il tocco della rovina indossando una maschera iconica.<br><br><strong>Tratti Chiave:</strong> Mani della Guarigione, Mani del Danno, Raffica di Misericordia."
+  },
   {
-  "id": "subclass_barbarian_zealot",
-  "class_id": "barbarian",
-  "name": "Path of the Zealot",
-  "name_it": "Cammino dello Zelota",
-  "type": "sottoclasse",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Per i barbari che seguono il Cammino dello Zelota, l'Ira è un dono divino. Questi barbari vivono la propria furia come un'esperienza estatica di unione con gli dei, che li infonde di potere divino per perseguire la volontà delle divinità nel mondo.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Furia Divina, Guerriero degli Dei, Focus Fanatico, Presenza Zelante, Ira degli Dei.",
-  "features": [
-    {
-      "name": "Furia Divina (Divine Fury)",
-      "level": 3,
-      "description": "Incanali il potere divino nei tuoi colpi. In ciascuno dei tuoi turni mentre la tua Ira è attiva, la prima creatura che colpisci con un'arma o un colpo senz'arma subisce <strong>1d6 + metà del tuo livello da Barbaro</strong> (arrotondato per difetto) danni extra. Scegli ogni volta se infliggere danni <strong>Necrotici</strong> o <strong>Radiosi</strong>."
-    },
-    {
-      "name": "Guerriero degli Dei (Warrior of the Gods)",
-      "level": 3,
-      "description": "Possiedi una riserva di <strong>4 d12</strong> per curarti. Come <strong>Azione Bonus</strong>, puoi spendere dadi da questa riserva, tirarli e recuperare un numero di Punti Ferita pari al totale ottenuto. Recuperi tutti i dadi spesi quando completi un <strong>Riposo Lungo</strong>.<br><br>La riserva aumenta a <strong>5 d12</strong> al 6° livello, <strong>6 d12</strong> al 12° livello e <strong>7 d12</strong> al 17° livello."
-    },
-    {
-      "name": "Focus Fanatico (Fanatical Focus)",
-      "level": 6,
-      "description": "Una volta per ciascuna Ira attiva, se fallisci un tiro salvezza, puoi ritirarlo aggiungendo un bonus pari al tuo <strong>bonus Danni dell'Ira</strong>. Sei obbligato a utilizzare il nuovo risultato."
-    },
-    {
-      "name": "Presenza Zelante (Zealous Presence)",
-      "level": 10,
-      "description": "Come <strong>Azione Bonus</strong>, emetti un grido di battaglia divino. Fino a 10 creature a tua scelta entro 18 metri da te ottengono <strong>Vantaggio ai tiri per colpire e ai tiri salvezza</strong> fino all'inizio del tuo turno successivo.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>, a meno che tu non spenda <strong>1 uso della tua Ira</strong> (nessuna azione richiesta) per ripristinarne l'uso."
-    },
-    {
-      "name": "Ira degli Dei (Rage of the Gods)",
-      "level": 14,
-      "description": "Quando attivi la tua Ira, puoi assumere una forma divina per 1 minuto o finché non scendi a 0 Punti Ferita. Ottieni i seguenti benefici:<br>- <strong>Volo:</strong> Ottieni una velocità di Volo pari alla tua velocità di movimento sul terreno e puoi fluttuare.<br>- <strong>Resistenze:</strong> Ottieni Resistenza ai danni Necrotici, Psichici e Radiosi.<br>- <strong>Defilare la Morte:</strong> Quando una creatura entro 9 metri da te scenderebbe a 0 Punti Ferita, puoi usare la tua <strong>Reazione</strong> e spendere 1 uso dell'Ira per fare in modo che scenda invece a un numero di Punti Ferita pari al tuo livello da Barbaro.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>."
-    }
-  ]
-},
- {
-  "id": "subclass_barbarian_beast",
-  "class_id": "barbarian",
-  "name": "Path of the Beast",
-  "name_it": "Cammino della Bestia",
-  "type": "sottoclasse",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I barbari che seguono il Cammino della Bestia traggono la loro ira da una scintilla ferina che brucia nella loro anima. Tale bestia esplode durante l'Ira, trasformando fisicamente il barbaro con zanne, artigli o code assassine.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Forma della Bestia, Anima Bestiale, Furia Infettiva, Richiamo della Caccia.",
-  "features": [
-    {
-      "name": "Forma della Bestia (Form of the Beast)",
-      "level": 3,
-      "description": "Quando entri in Ira, manifesti un'arma naturale a tua scelta (considerata un'arma semplice in mischia che usa la Forza per i tiri per colpire e per i danni):<br>- <strong>Morso (Bite):</strong> Infligge 1d8 danni perforanti. Una volta per turno, se hai meno della metà dei tuoi Punti Ferita massimi e danneggi una creatura con questo morso, recuperi Punti Ferita pari al tuo bonus di competenza.<br>- <strong>Artigli (Claws):</strong> Infliggono 1d6 danni da taglio. Se attacchi con un artiglio come parte dell'azione di Attacco, puoi effettuare un attacco aggiuntivo con l'artiglio come parte della stessa azione.<br>- <strong>Coda (Tail):</strong> Infligge 1d8 danni perforanti e ha la proprietà Portata. Se una creatura entro 3 metri da te che puoi vedere ti colpisce con un attacco, puoi usare la tua <strong>Reazione</strong> per tirare 1d8 e sommarlo alla tua CA contro quell'attacco."
-    },
-    {
-      "name": "Anima Bestiale (Bestial Soul)",
-      "level": 6,
-      "description": "I danni inflitti dalle tue armi naturali contano come <strong>magici</strong> ai fini di superare la resistenza e l'immunità agli attacchi e ai danni non magici. Inoltre, al termine di un riposo breve o lungo, puoi scegliere un adattamento ambientale attivo fino al tuo riposo successivo:<br>- <strong>Nuotare:</strong> Ottieni una velocità di Nuoto pari alla tua velocità di movimento sul terreno e puoi respirare sott'acqua.<br>- <strong>Scalare:</strong> Ottieni una velocità di Scalata pari alla tua velocità di movimento sul terreno e puoi muoverti lungo superfici verticali o a testa in giù sui soffitti senza bisogno di effettuare prove di caratteristica.<br>- <strong>Salto:</strong> Quando effettui un salto in lungo o in alto, puoi effettuare una prova di Atletica e aumentare la distanza del salto di un numero di metri pari al risultato della prova (utilizzabile una volta per turno)."
-    },
-    {
-      "name": "Furia Infettiva (Infectious Fury)",
-      "level": 10,
-      "description": "Quando colpisci una creatura con le tue armi naturali mentre sei in Ira, il bersaglio deve superare un tiro salvezza su Saggezza (CD pari a 8 + il tuo bonus di competenza + il tuo modificatore di Costituzione) o subire uno dei seguenti effetti a tua scelta:<br>- Usa la sua <strong>Reazione</strong> per effettuare immediatamente un attacco in mischia contro un'altra creatura a tua scelta che puoi vedere.<br>- Subisce <strong>2d12 danni psichici</strong>.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
-    },
-    {
-      "name": "Richiamo della Caccia (Call of the Hunt)",
-      "level": 14,
-      "description": "Quando entri in Ira, puoi scegliere fino a un numero di alleati volenterosi entro 9 metri da te pari al tuo <strong>modificatore di Costituzione</strong>. Ottieni <strong>5 Punti Ferita temporanei</strong> per ciascun alleato che accetta questa benedizione.<br><br>Finché la tua Ira dura, ciascun alleato scelto può aggiungere <strong>1d6 danni extra</strong> a un suo attacco andato a segno una volta per ciascun suo turno.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
-    }
-  ]
-},
- {
-  "id": "subclass_barbarian_world_tree",
-  "class_id": "barbarian",
-  "name": "Path of the World Tree",
-  "name_it": "Cammino dell'Albero del Mondo",
-  "type": "sottoclasse",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I barbari che seguono il Cammino dell'Albero del Mondo credono che la propria Ira li colleghi all'imponente frassino cosmico Yggdrasil. Essi attingono a questo legame come fonte di vitale energia e come mezzo di trasporto attraverso il multiverso.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Vitalità dell'Albero, Rami dell'Albero, Radici Travolgenti, Viaggio Lungo l'Albero.",
-  "features": [
-    {
-      "name": "Vitalità dell'Albero (Vitality of the Tree)",
-      "level": 3,
-      "description": "La tua Ira attinge alla forza vitale dell'Albero del Mondo. Ottieni i seguenti benefici:<br>- <strong>Impulso di Vitalità:</strong> Quando attivi la tua Ira, ottieni un numero di <strong>Punti Ferita Temporanei pari al tuo livello da Barbaro</strong>.<br>- <strong>Forza Donatrice di Vita:</strong> All'inizio di ciascuno dei tuoi turni mentre sei in Ira, puoi scegliere un'altra creatura entro 3 metri da te a cui conferire Punti Ferita Temporanei. Tira un numero di <strong>d6 pari al tuo bonus Danni dell'Ira</strong> e sommali per determinarne la quantità. I Punti Ferita temporanei residui svaniscono al termine dell'Ira."
-    },
-    {
-      "name": "Rami dell'Albero (Branches of the Tree)",
-      "level": 6,
-      "description": "Quando una creatura che puoi vedere inizia il suo turno entro 9 metri da te mentre sei in Ira, puoi usare la tua <strong>Reazione</strong> per evocare rami spettrali attorno ad essa. Il bersaglio deve superare un tiro salvezza su Forza (CD pari a 8 + il tuo bonus di competenza + il tuo modificatore di Forza) o essere <strong>teletrasportato</strong> in uno spazio libero a tua scelta entro 1,5 metri da te (o nello spazio libero più vicino). Dopo il teletrasporto, puoi <strong>ridurre la sua velocità a 0</strong> fino alla fine del turno in corso."
-    },
-    {
-      "name": "Radici Travolgenti (Battering Roots)",
-      "level": 10,
-      "description": "Durante il tuo turno, la tua <strong>Portata aumenta di 3 metri</strong> con qualsiasi arma da mischia che possiede la proprietà <em>Pesante</em> o <em>Versatile</em>. Inoltre, quando colpisci con tale arma nel tuo turno, puoi attivare la proprietà di Padronanza <strong>Spingere (Push)</strong> o <strong>Atterrare (Topple)</strong> in aggiunta a qualsiasi altra proprietà di Padronanza dell'arma già in uso."
-    },
-    {
-      "name": "Viaggio Lungo l'Albero (Travel Along the Tree)",
-      "level": 14,
-      "description": "Quando attivi la tua Ira, e successivamente come <strong>Azione Bonus</strong> nei turni successivi mentre la tua Ira è attiva, puoi <strong>teletrasportarti fino a 18 metri</strong> in uno spazio non occupato che puoi vedere.<br><br>Inoltre, <strong>una volta per ciascuna Ira</strong>, puoi aumentare la gittata di questo teletrasporto a <strong>45 metri</strong>. Quando lo fai, puoi portare con te fino a <strong>6 alleati acconsenzienti</strong> situati entro 3 metri da te; ciascun alleato viene teletrasportato in uno spazio non occupato a tua scelta entro 3 metri dalla tua destinazione."
-    }
-  ]
-},
-{
-  "id": "subclass_barbarian_ancestral_guardian",
-  "class_id": "barbarian",
-  "name": "Path of the Ancestral Guardian",
-  "name_it": "Cammino del Guardiano Ancestrale",
-  "type": "sottoclasse",
-  "source_it": "Manuale Integrativo",
-  "description_it": "Alcuni barbari provengono da culture che venerano gli antenati, insegnando che i guerrieri del passato rimangono nel mondo sotto forma di potenti spiriti. Quando un barbaro di questo cammino entra in Ira, invoca questi spiriti protettori per guidare e proteggere i suoi alleati in battaglia.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Protettori Ancestrali, Scudo dello Spirito, Consultare gli Spiriti, Antenati Vendicativi.",
-  "features": [
-    {
-      "name": "Protettori Ancestrali (Ancestral Protectors)",
-      "level": 3,
-      "description": "Guerrieri spettrali appaiono quando entri in Ira. La prima creatura che colpisci con un attacco nel tuo turno diventa il bersaglio degli spiriti, che ne ostacolano i colpi. Fino all'inizio del tuo turno successivo, il bersaglio ha <strong>Svantaggio</strong> a tutti i tiri per colpire diretti contro soggetti diversi da te. Inoltre, se quel bersaglio colpisce una creatura diversa da te con un attacco, tale creatura ha <strong>Resistenza</strong> ai danni inflitti da quell'attacco."
-    },
-    {
-      "name": "Scudo dello Spirito (Spirit Shield)",
-      "level": 6,
-      "description": "Se sei in Ira e un'altra creatura che puoi vedere entro 9 metri da te subisce danni, puoi usare la tua <strong>Reazione</strong> per proteggerla, riducendo quei danni di <strong>2d6</strong>.<br><br>La riduzione di danno aumenta a <strong>3d6</strong> al 10° livello e a <strong>4d6</strong> al 14° livello."
-    },
-    {
-      "name": "Consultare gli Spiriti (Consult the Spirits)",
-      "level": 10,
-      "description": "Ottieni la capacità di consultare i tuoi spiriti ancestrali. Puoi lanciare l'incantesimo <em>Augurio</em> o <em>Chiaroveggenza</em> senza consumare slot incantesimo né componenti materiali. Quando lanci <em>Chiaroveggenza</em> in questo modo, l'incantesimo evoca invisibilmente uno dei tuoi spiriti nel luogo scelto al posto del sensore standard.<br><br>La tua caratteristica da incantatore per questi incantesimi è la Saggezza. Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposto Breve</strong> o un <strong>Riposo Lungo</strong>."
-    },
-    {
-      "name": "Antenati Vendicativi (Vengeful Ancestors)",
-      "level": 14,
-      "description": "I tuoi spiriti diventano abbastanza potenti da ritorsi contro i nemici. Quando usi il tuo privilegio <em>Scudo dello Spirito</em> per ridurre i danni di un attacco, l'attaccante subisce un ammontare di <strong>danni da Forza</strong> pari alla quantità di danni che hai prevenuto."
-    }
-  ]
-},
- {
-  "id": "subclass_barbarian_storm_herald",
-  "class_id": "barbarian",
-  "name": "Path of the Storm Herald",
-  "name_it": "Cammino dell'Araldo della Tempesta",
-  "type": "sottoclasse",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I barbari che seguono il Cammino dell'Araldo della Tempesta imparano a trasformare la propria ira in un mantello di magia primordiale che si agita intorno a loro, attingendo alla natura per creare potenti effetti magici legati agli elementi.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Aura della Tempesta, Anima della Tempesta, Tempesta Protettrice, Tempesta Furiosa.",
-  "features": [
-    {
-      "name": "Aura della Tempesta (Storm Aura)",
-      "level": 3,
-      "description": "Emani un'aura magica di 3 metri mentre sei in Ira (CD del Tiro Salvezza = 8 + il tuo bonus di competenza + il tuo modificatore di Costituzione). L'effetto si attiva quando entri in Ira e può essere riattivato in ciascuno dei tuoi turni come <strong>Azione Bonus</strong>. Scegli un ambiente (modificabile ogni volta che sali di livello in questa classe):<br>- <strong>Deserto:</strong> Tutte le altre creature nell'aura subiscono <strong>2 danni da Fuoco</strong> (aumentano a 3 al 5° livello, 4 al 10°, 5 al 15° e 6 al 20°).<br>- <strong>Mare:</strong> Una creatura a scelta nell'aura effettua un tiro salvezza su Destrezza: subisce <strong>1d6 danni da Fulmine</strong> se lo fallisce, o la metà se lo supera (aumentano a 2d6 al 10° livello, 3d6 al 15° e 4d6 al 20°).<br>- <strong>Tundra:</strong> Le creature a tua scelta nell'aura ottengono <strong>2 Punti Ferita Temporanei</strong> (aumentano a 3 al 5° livello, 4 al 10°, 5 al 15° e 6 al 20°)."
-    },
-    {
-      "name": "Anima della Tempesta (Storm Soul)",
-      "level": 6,
-      "description": "Ottieni benefici passivi permanenti in base all'ambiente scelto per la tua Aura della Tempesta:<br>- <strong>Deserto:</strong> Ottieni Resistenza ai <strong>danni da Fuoco</strong> e non subisci gli effetti del calore estremo. Inoltre, come <strong>Azione</strong>, puoi dare fuoco a un oggetto infiammabile che non sia indossato o trasportato da un'altra creatura.<br>- <strong>Mare:</strong> Ottieni Resistenza ai <strong>danni da Fulmine</strong>, puoi respirare sott'acqua e ottieni una <strong>velocità di Nuoto di 9 metri</strong>.<br>- <strong>Tundra:</strong> Ottieni Resistenza ai <strong>danni da Freddo</strong> e non subisci gli effetti del freddo estremo. Inoltre, come <strong>Azione</strong>, puoi toccare un cubo d'acqua non recipiente di 1,5 metri per lato e congelarlo (rimane ghiacciato per 1 minuto)."
-    },
-    {
-      "name": "Tempesta Protettrice (Shielding Storm)",
-      "level": 10,
-      "description": "Ciascuna creatura a tua scelta ottiene la <strong>resistenza ai danni</strong> conferita dal tuo privilegio <em>Anima della Tempesta</em> finché si trova all'interno della tua <em>Aura della Tempesta</em>."
-    },
-    {
-      "name": "Tempesta Furiosa (Raging Storm)",
-      "level": 14,
-      "description": "Il potere della tempesta scaglia effetti aggiuntivi in base all'ambiente scelto:<br>- <strong>Deserto:</strong> Quando una creatura nell'aura ti colpisce con un attacco, puoi usare la tua <strong>Reazione</strong> per imporle un tiro salvezza su Destrezza; se lo fallisce, subisce un ammontare di <strong>danni da Fuoco pari a metà del tuo livello da Barbaro</strong>.<br>- <strong>Mare:</strong> Quando colpisci una creatura nell'aura con un attacco in mischia, puoi usare la tua <strong>Reazione</strong> per imporle un tiro salvezza su Forza; se lo fallisce, la creatura cade a terra <strong>Prona</strong>.<br>- <strong>Tundra:</strong> Quando attivi l'effetto dell'Aura della Tempesta, una creatura a tua scelta nell'aura deve superare un tiro salvezza su Forza, altrimenti la sua <strong>velocità è ridotta a 0</strong> fino all'inizio del tuo turno successivo."
-    }
-  ]
-},
-{
-  "id": "subclass_barbarian_wild_magic",
-  "class_id": "barbarian",
-  "name": "Path of Wild Magic",
-  "name_it": "Cammino della Magia Selvaggia",
-  "type": "sottoclasse",
-  "source_it": "Manuale Integrativo",
-  "description_it": "Molti luoghi del multiverso abbondano di magia incontrollata che influisce profondamente sulle creature. I barbari che seguono il Cammino della Magia Selvaggia sono permeati da queste forze sovrannaturali, che erompono in modo imprevedibile durante i loro stati di furia.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Percezione Magica, Impulso Selvaggio, Magia Incoraggiante, Ritorsione Instabile, Impulso Controllato.",
-  "features": [
-    {
-      "name": "Percezione Magica (Magic Awareness)",
-      "level": 3,
-      "description": "Come <strong>Azione</strong>, apri la tua mente alla presenza della magia concentrata. Fino alla fine del tuo turno successivo, conosci la posizione di qualsiasi incantesimo o oggetto magico entro 18 metri da te non protetto da copertura totale. Quando percepisci un incantesimo, ne apprendi la scuola di magia.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
-    },
-    {
-      "name": "Impulso Selvaggio (Wild Surge)",
-      "level": 3,
-      "description": "Quando entri in Ira, tira un <strong>d8</strong> sulla tabella della Magia Selvaggia per determinare l'effetto magico generato (CD del Tiro Salvezza = 8 + il tuo bonus di competenza + il tuo modificatore di Costituzione):<br>- <strong>1:</strong> Ciascuna creatura a tua scelta entro 9 metri effettua un tiro salvezza su Costituzione o subisce <strong>1d12 danni Necrotici</strong>. Ottieni <strong>1d12 + livello da Barbaro</strong> Punti Ferita temporanei.<br>- <strong>2:</strong> Ti teletrasporti fino a 9 metri in uno spazio non occupato che puoi vedere. Finché l'Ira dura, puoi riutilizzare questo effetto come <strong>Azione Bonus</strong> nei turni successivi.<br>- <strong>3:</strong> Evochi uno spirito intangibile entro 1,5 metri da una creatura entro 9 metri da te; a fine turno esplode infliggendo <strong>1d6 danni da Forza</strong> a chi fallisce un tiro salvezza su Destrezza. Puoi rievocarlo come <strong>Azione Bonus</strong>.<br>- <strong>4:</strong> Un'arma da mischia impugnata diventa magica, infligge <strong>danni da Forza</strong> e ottiene le proprietà <em>Leggera</em> e <em>Lancio</em> (gittata 6/18 m). Se lanciata, riappare in mano alla fine del turno.<br>- <strong>5:</strong> Ogni creatura che ti colpisce con un attacco prima della fine dell'Ira subisce <strong>1d6 danni da Forza</strong> di ritorsione.<br>- <strong>6:</strong> Protezioni luminose conferiscono un <strong>bonus di +1 alla CA</strong> a te e agli alleati entro 3 metri da te.<br>- <strong>7:</strong> Il terreno entro 4,5 metri da te diventa <strong>terreno difficile</strong> per i nemici.<br>- <strong>8:</strong> Scagli un raggio di luce dal petto verso una creatura entro 9 metri: deve superare un tiro salvezza su Costituzione o subire <strong>1d6 danni Radiosi</strong> ed essere <strong>Accecata</strong> fino all'inizio del tuo turno successivo. Puoi riattivare questo raggio come <strong>Azione Bonus</strong>."
-    },
-    {
-      "name": "Magia Incoraggiante (Bolstering Magic)",
-      "level": 6,
-      "description": "Come <strong>Azione</strong>, tocchi una creatura (incluso te stesso) e le conferisci uno dei seguenti benefici a scelta:<br>- Per 10 minuti, la creatura aggiunge <strong>1d3</strong> a tutti i tiri per colpire o alle prove di caratteristica.<br>- Tiri 1d3: la creatura <strong>recupera uno slot incantesimo speso</strong> di livello pari o inferiore al risultato. Una creatura non può beneficiare di questo recupero di slot più di una volta per <strong>Riposo Lungo</strong>.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
-    },
-    {
-      "name": "Ritorsione Instabile (Unstable Backlash)",
-      "level": 10,
-      "description": "Subito dopo aver subito danni o aver fallito un tiro salvezza mentre sei in Ira, puoi usare la tua <strong>Reazione</strong> per tirare sulla tabella dell'<em>Impulso Selvaggio</em> e produrre immediatamente l'effetto tirato. Questo nuovo effetto sostituisce quello attualmente attivo."
-    },
-    {
-      "name": "Impulso Controllato (Controlled Surge)",
-      "level": 14,
-      "description": "Ogni volta che tiri sulla tabella dell'<em>Impulso Selvaggio</em>, puoi <strong>tirare due dadi</strong> e scegliere quale dei due effetti scatenare. Se ottieni lo stesso numero su entrambi i dadi, puoi ignorare il risultato e <strong>scegliere liberamente qualsiasi effetto</strong> dalla tabella da 1 a 8."
-    }
-  ]
-},
-{{
-  "id": "subclass_bard_dance",
-  "class_id": "bard",
-  "parent_class": "Bardo",
-  "name": "College of Dance",
-  "name_it": "Collegio della Danza",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I bardi del Collegio della Danza sanno che le Parole della Creazione esprimono i propri significati attraverso il movimento dei corpi celesti e la grazia di ogni creatura. Questa disciplina enfatizza agilità, velocità e armonia con il cosmo.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Gioco di Gambe Sfolgorante, Movimento Ispiratore, Gioco di Gambe Insieme, Evasione Guidata.",
-  "features": [
-    {
-      "name": "Dazzling Footwork",
-      "name_it": "Gioco di Gambe Sfolgorante",
-      "level": 3,
-      "description_it": "Mentre non indossi armature e non impugni uno scudo, ottieni i seguenti benefici:<br>• <strong>Virtuoso della Danza:</strong> Hai <strong>Vantaggio</strong> a qualsiasi prova di Carisma (Esibizione) che comporti il danzare.<br>• <strong>Difesa Senza Armatura:</strong> La tua CA base è pari a <strong>10 + Modificatore di Destrezza + Modificatore di Carisma</strong>.<br>• <strong>Colpi Agili:</strong> Quando spendi un uso dell'Ispirazione Bardica come parte di un'Azione, Azione Bonus o Reazione, puoi effettuare <strong>un Colpo Senz'Arma</strong> come parte di quella stessa azione.<br>• <strong>Danno Bardico:</strong> Puoi usare la Destrezza al posto della Forza per i tiri per colpire dei tuoi Colpi Senz'Arma. Quando infliggi danno con un Colpo Senz'Arma, puoi infliggere danni contundenti pari al <strong>tiro del tuo dado di Ispirazione Bardica + Modificatore di Destrezza</strong> (senza consumare il dado)."
-    },
-    {
-      "name": "Inspiring Movement",
-      "name_it": "Movimento Ispiratore",
-      "level": 6,
-      "description_it": "Quando un nemico che puoi vedere termina il suo turno entro 1,5 metri da te, puoi usare la tua <strong>Reazione</strong> e spendere un uso dell'Ispirazione Bardica per muoverti fino a metà della tua Velocità. Subito dopo, un alleato a tua scelta entro 9 metri può usare la propria <strong>Reazione</strong> per muoversi fino a metà della sua Velocità.<br><br>Nessuno di questi movimenti provoca <strong>Attacchi di Opportunità</strong>."
-    },
-    {
-      "name": "Tandem Footwork",
-      "name_it": "Gioco di Gambe Insieme",
-      "level": 6,
-      "description_it": "Quando tiri per l'Iniziativa e non sei Incapacitato, puoi spendere un uso dell'Ispirazione Bardica e tirare il dado: tu e ciascun alleato entro 9 metri che può vederti o sentirti ottenete un <strong>bonus all'Iniziativa pari al risultato ottenuto</strong>."
-    },
-    {
-      "name": "Leading Evasion",
-      "name_it": "Evasione Guidata",
-      "level": 14,
-      "description_it": "Quando sei soggetto a un effetto che ti permette di effettuare un tiro salvezza su Destrezza per dimezzare i danni, subisci <strong>zero danni</strong> se lo superi e <strong>solo metà danno</strong> se lo fallisci.<br><br>Se una o più creature entro 1,5 metri da te stanno effettuando lo stesso tiro salvezza su Destrezza, puoi <strong>condividere questo beneficio</strong> con loro per quel tiro. Non puoi usare questo privilegio se sei Incapacitato."
-    }
-  ]
-},
+    "id": "sub_paladin_devotion",
+    "name": "Oath of Devotion",
+    "name_it": "Giuramento di Dedizione",
+    "class": "Paladin",
+    "class_it": "Paladino",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "L'archetipo del cavaliere in armatura splendente votato a giustizia, virtù e protezione degli innocenti.<br><br><strong>Tratti Chiave:</strong> Arma Sacra, Aura di Devozione, Punizione Purificante."
+  },
   {
-  "id": "subclass_bard_swords",
-  "class_id": "bard",
-  "name": "College of Swords",
-  "name_it": "Collegio delle Spade",
-  "type": "sottoclasse",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I bardi del Collegio delle Spade, noti come Lame, si esibiscono in spericolate dimostrazioni di abilità marziale. Oltre a intrattenere il pubblico, sono combattenti altamente qualificati che combinano arte drammatica, scherma e magia sul campo di battaglia.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Stile di Combattimento, Virtuosismo con l'Arma, Attacco Extra, Virtuosismo del Maestro.",
-  "features": [
-    {
-      "name": "Competenze Bonus (Bonus Proficiencies)",
-      "level": 3,
-      "description": "Ottieni la competenza nelle <strong>Armature Medie</strong> e nella <strong>Sciabola (Scimitar)</strong>.<br><br>Inoltre, se hai la competenza in un'arma da mischia semplice o da guerra, puoi utilizzarla come <strong>Focus per Incantesimi</strong> per i tuoi incantesimi da Bardo."
-    },
-    {
-      "name": "Stile di Combattimento (Fighting Style)",
-      "level": 3,
-      "description": "Adotti uno specifico stile di combattimento come tua specialità. Scegli uno dei seguenti talenti Stile di Combattimento:<br>- <strong>Duellare (Dueling):</strong> +2 ai tiri per il danno quando impugni un'arma in una mano e nessuna altra arma.<br>- <strong>Combattere con Due Armi (Two-Weapon Fighting):</strong> Aggiungi il modificatore di caratteristica ai danni dell'attacco con l'arma secondaria."
-    },
-    {
-      "name": "Virtuosismo con l'Arma (Blade Flourish)",
-      "level": 3,
-      "description": "Ogni volta che effettui l'azione di Attacco nel tuo turno, la tua <strong>Velocità aumenta di 3 metri</strong> fino alla fine del turno. Se un attacco con arma che effettui durante questa azione colpisce una creatura, puoi attivare un'opzione di Virtuosismo (massimo una per turno):<br>- <strong>Virtuosismo Difensivo:</strong> Spendi 1 uso di Ispirazione Bardica. Infliggi <strong>danni extra pari al risultato del dado</strong> e aggiungi <strong>lo stesso valore alla tua CA</strong> fino all'inizio del tuo turno successivo.<br>- <strong>Virtuosismo Tagliente:</strong> Spendi 1 uso di Ispirazione Bardica. Infliggi <strong>danni extra pari al risultato del dado</strong> sia al bersaglio colpito sia a un'altra creatura a tua scelta entro 1,5 metri da te.<br>- <strong>Virtuosismo Mobile:</strong> Spendi 1 uso di Ispirazione Bardica. Infliggi <strong>danni extra pari al risultato del dado</strong> e <strong>spingi il bersaglio indietro di 1,5 metri + una distanza pari al risultato ottenuto (in piedi)</strong>. Puoi immediatamente usare la <strong>Reazione</strong> per muoverti fino alla tua Velocità verso uno spazio libero entro 1,5 metri dal bersaglio."
-    },
-    {
-      "name": "Attacco Extra (Extra Attack)",
-      "level": 6,
-      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
-    },
-    {
-      "name": "Virtuosismo del Maestro (Master's Flourish)",
-      "level": 14,
-      "description": "Ogni volta che utilizzi un'opzione di Virtuosismo con l'Arma, puoi <strong>tirare un d6 e usarne il risultato al posto di spendere un dado di Ispirazione Bardica</strong>."
-    }
-  ]
-},
-{
-  "id": "subclass_bard_glamour",
-  "class_id": "bard",
-  "name": "College of Glamour",
-  "name_it": "Collegio del Glamour",
-  "type": "sottoclasse",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Collegio del Glamour affonda le sue origini nella magia ammiccante della Selva Fatata. I bardi di questo collegio intrecciano bellezza e terrore nei loro canti, avvolgendosi di una maestosità ultraterrena in grado di manipolare le emozioni di chiunque li ascolti.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Magia Ammiccante, Mantello dell'Ispirazione, Mantello della Maestà, Maestà Infrangibile.",
-  "features": [
-    {
-      "name": "Magia Ammiccante (Beguiling Magic)",
-      "level": 3,
-      "description": "Hai sempre preparati gli incantesimi <em>Carma Persone (Charm Person)</em> e <em>Immagine Speculare (Mirror Image)</em>.<br><br>Inoltre, subito dopo aver lanciato un incantesimo di Ammaliamento o Illusione usando uno slot incantesimo, puoi costringere una creatura che vedi entro 18 metri a effettuare un Tiro Salvezza su Saggezza (CD dei tuoi incantesimi). Se lo fallisce, la creatura subisce la condizione <strong>Affascinato</strong> o <strong>Spaventato</strong> (a tua scelta) per 1 minuto. Il bersaglio ripete il tiro salvezza alla fine di ogni suo turno per terminare l'effetto.<br><br>Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo <strong>1 uso dell'Ispirazione Bardica</strong> (nessuna azione richiesta) per ripristinare il privilegio."
-    },
-    {
-      "name": "Mantello dell'Ispirazione (Mantle of Inspiration)",
-      "level": 3,
-      "description": "Con un'<strong>Azione Bonus</strong>, puoi spendere un uso dell'Ispirazione Bardica e tirare il relativo dado. Scegli un numero di creature entro 18 metri fino a un massimo pari al tuo <strong>Modificatore di Carisma</strong> (minimo 1).<br><br>Ciascuna creatura scelta ottiene <strong>Punti Ferita Temporanei pari a 2 volte il risultato del dado</strong> e può immediatamente usare la propria <strong>Reazione</strong> per muoversi fino alla sua intera Velocità <strong>senza provocare Attacchi di Opportunità</strong>."
-    },
-    {
-      "name": "Mantello della Maestà (Mantle of Majesty)",
-      "level": 6,
-      "description": "Hai sempre preparato l'incantesimo <em>Comando (Command)</em>. Con un'<strong>Azione Bonus</strong>, puoi lanciare <em>Comando</em> senza spendere uno slot incantesimo e assumere un'apparenza ultraterrena per 1 minuto (richiede Concentrazione).<br><br>Per la durata dell'effetto, puoi lanciare <em>Comando</em> come <strong>Azione Bonus</strong> senza spendere slot incantesimo. Qualsiasi creatura <strong>Affascinata da te fallisce automaticamente</strong> il tiro salvezza contro il <em>Comando</em> lanciato tramite questo privilegio.<br><br>Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo <strong>uno slot incantesimo di 3° livello o superiore</strong> (nessuna azione richiesta) per ripristinarlo."
-    },
-    {
-      "name": "Maestà Infrangibile (Unbreakable Majesty)",
-      "level": 14,
-      "description": "Con un'<strong>Azione Bonus</strong>, puoi assumere una presenza magistrale e magica per 1 minuto (o finché non sei Incapacitato).<br><br>Per la durata, ogni volta che una creatura ti colpisce con un tiro per colpire per la prima volta in un turno, l'attaccante deve superare un <strong>Tiro Salvezza su Carisma</strong> contro la CD dei tuoi incantesimi: se lo fallisce, <strong>l'attacco manca automaticamente</strong> poiché la creatura indietreggia di fronte al tuo splendore.<br><br>Usabile una volta per <strong>Riposo Breve o Lungo</strong>."
-    }
-  ]
-},
-{
-  "id": "college_of_lore",
-  "name": "College of Lore",
-  "name_it": "Collegio della Sapienza",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "bard",
-  "parent_class": "Bardo",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I bardi del Collegio della Sapienza sondano le profondità della conoscenza magica, raccogliendo incantesimi e segreti da tombi accademici, riti mistici e racconti popolari. Si riuniscono per condividere il proprio sapere, svelare menzogne ed esporre la corruzione.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Parole Taglienti, Scoperte Magiche, Abilità Senza Pari.",
-  "features": [
-    {
-      "name": "Bonus Proficiencies",
-      "name_it": "Competenze Bonus",
-      "level": 3,
-      "description_it": "Ottieni la competenza in **tre abilità a tua scelta**."
-    },
-    {
-      "name": "Cutting Words",
-      "name_it": "Parole Taglienti",
-      "level": 3,
-      "description_it": "Quando una creatura che puoi vedere entro 18 metri effettua un tiro per il danno o supera una prova di caratteristica o un tiro per colpire, puoi usare la tua **Reazione** e spendere un uso dell'Ispirazione Bardica per tirare il dado e **sottrarre il risultato dal tiro della creatura**, riducendo il danno o trasformando un successo in un fallimento."
-    },
-    {
-      "name": "Magical Discoveries",
-      "name_it": "Scoperte Magiche",
-      "level": 6,
-      "description_it": "Impari **due incantesimi a tua scelta** appartenenti alle liste del Chierico, del Druido o del Mago (o una qualsiasi combinazione di esse). Gli incantesimi scelti devono essere trucchetti o incantesimi di livello pari o inferiore agli slot che puoi lanciare. Li hai **sempre preparati** e ogni volta che guadagni un livello da Bardo puoi sostituirne uno con un altro che rispetti i medesimi requisiti."
-    },
-    {
-      "name": "Peerless Skill",
-      "name_it": "Abilità Senza Pari",
-      "level": 14,
-      "description_it": "Quando effettui una prova di caratteristica o un tiro per colpire e **fallisci**, puoi spendere un uso dell'Ispirazione Bardica, tirare il relativo dado e aggiungere il risultato al d20 per tentare di trasformare il fallimento in un successo. **Se continui a fallire, l'uso dell'Ispirazione Bardica non viene consumato**."
-    }
-  ]
-},
-{
-  "id": "college_of_valor",
-  "name": "College of Valor",
-  "name_it": "Collegio del Valore",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "bard",
-  "parent_class": "Bardo",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I bardi del Collegio del Valore sono audaci narratori che mantengono viva la memoria dei grandi eroi del passato. Viaggiano per assistere in prima persona ai grandi eventi e con i loro canti ispirano le nuove generazioni a raggiungere le medesime vette di eroismo.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Ispirazione da Combattimento, Addestramento Marziale, Attacco Extra, Magia da Battaglia.",
-  "features": [
-    {
-      "name": "Combat Inspiration",
-      "name_it": "Ispirazione da Combattimento",
-      "level": 3,
-      "description_it": "Una creatura che possiede un tuo dado di Ispirazione Bardica può utilizzarlo per uno dei seguenti effetti aggiuntivi:<br>• <strong>Difesa:</strong> Quando la creatura viene colpita da un tiro per colpire, può usare la sua **Reazione** per tirare il dado di Ispirazione Bardica e sommarne il risultato alla propria CA contro quell'attacco, con la possibilità di farlo fallire.<br>• <strong>Offesa:</strong> Subito dopo aver colpito un bersaglio con un tiro per colpire, la creatura può tirare il dado di Ispirazione Bardica e sommare il risultato ai **danni dell'attacco** contro il bersaglio."
-    },
-    {
-      "name": "Martial Training",
-      "name_it": "Addestramento Marziale",
-      "level": 3,
-      "description_it": "Ottieni la competenza nelle **Armi da Guerra**, nelle **Armature Medie** e negli **Scudi**.<br><br>Inoltre, puoi utilizzare un'arma semplice o da guerra come **Focus per Incantesimi** per lanciare gli incantesimi della tua lista da Bardo."
-    },
-    {
-      "name": "Extra Attack",
-      "name_it": "Attacco Extra",
-      "level": 6,
-      "description_it": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno.<br><br>Inoltre, puoi **sostituire uno di questi attacchi con il lancio di un tuo trucchetto** che abbia un tempo di lancio di 1 azione."
-    },
-    {
-      "name": "Battle Magic",
-      "name_it": "Magia da Battaglia",
-      "level": 14,
-      "description_it": "Subito dopo aver lanciato un incantesimo con tempo di lancio pari a 1 azione, puoi effettuare **un attacco con un'arma** come **Azione Bonus**."
-    }
-  ]
-},
-{
-  "id": "college_of_creation",
-  "name": "College of Creation",
-  "name_it": "Collegio della Creazione",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "bard",
-  "parent_class": "Bardo",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I bardi del Collegio della Creazione attingono al Canone della Creazione, la melodia primordiale che ha dato origine al cosmo. Attraverso la musica, la danza e la poesia, essi sono in grado di dare forma alla materia, animare oggetti inanimati e conferire una carica celestiale alle proprie ispirazioni.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Nota di Potenziale, Esibizione della Creazione, Esibizione Animante, Crescendo Creativo.",
-  "features": [
-    {
-      "name": "Note of Potential",
-      "name_it": "Nota di Potenziale",
-      "level": 3,
-      "description_it": "Ogni volta che assegni un dado di Ispirazione Bardica, crei un piccolo granello di potenziale intangibile che orbita attorno al bersaglio entro 1,5 metri. Quando la creatura usa il dado, il granello applica un effetto aggiuntivo a seconda del tiro:<br>• <strong>Prova di Caratteristica:</strong> La creatura può tirare due volte il dado di Ispirazione Bardica e scegliere quale risultato utilizzare.<br>• <strong>Tiro per Colpire:</strong> Il bersaglio dell'attacco e le creature a scelta entro 1,5 metri da esso devono superare un TS su Costituzione (CD dei tuoi incantesimi) o subire **danni da tuono pari al risultato del dado di Ispirazione Bardica**.<br>• <strong>Tiro Salvezza:</strong> La creatura ottiene **Punti Ferita Temporanei pari al risultato del dado + il tuo Modificatore di Carisma** (minimo 1)."
-    },
-    {
-      "name": "Performance of Creation",
-      "name_it": "Esibizione della Creazione",
-      "level": 3,
-      "description_it": "Con un'**Azione**, puoi creare un oggetto non magico di taglia Media o inferiore in uno spazio libero entro 3 metri. Il valore in monete d'oro non può superare **20 volte il tuo livello da Bardo** e l'oggetto scompare dopo un numero di ore pari al tuo **Bonus Competenza**. Puoi mantenere un solo oggetto creato alla volta.<br><br>La taglia massima aumenta a **Grande al 6° livello** e **Enorme al 14° livello**. Usabile una volta per **Riposto Lungo**, oppure spendendo uno **slot incantesimo di 2° livello o superiore**."
-    },
-    {
-      "name": "Animating Performance",
-      "name_it": "Esibizione Animante",
-      "level": 6,
-      "description_it": "Con un'**Azione**, puoi animare un oggetto non magico di taglia Grande o inferiore entro 9 metri da te. L'oggetto utilizza la scheda del *Dancing Item* (basata sul tuo Bonus Competenza), è alleato e dura per 1 ora, finché non scende a 0 PF o finché non muori.<br><br>In combattimento agisce subito dopo di te. Uilizza l'azione *Schivata* a meno che tu non usi un'**Azione Bonus** per impartirgli un ordine (puoi impartire l'ordine come parte della stessa Azione Bonus usata per l'Ispirazione Bardica). Usabile una volta per **Riposo Lungo**, o spendendo uno **slot incantesimo di 3° livello o superiore**."
-    },
-    {
-      "name": "Creative Crescendo",
-      "name_it": "Crescendo Creativo",
-      "level": 14,
-      "description_it": "Quando usi *Esibizione della Creazione*, puoi creare un numero di oggetti contemporaneamente pari al tuo **Modificatore di Carisma** (minimo 2). Soltanto uno degli oggetti può essere della taglia massima consentita, mentre gli altri devono essere di taglia Piccola o Minuta.<br><br>Inoltre, **non sei più limitato dal valore in monete d'oro** per gli oggetti creati."
-    }
-  ]
-},
-{
-  "id": "college_of_eloquence",
-  "name": "College of Eloquence",
-  "name_it": "Collegio dell'Eloquenza",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "bard",
-  "parent_class": "Bardo",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I bardi del Collegio dell'Eloquenza padroneggiano l'arte dell'oratoria con argomentazioni logiche ed esibizioni teatrali. Per loro la persuasione è una forma d'arte superiore, capace di far leva sulle emozioni e convertire anche i detrattori più scettici.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Parlantina Sciolta, Parole Inquietanti, Ispirazione Infallibile, Parlato Universale, Ispirazione Contagiosa.",
-  "features": [
-    {
-      "name": "Silver Tongue",
-      "name_it": "Parlantina Sciolta",
-      "level": 3,
-      "description_it": "Sei un maestro nell'affermare la cosa giusta al momento giusto. Ogni volta che effettui una prova di **Carisma (Persuasione)** o **Carisma (Inganno)**, puoi considerare qualsiasi risultato pari o inferiore a 9 ottenuto sul d20 come se fosse un **10**."
-    },
-    {
-      "name": "Unsettling Words",
-      "name_it": "Parole Inquietanti",
-      "level": 3,
-      "description_it": "Con un'**Azione Bonus**, puoi spendere un uso dell'Ispirazione Bardica e scegliere una creatura che puoi vedere entro 18 metri da te, tirando il dado di Ispirazione Bardica. La creatura deve **sottrarre il risultato ottenuto al prossimo Tiro Salvezza** che effettuerà prima dell'inizio del tuo turno successivo."
-    },
-    {
-      "name": "Unfailing Inspiration",
-      "name_it": "Ispirazione Infallibile",
-      "level": 3,
-      "description_it": "Le tue parole sono talmente persuasive che spingono gli altri al successo. Quando una creatura aggiunge un tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e **la prova fallisce comunque**, la creatura **non consuma il dado di Ispirazione Bardica** e può conservarlo."
-    },
-    {
-      "name": "Universal Speech",
-      "name_it": "Parlato Universale",
-      "level": 6,
-      "description_it": "Con un'**Azione**, puoi rendere le tue parole intelligibili a un numero di creature entro 18 metri pari al tuo **Modificatore di Carisma** (minimo 1). Le creature scelte riescono a comprenderti magicamente per **1 ora**, a prescindere dalla lingua che parli.<br><br>Usabile una volta per **Riposo Lungo**, oppure spendendo uno **slot incantesimo** di qualsiasi livello per riattivarlo."
-    },
-    {
-      "name": "Infectious Inspiration",
-      "name_it": "Ispirazione Contagiosa",
-      "level": 14,
-      "description_it": "Quando una creatura entro 18 metri aggiunge il tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e **ottiene un successo**, puoi usare la tua **Reazione** per incoraggiare un'altra creatura entro 18 metri che possa sentirti.<br><br>La nuova creatura ottiene un **dado di Ispirazione Bardica senza consumare i tuoi usi**. Puoi usare questa reazione un numero di volte pari al tuo **Modificatore di Carisma** per Riposo Lungo."
-    }
-  ]
-},
-{
-    "id": "sub_bard_eloquence",
-    "name": "College of Eloquence",
-    "name_it": "Collegio dell'Eloquenza",
+    "id": "sub_paladin_conquest",
+    "name": "Oath of Conquest",
+    "name_it": "Giuramento di Conquista",
+    "class": "Paladin",
+    "class_it": "Paladino",
+    "type": "sottoclasse",
+    "source_it": "Xanathar's Guide to Everything",
+    "description_it": "Piega la volontà dei nemici attraverso la paura instillata e l'assoluto controllo del campo di battaglia.<br><br><strong>Tratti Chiave:</strong> Presenza Terrificante, Aura di Conquista, Scudo Scornoso."
+  },
+  {
+    "id": "sub_ranger_gloomstalker",
+    "name": "Gloom Stalker",
+    "name_it": "Cacciatore delle Ombre (Gloom Stalker)",
+    "class": "Ranger",
+    "class_it": "Cacciatore (Ranger)",
+    "type": "sottoclasse",
+    "source_it": "Xanathar / 2024",
+    "description_it": "Specialista delle imboscate e del combattimento al buio, invisibile alle creature che usano la Scurovisione.<br><br><strong>Tratti Chiave:</strong> Imboscata Oscura, Mimetismo nell'Ombra, Attacco Schivato."
+  },
+  {
+    "id": "sub_rogue_assassin",
+    "name": "Assassin",
+    "name_it": "Assassino",
+    "class": "Rogue",
+    "class_it": "Ladro",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Maestro delle eliminazioni fulminee, dei veleni e del travestimento per colpire a sorpresa i bersagli.<br><br><strong>Tratti Chiave:</strong> Assassinare, Colpo Mortale, Maestria nei Veleni."
+  },
+  {
+    "id": "sub_sorcerer_aberrant",
+    "name": "Aberrant Mind",
+    "name_it": "Mente Aberrante",
+    "class": "Sorcerer",
+    "class_it": "Stregone",
+    "type": "sottoclasse",
+    "source_it": "Tasha / 2024",
+    "description_it": "Poteri psionici latenti sbloccati dal contatto con entità del Reame Remoto o dall'influenza di Mind Flayer.<br><br><strong>Tratti Chiave:</strong> Magia Psionica, Telepatia Parlata, Magia Psionica Sostenuta."
+  },
+  {
+    "id": "sub_warlock_fiend",
+    "name": "The Fiend",
+    "name_it": "Il Celestiale / Immondo (The Fiend)",
+    "class": "Warlock",
+    "class_it": "Warlock (Fattucchiere)",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Stringe un patto con i Signori dei Piani Inferiori, ottenendo magie di fuoco e benedizioni di vitalità ossequiosa.<br><br><strong>Tratti Chiave:</strong> Benedizione dell'Immondo, Fortuna del Demonio, Inferno di Fuoco."
+  },
+  {
+    "id": "sub_wizard_evocation",
+    "name": "Evocation School",
+    "name_it": "Scuola di Evocazione",
+    "class": "Wizard",
+    "class_it": "Mago",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Specializzato in incantesimi d'attacco devastanti, modulando l'area di effetto per proteggere gli alleati.<br><br><strong>Tratti Chiave:</strong> Plasmare Incantesimi, Potenza Evocativa, Sovraccarico Magico."
+  },
+  {
+    "id": "sub_barbarian_berserker",
+    "name": "Path of the Berserker",
+    "name_it": "Cammino del Berserker",
+    "class": "Barbarian",
+    "class_it": "Barbaro",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Incanala la furia pura nel combattimento spietato.<br><br><strong>Tratti Chiave:</strong> Furia Frenetica, Rappresaglia Senza Paura, Presenza Intimidatoria."
+  },
+  {
+    "id": "sub_barbarian_wildheart",
+    "name": "Path of the Wild Heart",
+    "name_it": "Cammino del Cuore Selvaggio",
+    "class": "Barbarian",
+    "class_it": "Barbaro",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Incana gli spiriti della natura per adattarsi a ogni minaccia.<br><br><strong>Tratti Chiave:</strong> Parlare con gli Animali, Aspetti Bestiali, Potenza della Natura."
+  },
+  {
+    "id": "sub_barbarian_worldtree",
+    "name": "Path of the World Tree",
+    "name_it": "Cammino dell'Albero del Mondo",
+    "class": "Barbarian",
+    "class_it": "Barbaro",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Atteinge alla vitalità e alle radici cosmiche dell'Yggdrasil per proteggere gli alleati.<br><br><strong>Tratti Chiave:</strong> Vitalità dell'Albero, Radici Intralcianti, Viaggio attraverso i Piani."
+  },
+  {
+    "id": "sub_barbarian_zealot",
+    "name": "Path of the Zealot",
+    "name_it": "Cammino dello Zelota",
+    "class": "Barbarian",
+    "class_it": "Barbaro",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Guerriero alimentato dal fervore di una divinità di guerra.<br><br><strong>Tratti Chiave:</strong> Furia Divina, Mettere a Fuoco la Furia, Guardiano del Valhalla."
+  },
+  {
+    "id": "sub_bard_dance",
+    "name": "College of Dance",
+    "name_it": "Collegio della Danza",
     "class": "Bard",
     "class_it": "Bardo",
     "type": "sottoclasse",
-    "source_it": "Tasha's Cauldron of Everything",
-    "description_it": "Maestro della retorica e della persuasione pura, capace di piegare la mente altrui con parole persuasive infallibili.<br><br><strong>Tratti Chiave:</strong> Eloquenza Infallibile, Parole Inquietanti, Ispirazione Infrangibile."
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Trasforma la musica in movimento atletico e combattimento agile a mani nude.<br><br><strong>Tratti Chiave:</strong> Danzatore Virtuoso, Difesa Senza Armatura, Evasione Condivisa."
   },
- {
-  "id": "college_of_whispers",
-  "name": "College of Whispers",
-  "name_it": "Collegio dei Bisbigli",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "bard",
-  "parent_class": "Bardo",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I bardi del Collegio dei Bisbigli si insinuano tra le persone fingendosi comuni intrattenitori, ma usano le proprie capacità per svelare segreti ed estorcere potere. Maestri dell'inganno e della manipolazione mentale, instillano la paranoia e sfruttano le paure dei propri nemici.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Lame Psichiche, Parole di Terrore, Mantello dei Bisbigli, Conoscenza delle Ombre.",
-  "features": [
-    {
-      "name": "Psychic Blades",
-      "name_it": "Lame Psichiche",
-      "level": 3,
-      "description_it": "Quando colpisci una creatura con un attacco con arma nel tuo turno, puoi spendere **1 uso di Ispirazione Bardica** per infliggere **2d6 danni psichici aggiuntivi** al bersaglio (massimo una volta per round).<br><br>I danni psichici aumentano a **3d6 al 5° livello**, **5d6 al 10° livello** e **8d6 al 15° livello**."
-    },
-    {
-      "name": "Words of Terror",
-      "name_it": "Parole di Terrore",
-      "level": 3,
-      "description_it": "Se parli da solo con un umanoide per almeno 1 minuto, puoi instillare la paranoia nella sua mente. Al termine della conversazione, il bersaglio deve superare un **Tiro Salvezza su Saggezza** (CD dei tuoi incantesimi) o rimanere **Spaventato** da te o da un'altra creatura a tua scelta per **1 ora** (l'effetto termina prima se viene attaccato, subisce danni o vede un alleato subire danni).<br><br>Se supera il tiro salvezza, non si accorge del tentativo. Usabile una volta per **Riposo Breve o Lungo**."
-    },
-    {
-      "name": "Mantle of Whispers",
-      "name_it": "Mantello dei Bisbigli",
-      "level": 6,
-      "description_it": "Quando un umanoide muore entro 9 metri da te, puoi usare la tua **Reazione** per catturarne magicamente l'ombra (conservabile fino al prossimo riposo lungo). Con un'**Azione**, puoi consumare l'ombra per assumere l'aspetto della persona deceduta per **1 ora** (o finché non interrompi l'effetto con un'Azione Bonus).<br><br>Mentre sei travestito, ottieni un **bonus di +5 alle prove di Carisma (Inganno)** per sostenere la copertura e accedi a tutte le informazioni personali generiche che il defunto avrebbe condiviso con un conoscente casuale. Usabile una volta per **Riposo Breve o Lungo**."
-    },
-    {
-      "name": "Shadow Lore",
-      "name_it": "Conoscenza delle Ombre",
-      "level": 14,
-      "description_it": "Con un'**Azione**, bisbigli una frase magica a una creatura entro 9 metri che possa sentirti e condivida una lingua con te. Il bersaglio deve superare un **Tiro Salvezza su Saggezza** (CD dei tuoi incantesimi) o rimanere **Affascinato** da te per **8 ore**.<br><br>La creatura si convince che tu conosca il suo segreto più terribile ed esegue i tuoi ordini (senza rischiare la vita né combattere per te) pur di impedire che tu lo riveli. Al termine dell'effetto, non comprende il motivo del terrore provato. Usabile una volta per **Riposo Lungo**."
-    }
-  ]
-},
   {
-  "id": "life_domain",
-  "name": "Life Domain",
-  "name_it": "Dominio della Vita",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Dominio della Vita si concentra sull'energia positiva primordiale che sostiene ogni forma di vita nel multiverso. I chierici che canalizzano questo dominio sono maestri delle arti curative, capaci di ripristinare la vitalità dei propri alleati e guarire anche le ferite più gravi.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Discepolo della Vita, Preservare Vita, Guaritore Benedetto, Guarigione Suprema.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Aiuto (Aid)*, *Benedizione (Bless)*, *Cura Ferite (Cure Wounds)*, *Ristorare Inferiore (Lesser Restoration)*<br>• <strong>5° Livello:</strong> *Parola di Guarigione di Massa (Mass Healing Word)*, *Rinascita (Revivify)*<br>• <strong>7° Livello:</strong> *Aura di Vita (Aura of Life)*, *Interdizione alla Morte (Death Ward)*<br>• <strong>9° Livello:</strong> *Ristorare Superiore (Greater Restoration)*, *Cura Ferite di Massa (Mass Cure Wounds)*"
-    },
-    {
-      "name": "Disciple of Life",
-      "name_it": "Discepolo della Vita",
-      "level": 3,
-      "description_it": "Ogni volta che lanci un incantesimo usando uno slot incantesimo che ripristina Punti Ferita a una creatura, quella creatura recupera **Punti Ferita aggiuntivi** nel turno in cui lanci l'incantesimo pari a **2 + il livello dello slot incantesimo utilizzato**."
-    },
-    {
-      "name": "Preserve Life",
-      "name_it": "Preservare Vita",
-      "level": 3,
-      "description_it": "Con un'**Azione Magica**, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per evocare un'energia curativa in grado di ripristinare un ammontare di Punti Ferita pari a **5 volte il tuo livello da Chierico**.<br><br>Scegli qualsiasi creatura *Ferita (Bloodied)* entro 9 metri da te (incluso te stesso) e distribuisci questi Punti Ferita tra di esse. Questo privilegio può curare una creatura **fino a un massimo della metà dei suoi Punti Ferita Massimi**."
-    },
-    {
-      "name": "Blessed Healer",
-      "name_it": "Guaritore Benedetto",
-      "level": 6,
-      "description_it": "Gli incantesimi di cura che lanci sugli altri curano anche te stesso. Subito dopo aver lanciato un incantesimo con uno slot incantesimo che ripristina Punti Ferita a una o più creature diverse da te, **recuperi Punti Ferita pari a 2 + il livello dello slot incantesimo utilizzato**."
-    },
-    {
-      "name": "Supreme Healing",
-      "name_it": "Guarigione Suprema",
-      "level": 17,
-      "description_it": "Quando dovresti normalmente tirare uno o più dadi per ripristinare Punti Ferita a una creatura tramite un incantesimo o Incanalare Divinità, non tirare i dadi: **utilizza invece il valore massimo possibile per ogni dado** (ad esempio, invece di tirare 2d6 per la cura, ripristini direttamente 12 Punti Ferita)."
-    }
-  ]
-},
-{
-  "id": "forge_domain",
-  "name": "Forge Domain",
-  "name_it": "Dominio della Fucina",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I chierici della fucina sono artigiani che lavorano il metallo, capaci di trasformare un grezzo blocco di minerale in uno splendido oggetto d'arte o di guerra. Fieri del proprio lavoro, indossano armature pesanti e brandiscono potenti armi per proteggere le arti della creazione e scacciare le forze dell'oscurità.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Competenza Bonus, Benedizione della Fucina, Benedizione dell'Artigiano, Anima della Fucina, Colpo Divino, Santo della Fucina e del Fuoco.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Identificare (Identify)*, *Punizione Rovente (Searing Smite)*, *Riscaldare Metallo (Heat Metal)*, *Arma Magica (Magic Weapon)*<br>• <strong>5° Livello:</strong> *Arma Elementale (Elemental Weapon)*, *Protezione dagli Elementi (Protection from Energy)*<br>• <strong>7° Livello:</strong> *Fabbricare (Fabricate)*, *Muro di Fuoco (Wall of Fire)*<br>• <strong>9° Livello:</strong> *Animare Oggetti (Animate Objects)*, *Creazione (Creation)*"
-    },
-    {
-      "name": "Bonus Proficiency",
-      "name_it": "Competenza Bonus",
-      "level": 3,
-      "description_it": "Ottieni la competenza nelle **Armature Pesanti** e negli **Strumenti da Fabbro (Smith's Tools)**."
-    },
-    {
-      "name": "Blessing of the Forge",
-      "name_it": "Benedizione della Fucina",
-      "level": 3,
-      "description_it": "Al termine di un riposo lungo, puoi toccare un oggetto non magico che sia un'armatura oppure un'arma semplice o da guerra.<br><br>Fino al termine del tuo riposo lungo successivo (o finché non muori), l'oggetto diventa un oggetto magico, conferendo un **bonus di +1 alla CA** se è un'armatura, oppure un **bonus di +1 ai tiri per colpire e ai danni** se è un'arma. Usabile una volta per **Riposo Lungo**."
-    },
-    {
-      "name": "Artisan's Blessing",
-      "name_it": "Benedizione dell'Artigiano",
-      "level": 3,
-      "description_it": "Puoi usare Incanalare Divinità per condurre un **rituale di 1 ora** che crea un oggetto non magico contenente metallo (un'arma semplice o da guerra, un'armatura, 10 munizioni, un set di strumenti o un altro oggetto metallico) del valore massimo di **100 mo**.<br><br>Come parte del rituale, devi disporre metallo o monete per un valore pari all'oggetto creato, che viene trasformato irrimediabilmente. Puoi anche creare un duplicato di un oggetto non magico esistente (come una chiave) se ne possiedi l'originale durante il rituale."
-    },
-    {
-      "name": "Soul of the Forge",
-      "name_it": "Anima della Fucina",
-      "level": 6,
-      "description_it": "La tua maestria nella fucina ti dona i seguenti benefici:<br>• Ottieni **Resistenza ai danni da Fuoco**.<br>• Mentre indossi un'armatura pesante, ottieni un **bonus di +1 alla CA**."
-    },
-    {
-      "name": "Divine Strike",
-      "name_it": "Colpo Divino",
-      "level": 8,
-      "description_it": "Una volta in ciascuno dei tuoi turni, quando colpisci una creatura con un attacco con arma, puoi far sì che l'attacco infligga **1d8 danni da Fuoco aggiuntivi** al bersaglio.<br><br>Quando raggiungi il **14° livello**, il danno aggiuntivo aumenta a **2d8**."
-    },
-    {
-      "name": "Saint of Forge and Fire",
-      "name_it": "Santo della Fucina e del Fuoco",
-      "level": 17,
-      "description_it": "La tua affinità benedetta con il fuoco e il metallo si rafforza:<br>• Ottieni **Immunità ai danni da Fuoco**.<br>• Mentre indossi un'armatura pesante, hai **Resistenza ai danni Contondentali, Perforanti e Taglienti** derivanti da attacchi non magici."
-    }
-  ]
-},
+    "id": "sub_bard_glamour",
+    "name": "College of Glamour",
+    "name_it": "Collegio del Glamour",
+    "class": "Bard",
+    "class_it": "Bardo",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Utilizza la maestosità della Selva Feerica per incantare ed ammaliare.<br><br><strong>Tratti Chiave:</strong> Presenza Intrattenente, Maestà Sconfinata, Comando Incantevole."
+  },
   {
-  "id": "light_domain",
-  "name": "Light Domain",
-  "name_it": "Dominio della Luce",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Dominio della Luce incarna il potere divino della fiamma sfolgorante e della rivelazione. I chierici che imbracciano questo potere dissipano le tenebre, smascherano le menzogne ed purificano il male attraverso la radianza e il fuoco sacro.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Radianza dell'Alba, Bagliore Difensivo, Bagliore Difensivo Migliorato, Corona di Luce.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Mani Brucianti (Burning Hands)*, *Fuoco Fata (Faerie Fire)*, *Raggio Rovente (Scorching Ray)*, *Vedere l'Invisibilità (See Invisibility)*<br>• <strong>5° Livello:</strong> *Luce del Giorno (Daylight)*, *Palla di Fuoco (Fireball)*<br>• <strong>7° Livello:</strong> *Occhio Arcano (Arcane Eye)*, *Muro di Fuoco (Wall of Fire)*<br>• <strong>9° Livello:</strong> *Colpo Infuocato (Flame Strike)*, *Scrutare (Scrying)*"
-    },
-    {
-      "name": "Radiance of the Dawn",
-      "name_it": "Radianza dell'Alba",
-      "level": 3,
-      "description_it": "Con un'**Azione Magica**, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per emettere un lampo di luce in un'**Emanazione di 9 metri** originata da te. Ogni oscurità magica (come quella creata dall'incantesimo *Oscurità*) nell'area viene dissolta.<br><br>Inoltre, ogni creatura a tua scelta nell'area deve effettuare un **Tiro Salvezza su Costituzione**: subisce **2d10 + il tuo livello da Chierico** di danni Radiosi se fallisce, oppure la metà dei danni se ha successo."
-    },
-    {
-      "name": "Warding Flare",
-      "name_it": "Bagliore Difensivo",
-      "level": 3,
-      "description_it": "Quando una creatura che puoi vedere entro 9 metri da te effettua un tiro per colpire, puoi usare la tua **Reazione** per **imporre Svantaggio al tiro per colpire**, facendo balenare una luce improvvisa prima che il colpo vada a segno o fallisca.<br><br>Puoi utilizzare questo privilegio un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1). Recuperi tutti gli usi spesi quando completi un **Riposo Lungo**."
-    },
-    {
-      "name": "Improved Warding Flare",
-      "name_it": "Bagliore Difensivo Migliorato",
-      "level": 6,
-      "description_it": "Recuperi tutti gli usi spesi di Bagliore Difensivo quando completi un **Riposo Breve o Lungo**.<br><br>Inoltre, ogni volta che utilizzi Bagliore Difensivo, puoi conferire al bersaglio dell'attacco attivante un ammontare di **Punti Ferita Temporanei pari a 2d6 + il tuo Modificatore di Saggezza**."
-    },
-    {
-      "name": "Corona of Light",
-      "name_it": "Corona di Luce",
-      "level": 17,
-      "description_it": "Con un'**Azione Magica**, emetti un'aura di luce solare per **1 minuto** (o finché non la interrompi, senza richiedere un'azione). Emetti **Luce Intensa per un raggio di 18 metri** e Luce Fioca per ulteriori 9 metri.<br><br>I tuoi nemici presenti nella Luce Intensa hanno **Svantaggio ai tiri salvezza** contro la tua Radianza dell'Alba e contro qualsiasi incantesimo che infligga danni da Fuoco o Radiosi.<br><br>Puoi utilizzare questo privilegio un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1) e recuperi tutti gli usi spesi quando completi un **Riposo Lungo**."
-    }
-  ]
-},
-{
-  "id": "trickery_domain",
-  "name": "Trickery Domain",
-  "name_it": "Dominio dell'Inganno",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Dominio dell'Inganno offre la magia dell'illusione, del camuffamento e della furtività. I chierici che imbracciano questo potere sono una forza sovversiva che preferisce il sotterfugio, lo scherzo e l'astuzia allo scontro diretto, sfidando la tirannia e l'ordine costituito.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Benedizione del Raggiratore, Invocare Duplicità, Trasposizione del Raggiratore, Duplicità Migliorata.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Ammaliare Persone (Charm Person)*, *Camuffare Se Stesso (Disguise Self)*, *Invisibilità (Invisibility)*, *Passare Senza Traccia (Pass without Trace)*<br>• <strong>5° Livello:</strong> *Trama Ipnotica (Hypnotic Pattern)*, *Anti-Individuazione (Nondetection)*<br>• <strong>7° Livello:</strong> *Confusione (Confusion)*, *Porta Dimensionale (Dimension Door)*<br>• <strong>9° Livello:</strong> *Dominare Persone (Dominate Person)*, *Modificare Memoria (Modify Memory)*"
-    },
-    {
-      "name": "Blessing of the Trickster",
-      "name_it": "Benedizione del Raggiratore",
-      "level": 3,
-      "description_it": "Con un'**Azione Magica**, puoi scegliere te stesso o una creatura consensuale entro 9 metri da te per conferirle **Vantaggio alle prove di Destrezza (Furtività)**.<br><br>Questa benedizione dura finché non completi un **Riposo Lungo** o finché non utilizzi nuovamente questo privilegio."
-    },
-    {
-      "name": "Invoke Duplicity",
-      "name_it": "Invocare Duplicità",
-      "level": 3,
-      "description_it": "Con un'**Azione Bonus**, puoi spendere un uso di Incanalare Divinità per creare un'illusione visiva perfetta di te stesso in uno spazio non occupato entro 9 metri da te. L'illusione è intangibile, dura **1 minuto** (o finché non la interrompi senza richiedere un'azione, oppure se subisci la condizione *Incapace*) e imita le tue espressioni e gesti.<br><br>Mentre l'illusione persiste, ottieni i seguenti benefici:<br>• <strong>Lanciare Incantesimi:</strong> Puoi lanciare incantesimi come se ti trovassi nello spazio dell'illusione, ma devi utilizzare i tuoi sensi.<br>• <strong>Distrazione:</strong> Quando sia tu che la tua illusione vi trovate entro 1,5 metri da una creatura in grado di vedere l'illusione, hai **Vantaggio ai tiri per colpire** contro di essa.<br>• <strong>Muovere:</strong> Con un'**Azione Bonus**, puoi muovere l'illusione fino a 9 metri verso uno spazio non occupato visibile entro 36 metri da te."
-    },
-    {
-      "name": "Trickster’s Transposition",
-      "name_it": "Trasposizione del Raggiratore",
-      "level": 6,
-      "description_it": "Ogni volta che usi l'**Azione Bonus** per creare o muovere l'illusione di Invocare Duplicità, puoi **teleportarti**, scambiandoti di posto con l'illusione."
-    },
-    {
-      "name": "Improved Duplicity",
-      "name_it": "Duplicità Migliorata",
-      "level": 17,
-      "description_it": "L'illusione della tua Invocare Duplicità diventa più potente nei seguenti modi:<br>• <strong>Distrazione Condivisa:</strong> Quando tu e i tuoi alleati effettuate tiri per colpire contro una creatura entro 1,5 metri dall'illusione, i tiri per colpire hanno **Vantaggio**.<br>• <strong>Illusione Curativa:</strong> Quando l'illusione termina, tu o una creatura a tua scelta entro 1,5 metri da essa recuperate un ammontare di **Punti Ferita pari al tuo livello da Chierico**."
-    }
-  ]
-},
-{
-  "id": "war_domain",
-  "name": "War Domain",
-  "name_it": "Dominio della Guerra",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Dominio della Guerra incarna la battaglia in tutte le sue forme, dall'eroismo alla distruzione. I chierici di questo dominio eccellono nel combattimento ravvicinato, ispirando i propri alleati sul campo di battaglia o offrendo atti di violenza come preghiere alle loro divinità.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Colpo Guidato, Sacerdote di Guerra, Benedizione del Dio della Guerra, Avatar della Battaglia.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Dardo Tracciante (Guiding Bolt)*, *Arma Magica (Magic Weapon)*, *Scudo della Fede (Shield of Faith)*, *Arma Spirituale (Spiritual Weapon)*<br>• <strong>5° Livello:</strong> *Mantello del Crociato (Crusader's Mantle)*, *Spiriti Custodi (Spirit Guardians)*<br>• <strong>7° Livello:</strong> *Scudo di Fuoco (Fire Shield)*, *Libertà di Movimento (Freedom of Movement)*<br>• <strong>9° Livello:</strong> *Blocca Mostri (Hold Monster)*, *Assalto del Vento d'Acciaio (Steel Wind Strike)*"
-    },
-    {
-      "name": "Guided Strike",
-      "name_it": "Colpo Guidato",
-      "level": 3,
-      "description_it": "Quando tu o una creatura entro 9 metri da te fallite un tiro per colpire, puoi spendere un uso di Incanalare Divinità per conferire a quel tiro un **bonus di +10**, potendo così trasformare il fallimento in un colpo a segno.<br><br>Quando usi questo privilegio per beneficiare il tiro per colpire di un'altra creatura, devi utilizzare la tua **Reazione** per farlo."
-    },
-    {
-      "name": "War Priest",
-      "name_it": "Sacerdote di Guerra",
-      "level": 3,
-      "description_it": "Con un'**Azione Bonus**, puoi effettuare un attacco con un'arma o un Colpo Senz'Armi.<br><br>Puoi utilizzare questa Azione Bonus un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1). Recuperi tutti gli usi spesi quando completi un **Riposo Breve o Lungo**."
-    },
-    {
-      "name": "War God’s Blessing",
-      "name_it": "Benedizione del Dio della Guerra",
-      "level": 6,
-      "description_it": "Puoi spendere un uso di Incanalare Divinità per lanciare *Scudo della Fede* o *Arma Spirituale* senza spendere uno slot incantesimo.<br><br>Quando lanci uno di questi incantesimi in questo modo, l'incantesimo **non richiede Concentrazione**. Invece, dura per **1 minuto** (l'effetto termina prima se lanci nuovamente quel determinato incantesimo, se subisci la condizione *Incapace* o se muori)."
-    },
-    {
-      "name": "Avatar of Battle",
-      "name_it": "Avatar della Battaglia",
-      "level": 17,
-      "description_it": "Ottieni **Resistenza ai danni Contondentali, Perforanti e Taglienti**."
-    }
-  ]
-},
-{
-  "id": "twilight_domain",
-  "name": "Twilight Domain",
-  "name_it": "Dominio del Crepuscolo",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale Integrativo",
-  "description_it": "La transizione crepuscolare dalla luce all'oscurità porta riposo e conforto, ma può celare tremendi terrori. I chierici del Dominio del Crepuscolo proteggono i viandanti dalle insidie della notte, vegliando sul loro sonno e avventurandosi nell'oscurità per garantire che il buio rimanga un luogo di ristoro e non di terrore.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Occhi della Notte, Benedizione Vigilante, Santuario Crepuscolare, Passi della Notte, Sudario Crepuscolare.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Fuoco Fata (Faerie Fire)*, *Sonno (Sleep)*, *Raggio di Luna (Moonbeam)*, *Vedere l'Invisibilità (See Invisibility)*<br>• <strong>5° Livello:</strong> *Aura di Vitalità (Aura of Vitality)*, *Capanna Piccola di Leomund (Leomund's Tiny Hut)*<br>• <strong>7° Livello:</strong> *Aura di Vita (Aura of Life)*, *Invisibilità Superiore (Greater Invisibility)*<br>• <strong>9° Livello:</strong> *Cerchio di Potere (Circle of Power)*, *Traviare (Mislead)*"
-    },
-    {
-      "name": "Eyes of Night",
-      "name_it": "Occhi della Notte",
-      "level": 3,
-      "description_it": "Ottieni **Scurovisione fino a un raggio di 90 metri**. In quel raggio puoi vedere nella luce fioca come se fosse intensa e nell'oscurità come se fosse luce fioca.<br><br>Con un'**Azione**, puoi condividere questa Scurovisione con un numero di creature consensuali entro 3 metri pari al tuo **Modificatore di Saggezza** (minimo 1) per **1 ora**. Una volta condivisa, non puoi farlo di nuovo fino a un **Riposo Lungo**, a meno che non spenda uno slot incantesimo di qualsiasi livello."
-    },
-    {
-      "name": "Vigilant Blessing",
-      "name_it": "Benedizione Vigilante",
-      "level": 3,
-      "description_it": "Con un'**Azione**, tocchi una creatura (incluso te stesso) e le conferisci **Vantaggio al tiro per l'Iniziativa successivo**.<br><br>Questo beneficio termina immediatamente dopo il tiro di Iniziativa o se utilizzi nuovamente questo privilegio su un'altra creatura."
-    },
-    {
-      "name": "Twilight Sanctuary",
-      "name_it": "Santuario Crepuscolare",
-      "level": 3,
-      "description_it": "Con un'**Azione**, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per creare una sfera di luce fioca con un **raggio di 9 metri** centrata su di te, che ti segue nei movimenti per **1 minuto** (o finché non sei Incapace o muori).<br><br>Ogni volta che una creatura (incluso te) termina il proprio turno nella sfera, puoi concederle uno dei seguenti benefici:<br>• Le conferisci **Punti Ferita Temporanei pari a 1d6 + il tuo livello da Chierico**.<br>• Termini una condizione di **Affascinato** o **Spaventato** attiva su di essa."
-    },
-    {
-      "name": "Steps of Night",
-      "name_it": "Passi della Notte",
-      "level": 6,
-      "description_it": "Quando ti trovi in condizioni di luce fioca o oscurità, puoi usare un'**Azione Bonus** per ottenere una **Velocità di Volo pari alla tua Velocità di camminata** per **1 minuto**.<br><br>Puoi usare questa Azione Bonus un numero di volte pari al tuo **Bonus di Competenza**. Recuperi tutti gli usi spesi quando completi un **Riposo Lungo**."
-    },
-    {
-      "name": "Twilight Shroud",
-      "name_it": "Sudario Crepuscolare",
-      "level": 17,
-      "description_it": "Il crepuscolo che evochi offre una protezione ancora più salda: tu e i tuoi alleati ottenete **Copertura Mezza (+2 alla CA e ai tiri salvezza su Destrezza)** mentre vi trovate all'interno della sfera creata da Santuario Crepuscolare."
-    }
-  ]
-},
-{
-  "id": "order_domain",
-  "name": "Order Domain",
-  "name_it": "Dominio dell'Ordine",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale Integrativo",
-  "description_it": "Il Dominio dell'Ordine rappresenta la disciplina, la logica e la rigida devozione alle leggi che governano la società e l'universo. I chierici dell'Ordine credono fermamente che una gerarchia ben strutturata porti sicurezza nel caos, impiegando la loro magia per guidare gli alleati e assoggettare i nemici all'autorità.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Competenze Bonus, Voce dell'Autorità, Comando dell'Ordine, Incarnazione della Legge, Ira dell'Ordine.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Comando (Command)*, *Eroismo (Heroism)*, *Blocca Persone (Hold Person)*, *Zona di Verità (Zone of Truth)*<br>• <strong>5° Livello:</strong> *Parola di Guarigione di Massa (Mass Healing Word)*, *Lentezza (Slow)*<br>• <strong>7° Livello:</strong> *Costrizione (Compulsion)*, *Localizza Creatura (Locate Creature)*<br>• <strong>9° Livello:</strong> *Comunione (Commune)*, *Dominare Persone (Dominate Person)*"
-    },
-    {
-      "name": "Bonus Proficiencies",
-      "name_it": "Competenze Bonus",
-      "level": 3,
-      "description_it": "Ottieni la competenza nelle **Armature Pesanti**.<br><br>Ottieni inoltre la competenza in un'abilità a tua scelta tra **Intimidire** o **Persuasione**."
-    },
-    {
-      "name": "Voice of Authority",
-      "name_it": "Voce dell'Autorità",
-      "level": 3,
-      "description_it": "Puoi invocare il potere della legge per spronare un alleato all'attacco. Se lanci un incantesimo utilizzando uno slot incantesimo di 1° livello o superiore e scegli come bersaglio un alleato, quell'alleato può usare immediatamente la sua **Reazione** dopo l'incantesimo per effettuare **un attacco con arma** contro una creatura a tua scelta che puoi vedere.<br><br>Se l'incantesimo include più alleati tra i bersagli, scegli tu quale alleato può effettuare l'attacco."
-    },
-    {
-      "name": "Order's Demand",
-      "name_it": "Comando dell'Ordine",
-      "level": 3,
-      "description_it": "Con un'**Azione**, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per esercitare una presenza intimidatoria. Ogni creatura a tua scelta entro 9 metri da te che possa vederti o sentirti deve superare un **Tiro Salvezza su Saggezza** o rimanere **Affascinata** da te fino alla fine del tuo turno successivo (l'effetto termina prima se la creatura subisce danni).<br><br>Puoi anche far sì che le creature che falliscono il tiro salvezza lascino immediatamente cadere ciò che stanno impugnando."
-    },
-    {
-      "name": "Embodiment of the Law",
-      "name_it": "Incarnazione della Legge",
-      "level": 6,
-      "description_it": "Se lanci un incantesimo della scuola di **Ammaliamento** utilizzando uno slot incantesimo di 1° livello o superiore, puoi modificarne il tempo di lancio in **1 Azione Bonus** per quel lancio, a condizione che il tempo di lancio normale sia di 1 azione.<br><br>Puoi utilizzare questo privilegio un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1). Recuperi tutti gli usi spesi quando completi un **Riposo Lungo**."
-    },
-    {
-      "name": "Order's Wrath",
-      "name_it": "Ira dell'Ordine",
-      "level": 17,
-      "description_it": "Se infliggi i danni del tuo Colpo Divino a una creatura nel tuo turno, puoi maledire quella creatura fino all'inizio del tuo turno successivo.<br><br>La volta successiva che un tuo alleato colpisce la creatura maledetta con un attacco, il bersaglio subisce anche **2d8 danni psichici aggiuntivi** e la maledizione termina. Puoi maledire una creatura in questo modo solo una volta per turno."
-    }
-  ]
-},
-{
-  "id": "peace_domain",
-  "name": "Peace Domain",
-  "name_it": "Dominio della Pace",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "cleric",
-  "parent_class": "Chierico",
-  "source_it": "Manuale Integrativo",
-  "description_it": "Il Dominio della Pace promuove la risoluzione dei conflitti e l'armonia tra i popoli. I chierici di questo dominio agiscono come mediatori e arbitri, unendo gli individui e canalizzando una magia che protegge gli alleati, permette loro di condividere i fardelli del combattimento e diffonde un balsamo lenitivo sul campo di battaglia.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Strumento di Pace, Legame Incoraggiante, Balsamo di Pace, Legame Protettivo, Legame Espanso.",
-  "features": [
-    {
-      "name": "Domain Spells",
-      "name_it": "Incantesimi del Dominio",
-      "level": 3,
-      "description_it": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> *Eroismo (Heroism)*, *Santuario (Sanctuary)*, *Aiuto (Aid)*, *Legame Protettivo (Warding Bond)*<br>• <strong>5° Livello:</strong> *Faro di Speranza (Beacon of Hope)*, *Inviare (Sending)*<br>• <strong>7° Livello:</strong> *Aura di Purificazione (Aura of Purity)*, *Sfera Resiliente di Otiluke (Otiluke's Resilient Sphere)*<br>• <strong>9° Livello:</strong> *Ristorare Superiore (Greater Restoration)*, *Legame Telepatico di Rary (Rary's Telepathic Bond)*"
-    },
-    {
-      "name": "Implement of Peace",
-      "name_it": "Strumento di Pace",
-      "level": 3,
-      "description_it": "Ottieni la competenza in un'abilità a tua scelta tra **Intuizione**, **Intrattenere** o **Persuasione**."
-    },
-    {
-      "name": "Emboldening Bond",
-      "name_it": "Legame Incoraggiante",
-      "level": 3,
-      "description_it": "Con un'**Azione**, puoi scegliere un numero di creature consensuali entro 9 metri da te (incluso te stesso) pari al tuo **Bonus di Competenza** per creare un legame magico della durata di **10 minuti** (o finché non usi di nuovo il privilegio).<br><br>Mentre una creatura legata si trova entro 9 metri da un'altra creatura legata, può tirare **un d4 da aggiungere a un tiro per colpire, una prova di caratteristica o un tiro salvezza** (massimo una volta per turno). Usabile un numero di volte pari al tuo Bonus di Competenza per **Riposo Lungo**."
-    },
-    {
-      "name": "Balm of Peace",
-      "name_it": "Balsamo di Pace",
-      "level": 3,
-      "description_it": "Con un'**Azione**, puoi spendere un uso di Incanalare Divinità per **muoverti fino alla tua Velocità senza provocare attacchi di opportunità**.<br><br>Quando ti muovi entro 1,5 metri da un'altra creatura durante questo movimento, le fai recuperare **2d6 + il tuo Modificatore di Saggezza** Punti Ferita (minimo 1 PF). Ogni creatura può ricevere questa cura solo una volta per ciascuna attivazione del privilegio."
-    },
-    {
-      "name": "Protective Bond",
-      "name_it": "Legame Protettivo",
-      "level": 6,
-      "description_it": "Quando una creatura influenzata dal tuo Legame Incoraggiante sta per subire danni, una seconda creatura legata situata entro 9 metri da essa può usare la propria **Reazione** per **teleportarsi in uno spazio libero entro 1,5 metri dalla prima**.<br><br>La seconda creatura subisce tutti i danni al posto della creatura originale."
-    },
-    {
-      "name": "Expansive Bond",
-      "name_it": "Legame Espanso",
-      "level": 17,
-      "description_it": "I benefici di Legame Incoraggiante e Legame Protettivo ora funzionano quando le creature si trovano entro **18 metri** l'una dall'altra.<br><br>Inoltre, quando una creatura usa Legame Protettivo per subire i danni al posto di un'altra, ottiene **Resistenza a quei danni**."
-    }
-  ]
-},
+    "id": "sub_bard_lore",
+    "name": "College of Lore",
+    "name_it": "Collegio del Sapere",
+    "class": "Bard",
+    "class_it": "Bardo",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Raccoglie conoscenze da ogni disciplina ed espande le sue capacità magiche.<br><br><strong>Tratti Chiave:</strong> Parole Taglienti, Segreti Magici Aggiuntivi, Abilità Extra."
+  },
   {
-  "id": "circle_of_wildfire",
-  "name": "Circle of Wildfire",
-  "name_it": "Circolo del Fuoco Infernale",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I druidi del Circolo del Fuoco Infernale comprendono che la distruzione è talvolta il presagio della creazione, proprio come un incendio boschivo favorisce la crescita futura. Si legano a uno spirito primordiale di fuoco che racchiude sia potere distruttivo che curativo, consentendo loro di purificare e rigenerare il mondo.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo, Evocare Spirito del Fuoco Infernale, Legame Potenziato, Fiamme Cauterizzanti, Rinascita Ardente.",
-  "features": [
-    {
-      "name": "Circle Spells",
-      "name_it": "Incantesimi del Circolo",
-      "level": 3,
-      "description_it": "Il tuo legame con lo spirito ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> *Mani Brucianti (Burning Hands)*, *Cura Ferite (Cure Wounds)*, *Sfera Infuocata (Flaming Sphere)*, *Raggio Rovente (Scorching Ray)*<br>• <strong>5° Livello:</strong> *Crescita Vegetale (Plant Growth)*, *Rinascita (Revivify)*<br>• <strong>7° Livello:</strong> *Aura di Vita (Aura of Life)*, *Scudo di Fuoco (Fire Shield)*<br>• <strong>9° Livello:</strong> *Colpo Infuocato (Flame Strike)*, *Cura Ferite di Massa (Mass Cure Wounds)*"
-    },
-    {
-      "name": "Summon Wildfire Spirit",
-      "name_it": "Evocare Spirito del Fuoco Infernale",
-      "level": 3,
-      "description_it": "Con un'**Azione**, puoi spendere un uso di Forma Selvatica per evocare lo spirito del fuoco infernale in uno spazio libero entro 9 metri da te.<br><br>Ogni creatura (tranne te) entro 3 metri dallo spirito alla sua comparsa deve superare un **Tiro Salvezza su Destrezza** contro la tua CD Incantesimi o subire **2d6 danni da Fuoco**.<br><br>Lo spirito condivide il tuo conteggio di Iniziativa (agisce subito dopo di te) e dura per **1 ora**, finché non scende a 0 PF o finché non muori. In combattimento esegue l'azione di *Schivata*, a meno che non usi un'**Azione Bonus** nel tuo turno per comandargli di eseguire un'azione dalla sua scheda."
-    },
-    {
-      "name": "Enhanced Bond",
-      "name_it": "Legame Potenziato",
-      "level": 6,
-      "description_it": "Ogni volta che lanci un incantesimo che infligge danni da fuoco o fa recuperare Punti Ferita mentre lo spirito è evocato, **tira un d8**: aggiungi il risultato a un tiro di danno o di cura dell'incantesimo.<br><br>Inoltre, quando lanci un incantesimo con gittata diversa da *Sguardo (Self)*, l'incantesimo può **originarsi da te oppure dal tuo spirito del fuoco infernale**."
-    },
-    {
-      "name": "Cauterizing Flames",
-      "name_it": "Fiamme Cauterizzanti",
-      "level": 10,
-      "description_it": "Quando una creatura Piccola o più grande muore entro 9 metri da te o dal tuo spirito, nel suo spazio appare una fiamma spettrale innocua per 1 minuto.<br><br>Quando una creatura che puoi vedere entra in quello spazio, puoi usare la tua **Reazione** per estinguere la fiamma e scegliere uno dei seguenti effetti:<br>• La creatura **recupera Punti Ferita** pari a **2d10 + il tuo Modificatore di Saggezza**.<br>• La creatura **subisce danni da Fuoco** pari a **2d10 + il tuo Modificatore di Saggezza**.<br><br>Usabile un numero di volte pari al tuo **Bonus di Competenza** per **Riposo Lungo**."
-    },
-    {
-      "name": "Blazing Revival",
-      "name_it": "Rinascita Ardente",
-      "level": 14,
-      "description_it": "Se lo spirito si trova entro 36 metri da te quando vieni ridotto a 0 Punti Ferita e svieni, puoi far sì che lo spirito scenda a 0 Punti Ferita.<br><br>Se lo fai, **recuperi immediatamente metà dei tuoi Punti Ferita massimi** e ti rimetto in piedi all'istante. Usabile una volta per **Riposo Lungo**."
-    }
-  ]
-},
+    "id": "sub_bard_valor",
+    "name": "College of Valor",
+    "name_it": "Collegio del Valore",
+    "class": "Bard",
+    "class_it": "Bardo",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Narra le gesta dei grandi eroi combattendo in prima linea al loro fianco.<br><br><strong>Tratti Chiave:</strong> Ispirazione da Combattimento, Competenza nelle Armature Pesanti, Doppio Attacco."
+  },
   {
-  "id": "circle_of_the_shepherd",
-  "name": "Circle of the Shepherd",
-  "name_it": "Circolo del Pastore",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I druidi del Circolo del Pastore comunicano con gli spiriti della natura, proteggendo le bestie e i folletti incapaci di difendersi da soli. Evocano totem spettrali per potenziare gli alleati e potenziano le creature evocate per difendere la natura e i luoghi sacri.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Linguaggio dei Boschi, Totem dello Spirito, Evocatore Possente, Spirito Custode, Evocazioni Fedeli.",
-  "features": [
-    {
-      "name": "Speech of the Woods",
-      "name_it": "Linguaggio dei Boschi",
-      "level": 3,
-      "description_it": "Impari a parlare, leggere e scrivere il **Silvano**.<br><br>Inoltre, le bestie riescono a comprendere il tuo linguaggio e tu sei in grado di decifrare i loro rumori e movimenti. Questo ti permette di comunicare concetti semplici con le bestie e chiedere informazioni su ciò che hanno visto o sentito di recente."
-    },
-    {
-      "name": "Spirit Totem",
-      "name_it": "Totem dello Spirito",
-      "level": 3,
-      "description_it": "Con un'**Azione Bonus**, puoi evocare magicamente uno spirito incorporale in un punto a scelta entro 18 metri da te, che crea un'**aura con raggio di 9 metri** per **1 minuto**. Con un'ulteriore Azione Bonus puoi spostare lo spirito fino a 18 metri. Usabile una volta per **Riposo Breve o Lungo**.<br><br>Scegli il tipo di spirito al momento dell'evocazione:<br>• <strong>Spirito dell'Orso:</strong> Ogni creatura a tua scelta nell'aura quando lo spirito appare ottiene **Punti Ferita Temporanei pari a 5 + il tuo livello da Druido**. Tu e i tuoi alleati avete **Vantaggio alle prove di Forza e ai tiri salvezza su Forza** mentre vi trovate nell'aura.<br>• <strong>Spirito del Falco:</strong> Quando una creatura effettua un tiro per colpire contro un bersaglio nell'aura, puoi usare la tua **Reazione** per conferire **Vantaggio a quel tiro per colpire**. Tu e i tuoi alleati avete **Vantaggio alle prove di Saggezza (Percezione)** nell'aura.<br>• <strong>Spirito dell'Unicorno:</strong> Tu e i tuoi alleati avete **Vantaggio a tutte le prove di caratteristica effettuate per individuare creature** nell'aura. Inoltre, se lanci un incantesimo usando uno slot che fa recuperare Punti Ferita a una qualsiasi creatura, ogni creatura a tua scelta nell'aura **recupera Punti Ferita pari al tuo livello da Druido**."
-    },
-    {
-      "name": "Mighty Summoner",
-      "name_it": "Evocatore Possente",
-      "level": 6,
-      "description_it": "Qualsiasi bestia o folletto evocato o creato da un tuo incantesimo ottiene due benefici:<br>• **Punti Ferita Aumentati:** La creatura appare con **2 Punti Ferita aggiuntivi per ogni Dado Vita** posseduto.<br>• **Attacchi Magici:** I danni delle sue armi naturali sono considerati **magici** ai fini di superare l'immunità e la resistenza agli attacchi e ai danni non magici."
-    },
-    {
-      "name": "Guardian Spirit",
-      "name_it": "Spirito Custode",
-      "level": 10,
-      "description_it": "Quando una bestia o un folletto che hai evocato o creato con un incantesimo termina il proprio turno all'interno dell'aura del tuo Totem dello Spirito, quella creatura **recupera un numero di Punti Ferita pari a metà del tuo livello da Druido**."
-    },
-    {
-      "name": "Faithful Summons",
-      "name_it": "Evocazioni Fedeli",
-      "level": 14,
-      "description_it": "Se vieni ridotto a **0 Punti Ferita** o vieni **Incapacitato contro la tua volontà**, ottieni immediatamente i benefici dell'incantesimo *Evoca Animali* come se fosse lanciato con uno **slot di 9° livello**.<br><br>L'incantesimo evoca **4 bestie a tua scelta** con Grado di Sfida 2 o inferiore entro 6 metri da te. Le creature ti proteggono e attaccano i tuoi nemici senza richiedere Concentrazione per **1 ora**. Usabile una volta per **Riposo Lungo**."
-    }
-  ]
-},
- {
-  "id": "circle_of_the_moon",
-  "name": "Circle of the Moon",
-  "name_it": "Circolo della Luna",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I druidi del Circolo della Luna attingono alla magia lunare per trasformarsi e proteggere le terre selvagge. Capaci di assumere forme di bestia eccezionalmente potenti, combattono in prima linea canalizzando la potenza radiosa della luna e scomparendo in fasci di luce argentata.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo della Luna, Forme del Circolo, Forme del Circolo Migliorate, Passo Lunare, Forma Lunare.",
-  "features": [
-    {
-      "name": "Circle of the Moon Spells",
-      "name_it": "Incantesimi del Circolo della Luna",
-      "level": 3,
-      "description_it": "La tua connessione con la luna ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> *Cura Ferite (Cure Wounds)*, *Raggio di Luna (Moonbeam)*, *Fascio Stellare (Starry Wisp)*<br>• <strong>5° Livello:</strong> *Evoca Animali (Conjure Animals)*<br>• <strong>7° Livello:</strong> *Sorgente di Luce Lunare (Fount of Moonlight)*<br>• <strong>9° Livello:</strong> *Cura Ferite di Massa (Mass Cure Wounds)*<br><br>Inoltre, puoi **lanciare gli incantesimi concessi da questo privilegio mentre ti trovi in Forma Selvatica**."
-    },
-    {
-      "name": "Circle Forms",
-      "name_it": "Forme del Circolo",
-      "level": 3,
-      "description_it": "Canali la magia lunare quando assumi una Forma Selvatica, ottenendo i seguenti benefici:<br>• <strong>Grado di Sfida:</strong> Il Grado di Sfida massimo per la forma è pari al tuo **livello da Druido diviso 3** (arrotondato per difetto).<br>• <strong>Classe Armatura:</strong> Finché rimani nella forma, la tua **CA è pari a 13 + il tuo Modificatore di Saggezza**, se questo totale è superiore alla CA base della Bestia.<br>• <strong>Punti Ferita Temporanei:</strong> Ottieni un numero di **Punti Ferita Temporanei pari a tre volte il tuo livello da Druido**."
-    },
-    {
-      "name": "Improved Circle Forms",
-      "name_it": "Forme del Circolo Migliorate",
-      "level": 6,
-      "description_it": "Mentre ti trovi in Forma Selvatica, ottieni i seguenti benefici:<br>• <strong>Radianza Lunare:</strong> Ciascuno dei tuoi attacchi in Forma Selvatica può infliggere il suo normale tipo di danno oppure **Danno Radioso**. Effettui questa scelta ogni volta che colpisci.<br>• <strong>Robustezza Incrementata:</strong> Puoi aggiungere il tuo **Modificatore di Saggezza ai tiri salvezza su Costituzione**."
-    },
-    {
-      "name": "Moonlight Step",
-      "name_it": "Passo Lunare",
-      "level": 10,
-      "description_it": "Con un'**Azione Bonus**, ti teleporti fino a **9 metri** in uno spazio libero che puoi vedere e ottieni **Vantaggio al tiro per colpire successivo** che effettui prima della fine di questo turno.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1). Recuperi tutti gli usi spesi quando completi un **Riposo Lungo**.<br><br>Puoi anche recuperare usi spendendo uno **slot incantesimo di 2° livello o superiore** per ciascun uso che desideri ripristinare (nessuna azione richiesta)."
-    },
-    {
-      "name": "Lunar Form",
-      "name_it": "Forma Lunare",
-      "level": 14,
-      "description_it": "Il potere della luna ti permea completamente, garantendoti i seguenti benefici:<br>• <strong>Radianza Lunare Migliorata:</strong> Una volta per turno, puoi infliggere **2d10 danni Radiosi aggiuntivi** a un bersaglio che colpisci con un attacco della tua Forma Selvatica.<br>• <strong>Luce Lunare Condivisa:</strong> Ogni volta che usi *Passo Lunare*, puoi teleportare anche una creatura consensuale situata entro 3 metri da te. La creatura viene teleportata in uno spazio libero a tua scelta entro 3 metri dalla tua destinazione."
-    }
-  ]
-},
- {
-  "id": "circle_of_the_land",
-  "name": "Circle of the Land",
-  "name_it": "Circolo della Terra",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Circolo della Terra è composto da mistici e saggi che custodiscono le antiche tradizioni e i riti della natura. Questi druidi traggono potere dai diversi biomi del mondo — arido, polare, temperato o tropicale — adattando la propria magia al terreno circostante per curare gli alleati, manipolare gli elementi e proteggere l'equilibrio naturale.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo della Terra, Aiuto della Terra, Recupero Naturale, Protezione della Natura, Santuario della Natura.",
-  "features": [
-    {
-      "name": "Circle of the Land Spells",
-      "name_it": "Incantesimi del Circolo della Terra",
-      "level": 3,
-      "description_it": "Ogni volta che completi un **Riposo Lungo**, scegli un tipo di terreno: **Arido**, **Polare**, **Temperato** o **Tropicale**. Hai sempre pronti gli incantesimi elencati per il tipo di terreno scelto fino al tuo livello da Druido attuale:<br><br>• <strong>Terreno Arido (Arid):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> *Sfocatura (Blur)*, *Mani Brucianti (Burning Hands)*, *Dardo Infuocato (Fire Bolt)*<br>&nbsp;&nbsp;- <i>5° Livello:</i> *Palla di Fuoco (Fireball)*<br>&nbsp;&nbsp;- <i>7° Livello:</i> *Devastazione (Blight)*<br>&nbsp;&nbsp;- <i>9° Livello:</i> *Muro di Pietra (Wall of Stone)*<br><br>• <strong>Terreno Polare (Polar):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> *Nube di Nebbia (Fog Cloud)*, *Blocca Persone (Hold Person)*, *Raggio di Gelo (Ray of Frost)*<br>&nbsp;&nbsp;- <i>5° Livello:</i> *Tempesta di Pietrisco (Sleet Storm)*<br>&nbsp;&nbsp;- <i>7° Livello:</i> *Tempesta di Ghiaccio (Ice Storm)*<br>&nbsp;&nbsp;- <i>9° Livello:</i> *Cono di Freddo (Cone of Cold)*<br><br>• <strong>Terreno Temperato (Temperate):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> *Passo Nebbioso (Misty Step)*, *Stretta Folgorante (Shocking Grasp)*, *Sonno (Sleep)*<br>&nbsp;&nbsp;- <i>5° Livello:</i> *Fulmine (Lightning Bolt)*<br>&nbsp;&nbsp;- <i>7° Livello:</i> *Libertà di Movimento (Freedom of Movement)*<br>&nbsp;&nbsp;- <i>9° Livello:</i> *Passo tra gli Alberi (Tree Stride)*<br><br>• <strong>Terreno Tropicale (Tropical):</strong><br>&nbsp;&nbsp;- <i>3° Livello:</i> *Spruzzo Acido (Acid Splash)*, *Raggio di Malattia (Ray of Sickness)*, *Ragnatela (Web)*<br>&nbsp;&nbsp;- <i>5° Livello:</i> *Nube Puzzolente (Stinking Cloud)*<br>&nbsp;&nbsp;- <i>7° Livello:</i> *Metamorfosi (Polymorph)*<br>&nbsp;&nbsp;- <i>9° Livello:</i> *Piaga delle Locuste (Insect Plague)*"
-    },
-    {
-      "name": "Land’s Aid",
-      "name_it": "Aiuto della Terra",
-      "level": 3,
-      "description_it": "Con un'**Azione Magica**, puoi spendere un uso di Forma Selvatica e scegliere un punto entro 18 metri da te. In una sfera di 3 metri di raggio centrata su quel punto appaiono momentaneamente fiori rigeneranti e spine prosciuganti.<br><br>Ogni creatura a tua scelta nell'area deve effettuare un **Tiro Salvezza su Costituzione** contro la tua CD Incantesimi: subisce **2d6 danni Necrotici** se lo fallisce, o la metà se lo supera. Inoltre, **una creatura a tua scelta** in quell'area recupera **2d6 Punti Ferita**.<br><br>I danni e le cure aumentano di 1d6 al **10° livello (3d6)** e al **14° livello (4d6)**."
-    },
-    {
-      "name": "Natural Recovery",
-      "name_it": "Recupero Naturale",
-      "level": 6,
-      "description_it": "Puoi lanciare uno degli incantesimi di 1° livello o superiore che hai preparato tramite il privilegio *Incantesimi del Circolo della Terra* **senza spendere uno slot incantesimo** (una volta per Riposo Lungo).<br><br>Inoltre, quando completi un **Riposo Breve**, puoi recuperare slot incantesimo spesi fino a un livello combinato pari o inferiore a **metà del tuo livello da Druido** (arrotondato per eccesso), e nessuno di essi può essere di 6° livello o superiore. Questa parte del privilegio si recupera dopo un **Riposo Lungo**."
-    },
-    {
-      "name": "Nature’s Ward",
-      "name_it": "Protezione della Natura",
-      "level": 10,
-      "description_it": "Sei **immune alla condizione Avvelenato** e ottieni **Resistenza a un tipo di danno** associato alla tua scelta attuale del terreno del Circolo della Terra:<br>• <strong>Arido:</strong> Fuoco<br>• <strong>Polare:</strong> Freddo<br>• <strong>Temperato:</strong> Elettricità<br>• <strong>Tropicale:</strong> Veleno"
-    },
-    {
-      "name": "Nature’s Sanctuary",
-      "name_it": "Santuario della Natura",
-      "level": 14,
-      "description_it": "Con un'**Azione Magica**, puoi spendere un uso di Forma Selvatica per far apparire alberi e liane spettrali in un cubo di 4,5 metri su un terreno entro 36 metri da te. Durano per **1 minuto** (o finché non sei Incapace o muori).<br><br>Tu e i tuoi alleati avete **Copertura Mezza** mentre vi trovate nell'area, e i tuoi alleati ottengono la **resistenza ai danni attualmente fornita dal tuo privilegio *Protezione della Natura***.<br><br>Con un'**Azione Bonus**, puoi spostare il cubo fino a 18 metri in un punto sul terreno entro 36 metri da te."
-    }
-  ]
-},
-{
-  "id": "circle_of_the_sea",
-  "name": "Circle of the Sea",
-  "name_it": "Circolo del Mare",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I druidi del Circolo del Mare attingono alle forze tempestose degli oceani e dei venti del mondo. Alcuni si considerano l'incarnazione dell'ira della natura in cerca di vendetta, mentre altri cercano l'unione mistica sintonizzandosi con il flusso delle maree, le correnti e i ruggiti delle tempeste.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo del Mare, Ira del Mare, Affinità Acquatica, Nato dalla Tempesta, Dono Oceanico.",
-  "features": [
-    {
-      "name": "Circle of the Sea Spells",
-      "name_it": "Incantesimi del Circolo del Mare",
-      "level": 3,
-      "description_it": "La tua connessione con questo circolo ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> *Nube di Nebbia (Fog Cloud)*, *Raffica di Vento (Gust of Wind)*, *Raggio di Gelo (Ray of Frost)*, *Frantumare (Shatter)*, *Onda Sonora (Thunderwave)*<br>• <strong>5° Livello:</strong> *Fulmine (Lightning Bolt)*, *Respirare in Acqua (Water Breathing)*<br>• <strong>7° Livello:</strong> *Controllare Acqua (Control Water)*, *Tempesta di Ghiaccio (Ice Storm)*<br>• <strong>9° Livello:</strong> *Evoca Elementale (Conjure Elemental)*, *Blocca Mostri (Hold Monster)*"
-    },
-    {
-      "name": "Wrath of the Sea",
-      "name_it": "Ira del Mare",
-      "level": 3,
-      "description_it": "Con un'**Azione Bonus**, puoi spendere un uso di Forma Selvatica per manifestare un'Emanazione di **1,5 metri** sotto forma di spruzzi oceanici che ti circondano per **10 minuti** (o finché non sei Incapace, non la congedi o non la attivi di nuovo).<br><br>Quando manifesti l'Emanazione e come Azione Bonus nei turni successivi, puoi scegliere una creatura che puoi vedere nell'Emanazione. Il bersaglio deve superare un **Tiro Salvezza su Costituzione** contro la tua CD Incantesimi:<br>• Subisce **danni da Freddo** pari a un numero di d6 pari al tuo **Modificatore di Saggezza** (minimo 1d6).<br>• Se la creatura è di taglia Grande o inferiore, viene **spinta fino a 4,5 metri di distanza da te**."
-    },
-    {
-      "name": "Aquatic Affinity",
-      "name_it": "Affinità Acquatica",
-      "level": 6,
-      "description_it": "La dimensione dell'Emanazione creata dalla tua *Ira del Mare* aumenta a **3 metri**.<br><br>Inoltre, ottieni una **Velocità di Nuoto** pari alla tua Velocità."
-    },
-    {
-      "name": "Stormborn",
-      "name_it": "Nato dalla Tempesta",
-      "level": 10,
-      "description_it": "La tua *Ira del Mare* ti conferisce due benefici aggiuntivi mentre è attiva:<br>• <strong>Volo:</strong> Ottieni una **Velocità di Volo** pari alla tua Velocità.<br>• <strong>Resistenze:</strong> Ottieni **Resistenza ai danni da Freddo, Elettricità e Tuono**."
-    },
-    {
-      "name": "Oceanic Gift",
-      "name_it": "Dono Oceanico",
-      "level": 14,
-      "description_it": "Invece di manifestare l'Emanazione di *Ira del Mare* attorno a te, puoi manifestarla attorno a **una creatura consensuale entro 18 metri da te**. Quella creatura ottiene tutti i benefici dell'Emanazione e usa la tua CD Incantesimi e il tuo Modificatore di Saggezza.<br><br>Inoltre, puoi manifestare l'Emanazione sia su di te che sull'altra creatura spendendo **due usi di Forma Selvatica** anziché uno."
-    }
-  ]
-},
-{
-  "id": "circle_of_stars",
-  "name": "Circle of Stars",
-  "name_it": "Circolo delle Stelle",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I druidi del Circolo delle Stelle attingono al potere della luce stellare, tracciando i modelli celesti e scoprendo i segreti nascosti tra le costellazioni. Sfruttando la forza del cosmo, questi druidi possono assumere forme luminose, canalizzare presagi cosmici e plasmare la propria magia in dardi di luce o flussi rigeneranti.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Mappa Stellare, Forma Stellare, Presagio Cosmico, Costellazioni Scintillanti, Pleno di Stelle.",
-  "features": [
-    {
-      "name": "Star Map",
-      "name_it": "Mappa Stellare",
-      "level": 3,
-      "description_it": "Crei una mappa stellare di taglia Minustola che puoi usare come **Focus di Incantamento** per i tuoi incantesimi da Druido. Finché la impugni:<br>• Hai sempre pronti gli incantesimi *Guida (Guidance)* e *Dardo Tracciante (Guiding Bolt)*.<br>• Puoi lanciare *Dardo Tracciante* **senza spendere uno slot incantesimo** un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1) per **Riposo Lungo**.<br><br>Se perdi la mappa, puoi eseguire una cerimonia di 1 ora durante un Riposo Breve o Lungo per crearne una nuova."
-    },
-    {
-      "name": "Starry Form",
-      "name_it": "Forma Stellare",
-      "level": 3,
-      "description_it": "Con un'**Azione Bonus**, puoi spendere un uso di Forma Selvatica per assumere una forma stellare anziché trasformarti in una bestia. Il tuo corpo diventa luminoso, emettendo **Luce Intensa nel raggio di 3 metri** e **Luce Fievole per altri 3 metri**. Dura per **10 minuti** (o finché non sei Incapace, non la congedi o non la usi di nuovo).<br><br>Quando assumi la forma stellare, scegli quale costellazione luccica sul tuo corpo per ottenerne i benefici:<br>• <strong>Arciere (Archer):</strong> Quando attivi la forma e come **Azione Bonus** nei turni successivi, puoi effettuare un attacco incantesimo a distanza contro una creatura entro 18 metri: se la colpisci, infliggi **1d8 + Modificatore di Saggezza danni Radiosi**.<br>• <strong>Calice (Chalice):</strong> Ogni volta che lanci un incantesimo usando uno slot che fa recuperare Punti Ferita, tu o un'altra creatura entro 9 metri da te potete **recuperare 1d8 + Modificatore di Saggezza Punti Ferita**.<br>• <strong>Drago (Dragon):</strong> Quando effettui una prova di Intelligenza o Saggezza, oppure un tiro salvezza su Costituzione per mantenere la **Concentrazione**, se ottieni 9 o meno sul d20 puoi **considerare il risultato come un 10**."
-    },
-    {
-      "name": "Cosmic Omen",
-      "name_it": "Presagio Cosmico",
-      "level": 6,
-      "description_it": "Quando completi un **Riposo Lungo**, consulta la tua Mappa Stellare e tira un dado per determinare il tipo di **Reazione** a cui hai accesso fino al prossimo Riposo Lungo:<br>• <strong>Fortuna / Weal (Numero Pari):</strong> Quando una creatura entro 9 metri da te sta per effettuare un Test D20, puoi usare la Reazione per tirare **1d6 e aggiungere il risultato al totale**.<br>• <strong>Sfortuna / Woe (Numero Dispari):</strong> Quando una creatura entro 9 metri da te sta per effettuare un Test D20, puoi usare la Reazione per tirare **1d6 e sottrarre il risultato dal totale**.<br><br>Puoi usare questa Reazione un numero di volte pari al tuo **Modificatore di Saggezza** per **Riposo Lungo**."
-    },
-    {
-      "name": "Twinkling Constellations",
-      "name_it": "Costellazioni Scintillanti",
-      "level": 10,
-      "description_it": "Le costellazioni della tua *Forma Stellare* migliorano:<br>• Il dado da d8 dell'**Arciere** e del **Calice** diventa **2d8**.<br>• Mentre il **Drago** è attivo, ottieni una **Velocità di Volo di 6 metri** e puoi fluttuare (hover).<br><br>Inoltre, **all'inizio di ciascun tuo turno** mentre ti trovi in Forma Stellare, puoi **cambiare la costellazione** attiva sul tuo corpo."
-    },
-    {
-      "name": "Full of Stars",
-      "name_it": "Pieno di Stelle",
-      "level": 14,
-      "description_it": "Mentre ti trovi nella tua *Forma Stellare*, diventi parzialmente incorporale, ottenendo **Resistenza ai danni Conundenti, Perforanti e Taglienti**."
-    }
-  ]
-},
-{
-  "id": "circle_of_dreams",
-  "name": "Circle of Dreams",
-  "name_it": "Circolo dei Sogni",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I druidi del Circolo dei Sogni provengono da regioni strettamente legate alla Selva Fatata e ai suoi reami onirici. Attraverso l'alleanza con i folletti benefici, questi druidi riempiono il mondo di meraviglia, curando le ferite, offrendo rifugio sicuro ai viaggiatori e valicando i confini dello spazio e dei sogni.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Balsamo della Corte dell'Estate, Focolare di Luce Lunare e Ombra, Sentieri Nascosti, Viandante dei Sogni.",
-  "features": [
-    {
-      "name": "Balm of the Summer Court",
-      "name_it": "Balsamo della Corte dell'Estate",
-      "level": 3,
-      "description_it": "Possiedi una riserva di energia fatata rappresentata da un **numero di d6 pari al tuo livello da Druido**.<br><br>Con un'**Azione Bonus**, puoi scegliere un alleato che puoi vedere entro 36 metri da te e spendere un numero di d6 pari o inferiore a **metà del tuo livello da Druido**.<br><br>Tira i dadi spesi: il bersaglio **recupera un numero di Punti Ferita pari al totale ottenuto** e guadagna **1 Punto Ferita Temporaneo per ogni dado speso**.<br><br>Recuperi tutti i dadi spesi quando completi un **Riposo Lungo**."
-    },
-    {
-      "name": "Hearth of Moonlight and Shadow",
-      "name_it": "Focolare di Luce Lunare e Ombra",
-      "level": 6,
-      "description_it": "All'inizio di un **Riposo Breve o Lungo**, puoi toccare un punto nello spazio per evocare una sfera magica invisibile di 9 metri di raggio centrata su quel punto.<br><br>Finché vi trovate nella sfera, tu e i tuoi alleati ottenete un **bonus di +5 alle prove di Destrezza (Furtività) e Saggezza (Percezione)**, e qualsiasi luce prodotta da fiamme libere (come un falò o torce) **non è visibile dall'esterno**.<br><br>La sfera scompare al termine del riposo o quando esci da essa."
-    },
-    {
-      "name": "Hidden Paths",
-      "name_it": "Sentieri Nascosti",
-      "level": 10,
-      "description_it": "Sfrutti i passaggi magici della Selva Fatata per spostarti in un istante:<br>• Con un'**Azione Bonus**, puoi **teleportarti fino a 18 metri** in uno spazio libero che puoi vedere.<br>• In alternativa, puoi usare la tua **Azione** per **teleportare una creatura consensuale che tocchi fino a 9 metri** in uno spazio libero che puoi vedere.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1) per **Riposo Lungo**."
-    },
-    {
-      "name": "Walker in Dreams",
-      "name_it": "Viandante dei Sogni",
-      "level": 14,
-      "description_it": "Quando completi un **Riposo Breve**, puoi lanciare uno dei seguenti incantesimi **senza spendere uno slot incantesimo e senza componenti materiali**:<br>• *Sogno (Dream)* (con te come messaggero)<br>• *Scrutare (Scrying)*<br>• *Cerchio di Teletrasporto (Teleportation Circle)*<br><br>Questo uso di *Cerchio di Teletrasporto* è speciale: anziché aprire un portale verso un cerchio permanente, apre un portale verso l'**ultimo luogo in cui hai completato un Riposo Lungo** sul tuo attuale piano di esistenza.<br><br>Usabile una volta per **Riposo Lungo**."
-    }
-  ]
-},
-{
-  "id": "circle_of_spores",
-  "name": "Circle of Spores",
-  "name_it": "Circolo delle Spore",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "druid",
-  "parent_class": "Druido",
-  "source_it": "Manuale Integrativo",
-  "description_it": "I druidi del Circolo delle Spore scorgono la bellezza nel decadimento e vedono nelle muffe e nei funghi la capacità di trasformare la materia inerte in una vita rigogliosa. Considerano la morte non come una fine, ma come una transizione, e sfruttano spore necrotiche e simbiosi fungine per combattere e persino animare i morti.<br><br><strong>Classe Madre:</strong> Druido<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Circolo, Alone di Spore, Entità Simbiotica, Infestazione Fungina, Diffusione delle Spore, Corpo Fungino.",
-  "features": [
-    {
-      "name": "Circle Spells",
-      "name_it": "Incantesimi del Circolo",
-      "level": 3,
-      "description_it": "Il tuo legame simbiotico con i funghi ti garantisce di avere sempre pronti determinati incantesimi. Impari il trucchetto *Tocco del Gelo (Chill Touch)* e ottieni gli incantesimi elencati al raggiungimento di specifici livelli da Druido:<br>• <strong>3° Livello:</strong> *Tocco del Gelo (Chill Touch)*, *Cecità/Sordità (Blindness/Deafness)*, *Riposo Inviolato (Gentle Repose)*<br>• <strong>5° Livello:</strong> *Animare Morti (Animate Dead)*, *Forma Gassosa (Gaseous Form)*<br>• <strong>7° Livello:</strong> *Devastazione (Blight)*, *Confusione (Confusion)*<br>• <strong>9° Livello:</strong> *Nube Uccidente (Cloudkill)*, *Contagio (Contagion)*"
-    },
-    {
-      "name": "Halo of Spores",
-      "name_it": "Alone di Spore",
-      "level": 3,
-      "description_it": "Sei circondato da spore necrotiche invisibili. Quando una creatura che puoi vedere si sposta in uno spazio entro 3 metri da te o vi inizia il suo turno, puoi usare la tua **Reazione** per infliggerle **1d4 danni Necrotici**, a meno che non superi un **Tiro Salvezza su Costituzione** contro la tua CD Incantesimi.<br><br>I danni necrotici aumentano a **1d6 al 6° livello**, **1d8 al 10° livello** e **1d10 al 14° livello**."
-    },
-    {
-      "name": "Symbiotic Entity",
-      "name_it": "Entità Simbiotica",
-      "level": 3,
-      "description_it": "Con un'**Azione**, puoi spendere un uso di Forma Selvatica per risvegliare le tue spore anziché trasformarti in una bestia, ottenendo **4 Punti Ferita Temporanei per ogni livello da Druido**.<br><br>Finché questo privilegio è attivo, ottieni i seguenti benefici:<br>• Quando infliggi i danni del tuo *Alone di Spore*, **tiri il dado dei danni una seconda volta** e lo aggiungi al totale.<br>• I tuoi attacchi con armi da mischia infliggono **1d6 danni Necrotici aggiuntivi** al bersaglio colpito.<br><br>Questi benefici durano per **10 minuti**, finché non perdi tutti questi Punti Ferita Temporanei o finché non usi di nuovo Forma Selvatica."
-    },
-    {
-      "name": "Fungal Infestation",
-      "name_it": "Infestazione Fungina",
-      "level": 6,
-      "description_it": "Quando una bestia o un umanoide di taglia Piccola o Media muore entro 3 metri da te, puoi usare la tua **Reazione** per animarne il cadavere, facendolo rialzare immediatamente con **1 Punto Ferita** (usa la scheda dello *Zombie* del Manuale dei Mostri).<br><br>Lo zombie rimane animato per **1 ora**, agisce subito dopo di te in combattimento e può eseguire solo l'azione di *Attacco* (effettuando un singolo attacco da mischia). Usabile un numero di volte pari al tuo **Modificatore di Saggezza** per **Riposo Lungo**."
-    },
-    {
-      "name": "Spreading Spores",
-      "name_it": "Diffusione delle Spore",
-      "level": 10,
-      "description_it": "Con un'**Azione Bonus** mentre *Entità Simbiotica* è attiva, puoi scagliare spore fino a 9 metri di distanza, facendole vorticare in un cubo di 3 metri per **1 minuto**.<br><br>Ogni volta che una creatura entra nel cubo o vi inizia il turno, subisce i danni del tuo *Alone di Spore* (Tiro Salvezza su Costituzione per annullare; massimo una volta per turno). Finché il cubo di spore persiste, **non puoi usare la Reazione del tuo Alone di Spore**."
-    },
-    {
-      "name": "Fungal Body",
-      "name_it": "Corpo Fungino",
-      "level": 14,
-      "description_it": "Le spore fungine alterano il tuo corpo: **non puoi essere Accecato, Assordato, Spaventato o Avvelenato**, e qualsiasi colpo critico messo a segno contro di te viene **considerato come un colpo normale**, a meno che tu non sia Incapace."
-    }
-  ]
-},
-{
-  "id": "battle_master",
-  "name": "Battle Master",
-  "name_it": "Maestro d'Armi",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "fighter",
-  "parent_class": "Guerriero",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I Maestri d'Armi studiano l'arte della battaglia come una vera e propria disciplina accademica, combinando tecniche marziali tramandate di generazione in generazione con la conoscenza teorica e tattica del combattimento.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Superiorità in Combattimento, Studente di Guerra, Conosci il tuo Nemico, Superiorità in Combattimento Migliorata, Inarrestabile, Superiorità in Combattimento Suprema.",
-  "features": [
-    {
-      "name": "Combat Superiority",
-      "name_it": "Superiorità in Combattimento",
-      "level": 3,
-      "description_it": "La tua esperienza sul campo di battaglia ti permette di padroneggiare speciali Manovre alimentate dai **Dadi Superiorità**:<br><br>• <strong>Manovre:</strong> Impari **3 Manovre a tua scelta** dalle opzioni disponibili. Puoi usare solo una Manovra per ciascun attacco. Impari 2 Manovre aggiuntive al 7°, 10° e 15° livello da Guerriero. Ogni volta che impari nuove Manovre, puoi sostituirne una già nota con un'altra.<br>• <strong>Dadi Superiorità:</strong> Possiedi **quattro Dadi Superiorità (d8)**. Un dado viene speso quando lo usi e recuperi tutti i dadi spesi al termine di un **Riposo Breve o Lungo**. Ottieni un dado aggiuntivo al 7° livello (5 dadi) e al 15° livello (6 dadi).<br>• <strong>Tiri Salvezza:</strong> Se una Manovra richiede un tiro salvezza, la **CD è pari a 8 + il tuo Bonus di Competenza + il tuo Modificatore di Forza o Destrezza** (a tua scelta)."
-    },
-    {
-      "name": "Student of War",
-      "name_it": "Studente di Guerra",
-      "level": 3,
-      "description_it": "Ottieni la **competenza in un tipo di Strumenti da Artigiano** a tua scelta e la **competenza in un'abilità a tua scelta** tra quelle disponibili per il Guerriero al 1° livello."
-    },
-    {
-      "name": "Know Your Enemy",
-      "name_it": "Conosci il tuo Nemico",
-      "level": 7,
-      "description_it": "Con un'**Azione Bonus**, puoi analizzare una creatura che puoi vedere entro 9 metri da te per scoprirne punti di forza e debolezze: vieni a conoscenza di eventuali **Immunità, Resistenze o Vulnerabilità ai danni** possedute dalla creatura e di quali tipi si tratti.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un **Riposo Lungo**. Puoi anche ripristinarne un uso **spendendo un Dado Superiorità** (nessuna azione richiesta)."
-    },
-    {
-      "name": "Improved Combat Superiority",
-      "name_it": "Superiorità in Combattimento Migliorata",
-      "level": 10,
-      "description_it": "I tuoi Dadi Superiorità **diventano d10**."
-    },
-    {
-      "name": "Relentless",
-      "name_it": "Inarrestabile",
-      "level": 15,
-      "description_it": "Una volta per turno, quando usi una Manovra, puoi **tirare 1d8 e usare il risultato ottenuto anziché spendere un Dado Superiorità**."
-    },
-    {
-      "name": "Ultimate Combat Superiority",
-      "name_it": "Superiorità in Combattimento Suprema",
-      "level": 18,
-      "description_it": "I tuoi Dadi Superiorità **diventano d12**."
-    }
-  ]
-},
+    "id": "sub_cleric_life",
+    "name": "Life Domain",
+    "name_it": "Dominio della Vita",
+    "class": "Cleric",
+    "class_it": "Chierico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Maestro supremo nell'arte della guarigione e della preservazione della vita.<br><br><strong>Tratti Chiave:</strong> Discepolo della Vita, Preservare Vita, Guarigione Potenziata."
+  },
   {
-  "id": "rune_knight",
-  "name": "Rune Knight",
-  "name_it": "Cavaliere Runico",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "fighter",
-  "parent_class": "Guerriero",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I Cavalieri Runici potenziano le proprie capacità marziali utilizzando il potere soprannaturale delle rune, un'antica pratica nata tra i giganti. Tracciando magiche rune sul proprio equipaggiamento e attingendo alla stazza dei giganti, questi guerrieri diventano forze inarrestabili sul campo di battaglia.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Incisore di Rune, Stazza da Gigante, Scudo Runico, Grande Statura, Maestro delle Rune, Juggernaut Runico.",
-  "features": [
-    {
-      "name": "Bonus Proficiencies",
-      "name_it": "Competenze Bonus",
-      "level": 3,
-      "description_it": "Ottieni la **competenza negli Strumenti da Fabbro** e impari a **parlare, leggere e scrivere in Gigante**."
-    },
-    {
-      "name": "Rune Carver",
-      "name_it": "Incisore di Rune",
-      "level": 3,
-      "description_it": "Impari a incidere rune magiche sul tuo equipaggiamento per ottenerne benefici passivi e attivi:<br>• <strong>Rune Note:</strong> Conosci **2 rune** a tua scelta. Ne impari di aggiuntive al 7° (3 rune), 10° (4 rune) e 15° livello (5 rune). Ogni volta che sali di livello, puoi sostituire una runa nota con un'altra.<br>• <strong>Incisione:</strong> Al termine di un **Riposo Lungo**, puoi incidere ciascuna runa su un oggetto diverso che indossi o impugni (arma, armatura, scudo, gioiello). Un oggetto può ospitare una sola runa alla volta.<br>• <strong>Attivazione:</strong> Ogni runa fornisce un effetto passivo e un'abilità invocabile. Una volta invocata una runa, non puoi riutilizzarla fino a quando non completi un **Riposo Breve o Lungo**.<br>• <strong>CD Tiri Salvezza:</strong> **CD = 8 + Bonus Competenza + Modificatore di Costituzione**.<br><br><strong>Opzioni Rune:</strong><br>• <strong>Runa delle Nubi (Cloud Rune):</strong> Vantaggio a Destrezza (Rapidità di Mano) e Carisma (Inganno). Quando tu o una creatura entro 9 metri venite colpiti da un attacco, puoi usare la **Reazione** per deviare l'attacco su un'altra creatura entro 9 metri dall'attaccante.<br>• <strong>Runa del Fuoco (Fire Rune):</strong> Raddoppia il Bonus di Competenza per le prove con gli strumenti in cui sei competente. Quando colpisci con un'arma, puoi invocare la runa per infliggere **2d6 danni da Fuoco aggiuntivi** e costringere il bersaglio a un tiro salvezza su Forza per non essere **Trattenuto** (subendo 2d6 danni da fuoco all'inizio dei suoi turni).<br>• <strong>Runa del Gelo (Frost Rune):</strong> Vantaggio a Saggezza (Addestrare Animali) e Carisma (Intimidire). Con un'**Azione Bonus**, ottieni **+2 a tutte le prove e tiri salvezza su Forza e Costituzione** per **10 minuti**.<br>• <strong>Runa della Pietra (Stone Rune):</strong> Vantaggio a Saggezza (Intuizione) e **Scurovisione fino a 36 metri**. Quando una creatura termina il turno entro 9 metri da te, puoi usare la **Reazione** per costringerla a un tiro salvezza su Saggezza: se fallisce, è **Affascinata, Incapace e ha velocità 0** per 1 minuto (ripete il TS a fine turno).<br>• <strong>Runa delle Colline (Hill Rune - 7° Livello):</strong> Vantaggio ai tiri salvezza contro il veleno e **Resistenza ai danni da Veleno**. Con un'**Azione Bonus**, ottieni **Resistenza ai danni Contundenti, Perforanti e Taglienti** per **1 minuto**.<br>• <strong>Runa della Tempesta (Storm Rune - 7° Livello):</strong> Vantaggio a Intelligenza (Arcano) e non puoi essere Sorpreso. Con un'**Azione Bonus**, entri in uno stato profetico di 1 minuto: durante questo tempo, quando tu o una creatura entro 18 metri effettua un tiro per colpire, tiro salvezza o prova di abilità, puoi usare la **Reazione** per conferire **Vantaggio o Svantaggio** a quel tiro."
-    },
-    {
-      "name": "Giant Might",
-      "name_it": "Stazza da Gigante",
-      "level": 3,
-      "description_it": "Con un'**Azione Bonus**, ti infondi del potere dei giganti per **1 minuto**, ottenendo i seguenti benefici:<br>• Se sei di taglia inferiore a Grande, **diventi di taglia Grande** (insieme al tuo equipaggiamento), spazio permettendo.<br>• Hai **Vantaggio alle prove di Forza e ai tiri salvezza su Forza**.<br>• Una volta per turno, un tuo attacco con un'arma o un colpo nudo infligge **1d6 danni aggiuntivi**.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **Bonus di Competenza** per **Riposo Lungo**."
-    },
-    {
-      "name": "Runic Shield",
-      "name_it": "Scudo Runico",
-      "level": 7,
-      "description_it": "Quando un'altra creatura che puoi vedere entro 18 metri da te viene colpita da un tiro per colpire, puoi usare la tua **Reazione** per **costringere l'attaccante a ritirare il d20** e usare il nuovo risultato.<br><br>Usabile un numero di volte pari al tuo **Bonus di Competenza** per **Riposo Lungo**."
-    },
-    {
-      "name": "Great Stature",
-      "name_it": "Grande Statura",
-      "level": 10,
-      "description_it": "La magia delle rune ti altera permanentemente: la tua altezza aumenta di 3d4 pollici.<br><br>Inoltre, i danni aggiuntivi del tuo privilegio *Stazza da Gigante* **aumentano a 1d8**."
-    },
-    {
-      "name": "Master of Runes",
-      "name_it": "Maestro delle Rune",
-      "level": 15,
-      "description_it": "Puoi invocare ciascuna delle rune apprese con *Incisore di Rune* **due volte anziché una** per **Riposo Breve o Lungo**."
-    },
-    {
-      "name": "Runic Juggernaut",
-      "name_it": "Juggernaut Runico",
-      "level": 18,
-      "description_it": "Amplifichi la tua trasformazione runica:<br>• I danni aggiuntivi di *Stazza da Gigante* **aumentano a 1d10**.<br>• Quando attivi *Stazza da Gigante*, la tua taglia può **aumentare fino a Enorme**.<br>• Mentre sei di taglia Enorme, la tua **portata aumenta di 1,5 metri**."
-    }
-  ]
-},
+    "id": "sub_cleric_light",
+    "name": "Light Domain",
+    "name_it": "Dominio della Luce",
+    "class": "Cleric",
+    "class_it": "Chierico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Incanala la radiazione e la verità solare per incenerire l'oscurità.<br><br><strong>Tratti Chiave:</strong> Bagliore Protettivo, Bagliore dell'Alba, Corona di Luce."
+  },
   {
-  "id": "champion",
-  "name": "Champion",
-  "name_it": "Campione",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "fighter",
-  "parent_class": "Guerriero",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Campione si concentra sul costante affinamento dell'abilità marziale alla continua ricerca della vittoria. Combinando un allenamento rigoroso con un'eccellenza fisica straordinaria, i Campioni infliggono colpi devastanti, resistono a ogni pericolo e conquistano la gloria in battaglia.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Critico Migliorato, Atleta Straordinario, Stile di Combattimento Aggiuntivo, Guerriero Eroico, Critico Superiore, Sopravvissuto.",
-  "features": [
-    {
-      "name": "Improved Critical",
-      "name_it": "Critico Migliorato",
-      "level": 3,
-      "description_it": "I tuoi tiri per colpire effettuati con armi o colpi nudi mettono a segno un **Colpo Critico con un risultato di 19 o 20** sul d20."
-    },
-    {
-      "name": "Remarkable Athlete",
-      "name_it": "Atleta Straordinario",
-      "level": 3,
-      "description_it": "Grazie al tuo atletismo, ottieni **Vantaggio ai tiri per l'Iniziativa** e alle **prove di Forza (Atletica)**.<br><br>Inoltre, immediatamente dopo aver messo a segno un Colpo Critico, puoi **muoverti fino a metà della tua Velocità** senza provocare attacchi d'opportunità."
-    },
-    {
-      "name": "Additional Fighting Style",
-      "name_it": "Stile di Combattimento Aggiuntivo",
-      "level": 7,
-      "description_it": "Ottieni un ulteriore **talento di Stile di Combattimento** a tua scelta."
-    },
-    {
-      "name": "Heroic Warrior",
-      "name_it": "Guerriero Eroico",
-      "level": 10,
-      "description_it": "La foga della battaglia ti spinge verso la vittoria. Durante il combattimento, puoi concederti l'**Ispirazione Eroica** ogni volta che inizi il tuo turno senza averne già una."
-    },
-    {
-      "name": "Superior Critical",
-      "name_it": "Critico Superiore",
-      "level": 15,
-      "description_it": "I tuoi tiri per colpire effettuati con armi o colpi nudi mettono ora a segno un **Colpo Critico con un risultato di 18–20** sul d20."
-    },
-    {
-      "name": "Survivor",
-      "name_it": "Sopravvissuto",
-      "level": 18,
-      "description_it": "Raggiungi l'apice della resilienza in combattimento, ottenendo i seguenti benefici:<br>• <strong>Sfidare la Morte:</strong> Hai **Vantaggio ai tiri salvezza contro la morte**. Inoltre, quando ottieni un risultato da 18 a 20 in un tiro salvezza contro la morte, ottieni lo stesso beneficio di aver ottenuto un 20 naturale.<br>• <strong>Riscossa Eroica:</strong> All'inizio di ciascun tuo turno, se sei **Ferito (Bloodied)** e hai **almeno 1 Punto Ferita**, recuperi un numero di Punti Ferita pari a **5 + il tuo Modificatore di Costituzione**."
-    }
-  ]
-},
-{
-  "id": "eldritch_knight",
-  "name": "Eldritch Knight",
-  "name_it": "Cavaliere Mistico",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "fighter",
-  "parent_class": "Guerriero",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I Cavalieri Mistici combinano la maestria marziale comune a tutti i Guerrieri con uno studio accurato della magia. I loro incantesimi completano e ampliano le loro abilità di combattimento, offrendo protezioni aggiuntive e permettendo loro di affrontare più nemici contemporaneamente con magie esplosive.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Incantesimi, Legame da Guerra, Magia da Guerra, Colpo Mistico, Carica Arcana, Magia da Guerra Migliorata.",
-  "features": [
-    {
-      "name": "Spellcasting",
-      "name_it": "Incantesimi",
-      "level": 3,
-      "description_it": "Imparo a lanciare incantesimi dalla lista del Mago:<br>• <strong>Trucchetti:</strong> Conosci 2 trucchetti da Mago a tua scelta. Puoi sostituirne uno ogni volta che sali di livello da Guerriero. Ne impari un terzo al 10° livello.<br>• <strong>Slot Incantesimo:</strong> Usi la tabella del Cavaliere Mistico per determinare i tuoi slot disponibili. Recuperi tutti gli slot spesi al termine di un **Riposo Lungo**.<br>• <strong>Incantesimi Preparati:</strong> Prepari un numero di incantesimi di 1° livello o superiore dalla lista del Mago in base al tuo livello da Guerriero. Ogni volta che sali di livello, puoi sostituire un incantesimo preparato con un altro dalla lista del Mago, purché sia di un livello per cui possiedi slot incantesimo.<br>• <strong>Caratteristica da Incantatore:</strong> **Intelligenza**.<br>• <strong>Focus Arcano:</strong> Puoi usare un Focus Arcano come focus di incantamento per gli incantesimi della sottoclasse."
-    },
-    {
-      "name": "War Bond",
-      "name_it": "Legame da Guerra",
-      "level": 3,
-      "description_it": "Esegui un rituale di 1 ora (effettuabile durante un **Riposo Breve**) per creare un legame magico con un'arma a portata:<br>• Non puoi essere disarmato dell'arma legata a meno che tu non abbia la condizione **Incapace**.<br>• Se l'arma si trova sullo stesso piano di esistenza, puoi evocarla con un'**Azione Bonus**, facendola teletrasportare all'istante nella tua mano.<br>• Puoi avere fino a **due armi legate**, ma puoi evocarne solo una alla volta con la tua Azione Bonus. Creare un legame con una terza arma spezza il legame con una delle prime due."
-    },
-    {
-      "name": "War Magic",
-      "name_it": "Magia da Guerra",
-      "level": 7,
-      "description_it": "Quando effettui l'azione di **Attacco** nel tuo turno, puoi sostituire uno degli attacchi con il lancio di uno dei tuoi **trucchetti da Mago** che abbia un tempo di lancio di un'azione."
-    },
-    {
-      "name": "Eldritch Strike",
-      "name_it": "Colpo Mistico",
-      "level": 10,
-      "description_it": "Quando colpisci una creatura con un attacco effettuato con un'arma, quella creatura subisce **Svantaggio al prossimo tiro salvezza** che effettua contro un incantesimo da te lanciato prima della fine del tuo turno successivo."
-    },
-    {
-      "name": "Arcane Charge",
-      "name_it": "Carica Arcana",
-      "level": 15,
-      "description_it": "Quando usi la tua **Azione Aggiuntiva (Action Surge)**, puoi **teletrasportarti fino a 9 metri** in uno spazio libero che puoi vedere. Puoi teletrasportarti prima o dopo aver eseguito l'azione aggiuntiva."
-    },
-    {
-      "name": "Improved War Magic",
-      "name_it": "Magia da Guerra Migliorata",
-      "level": 18,
-      "description_it": "Quando effettui l'azione di **Attacco** nel tuo turno, puoi sostituire due dei tuoi attacchi con il lancio di un tuo **incantesimo da Mago di 1° o 2° livello** che abbia un tempo di lancio di un'azione."
-    }
-  ]
-},
-{
-  "id": "psi_warrior",
-  "name": "Psi Warrior",
-  "name_it": "Guerriero Psionico",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "fighter",
-  "parent_class": "Guerriero",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I Guerrieri Psionici risvegliano il potere mentale interiore per potenziare le proprie capacità fisiche con colpi intrisi di energia psionica, spintali telecinetiche e barriere di forza mentale.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Potere Psionico, Adepto Telecinetico, Mente Progetta, Baluardo di Forza, Maestro Telecinetico.",
-  "features": [
-    {
-      "name": "Psionic Power",
-      "name_it": "Potere Psionico",
-      "level": 3,
-      "description_it": "Possiedi una riserva di energia psionica rappresentata dai tuoi **Dadi di Energia Psionica** (il cui tipo e quantità aumentano con il livello da Guerriero: d6 al 3°, d8 al 5°, d10 all'11°, d12 al 17°). Recuperi un dado speso al termine di un **Riposo Breve** e tutti i dadi spesi al termine di un **Riposo Lungo**.<br><br>Puoi usare i tuoi dadi per i seguenti poteri:<br>• <strong>Campo Protettivo (Protective Field):</strong> Quando tu o una creatura entro 9 metri subite danni, puoi usare la **Reazione** e spendere un dado per ridurre i danni subiti pari al risultato del dado + il tuo **Modificatore di Intelligenza** (minimo 1).<br>• <strong>Colpo Psionico (Psionic Strike):</strong> Una volta per turno, quando colpisci un bersaglio entro 9 metri con un'arma, puoi spendere un dado per infliggere **danni da Forza aggiuntivi** pari al risultato del dado + il tuo **Modificatore di Intelligenza**.<br>• <strong>Movimento Telecinetico (Telekinetic Movement):</strong> Con un'**Azione**, puoi muovere un oggetto non trasportato di taglia Grande o inferiore o una creatura consensuale entro 9 metri fino a 9 metri in qualsiasi direzione (o spostare un oggetto Minuscolo da/verso la tua mano). Usabile una volta per **Riposo Breve o Lungo** (o spendendo un Dado di Energia Psionica per riutilizzarlo)."
-    },
-    {
-      "name": "Telekinetic Adept",
-      "name_it": "Adepto Telecinetico",
-      "level": 7,
-      "description_it": "Padroneggi nuovi modi per usare la telecinesi:<br>• <strong>Balzo Psionico (Psi-Powered Leap):</strong> Con un'**Azione Bonus**, ottieni una **Velocità di Volo pari al doppio della tua Velocità di movimento a terra** fino alla fine del turno attuale. Usabile una volta per **Riposo Breve o Lungo** (o spendendo un Dado di Energia Psionica per ripristinarne l'uso senza azioni).<br>• <strong>Spinta Telecinetica (Telekinetic Thrust):</strong> Quando infliggi danni con *Colpo Psionico*, puoi costringere il bersaglio a effettuare un **Tiro Salvezza su Forza** (CD = 8 + Bonus Competenza + Mod. Intelligenza). Se fallisce, puoi **pronarlo** o **spostarlo fino a 3 metri** in qualsiasi direzione orizzontale."
-    },
-    {
-      "name": "Guarded Mind",
-      "name_it": "Mente Protetta",
-      "level": 10,
-      "description_it": "Ottieni **Resistenza ai danni Psichici**.<br><br>Inoltre, se inizi il tuo turno con la condizione **Affascinato** o **Spaventato**, puoi spendere un Dado di Energia Psionica (nessuna azione richiesta) per **terminare immediatamente tutti gli effetti** che ti infliggono tali condizioni."
-    },
-    {
-      "name": "Bulwark of Force",
-      "name_it": "Baluardo di Forza",
-      "level": 15,
-      "description_it": "Con un'**Azione Bonus**, puoi proteggere un numero di creature che puoi vedere entro 9 metri da te (incluso te stesso) pari al tuo **Modificatore di Intelligenza** (minimo 1).<br><br>Ciascuna creatura scelta ottiene i benefici di **Copertura Metà (+2 alla CA e ai Tiri Salvezza su Destrezza)** per **1 minuto** o finché non sei Incapace.<br><br>Usabile una volta per **Riposo Lungo** (o spendendo un Dado di Energia Psionica per ripristinarne l'uso senza azioni)."
-    },
-    {
-      "name": "Telekinetic Master",
-      "name_it": "Maestro Telecinetico",
-      "level": 18,
-      "description_it": "Hai sempre pronto l'incantesimo *Telecinesi (Telekinesis)*, che puoi lanciare **senza spendere uno slot incantesimo e senza componenti** (caratteristica da incantatore: Intelligenza).<br><br>In ciascuno dei tuoi turni in cui mantieni la Concentrazione su di esso (compreso il turno di lancio), puoi effettuare **un attacco con un'arma come Azione Bonus**.<br><br>Usabile una volta per **Riposo Lungo** (o spendendo un Dado di Energia Psionica per ripristinarne l'uso senza azioni)."
-    }
-  ]
-},
-{
-  "id": "warrior_of_mercy",
-  "name": "Warrior of Mercy",
-  "name_it": "Guerriero della Misericordia",
-  "category": "Sottoclasses",
-  "type": "sottoclasse",
-  "class_id": "monk",
-  "parent_class": "Monaco",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I Monaci del Sentiero della Misericordia imparano a manipolare l'energia vitale altrui per offrire aiuto a chi ne ha bisogno, agendo come medici vagabondi. Tuttavia, per coloro che sono oltre ogni possibilità di salvezza, portano una rapida fine come atto di estrema misericordia.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Strumenti della Misericordia, Mani della Guarigione, Mani del Dolore, Tocco del Medico, Raffica di Guarigione e Dolore, Mano della Misericordia Suprema.",
-  "features": [
-    {
-      "name": "Implements of Mercy",
-      "name_it": "Strumenti della Misericordia",
-      "level": 3,
-      "description_it": "Ottieni la **competenza nelle abilità Intuizione e Medicina**, e la **competenza nella Borsa da Erborista**."
-    },
-    {
-      "name": "Hands of Healing",
-      "name_it": "Mani della Guarigione",
-      "level": 3,
-      "description_it": "Con un'**Azione Magica**, puoi spendere **1 Punto Focalizzazione** per toccare una creatura e farle recuperare un numero di Punti Ferita pari a **un tiro del tuo Dado Arti Marziali + il tuo Modificatore di Saggezza**.<br><br>Quando usi *Raffica di Colpi*, puoi **sostituire uno dei Colpi Nudi** con un uso di questo privilegio **senza spendere il Punto Focalizzazione** per la guarigione."
-    },
-    {
-      "name": "Hands of Harm",
-      "name_it": "Mani del Dolore",
-      "level": 3,
-      "description_it": "Una volta per turno, quando colpisci una creatura con un Colpo Nudo, puoi spendere **1 Punto Focalizzazione** per infliggere **danni da Necrotico aggiuntivi** pari a **un tiro del tuo Dado Arti Marziali + il tuo Modificatore di Saggezza**."
-    },
-    {
-      "name": "Physician's Touch",
-      "name_it": "Tocco del Medico",
-      "level": 6,
-      "description_it": "I tuoi privilegi *Mani del Dolore* e *Mani della Guarigione* migliorano:<br>• <strong>Mani del Dolore:</strong> Quando usi *Mani del Dolore* su una creatura, puoi anche infliggerle la condizione **Avvelenato** fino alla fine del tuo turno successivo.<br>• <strong>Mani della Guarigione:</strong> Quando usi *Mani della Guarigione*, puoi anche **rimuovere una delle seguenti condizioni** dalla creatura guarita: **Accecato, Assordato, Paralizzato, Avvelenato o Scioccato**."
-    },
-    {
-      "name": "Flurry of Healing and Harm",
-      "name_it": "Raffica di Guarigione e Dolore",
-      "level": 11,
-      "description_it": "Quando usi *Raffica di Colpi*:<br>• Puoi sostituire **ciascuno dei Colpi Nudi** con un uso di *Mani della Guarigione*, senza spendere Punti Focalizzazione per la guarigione.<br>• Inoltre, quando a segno un Colpo Nudo con *Raffica di Colpi* e infliggi danni, puoi usare *Mani del Dolore* su quel colpo **senza spendere un Punto Focalizzazione** (rispettando comunque il limite di una volta per turno).<br><br>Puoi usare questi benefici un numero di volte pari al tuo **Modificatore di Saggezza** (minimo una volta) e recuperi tutti gli utilizzi spesi al termine di un **Riposo Lungo**."
-    },
-    {
-      "name": "Hand of Ultimate Mercy",
-      "name_it": "Mano della Misericordia Suprema",
-      "level": 17,
-      "description_it": "Con un'**Azione Magica**, puoi toccare il cadavere di una creatura morta nelle ultime 24 ore e spendere **5 Punti Focalizzazione**: la creatura **ritorna in vita** con un numero di Punti Ferita pari a **4d10 + il tuo Modificatore di Saggezza**.<br><br>Se la creatura è deceduta mentre soffriva di una delle seguenti condizioni, si risveglia con tali condizioni rimosse: **Accecato, Assordato, Paralizzato, Avvelenato e Scioccato**.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un **Riposo Lungo**."
-    }
-  ]
-},
+    "id": "sub_cleric_trickery",
+    "name": "Trickery Domain",
+    "name_it": "Dominio dell me Inganno",
+    "class": "Cleric",
+    "class_it": "Chierico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Utilizza illusioni, travestimenti e l'astuzia per superare qualsiasi ostacolo.<br><br><strong>Tratti Chiave:</strong> Benedizione dell'Ingannatore, Invocare Illusione, Furtività Migliorata."
+  },
   {
-  "id": "oath_of_devotion",
-  "name": "Oath of Devotion",
-  "name_it": "Giuramento di Devozione",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "paladin",
-  "parent_class": "Paladino",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il Giuramento di Devozione lega i Paladini ai più alti ideali di giustizia e ordine. Incarnando il cavaliere in armatura splendente, questi paladini proteggono i deboli e affrontano le forze del male con coraggio e onore.<br><br><strong>Dogmi di Devozione:</strong> Onestà, Coraggio, Compassione, Onore, Dovere.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Arma Sacra, Aura di Devozione, Punizione Protettiva, Nimbo Sacro.",
-  "features": [
-    {
-      "name": "Oath Spells",
-      "name_it": "Incantesimi del Giuramento",
-      "level": 3,
-      "description_it": "Hai sempre preparati i seguenti incantesimi ai livelli specificati:<br>• <strong>3° livello:</strong> *Protezione dal Bene e dal Male (Protection from Evil and Good)*, *Scudo della Fede (Shield of Faith)*<br>• <strong>5° livello:</strong> *Aiuto (Aid)*, *Zona di Verità (Zone of Truth)*<br>• <strong>9° livello:</strong> *Faro di Speranza (Beacon of Hope)*, *Dissolvi Magie (Dispel Magic)*<br>• <strong>13° livello:</strong> *Libertà di Movimento (Freedom of Movement)*, *Custode della Fede (Guardian of Faith)*<br>• <strong>17° livello:</strong> *Comunione (Commune)*, *Colpo Infuocato (Flame Strike)*"
-    },
-    {
-      "name": "Sacred Weapon",
-      "name_it": "Arma Sacra",
-      "level": 3,
-      "description_it": "Quando effettui l'azione di Attacco, puoi spendere **un utilizzo di Incanalare Divinità** per imbuire d'energia positiva un'arma da mischia che impugni per **10 minuti** (o finché non usi di nuovo questo privilegio, o finché non smetti di impugnarla):<br>• Aggiungi il tuo **Modificatore di Carisma ai tiri per colpire** effettuati con quell'arma (bonus minimo +1).<br>• Ogni volta che colpisci, puoi far sì che l'arma infligga il suo normale tipo di danno oppure **danni da Raggiante**.<br>• L'arma emette **Luce Intensa per 6 metri** e **Luce Vaga per ulteriori 6 metri**.<br>• Puoi terminare l'effetto in qualsiasi momento (nessuna azione richiesta)."
-    },
-    {
-      "name": "Aura of Devotion",
-      "name_it": "Aura di Devozione",
-      "level": 7,
-      "description_it": "Tu e i tuoi alleati all'interno della tua *Aura di Protezione* ottenete **Immunità alla condizione Affascinato**.<br><br>Se un alleato affascinato entra nell'aura, la condizione **non ha effetto su di lui** finché vi rimane all'interno."
-    },
-    {
-      "name": "Smite of Protection",
-      "name_it": "Punizione Protettiva",
-      "level": 15,
-      "description_it": "Ogni volta che lanci *Punizione Divina (Divine Smite)*, tu e i tuoi alleati all'interno della tua *Aura di Protezione* ottenete **Copertura A Metà (+2 alla CA e ai Tiri Salvezza su Destrezza)**.<br><br>L'aura mantiene questo beneficio fino all'inizio del tuo turno successivo."
-    },
-    {
-      "name": "Holy Nimbus",
-      "name_it": "Nimbo Sacro",
-      "level": 20,
-      "description_it": "Con un'**Azione Bonus**, puoi imbuire la tua *Aura di Protezione* di potere sacro per **10 minuti** (o finché non decidi di interromperlo senza spendere un'azione). Ottieni i seguenti benefici:<br>• <strong>Protezione Sacra:</strong> Hai **Vantaggio a qualsiasi tiro salvezza** imposto da un *Immondo* o un *Non Morto*.<br>• <strong>Danni Raggianti:</strong> Ogni volta che un nemico inizia il suo turno nell'aura, subisce **danni da Raggiante pari al tuo Bonus di Competenza + il tuo Modificatore di Carisma**.<br>• <strong>Luce Solare:</strong> L'aura è riempita di Luce Intensa che conta come **luce solare reale**.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino al termine di un **Riposo Lungo** (in alternativa, puoi **ripristinarne l'uso spendendo uno slot incantesimo di 5° livello**, nessuna azione richiesta)."
-    }
-  ]
-},
- {
-  "id": "oath_of_conquest",
-  "name": "Oath of Conquest",
-  "name_it": "Giuramento di Conquista",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "paladin",
-  "parent_class": "Paladino",
-  "source_it": "Guida Omnicomprensiva di Xanathar",
-  "description_it": "Il Giuramento di Conquista richiama i paladini che cercano la gloria in battaglia e la sottomissione dei propri nemici. Per questi paladini non basta stabilire l'ordine: devono schiacciare le forze del caos, usando la paura e una determinazione di ferro come armi principali.<br><br><strong>Dogmi di Conquista:</strong> Spegni la Fiamma della Speranza, Governa con il Pugno di Ferro, La Forza Sopra Ogni Cosa.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Incanalare Divinità (Presenza Conquistatrice, Colpo Guidato), Aura di Conquista, Riprova Sprezzante, Conquistatore Invincibile.",
-  "features": [
-    {
-      "name": "Oath Spells",
-      "name_it": "Incantesimi del Giuramento",
-      "level": 3,
-      "description_it": "Hai sempre preparati i seguenti incantesimi ai livelli specificati:<br>• <strong>3° livello:</strong> *Armatura di Agathys (Armor of Agathys)*, *Comando (Command)*<br>• <strong>5° livello:</strong> *Blocca Persone (Hold Person)*, *Arma Spirituale (Spiritual Weapon)*<br>• <strong>9° livello:</strong> *Scagliare Maledizione (Bestow Curse)*, *Paura (Fear)*<br>• <strong>13° livello:</strong> *Dominare Bestie (Dominate Beast)*, *Pelle di Pietra (Stoneskin)*<br>• <strong>17° livello:</strong> *Nube Mortale (Cloudkill)*, *Dominare Persone (Dominate Person)*"
-    },
-    {
-      "name": "Channel Divinity: Conquering Presence",
-      "name_it": "Incanalare Divinità: Presenza Conquistatrice",
-      "level": 3,
-      "description_it": "Con un'**Azione**, usi il tuo *Incanalare Divinità* per emanare una presenza terrificante.<br><br>Costringi ogni creatura a tua scelta visibile entro **9 metri** da te a effettuare un **Tiro Salvezza su Saggezza**. Se lo fallisce, la creatura diventa **Spaventata da te per 1 minuto**. La creatura spaventata può ripetere il tiro salvezza alla fine di ciascun suo turno, terminando l'effetto su se stessa in caso di successo."
-    },
-    {
-      "name": "Channel Divinity: Guided Strike",
-      "name_it": "Incanalare Divinità: Colpo Guidato",
-      "level": 3,
-      "description_it": "Puoi usare il tuo *Incanalare Divinità* per colpire con precisione soprannaturale.<br><br>Quando effettui un tiro per colpire, puoi ottenere un **bonus di +10 al tiro**. Puoi compiere questa scelta dopo aver visto il risultato del dado, ma prima che il DM dichiari se l'attacco ha colpito o mancato."
-    },
-    {
-      "name": "Aura of Conquest",
-      "name_it": "Aura di Conquista",
-      "level": 7,
-      "description_it": "Emani costantemente un'aura minacciosa mentre non sei incapacitato, che si estende per **3 metri** in ogni direzione (non attraversa la copertura totale):<br>• Se una creatura è **Spaventata da te**, la sua **Velocità è ridotta a 0** finché si trova all'interno dell'aura.<br>• Quella creatura subisce **danni psichici pari a metà del tuo livello da Paladino** se inizia il suo turno nell'aura.<br><br>Al 18° livello, il raggio di quest'aura **aumenta a 9 metri**."
-    },
-    {
-      "name": "Scornful Rebuke",
-      "name_it": "Riprova Sprezzante",
-      "level": 15,
-      "description_it": "Coloro che osano colpirti vengono puniti psichicamente per la loro audacia.<br><br>Ogni volta che una creatura ti colpisce con un attacco, quella creatura subisce **danni psichici pari al tuo Modificatore di Carisma** (minimo 1) a condizione che tu non sia incapacitato."
-    },
-    {
-      "name": "Invincible Conqueror",
-      "name_it": "Conquistatore Invincibile",
-      "level": 20,
-      "description_it": "Con un'**Azione**, ti trasformi magicamente in un avatar della conquista, ottenendo i seguenti benefici per **1 minuto**:<br>• Hai **Resistenza a tutti i danni**.<br>• Quando effettui l'azione di Attacco nel tuo turno, puoi effettuare **un attacco aggiuntivo** come parte di quella stessa azione.<br>• I tuoi attacchi con armi da mischia mettono a segno un **colpo critico con un risultato di 19 o 20** sul d20.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino al termine di un **Riposo Lungo**."
-    }
-  ]
-},
+    "id": "sub_cleric_war",
+    "name": "War Domain",
+    "name_it": "Dominio della Guerra",
+    "class": "Cleric",
+    "class_it": "Chierico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Campione bellico benedetto da un dio della battaglia per guidare la crociata.<br><br><strong>Tratti Chiave:</strong> Sacerdote di Guerra, Colpo Guidato, Benedizione del Dio della Guerra."
+  },
   {
-  "id": "gloom_stalker",
-  "name": "Gloom Stalker",
-  "name_it": "Cacciatore delle Ombre",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "ranger",
-  "parent_class": "Ranger",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "I Cacciatori delle Ombre si trovano a loro agio nei luoghi più oscuri, impugnando la magia attinta dalla Coltre d'Ombra per combattere i nemici che si annidano nell'oscurità.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Imboscato Terrificante, Magia del Cacciatore delle Ombre, Vista Umbratile, Mente d'Acciaio, Raffiche del Cacciatore, Schivata d'Ombra.",
-  "features": [
-    {
-      "name": "Dread Ambusher",
-      "name_it": "Imboscato Terrificante",
-      "level": 3,
-      "description_it": "Hai padroneggiato l'arte di creare imboscate spaventose, ottenendo i seguenti benefici:<br>• <strong>Balzo dell'Imboscato:</strong> All'inizio del primo turno di ogni combattimento, la tua Velocità aumenta di 3 metri fino alla fine di quel turno.<br>• <strong>Colpo Terrificante:</strong> Quando attacchi una creatura e la colpisci con un'arma, puoi infliggere **2d6 danni psichici extra**. Puoi usare questo beneficio solo una volta per turno, per un numero di volte pari al tuo **Modificatore di Saggezza** (minimo 1), e recuperi tutti gli usi spesi al termine di un **Riposo Lungo**.<br>• <strong>Bonus all'Iniziativa:</strong> Quando tiri l'Iniziativa, puoi aggiungere il tuo **Modificatore di Saggezza** al tiro."
-    },
-    {
-      "name": "Gloom Stalker Magic",
-      "name_it": "Magia del Cacciatore delle Ombre",
-      "level": 3,
-      "description_it": "Hai sempre preparati i seguenti incantesimi ai livelli specificati:<br>• <strong>3° livello:</strong> *Camuffare Se Stesso (Disguise Self)*<br>• <strong>5° livello:</strong> *Trucco della Corda (Rope Trick)*<br>• <strong>9° livello:</strong> *Paura (Fear)*<br>• <strong>13° livello:</strong> *Invisibilità Superiore (Greater Invisibility)*<br>• <strong>17° livello:</strong> *Sembrare (Seeming)*"
-    },
-    {
-      "name": "Umbral Sight",
-      "name_it": "Vista Umbratile",
-      "level": 3,
-      "description_it": "Ottieni **Scurovisione fino a 18 metri**. Se possiedi già Scurovisione quando ottieni questo privilegio, la sua portata **aumenta di 18 metri**.<br><br>Sei inoltre abile nell'evitare le creature che si affidano alla Scurovisione: mentre ti trovi completamente nell'Oscurità, hai la condizione di **Invisibile** per qualsiasi creatura che si affida alla Scurovisione per vederti in quell'oscurità."
-    },
-    {
-      "name": "Iron Mind",
-      "name_it": "Mente d'Acciaio",
-      "level": 7,
-      "description_it": "Hai affinato la tua capacità di resistere ai poteri che alterano la mente.<br><br>Ottieni la competenza nei **Tiri Salvezza su Saggezza**. Se possiedi già questa competenza, ottieni invece la competenza nei **Tiri Salvezza su Intelligenza o Carisma** (a tua scelta)."
-    },
-    {
-      "name": "Stalker's Flurry",
-      "name_it": "Raffiche del Cacciatore",
-      "level": 11,
-      "description_it": "Il danno psichico del tuo *Colpo Terrificante* aumenta a **2d8**.<br><br>Inoltre, quando usi l'effetto Colpo Terrificante del privilegio *Imboscato Terrificante*, puoi attivare uno dei seguenti effetti aggiuntivi:<br>• <strong>Colpo Improvviso:</strong> Puoi effettuare un altro attacco con la stessa arma contro una creatura diversa situata entro 1,5 metri dal bersaglio originale e ed entro la gittata dell'arma.<br>• <strong>Paura di Massa:</strong> Il bersaglio e ogni creatura entro 3 metri da esso devono effettuare un **Tiro Salvezza su Saggezza** contro la CD dei tuoi incantesimi. Se lo falliscono, subiscono la condizione **Spaventato** fino all'inizio del tuo turno successivo."
-    },
-    {
-      "name": "Shadowy Dodge",
-      "name_it": "Schivata d'Ombra",
-      "level": 15,
-      "description_it": "Quando una creatura effettua un tiro per colpire contro di te, puoi usare la tua **Reazione** per **imporre Svantaggio a quel tiro**.<br><br>Che l'attacco colpisca o manchi, puoi **teletrasportarti fino a 9 metri** in uno spazio non occupato che puoi vedere."
-    }
-  ]
-},
+    "id": "sub_druid_land",
+    "name": "Circle of the Land",
+    "name_it": "Circolo della Terra",
+    "class": "Druid",
+    "class_it": "Druido",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Custode degli antichi riti legato a uno specifico bioma naturale.<br><br><strong>Tratti Chiave:</strong> Magia della Terra, Recupero Naturale, Difesa della Natura."
+  },
   {
-  "id": "assassin",
-  "name": "Assassin",
-  "name_it": "Assassino",
-  "category": "Sottoclasses",
-  "type": "sottoclasse",
-  "class_id": "rogue",
-  "parent_class": "Ladro",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "L'addestramento dell'Assassino si concentra sulla macabra arte della morte, sfruttando furtività, veleni e travestimenti per eliminare i nemici con micidiale efficienza.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Assassinare, Competenza nell'Infiltrazione, Avvelenare Armi, Colpo della Morte.",
-  "features": [
-    {
-      "name": "Bonus Proficiencies",
-      "name_it": "Competenze Bonus",
-      "level": 3,
-      "description_it": "Ottieni un **Kit per Travestimenti** e un **Kit da Avvelenatore**, e acquisisci la **competenza** nell'uso di entrambi."
-    },
-    {
-      "name": "Assassinate",
-      "name_it": "Assassinare",
-      "level": 3,
-      "description_it": "Sei specializzato nell'attendere e tendere imboscate ai bersagli, ottenendo i seguenti benefici:<br><br>• <strong>Iniziativa:</strong> Hai **Vantaggio alle prove di Iniziativa**.<br>• <strong>Attacchi Sorprendenti:</strong> Durante il primo round di ciascun combattimento, hai **Vantaggio ai tiri per colpire** contro qualsiasi creatura che non ha ancora svolto il proprio turno. Se il tuo *Attacco Furtivo* colpisce un bersaglio durante questo round, il bersaglio subisce **danni extra** del tipo d'arma pari al tuo **livello da Ladro**."
-    },
-    {
-      "name": "Infiltration Expertise",
-      "name_it": "Competenza nell'Infiltrazione",
-      "level": 9,
-      "description_it": "Padroneggi tecniche speciali che facilitano le infiltrazioni:<br><br>• <strong>Imitazione Maestra:</strong> Puoi imitare in modo infallibile la parlata, la grafia o entrambe di un'altra persona se l'hai studiata per almeno 1 ora.<br>• <strong>Mira Intrepida:</strong> La tua velocità di movimento **non viene ridotta a 0** quando utilizzi il privilegio *Mira Stabile (Steady Aim)*."
-    },
-    {
-      "name": "Envenom Weapons",
-      "name_it": "Avvelenare Armi",
-      "level": 13,
-      "description_it": "Quando usi l'opzione *Veleno* del tuo *Colpo Astuto (Cunning Strike)*, il bersaglio subisce anche **2d6 danni da Veleno** ogni volta che fallisce il tiro salvezza.<br><br>Questo danno **ignora la Resistenza ai danni da Veleno**."
-    },
-    {
-      "name": "Death Strike",
-      "name_it": "Colpo della Morte",
-      "level": 17,
-      "description_it": "Quando colpisci con il tuo *Attacco Furtivo* nel primo round di un combattimento, il bersaglio deve effettuare un **Tiro Salvezza su Costituzione (CD = 8 + Modificatore di Destrezza + Bonus di Competenza)**.<br><br>Se fallisce il tiro salvezza, il **danno dell'attacco viene raddoppiato** contro di esso."
-    }
-  ]
-},
+    "id": "sub_druid_moon",
+    "name": "Circle of the Moon",
+    "name_it": "Circolo della Luna",
+    "class": "Druid",
+    "class_it": "Druido",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Maestro mutaforma specializzato nel combattimento in Forma Selvatica.<br><br><strong>Tratti Chiave:</strong> Forma Selvatica Prontamente Disponibile, Attacchi Elementali, Radiosità Lunare."
+  },
   {
-  "id": "aberrant_sorcery",
-  "name": "Aberrant Sorcery",
-  "name_it": "Stregoneria Aberrante",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "sorcerer",
-  "parent_class": "Stregone",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Un'influenza aliena ha awolto i suoi tentacoli attorno alla tua mente, donandoti poteri psionici. Puoi toccare le menti altrui ed alterare il mondo circostante controllando l'energia magica del multiverso.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Incantesimi Psionici, Parlata Telepatica, Magia Psionica, Difese Psioniche, Rivelazione della Carne, Implosione Distorcente.",
-  "features": [
-    {
-      "name": "Psychic Spells",
-      "name_it": "Incantesimi Psionici",
-      "level": 3,
-      "description_it": "Impari incantesimi aggiuntivi quando raggiungi determinati livelli in questa classe. Ciascun incantesimo conta come un incantesimo da Stregone per te, ma non conta ai fini del numero di incantesimi da Stregone conosciuti:<br>• <strong>3° livello:</strong> *Braccia di Hadar (Arms of Hadar)*, *Sussurri Dissonanti (Dissonant Whispers)*, *Scheggia Mentale (Mind Sliver)*, *Calmare Emozioni (Calm Emotions)*, *Individuazione dei Pensieri (Detect Thoughts)*<br>• <strong>5° livello:</strong> *Fame di Hadar (Hunger of Hadar)*, *Inviare (Sending)*<br>• <strong>7° livello:</strong> *Tentacoli Neri di Evard (Evard's Black Tentacles)*, *Evoca Aberrazione (Summon Aberration)*<br>• <strong>9° livello:</strong> *Legame Telepatico di Rary (Rary's Telepathic Bond)*, *Telecinesi (Telekinesis)*"
-    },
-    {
-      "name": "Telepathic Speech",
-      "name_it": "Parlata Telepatica",
-      "level": 3,
-      "description_it": "Puoi formare un legame telepatico tra la tua mente e quella di un'altra creatura.<br><br>Con un'**Azione Bonus**, scegli una creatura visibile entro **9 metri** da te. Tu e la creatura scelta potete comunicarvi telepaticamente a vicenda finché vi trovate a una distanza in miglia non superiore al tuo **Modificatore di Carisma** (minimo 1 miglio / ~1,5 km). Per capirvi, dovete parlare mentalmente in una lingua che l'altro conosce.<br><br>La connessione dura per un numero di minuti pari al tuo **livello da Stregone** e termina prima se usi questo privilegio per connetterti a una creatura diversa."
-    },
-    {
-      "name": "Psychic Sorcery",
-      "name_it": "Magia Psionica",
-      "level": 6,
-      "description_it": "Quando lanci un incantesimo di 1° livello o superiore ottenuto dal privilegio *Incantesimi Psionici*, puoi lanciarlo spendendo uno slot incantesimo come di consueto oppure spendendo un numero di **Punti Stregoneria pari al livello dell'incantesimo**.<br><br>Se lanci l'incantesimo usando i Punti Stregoneria, l'incantesimo **non richiede componenti verbali o somatiche**, e **non richiede componenti materiali** (a meno che esse non vengano consumate dall'incantesimo o abbiano un costo specifico indicato)."
-    },
-    {
-      "name": "Psychic Defenses",
-      "name_it": "Difese Psioniche",
-      "level": 6,
-      "description_it": "Ottieni **Resistenza ai danni psichici** e hai **Vantaggio ai tiri salvezza** per evitare o terminare le condizioni di **Ammaliato** o **Spaventato**."
-    },
-    {
-      "name": "Revelation in Flesh",
-      "name_it": "Rivelazione della Carne",
-      "level": 14,
-      "description_it": "Puoi scatenare la verità aberrante nascosta dentro di te. Con un'**Azione Bonus**, puoi spendere 1 o più Punti Stregoneria per alterare magicamente il tuo corpo per **10 minuti**. Per ogni punto speso, scegli uno dei seguenti benefici (attivo fino al termine dell'alterazione):<br>• <strong>Adattamento Acquatico:</strong> Ottieni una Velocità di Nuoto pari al doppio della tua Velocità e puoi respirare sott'acqua.<br>• <strong>Volo Brillante:</strong> Ottieni una Velocità di Volo pari alla tua Velocità e puoi fluttuare (hover).<br>• <strong>Vedere l'Invisibile:</strong> Puoi vedere qualsiasi creatura Invisibile entro 18 metri da te, a patto che non si trovi dietro Copertura Totale.<br>• <strong>Movimento Vermiforme:</strong> Il tuo corpo e l'equipaggiamento diventano viscidi e flessibili. Puoi muoverti attraverso spazi stretti fino a 2,5 cm senza stringerti e puoi spendere 1,5 metri di movimento per liberarti da trattenute non magiche o dalla condizione Inlotta."
-    },
-    {
-      "name": "Warping Implosion",
-      "name_it": "Implosione Distorcente",
-      "level": 18,
-      "description_it": "Puoi scatenare un'anomalia che distorce lo spazio. Con un'**Azione Magica**, ti teletrasporti in uno spazio non occupato visibile entro **36 metri** da te.<br><br>Immediatamente dopo la tua scomparsa, ogni creatura entro **9 metri** dallo spazio che hai lasciato deve effettuare un **Tiro Salvezza su Forza** contro la CD dei tuoi incantesimi: subisce **3d10 danni da Forza** e viene trascinata direttamente verso lo spazio che hai lasciato (terminando il movimento nello spazio libero più vicino ad esso) se lo fallisce, oppure subisce solo la metà dei danni se lo supera.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a un **Riposo Lungo**, a meno che tu non spenda **5 Punti Stregoneria** (senza richiedere un'azione) per ripristinarne l'uso."
-    }
-  ]
-},
- {
-  "id": "fiend_patron",
-  "name": "Fiend Patron",
-  "name_it": "Patrono Immonde",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "warlock",
-  "parent_class": "Warlock",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Il tuo patto trae potere dai Piani Inferiori, dimora di demoni, diavoli e yugoloth. Che tu serva un signore dei demoni come Demogorgon o un arcidiavolo come Asmodeus, gli scopi del tuo patrono sono malvagi e la tua strada sarà definita da quanto lotti contro di essi.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Patrono, Benedizione dell'Oscuro, Fortuna dell'Oscuro, Resilienza Immonda, Scagliare nell'Inferno.",
-  "features": [
-    {
-      "name": "Patron Spells",
-      "name_it": "Incantesimi del Patrono",
-      "level": 3,
-      "description_it": "La magia del tuo patrono ultraterreno ti assicura di avere sempre pronti determinati incantesimi. Quando raggiungi specifici livelli da Warlock, hai sempre preparati gli incantesimi indicati:<br><br>• <strong>3° Livello:</strong> *Mani Brucianti (Burning Hands)*, *Comando (Command)*, *Raggio Rovente (Scorching Ray)*, *Suggestione (Suggestion)*<br>• <strong>5° Livello:</strong> *Palla di Fuoco (Fireball)*, *Nube StElementale / Nube Fetida (Stinking Cloud)*<br>• <strong>7° Livello:</strong> *Scudo di Fuoco (Fire Shield)*, *Muro di Fuoco (Wall of Fire)*<br>• <strong>9° Livello:</strong> *Geas*, *Piaga delle Cavallette (Insect Plague)*"
-    },
-    {
-      "name": "Dark One’s Blessing",
-      "name_it": "Benedizione dell'Oscuro",
-      "level": 3,
-      "description_it": "Quando riduci un nemico a 0 Punti Ferita, ottieni **Punti Ferita Temporanei** pari al tuo **Modificatore di Carisma + livello da Warlock** (minimo 1 Punto Ferita Temporaneo).<br><br>Ottieni questo beneficio anche se qualcun altro riduce un nemico a 0 Punti Ferita entro **3 metri** da te."
-    },
-    {
-      "name": "Dark One’s Own Luck",
-      "name_it": "Fortuna dell'Oscuro",
-      "level": 6,
-      "description_it": "Puoi invocare il tuo patrono immondo per alterare il fato a tuo favore.<br><br>• Quando effettui una **prova di caratteristica** o un **tiro salvezza**, puoi usare questo privilegio per aggiungere **1d10 al tuo tiro**.<br>• Puoi farlo dopo aver visto il tiro iniziale, ma prima che si verifichino i suoi effetti.<br>• Puoi usare questo privilegio un numero di volte pari al tuo **Modificatore di Carisma** (minimo una volta), ma non più di una volta per singolo tiro.<br><br>Recuperi tutti gli usi spesi quando completi un **Riposo Lungo**."
-    },
-    {
-      "name": "Fiendish Resilience",
-      "name_it": "Resilienza Immonda",
-      "level": 10,
-      "description_it": "Scegli un tipo di danno (diverso da Forza) ogni volta che completi un **Riposo Breve o Lungo**.<br><br>Ottieni **Resistenza a quel tipo di danno** finché non ne scegli uno diverso tramite questo privilegio."
-    },
-    {
-      "name": "Hurl Through Hell",
-      "name_it": "Scagliare nell'Inferno",
-      "level": 14,
-      "description_it": "Una volta per turno, quando colpisci una creatura con un tiro per colpire, puoi tentare di trasportare istantaneamente il bersaglio attraverso i Piani Inferiori.<br><br>• Il bersaglio deve superare un **Tiro Salvezza su Carisma** contro la CD dei tuoi incantesimi, altrimenti scompare e viene scagliato attraverso un paesaggio da incubo.<br>• Il bersaglio subisce **8d10 danni Psichici** (se non è un Immondo) ed è soggetto alla condizione **Incapacitato** fino alla fine del tuo turno successivo, momento in cui ritorna nello spazio precedentemente occupato o nel più vicino spazio libero.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a un **Riposo Lungo**, a meno che non spenda uno slot incantesimo della **Magia del Patto** (senza richiedere un'azione) per ripristinarne l'uso."
-    }
-  ]
-},
+    "id": "sub_druid_sea",
+    "name": "Circle of the Sea",
+    "name_it": "Circolo del Mare",
+    "class": "Druid",
+    "class_it": "Druido",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Incanala le tempeste, le maree e il potere sconfinato degli oceani.<br><br><strong>Tratti Chiave:</strong> Carica Oceanica, Forma della Tempesta, Venti di Guarigione."
+  },
   {
-  "id": "evoker",
-  "name": "Evoker",
-  "name_it": "Invocatore",
-  "category": "Sottoclasse",
-  "type": "sottoclasse",
-  "class_id": "wizard",
-  "parent_class": "Mago",
-  "source_it": "Manuale del Giocatore 2024",
-  "description_it": "Focalizzi il tuo studio sulla magia che crea potenti effetti elementali come freddo pungente, fiamme roventi, tuoni rimbombanti, fulmini crepitanti e acido bruciante.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Sapiente dell'Invocazione, Trucchetto Potente, Plasmare Incantesimi, Invocazione Potenziata, Sovraccarico.",
-  "features": [
-    {
-      "name": "Evocation Savant",
-      "name_it": "Sapiente dell'Invocazione",
-      "level": 3,
-      "description_it": "Scegli **due incantesimi da Mago della scuola di Invocazione** (massimo di 2° livello) e aggiungili gratuitamente al tuo libro degli incantesimi.<br><br>Inoltre, ogni volta che ottieni accesso a un nuovo livello di slot incantesimo in questa classe, puoi aggiungere gratuitamente al tuo libro degli incantesimi un incantesimo da Mago della scuola di Invocazione del livello corrispondente agli slot che possiedi."
-    },
-    {
-      "name": "Potent Cantrip",
-      "name_it": "Trucchetto Potente",
-      "level": 3,
-      "description_it": "I tuoi trucchetti che infliggono danno colpiscono anche le creature che evitano il grosso dell'effetto.<br><br>Quando lanci un trucchetto contro una creatura e **manti il tiro per colpire** o il **bersaglio supera il tiro salvezza** contro il trucchetto, il bersaglio subisce **metà del danno del trucchetto** (se presente), ma non subisce alcun effetto aggiuntivo fornito dal trucchetto."
-    },
-    {
-      "name": "Sculpt Spells",
-      "name_it": "Plasmare Incantesimi",
-      "level": 6,
-      "description_it": "Puoi creare tasche di relativa sicurezza all'interno degli effetti delle tue invocazioni.<br><br>Quando lanci un incantesimo di Invocazione che influenza altre creature visibili, puoi sceglierne un numero pari a **1 + il livello dell'incantesimo**.<br><br>Le creature scelte **superano automaticamente i loro tiri salvezza** contro l'incantesimo e **non subiscono alcun danno** se normalmente subirebbero metà danno in caso di successo."
-    },
-    {
-      "name": "Empowered Evocation",
-      "name_it": "Invocazione Potenziata",
-      "level": 10,
-      "description_it": "Ogni volta che lanci un incantesimo da Mago della scuola di Invocazione, puoi aggiungere il tuo **Modificatore di Intelligenza a un tiro per il danno** di quell'incantesimo."
-    },
-    {
-      "name": "Overchannel",
-      "name_it": "Sovraccarico",
-      "level": 14,
-      "description_it": "Puoi aumentare la potenza dei tuoi incantesimi.<br><br>• Quando lanci un incantesimo da Mago usando uno slot incantesimo dal **1° al 5° livello** che infligge danno, puoi **infliggere il massimo danno possibile** con quell'incantesimo nel turno in cui lo lanci.<br>• La prima volta che lo fai non subisci alcun effetto negativo.<br>• Se usi di nuovo questo privilegio prima di completare un **Riposo Lungo**, subisci **2d12 danni da Necrotico per ogni livello dello slot incantesimo** subito dopo averlo lanciato (questo danno ignora Resistenza e Immunità).<br>• Ogni volta successiva che usi questo privilegio prima di un Riposo Lungo, il danno Necrotico per livello di incantesimo **aumenta di 1d12**."
-    }
-  ]
-},
-    {
+    "id": "sub_druid_stars",
+    "name": "Circle of Stars",
+    "name_it": "Circolo delle Stelle",
+    "class": "Druid",
+    "class_it": "Druido",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Attinge alle costellazioni del cosmo per assumere forme luminose astri.<br><br><strong>Tratti Chiave:</strong> Mappa Stellare, Forma Stellare (Sagitta/Calice/Dragone), Presagio Astrale."
+  },
+  {
+    "id": "sub_fighter_battlemaster",
+    "name": "Battle Master",
+    "name_it": "Maestro d'Armi",
+    "class": "Fighter",
+    "class_it": "Guerriero",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Utilizza manovre tattiche e Dadi Superiorità per dominare il combattimento.<br><br><strong>Tratti Chiave:</strong> Dadi Superiorità, Manovre Tattiche, Valutare il Nemico."
+  },
+  {
+    "id": "sub_fighter_champion",
+    "name": "Champion",
+    "name_it": "Campione",
+    "class": "Fighter",
+    "class_it": "Guerriero",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Perfeziona l'eccellenza fisica pura massimizzando i colpi critici.<br><br><strong>Tratti Chiave:</strong> Critico Migliorato, Atleta Straordinario, Stile di Combattimento Aggiuntivo."
+  },
+  {
+    "id": "sub_fighter_eldritchknight",
+    "name": "Eldritch Knight",
+    "name_it": "Cavaliere Mistico",
+    "class": "Fighter",
+    "class_it": "Guerriero",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Fonde la maestria marziale con la magia arcana di Evocazione ed Abiura.<br><br><strong>Tratti Chiave:</strong> Legame con l'Arma, Magia da Combattimento, Carica Arcana."
+  },
+  {
+    "id": "sub_fighter_psiwarrior",
+    "name": "Psi Warrior",
+    "name_it": "Guerriero Psionico",
+    "class": "Fighter",
+    "class_it": "Guerriero",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Aumenta la propria forza fisica con l'energia della mente.<br><br><strong>Tratti Chiave:</strong> Potenza Psionica, Campo di Forza Telecinetico, Movimento Psionico."
+  },
+  {
     "id": "sub_monk_dance",
     "name": "Warrior of Dance",
     "name_it": "Guerriero della Danza",
