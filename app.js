@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(err => console.log('SW error:', err));
 }
 
-// Mappatura per tradurre qualsiasi termine di classe (inglese o varianti) in italiano standard
+// Mappatura per tradurre qualsiasi termine di classe in italiano standard
 const classTranslationMap = {
   'artificer': 'Artefice',
   'artefice': 'Artefice',
@@ -40,14 +40,13 @@ async function loadData() {
   try {
     const response = await fetch('character_data.json');
     allData = await response.json();
-    populateClassFilter(allData); // Popola automaticamente il menu a tendina delle classi
+    populateClassFilter(allData);
     renderCards(allData);
   } catch (error) {
     console.error('Errore nel caricamento del file JSON:', error);
   }
 }
 
-// Popola il select delle classi mostrando solo i nomi in italiano ed eliminando i duplicati inglesi
 function populateClassFilter(data) {
   const classFilter = document.getElementById('classFilter');
   if (!classFilter) return;
@@ -62,7 +61,6 @@ function populateClassFilter(data) {
       parentArray.forEach(c => {
         if (typeof c === 'string' && c.trim() !== '') {
           const key = c.trim().toLowerCase();
-          // Traduce in italiano se presente nel dizionario, altrimenti formatta la stringa
           const translatedName = classTranslationMap[key] || (c.trim().charAt(0).toUpperCase() + c.trim().slice(1));
           classesSet.add(translatedName);
         }
@@ -70,7 +68,6 @@ function populateClassFilter(data) {
     }
   });
 
-  // Ordina alfabeticamente in italiano
   const sortedClasses = Array.from(classesSet).sort((a, b) => a.localeCompare(b, 'it'));
 
   classFilter.innerHTML = '<option value="">Tutte le Classi</option>';
@@ -99,6 +96,8 @@ function getItemDescription(item) {
 
 function renderCards(items) {
   const container = document.getElementById('cardsContainer');
+  if (!container) return;
+  
   container.innerHTML = '';
 
   if (!items || items.length === 0) {
@@ -106,7 +105,6 @@ function renderCards(items) {
     return;
   }
 
-  // Ordinamento: raggruppa prima per classe/categoria e poi per nome
   const sortedItems = [...items].sort((a, b) => {
     const classA = (a.class_it || a.parent_class || a.class_id || a.class || '').toLowerCase();
     const classB = (b.class_it || b.parent_class || b.class_id || b.class || '').toLowerCase();
@@ -126,7 +124,6 @@ function renderCards(items) {
 
     const badgeText = (item.category || item.type || 'INFO').toUpperCase();
 
-    // Metadati dinamici
     let metaHTML = '';
     
     const parentClass = item.class_it || item.parent_class || item.class_id || item.class;
@@ -156,7 +153,6 @@ function renderCards(items) {
 
     const descriptionText = getItemDescription(item);
 
-    // Render dinamico delle Features / Privilegi (per Sottoclassi e Classi)
     let featuresHTML = '';
     const featuresList = item.features || item.class_features;
     if (featuresList && Array.isArray(featuresList) && featuresList.length > 0) {
@@ -178,7 +174,6 @@ function renderCards(items) {
       featuresHTML += '</div>';
     }
 
-    // Gestione Link Approfondimento per Classi e Sottoclassi
     let linkHTML = '';
     const rawType = (item.type || '').toLowerCase();
     const rawCat = (item.category || '').toLowerCase();
@@ -210,10 +205,14 @@ function renderCards(items) {
 }
 
 function filterData() {
-  const query = document.getElementById('searchInput').value.toLowerCase().trim();
-  const selectedCategoryRaw = document.getElementById('categoryFilter').value.toLowerCase().trim();
+  const searchInput = document.getElementById('searchInput');
+  const categoryFilter = document.getElementById('categoryFilter');
+  const classFilter = document.getElementById('classFilter');
+
+  const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+  const selectedCategoryRaw = categoryFilter ? categoryFilter.value.toLowerCase().trim() : '';
   const selectedCategory = selectedCategoryRaw.replace(/['_ \-]/g, '');
-  const selectedClass = document.getElementById('classFilter').value.toLowerCase().trim();
+  const selectedClass = classFilter ? classFilter.value.toLowerCase().trim() : '';
 
   const filtered = allData.filter(item => {
     // 1. Ricerca Testuale
@@ -221,7 +220,9 @@ function filterData() {
     const nameEn = (item.name || '').toLowerCase();
     const matchesName = query === '' || nameIt.includes(query) || nameEn.includes(query);
 
-    // 2. Lettura dei tipi e categorie normalizzati
+    if (!matchesName) return false;
+
+    // 2. Lettura tipi e categorie
     const rawType = (item.type || '').toLowerCase().replace(/['_ \-]/g, '');
     const rawCat = (item.category || '').toLowerCase().replace(/['_ \-]/g, '');
 
@@ -229,11 +230,11 @@ function filterData() {
 
     if (selectedCategory === '') {
       matchesCategory = true;
-    } else if (selectedCategory === "talentoorigine") {
-      const isTalento = rawType.includes("talento") || rawCat.includes("talento");
-      const isOrigine = rawType.includes("origine") || rawCat.includes("origine");
-      matchesCategory = isTalento && isOrigine;
-    } else if (selectedCategory === "stiledicombattimento") {
+    } else if (selectedCategory === "talentoorigine" || selectedCategory === "origine") {
+      const isTalento = rawType.includes("talento") || rawCat.includes("talento") || rawType.includes("feat") || rawCat.includes("feat");
+      const isOrigine = rawType.includes("origine") || rawCat.includes("origine") || rawType.includes("origin") || rawCat.includes("origin");
+      matchesCategory = isOrigine || (isTalento && isOrigine);
+    } else if (selectedCategory === "stiledicombattimento" || selectedCategory === "stilecombattimento") {
       matchesCategory = rawType.includes("stile") || 
                         rawCat.includes("stile") || 
                         rawCat.includes("combattimento") || 
@@ -255,9 +256,10 @@ function filterData() {
     }
 
     if (!matchesCategory) return false;
-    if (selectedClass === '') return matchesName;
 
-    // 3. Classe di appartenenza (Supporta class_id, parent_class, class_it, class, classes)
+    // 3. Gestione Filtro Classe
+    if (selectedClass === '') return true;
+
     let parentClassString = '';
     const parentClass = item.class_id || item.parent_class || item.class_it || item.class || item.classes;
     
@@ -267,12 +269,15 @@ function filterData() {
       parentClassString = parentClass.toLowerCase();
     }
 
-    // Se l'elemento è un talento d'origine/generale (senza classe assegnata), mostra l'elemento quando viene applicata la ricerca
-    if (!parentClassString && (rawType.includes('talento') || rawCat.includes('talento'))) {
-      return matchesName;
+    // Se l'elemento è un talento/generico senza classe specificata nel JSON, non scartarlo
+    const isGenericItem = rawType.includes('talento') || rawCat.includes('talento') || 
+                          rawType.includes('background') || rawCat.includes('background') ||
+                          rawType.includes('razza') || rawCat.includes('razza');
+
+    if (!parentClassString && isGenericItem) {
+      return true;
     }
 
-    // Mappatura nomi delle Classi Italiano/Inglese per garantire il match
     const isArtificer = selectedClass.includes('artificer') || selectedClass.includes('artefice');
     const matchesArtificer = isArtificer && (parentClassString.includes('artificer') || parentClassString.includes('artefice'));
 
@@ -312,20 +317,25 @@ function filterData() {
     const isWarlock = selectedClass.includes('warlock') || selectedClass.includes('fattucchiere');
     const matchesWarlock = isWarlock && (parentClassString.includes('warlock') || parentClassString.includes('fattucchiere'));
 
-    const matchesClass = parentClassString.includes(selectedClass) || 
-                         matchesArtificer || matchesBarbarian || matchesBard || 
-                         matchesCleric || matchesDruid || matchesFighter || 
-                         matchesMonk || matchesWizard || matchesPaladin || 
-                         matchesRanger || matchesRogue || matchesSorcerer || matchesWarlock;
-
-    return matchesName && matchesClass;
+    return parentClassString.includes(selectedClass) || 
+           matchesArtificer || matchesBarbarian || matchesBard || 
+           matchesCleric || matchesDruid || matchesFighter || 
+           matchesMonk || matchesWizard || matchesPaladin || 
+           matchesRanger || matchesRogue || matchesSorcerer || matchesWarlock;
   });
 
   renderCards(filtered);
 }
 
-document.getElementById('searchInput').addEventListener('input', filterData);
-document.getElementById('categoryFilter').addEventListener('change', filterData);
-document.getElementById('classFilter').addEventListener('change', filterData);
+// Inizializzazione sicura degli EventListener
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('searchInput');
+  const categoryFilter = document.getElementById('categoryFilter');
+  const classFilter = document.getElementById('classFilter');
 
-loadData();
+  if (searchInput) searchInput.addEventListener('input', filterData);
+  if (categoryFilter) categoryFilter.addEventListener('change', filterData);
+  if (classFilter) classFilter.addEventListener('change', filterData);
+
+  loadData();
+});
