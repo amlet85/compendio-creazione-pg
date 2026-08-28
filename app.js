@@ -8,10 +8,45 @@ async function loadData() {
   try {
     const response = await fetch('character_data.json');
     allData = await response.json();
+    populateClassFilter(allData); // Popola automaticamente il menu a tendina delle classi
     renderCards(allData);
   } catch (error) {
     console.error('Errore nel caricamento del file JSON:', error);
   }
+}
+
+// Popola il select delle classi in base ai dati presenti nel JSON
+function populateClassFilter(data) {
+  const classFilter = document.getElementById('classFilter');
+  if (!classFilter) return;
+
+  const currentSelection = classFilter.value;
+  const classesSet = new Set();
+
+  data.forEach(item => {
+    const parent = item.parent_class || item.class_it || item.class_id || item.class || item.classes;
+    if (parent) {
+      if (Array.isArray(parent)) {
+        parent.forEach(c => classesSet.add(c.trim()));
+      } else if (typeof parent === 'string' && parent.trim() !== '') {
+        classesSet.add(parent.trim());
+      }
+    }
+  });
+
+  // Ordina alfabeticamente le classi
+  const sortedClasses = Array.from(classesSet).sort((a, b) => a.localeCompare(b));
+
+  classFilter.innerHTML = '<option value="">Tutte le Classi</option>';
+  sortedClasses.forEach(className => {
+    const option = document.createElement('option');
+    option.value = className;
+    option.textContent = className.charAt(0).toUpperCase() + className.slice(1);
+    if (className === currentSelection) {
+      option.selected = true;
+    }
+    classFilter.appendChild(option);
+  });
 }
 
 function getItemDescription(item) {
@@ -141,7 +176,6 @@ function renderCards(items) {
 function filterData() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
   const selectedCategoryRaw = document.getElementById('categoryFilter').value.toLowerCase().trim();
-  // Rimuove spazi, trattini e underscore per far combaciare "sotto-classe" e "sottoclasse"
   const selectedCategory = selectedCategoryRaw.replace(/['_ \-]/g, '');
   const selectedClass = document.getElementById('classFilter').value.toLowerCase().trim();
 
@@ -196,23 +230,50 @@ function filterData() {
     }
 
     // Mappatura nomi delle Classi Italiano/Inglese per garantire il match
-    const isBarbarian = selectedClass === 'barbarian' && (parentClassString.includes('barbarian') || parentClassString.includes('barbaro'));
-    const isBard = selectedClass === 'bard' && (parentClassString.includes('bard') || parentClassString.includes('bardo'));
-    const isCleric = selectedClass === 'cleric' && (parentClassString.includes('cleric') || parentClassString.includes('chierico'));
-    const isDruid = selectedClass === 'druid' && (parentClassString.includes('druid') || parentClassString.includes('druido'));
-    const isFighter = selectedClass === 'fighter' && (parentClassString.includes('fighter') || parentClassString.includes('guerriero'));
-    const isMonk = selectedClass === 'monk' && (parentClassString.includes('monk') || parentClassString.includes('monaco'));
-    const isWizard = selectedClass === 'wizard' && (parentClassString.includes('wizard') || parentClassString.includes('mago'));
-    const isPaladin = selectedClass === 'paladin' && (parentClassString.includes('paladin') || parentClassString.includes('paladino'));
-    const isRanger = selectedClass === 'ranger' && parentClassString.includes('ranger');
-    const isRogue = selectedClass === 'rogue' && (parentClassString.includes('rogue') || parentClassString.includes('ladro'));
-    const isSorcerer = selectedClass === 'sorcerer' && (parentClassString.includes('sorcerer') || parentClassString.includes('stregone'));
-    const isWarlock = selectedClass === 'warlock' && parentClassString.includes('warlock');
+    const isArtificer = selectedClass.includes('artificer') || selectedClass.includes('artefice');
+    const matchesArtificer = isArtificer && (parentClassString.includes('artificer') || parentClassString.includes('artefice'));
+
+    const isBarbarian = selectedClass.includes('barbarian') || selectedClass.includes('barbaro');
+    const matchesBarbarian = isBarbarian && (parentClassString.includes('barbarian') || parentClassString.includes('barbaro'));
+
+    const isBard = selectedClass.includes('bard') || selectedClass.includes('bardo');
+    const matchesBard = isBard && (parentClassString.includes('bard') || parentClassString.includes('bardo'));
+
+    const isCleric = selectedClass.includes('cleric') || selectedClass.includes('chierico');
+    const matchesCleric = isCleric && (parentClassString.includes('cleric') || parentClassString.includes('chierico'));
+
+    const isDruid = selectedClass.includes('druid') || selectedClass.includes('druido');
+    const matchesDruid = isDruid && (parentClassString.includes('druid') || parentClassString.includes('druido'));
+
+    const isFighter = selectedClass.includes('fighter') || selectedClass.includes('guerriero');
+    const matchesFighter = isFighter && (parentClassString.includes('fighter') || parentClassString.includes('guerriero'));
+
+    const isMonk = selectedClass.includes('monk') || selectedClass.includes('monaco');
+    const matchesMonk = isMonk && (parentClassString.includes('monk') || parentClassString.includes('monaco'));
+
+    const isWizard = selectedClass.includes('wizard') || selectedClass.includes('mago');
+    const matchesWizard = isWizard && (parentClassString.includes('wizard') || parentClassString.includes('mago'));
+
+    const isPaladin = selectedClass.includes('paladin') || selectedClass.includes('paladino');
+    const matchesPaladin = isPaladin && (parentClassString.includes('paladin') || parentClassString.includes('paladino'));
+
+    const isRanger = selectedClass.includes('ranger');
+    const matchesRanger = isRanger && parentClassString.includes('ranger');
+
+    const isRogue = selectedClass.includes('rogue') || selectedClass.includes('ladro');
+    const matchesRogue = isRogue && (parentClassString.includes('rogue') || parentClassString.includes('ladro'));
+
+    const isSorcerer = selectedClass.includes('sorcerer') || selectedClass.includes('stregone');
+    const matchesSorcerer = isSorcerer && (parentClassString.includes('sorcerer') || parentClassString.includes('stregone'));
+
+    const isWarlock = selectedClass.includes('warlock');
+    const matchesWarlock = isWarlock && parentClassString.includes('warlock');
 
     const matchesClass = parentClassString.includes(selectedClass) || 
-                         isBarbarian || isBard || isCleric || isDruid || 
-                         isFighter || isMonk || isWizard || isPaladin || 
-                         isRanger || isRogue || isSorcerer || isWarlock;
+                         matchesArtificer || matchesBarbarian || matchesBard || 
+                         matchesCleric || matchesDruid || matchesFighter || 
+                         matchesMonk || matchesWizard || matchesPaladin || 
+                         matchesRanger || matchesRogue || matchesSorcerer || matchesWarlock;
 
     return matchesName && matchesClass;
   });
