@@ -5190,15 +5190,15 @@
     ]
   },
   {
-    "id": "feat_alert",
-    "name": "Alert",
-    "name_it": "Allerta",
-    "type": "talento",
-    "category": "Origine",
-    "source_it": "Manuale del Giocatore 2024",
-    "prerequisite": "Nessuno",
-    "description_it": "Sei sempre vigile di fronte al pericolo.<br><br><strong>Benefici:</strong><br>• <strong>Iniziativa Aumentata:</strong> Aggiungi il tuo Bonus di Competenza al tiro di Iniziativa.<br>• <strong>Scambio di Iniziativa:</strong> Subito dopo aver tirato l'iniziativa, puoi scambiare il tuo valore di iniziativa con quello di un alleato disposta ed entro vista."
-  },
+  "id": "feat_alert",
+  "name": "Alert",
+  "name_it": "Allerta",
+  "type": "talento",
+  "category": "Talento d'Origine",
+  "source_it": "Manuale del Giocatore 2024",
+  "prerequisite": "Nessuno",
+  "description_it": "Sei sempre vigile di fronte al pericolo.<br><br><strong>Benefici:</strong><br>• <strong>Iniziativa Aumentata:</strong> Aggiungi il tuo Bonus di Competenza al tiro di Iniziativa.<br>• <strong>Scambio di Iniziativa:</strong> Subito dopo aver tirato l'iniziativa, puoi scambiare il tuo valore di iniziativa con quello di un alleato disposto ed entro vista."
+},
   {
     "id": "feat_crafter",
     "name": "Crafter",
