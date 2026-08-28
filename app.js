@@ -4,6 +4,36 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(err => console.log('SW error:', err));
 }
 
+// Mappatura per tradurre qualsiasi termine di classe (inglese o varianti) in italiano standard
+const classTranslationMap = {
+  'artificer': 'Artefice',
+  'artefice': 'Artefice',
+  'barbarian': 'Barbaro',
+  'barbaro': 'Barbaro',
+  'bard': 'Bardo',
+  'bardo': 'Bardo',
+  'cleric': 'Chierico',
+  'chierico': 'Chierico',
+  'druid': 'Druido',
+  'druido': 'Druido',
+  'fighter': 'Guerriero',
+  'guerriero': 'Guerriero',
+  'monk': 'Monaco',
+  'monaco': 'Monaco',
+  'paladin': 'Paladino',
+  'paladino': 'Paladino',
+  'ranger': 'Ranger',
+  'cacciatore (ranger)': 'Ranger',
+  'cacciatore': 'Ranger',
+  'rogue': 'Ladro',
+  'ladro': 'Ladro',
+  'sorcerer': 'Stregone',
+  'stregone': 'Stregone',
+  'warlock': 'Warlock',
+  'wizard': 'Mago',
+  'mago': 'Mago'
+};
+
 async function loadData() {
   try {
     const response = await fetch('character_data.json');
@@ -15,7 +45,7 @@ async function loadData() {
   }
 }
 
-// Popola il select delle classi in base ai dati presenti nel JSON
+// Popola il select delle classi mostrando solo i nomi in italiano ed eliminando i duplicati inglesi
 function populateClassFilter(data) {
   const classFilter = document.getElementById('classFilter');
   if (!classFilter) return;
@@ -26,23 +56,27 @@ function populateClassFilter(data) {
   data.forEach(item => {
     const parent = item.parent_class || item.class_it || item.class_id || item.class || item.classes;
     if (parent) {
-      if (Array.isArray(parent)) {
-        parent.forEach(c => classesSet.add(c.trim()));
-      } else if (typeof parent === 'string' && parent.trim() !== '') {
-        classesSet.add(parent.trim());
-      }
+      const parentArray = Array.isArray(parent) ? parent : [parent];
+      parentArray.forEach(c => {
+        if (typeof c === 'string' && c.trim() !== '') {
+          const key = c.trim().toLowerCase();
+          // Traduce in italiano se presente nel dizionario, altrimenti formatta la stringa
+          const translatedName = classTranslationMap[key] || (c.trim().charAt(0).toUpperCase() + c.trim().slice(1));
+          classesSet.add(translatedName);
+        }
+      });
     }
   });
 
-  // Ordina alfabeticamente le classi
-  const sortedClasses = Array.from(classesSet).sort((a, b) => a.localeCompare(b));
+  // Ordina alfabeticamente in italiano
+  const sortedClasses = Array.from(classesSet).sort((a, b) => a.localeCompare(b, 'it'));
 
   classFilter.innerHTML = '<option value="">Tutte le Classi</option>';
   sortedClasses.forEach(className => {
     const option = document.createElement('option');
-    option.value = className;
-    option.textContent = className.charAt(0).toUpperCase() + className.slice(1);
-    if (className === currentSelection) {
+    option.value = className.toLowerCase();
+    option.textContent = className;
+    if (className.toLowerCase() === currentSelection.toLowerCase()) {
       option.selected = true;
     }
     classFilter.appendChild(option);
@@ -257,8 +291,8 @@ function filterData() {
     const isPaladin = selectedClass.includes('paladin') || selectedClass.includes('paladino');
     const matchesPaladin = isPaladin && (parentClassString.includes('paladin') || parentClassString.includes('paladino'));
 
-    const isRanger = selectedClass.includes('ranger');
-    const matchesRanger = isRanger && parentClassString.includes('ranger');
+    const isRanger = selectedClass.includes('ranger') || selectedClass.includes('cacciatore');
+    const matchesRanger = isRanger && (parentClassString.includes('ranger') || parentClassString.includes('cacciatore'));
 
     const isRogue = selectedClass.includes('rogue') || selectedClass.includes('ladro');
     const matchesRogue = isRogue && (parentClassString.includes('rogue') || parentClassString.includes('ladro'));
