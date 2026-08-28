@@ -2052,6 +2052,319 @@
   ]
 },
 {
+    "id": "subclass_cleric_life",
+    "class_id": "cleric",
+    "name": "Life Domain",
+    "name_it": "Dominio della Vita",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Dominio della Vita si concentra sull'energia positiva primordiale che sostiene ogni forma di vita nel multiverso. I chierici che canalizzano questo dominio sono maestri delle arti curative, capaci di ripristinare la vitalità dei propri alleati e guarire anche le ferite più gravi.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Discepolo della Vita, Preservare Vita, Guaritore Benedetto, Guarigione Suprema.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Aiuto (Aid)</em>, <em>Benedizione (Bless)</em>, <em>Cura Ferite (Cure Wounds)</em>, <em>Ristorare Inferiore (Lesser Restoration)</em><br>• <strong>5° Livello:</strong> <em>Parola di Guarigione di Massa (Mass Healing Word)</em>, <em>Rinascita (Revivify)</em><br>• <strong>7° Livello:</strong> <em>Aura di Vita (Aura of Life)</em>, <em>Interdizione alla Morte (Death Ward)</em><br>• <strong>9° Livello:</strong> <em>Ristorare Superiore (Greater Restoration)</em>, <em>Cura Ferite di Massa (Mass Cure Wounds)</em>"
+      },
+      {
+        "name": "Discepolo della Vita (Disciple of Life)",
+        "level": 3,
+        "description": "Ogni volta che lanci un incantesimo usando uno slot incantesimo che ripristina Punti Ferita a una creatura, quella creatura recupera <strong>Punti Ferita aggiuntivi</strong> nel turno in cui lanci l'incantesimo pari a <strong>2 + il livello dello slot incantesimo utilizzato</strong>."
+      },
+      {
+        "name": "Preservare Vita (Preserve Life)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Magica</strong>, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per evocare un'energia curativa in grado di ripristinare un ammontare di Punti Ferita pari a <strong>5 volte il tuo livello da Chierico</strong>.<br><br>Scegli qualsiasi creatura <em>Ferita (Bloodied)</em> entro 9 metri da te (incluso te stesso) e distribuisci questi Punti Ferita tra di esse. Questo privilegio può curare una creatura <strong>fino a un massimo della metà dei suoi Punti Ferita Massimi</strong>."
+      },
+      {
+        "name": "Guaritore Benedetto (Blessed Healer)",
+        "level": 6,
+        "description": "Gli incantesimi di cura che lanci sugli altri curano anche te stesso. Subito dopo aver lanciato un incantesimo con uno slot incantesimo che ripristina Punti Ferita a una o più creature diverse da te, <strong>recuperi Punti Ferita pari a 2 + il livello dello slot incantesimo utilizzato</strong>."
+      },
+      {
+        "name": "Guarigione Suprema (Supreme Healing)",
+        "level": 17,
+        "description": "Quando dovresti normalmente tirare uno o più dadi per ripristinare Punti Ferita a una creatura tramite un incantesimo o Incanalare Divinità, non tirare i dadi: <strong>utilizza invece il valore massimo possibile per ogni dado</strong> (ad esempio, invece di tirare 2d6 per la cura, ripristini direttamente 12 Punti Ferita)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_cleric_forge",
+    "class_id": "cleric",
+    "name": "Forge Domain",
+    "name_it": "Dominio della Fucina",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "I chierici della fucina sono artigiani che lavorano il metallo, capaci di trasformare un grezzo blocco di minerale in uno splendido oggetto d'arte o di guerra. Fieri del proprio lavoro, indossano armature pesanti e brandiscono potenti armi per proteggere le arti della creazione e scacciare le forze dell'oscurità.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Competenza Bonus, Benedizione della Fucina, Benedizione dell'Artigiano, Anima della Fucina, Colpo Divino, Santo della Fucina e del Fuoco.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Identificare (Identify)</em>, <em>Punizione Rovente (Searing Smite)</em>, <em>Riscaldare Metallo (Heat Metal)</em>, <em>Arma Magica (Magic Weapon)</em><br>• <strong>5° Livello:</strong> <em>Arma Elementale (Elemental Weapon)</em>, <em>Protezione dagli Elementi (Protection from Energy)</em><br>• <strong>7° Livello:</strong> <em>Fabbricare (Fabricate)</em>, <em>Muro di Fuoco (Wall of Fire)</em><br>• <strong>9° Livello:</strong> <em>Animare Oggetti (Animate Objects)</em>, <em>Creazione (Creation)</em>"
+      },
+      {
+        "name": "Competenza Bonus (Bonus Proficiency)",
+        "level": 3,
+        "description": "Ottieni la competenza nelle <strong>Armature Pesanti</strong> e negli <strong>Strumenti da Fabbro (Smith's Tools)</strong>."
+      },
+      {
+        "name": "Benedizione della Fucina (Blessing of the Forge)",
+        "level": 3,
+        "description": "Al termine di un riposo lungo, puoi toccare un oggetto non magico che sia un'armatura oppure un'arma semplice o da guerra.<br><br>Fino al termine del tuo riposo lungo successivo (o finché non muori), l'oggetto diventa un oggetto magico, conferendo un <strong>bonus di +1 alla CA</strong> se è un'armatura, oppure un <strong>bonus di +1 ai tiri per colpire e ai danni</strong> se è un'arma. Usabile una volta per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Benedizione dell'Artigiano (Artisan's Blessing)",
+        "level": 3,
+        "description": "Puoi usare Incanalare Divinità per condurre un <strong>rituale di 1 ora</strong> che crea un oggetto non magico contenente metallo (un'arma semplice o da guerra, un'armatura, 10 munizioni, un set di strumenti o un altro oggetto metallico) del valore massimo di <strong>100 mo</strong>.<br><br>Come parte del rituale, devi disporre metallo o monete per un valore pari all'oggetto creato, che viene trasformato irrimediabilmente. Puoi anche creare un duplicato di un oggetto non magico esistente (come una chiave) se ne possiedi l'originale durante il rituale."
+      },
+      {
+        "name": "Anima della Fucina (Soul of the Forge)",
+        "level": 6,
+        "description": "La tua maestria nella fucina ti dona i seguenti benefici:<br>• Ottieni <strong>Resistenza ai danni da Fuoco</strong>.<br>• Mentre indossi un'armatura pesante, ottieni un <strong>bonus di +1 alla CA</strong>."
+      },
+      {
+        "name": "Colpo Divino (Divine Strike)",
+        "level": 8,
+        "description": "Una volta in ciascuno dei tuoi turni, quando colpisci una creatura con un attacco con arma, puoi far sì che l'attacco infligga <strong>1d8 danni da Fuoco aggiuntivi</strong> al bersaglio.<br><br>Quando raggiungi il <strong>14° livello</strong>, il danno aggiuntivo aumenta a <strong>2d8</strong>."
+      },
+      {
+        "name": "Santo della Fucina e del Fuoco (Saint of Forge and Fire)",
+        "level": 17,
+        "description": "La tua affinità benedetta con il fuoco e il metallo si rafforza:<br>• Ottieni <strong>Immunità ai danni da Fuoco</strong>.<br>• Mentre indossi un'armatura pesante, hai <strong>Resistenza ai danni Contondentali, Perforanti e Taglienti</strong> derivanti da attacchi non magici."
+      }
+    ]
+  },
+  {
+    "id": "subclass_cleric_light",
+    "class_id": "cleric",
+    "name": "Light Domain",
+    "name_it": "Dominio della Luce",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Dominio della Luce incarna il potere divino della fiamma sfolgorante e della rivelazione. I chierici che imbracciano questo potere dissipano le tenebre, smascherano le menzogne ed purificano il male attraverso la radianza e il fuoco sacro.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Radianza dell'Alba, Bagliore Difensivo, Bagliore Difensivo Migliorato, Corona di Luce.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Mani Brucianti (Burning Hands)</em>, <em>Fuoco Fata (Faerie Fire)</em>, <em>Raggio Rovente (Scorching Ray)</em>, <em>Vedere l'Invisibilità (See Invisibility)</em><br>• <strong>5° Livello:</strong> <em>Luce del Giorno (Daylight)</em>, <em>Palla di Fuoco (Fireball)</em><br>• <strong>7° Livello:</strong> <em>Occhio Arcano (Arcane Eye)</em>, <em>Muro di Fuoco (Wall of Fire)</em><br>• <strong>9° Livello:</strong> <em>Colpo Infuocato (Flame Strike)</em>, <em>Scrutare (Scrying)</em>"
+      },
+      {
+        "name": "Radianza dell'Alba (Radiance of the Dawn)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Magica</strong>, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per emettere un lampo di luce in un'<strong>Emanazione di 9 metri</strong> originata da te. Ogni oscurità magica (come quella creata dall'incantesimo <em>Oscurità</em>) nell'area viene dissolta.<br><br>Inoltre, ogni creatura a tua scelta nell'area deve effettuare un <strong>Tiro Salvezza su Costituzione</strong>: subisce <strong>2d10 + il tuo livello da Chierico</strong> di danni Radiosi se fallisce, oppure la metà dei danni se ha successo."
+      },
+      {
+        "name": "Bagliore Difensivo (Warding Flare)",
+        "level": 3,
+        "description": "Quando una creatura che puoi vedere entro 9 metri da te effettua un tiro per colpire, puoi usare la tua <strong>Reazione</strong> per <strong>imporre Svantaggio al tiro per colpire</strong>, facendo balenare una luce improvvisa prima che il colpo vada a segno o fallisca.<br><br>Puoi utilizzare questo privilegio un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1). Recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Bagliore Difensivo Migliorato (Improved Warding Flare)",
+        "level": 6,
+        "description": "Recuperi tutti gli usi spesi di Bagliore Difensivo quando completi un <strong>Riposo Breve o Lungo</strong>.<br><br>Inoltre, ogni volta che utilizzi Bagliore Difensivo, puoi conferire al bersaglio dell'attacco attivante un ammontare di <strong>Punti Ferita Temporanei pari a 2d6 + il tuo Modificatore di Saggezza</strong>."
+      },
+      {
+        "name": "Corona di Luce (Corona of Light)",
+        "level": 17,
+        "description": "Con un'<strong>Azione Magica</strong>, emetti un'aura di luce solare per <strong>1 minuto</strong> (o finché non la interrompi, senza richiedere un'azione). Emetti <strong>Luce Intensa per un raggio di 18 metri</strong> e Luce Fioca per ulteriori 9 metri.<br><br>I tuoi nemici presenti nella Luce Intensa hanno <strong>Svantaggio ai tiri salvezza</strong> contro la tua Radianza dell'Alba e contro qualsiasi incantesimo che infligga danni da Fuoco o Radiosi.<br><br>Puoi utilizzare questo privilegio un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1) e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_cleric_trickery",
+    "class_id": "cleric",
+    "name": "Trickery Domain",
+    "name_it": "Dominio dell'Inganno",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Dominio dell'Inganno offre la magia dell'illusione, del camuffamento e della furtività. I chierici che imbracciano questo potere sono una forza sovversiva che preferisce il sotterfugio, lo scherzo e l'astuzia allo scontro diretto, sfidando la tirannia e l'ordine costituito.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Benedizione del Raggiratore, Invocare Duplicità, Trasposizione del Raggiratore, Duplicità Migliorata.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Ammaliare Persone (Charm Person)</em>, <em>Camuffare Se Stesso (Disguise Self)</em>, <em>Invisibilità (Invisibility)</em>, <em>Passare Senza Traccia (Pass without Trace)</em><br>• <strong>5° Livello:</strong> <em>Trama Ipnotica (Hypnotic Pattern)</em>, <em>Anti-Individuazione (Nondetection)</em><br>• <strong>7° Livello:</strong> <em>Confusione (Confusion)</em>, <em>Porta Dimensionale (Dimension Door)</em><br>• <strong>9° Livello:</strong> <em>Dominare Persone (Dominate Person)</em>, <em>Modificare Memoria (Modify Memory)</em>"
+      },
+      {
+        "name": "Benedizione del Raggiratore (Blessing of the Trickster)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Magica</strong>, puoi scegliere te stesso o una creatura consensuale entro 9 metri da te per conferirle <strong>Vantaggio alle prove di Destrezza (Furtività)</strong>.<br><br>Questa benedizione dura finché non completi un <strong>Riposo Lungo</strong> o finché non utilizzi nuovamente questo privilegio."
+      },
+      {
+        "name": "Invocare Duplicità (Invoke Duplicity)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi spendere un uso di Incanalare Divinità per creare un'illusione visiva perfetta di te stesso in uno spazio non occupato entro 9 metri da te. L'illusione è intangibile, dura <strong>1 minuto</strong> (o finché non la interrompi senza richiedere un'azione, oppure se subisci la condizione <em>Incapace</em>) e imita le tue espressioni e gesti.<br><br>Mentre l'illusione persiste, ottieni i seguenti benefici:<br>• <strong>Lanciare Incantesimi:</strong> Puoi lanciare incantesimi come se ti trovassi nello spazio dell'illusione, ma devi utilizzare i tuoi sensi.<br>• <strong>Distrazione:</strong> Quando sia tu che la tua illusione vi trovate entro 1,5 metri da una creatura in grado di vedere l'illusione, hai <strong>Vantaggio ai tiri per colpire</strong> contro di essa.<br>• <strong>Muovere:</strong> Con un'<strong>Azione Bonus</strong>, puoi muovere l'illusione fino a 9 metri verso uno spazio non occupato visibile entro 36 metri da te."
+      },
+      {
+        "name": "Trasposizione del Raggiratore (Trickster’s Transposition)",
+        "level": 6,
+        "description": "Ogni volta che usi l'<strong>Azione Bonus</strong> per creare o muovere l'illusione di Invocare Duplicità, puoi <strong>teleportarti</strong>, scambiandoti di posto con l'illusione."
+      },
+      {
+        "name": "Duplicità Migliorata (Improved Duplicity)",
+        "level": 17,
+        "description": "L'illusione della tua Invocare Duplicità diventa più potente nei seguenti modi:<br>• <strong>Distrazione Condivisa:</strong> Quando tu e i tuoi alleati effettuate tiri per colpire contro una creatura entro 1,5 metri dall'illusione, i tiri per colpire hanno <strong>Vantaggio</strong>.<br>• <strong>Illusione Curativa:</strong> Quando l'illusione termina, tu o una creatura a tua scelta entro 1,5 metri da essa recuperate un ammontare di <strong>Punti Ferita pari al tuo livello da Chierico</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_cleric_war",
+    "class_id": "cleric",
+    "name": "War Domain",
+    "name_it": "Dominio della Guerra",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Dominio della Guerra incarna la battaglia in tutte le sue forme, dall'eroismo alla distruzione. I chierici di questo dominio eccellono nel combattimento ravvicinato, ispirando i propri alleati sul campo di battaglia o offrendo atti di violenza come preghiere alle loro divinità.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Colpo Guidato, Sacerdote di Guerra, Benedizione del Dio della Guerra, Avatar della Battaglia.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Dardo Tracciante (Guiding Bolt)</em>, <em>Arma Magica (Magic Weapon)</em>, <em>Scudo della Fede (Shield of Faith)</em>, <em>Arma Spirituale (Spiritual Weapon)</em><br>• <strong>5° Livello:</strong> <em>Mantello del Crociato (Crusader's Mantle)</em>, <em>Spiriti Custodi (Spirit Guardians)</em><br>• <strong>7° Livello:</strong> <em>Scudo di Fuoco (Fire Shield)</em>, <em>Libertà di Movimento (Freedom of Movement)</em><br>• <strong>9° Livello:</strong> <em>Blocca Mostri (Hold Monster)</em>, <em>Assalto del Vento d'Acciaio (Steel Wind Strike)</em>"
+      },
+      {
+        "name": "Colpo Guidato (Guided Strike)",
+        "level": 3,
+        "description": "Quando tu o una creatura entro 9 metri da te fallite un tiro per colpire, puoi spendere un uso di Incanalare Divinità per conferire a quel tiro un <strong>bonus di +10</strong>, potendo così trasformare il fallimento in un colpo a segno.<br><br>Quando usi questo privilegio per beneficiare il tiro per colpire di un'altra creatura, devi utilizzare la tua <strong>Reazione</strong> per farlo."
+      },
+      {
+        "name": "Sacerdote di Guerra (War Priest)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi effettuare un attacco con un'arma o un Colpo Senz'Armi.<br><br>Puoi utilizzare questa Azione Bonus un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1). Recuperi tutti gli usi spesi quando completi un <strong>Riposo Breve o Lungo</strong>."
+      },
+      {
+        "name": "Benedizione del Dio della Guerra (War God’s Blessing)",
+        "level": 6,
+        "description": "Puoi spendere un uso di Incanalare Divinità per lanciare <em>Scudo della Fede</em> o <em>Arma Spirituale</em> senza spendere uno slot incantesimo.<br><br>Quando lanci uno di questi incantesimi in questo modo, l'incantesimo <strong>non richiede Concentrazione</strong>. Invece, dura per <strong>1 minuto</strong> (l'effetto termina prima se lanci nuovamente quel determinato incantesimo, se subisci la condizione <em>Incapace</em> o se muori)."
+      },
+      {
+        "name": "Avatar della Battaglia (Avatar of Battle)",
+        "level": 17,
+        "description": "Ottieni <strong>Resistenza ai danni Contondentali, Perforanti e Taglienti</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_cleric_twilight",
+    "class_id": "cleric",
+    "name": "Twilight Domain",
+    "name_it": "Dominio del Crepuscolo",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "La transizione crepuscolare dalla luce all'oscurità porta riposo e conforto, ma può celare tremendi terrori. I chierici del Dominio del Crepuscolo proteggono i viandanti dalle insidie della notte, vegliando sul loro sonno e avventurandosi nell'oscurità per garantire che il buio rimanga un luogo di ristoro e non di terrore.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Occhi della Notte, Benedizione Vigilante, Santuario Crepuscolare, Passi della Notte, Sudario Crepuscolare.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Fuoco Fata (Faerie Fire)</em>, <em>Sonno (Sleep)</em>, <em>Raggio di Luna (Moonbeam)</em>, <em>Vedere l'Invisibilità (See Invisibility)</em><br>• <strong>5° Livello:</strong> <em>Aura di Vitalità (Aura of Vitality)</em>, <em>Capanna Piccola di Leomund (Leomund's Tiny Hut)</em><br>• <strong>7° Livello:</strong> <em>Aura di Vita (Aura of Life)</em>, <em>Invisibilità Superiore (Greater Invisibility)</em><br>• <strong>9° Livello:</strong> <em>Cerchio di Potere (Circle of Power)</em>, <em>Traviare (Mislead)</em>"
+      },
+      {
+        "name": "Occhi della Notte (Eyes of Night)",
+        "level": 3,
+        "description": "Ottieni <strong>Scurovisione fino a un raggio di 90 metri</strong>. In quel raggio puoi vedere nella luce fioca come se fosse intensa e nell'oscurità come se fosse luce fioca.<br><br>Con un'<strong>Azione</strong>, puoi condividere questa Scurovisione con un numero di creature consensuali entro 3 metri pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1) per <strong>1 ora</strong>. Una volta condivisa, non puoi farlo di nuovo fino a un <strong>Riposo Lungo</strong>, a meno che non spenda uno slot incantesimo di qualsiasi livello."
+      },
+      {
+        "name": "Benedizione Vigilante (Vigilant Blessing)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, tocchi una creatura (incluso te stesso) e le conferisci <strong>Vantaggio al tiro per l'Iniziativa successivo</strong>.<br><br>Questo beneficio termina immediatamente dopo il tiro di Iniziativa o se utilizzi nuovamente questo privilegio su un'altra creatura."
+      },
+      {
+        "name": "Santuario Crepuscolare (Twilight Sanctuary)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per creare una sfera di luce fioca con un <strong>raggio di 9 metri</strong> centrata su di te, che ti segue nei movimenti per <strong>1 minuto</strong> (o finché non sei Incapace o muori).<br><br>Ogni volta che una creatura (incluso te) termina il proprio turno nella sfera, puoi concederle uno dei seguenti benefici:<br>• Le conferisci <strong>Punti Ferita Temporanei pari a 1d6 + il tuo livello da Chierico</strong>.<br>• Termini una condizione di <strong>Affascinato</strong> o <strong>Spaventato</strong> attiva su di essa."
+      },
+      {
+        "name": "Passi della Notte (Steps of Night)",
+        "level": 6,
+        "description": "Quando ti trovi in condizioni di luce fioca o oscurità, puoi usare un'<strong>Azione Bonus</strong> per ottenere una <strong>Velocità di Volo pari alla tua Velocità di camminata</strong> per <strong>1 minuto</strong>.<br><br>Puoi usare questa Azione Bonus un numero di volte pari al tuo <strong>Bonus di Competenza</strong>. Recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Sudario Crepuscolare (Twilight Shroud)",
+        "level": 17,
+        "description": "Il crepuscolo che evochi offre una protezione ancora più salda: tu e i tuoi alleati ottenete <strong>Copertura Mezza (+2 alla CA e ai tiri salvezza su Destrezza)</strong> mentre vi trovate all'interno della sfera creata da Santuario Crepuscolare."
+      }
+    ]
+  },
+  {
+    "id": "subclass_cleric_order",
+    "class_id": "cleric",
+    "name": "Order Domain",
+    "name_it": "Dominio dell'Ordine",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "Il Dominio dell'Ordine rappresenta la disciplina, la logica e la rigida devozione alle leggi che governano la società e l'universo. I chierici dell'Ordine credono fermamente che una gerarchia ben strutturata porti sicurezza nel caos, impiegando la loro magia per guidare gli alleati e assoggettare i nemici all'autorità.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Competenze Bonus, Voce dell'Autorità, Comando dell'Ordine, Incarnazione della Legge, Ira dell'Ordine.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Comando (Command)</em>, <em>Eroismo (Heroism)</em>, <em>Blocca Persone (Hold Person)</em>, <em>Zona di Verità (Zone of Truth)</em><br>• <strong>5° Livello:</strong> <em>Parola di Guarigione di Massa (Mass Healing Word)</em>, <em>Lentezza (Slow)</em><br>• <strong>7° Livello:</strong> <em>Costrizione (Compulsion)</em>, <em>Localizza Creatura (Locate Creature)</em><br>• <strong>9° Livello:</strong> <em>Comunione (Commune)</em>, <em>Dominare Persone (Dominate Person)</em>"
+      },
+      {
+        "name": "Competenze Bonus (Bonus Proficiencies)",
+        "level": 3,
+        "description": "Ottieni la competenza nelle <strong>Armature Pesanti</strong>.<br><br>Ottieni inoltre la competenza in un'abilità a tua scelta tra <strong>Intimidire</strong> o <strong>Persuasione</strong>."
+      },
+      {
+        "name": "Voce dell'Autorità (Voice of Authority)",
+        "level": 3,
+        "description": "Puoi invocare il potere della legge per spronare un alleato all'attacco. Se lanci un incantesimo utilizzando uno slot incantesimo di 1° livello o superiore e scegli come bersaglio un alleato, quell'alleato può usare immediatamente la sua <strong>Reazione</strong> dopo l'incantesimo per effettuare <strong>un attacco con arma</strong> contro una creatura a tua scelta che puoi vedere.<br><br>Se l'incantesimo include più alleati tra i bersagli, scegli tu quale alleato può effettuare l'attacco."
+      },
+      {
+        "name": "Comando dell'Ordine (Order's Demand)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, mostri il tuo Simbolo Sacro e spendi un uso di Incanalare Divinità per esercitare una presenza intimidatoria. Ogni creatura a tua scelta entro 9 metri da te che possa vederti o sentirti deve superare un <strong>Tiro Salvezza su Saggezza</strong> o rimanere <strong>Affascinata</strong> da te fino alla fine del tuo turno successivo (l'effetto termina prima se la creatura subisce danni).<br><br>Puoi anche far sì che le creature che falliscono il tiro salvezza lascino immediatamente cadere ciò che stanno impugnando."
+      },
+      {
+        "name": "Incarnazione della Legge (Embodiment of the Law)",
+        "level": 6,
+        "description": "Se lanci un incantesimo della scuola di <strong>Ammaliamento</strong> utilizzando uno slot incantesimo di 1° livello o superiore, puoi modificarne il tempo di lancio in <strong>1 Azione Bonus</strong> per quel lancio, a condizione che il tempo di lancio normale sia di 1 azione.<br><br>Puoi utilizzare questo privilegio un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1). Recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Ira dell'Ordine (Order's Wrath)",
+        "level": 17,
+        "description": "Se infliggi i danni del tuo Colpo Divino a una creatura nel tuo turno, puoi maledire quella creatura fino all'inizio del tuo turno successivo.<br><br>La volta successiva che un tuo alleato colpisce la creatura maledetta con un attacco, il bersaglio subisce anche <strong>2d8 danni psichici aggiuntivi</strong> e la maledizione termina. Puoi maledire una creatura in questo modo solo una volta per turno."
+      }
+    ]
+  },
+  {
+    "id": "subclass_cleric_peace",
+    "class_id": "cleric",
+    "name": "Peace Domain",
+    "name_it": "Dominio della Pace",
+    "type": "sottoclasse",
+    "source_it": "Manuale Integrativo",
+    "description_it": "Il Dominio della Pace promuove la risoluzione dei conflitti e l'armonia tra i popoli. I chierici di questo dominio agiscono come mediatori e arbitri, unendo gli individui e canalizzando una magia che protegge gli alleati, permette loro di condividere i fardelli del combattimento e diffonde un balsamo lenitivo sul campo di battaglia.<br><br><strong>Classe Madre:</strong> Chierico<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Dominio, Strumento di Pace, Legame Incoraggiante, Balsamo di Pace, Legame Protettivo, Legame Espanso.",
+    "features": [
+      {
+        "name": "Incantesimi del Dominio (Domain Spells)",
+        "level": 3,
+        "description": "La tua connessione con questo dominio ti garantisce di avere sempre pronti determinati incantesimi al raggiungimento di specifici livelli da Chierico:<br>• <strong>3° Livello:</strong> <em>Eroismo (Heroism)</em>, <em>Santuario (Sanctuary)</em>, <em>Aiuto (Aid)</em>, <em>Legame Protettivo (Warding Bond)</em><br>• <strong>5° Livello:</strong> <em>Faro di Speranza (Beacon of Hope)</em>, <em>Inviare (Sending)</em><br>• <strong>7° Livello:</strong> <em>Aura di Purificazione (Aura of Purity)</em>, <em>Sfera Resiliente di Otiluke (Otiluke's Resilient Sphere)</em><br>• <strong>9° Livello:</strong> <em>Ristorare Superiore (Greater Restoration)</em>, <em>Legame Telepatico di Rary (Rary's Telepathic Bond)</em>"
+      },
+      {
+        "name": "Strumento di Pace (Implement of Peace)",
+        "level": 3,
+        "description": "Ottieni la competenza in un'abilità a tua scelta tra <strong>Intuizione</strong>, <strong>Intrattenere</strong> o <strong>Persuasione</strong>."
+      },
+      {
+        "name": "Legame Incoraggiante (Emboldening Bond)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, puoi scegliere un numero di creature consensuali entro 9 metri da te (incluso te stesso) pari al tuo <strong>Bonus di Competenza</strong> per creare un legame magico della durata di <strong>10 minuti</strong> (o finché non usi di nuovo il privilegio).<br><br>Mentre una creatura legata si trova entro 9 metri da un'altra creatura legata, può tirare <strong>un d4 da aggiungere a un tiro per colpire, una prova di caratteristica o un tiro salvezza</strong> (massimo una volta per turno). Usabile un numero di volte pari al tuo Bonus di Competenza per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Balsamo di Pace (Balm of Peace)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, puoi spendere un uso di Incanalare Divinità per <strong>muoverti fino alla tua Velocità senza provocare attacchi di opportunità</strong>.<br><br>Quando ti muovi entro 1,5 metri da un'altra creatura durante questo movimento, le fai recuperare <strong>2d6 + il tuo Modificatore di Saggezza</strong> Punti Ferita (minimo 1 PF). Ogni creatura può ricevere questa cura solo una volta per ciascuna attivazione del privilegio."
+      },
+      {
+        "name": "Legame Protettivo (Protective Bond)",
+        "level": 6,
+        "description": "Quando una creatura influenzata dal tuo Legame Incoraggiante sta per subire danni, una seconda creatura legata situata entro 9 metri da essa può usare la propria <strong>Reazione</strong> per <strong>teleportarsi in uno spazio libero entro 1,5 metri dalla prima</strong>.<br><br>La seconda creatura subisce tutti i danni al posto della creatura originale."
+      },
+      {
+        "name": "Legame Espanso (Expansive Bond)",
+        "level": 17,
+        "description": "I benefici di Legame Incoraggiante e Legame Protettivo ora funzionano quando le creature si trovano entro <strong>18 metri</strong> l'una dall'altra.<br><br>Inoltre, quando una creatura usa Legame Protettivo per subire i danni al posto di un'altra, ottieni <strong>Resistenza a quei danni</strong>."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
