@@ -210,8 +210,7 @@ function filterData() {
   const classFilter = document.getElementById('classFilter');
 
   const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
-  const selectedCategoryRaw = categoryFilter ? categoryFilter.value.toLowerCase().trim() : '';
-  const selectedCategory = selectedCategoryRaw.replace(/['_ \-]/g, '');
+  const selectedCategory = categoryFilter ? categoryFilter.value.toLowerCase().trim() : '';
   const selectedClass = classFilter ? classFilter.value.toLowerCase().trim() : '';
 
   const filtered = allData.filter(item => {
@@ -222,7 +221,7 @@ function filterData() {
 
     if (!matchesName) return false;
 
-    // 2. Lettura tipi e categorie
+    // 2. Lettura tipi e categorie puliti
     const rawType = (item.type || '').toLowerCase().trim();
     const rawCat = (item.category || '').toLowerCase().trim();
 
@@ -230,38 +229,20 @@ function filterData() {
 
     if (selectedCategory === '') {
       matchesCategory = true;
-    } else if (selectedCategory === "talentoorigine" || selectedCategory === "origine") {
-      const isTalento = rawType.includes("talento") || rawCat.includes("talento") || rawType.includes("feat") || rawCat.includes("feat");
-      const isOrigine = rawType.includes("origine") || rawCat.includes("origine") || rawType.includes("origin") || rawCat.includes("origin");
-      matchesCategory = isOrigine || (isTalento && isOrigine);
-    } else if (selectedCategory === "stiledicombattimento" || selectedCategory === "stilecombattimento") {
-      matchesCategory = rawType.includes("stile") || 
-                        rawCat.includes("stile") || 
-                        rawCat.includes("combattimento") || 
-                        rawType.includes("fighting") || 
-                        rawCat.includes("fighting");
-    } else if (selectedCategory === "talentogenerale") {
+    } else if (selectedCategory === "talento_origine" || selectedCategory === "talento d'origine") {
+      matchesCategory = rawType.includes("origine") || rawCat.includes("origine") || rawCat.includes("origin");
+    } else if (selectedCategory === "stile_di_combattimento" || selectedCategory === "stile di combattimento") {
+      matchesCategory = rawType.includes("stile") || rawCat.includes("stile") || rawCat.includes("combattimento") || rawCat.includes("fighting");
+    } else if (selectedCategory === "talento_generale" || selectedCategory === "talento generale") {
       const isOrigin = rawCat.includes("origine") || rawType.includes("origine");
       const isFightingStyle = rawCat.includes("stile") || rawCat.includes("combattimento") || rawType.includes("stile");
       matchesCategory = (rawType.includes("talento") || rawCat.includes("talento")) && !isOrigin && !isFightingStyle;
-    } else if (selectedCategory === "armi" || selectedCategory === "arma") {
-      // Escludiamo tassativamente qualsiasi riferimento alle armature
-      const isArmor = rawType.includes("armatur") || rawCat.includes("armatur") || 
-                      rawType.includes("armor") || rawCat.includes("armor");
-                      
-      const isWeapon = rawType.includes("armi") || rawCat.includes("armi") || 
-                       rawType === "arma" || rawCat === "arma" || 
-                       rawType.includes("weapon") || rawCat.includes("weapon");
-                       
-      matchesCategory = isWeapon && !isArmor;
-    } else if (selectedCategory === "armature" || selectedCategory === "armatura") {
-      matchesCategory = rawType.includes("armatur") || rawCat.includes("armatur") || 
-                        rawType.includes("armor") || rawCat.includes("armor") || 
-                        rawCat.includes("scudo") || rawCat.includes("shield");
+    } else if (selectedCategory === "armi") {
+      matchesCategory = rawType.includes("armi") || rawCat.includes("armi") || rawType.includes("weapons") || rawCat.includes("weapons");
+    } else if (selectedCategory === "armature") {
+      matchesCategory = rawType.includes("armature") || rawCat.includes("armature") || rawType.includes("armors") || rawCat.includes("armors") || rawCat.includes("scudo") || rawCat.includes("shield");
     } else if (selectedCategory === "equipaggiamento") {
-      const isWeaponOrArmor = rawType.includes("armi") || rawType.includes("arma") || 
-                              rawType.includes("armatur") || rawCat.includes("armatur") || 
-                              rawType.includes("weapon") || rawType.includes("armor");
+      const isWeaponOrArmor = rawType.includes("armi") || rawCat.includes("armi") || rawType.includes("armature") || rawCat.includes("armature") || rawType.includes("weapons") || rawCat.includes("armors");
       matchesCategory = (rawType.includes("equip") || rawCat.includes("equip")) && !isWeaponOrArmor;
     } else {
       matchesCategory = rawType.includes(selectedCategory) || rawCat.includes(selectedCategory);
@@ -281,6 +262,7 @@ function filterData() {
       parentClassString = parentClass.toLowerCase();
     }
 
+    // Se l'elemento è privo di classe ed è generico, lo mantiene
     const isGenericItem = rawType.includes('talento') || rawCat.includes('talento') || 
                           rawType.includes('origine') || rawCat.includes('origine') || 
                           rawType.includes('background') || rawCat.includes('background') ||
@@ -339,7 +321,7 @@ function filterData() {
   renderCards(filtered);
 }
 
-// Inizializzazione degli EventListener
+// Inizializzazione sicura degli EventListener
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput');
   const categoryFilter = document.getElementById('categoryFilter');
