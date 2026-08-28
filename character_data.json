@@ -3017,6 +3017,129 @@
     ]
   },
   {
+    "id": "subclass_fighter_arcane_archer",
+    "class_id": "fighter",
+    "name": "Arcane Archer",
+    "name_it": "Arciere Arcano",
+    "type": "sottoclasse",
+    "source_it": "Guida Omnicomprensiva di Xanathar",
+    "description_it": "Un Arciere Arcano studia un metodo elfico unico di tiro con l'arco che intreccia la magia negli attacchi per produrre effetti soprannaturali. Gli Arcieri Arcani sono tra i guerrieri più d'élite tra gli elfi. Vigilano ai margini dei domini elfici, tenendo d'occhio gli intrusi e usando frecce infuse di magia per sconfiggere mostri e invasori prima che possano raggiungere gli insediamenti elfici. Nel corso dei secoli, i metodi di questi arcieri elfi sono stati appresi da membri di altre razze in grado di bilanciare l'attitudine arcana con il tiro con l'arco.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Conoscenza dell'Arciere Arcano, Tiro Arcano, Freccia Magica, Freccia Curva, Tiro Sempre Pronto.",
+    "features": [
+      {
+        "name": "Conoscenza dell'Arciere Arcano (Arcane Archer Lore)",
+        "level": 3,
+        "description": "Impari la teoria magica o alcuni dei segreti della natura, tipici dei praticanti di questa tradizione marziale elfica. Scegli di ottenere la competenza nell'abilità <strong>Arcano</strong> o <strong>Natura</strong>, e scegli di imparare il trucchetto <em>Prestidigitazione</em> o <em>Druidismo</em>."
+      },
+      {
+        "name": "Tiro Arcano (Arcane Shot)",
+        "level": 3,
+        "description": "Impari a scatenare speciali effetti magici con alcuni dei tuoi tiri. Quando ottieni questo privilegio, impari due opzioni di Tiro Arcano a tua scelta.<br><br>Una volta per turno, quando scagli una freccia da un arco corto o da un arco lungo come parte dell'azione di Attacco, puoi applicare un'opzione di Tiro Arcano a quella freccia. Decidi di usare l'opzione quando la freccia colpisce, a meno che l'opzione non richieda un tiro per colpire.<br><br>Possiedi <strong>due utilizzi</strong> di questa capacità e recuperi tutti gli utilizzi spesi quando completi un <strong>riposo breve o lungo</strong>.<br><br>Ottieni un'ulteriore opzione di Tiro Arcano a tua scelta quando raggiungi i livelli 7, 10, 15 e 18 in questa classe. Ogni opzione migliora inoltre quando diventi un Guerriero di livello 18.<br><br>Se un'opzione richiede un tiro di salvezza, la <strong>CD del tiro di salvezza del tuo Tiro Arcano</strong> è pari a <strong>8 + il tuo bonus di competenza + il tuo modificatore di Intelligenza</strong>.<br><br><strong>Opzioni di Tiro Arcano disponibili:</strong><br>- <strong>Freccia Burlona (Beguiling Arrow):</strong> La tua magia di Ammaliamento ammalia temporaneamente il bersaglio. La creatura colpita dalla freccia subisce <strong>2d6 danni Psichici extra</strong> e puoi scegliere un tuo alleato entro 9 metri dal bersaglio. Il bersaglio deve superare un tiro di salvezza su <strong>Saggezza</strong>, altrimenti è affascinato dall'alleato prescelto fino all'inizio del tuo turno successivo. Questo effetto termina in anticipo se l'alleato prescelto attacca la creatura affascinata, le infligge danni o la costringe a effettuare un tiro di salvezza (i danni aumentano a <strong>4d6 al livello 18</strong>).<br>- <strong>Freccia Debilitante (Enfeebling Arrow):</strong> Intrecci la magia di Necromanzia nella tua freccia. La creatura colpita dalla freccia subisce <strong>2d6 danni Necrotici extra</strong>. Il bersaglio deve inoltre superare un tiro di salvezza su <strong>Costituzione</strong>, altrimenti i danni inflitti dai suoi attacchi con armi sono dimezzati fino all'inizio del tuo turno successivo (i danni aumentano a <strong>4d6 al livello 18</strong>).<br>- <strong>Freccia Dirompente (Bursting Arrow):</strong> Infondi la freccia con energia di forza della scuola di Evocazione. La freccia esplode dopo il tuo attacco: immediatamente dopo che la freccia ha colpito la creatura, il bersaglio e tutte le altre creature entro 3 metri da esso subiscono <strong>2d6 danni da Forza ciascuno</strong> (i danni aumentano a <strong>4d6 al livello 18</strong>).<br>- <strong>Freccia Eptante / Perforante (Piercing Arrow):</strong> Usi la magia di Trasmutazione per dare alla freccia una qualità eterea. Quando usi questa opzione, non effettui un tiro per colpire: la freccia parte in linea retta (larga 30 cm e lunga 9 metri) prima di scomparire, passando attraverso gli oggetti e ignorando la copertura. Ogni creatura in quella linea deve effettuare un tiro di salvezza su <strong>Destrezza</strong>: se lo fallisce, subisce danni come se fosse stata colpita dalla freccia più <strong>1d6 danni Perforanti extra</strong>; se lo supera, subisce la metà dei danni (i danni extra aumentano a <strong>2d6 al livello 18</strong>).<br>- <strong>Freccia Escoriante / Rovo (Grasping Arrow):</strong> Quando colpisce, la magia di Evocazione crea rovi velenosi che avvolgono il bersaglio. La creatura colpita subisce <strong>2d6 danni da Veleno extra</strong>, la sua velocità è ridotta di 3 metri e subisce <strong>2d6 danni Taglienti</strong> la prima volta in ogni turno che si muove di almeno 30 cm senza teletrasportarsi. Il bersaglio o una creatura vicina può usare un'azione per rimuovere i rovi con una prova di <strong>Atletica (Forza)</strong> contro la CD del tuo Tiro Arcano. Altrimenti i rovi durano 1 minuto o finché non usi di nuovo questa opzione (i danni da Veleno e Taglienti aumentano entrambi a <strong>4d6 al livello 18</strong>).<br>- <strong>Freccia Ricercatrice (Seeking Arrow):</strong> Usi la magia di Divinazione per guidare la freccia verso il bersaglio. Non effettui un tiro per colpire: scegli una creatura che hai visto nell'ultimo minuto. La freccia vola verso di essa, aggirando gli angoli ed ignorando tre quarti di copertura e mezza copertura. Se il bersaglio è entro la gittata dell'arma e c'è un percorso praticabile, il bersaglio deve effettuare un tiro di salvezza su <strong>Destrezza</strong>: se lo fallisce, subisce i danni della freccia più <strong>1d6 danni da Forza extra</strong> e tu apprendi la sua posizione attuale; se lo supera, subisce la metà dei danni e non ne apprendi la posizione (i danni da Forza aumentano a <strong>2d6 al livello 18</strong>).<br>- <strong>Freccia Scacciante (Banishing Arrow):</strong> Usi la magia di Abiurazione per esiliare temporaneamente il bersaglio nella Selva Fatata. La creatura colpita deve superare un tiro di salvezza su <strong>Carisma</strong> o essere esiliata (velocità 0 e condizione <strong>Incapacitato</strong>). Alla fine del suo turno successivo, riappare nello spazio abbandonato o nel più vicino spazio libero (al livello 18, la creatura subisce anche <strong>2d6 danni da Forza</strong> quando viene colpita).<br>- <strong>Freccia Tenebrosa (Shadow Arrow):</strong> Intrecci la magia di Illusione per annebbiare la vista del nemico con le ombre. La creatura colpita subisce <strong>2d6 danni Psichici extra</strong> e deve superare un tiro di salvezza su <strong>Saggezza</strong>, altrimenti non potrà vedere nulla a più di 1,5 metri di distanza fino all'inizio del tuo turno successivo (i danni aumentano a <strong>4d6 al livello 18</strong>)."
+      },
+      {
+        "name": "Freccia Magica (Magic Arrow)",
+        "level": 7,
+        "description": "Ottieni la capacità di infondere le frecce con la magia. Ogni volta che scagli una freccia non magica da un arco corto o da un arco lungo, puoi renderla magica al fine di superare la resistenza e l'immunità agli attacchi e ai danni non magici. La magia svanisce dalla freccia immediatamente dopo che ha colpito o mancato il bersaglio."
+      },
+      {
+        "name": "Freccia Curva (Curving Arrow)",
+        "level": 7,
+        "description": "Impari a reindirizzare una freccia andata a vuoto verso un nuovo bersaglio. Quando effettui un tiro per colpire con una freccia magica e manchi il bersaglio, puoi usare un'<strong>Azione Bonus</strong> per ripetere il tiro per colpire contro un bersaglio diverso situato entro 18 metri dal bersaglio originale."
+      },
+      {
+        "name": "Tiro Sempre Pronto (Ever-Ready Shot)",
+        "level": 15,
+        "description": "La tua archeria magica è sempre pronta all'inizio del combattimento. Se tiri per l'iniziativa e non ti rimane alcun utilizzo di Tiro Arcano, recuperi <strong>1 utilizzo</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_fighter_cavalier",
+    "class_id": "fighter",
+    "name": "Cavalier",
+    "name_it": "Cavaliere",
+    "type": "sottoclasse",
+    "source_it": "Guida Omnicomprensiva di Xanathar",
+    "description_it": "L'archetipo del Cavaliere eccelle nel combattimento in sella. Generalmente nato tra la nobiltà e cresciuto a corte, un cavaliere si trova a suo agio sia nel guidare una carica di cavalleria che nel conversare a una cena di stato. I cavalieri imparano anche a proteggere coloro che sono affidati alle loro cure, servendo spesso come protettori dei propri superiori e dei deboli. Spinti a correggere i torti o a conquistare prestigio, molti di questi guerrieri si lasciano alle spalle una vita di comodità per imbarcarsi in gloriose avventure.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Competenza Bonus, Nato in Sella, Marchio Inesorabile, Manovra Protettiva, Tenere la Linea, Carica Feroce, Difensore Vigile.",
+    "features": [
+      {
+        "name": "Competenza Bonus (Bonus Proficiency)",
+        "level": 3,
+        "description": "Ottieni la competenza in un'abilità a tua scelta tra <strong>Addestrare Animali</strong>, <strong>Intuizione</strong>, <strong>Intrattenere</strong>, <strong>Persuasione</strong> o <strong>Storia</strong>. In alternativa, impari un linguaggio a tua scelta."
+      },
+      {
+        "name": "Nato in Sella (Born to the Saddle)",
+        "level": 3,
+        "description": "La tua maestria come cavaliere diventa evidente. Hai <strong>Vantaggio</strong> ai tiri di salvezza effettuati per evitare di cadere dalla tua cavalcatura. Se cadi dalla cavalcatura e precipiti per non più di 3 metri, puoi atterrare in piedi se non sei Incapacitato. Infine, salire o scendere da una cavalcatura ti costa solo <strong>1,5 metri di movimento</strong>, anziché metà della tua velocità."
+      },
+      {
+        "name": "Marchio Inesorabile (Unwavering Mark)",
+        "level": 3,
+        "description": "Puoi minacciare i tuoi nemici, vanificando i loro attacchi e punendoli se danneggiano i tuoi alleati. Quando colpisci una creatura con un attacco con arma da mischia, puoi marchiarla fino alla fine del tuo turno successivo. Questo effetto termina in anticipo se sei Incapacitato, se muori o se qualcun altro marchia la creatura.<br><br>Finché si trova entro 1,5 metri da te, una creatura marchiata da te ha <strong>Svantaggio</strong> a qualsiasi tiro per colpire che non abbia te come bersaglio.<br><br>Inoltre, se una creatura marchiata da te infligge danni a chiunque non sia tu, puoi effettuare uno speciale attacco con arma da mischia contro di essa come <strong>Azione Bonus</strong> nel tuo turno successivo. Hai Vantaggio al tiro per colpire e, se colpisci, l'arma infligge danni extra al bersaglio pari a <strong>metà del tuo livello da Guerriero</strong>.<br><br>A prescindere dal numero di creature che marchi, puoi effettuare questo attacco speciale un numero di volte pari al tuo <strong>modificatore di Forza</strong> (minimo una volta). Recuperi tutti gli utilizzi spesi quando completi un <strong>riposo lungo</strong>."
+      },
+      {
+        "name": "Manovra Protettiva (Warding Maneuver)",
+        "level": 7,
+        "description": "Impari a respingere i colpi diretti a te, alla tua cavalcatura o ad altre creature nelle vicinanze. Se tu o una creatura che puoi vedere entro 1,5 metri da te viene colpita da un attacco, puoi tirare un <strong>1d8 come Reazione</strong> se stai impugnando un'arma da mischia o uno scudo.<br><br>Aggiungi il numero tirato alla CA del bersaglio contro quell'attacco. Se l'attacco colpisce comunque, il bersaglio ottiene <strong>Resistenza</strong> ai danni di quell'attacco.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>modificatore di Costituzione</strong> (minimo una volta). Recuperi tutti gli utilizzi spesi quando completi un <strong>riposo lungo</strong>."
+      },
+      {
+        "name": "Tenere la Linea (Hold the Line)",
+        "level": 10,
+        "description": "Diventi un maestro nel bloccare i tuoi nemici. Le creature provocano da te un attacco di opportunità quando si muovono di 1,5 metri o più mentre si trovano all'interno della tua portata. Inoltre, se colpisci una creatura con un attacco di opportunità, la velocità del bersaglio è <strong>ridotta a 0</strong> fino alla fine del turno corrente."
+      },
+      {
+        "name": "Carica Feroce (Ferocious Charger)",
+        "level": 15,
+        "description": "Puoi travolgere i tuoi nemici, sia che tu sia in sella o a piedi. Se ti muovi di almeno 3 metri in linea retta immediatamente prima di attaccare una creatura e la colpisci con l'attacco, il bersaglio deve superare un tiro di salvezza su <strong>Forza</strong> (CD = 8 + il tuo bonus di competenza + il tuo modificatore di Forza) altrimenti cade a terra <strong>Prono</strong>.<br><br>Puoi usare questo privilegio solo una volta in ciascuno dei tuoi turni."
+      },
+      {
+        "name": "Difensore Vigile (Vigilant Defender)",
+        "level": 18,
+        "description": "Rispondi al pericolo con uno straordinario stato di allerta. In combattimento, ottieni una <strong>Reazione speciale</strong> che puoi effettuare una volta nel turno di ciascuna creatura, eccetto nel tuo turno.<br><br>Puoi usare questa Reazione speciale solo per effettuare un attacco di opportunità, e non puoi usarla nello stesso turno in cui usi la tua Reazione normale."
+      }
+    ]
+  },
+  {
+    "id": "subclass_fighter_samurai",
+    "class_id": "fighter",
+    "name": "Samurai",
+    "name_it": "Samurai",
+    "type": "sottoclasse",
+    "source_it": "Guida Omnicomprensiva di Xanathar",
+    "description_it": "Il Samurai è un guerriero che attinge a un implacabile spirito combattivo per superare i propri nemici. La determinazione di un samurai è quasi incrollabile, e i nemici che si trovano sul suo cammino hanno due sole opzioni: arrendersi o morire combattendo.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Competenza Bonus, Spirito Combattivo, Cortigiano Elegante, Spirito Instancabile, Attacco Rapido, Forza Prima della Morte.",
+    "features": [
+      {
+        "name": "Competenza Bonus (Bonus Proficiency)",
+        "level": 3,
+        "description": "Ottieni la competenza in un'abilità a tua scelta tra <strong>Intrattenere</strong>, <strong>Intuizione</strong>, <strong>Persuasione</strong> o <strong>Storia</strong>. In alternativa, impari un linguaggio a tua scelta."
+      },
+      {
+        "name": "Spirito Combattivo (Fighting Spirit)",
+        "level": 3,
+        "description": "La tua intensità in battaglia può proteggerti e aiutarti a colpire a segno. Come <strong>Azione Bonus</strong> nel tuo turno, puoi concederti <strong>Vantaggio</strong> a tutti i tiri per colpire con armi fino alla fine del turno corrente. Quando lo fai, ottieni anche <strong>5 punti ferita temporanei</strong>.<br><br>Il numero di punti ferita temporanei aumenta a <strong>10 al livello 10</strong> e a <strong>15 al livello 15</strong> in questa classe.<br><br>Puoi usare questo privilegio <strong>tre volte</strong>. Recuperi tutti gli utilizzi spesi quando completi un <strong>riposo lungo</strong>."
+      },
+      {
+        "name": "Cortigiano Elegante (Elegant Courtier)",
+        "level": 7,
+        "description": "La tua disciplina e l'attenzione ai dettagli ti permettono di eccellere nelle situazioni sociali. Ogni volta che effettui una prova di Carisma (<strong>Persuasione</strong>), ottieni un bonus alla prova pari al tuo <strong>modificatore di Saggezza</strong>.<br><br>Il tuo autocontrollo ti fa inoltre ottenere la competenza nei <strong>tiri di salvezza su Saggezza</strong>. Se possiedi già questa competenza, ottieni invece la competenza nei tiri di salvezza su <strong>Intelligenza</strong> o <strong>Carisma</strong> (a tua scelta)."
+      },
+      {
+        "name": "Spirito Instancabile (Tireless Spirit)",
+        "level": 10,
+        "description": "Quando tiri per l'iniziativa e non ti rimane alcun utilizzo di Spirito Combattivo, recuperi <strong>1 utilizzo</strong>."
+      },
+      {
+        "name": "Attacco Rapido (Rapid Strike)",
+        "level": 15,
+        "description": "Impari a scambiare la precisione con attacchi rapidi. Se effettui l'azione di Attacco nel tuo turno e hai Vantaggio a un tiro per colpire contro uno dei bersagli, puoi rinunciare al Vantaggio per quel tiro per effettuare un <strong>attacco con arma aggiuntivo</strong> contro quel bersaglio, come parte della stessa azione.<br><br>Non puoi farlo più di una volta per turno."
+      },
+      {
+        "name": "Forza Prima della Morte (Strength Before Death)",
+        "level": 18,
+        "description": "Il tuo spirito combattivo può ritardare la morsa della morte. Se subisci danni che ti riducono a 0 punti ferita, puoi usare la tua <strong>Reazione</strong> per ritardare lo svenimento e effettuare immediatamente un <strong>turno extra</strong>.<br><br>Mentre sei a 0 punti ferita durante questo turno extra, subire danni causa fallimenti ai tiri di salvezza contro la morte come di consueto, e tre fallimenti possono comunque ucciderti. Quando il turno extra termina, svieni se hai ancora 0 punti ferita.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un <strong>riposo lungo</strong>."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
