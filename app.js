@@ -237,26 +237,26 @@ function filterData() {
       const isOrigin = rawCat.includes("origine") || rawType.includes("origine");
       const isFightingStyle = rawCat.includes("stile") || rawCat.includes("combattimento") || rawType.includes("stile");
       matchesCategory = (rawType.includes("talento") || rawCat.includes("talento")) && !isOrigin && !isFightingStyle;
-    } else if (selectedCategory === "armi" || selectedCategory === "arma") {
-      // Controlla se l'elemento è un'armatura per escluderlo a prescindere
-      const isArmor = rawType.includes("armat") || rawCat.includes("armat") || 
-                      rawType.includes("armor") || rawCat.includes("armor");
+    } else if (["armi", "weapon", "weapons"].includes(selectedCategory)) {
+      // Esclude le armature
+      const isArmor = rawType.includes("armor") || rawCat.includes("armor") || 
+                      rawType.includes("armat") || rawCat.includes("armat");
 
-      // È un'arma se contiene "arma", "armi" o "weapon"
-      const isWeapon = rawType.includes("arma") || rawCat.includes("arma") || 
-                       rawType.includes("armi") || rawCat.includes("armi") || 
-                       rawType.includes("weapon") || rawCat.includes("weapon");
+      // Riconosce le armi tramite "weapon" o "armi"
+      const isWeapon = rawType.includes("weapon") || rawCat.includes("weapon") || 
+                       rawType.includes("armi") || rawCat.includes("armi");
 
       matchesCategory = isWeapon && !isArmor;
-    } else if (selectedCategory === "armature" || selectedCategory === "armatura") {
-      matchesCategory = rawType.includes("armat") || rawCat.includes("armat") || 
-                        rawType.includes("armor") || rawCat.includes("armor") || 
-                        rawCat.includes("scudo") || rawCat.includes("shield");
-    } else if (selectedCategory === "equipaggiamento") {
-      const isWeaponOrArmor = rawType.includes("arma") || rawCat.includes("arma") || 
+    } else if (["armature", "armatura", "armor", "armors"].includes(selectedCategory)) {
+      matchesCategory = rawType.includes("armor") || rawCat.includes("armor") || 
+                        rawType.includes("armat") || rawCat.includes("armat") || 
+                        rawType.includes("scudo") || rawCat.includes("scudo") || 
+                        rawType.includes("shield") || rawCat.includes("shield");
+    } else if (selectedCategory === "equipaggiamento" || selectedCategory === "equipment") {
+      const isWeaponOrArmor = rawType.includes("weapon") || rawCat.includes("weapon") || 
+                              rawType.includes("armor") || rawCat.includes("armor") || 
                               rawType.includes("armi") || rawCat.includes("armi") || 
-                              rawType.includes("armat") || rawCat.includes("armat") || 
-                              rawType.includes("weapon") || rawCat.includes("armor");
+                              rawType.includes("armat") || rawCat.includes("armat");
       matchesCategory = (rawType.includes("equip") || rawCat.includes("equip")) && !isWeaponOrArmor;
     } else {
       matchesCategory = rawType.includes(selectedCategory) || rawCat.includes(selectedCategory);
