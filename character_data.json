@@ -3963,6 +3963,227 @@
     ]
   },
   {
+    "id": "subclass_paladin_oath_of_glory",
+    "class_id": "paladin",
+    "name": "Oath of Glory",
+    "name_it": "Giuramento della Gloria",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I paladini che giurano il Giuramento della Gloria credono che essi e i loro compagni siano destinati a raggiungere la gloria attraverso gesta eroiche. Si allenano duramente e incoraggiano gli alleati affinché siano tutti pronti quando il destino li chiamerà.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Punizione Ispiratrice, Atleta Senza Pari, Aura di Alacrità, Difesa Gloriosa, Leggenda Vivente.",
+    "features": [
+      {
+        "name": "Incantesimi del Giuramento (Oath Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Paladino indicati:<br>- **3° Livello:** <em>Dardo Tracciante (Guiding Bolt)</em>, <em>Eroismo (Heroism)</em><br>- **5° Livello:** <em>Miglioramento Caratteristica (Enhance Ability)</em>, <em>Arma Magica (Magic Weapon)</em><br>- **9° Livello:** <em>Velocità (Haste)</em>, <em>Protezione dall'Energia (Protection from Energy)</em><br>- **13° Livello:** <em>Costrizione (Compulsion)</em>, <em>Libertà di Movimento (Freedom of Movement)</em><br>- **17° Livello:** <em>Conoscenza delle Leggende (Legend Lore)</em>, <em>Presenza Regale di Yolande (Yolande's Regal Presence)</em>"
+      },
+      {
+        "name": "Punizione Ispiratrice (Inspiring Smite)",
+        "level": 3,
+        "description": "Immediatamente dopo aver lanciato <em>Punizione Divina (Divine Smite)</em>, puoi spendere un uso del tuo **Incanalare Divinità** per distribuire **Punti Ferita Temporanei** a creature a tua scelta entro 9 metri da te (incluso te stesso).<br><br>L'ammontare totale di Punti Ferita Temporanei è pari a **2d8 + il tuo livello da Paladino**, divisi a tua scelta tra le creature selezionate."
+      },
+      {
+        "name": "Atleta Senza Pari (Peerless Athlete)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, puoi spendere un uso del tuo **Incanalare Divinità** per potenziare le tue capacità atletiche. Per **1 ora** ottieni:<br>- **Vantaggio** alle prove di Forza (Atletica) e Destrezza (Acrobazia).<br>- La distanza dei tuoi salti in lungo e in alto aumenta di **3 metri** (questa distanza extra consuma movimento come di consueto)."
+      },
+      {
+        "name": "Aura di Alacrità (Aura of Alacrity)",
+        "level": 7,
+        "description": "La tua velocità sul terreno aumenta di **3 metri**.<br><br>Inoltre, ogni volta che un alleato entra nella tua Aura di Protezione per la prima volta in un turno o vi inizia il proprio turno, la sua velocità sul terreno **aumenta di 3 metri** fino alla fine del suo turno successivo."
+      },
+      {
+        "name": "Difesa Gloriosa (Glorious Defense)",
+        "level": 15,
+        "description": "Quando tu o un'altra creatura che puoi vedere entro 3 metri da te viene colpita da un tiro per colpire, puoi usare la tua **Reazione** per fornire un **bonus alla CA pari al tuo modificatore di Carisma** (minimo +1) al bersaglio contro quell'attacco, potendo potenzialmente farlo fallire.<br><br>Se l'attacco fallisce, puoi effettuare **un attacco con un'arma contro l'attaccante** come parte di questa Reazione (se l'attaccante si trova a gittata della tua arma). Puoi usare questo privilegio un numero di volte pari al tuo **modificatore di Carisma** (minimo 1) e recuperi gli utilizzi con un **riposo lungo**."
+      },
+      {
+        "name": "Leggenda Vivente (Living Legend)",
+        "level": 20,
+        "description": "Come **Azione Bonus**, ti potenzi con le leggende delle tue grandi gesta per **10 minuti**, ottenendo i seguenti benefici:<br>- **Carismatico:** Hai **Vantaggio** a tutte le prove di Carisma.<br>- **Ritiro del Tiro di Salvezza:** Se fallisci un tiro di salvezza, puoi usare la tua **Reazione** per ritirarlo (devi usare il nuovo risultato).<br>- **Colpo Infallibile:** Una volta per turno, quando manchi con un tiro per colpire con un'arma, puoi far sì che l'attacco colpisca invece di mancare.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un **riposo lungo**. Puoi anche ripristinarne l'uso spendendo uno **slot incantesimo di 5° livello** (nessuna azione richiesta)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_paladin_oath_of_the_ancients",
+    "class_id": "paladin",
+    "name": "Oath of the Ancients",
+    "name_it": "Giuramento degli Antichi",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Giuramento degli Antichi è antico quanto i primi elfi e i rituali dei druidi. I paladini che giurano questo ordine amano la luce e le cose belle della vita più di qualsiasi principio di onore o giustizia, decorando le loro armature con motivi vegetali e floreali.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Ira della Natura, Aura di Protezione Magica, Sentinella Immortale, Campione Antico.",
+    "features": [
+      {
+        "name": "Incantesimi del Giuramento (Oath Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Paladino indicati:<br>- **3° Livello:** <em>Colpo Intrappolante (Ensnaring Strike)</em>, <em>Parlare con gli Animali (Speak with Animals)</em><br>- **5° Livello:** <em>Passo Mistico (Misty Step)</em>, <em>Raggio di Luna (Moonbeam)</em><br>- **9° Livello:** <em>Crescita Vegetale (Plant Growth)</em>, <em>Protezione dall'Energia (Protection from Energy)</em><br>- **13° Livello:** <em>Tempesta di Ghiaccio (Ice Storm)</em>, <em>Pelle di Pietra (Stoneskin)</em><br>- **17° Livello:** <em>Comunione con la Natura (Commune with Nature)</em>, <em>Passo tra gli Alberi (Tree Stride)</em>"
+      },
+      {
+        "name": "Ira della Natura (Nature's Wrath)",
+        "level": 3,
+        "description": "Come **Azione Magica**, puoi spendere un uso del tuo **Incanalare Divinità** per evocare liane spettrali intorno alle creature vicine. Ogni creatura a tua scelta che puoi vedere entro 4,5 metri da te deve superare un **tiro di salvezza su Forza** o subire la condizione **Trattenuto** per 1 minuto.<br><br>Una creatura Trattenuta ripete il tiro di salvezza alla fine di ciascuno dei suoi turni, terminando l'effetto su se stessa in caso di successo."
+      },
+      {
+        "name": "Aura di Protezione Magica (Aura of Warding)",
+        "level": 7,
+        "description": "L'antica magia ti avvolge formando una barriera arcana. Tu e i tuoi alleati avete **Resistenza ai danni Necrotici, Psichici e Radiosi** finché vi trovate all'interno della tua Aura di Protezione."
+      },
+      {
+        "name": "Sentinella Immortale (Undying Sentinel)",
+        "level": 15,
+        "description": "Quando vieni ridotto a 0 Punti Ferita e non ucciso all'istante, puoi scendere invece a **1 Punto Ferita** e recuperare **Punti Ferita pari a tre volte il tuo livello da Paladino**.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un **riposo lungo**. Inoltre, non puoi essere invecchiato magicamente e smetti di invecchiare visibilmente."
+      },
+      {
+        "name": "Campione Antico (Elder Champion)",
+        "level": 20,
+        "description": "Come **Azione Bonus**, puoi imbuire la tua Aura di Protezione di potere primordiale per **1 minuto** (o finché non la interrompi senza richiedere azioni), ottenendo i seguenti benefici:<br>- **Ridurre la Sfida:** I nemici nell'aura hanno **Svantaggio ai tiri di salvezza** contro i tuoi incantesimi e le opzioni di Incanalare Divinità.<br>- **Rigenerazione:** All'inizio di ciascuno dei tuoi turni, recuperi **10 Punti Ferita**.<br>- **Incantesimi Rapidi:** Ogni volta che lanci un incantesimo con tempo di lancio di 1 azione, puoi lanciarlo usando un'**Azione Bonus**.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un **riposo lungo**. Puoi anche ripristinarne l'uso spendendo uno **slot incantesimo di 5° livello** (nessuna azione richiesta)."
+      }
+    ]
+  },
+   {
+    "id": "subclass_paladin_oath_of_vengeance",
+    "class_id": "paladin",
+    "name": "Oath of Vengeance",
+    "name_it": "Giuramento di Vendetta",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Giuramento di Vendetta è un impegno solenne a punire coloro che hanno commesso atti gravemente malvagi. I paladini di questo ordine sorgono per raddrizzare ciò che è andato storto, agendo con determinazione implacabile.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Voto di Inimicizia, Vendicatore Implacabile, Anima della Vendetta, Angelo Vendicatore.",
+    "features": [
+      {
+        "name": "Incantesimi del Giuramento (Oath Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Paladino indicati:<br>- **3° Livello:** <em>Finimondo (Bane)</em>, <em>Marchio del Cacciatore (Hunter's Mark)</em><br>- **5° Livello:** <em>Blocca Persone (Hold Person)</em>, <em>Passo Mistico (Misty Step)</em><br>- **9° Livello:** <em>Velocità (Haste)</em>, <em>Protezione dall'Energia (Protection from Energy)</em><br>- **13° Livello:** <em>Bandire (Banishment)</em>, <em>Porta Dimensionale (Dimension Door)</em><br>- **17° Livello:** <em>Blocca Mostri (Hold Monster)</em>, <em>Scrutare (Scrying)</em>"
+      },
+      {
+        "name": "Voto di Inimicizia (Vow of Enmity)",
+        "level": 3,
+        "description": "Quando effettui l'azione di Attacco, puoi spendere un uso del tuo **Incanalare Divinità** per pronunciare un voto di inimicizia contro una creatura che puoi vedere entro 9 metri da te.<br><br>Ottieni **Vantaggio ai tiri per colpire** contro la creatura per **1 minuto** o finché non usi di nuovo questo privilegio. Se la creatura scende a 0 Punti Ferita prima del termine, puoi trasferire il voto a un'altra creatura entro 9 metri (nessuna azione richiesta)."
+      },
+      {
+        "name": "Vendicatore Implacabile (Relentless Avenger)",
+        "level": 7,
+        "description": "Quando colpisci una creatura con un **Attacco di Opportunità**, puoi **ridurre la velocità della creatura a 0** fino alla fine del turno corrente.<br><br>Puoi quindi muoverti fino a metà della tua velocità come parte della stessa Reazione. Questo movimento non provoca attacchi di opportunità."
+      },
+      {
+        "name": "Anima della Vendetta (Soul of Vengeance)",
+        "level": 15,
+        "description": "Immediatamente dopo che una creatura soggetta al tuo Voto di Inimicizia colpisce o manca con un tiro per colpire, puoi usare la tua **Reazione** per effettuare un **attacco da mischia contro di essa** se si trova a portata."
+      },
+      {
+        "name": "Angelo Vendicatore (Avenging Angel)",
+        "level": 20,
+        "description": "Come **Azione Bonus**, ottieni i seguenti benefici per **10 minuti** (o finché non li interrompi senza richiedere azioni):<br>- **Volo:** Ti spuntano ali spettrali sulla schiena, ottieni una velocità di Volo di 18 metri e puoi Fluttuare.<br>- **Aura Spaventosa:** Ogni volta che un nemico inizia il suo turno nella tua Aura di Protezione, deve superare un **tiro di salvezza su Saggezza** o subire la condizione **Spaventato** per 1 minuto (o finché non subisce danni). I tiri per colpire contro la creatura Spaventata hanno **Vantaggio**.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un **riposo lungo**. Puoi anche ripristinarne l'uso spendendo uno **slot incantesimo di 5° livello** (nessuna azione richiesta)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_paladin_oath_of_redemption",
+    "class_id": "paladin",
+    "name": "Oath of Redemption",
+    "name_it": "Giuramento di Redenzione",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Giuramento di Redenzione impone un cammino difficile, basato sull'uso della violenza solo come ultima risorsa. I Redentori credono che chiunque possa essere redento e cercano di portare la pace attraverso la diplomazia, pur rimanendo pronti ad affrontare con fermezza il male incorregibile.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Incanalare Divinità, Aura del Guardiano, Spirito Prottetivo, Emissario della Redenzione.",
+    "features": [
+      {
+        "name": "Incantesimi del Giuramento (Oath Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Paladino indicati:<br>- **3° Livello:** <em>Santuario (Sanctuary)</em>, <em>Sonnellino (Sleep)</em><br>- **5° Livello:** <em>Calmare Emozioni (Calm Emotions)</em>, <em>Blocca Persone (Hold Person)</em><br>- **9° Livello:** <em>Controincantesimo (Counterspell)</em>, <em>Trama Ipnotica (Hypnotic Pattern)</em><br>- **13° Livello:** <em>Sfera Resiliente di Otiluke (Otiluke's Resilient Sphere)</em>, <em>Pelle di Pietra (Stoneskin)</em><br>- **17° Livello:** <em>Blocca Mostri (Hold Monster)</em>, <em>Muro di Forza (Wall of Force)</em>"
+      },
+      {
+        "name": "Incanalare Divinità (Channel Divinity)",
+        "level": 3,
+        "description": "Ottieni le seguenti due opzioni di Incanalare Divinità:<br>- **Emissario della Pace (Emissary of Peace):** Come **Azione Bonus**, ottieni un **bonus di +5 alle prove di Carisma (Persuasione)** per i successivi 10 minuti.<br>- **Rimbrottare il Violento (Rebuke the Violent):** Immediatamente dopo che un attaccante entro 9 metri da te infligge danni a una creatura diversa da te, puoi usare la tua **Reazione** per costringerlo a un tiro di salvezza su Saggezza. Se fallisce, l'attaccante subisce **danni Radiosi pari ai danni appena inflitti** (se ha successo, ne subisce la metà)."
+      },
+      {
+        "name": "Aura del Guardiano (Aura of the Guardian)",
+        "level": 7,
+        "description": "Quando una creatura entro 3 metri da te subisce danni, puoi usare la tua **Reazione** per **assorbire magicamente quel danno** al posto suo.<br><br>Questo privilegio non trasferisce altri effetti secondari e questo danno non può essere ridotto in alcun modo. Al 18° livello, la portata dell'aura aumenta a **9 metri**."
+      },
+      {
+        "name": "Spirito Protettivo (Protective Spirit)",
+        "level": 15,
+        "description": "Una presenza sacra cura le tue ferite in combattimento. Recuperi **1d6 + metà del tuo livello da Paladino** Punti Ferita se termini il tuo turno in combattimento con **meno di metà dei tuoi Punti Ferita massimi** e non sei Incapacitato."
+      },
+      {
+        "name": "Emissario della Redenzione (Emissary of Redemption)",
+        "level": 20,
+        "description": "Diventi un avatar della pace, ottenendo i seguenti benefici:<br>- Hai **Resistenza a tutti i danni** inflitti da altre creature (attacchi, incantesimi ed effetti).<br>- Ogni volta che una creatura ti infligge danni, subisce **danni Radiosi pari a metà dell'ammontare che ti ha inflitto**.<br><br>Se attacchi una creatura, le lanci contro un incantesimo o le infliggi danni in qualsiasi altro modo oltre a questo privilegio, **entrambi i benefici smettono di funzionare contro di essa** finché non completi un **riposo lungo**."
+      }
+    ]
+  },
+   {
+    "id": "subclass_paladin_oath_of_the_watchers",
+    "class_id": "paladin",
+    "name": "Oath of the Watchers",
+    "name_it": "Giuramento dei Guardiani",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Giuramento dei Guardiani vincola i paladini a proteggere i reami mortali dalle predazioni delle creature extraplanari. I Guardiani affinano la mente, lo spirito e il corpo per diventare l'arma definitiva contro tali minacce, mantenendo una vigile diffidenza e una costante consapevolezza del mondo circostante.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Incanalare Divinità, Aura della Sentinella, Rimbrotto Vigile, Baluardo Mortale.",
+    "features": [
+      {
+        "name": "Incantesimi del Giuramento (Oath Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Paladino indicati:<br>- **3° Livello:** <em>Allarme (Alarm)</em>, <em>Individuazione del Magico (Detect Magic)</em><br>- **5° Livello:** <em>Raggio di Luna (Moonbeam)</em>, <em>Vedere l'Invisibile (See Invisibility)</em><br>- **9° Livello:** <em>Controincantesimo (Counterspell)</em>, <em>Inindividuabilità (Nondetection)</em><br>- **13° Livello:** <em>Aura di Purità (Aura of Purity)</em>, <em>Bandire (Banishment)</em><br>- **17° Livello:** <em>Blocca Mostri (Hold Monster)</em>, <em>Scrutare (Scrying)</em>"
+      },
+      {
+        "name": "Incanalare Divinità (Channel Divinity)",
+        "level": 3,
+        "description": "Ottieni le seguenti due opzioni di Incanalare Divinità:<br>- **Volontà del Guardiano (Watcher's Will):** Come **Azione**, scegli un numero di creature che puoi vedere entro 9 metri da te pari al tuo modificatore di Carisma (minimo 1). Per **1 minuto**, tu e le creature scelte avete **Vantaggio ai tiri di salvezza su Intelligenza, Saggezza e Carisma**.<br>- **Abiurare l'Extraplanare (Abjure the Extraplanar):** Come **Azione**, mostri il tuo simbolo sacro e ogni aberrazione, celestiale, elementale, folletto o imondo entro 9 metri da te che possa udirti deve superare un **tiro di salvezza su Saggezza** o essere **scacciato per 1 minuto** (o finché non subisce danni). Una creatura scacciata deve spendere i suoi turni cercando di allontanarsi il più possibile da te e non può terminare volontariamente il movimento entro 9 metri da te."
+      },
+      {
+        "name": "Aura della Sentinella (Aura of the Sentinel)",
+        "level": 7,
+        "description": "Finche non sei Incapacitato, emani un'aura di prontezza. Quando tu e qualsiasi creatura a tua scelta entro 3 metri da te tirate per l'Iniziativa, ottenete tutti un **bonus all'Iniziativa pari al tuo bonus di Competenza**.<br><br>Al 18° livello, il raggio di quest'aura aumenta a **9 metri**."
+      },
+      {
+        "name": "Rimbrotto Vigile (Vigilant Rebuke)",
+        "level": 15,
+        "description": "Quando tu o una creatura che puoi vedere entro 9 metri da te **supera un tiro di salvezza su Intelligenza, Saggezza o Carisma**, puoi usare la tua **Reazione** per infliggere **2d8 + il tuo modificatore di Carisma** danni da Forza alla creatura che ha costretto al tiro di salvezza."
+      },
+      {
+        "name": "Baluardo Mortale (Mortal Bulwark)",
+        "level": 20,
+        "description": "Come **Azione Bonus**, manifesti una scintilla di potere divino in difesa dei reami mortali per **1 minuto**, ottenendo i seguenti benefici:<br>- Ottieni **Vera Vista** con un raggio di 36 metri.<br>- Hai **Vantaggio ai tiri per colpire** contro aberrazioni, celestiali, elementali, folletti e imondi.<br>- Quando colpisci una creatura con un tiro per colpire e le infliggi danni, puoi anche costringerla a un tiro di salvezza su Carisma contro la CD dei tuoi incantesimi. Se fallisce, la creatura viene **magicamente bandita** nel suo piano d'origine nativo (se non si trova già lì). Se ha successo, la creatura non può più essere bandita da questo privilegio per le successive 24 ore."
+      }
+    ]
+  },
+  {
+    "id": "subclass_paladin_oathbreaker",
+    "class_id": "paladin",
+    "name": "Oathbreaker",
+    "name_it": "Apostata",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Un Apostata è un paladino che ha infranto i propri sacri giuramenti per perseguire un'oscura ambizione o servire un potere malvagio. Qualsiasi luce bruciasse nel suo cuore è stata spenta: rimane soltanto l'oscurità.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi dell'Apostata, Incanalare Divinità, Aura d'Odio, Resistenza Sovrannaturale, Signore del Terrore.",
+    "features": [
+      {
+        "name": "Incantesimi dell'Apostata (Oathbreaker Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Paladino indicati:<br>- **3° Livello:** <em>Rimbrotto Infernale (Hellish Rebuke)</em>, <em>Infliggi Ferite (Inflict Wounds)</em><br>- **5° Livello:** <em>Corona di Follia (Crown of Madness)</em>, <em>Oscurità (Darkness)</em><br>- **9° Livello:** <em>Animare Morti (Animate Dead)</em>, <em>Scagliare Maledizione (Bestow Curse)</em><br>- **13° Livello:** <em>Devastazione (Blight)</em>, <em>Confusione (Confusion)</em><br>- **17° Livello:** <em>Contagio (Contagion)</em>, <em>Dominare Persone (Dominate Person)</em>"
+      },
+      {
+        "name": "Incanalare Divinità (Channel Divinity)",
+        "level": 3,
+        "description": "Ottieni le seguenti due opzioni di Incanalare Divinità:<br>- **Controllare Non Morti (Control Undead):** Come **Azione**, scegli un non morto entro 9 metri da te. Il bersaglio deve effettuare un tiro di salvezza su Saggezza; se fallisce, deve obbedire ai tuoi ordini per le successive **24 ore** o finché non usi nuovamente questa opzione. Un non morto con Grado di Sfida pari o superiore al tuo livello da Paladino è immune a questo effetto.<br>- **Aspetto Terribile (Dreadful Aspect):** Come **Azione**, incanali emozioni oscure in un'esplosione di minaccia magica. Ogni creatura a tua scelta entro 9 metri che possa vederti deve superare un tiro di salvezza su Saggezza o subire la condizione **Spaventato** per 1 minuto. Se una creatura Spaventata termina il suo turno a più di 9 metri da te, può ripetere il tiro di salvezza per terminare l'effetto."
+      },
+      {
+        "name": "Aura d'Odio (Aura of Hate)",
+        "level": 7,
+        "description": "Tu, così come qualsiasi imondo e non morto entro 3 metri da te, ottenete un **bonus ai tiri per i danni con armi da mischia pari al tuo modificatore di Carisma** (minimo +1). Una creatura può beneficiare di quest'aura da un solo paladino alla volta.<br><br>Al 18° livello, il raggio di quest'aura aumenta a **9 metri**."
+      },
+      {
+        "name": "Resistenza Sovrannaturale (Supernatural Resistance)",
+        "level": 15,
+        "description": "Ottieni **Resistenza ai danni Contundenti, Perforanti e Taglienti** inflitti da armi non magiche."
+      },
+      {
+        "name": "Signore del Terrore (Dread Lord)",
+        "level": 20,
+        "description": "Come **Azione**, ti avvolgi in un'aura di oscurità per **1 minuto** che riduce la luce intensa entro 9 metri a luce fioca. Ottieni i seguenti benefici:<br>- Ogni volta che un nemico Spaventato da te inizia il suo turno nell'aura, subisce **4d10 danni Psichici**.<br>- Tu e le creature a tua scelta nell'aura siete avvolti da ombre profonde: le creature che si affidano alla vista hanno **Svantaggio ai tiri per colpire** contro di voi.<br>- Finché l'aura dura, puoi usare un'**Azione Bonus** per far attaccare le ombre a una creatura (attacco con incantesimo da mischia): se colpisci, il bersaglio subisce **3d10 + modificatore di Carisma** danni Necrotici.<br><br>Una volta attivata quest'aura, non puoi riutilizzarlo finché non completi un **riposo lungo**."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
