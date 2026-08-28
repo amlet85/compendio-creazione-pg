@@ -185,7 +185,7 @@ function renderCards(items) {
     const isClassOrSubclass = rawType.includes('classe') || rawCat.includes('classe') || item.url || item.progression;
 
     if (isClassOrSubclass) {
-      const targetUrl = item.url ? item.url : `dettaglio.html?id=${encodeURIComponent(item.id)}`;
+      const targetUrl = item.url ? item.url : `dettaglio.html?id=${encodeURIComponent(item.id || item.name_it || item.name)}`;
       linkHTML = `
         <div class="card-action" style="margin-top: 15px; text-align: right;">
           <a href="${targetUrl}" class="detail-btn" style="display: inline-block; padding: 8px 14px; background-color: #e67e22; color: #fff; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em;">
@@ -230,7 +230,9 @@ function filterData() {
     if (selectedCategory === '') {
       matchesCategory = true;
     } else if (selectedCategory === "talentoorigine") {
-      matchesCategory = (rawType.includes("talento") || rawCat.includes("talento")) && rawCat.includes("origine");
+      const isTalento = rawType.includes("talento") || rawCat.includes("talento");
+      const isOrigine = rawType.includes("origine") || rawCat.includes("origine");
+      matchesCategory = isTalento && isOrigine;
     } else if (selectedCategory === "stiledicombattimento") {
       matchesCategory = rawType.includes("stile") || 
                         rawCat.includes("stile") || 
@@ -238,9 +240,9 @@ function filterData() {
                         rawType.includes("fighting") || 
                         rawCat.includes("fighting");
     } else if (selectedCategory === "talentogenerale") {
-      const isOrigin = rawCat.includes("origine");
+      const isOrigin = rawCat.includes("origine") || rawType.includes("origine");
       const isFightingStyle = rawCat.includes("stile") || rawCat.includes("combattimento") || rawType.includes("stile");
-      matchesCategory = rawType.includes("talento") && !isOrigin && !isFightingStyle;
+      matchesCategory = (rawType.includes("talento") || rawCat.includes("talento")) && !isOrigin && !isFightingStyle;
     } else if (selectedCategory === "arma") {
       matchesCategory = rawType.includes("arma") || rawCat.includes("arma") || rawType.includes("weapon") || rawCat.includes("weapon");
     } else if (selectedCategory === "armatura") {
@@ -263,6 +265,11 @@ function filterData() {
       parentClassString = parentClass.join(' ').toLowerCase();
     } else if (typeof parentClass === 'string') {
       parentClassString = parentClass.toLowerCase();
+    }
+
+    // Se l'elemento è un talento d'origine/generale (senza classe assegnata), mostra l'elemento quando viene applicata la ricerca
+    if (!parentClassString && (rawType.includes('talento') || rawCat.includes('talento'))) {
+      return matchesName;
     }
 
     // Mappatura nomi delle Classi Italiano/Inglese per garantire il match
