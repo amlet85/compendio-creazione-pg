@@ -4184,6 +4184,268 @@
     ]
   },
   {
+    "id": "subclass_ranger_beast_master",
+    "class_id": "ranger",
+    "name": "Beast Master",
+    "name_it": "Signore delle Bestie",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Un ranger Signore delle Bestie stringe un legame mistico con una speciale creatura, attingendo alla magia primordiale e a una profonda sintonia con il mondo naturale.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Compagno Primordiale, Addestramento Eccezionale, Furia Bestiale, Condividere Incantesimi.",
+    "features": [
+      {
+        "name": "Compagno Primordiale (Primal Companion)",
+        "level": 3,
+        "description": "Evochi magicamente una bestia primordiale scegliendo tra tre blocchi di statistiche: **Bestia della Terra**, **Bestia del Mare** o **Bestia del Cielo**.<br><br>- **In Combattimento:** Agisce durante il tuo turno. Può muoversi e usare la sua Reazione autonomamente, ma esegue solo l'azione di **Schivata**, a meno che tu non usi un'**Azione Bonus** per ordinarle di eseguire un'altra azione nel suo blocco di statistiche. In alternativa, quando usi l'azione di Attacco, puoi **rinunciare a uno dei tuoi attacchi** per ordinarle di usare l'azione *Colpo della Bestia*.<br>- **Se sei Incapacitato:** Agisce liberamente senza limitarsi alla Schivata.<br>- **Ripristino:** Se è morta nell'ultima ora, puoi usare un'**Azione Magica** per toccarla e spendere uno slot incantesimo: torna in vita dopo 1 minuto a Punti Ferita massimi. Al termine di un **riposo lungo**, puoi evocarne una diversa a tua scelta."
+      },
+      {
+        "name": "Addestramento Eccezionale (Exceptional Training)",
+        "level": 7,
+        "description": "Quando usi la tua **Azione Bonus** per ordinare al tuo Compagno Primordiale di eseguire un'azione, puoi anche ordinarle di eseguire l'azione di **Scatto, Disingaggio, Schivata o Aiuto** usando la **sua Azione Bonus**.<br><br>Inoltre, ogni volta che la bestia colpisce con un attacco e infligge danni, puoi scegliere di convertire il tipo di danno in **danni da Forza**."
+      },
+      {
+        "name": "Furia Bestiale (Bestial Fury)",
+        "level": 11,
+        "description": "Quando ordini alla tua bestia di usare l'azione *Colpo della Bestia*, la bestia può **attaccare due volte**.<br><br>Inoltre, la prima volta in ogni turno in cui colpisce una creatura soggetta al tuo incantesimo *Marchio del Cacciatore (Hunter's Mark)*, la bestia infligge **danni da Forza extra** pari al danno bonus di quell'incantesimo."
+      },
+      {
+        "name": "Condividere Incantesimi (Share Spells)",
+        "level": 15,
+        "description": "Quando lanci un incantesimo con bersaglio **te stesso**, puoi far sì che influenzi anche il tuo Compagno Primordiale, a condizione che si trovi entro **9 metri** da te."
+      }
+    ]
+  },
+  {
+    "id": "subclass_ranger_fey_wanderer",
+    "class_id": "ranger",
+    "name": "Fey Wanderer Conclave",
+    "name_it": "Ranger della Selva Fata",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Ranger della Selva Fata rappresentano sia il mondo mortale che quello fatato. Attraverso la magia ricevuta dalla Selva Fata, portano speranza agli oppressi e terrore nei cuori dei nemici grazie a una combinazione di gioia travolgente e furia devastante.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Colpi Terrificanti, Magia del Ranger della Selva Fata, Fascino Oltreuomo, Torsione Ammaliante, Rinforzi Fatati, Viandante Nebbioso.",
+    "features": [
+      {
+        "name": "Colpi Terrificanti (Dreadful Strikes)",
+        "level": 3,
+        "description": "Quando colpisci una creatura con un'arma, puoi infliggere **1d4 danni Psichici extra**. Puoi applicare questo danno extra a una specifica creatura **una sola volta per turno**.<br><br>Questo danno aumenta a **1d6** quando raggiungi l'11° livello da Ranger."
+      },
+      {
+        "name": "Magia del Ranger della Selva Fata (Fey Wanderer Magic)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Ranger indicati:<br>- **3° Livello:** <em>Ammaliare Persone (Charm Person)</em><br>- **5° Livello:** <em>Passo Mistico (Misty Step)</em><br>- **9° Livello:** <em>Evoca Folletto (Summon Fey)</em><br>- **13° Livello:** <em>Porta Dimensionale (Dimension Door)</em><br>- **17° Livello:** <em>Travestimento (Mislead)</em>"
+      },
+      {
+        "name": "Fascino Oltreuomo (Otherworldly Glamour)",
+        "level": 3,
+        "description": "Ogni volta che effettui una **prova di Carisma**, aggiungi un **bonus pari al tuo modificatore di Saggezza** (minimo +1).<br><br>Ottieni inoltre la **competenza** in una abilità a scelta tra: *Inganno (Deception)*, *Intrattenere (Performance)* o *Persuasione (Persuasion)*."
+      },
+      {
+        "name": "Torsione Ammaliante (Beguiling Twist)",
+        "level": 7,
+        "description": "Hai **Vantaggio ai tiri di salvezza** per evitare o terminare le condizioni **Affascinato** o **Spaventato**.<br><br>Inoltre, ogni volta che tu o una creatura entro 36 metri da te **supera un tiro di salvezza** per evitare o terminare la condizione Affascinato o Spaventato, puoi usare la tua **Reazione** per costringere un'altra creatura entro 36 metri a effettuare un tiro di salvezza su Saggezza contro la tua CD degli incantesimi: se fallisce, la creatura diventa **Affascinata** o **Spaventata** (a tua scelta) per **1 minuto** (ripete il tiro alla fine di ogni suo turno)."
+      },
+      {
+        "name": "Rinforzi Fatati (Fey Reinforcements)",
+        "level": 11,
+        "description": "Puoi lanciare <em>Evoca Folletto (Summon Fey)</em> senza componenti materiali e puoi lanciarlo **una volta gratuitamente** senza spendere slot incantesimo per **riposo lungo**.<br><br>Inoltre, quando inizi a lanciare questo incantesimo, puoi modificarlo affinché **non richieda Concentrazione**: in questo caso, la durata dell'incantesimo diventa di **1 minuto**."
+      },
+      {
+        "name": "Viandante Nebbioso (Misty Wanderer)",
+        "level": 15,
+        "description": "Puoi lanciare <em>Passo Mistico (Misty Step)</em> **senza spendere slot incantesimo** un numero di volte pari al tuo **modificatore di Saggezza** (minimo 1), recuperando tutti gli utilizzi con un **riposo lungo**.<br><br>Inoltre, ogni volta che lanci <em>Passo Mistico</em>, puoi **portare con te una creatura consensuale** entro 1,5 metri da te: essa si teletrasporta in uno spazio libero a tua scelta entro 1,5 metri dalla tua destinazione."
+      }
+    ]
+  },
+  {
+    "id": "subclass_ranger_hunter",
+    "class_id": "ranger",
+    "name": "Hunter",
+    "name_it": "Cacciatore",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Un ranger Cacciatore bracca le prede nelle terre selvagge, usando le sue capacità per proteggere la natura e le persone dalle forze che vorrebbero distruggerle.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Conoscenza del Cacciatore, Preda del Cacciatore, Tattiche Difensive, Preda del Cacciatore Superiore, Difesa del Cacciatore Superiore.",
+    "features": [
+      {
+        "name": "Conoscenza del Cacciatore (Hunter's Lore)",
+        "level": 3,
+        "description": "Richiami le forze della natura per rivelare punti di forza e debolezze della tua preda. Finché una creatura è contrassegnata dal tuo incantesimo <em>Marchio del Cacciatore (Hunter's Mark)</em>, conosci immediatamente le sue **Immunità, Resistenze o Vulnerabilità ai danni** (o se non ne possiede alcuna)."
+      },
+      {
+        "name": "Preda del Cacciatore (Hunter's Prey)",
+        "level": 3,
+        "description": "Scegli una delle seguenti opzioni. Ogni volta che completi un **riposo breve o lungo**, puoi sostituire l'opzione scelta con l'altra:<br>- **Uccisore di Colossi (Colossus Slayer):** Quando colpisci una creatura con un'arma, l'arma infligge **1d8 danni extra** al bersaglio se questo non ha tutti i suoi Punti Ferita massimi. Puoi infliggere questo danno extra **una sola volta per turno**.<br>- **Sterminatore di Orde (Horde Breaker):** Una volta in ciascuno dei tuoi turni, quando effettui un attacco con un'arma, puoi effettuare un **secondo attacco con la stessa arma** contro una creatura diversa che si trovi entro 1,5 metri dal bersaglio originale, entro la gittata dell'arma e che tu non abbia già attaccato in questo turno."
+      },
+      {
+        "name": "Tattiche Difensive (Defensive Tactics)",
+        "level": 7,
+        "description": "Scegli una delle seguenti opzioni. Ogni volta che completi un **riposo breve o lungo**, puoi sostituire l'opzione scelta con l'altra:<br>- **Fuggire dall'Orda (Escape the Horde):** Gli **Attacchi di Opportunità** effettuati contro di te hanno **Svantaggio**.<br>- **Difesa Multiattacco (Multiattack Defense):** Quando una creatura ti colpisce con un tiro per colpire, quella creatura ha **Svantaggio a tutti gli altri tiri per colpire** effettuati contro di te per il resto del turno corrente."
+      },
+      {
+        "name": "Preda del Cacciatore Superiore (Superior Hunter's Prey)",
+        "level": 11,
+        "description": "Una volta per turno, quando infliggi danni a una creatura contrassegnata dal tuo *Marchio del Cacciatore*, puoi **applicare il danno extra di quell'incantesimo anche a un'altra creatura** che puoi vedere entro 9 metri dalla prima."
+      },
+      {
+        "name": "Difesa del Cacciatore Superiore (Superior Hunter's Defense)",
+        "level": 15,
+        "description": "Quando subisci danni, puoi usare la tua **Reazione** per ottenere **Resistenza a quel tipo di danno** e a qualsiasi altro danno dello stesso tipo fino alla fine del turno corrente."
+      }
+    ]
+  },
+  {
+    "id": "subclass_ranger_monster_slayer",
+    "class_id": "ranger",
+    "name": "Monster Slayer",
+    "name_it": "Cacciatore di Mostri",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Cacciatore di Mostri si dedica alla caccia delle creature della notte e dei manipolatori di magia oscura, specializzandosi nello scovare e sconfiggere potenti minacce mistiche come vampiri, draghi, imondi e folletti malvagi.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Magia del Cacciatore di Mostri, Senso del Cacciatore, Preda dell'Uccisore, Difesa Sovrannaturale, Nemesi dei Maghi, Contrattacco dell'Uccisore.",
+    "features": [
+      {
+        "name": "Magia del Cacciatore di Mostri (Monster Slayer Magic)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Ranger indicati:<br>- **3° Livello:** <em>Protezione dal Bene e dal Male (Protection from Evil and Good)</em><br>- **5° Livello:** <em>Zona di Verità (Zone of Truth)</em><br>- **9° Livello:** <em>Cerchio Magico (Magic Circle)</em><br>- **13° Livello:** <em>Bandire (Banishment)</em><br>- **17° Livello:** <em>Blocca Mostri (Hold Monster)</em>"
+      },
+      {
+        "name": "Senso del Cacciatore (Hunter's Sense)",
+        "level": 3,
+        "description": "Come **Azione**, scegli una creatura che puoi vedere entro 18 metri da te. Apprendi immediatamente le sue **Immunità, Resistenze e Vulnerabilità ai danni**.<br><br>Se la creatura è protetta da magia di divinazione, percepisci che non ha alcuna immunità, resistenza o vulnerabilità. Puoi usare questo privilegio un numero di volte pari al tuo **modificatore di Saggezza** (minimo 1) e recuperi gli utilizzi con un **riposo lungo**."
+      },
+      {
+        "name": "Preda dell'Uccisore (Slayer's Prey)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, designi una creatura che puoi vedere entro 18 metri come bersaglio di questo privilegio.<br><br>La prima volta in ogni turno in cui colpisci quel bersaglio con un attacco con un'arma, esso subisce **1d6 danni extra** dall'arma. Questo beneficio dura finché non completi un riposo breve o lungo, oppure finché non designi un bersaglio diverso."
+      },
+      {
+        "name": "Difesa Sovrannaturale (Supernatural Defense)",
+        "level": 7,
+        "description": "Ogni volta che il bersaglio della tua *Preda dell'Uccisore* ti costringe a effettuare un **tiro di salvezza**, o quando effettui una prova di caratteristica per **sfuggire alla sua lotta**, aggiungi un d6 (**+1d6**) al tuo tiro."
+      },
+      {
+        "name": "Nemesi dei Maghi (Magic-User's Nemesis)",
+        "level": 11,
+        "description": "Quando vedi una creatura lanciare un incantesimo o teletrasportarsi entro 18 metri da te, puoi usare la tua **Reazione** per tentare di sventarla magicamente.<br><br>La creatura deve superare un **tiro di salvezza su Saggezza** contro la CD dei tuoi incantesimi, altrimenti il suo incantesimo o teletrasporto fallisce e viene sprecato. Una volta usato questo privilegio, devi completare un **riposo breve o lungo** per poterlo riutilizzare."
+      },
+      {
+        "name": "Contrattacco dell'Uccisore (Slayer's Counter)",
+        "level": 15,
+        "description": "Se il bersaglio della tua *Preda dell'Uccisore* ti costringe a effettuare un tiro di salvezza, puoi usare la tua **Reazione** per effettuare **un attacco con un'arma contro di esso** immediatamente prima di tirare il salvataggio.<br><br>Se l'attacco colpisce, oltre ai normali effetti dell'attacco, il tuo **tiro di salvezza ha successo automaticamente**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_ranger_swarmkeeper",
+    "class_id": "ranger",
+    "name": "Swarmkeeper",
+    "name_it": "Custode dello Sciame",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Sentendo un profondo legame con l'ambiente circostante, i Custodi dello Sciame attingono alla magia primordiale per legarsi a uno sciame di spiriti della natura che li assiste in battaglia e nella vita di tutti i giorni.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Sciame Adunato, Magia del Custode dello Sciame, Marea Dondolante, Sciame Potente, Dispersione dello Sciame.",
+    "features": [
+      {
+        "name": "Sciame Adunato (Gathered Swarm)",
+        "level": 3,
+        "description": "Uno sciame di spiriti della natura intangibili si lega a te occupando il tuo stesso spazio. Una volta in ciascuno dei tuoi turni, subito dopo aver colpito una creatura con un attacco, puoi far sì che lo sciame ti assista in uno dei seguenti modi:<br>- Il bersaglio dell'attacco subisce **1d6 danni Perforanti** dallo sciame.<br>- Il bersaglio dell'attacco deve superare un **tiro di salvezza su Forza** contro la tua CD degli incantesimi, altrimenti viene spostato dallo sciame fino a **4,5 metri orizzontalmente** in una direzione a tua scelta.<br>- Vieni spostato dallo sciame di **1,5 metri orizzontalmente** in una direzione a tua scelta."
+      },
+      {
+        "name": "Magia del Custode dello Sciame (Swarmkeeper Magic)",
+        "level": 3,
+        "description": "Apprendi il trucchetto <em>Mano Magica (Mage Hand)</em> se non lo conosci già; quando lo lanci, la mano prende la forma dei tuoi spiriti della natura.<br><br>Inoltre, hai sempre preparati i seguenti incantesimi ai livelli da Ranger indicati:<br>- **3° Livello:** <em>Fuoco Fatato (Faerie Fire)</em>, <em>Mano Magica (Mage Hand)</em><br>- **5° Livello:** <em>Ragnatela (Web)</em><br>- **9° Livello:** <em>Forma Gassosa (Gaseous Form)</em><br>- **13° Livello:** <em>Occhio Arcano (Arcane Eye)</em><br>- **17° Livello:** <em>Piaga degli Insetti (Insect Plague)</em>"
+      },
+      {
+        "name": "Marea Dondolante (Writhing Tide)",
+        "level": 7,
+        "description": "Come **Azione Bonus**, puoi condensare parte del tuo sciame per sollevarti, ottenendo una **velocità di volare di 3 metri** e la capacità di **fluttuare** per **1 minuto** (o finché non sei Incapacitato).<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **bonus di competenza** e recuperi tutti gli utilizzi spesi al termine di un **riposo lungo**."
+      },
+      {
+        "name": "Sciame Potente (Mighty Swarm)",
+        "level": 11,
+        "description": "Il tuo privilegio *Sciame Adunato* si potenzia nei seguenti modi:<br>- Il danno dello *Sciame Adunato* aumenta a **1d8**.<br>- Se una creatura fallisce il tiro di salvezza per non essere spostata dallo sciame, puoi anche far sì che lo sciame la renda **Prona**.<br>- Quando vieni spostato dal tuo *Sciame Adunato*, ottieni **Mezza Copertura** fino all'inizio del tuo turno successivo."
+      },
+      {
+        "name": "Dispersione dello Sciame (Swarming Dispersal)",
+        "level": 15,
+        "description": "Quando subisci danni, puoi usare la tua **Reazione** per ottenere **Resistenza a quel danno**, svanire nello sciame e **teletrasportarti** in uno spazio libero visibile entro **9 metri** da te.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **bonus di competenza** e recuperi tutti gli utilizzi al termine di un **riposo lungo**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_ranger_drakewarden",
+    "class_id": "ranger",
+    "name": "Drakewarden",
+    "name_it": "Custode dei Draghi",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Un Custode dei Draghi incanala il proprio legame con la natura sotto forma di uno spirito draconico, manifestando al suo fianco un draco draco compagno che cresce in potenza, dimensioni e maestosità al fianco del ranger.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Dono Draconico, Draco Compagno, Legame di Zanna e Scaglia, Soffio del Draco, Legame Perfetto.",
+    "features": [
+      {
+        "name": "Dono Draconico (Draconic Gift)",
+        "level": 3,
+        "description": "Il tuo legame draconico ti conferisce i seguenti benefici:<br>- **Taumaturgia:** Apprendi il trucchetto <em>Taumaturgia (Thaumaturgy)</em>, che conta come un incantesimo da ranger per te.<br>- **Lingua dei Draghi:** Imparare a parlare, leggere e scrivere il **Draconico** o un'altra lingua a tua scelta."
+      },
+      {
+        "name": "Draco Compagno (Drake Companion)",
+        "level": 3,
+        "description": "Come **Azione**, evochi magicamente il tuo draco compagno entro 9 metri da te. Ogni volta che lo evochi, scegli un tipo di danno dalla sua essenza draconica (**Acido, Freddo, Fuoco, Elettricità o Veleno**).<br><br>- **In Combattimento:** Agisce subito dopo il tuo turno. Può muoversi e usare la sua Reazione liberamente, ma esegue solo l'azione di **Schivata** a meno che tu non usi un'**Azione Bonus** per ordinargli un'altra azione.<br>- **Se sei Incapacitato:** Può compiere qualsiasi azione a sua scelta.<br>- **Durata e Evocazione:** Rimane finché non scende a 0 HP, lo evochi di nuovo o muori. Puoi evocarlo **una volta gratis per riposo lungo**; in seguito devi spendere uno **slot incantesimo di 1° livello o superiore**."
+      },
+      {
+        "name": "Legame di Zanna e Scaglia (Bond of Fang and Scale)",
+        "level": 7,
+        "description": "Quando evochi il draco, esso sviluppa le ali e ottiene una **velocità di volare pari alla sua velocità sul terreno**. Inoltre, tu e il draco ottenete i seguenti benefici:<br>- **Cavalcatura Draco:** Il draco cresce a taglia **Media**. Se sei di taglia Media o inferiore puoi usarlo come cavalcatura (mentre lo cavalchi non può usare la velocità di volare di questo privilegio).<br>- **Zanna Magica:** L'attacco *Morso* del draco infligge **1d6 danni extra** del tipo scelto con la sua Essenza Draconica.<br>- **Resistenza:** Ottieni **Resistenza** al tipo di danno scelto per l'Essenza Draconica del draco."
+      },
+      {
+        "name": "Soffio del Draco (Drake's Breath)",
+        "level": 11,
+        "description": "Come **Azione**, puoi esalare (o far esalare al tuo draco) un **cono di 9 metri** di energia draconica scegliendo tra Acido, Freddo, Fuoco, Elettricità o Veleno.<br><br>Ogni creatura nell'area deve effettuare un **tiro di salvezza su Destrezza** contro la tua CD degli incantesimi: subisce **8d6 danni** se fallisce (aumentano a **10d6** al 15° livello), o la metà se supera. Puoi usarlo **una volta gratis per riposo lungo**; utilizzi aggiuntivi richiedono uno **slot incantesimo di 3° livello o superiore**."
+      },
+      {
+        "name": "Legame Perfetto (Perfected Bond)",
+        "level": 15,
+        "description": "Finché il tuo draco è evocato, entrambi ottenete i seguenti benefici:<br>- **Morso Potenziato:** Il danno extra del *Morso* del draco aumenta a **2d6**.<br>- **Draco Grande:** Il draco cresce a taglia **Grande**. Quando lo cavalchi, può volare liberamente.<br>- **Resistenza Riflessiva:** Quando tu o il draco subite danni mentre vi trovate entro 9 metri l'uno dall'altro, puoi usare la tua **Reazione** per conferire **Resistenza a quella singola istanza di danno** a te o al draco. Puoi usare questa Reazione un numero di volte pari al tuo **bonus di competenza** (recuperi gli utilizzi con un **riposo lungo**)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_ranger_horizon_walker",
+    "class_id": "ranger",
+    "name": "Horizon Walker",
+    "name_it": "Viandante dell'Orizzonte",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Viandanti dell'Orizzonte proteggono il mondo dalle minacce provenienti da altri piani di esistenza. Sorvegliano i portali planari e viaggiano attraverso il multiverso per dare la caccia ai propri nemici e preservare l'equilibrio della realtà.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Magia del Viandante dell'Orizzonte, Percepire Portale, Guerriero Planare, Passo Etereo, Attacco Distante, Difesa Spettrale.",
+    "features": [
+      {
+        "name": "Magia del Viandante dell'Orizzonte (Horizon Walker Magic)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Ranger indicati:<br>- **3° Livello:** <em>Protezione dal Bene e dal Male (Protection from Evil and Good)</em><br>- **5° Livello:** <em>Passo Mistico (Misty Step)</em><br>- **9° Livello:** <em>Velocità (Haste)</em><br>- **13° Livello:** <em>Bandire (Banishment)</em><br>- **17° Livello:** <em>Cerchio di Teletrasporto (Teleportation Circle)</em>"
+      },
+      {
+        "name": "Percepire Portale (Detect Portal)",
+        "level": 3,
+        "description": "Come **Azione**, percepisci la distanza e la direzione del portale planare più vicino a te entro **1,6 chilometri** (1 miglia).<br><br>Una volta usato questo privilegio, devi completare un **riposo breve o lungo** per poterlo riutilizzare."
+      },
+      {
+        "name": "Guerriero Planare (Planar Warrior)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, scegli una creatura che puoi vedere entro 9 metri da te. La volta successiva in cui la colpisci in questo turno con un attacco con un'arma, **tutto il danno dell'attacco diventa danno da Forza** e il bersaglio subisce **1d8 danni da Forza extra**.<br><br>Questo danno extra aumenta a **2d8** quando raggiungi l'11° livello da Ranger."
+      },
+      {
+        "name": "Passo Etereo (Ethereal Step)",
+        "level": 7,
+        "description": "Come **Azione Bonus**, puoi lanciare l'incantesimo <em>Forma Eterea (Etherealness)</em> senza spendere slot incantesimo, ma l'incantesimo **termina alla fine del turno corrente**.<br><br>Una volta usato questo privilegio, devi completare un **riposo breve o lungo** per poterlo riutilizzare."
+      },
+      {
+        "name": "Attacco Distante (Distant Strike)",
+        "level": 11,
+        "description": "Quando usi l'azione di **Attacco**, puoi **teletrasportarti fino a 3 metri** in uno spazio libero visibile prima di ogni singolo attacco.<br><br>Se con l'azione di Attacco attacchi **almeno due creature diverse**, puoi effettuare un **attacco aggiuntivo** contro una terza creatura."
+      },
+      {
+        "name": "Difesa Spettrale (Spectral Defense)",
+        "level": 15,
+        "description": "Quando subisci danni da un attacco, puoi usare la tua **Reazione** per ottenere **Resistenza a tutti i danni di quell'attacco** per il turno corrente."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
