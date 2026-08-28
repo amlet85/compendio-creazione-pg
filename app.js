@@ -223,8 +223,8 @@ function filterData() {
     if (!matchesName) return false;
 
     // 2. Lettura tipi e categorie
-    const rawType = (item.type || '').toLowerCase().replace(/['_ \-]/g, '');
-    const rawCat = (item.category || '').toLowerCase().replace(/['_ \-]/g, '');
+    const rawType = (item.type || '').toLowerCase().trim();
+    const rawCat = (item.category || '').toLowerCase().trim();
 
     let matchesCategory = false;
 
@@ -233,7 +233,6 @@ function filterData() {
     } else if (selectedCategory === "talentoorigine" || selectedCategory === "origine") {
       const isTalento = rawType.includes("talento") || rawCat.includes("talento") || rawType.includes("feat") || rawCat.includes("feat");
       const isOrigine = rawType.includes("origine") || rawCat.includes("origine") || rawType.includes("origin") || rawCat.includes("origin");
-      // Accetta sia chi ha "origine" nella categoria/tipo, sia chi ha entrambi i tag
       matchesCategory = isOrigine || (isTalento && isOrigine);
     } else if (selectedCategory === "stiledicombattimento" || selectedCategory === "stilecombattimento") {
       matchesCategory = rawType.includes("stile") || 
@@ -245,12 +244,24 @@ function filterData() {
       const isOrigin = rawCat.includes("origine") || rawType.includes("origine");
       const isFightingStyle = rawCat.includes("stile") || rawCat.includes("combattimento") || rawType.includes("stile");
       matchesCategory = (rawType.includes("talento") || rawCat.includes("talento")) && !isOrigin && !isFightingStyle;
-    } else if (selectedCategory === "arma") {
-      matchesCategory = rawType.includes("arma") || rawCat.includes("arma") || rawType.includes("weapon") || rawCat.includes("weapon");
-    } else if (selectedCategory === "armatura") {
-      matchesCategory = rawType.includes("armatura") || rawCat.includes("armatura") || rawType.includes("armor") || rawCat.includes("armor") || rawCat.includes("scudo") || rawCat.includes("shield");
+    } else if (selectedCategory === "armi" || selectedCategory === "arma") {
+      // Escludiamo tassativamente qualsiasi riferimento alle armature
+      const isArmor = rawType.includes("armatur") || rawCat.includes("armatur") || 
+                      rawType.includes("armor") || rawCat.includes("armor");
+                      
+      const isWeapon = rawType.includes("armi") || rawCat.includes("armi") || 
+                       rawType === "arma" || rawCat === "arma" || 
+                       rawType.includes("weapon") || rawCat.includes("weapon");
+                       
+      matchesCategory = isWeapon && !isArmor;
+    } else if (selectedCategory === "armature" || selectedCategory === "armatura") {
+      matchesCategory = rawType.includes("armatur") || rawCat.includes("armatur") || 
+                        rawType.includes("armor") || rawCat.includes("armor") || 
+                        rawCat.includes("scudo") || rawCat.includes("shield");
     } else if (selectedCategory === "equipaggiamento") {
-      const isWeaponOrArmor = rawType.includes("arma") || rawCat.includes("arma") || rawType.includes("armatura") || rawCat.includes("armatura");
+      const isWeaponOrArmor = rawType.includes("armi") || rawType.includes("arma") || 
+                              rawType.includes("armatur") || rawCat.includes("armatur") || 
+                              rawType.includes("weapon") || rawType.includes("armor");
       matchesCategory = (rawType.includes("equip") || rawCat.includes("equip")) && !isWeaponOrArmor;
     } else {
       matchesCategory = rawType.includes(selectedCategory) || rawCat.includes(selectedCategory);
@@ -270,7 +281,6 @@ function filterData() {
       parentClassString = parentClass.toLowerCase();
     }
 
-    // Se l'elemento è privo di classe assegnata ed è un elemento generico (talento, origine, background, razza), non viene scartato
     const isGenericItem = rawType.includes('talento') || rawCat.includes('talento') || 
                           rawType.includes('origine') || rawCat.includes('origine') || 
                           rawType.includes('background') || rawCat.includes('background') ||
@@ -329,7 +339,7 @@ function filterData() {
   renderCards(filtered);
 }
 
-// Inizializzazione sicura degli EventListener
+// Inizializzazione degli EventListener
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput');
   const categoryFilter = document.getElementById('categoryFilter');
