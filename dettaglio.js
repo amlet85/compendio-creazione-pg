@@ -1,7 +1,7 @@
 async function loadDetail() {
   const contentDiv = document.getElementById('detailContent');
   
-  // 1. Estrae l'ID dai parametri dell'URL (es. dettaglio.html?id=subclass_barbarian_wild_heart)
+  // 1. Estrae l'ID dai parametri dell'URL
   const urlParams = new URLSearchParams(window.location.search);
   const itemId = urlParams.get('id');
 
@@ -15,8 +15,20 @@ async function loadDetail() {
     const response = await fetch('character_data.json');
     const data = await response.json();
 
-    // 3. Trova l'elemento corrispondente all'ID
-    const item = data.find(i => String(i.id).toLowerCase() === itemId.toLowerCase());
+    // 3. Ricerca flessibile: confronta itemId con id, name, name_it o slug
+    const targetSearch = decodeURIComponent(itemId).toLowerCase().trim();
+    
+    const item = data.find(i => {
+      const candidateId = String(i.id || '').toLowerCase().trim();
+      const candidateName = String(i.name || '').toLowerCase().trim();
+      const candidateNameIt = String(i.name_it || '').toLowerCase().trim();
+      const candidateSlug = String(i.slug || '').toLowerCase().trim();
+
+      return candidateId === targetSearch || 
+             candidateName === targetSearch || 
+             candidateNameIt === targetSearch || 
+             candidateSlug === targetSearch;
+    });
 
     if (!item) {
       contentDiv.innerHTML = '<p>Elemento non trovato nel database.</p>';
