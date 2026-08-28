@@ -5199,12 +5199,12 @@
   "prerequisite": "Nessuno",
   "description_it": "Sei sempre vigile di fronte al pericolo.<br><br><strong>Benefici:</strong><br>• <strong>Iniziativa Aumentata:</strong> Aggiungi il tuo Bonus di Competenza al tiro di Iniziativa.<br>• <strong>Scambio di Iniziativa:</strong> Subito dopo aver tirato l'iniziativa, puoi scambiare il tuo valore di iniziativa con quello di un alleato disposto ed entro vista."
 },
-  {
+ {
     "id": "feat_crafter",
     "name": "Crafter",
     "name_it": "Artigiano d'Insegna",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Sei abile nella creazione e nel commercio rapido di beni da lavoro.<br><br><strong>Benefici:</strong><br>• <strong>Competenze Strumenti:</strong> Ottieni competenza in 3 Strumenti da Artigiano a tua scelta.<br>• <strong>Sconto d'Acquisto:</strong> Ottieni uno sconto del 20% sugli acquisti di equipaggiamento non magico.<br>• <strong>Creazione Rapida:</strong> Riduci il tempo necessario per fabbricare un oggetto non magico."
@@ -5214,7 +5214,7 @@
     "name": "Healer",
     "name_it": "Guaritore",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Sai come trattare le ferite rapidamente sul campo di battaglia.<br><br><strong>Benefici:</strong><br>• <strong>Medicazioni da Battaglia:</strong> Usando la Borsa del Medico su una creatura a 1,5 metri, quest'ultima può spendere un Dado Vita e recuperare Punti Vita pari al tiro + il tuo Bonus di Competenza.<br>• <strong>Ritiro Fortunato:</strong> Quando tiri un 1 su un dado di guarigione che lanci, puoi ritirarlo."
@@ -5224,7 +5224,7 @@
     "name": "Magic Initiate (Cleric)",
     "name_it": "Iniziato alla Magia (Chierico)",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Apprendi le basi della magia divina.<br><br><strong>Benefici:</strong><br>• Impari 2 Trucchetti dalla lista del Chierico.<br>• Impari 1 incantesimo di 1° livello dalla lista del Chierico (puoi lanciarlo gratuitamente 1 volta per riposo lungo o usando i tuoi slot).<br>• La caratteristica da incantatore per questi incantesimi è Saggezza."
@@ -5234,7 +5234,7 @@
     "name": "Magic Initiate (Druid)",
     "name_it": "Iniziato alla Magia (Druido)",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Apprendi le basi della magia primordiale.<br><br><strong>Benefici:</strong><br>• Impari 2 Trucchetti dalla lista del Druido.<br>• Impari 1 incantesimo di 1° livello dalla lista del Druido (puoi lanciarlo gratuitamente 1 volta per riposo lungo o usando i tuoi slot).<br>• La caratteristica da incantatore per questi incantesimi è Saggezza."
@@ -5244,7 +5244,7 @@
     "name": "Magic Initiate (Wizard)",
     "name_it": "Iniziato alla Magia (Mago)",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Apprendi le basi della magia arcana.<br><br><strong>Benefici:</strong><br>• Impari 2 Trucchetti dalla lista del Mago.<br>• Impari 1 incantesimo di 1° livello dalla lista del Mago (puoi lanciarlo gratuitamente 1 volta per riposo lungo o usando i tuoi slot).<br>• La caratteristica da incantatore per questi incantesimi è Intelligenza."
@@ -5254,7 +5254,7 @@
     "name": "Musician",
     "name_it": "Musicista",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "La tua musica infonde coraggio e vigore nei tuoi alleati.<br><br><strong>Benefici:</strong><br>• <strong>Competenza Strumenti:</strong> Ottieni competenza in 3 Strumenti Musicali.<br>• <strong>Canto d'Ispirazione:</strong> Al termine di un riposo breve o lungo, puoi eseguire un brano per conferire l'Ispirazione Eroica a un numero di alleati pari al tuo Bonus di Competenza."
@@ -5264,7 +5264,7 @@
     "name": "Savage Attacker",
     "name_it": "Attaccante Selvaggio",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Sai come infliggere ferite particolarmente devastanti in mischia.<br><br><strong>Benefici:</strong><br>• Una volta per turno, quando colpisci una creatura con un attacco con arma, puoi tirare i dadi di danno dell'arma due volte e usare il risultato più alto."
@@ -5274,7 +5274,7 @@
     "name": "Skilled",
     "name_it": "Abile",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Possiedi una straordinaria versatilità in diverse discipline.<br><br><strong>Benefici:</strong><br>• Ottieni la competenza in 3 Abilità o Strumenti a tua scelta.<br>• Puoi selezionare questo talento più volte."
@@ -5284,7 +5284,7 @@
     "name": "Tavern Brawler",
     "name_it": "Lottatore da Taverna",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Sei abituato alle risse da bar e a usare qualsiasi oggetto come arma.<br><br><strong>Benefici:</strong><br>• <strong>Colpi a Mani Nude:</strong> I tuoi colpi a mani nude infliggono 1d4 + Mod. Forza.<br>• <strong>Spinta con Colpo:</strong> Quando colpisci con un attacco a mani nude, puoi spingere il bersaglio di 1,5 metri indietro.<br>• <strong>Armi Improvvisate:</strong> Hai competenza con le armi improvvisate."
@@ -5294,7 +5294,7 @@
     "name": "Tough",
     "name_it": "Robusto",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "La tua stazza e la tua fibra ti rendono eccezionalmente resistente.<br><br><strong>Benefici:</strong><br>• I tuoi Punti Vita massimi aumentano di un importo pari al doppio del tuo livello quando acquisisci questo talento.<br>• Ogni volta che sali di livello successivamente, i tuoi Punti Vita massimi aumentano di ulteriori 2 Punti Vita."
@@ -5304,7 +5304,7 @@
     "name": "Lucky",
     "name_it": "Fortunato",
     "type": "talento",
-    "category": "Origine",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno",
     "description_it": "Hai una fortuna inspiegabile che ti trae d'intralcio nei momenti critici.<br><br><strong>Benefici:</strong><br>• <strong>Punti Fortuna:</strong> Ottieni un numero di Punti Fortuna pari al tuo Bonus di Competenza (si ricaricano con un riposo lungo).<br>• <strong>Vantaggio di Fortuna:</strong> Quando effettui un tiro per colpire, una prova di caratteristica o un tiro salvezza, puoi spendere 1 Punto Fortuna per ottenere Vantaggio.<br>• <strong>Svantaggio al Nemico:</strong> Quando un attacco ti colpisce, puoi spendere 1 Punto Fortuna per imporre Svantaggio al tiro per colpire del nemico."
@@ -5314,7 +5314,7 @@
     "name": "Actor",
     "name_it": "Attore",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Carisma 13+",
     "description_it": "Sei un maestro della mimesi e della drammatizzazione.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Carisma (max 20).<br>• <strong>Contraffazione Parlata:</strong> Puoi imitare la voce e il modo di parlare di altre creature dopo averle ascoltate per almeno 1 minuto.<br>• <strong>Vantaggio all'Inganno:</strong> Vantaggio sulle prove di Inganno e Intrattenere per passare per qualcun altro."
