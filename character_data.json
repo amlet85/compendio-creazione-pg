@@ -4446,6 +4446,299 @@
     ]
   },
   {
+    "id": "subclass_rogue_arcane_trickster",
+    "class_id": "rogue",
+    "name": "Arcane Trickster",
+    "name_it": "Mistificatore Arcano",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Alcuni ladri combinano le proprie capacita di furtivita e agilita con la magia arcana, apprendendo trucchi da mago per assisterli nei loro colpi, borseggi e avventure.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Incantesimi, Prestidigitazione della Mano Magica, Imboscata Magica, Mistificatore Versatile, Furto di Incantesimi.",
+    "features": [
+      {
+        "name": "Incantesimi (Spellcasting)",
+        "level": 3,
+        "description": "Impari a lanciare incantesimi da Mago.<br><br>- **Trucchetti:** Conosci *Mano Magica (Mage Hand)* e altri 2 trucchetti a scelta dalla lista del Mago (ne apprendi un altro al 10° livello). Quando sali di livello da Ladro, puoi sostituire un trucchetto (tranne *Mano Magica*).<br>- **Incantesimi Preparati:** Prepari una lista di incantesimi da Mago di 1° livello o superiore per cui possiedi slot. Inizi con 3 incantesimi e il numero aumenta salendo di livello.<br>- **Caratteristica da Incantatore:** Intelligenza.<br>- **Focus Incantatore:** Puoi usare un Focus Arcano per i tuoi incantesimi da Mago."
+      },
+      {
+        "name": "Prestidigitazione della Mano Magica (Mage Hand Legerdemain)",
+        "level": 3,
+        "description": "Quando lanci <em>Mano Magica (Mage Hand)</em>, puoi farlo come **Azione Bonus** e puoi renderla **Invisibile**.<br><br>Puoi inoltre controllare la mano con un'**Azione Bonus** e utilizzarla per effettuare prove di **Destrezza (Rapidità di Mano)**."
+      },
+      {
+        "name": "Imboscata Magica (Magical Ambush)",
+        "level": 9,
+        "description": "Se possiedi la condizione **Invisibile** quando lanci un incantesimo su una creatura, questa subisce **Svantaggio a qualsiasi tiro di salvezza** effettuato contro l'incantesimo nello stesso turno."
+      },
+      {
+        "name": "Mistificatore Versatile (Versatile Trickster)",
+        "level": 13,
+        "description": "Ottieni la capacità di distrarre i bersagli con la tua *Mano Magica*. Quando usi l'opzione *Sgabello (Trip)* del tuo *Colpo Astuto (Cunning Strike)* su una creatura, puoi applicare l'effetto anche a **un'altra creatura entro 1,5 metri** dalla mano spettrale."
+      },
+      {
+        "name": "Furto di Incantesimi (Spell Thief)",
+        "level": 17,
+        "description": "Subito dopo che una creatura lancia un incantesimo che ha te come bersaglio o ti include nella sua area di effetto, puoi usare la tua **Reazione** per costringerla a effettuare un **tiro di salvezza su Intelligenza** contro la tua CD degli incantesimi.<br><br>- **In caso di fallimento:** Annulli l'effetto dell'incantesimo su di te e ne **rubi la conoscenza** (se è di almeno 1° livello e di un livello che puoi lanciare).<br>- **Effetto:** Per le successive 8 ore hai quell'incantesimo preparato e l'incantatore originario non può lanciarlo. Una volta usato questo privilegio, devi completare un **riposo lungo** prima di riutilizzarlo."
+      }
+    ]
+  },
+  {
+    "id": "subclass_rogue_assassin",
+    "class_id": "rogue",
+    "name": "Assassin",
+    "name_it": "Assassino",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "L'addestramento dell'Assassino si concentra sulla macabra arte della morte, sfruttando furtività, veleni e travestimenti per eliminare i bersagli con spietata efficienza.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Competenza Bonus, Assassinare, Maestria nell'Infiltrazione, Armi Avvelenate, Colpo Mortale.",
+    "features": [
+      {
+        "name": "Competenza Bonus (Bonus Proficiencies)",
+        "level": 3,
+        "description": "Ottieni un **Kit per Travestimenti** e un **Kit del Veleno**, e acquisisci la **competenza** nell'uso di entrambi gli strumenti."
+      },
+      {
+        "name": "Assassinare (Assassinate)",
+        "level": 3,
+        "description": "Sei esperto nell'eseguire imboscate, ottenendo i seguenti benefici:<br>- **Iniziativa:** Hai **Vantaggio** ai tiri di Iniziativa.<br>- **Attacchi a Sorpresa:** Durante il primo round di ciascun combattimento, hai **Vantaggio ai tiri per colpire** contro qualsiasi creatura che non abbia ancora svolto il proprio turno. Se il tuo *Attacco Furtivo* colpisce un bersaglio durante quel round, esso subisce **danni extra pari al tuo livello da Ladro** (dello stesso tipo dell'arma)."
+      },
+      {
+        "name": "Maestria nell'Infiltrazione (Infiltration Expertise)",
+        "level": 9,
+        "description": "Padroneggi tecniche speciali per facilitare le infiltrazioni:<br>- **Mimetismo Perfetto:** Puoi imitare in modo infallibile la voce, la parlata o la grafia di un'altra persona dopo averla studiata per almeno un'ora.<br>- **Mira Mobile:** La tua velocità non viene ridotta a 0 quando usi il privilegio *Mira Ferma (Steady Aim)*."
+      },
+      {
+        "name": "Armi Avvelenate (Envenom Weapons)",
+        "level": 13,
+        "description": "Quando usi l'opzione *Veleno (Poison)* del tuo *Colpo Astuto (Cunning Strike)*, se il bersaglio fallisce il tiro di salvezza subisce anche **2d6 danni da Veleno**. Questo danno **ignora la Resistenza ai danni da Veleno**."
+      },
+      {
+        "name": "Colpo Mortale (Death Strike)",
+        "level": 17,
+        "description": "Quando colpisci con il tuo *Attacco Furtivo* nel primo round di un combattimento, il bersaglio deve effettuare un **tiro di salvezza su Costituzione** (CD 8 + tuo modificatore di Destrezza + tuo Bonus di Competenza).<br><br>Se fallisce il tiro di salvezza, **tutti i danni dell'attacco vengono raddoppiati** contro quel bersaglio."
+      }
+    ]
+  },
+  {
+    "id": "subclass_rogue_soulknife",
+    "class_id": "rogue",
+    "name": "Soulknife",
+    "name_it": "Lama Psionica",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Ladri del cammino della Lama Psionica scoprono un potere psionico dentro di sé e lo incanalano per eseguire i propri colpi, creando lame di pura energia mentale e penetrando barriere fisiche e psichiche.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Potere Psionico, Lame Psichiche, Lame dell'Anima, Velo Psichico, Squarcio Mentale.",
+    "features": [
+      {
+        "name": "Potere Psionico (Psionic Power)",
+        "level": 3,
+        "description": "Possiedi una riserva di energia psionica rappresentata dai tuoi **Dadi di Energia Psionica** (il numero e la taglia aumentano con il livello: 4d6 al 3°, 6d8 al 5°, 8d8 al 9°, 10d10 al 13°, 12d12 al 17°). Recuperi 1 dado speso con un **riposo breve** e tutti i dadi con un **riposo lungo**.<br><br>Puoi spendere questi dadi per i seguenti poteri:<br>- **Talento Psico-Sostenuto (Psi-Bolstered Knack):** Se fallisci una prova di caratteristica in cui sei competente, puoi tirare un Dado di Energia Psionica e sommarlo al risultato. Il dado viene **speso solo se la prova ha successo**.<br>- **Sussurri Psichici (Psychic Whispers):** Come **Azione Magica**, scegli fino a un numero di creature pari al tuo bonus di competenza entrate nel tuo campo visivo e tiri un Dado di Energia Psionica. Per un numero di ore pari al risultato, le creature possono comunicare telepaticamente con te entro 1,6 km. Il primo utilizzo dopo un riposo lungo è **gratuito** (non spende il dado)."
+      },
+      {
+        "name": "Lame Psichiche (Psychic Blades)",
+        "level": 3,
+        "description": "Quando usi l'azione di **Attacco** o effettui un **Attacco di Opportunità**, puoi manifestare una lama di energia psichica nella tua mano libera.<br><br>- **Statistiche:** Arma Semplice da Mischia, Danni: **1d6 Psichici** + mod. caratteristica, Proprietà: **Accurata**, **Lancio** (gittata 18/36 m), Maestria: **Vex**.<br>- **Scomparsa:** La lama svanisce subito dopo l'attacco senza lasciare segni fisici.<br>- **Attacco Bonus:** Se hai l'altra mano libera, puoi effettuare un secondo attacco a gittata o in mischia come **Azione Bonus** nello stesso turno (il dado di danno di questo attacco bonus è **1d4**)."
+      },
+      {
+        "name": "Lame dell'Anima (Soul Blades)",
+        "level": 9,
+        "description": "Sblocchi nuovi modi per utilizzare le tue *Lame Psichiche*:<br>- **Colpi Guidati (Homing Strikes):** Se manchi un bersaglio con un attacco delle Lame Psichiche, puoi tirare un Dado di Energia Psionica e sommarlo al tiro per colpire. Il dado viene **speso solo se l'attacco va a segno**.<br>- **Teletrasporto Psichico (Psychic Teleportation):** Come **Azione Bonus**, manifesti una lama, spendi un Dado di Energia Psionica, lo tiri e scagli la lama verso uno spazio libero visibile fino a una distanza pari a **3 metri moltiplicati per il risultato del dado**. Ti teletrasporti in quello spazio e la lama svanisce."
+      },
+      {
+        "name": "Velo Psichico (Psychic Veil)",
+        "level": 13,
+        "description": "Come **Azione Magica**, ottieni la condizione **Invisibile** per **1 ora** (o finché non la interrompi). L'invisibilità termina prima se infliggi danni a una creatura o la costringi a effettuare un tiro di salvezza.<br><br>Puoi usare questo privilegio **una volta gratis per riposo lungo**; utilizzi successivi richiedono lo spesa di **un Dado di Energia Psionica**."
+      },
+      {
+        "name": "Squarcio Mentale (Rend Mind)",
+        "level": 17,
+        "description": "Quando usi le tue *Lame Psichiche* per infliggere danni da *Attacco Furtivo*, puoi costringere il bersaglio a effettuare un **tiro di salvezza su Saggezza** (CD 8 + bonus competenza + mod. Destrezza).<br><br>Se fallisce, la creatura subisce la condizione **Stordito** per **1 minuto** (ripete il salvataggio alla fine di ogni suo turno per terminare l'effetto). Puoi usarlo **una volta gratis per riposo lungo**, oppure spendendo **3 Dadi di Energia Psionica**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_rogue_thief",
+    "class_id": "rogue",
+    "name": "Thief",
+    "name_it": "Furfante",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Furfante combina le abilita di uno scassinatore, di un cacciatore di tesori e di un esploratore. Oltre a perfezionare agilita e furtivita, sviluppa capacita straordinarie per esplorare rovine e trarre il massimo vantaggio dagli oggetti magici.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Mani Veloci, Lavoro al Secondo Piano, Furtivo Supremo, Uso Oggetti Magici, Riflessi da Furfante.",
+    "features": [
+      {
+        "name": "Mani Veloci (Fast Hands)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, puoi compiere una delle seguenti azioni:<br>- **Rapidità di Mano:** Effettuare una prova di *Destrezza (Rapidità di Mano)* per scassinare una serratura o disattivare una trappola con gli Attrezzi da Ladro, o per borseggiare qualcuno.<br>- **Usare un Oggetto:** Compiere l'azione *Utilizzare* o compiere l'**Azione Magica** per attivare un oggetto magico che richiede tale azione."
+      },
+      {
+        "name": "Lavoro al Secondo Piano (Second-Story Work)",
+        "level": 3,
+        "description": "Ti sei addestrato a raggiungere luoghi particolarmente difficili da accedere:<br>- **Scalatore:** Ottieni una **Velocità di Scalata** pari alla tua Velocità sul terreno.<br>- **Saltatore:** Puoi calcolare le tue distanze di salto usando il tuo modificatore di **Destrezza** anziché quello di Forza."
+      },
+      {
+        "name": "Furtivo Supremo (Supreme Sneak)",
+        "level": 9,
+        "description": "Ottieni una nuova opzione per il tuo privilegio *Colpo Astuto (Cunning Strike)*:<br>- **Attacco Furtivo (Costo: 1d6):** Se possiedi la condizione *Invisibile* fornita dall'azione di *Nascondersi*, questo attacco non fa terminare l'invisibilità su di te a patto che tu finisca il turno dietro **Copertura Tre Quarti** o **Copertura Totale**."
+      },
+      {
+        "name": "Uso Oggetti Magici (Use Magic Device)",
+        "level": 13,
+        "description": "Massimizzi l'uso degli oggetti magici ottenendo i seguenti benefici:<br>- **Sintonia:** Puoi sintonizzarti fino a **quattro oggetti magici** contemporaneamente.<br>- **Cariche:** Ogni volta che usi una capacita di un oggetto magico che consuma cariche, tiri un **d6**: con un risultato di **6**, usi la capacita **senza spendere cariche**.<br>- **Pergamene:** Puoi usare qualsiasi Pergamena d'Incantesimo (usando Intelligenza). Se l'incantesimo è un trucchetto o di 1° livello, lo lanci infallibilmente. Se è di livello superiore, devi superare una prova di *Intelligenza (Arcano)* con CD 10 + livello dell'incantesimo: se riesci lo lanci, se fallisci la pergamena si disintegrerà."
+      },
+      {
+        "name": "Riflessi da Furfante (Thief's Reflexes)",
+        "level": 17,
+        "description": "Sei un maestro nell'organizzare imboscate e sfuggire rapidamente al pericolo.<br><br>Puoi svolgere **due turni distinti durante il primo round** di qualsiasi combattimento: svolgi il tuo primo turno al tuo valore normale di Iniziativa e il tuo secondo turno al valore della tua **Iniziativa meno 10**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_rogue_inquisitive",
+    "class_id": "rogue",
+    "name": "Inquisitive",
+    "name_it": "Inquisitore",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Come Inquisitore eccelli nello svelare segreti e risolvere misteri. Fai affidamento su un occhio attento per i dettagli e sulla capacità di leggere le azioni e le parole altrui per scoprirne le vere intenzioni e sconfiggere i mali nascosti.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Orecchio per l'Inganno, Occhio per i Dettagli, Combattimento Intuitivo, Occhio Fermo, Occhio Infallibile, Occhio per la Debolezza.",
+    "features": [
+      {
+        "name": "Orecchio per l'Inganno (Ear for Deceit)",
+        "level": 3,
+        "description": "Sviluppi un orecchio raffinato per individuare le bugie. Ogni volta che effettui una prova di **Saggezza (Intuizione)** per determinare se una creatura sta mentendo, consideri qualsiasi risultato del d20 pari o inferiore a 7 **come se fosse un 8**."
+      },
+      {
+        "name": "Occhio per i Dettagli (Eye for Detail)",
+        "level": 3,
+        "description": "Puoi usare un'**Azione Bonus** per effettuare una prova di **Saggezza (Percezione)** per individuare una creatura o un oggetto nascosto, oppure una prova di **Intelligenza (Indagare)** per scoprire o decifrare indizi."
+      },
+      {
+        "name": "Combattimento Intuitivo (Insightful Fighting)",
+        "level": 3,
+        "description": "Imparo a decifrare le tattiche di un avversario. Come **Azione Bonus**, effettui una prova di **Saggezza (Intuizione)** contrapposta alla prova di **Carisma (Inganno)** di una creatura non incapacitata che puoi vedere entro 9 metri.<br><br>Se hai successo, puoi applicare il tuo **Attacco Furtivo** contro quel bersaglio anche se non hai Vantaggio al tiro per colpire (ma non se hai Svantaggio). Questo beneficio dura **1 minuto** o finché non usi con successo questo privilegio su un altro bersaglio."
+      },
+      {
+        "name": "Occhio Fermo (Steady Eye)",
+        "level": 9,
+        "description": "Ottieni **Vantaggio** a qualsiasi prova di **Saggezza (Percezione)** o **Intelligenza (Indagare)** se ti muovi non più della metà della tua velocità nello stesso turno."
+      },
+      {
+        "name": "Occhio Infallibile (Unerring Eye)",
+        "level": 13,
+        "description": "Come **Azione**, se non sei accecato o assordato, percepisci la presenza di illusioni, mutaforma non nella loro forma originale e altre magie create per ingannare i sensi entro **9 metri** da te. Percepisci che un effetto sta cercando di ingannarti, ma non ottieni informazioni su cosa sia nascosto o sulla sua vera natura.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **modificatore di Saggezza** (minimo 1) e recuperi tutti gli utilizzi spesi al termine di un **riposo lungo**."
+      },
+      {
+        "name": "Occhio per la Debolezza (Eye for Weakness)",
+        "level": 17,
+        "description": "Imparo a sfruttare le debolezza di una creatura studiandone tattiche e movimenti. Finchè il tuo privilegio *Combattimento Intuitivo* è attivo su una creatura, i danni del tuo **Attacco Furtivo** contro di essa aumentano di **3d6**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_rogue_mastermind",
+    "class_id": "rogue",
+    "name": "Mastermind",
+    "name_it": "Pianificatore",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Pianificatore si concentra sulle persone, sull'influenza e sui segreti. Spie, cortigiani e cospiratori seguono questo archetipo usando le parole come armi tanto quanto i pugnali o il veleno.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Maestro dell'Intrigo, Maestro di Tattica, Manipolatore Intuitivo, Sviamento, Anima dell'Inganno.",
+    "features": [
+      {
+        "name": "Maestro dell'Intrigo (Master of Intrigue)",
+        "level": 3,
+        "description": "Ottieni la competenza nel **Kit per Travestimenti**, nel **Kit per Salsificare** e in un **gioco da tavolo** a tua scelta. Imparti inoltre **due lingue** a tua scelta.<br><br>Inoltre, puoi imitare infallibilmente l'accento e i modi di parlare di una creatura ascoltata per almeno 1 minuto, facendoti passare per un madrelingua di quella regione (se conosci la lingua)."
+      },
+      {
+        "name": "Maestro di Tattica (Master of Tactics)",
+        "level": 3,
+        "description": "Puoi usare l'azione di **Aiuto** come **Azione Bonus**.<br><br>Inoltre, quando usi l'azione di Aiuto per assistere un alleato nell'attaccare una creatura, il bersaglio dell'attacco può trovarsi entro **9 metri** da te (invece di 1,5 metri), a patto che il bersaglio possa vederti o sentirti."
+      },
+      {
+        "name": "Manipolatore Intuitivo (Insightful Manipulator)",
+        "level": 9,
+        "description": "Se trascorri almeno 1 minuto a osservare o interagire con una creatura fuori dal combattimento, apprendi informazioni sulle sue capacità rispetto alle tue. Il DM ti rivelerà se la creatura è tua pari, superiore o inferiore in **due delle seguenti caratteristiche** a tua scelta:<br>- Punteggio di Intelligenza<br>- Punteggio di Saggezza<br>- Punteggio di Carisma<br>- Livelli di Classe (se ne possiede)<br><br>A discrezione del DM, potresti anche scoprire un dettaglio della storia della creatura o un suo tratto di personalità."
+      },
+      {
+        "name": "Sviamento (Misdirection)",
+        "level": 13,
+        "description": "Quando sei il bersaglio di un attacco mentre una creatura entro 1,5 metri da te ti sta fornendo copertura contro quell'attacco, puoi usare la tua **Reazione** per far sì che l'attacco abbia come bersaglio **quella creatura invece di te**."
+      },
+      {
+        "name": "Anima dell'Inganno (Soul of Deceit)",
+        "level": 17,
+        "description": "I tuoi pensieri non possono essere letti tramite telepatia o altri mezzi, a meno che tu non lo permetta. Puoi mostrare pensieri falsi superando una prova di **Carisma (Inganno)** contrapposta alla prova di **Saggezza (Intuizione)** del lettore della mente.<br><br>Inoltre, indipendentemente da ciò che dici, qualsiasi magia progettata per determinare se stai dicendo la verità indicherà che **stai dicendo la verità** (se lo desideri), e non puoi essere costretto a dire la verità da alcun effetto magico."
+      }
+    ]
+  },
+  {
+    "id": "subclass_rogue_phantom",
+    "class_id": "rogue",
+    "name": "Phantom",
+    "name_it": "Spettro",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Molti ladri camminano sul sottile confine tra la vita e la morte. Gli Spettri scoprono un legame mistico con la morte stessa, assorbendo la conoscenza dei defunti e impregnandosi di energia negativa fino a diventare simili a fantasmi.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Sussurri dei Morti, Lamenti dalla Tomba, Ogetti Ricordo dei Defunti, Camminata Spettrale, Rintocco di Morte.",
+    "features": [
+      {
+        "name": "Sussurri dei Morti (Whispers of the Dead)",
+        "level": 3,
+        "description": "Quando completi un **riposo breve o lungo**, puoi ottenere la **competenza in un'abilità o in uno strumento** a tua scelta, poiché una presenza spettrale condivide la sua conoscenza con te.<br><br>Mantieni questa competenza finché non usi di nuovo questo privilegio per sceglierne una diversa."
+      },
+      {
+        "name": "Lamenti dalla Tomba (Wails from the Grave)",
+        "level": 3,
+        "description": "Subito dopo aver inflitto i danni da *Attacco Furtivo* a una creatura nel tuo turno, puoi scegliere un **secondo bersaglio** visibile entro 9 metri dalla prima creatura.<br><br>- **Effetto:** Tiri un numero di dadi pari alla metà dei tuoi dadi di Attacco Furtivo (arrotondati per eccesso): la seconda creatura subisce **danni necrotici** pari al totale ottenuto.<br>- **Utilizzi:** Puoi usare questo privilegio un numero di volte pari al tuo **bonus di competenza** e recuperi tutti gli utilizzi spesi al termine di un **riposo lungo**."
+      },
+      {
+        "name": "Oggetti Ricordo dei Defunti (Tokens of the Departed)",
+        "level": 9,
+        "description": "Quando una creatura visibile muore entro 9 metri da te, puoi usare la tua **Reazione** per far apparire un piccolo ciondolo dell'anima nella tua mano libera (fino a un massimo pari al tuo **bonus di competenza**).<br><br>Puoi usare gli oggetti ricordo nei seguenti modi:<br>- **Vitalità Aumentata:** Finché ne possiedi uno, hai **Vantaggio ai tiri di salvezza contro la morte e su Costituzione**.<br>- **Lamento Gratuito:** Quando infliggi danni da *Attacco Furtivo*, puoi distruggere un oggetto ricordo per usare *Lamenti dalla Tomba* **senza consumarne un utilizzo**.<br>- **Interrogare lo Spirito:** Come **Azione**, puoi distruggere un oggetto ricordo per porre una domanda allo spirito associato. Lo spirito appare e risponde in modo sintetico in una lingua che conosceva in vita (non è obbligato a dire la verità)."
+      },
+      {
+        "name": "Camminata Spettrale (Ghost Walk)",
+        "level": 13,
+        "description": "Come **Azione Bonus**, assumi una forma spettrale per **10 minuti** ottenendo i seguenti benefici:<br>- **Volare:** Ottieni una velocità di volare di **3 metri** e puoi fluttuare.<br>- **Difesa:** I tiri per colpire contro di te hanno **Svantaggio**.<br>- **Incorporeità:** Puoi muoverti attraverso creature e oggetti come se fossero terreno difficile (subisci 1d10 danni da Forza se finisci il turno all'interno di un oggetto o creatura).<br><br>Puoi usare questo privilegio **una volta gratis per riposo lungo**, oppure distruggendo un **oggetto ricordo dell'anima** come parte dell'Azione Bonus."
+      },
+      {
+        "name": "Rintocco di Morte (Death Knell)",
+        "level": 17,
+        "description": "Il tuo legame con la morte si rafforza:<br>- **Lamento Potenziato:** Quando usi *Lamenti dalla Tomba*, infliggi i danni necrotici **sia al primo che al secondo bersaglio**.<br>- **Spirito Attratto:** Al termine di un **riposo lungo**, se non possiedi oggetti ricordo dell'anima, ne appare automaticamente uno nella tua mano."
+      }
+    ]
+  },
+  {
+    "id": "subclass_rogue_scout",
+    "class_id": "rogue",
+    "name": "Scout",
+    "name_it": "Esploratore",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "L'Esploratore eccelle nella furtività e nella sopravvivenza al di fuori delle città, facendo da avanguardia per i propri compagni nelle terre selvagge. È maestro nelle imboscate, nel pattugliamento e nella caccia.<br><br><strong>Classe Madre:</strong> Ladro<br><strong>Tratti di Sottoclasse:</strong> Schermagliatore, Sopravvissuto, Mobilità Superiore, Maestro di Imboscate, Colpo Improvviso.",
+    "features": [
+      {
+        "name": "Schermagliatore (Skirmisher)",
+        "level": 3,
+        "description": "Sei difficile da bloccare in combattimento. Quando un nemico termina il suo turno entro 1,5 metri da te, puoi usare la tua **Reazione** per muoverti fino alla **metà della tua velocità**.<br><br>Questo movimento **non provoca attacchi di opportunità**."
+      },
+      {
+        "name": "Sopravvissuto (Survivalist)",
+        "level": 3,
+        "description": "Ottieni la competenza nelle abilità **Natura** e **Sopravvivenza** (se non le possiedi già).<br><br>Inoltre, il tuo bonus di competenza viene **raddoppiato** per qualsiasi prova di caratteristica che utilizzi una di queste due competenze (*Maestria*)."
+      },
+      {
+        "name": "Mobilità Superiore (Superior Mobility)",
+        "level": 9,
+        "description": "La tua velocità sul terreno **aumenta di 3 metri**.<br><br>Se possiedi una velocità di scalata o di nuoto, l'aumento di 3 metri si applica anche a quelle velocità."
+      },
+      {
+        "name": "Maestro di Imboscate (Ambush Master)",
+        "level": 13,
+        "description": "Eccelli nel guidare le imboscate e nell'agire per primo:<br>- **Iniziativa:** Hai **Vantaggio ai tiri di Iniziativa**.<br>- **Segnalare il Bersaglio:** La prima creatura che colpisci durante il primo round di un combattimento diventa più facile da colpire: tutti i tiri per colpire effettuati contro di essa da te e dai tuoi alleati hanno **Vantaggio fino all'inizio del tuo turno successivo**."
+      },
+      {
+        "name": "Colpo Improvviso (Sudden Strike)",
+        "level": 17,
+        "description": "Puoi colpire con una velocità letale. Se compi l'azione di **Attacco** nel tuo turno, puoi effettuare **un attacco aggiuntivo come Azione Bonus**.<br><br>Questo attacco aggiuntivo può beneficiare del tuo **Attacco Furtivo** anche se lo hai già utilizzato in questo turno, a patto che tu **non applichi l'Attacco Furtivo allo stesso bersaglio più di una volta per turno**."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
