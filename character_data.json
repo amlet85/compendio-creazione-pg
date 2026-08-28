@@ -4739,6 +4739,457 @@
     ]
   },
   {
+    "id": "subclass_warlock_archfey",
+    "class_id": "warlock",
+    "name": "Archfey Patron",
+    "name_it": "Patrono Arcifata",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il tuo patto attinge al potere della Selva Fatata. Che tu abbia stretto un accordo con Titania, Oberon, il Principe del Gelo o un'antica strega, la magia fatata ti garantisce capacità di inganno, fascino e teletrasporto.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Patrono, Passi Fatati, Fuga Mistica, Difese Ammalianti, Magia Ammaliatrice.",
+    "features": [
+      {
+        "name": "Incantesimi del Patrono (Patron Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Warlock indicati:<br>- **3° Livello:** <em>Calmare Emozioni (Calm Emotions)</em>, <em>Fuoco Fatato (Faerie Fire)</em>, <em>Passo Mistico (Misty Step)</em>, <em>Forza Fantasmagorica (Phantasmal Force)</em>, <em>Sonnellino (Sleep)</em><br>- **5° Livello:** <em>Intermittenza (Blink)</em>, <em>Crescita Vegetale (Plant Growth)</em><br>- **7° Livello:** <em>Dominare Bestie (Dominate Beast)</em>, <em>Invisibilità Superiore (Greater Invisibility)</em><br>- **9° Livello:** <em>Dominare Persone (Dominate Person)</em>, <em>Sembianze (Seeming)</em>"
+      },
+      {
+        "name": "Passi Fatati (Steps of the Fey)",
+        "level": 3,
+        "description": "Puoi lanciare <em>Passo Mistico (Misty Step)</em> senza spendere slot incantesimo un numero di volte pari al tuo **modificatore di Carisma** (minimo 1). Recuperi tutti gli utilizzi spesi al termine di un **riposo lungo**.<br><br>Inoltre, ogni volta che lanci *Passo Mistico*, puoi applicare uno dei seguenti effetti aggiuntivi:<br>- **Passo Rinfrescante (Refreshing Step):** Subito dopo il teletrasporto, tu o una creatura visibile entro 3 metri ottenete **1d10 Punti Ferita Temporanei**.<br>- **Passo Provocatorio (Taunting Step):** Le creature entro 1,5 metri dallo spazio che hai lasciato devono superare un **tiro di salvezza su Saggezza** contro la tua CD degli incantesimi, altrimenti subiscono **Svantaggio ai tiri per colpire** contro bersagli diversi da te fino all'inizio del tuo turno successivo."
+      },
+      {
+        "name": "Fuga Mistica (Misty Escape)",
+        "level": 6,
+        "description": "Puoi lanciare <em>Passo Mistico (Misty Step)</em> come **Reazione** quando subisci danni.<br><br>Inoltre, sblocchi due nuove opzioni per i tuoi *Passi Fatati*:<br>- **Passo Invisibile (Disappearing Step):** Ottieni la condizione **Invisibile** fino all'inizio del tuo turno successivo o finché non effettui un tiro per colpire, infliggi danni o lanci un incantesimo.<br>- **Passo Terribile (Dreadful Step):** Le creature entro 1,5 metri dallo spazio che lasci o dallo spazio in cui appari (a tua scelta) devono superare un **tiro di salvezza su Saggezza** o subire **2d10 danni Psichici**."
+      },
+      {
+        "name": "Difese Ammalianti (Beguiling Defenses)",
+        "level": 10,
+        "description": "Sei **immune alla condizione Affascinato**.<br><br>Inoltre, subito dopo che una creatura visibile ti colpisce con un tiro per colpire, puoi usare la tua **Reazione** per **dimezzare i danni subiti** (arrotondati per difetto) e costringere l'attaccante a un **tiro di salvezza su Saggezza** contro la tua CD degli incantesimi: se fallisce, l'attaccante subisce **danni Psichici pari ai danni che ti ha inflitto**.<br><br>Puoi usare questa Reazione **una volta gratis per riposo lungo**; utilizzi successivi richiedono la spesa di uno **slot incantesimo di Magia del Patto**."
+      },
+      {
+        "name": "Magia Ammaliatrice (Bewitching Magic)",
+        "level": 14,
+        "description": "Subito dopo aver lanciato un incantesimo della scuola di **Ammaliamento** o **Illusione** usando un'azione e uno slot incantesimo, puoi lanciare <em>Passo Mistico (Misty Step)</em> come **parte della stessa azione e senza spendere uno slot incantesimo**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_warlock_celestial",
+    "class_id": "warlock",
+    "name": "Celestial Patron",
+    "name_it": "Patrono Celestiale",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il tuo patto attinge al potere dei Piani Superiori tramite un legame con couatl, sfingi, unicorni o altri esseri celestiali, conferendoti la capacità di canalizzare la luce sacra per curare ferite ed erogare danni radiosi.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Patrono, Luce Curativa, Anima Radiosa, Resilienza Celestiale, Vendetta Raggiante.",
+    "features": [
+      {
+        "name": "Incantesimi del Patrono (Patron Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Warlock indicati:<br>- **3° Livello:** <em>Aiuto (Aid)</em>, <em>Cura Ferite (Cure Wounds)</em>, <em>Dardo Tracciante (Guiding Bolt)</em>, <em>Ristorare Inferiore (Lesser Restoration)</em>, <em>Luce (Light)</em>, <em>Fiamma Sacra (Sacred Flame)</em><br>- **5° Livello:** <em>Luce del Giorno (Daylight)</em>, <em>Rinascita (Revivify)</em><br>- **7° Livello:** <em>Custode della Fede (Guardian of Faith)</em>, <em>Muro di Fuoco (Wall of Fire)</em><br>- **9° Livello:** <em>Ristorare Superiore (Greater Restoration)</em>, <em>Evoca Celestiale (Summon Celestial)</em>"
+      },
+      {
+        "name": "Luce Curativa (Healing Light)",
+        "level": 3,
+        "description": "Ottieni una riserva di d6 pari a **1 + il tuo livello da Warlock** per curare le ferite.<br><br>Come **Azione Bonus**, puoi curare te stesso o una creatura visibile entro 18 metri spendendo fino a un numero massimo di d6 pari al tuo **modificatore di Carisma** (minimo 1). Tiri i dadi spesi e ripristini un numero di Punti Ferita pari al totale ottenuto.<br><br>La riserva recupera tutti i dadi spesi al termine di un **riposo lungo**."
+      },
+      {
+        "name": "Anima Radiosa (Radiant Soul)",
+        "level": 6,
+        "description": "Ottieni **Resistenza ai danni Radiosi**.<br><br>Inoltre, **una volta per turno**, quando un incantesimo da te lanciato infligge danni Radiosi o da Fuoco, puoi **sommare il tuo modificatore di Carisma** a quei danni contro uno dei bersagli dell'incantesimo."
+      },
+      {
+        "name": "Resilienza Celestiale (Celestial Resilience)",
+        "level": 10,
+        "description": "Ottieni **Punti Ferita Temporanei** pari al tuo **livello da Warlock + modificatore di Carisma** ogni volta che completi un **riposo breve o lungo**, oppure quando usi il privilegio *Astuzia Magica (Magical Cunning)*.<br><br>Inoltre, puoi scegliere fino a **cinque creature** visibili quando ottieni questi punti: ciascuna di esse riceve Punti Ferita Temporanei pari alla **metà del tuo livello da Warlock + modificatore di Carisma**."
+      },
+      {
+        "name": "Vendetta Raggiante (Searing Vengeance)",
+        "level": 14,
+        "description": "Quando tu o un alleato entro 18 metri da te sta per effettuare un tiro di salvezza contro la morte, puoi scatenare un'esplosione radiosa:<br>- La creatura recupera **Punti Ferita pari alla metà del suo massimo** e può terminare la condizione **Prono** su se stessa.<br>- Ogni creatura a tua scelta entro 9 metri subisce **2d8 + mod. Carisma danni Radiosi** e la condizione **Accecato** fino alla fine del turno corrente.<br><br>Una volta usato questo privilegio, devi completare un **riposo lungo** per poterlo riutilizzare."
+      }
+    ]
+  },
+  {
+    "id": "subclass_warlock_fiend",
+    "class_id": "warlock",
+    "name": "Fiend Patron",
+    "name_it": "Patrono Immondo",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il tuo patto attinge al potere dei Piani Inferiori, dimora di demoni, diavoli e yugoloth. Che tu serva Asmodeus, Demogorgon o Mephistopheles, la magia del tuo patrono è incentrata sulla distruzione, sul fuoco e sulla manipolazione delle sorti.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Patrono, Benedizione dell'Oscuro, Fortuna dell'Oscuro, Resilienza Immonda, Scagliare attraverso l'Inferno.",
+    "features": [
+      {
+        "name": "Incantesimi del Patrono (Patron Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Warlock indicati:<br>- **3° Livello:** <em>Mani Brucianti (Burning Hands)</em>, <em>Comando (Command)</em>, <em>Raggio Rovente (Scorching Ray)</em>, <em>Suggestione (Suggestion)</em><br>- **5° Livello:** <em>Palla di Fuoco (Fireball)</em>, <em>Nube Stordente (Stinking Cloud)</em><br>- **7° Livello:** <em>Scudo di Fuoco (Fire Shield)</em>, <em>Muro di Fuoco (Wall of Fire)</em><br>- **9° Livello:** <em>Geas</em>, <em>Piaga degli Insetti (Insect Plague)</em>"
+      },
+      {
+        "name": "Benedizione dell'Oscuro (Dark One's Blessing)",
+        "level": 3,
+        "description": "Quando riduci un nemico a 0 Punti Ferita, ottieni **Punti Ferita Temporanei** pari al tuo **modificatore di Carisma + livello da Warlock** (minimo 1).<br><br>Ottieni questo beneficio anche se qualcun altro riduce a 0 Punti Ferita un nemico situato entro **3 metri** da te."
+      },
+      {
+        "name": "Fortuna dell'Oscuro (Dark One's Own Luck)",
+        "level": 6,
+        "description": "Puoi invocare il tuo patrono immondo per alterare il destino a tuo favore. Quando effettui una prova di caratteristica o un tiro di salvezza, puoi **aggiungere 1d10 al tiro** (dopo aver visto il tiro iniziale ma prima che si verifichino gli effetti).<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **modificatore di Carisma** (minimo 1, max 1 volta per tiro) e recuperi tutti gli utilizzi spesi al termine di un **riposo lungo**."
+      },
+      {
+        "name": "Resilienza Immonda (Fiendish Resilience)",
+        "level": 10,
+        "description": "Scegli un tipo di danno (diverso da Forza) ogni volta che completi un **riposo breve o lungo**.<br><br>Ottieni **Resistenza a quel tipo di danno** finché non ne scegli uno diverso con questo privilegio."
+      },
+      {
+        "name": "Scagliare attraverso l'Inferno (Hurl Through Hell)",
+        "level": 14,
+        "description": "Una volta per turno, quando colpisci una creatura con un tiro per colpire, puoi tentare di scagliarla attraverso i Piani Inferiori. Il bersaglio deve effettuare un **tiro di salvezza su Carisma** contro la tua CD degli incantesimi.<br><br>- **In caso di fallimento:** La creatura scompare tra paesaggi da incubo, subisce **8d10 danni Psichici** (se non è un Immondo) ed è **Incapacitata** fino alla fine del tuo turno successivo, momento in cui ritorna nello spazio precedente.<br><br>Puoi usare questo privilegio **una volta gratis per riposo lungo**; utilizzi successivi richiedono la spesa di uno **slot incantesimo di Magia del Patto**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_warlock_great_old_one",
+    "class_id": "warlock",
+    "name": "Great Old One Patron",
+    "name_it": "Patrono Grande Antico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il tuo patto ha radici in magie del tutto estranee alla trama della realtà, legate a entità del Reame Remoto o ad antichi dei quali Cthulhu o Tharizdun. Domini la mente, alteri la percezione e manipoli la psiche altrui.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Patrono, Mente Risvegliata, Incantesimi Psichici, Combattente Chiaroveggente, Malocchio Arcano, Scudo del Pensiero, Creare Schiavo.",
+    "features": [
+      {
+        "name": "Incantesimi del Patrono (Patron Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Warlock indicati:<br>- **3° Livello:** <em>Individuazione dei Pensieri (Detect Thoughts)</em>, <em>Sussurri Dissonanti (Dissonant Whispers)</em>, <em>Forza Fantasmagorica (Phantasmal Force)</em>, <em>Risata Incontenibile di Tasha (Tasha's Hideous Laughter)</em><br>- **5° Livello:** <em>Chiaroveggenza (Clairvoyance)</em>, <em>Fame di Hadar (Hunger of Hadar)</em><br>- **7° Livello:** <em>Confusione (Confusion)</em>, <em>Evoca Aberrazione (Summon Aberration)</em><br>- **9° Livello:** <em>Modificare Memoria (Modify Memory)</em>, <em>Telecinesi (Telekinesis)</em>"
+      },
+      {
+        "name": "Mente Risvegliata (Awakened Mind)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, scegli una creatura visibile entro 9 metri. Tu e la creatura potete comunicare **telepaticamente** finché vi trovate a una distanza in miglia pari al tuo **modificatore di Carisma** (minimo 1 miglio / 1,6 km).<br><br>La connessione dura per un numero di minuti pari al tuo **livello da Warlock** o finché non usi questo privilegio su un'altra creatura. Entrambi dovete parlare mentalmente in una lingua conosciuta dall'altro per capirvi."
+      },
+      {
+        "name": "Incantesimi Psichici (Psychic Spells)",
+        "level": 3,
+        "description": "Quando lanci un incantesimo da Warlock che infligge danni, puoi **cambiarne il tipo di danno in Psichico**.<br><br>Inoltre, quando lanci un incantesimo da Warlock appartenente alla scuola di **Ammaliamento** o **Illusione**, puoi lanciarlo **senza componenti Verbali o Somatiche**."
+      },
+      {
+        "name": "Combattente Chiaroveggente (Clairvoyant Combatant)",
+        "level": 6,
+        "description": "Quando crei un legame telepatico con *Mente Risvegliata*, puoi costringere la creatura a un **tiro di salvezza su Saggezza** contro la tua CD degli incantesimi.<br><br>Se fallisce, la creatura subisce **Svantaggio ai tiri per colpire contro di te** e tu ottieni **Vantaggio ai tiri per colpire contro di essa** per tutta la durata del legame.<br><br>Puoi usare questo privilegio **una volta gratis per riposo breve o lungo**; utilizzi successivi richiedono lo spesa di uno **slot incantesimo di Magia del Patto**."
+      },
+      {
+        "name": "Malocchio Arcano (Eldritch Hex)",
+        "level": 10,
+        "description": "Hai sempre preparato l'incantesimo <em>Marchio della Fattucchiera (Hex)</em>.<br><br>Quando lanci *Hex* e scegli una caratteristica, il bersaglio subisce anche **Svantaggio ai tiri di salvezza della caratteristica scelta** per la durata dell'incantesimo."
+      },
+      {
+        "name": "Scudo del Pensiero (Thought Shield)",
+        "level": 10,
+        "description": "I tuoi pensieri non possono essere letti tramite telepatia o altri mezzi a meno che tu non lo permetta.<br><br>Ottieni **Resistenza ai danni Psichici** e, ogni volta che una creatura ti infligge danni Psichici, essa subisce la stessa quantità di danni che subisci tu."
+      },
+      {
+        "name": "Creare Schiavo (Create Thrall)",
+        "level": 14,
+        "description": "Quando lanci <em>Evoca Aberrazione (Summon Aberration)</em>, puoi modificarlo affinché **non richieda Concentrazione** (in tal caso la durata diventa di **1 minuto** e l'Aberrazione evocata ottiene **Punti Ferita Temporanei** pari al tuo *livello da Warlock + mod. Carisma*).<br><br>Inoltre, la prima volta in ogni turno in cui l'Aberrazione colpisce una creatura sotto l'effetto del tuo *Hex*, l'Aberrazione infligge al bersaglio **danni Psichici extra** pari ai danni bonus dell'incantesimo *Hex*."
+      }
+    ]
+  },
+  {
+    "id": "subclass_warlock_fathomless",
+    "class_id": "warlock",
+    "name": "Fathomless Patron",
+    "name_it": "Patrono delle Abissi (Fathomless)",
+    "type": "sottoclasse",
+    "source_it": "Tasha's Cauldron of Everything",
+    "description_it": "Il tuo patto attinge alle profondità degli oceani e al Piano Elementale dell'Acqua. Che serva un kraken, un demigod dei merfolk o un'antica congrega di streghe marine, controlli i tentacoli delle abissi e il potere delle correnti.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Lista Incantesimi Espansa, Tentacolo degli Abissi, Dono del Mare, Anima Oceanica, Spira Protettrice, Tentacoli Afferranti, Tuffo negli Abissi.",
+    "features": [
+      {
+        "name": "Lista Incantesimi Espansa (Expanded Spell List)",
+        "level": 3,
+        "description": "Gli incantesimi seguenti sono aggiunti alla lista degli incantesimi da Warlock per te:<br>- **3° Livello:** <em>Creare o Distruggere Acqua (Create or Destroy Water)</em>, <em>Onda Tonante (Thunderwave)</em>, <em>Raffica di Vento (Gust of Wind)</em>, <em>Silenzio (Silence)</em><br>- **5° Livello:** <em>Fulmine (Lightning Bolt)</em>, <em>Tempesta di Nevischio (Sleet Storm)</em><br>- **7° Livello:** <em>Controllare Acqua (Control Water)</em>, <em>Evoca Elementale (Summon Elemental)</em><br>- **9° Livello:** <em>Mano di Bigby (Bigby's Hand)</em> (appare come un tentacolo), <em>Cono di Freddo (Cone of Cold)</em>"
+      },
+      {
+        "name": "Tentacolo degli Abissi (Tentacle of the Deep)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, evochi un tentacolo spettrale lungo 3 metri in un punto visibile entro 18 metri. Dura **1 minuto** o finché non ne evochi un altro.<br><br>- Quando lo evochi (e come Azione Bonus nei turni successivi muovendolo fino a 9 metri), puoi effettuare un **attacco incantesimo a mischia** contro una creatura entro 3 metri dal tentacolo.<br>- Se colpisci, infliggi **1d8 danni da Freddo** e la velocità del bersaglio è ridotta di 3 metri fino all'inizio del tuo turno successivo.<br>- I danni aumentano a **2d8 al 10° livello**.<br><br>Puoi evocare il tentacolo un numero di volte pari al tuo **bonus di competenza** e recuperi gli utilizzi dopo un **riposo lungo**."
+      },
+      {
+        "name": "Dono del Mare (Gift of the Sea)",
+        "level": 3,
+        "description": "Ottieni una **velocità di nuotare di 12 metri** e puoi **respirare sott'acqua**."
+      },
+      {
+        "name": "Anima Oceanica (Oceanic Soul)",
+        "level": 6,
+        "description": "Ottieni **Resistenza ai danni da Freddo**.<br><br>Inoltre, quando sei completamente immerso nell'acqua, qualsiasi creatura anch'essa completamente immersa può comprendere il tuo linguaggio e tu puoi comprendere il suo."
+      },
+      {
+        "name": "Spira Protettrice (Guardian Coil)",
+        "level": 6,
+        "description": "Quando tu o una creatura visibile entro 3 metri dal tuo *Tentacolo degli Abissi* subite danni, puoi usare la tua **Reazione** per ridurre i danni subiti da quella creatura di **1d8**.<br><br>La riduzione dei danni aumenta a **2d8 al 10° livello**."
+      },
+      {
+        "name": "Tentacoli Afferranti (Grasping Tentacles)",
+        "level": 10,
+        "description": "Impari l'incantesimo <em>Tentacoli Neri di Evard (Evard's Black Tentacles)</em>, che non conta per il numero di incantesimi conosciuti.<br><br>- Puoi lanciarlo **una volta senza spendere uno slot incantesimo** per **riposo lungo**.<br>- Ogni volta che lanci questo incantesimo, ottieni **Punti Ferita Temporanei pari al tuo livello da Warlock**.<br>- I danni subiti **non possono interrompere la tua Concentrazione** su questo incantesimo."
+      },
+      {
+        "name": "Tuffo negli Abissi (Fathomless Plunge)",
+        "level": 14,
+        "description": "Come **Azione**, puoi teletrasportare te stesso e fino a 5 creature volontarie visibili entro 9 metri da te.<br><br>Scomparse in un vortice di tentacoli, riapparite fino a **1,6 km (1 miglio) di distanza** all'interno o entro 9 metri da uno specchio d'acqua che hai già visto (di dimensioni pari o superiori a uno stagno).<br><br>Puoi riutilizzare questo privilegio dopo un **riposo breve o lungo**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_warlock_genie",
+    "class_id": "warlock",
+    "name": "Genie Patron",
+    "name_it": "Patrono Genio (The Genie)",
+    "type": "sottoclasse",
+    "source_it": "Tasha's Cauldron of Everything",
+    "description_it": "Hai stretto un patto con un nobile genio dei Piani Elementali: Dao (Terra), Djinni (Aria), Efreeti (Fuoco) o Marid (Acqua). Il tuo patrono ti concede un ricettacolo magico e poteri elementali devastanti.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Lista Incantesimi Espansa, Ricettacolo del Genio, Dono Elementale, Ricettacolo Santuario, Desiderio Limitato.",
+    "features": [
+      {
+        "name": "Lista Incantesimi Espansa (Expanded Spell List)",
+        "level": 3,
+        "description": "Gli incantesimi aggiunti alla tua lista dipendono dalla natura del tuo patrono (Genio Generico + Tipo di Genio):<br>- **3° Livello:** *Individuazione del Bene e del Male*, *Forza Fantasmagorica* | **Dao:** *Santuario*, *Crescita di Spine* | **Djinni:** *Onda Tonante*, *Raffica di Vento* | **Efreeti:** *Mani Brucianti*, *Raggio Rovente* | **Marid:** *Nube di Nebbia*, *Sfocatura*<br>- **5° Livello:** *Creare Cibo e Acqua* | **Dao:** *Fondersi nella Pietra* | **Djinni:** *Muro di Vento* | **Efreeti:** *Palla di Fuoco* | **Marid:** *Tempesta di Nevischio*<br>- **7° Livello:** *Assassino Fantasma* | **Dao:** *Plasmare Pietra* | **Djinni:** *Invisibilità Superiore* | **Efreeti:** *Scudo di Fuoco* | **Marid:** *Controllare Acqua*<br>- **9° Livello:** *Creazione* | **Dao:** *Muro di Pietra* | **Djinni:** *Sembianze* | **Efreeti:** *Colpo Infuocato* | **Marid:** *Cono di Freddo*<br>- **17° Livello:** <em>Desiderio (Wish)</em>"
+      },
+      {
+        "name": "Ricettacolo del Genio (Genie's Vessel)",
+        "level": 3,
+        "description": "Ricevi un piccolo oggetto magico (lampada, anello, bottiglia, ecc.) utilizzabile come focus arcano. Finchè lo tocchi ottieni:<br><br>- **Riposo in Bottiglia (Bottled Respite):** Come **Azione**, ti smaterializzi ed entri nel ricettacolo (uno spazio extradimensionale cilindrico di 6m di raggio e 6m di altezza). Puoi rimanere dentro fino a un numero di ore pari al **doppio del tuo bonus di competenza** (1 volta per **riposo lungo**).<br>- **Ira del Genio (Genie's Wrath):** Una volta per turno quando colpisci con un tiro per colpire, infliggi **danni extra pari al tuo bonus di competenza**. Tipo di danno: Contondente (Dao), Tuono (Djinni), Fuoco (Efreeti), Freddo (Marid).<br><br>Il ricettacolo ha **CA pari alla tua CD incantesimi**, **PF pari al livello Warlock + Bonus Competenza** ed è immune a Veleno e Psichico."
+      },
+      {
+        "name": "Dono Elementale (Elemental Gift)",
+        "level": 6,
+        "description": "Ottieni **Resistenza a un tipo di danno** in base al patrono: Contondente (Dao), Tuono (Djinni), Fuoco (Efreeti), Freddo (Marid).<br><br>Inoltre, come **Azione Bonus**, puoi darti una **velocità di volare di 9 metri** (con capacità di fluttuare) per **10 minuti**. Puoi usarlo un numero di volte pari al tuo **bonus di competenza** per **riposo lungo**."
+      },
+      {
+        "name": "Ricettacolo Santuario (Sanctuary Vessel)",
+        "level": 10,
+        "description": "Quando entri nel ricettacolo con *Riposo in Bottiglia*, puoi portare con te fino a **5 creature volontarie** entro 9 metri.<br><br>Chiunque rimanga dentro per **almeno 10 minuti** ottiene i benefici di un **riposo breve**. Inoltre, chi spende Dadi Vita durante questo riposo aggiunge il tuo **bonus di competenza** ai Punti Ferita recuperati."
+      },
+      {
+        "name": "Desiderio Limitato (Limited Wish)",
+        "level": 14,
+        "description": "Come **Azione**, parli al ricettacolo richiedendo l'effetto di un **qualsiasi incantesimo di 6° livello o inferiore** con tempo di lancio di 1 azione (da qualsiasi lista di classe).<br><br>Non devi soddisfare alcun requisito o spesa di componenti costose dell'incantesimo: l'effetto si manifesta immediatamente. Una volta usato, devi attendere **1d4 riposi lunghi** prima di poterlo riutilizzare."
+      }
+    ]
+  },
+  {
+    "id": "subclass_warlock_hexblade",
+    "class_id": "warlock",
+    "name": "Hexblade Patron",
+    "name_it": "Patrono Lama Maledetta (Hexblade)",
+    "type": "sottoclasse",
+    "source_it": "Xanathar's Guide to Everything",
+    "description_it": "Il tuo patto si lega a una misteriosa entità della Coltre Oscura (Shadowfell), manifestata sotto forma di armi magiche senzienti come la famigerata Fendinebbia (Blackrazor). Incanali la magia delle ombre nei tuoi colpi da mischia e nelle maledizioni.<br><br><strong>Classe Madre:</strong> Warlock<br><strong>Tratti di Sottoclasse:</strong> Lista Incantesimi Espansa, Maledizione della Lama, Guerriero Maledetto, Spettro Maledetto, Armatura delle Maledizioni, Maestro delle Maledizioni.",
+    "features": [
+      {
+        "name": "Lista Incantesimi Espansa (Expanded Spell List)",
+        "level": 3,
+        "description": "Gli incantesimi seguenti sono aggiunti alla lista degli incantesimi da Warlock per te:<br>- **3° Livello:** <em>Scudo (Shield)</em>, <em>Punizione Irosa (Wrathful Smite)</em>, <em>Sfocatura (Blur)</em>, <em>Punizione Marchiante (Branding Smite)</em><br>- **5° Livello:** <em>Intermittenza (Blink)</em>, <em>Arma Elementale (Elemental Weapon)</em><br>- **7° Livello:** <em>Assassino Fantasma (Phantasmal Killer)</em>, <em>Punizione Stordente (Staggering Smite)</em><br>- **9° Livello:** <em>Punizione Bandente (Banishing Smite)</em>, <em>Cono di Freddo (Cone of Cold)</em>"
+      },
+      {
+        "name": "Maledizione della Lama (Hexblade's Curse)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, maledici una creatura entro 9 metri per **1 minuto** (o finché tu o il bersaglio non morite). Ottieni i seguenti benefici contro il bersaglio maledetto:<br>- Bonus ai danni pari al tuo **bonus di competenza**.<br>- I tuoi tiri per colpire mettono a segno un **colpo critico con un risultato di 19 o 20** sul d20.<br>- Se il bersaglio muore, recuperi **Punti Ferita pari al livello Warlock + mod. Carisma** (minimo 1).<br><br>Puoi riutilizzare questo privilegio dopo un **riposo breve o lungo**."
+      },
+      {
+        "name": "Guerriero Maledetto (Hex Warrior)",
+        "level": 3,
+        "description": "Ottieni competenza nelle **armature medie**, negli **scudi** e nelle **armi da guerra**.<br><br>Inoltre, dopo ogni **riposo lungo**, puoi toccare un'arma in cui sei competente che manca della proprietà due mani: quando attacchi con quell'arma, puoi usare il tuo **modificatore di Carisma** al posto di Forza o Destrezza per i tiri per colpire e per i danni. Se ottieni il privilegio *Patto della Lama*, questo beneficio si estende a qualsiasi arma del patto evocata."
+      },
+      {
+        "name": "Spettro Maledetto (Accursed Specter)",
+        "level": 6,
+        "description": "Quando uccidi un **umanoide**, puoi vincolare la sua anima facendo sorgere dal corpo uno **spettro**.<br><br>- Lo spettro ottiene **Punti Ferita Temporanei pari a metà del tuo livello Warlock**.<br>- Ha una propria iniziativa, obbedisce ai tuoi comandi verbali e ottiene un bonus ai tiri per colpire pari al tuo **modificatore di Carisma**.<br>- Rimane in servizio fino al termine del tuo **riposo lungo** successivo.<br><br>Puoi usare questo privilegio **1 volta per riposo lungo**."
+      },
+      {
+        "name": "Armatura delle Maledizioni (Armour of Hexes)",
+        "level": 10,
+        "description": "Se il bersaglio influenzato dalla tua *Maledizione della Lama* ti colpisce con un tiro per colpire, puoi usare la tua **Reazione** per tirare un **d6**.<br><br>Con un risultato di **4 o superiore**, l'attacco ti **manca automaticamente**, a prescindere dal tiro dell'attaccante."
+      },
+      {
+        "name": "Maestro delle Maledizioni (Master of Hexes)",
+        "level": 14,
+        "description": "Quando la creatura maledetta dalla tua *Maledizione della Lama* muore, puoi trasferire immediatamente la maledizione a una **nuova creatura visibile entro 9 metri** (senza essere incapacitated).<br><br>Quando trasferisci la maledizione in questo modo, non recuperi Punti Ferita dalla morte della creatura precedente."
+      }
+    ]
+  },
+  {
+    "id": "subclass_artificer_alchemist",
+    "class_id": "artificer",
+    "name": "Alchemist",
+    "name_it": "Alchimista",
+    "type": "sottoclasse",
+    "source_it": "Tasha's Cauldron of Everything",
+    "description_it": "L'Alchimista è un esperto nel combinare reagenti per produrre effetti mistici, curativi o letali. È la tradizione di artefice più antica e versatile.<br><br><strong>Classe Madre:</strong> Artefice (Artificer)<br><strong>Tratti di Sottoclasse:</strong> Competenza negli Strumenti, Incantesimi da Alchimista, Elisir Sperimentale, Sapiente Alchemico, Reagenti Ristorativi, Maestria Chimica.",
+    "features": [
+      {
+        "name": "Competenza negli Strumenti (Tool Proficiency)",
+        "level": 3,
+        "description": "Ottieni competenza nelle **scorte da alchimista**. Se possiedi già questa competenza, ne ottieni una in un altro tipo di strumenti da artigiano a tua scelta."
+      },
+      {
+        "name": "Incantesimi da Alchimista (Alchemist Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Artefice indicati (contano come incantesimi da Artefice e non si calcolano nel limite di quelli preparati):<br>- **3° Livello:** <em>Parola Guaritrice (Healing Word)</em>, <em>Raggio di Malattia (Ray of Sickness)</em><br>- **5° Livello:** <em>Sfera Infuocata (Flaming Sphere)</em>, <em>Freccia Acida di Melf (Melf's Acid Arrow)</em><br>- **9° Livello:** <em>Forma Gassosa (Gaseous Form)</em>, <em>Parola Guaritrice di Massa (Mass Healing Word)</em><br>- **13° Livello:** <em>Rovina (Blight)</em>, <em>Interdizione alla Morte (Death Ward)</em><br>- **17° Livello:** <em>Nube Mortale (Cloudkill)</em>, <em>Rianimare Morti (Raise Dead)</em>"
+      },
+      {
+        "name": "Elisir Sperimentale (Experimental Elixir)",
+        "level": 3,
+        "description": "Alla fine di un **riposo lungo**, puoi produrre un elisir sperimentale in un'ampolla vuota. Tiri un d6 sulla tabella degli elisir per determinarne l'effetto.<br><br>- Come **Azione**, una creatura può bere l'elisir o somministrarlo a una creatura incapacitata.<br>- Puoi creare elisir aggiuntivi spendendo uno **slot incantesimo di 1° livello o superiore** per ciascuno (usando la tua Azione e scegliendo l'effetto desiderato).<br>- L'elisir dura finché non viene bevuto o fino al termine del tuo riposo lungo successivo.<br>- Al **6° livello** ne crei due alla fine di un riposo lungo e al **15° livello** ne crei tre (tira separatamente per ciascuno).<br><br><strong>Tabella Elisir Sperimentale (d6):</strong><br>1. **Guarigione (Healing):** Chi lo beve recupera **2d4 + mod. int. Punti Ferita**.<br>2. **Velocità (Swiftness):** La velocità sul terreno aumenta di **3 metri per 1 ora**.<br>3. **Resilienza (Resilience):** Bonus di **+1 alla CA per 10 minuti**.<br>4. **Audacia (Boldness):** Chi lo beve aggiunge **1d4 a tutti i tiri per colpire e tiri di salvezza per 1 minuto**.<br>5. **Volo (Flight):** Ottiene una **velocità di volare di 3 metri per 10 minuti**.<br>6. **Trasformazione (Transformation):** Il corpo si trasforma come per l'incantesimo <em>Alterare Se Stesso (Alter Self)</em> per **10 minuti**."
+      },
+      {
+        "name": "Sapiente Alchemico (Alchemical Savant)",
+        "level": 5,
+        "description": "Ogni volta che lanci un incantesimo usando le tue **scorte da alchimista** come focus arcano, aggiungi un bonus pari al tuo **modificatore di Intelligenza** (minimo +1) a un tiro dell'incantesimo.<br><br>Il tiro deve ripristinare Punti Ferita o infliggere danni da **Acido**, **Fuoco**, **Necrotici** o da **Veleno**."
+      },
+      {
+        "name": "Reagenti Ristorativi (Restorative Reagents)",
+        "level": 9,
+        "description": "Ottieni i seguenti benefici alchemici:<br>- Quando una creatura beve un tuo *Elisir Sperimentale*, ottiene **Punti Ferita Temporanei** pari a **2d6 + modificatore di Intelligenza** (minimo 1).<br>- Puoi lanciare <em>Ristorare Inferiore (Lesser Restoration)</em> **senza spendere slot incantesimo** e senza prepararlo, usando le scorte da alchimista come focus. Puoi farlo un numero di volte pari al tuo **modificatore di Intelligenza** (minimo 1) per **riposo lungo**."
+      },
+      {
+        "name": "Maestria Chimica (Chemical Mastery)",
+        "level": 15,
+        "description": "Ottieni **Resistenza ai danni da Acido e da Veleno** e sei **immune alla condizione Avvelenato**.<br><br>Inoltre, puoi lanciare <em>Ristorare Superiore (Greater Restoration)</em> e <em>Guarigione (Heal)</em> **senza spendere slot incantesimo, senza prepararli e senza componenti materiali**, usando le scorte da alchimista come focus. Una volta lanciato uno dei due incantesimi con questo privilegio, non puoi rilanciarlo allo stesso modo fino a un **riposo lungo**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_artificer_armourer",
+    "class_id": "artificer",
+    "name": "Armourer",
+    "name_it": "Armaiolo (Armourer)",
+    "type": "sottoclasse",
+    "source_it": "Tasha's Cauldron of Everything",
+    "description_it": "L'Armaiolo modifica l'armatura affinché funzioni come una seconda pelle, potenziandola per incanalare la magia, sferrare attacchi devastanti e creare difese insuperabili.<br><br><strong>Classe Madre:</strong> Artefice (Artificer)<br><strong>Tratti di Sottoclasse:</strong> Strumenti del Mestiere, Incantesimi da Armaiolo, Armatura Arcana, Modello di Armatura, Attacco Extra, Modifiche all'Armatura, Armatura Perfezionata.",
+    "features": [
+      {
+        "name": "Strumenti del Mestiere (Tools of the Trade)",
+        "level": 3,
+        "description": "Ottieni competenza nelle **armature pesanti** e negli **strumenti da fabbro**. Se possiedi già la competenza negli strumenti da fabbro, ne ottieni una in un altro tipo di strumenti da artigiano a tua scelta."
+      },
+      {
+        "name": "Incantesimi da Armaiolo (Armourer Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Artefice indicati (contano come incantesimi da Artefice e non si calcolano nel limite di quelli preparati):<br>- **3° Livello:** <em>Dardo Incantato (Magic Missile)</em>, <em>Onda Tonante (Thunderwave)</em><br>- **5° Livello:** <em>Immagine Speculare (Mirror Image)</em>, <em>Frantumazione (Shatter)</em><br>- **9° Livello:** <em>Trama Ipnotica (Hypnotic Pattern)</em>, <em>Fulmine (Lightning Bolt)</em><br>- **13° Livello:** <em>Scudo di Fuoco (Fire Shield)</em>, <em>Invisibilità Superiore (Greater Invisibility)</em><br>- **17° Livello:** <em>Passamuri (Passwall)</em>, <em>Muro di Forza (Wall of Force)</em>"
+      },
+      {
+        "name": "Armatura Arcana (Arcane Armour)",
+        "level": 3,
+        "description": "Come **Azione**, avendo gli strumenti da fabbro in mano, puoi trasformare un'armatura che indossi in un'Armatura Arcana, ottenendo i seguenti benefici:<br>- L'armatura **non richiede più requisiti di Forza**.<br>- Puoi usarla come **focus di incantesimo** per i tuoi incantesimi da Artefice.<br>- L'armatura si aggancia al corpo, non può essere rimossa contro la tua volontà, sostituisce eventuali arti mancanti e copre tutto il corpo (puoi ritirare o schierare l'elmo come **Azione Bonus**).<br>- Rimane Armatura Arcana finché non ne indossi un'altra o muori."
+      },
+      {
+        "name": "Modello di Armatura (Armour Model)",
+        "level": 3,
+        "description": "Puoi personalizzare la tua Armatura Arcana scegliendo uno dei seguenti modelli. Ogni modello include un'arma speciale con cui puoi usare il **modificatore di Intelligenza** (invece di Forza o Destrezza) per i tiri per colpire e per i danni. Puoi cambiare modello al termine di un **riposo breve o lungo** (con strumenti da fabbro in mano):<br><br>- **Corazzata (Dreadnaught):**<br>  - *Fusto d'Armatura (Armor Flail):* Arma da mischia semplice con **Portata** che infligge **1d10 danni Contondenti**.<br>  - *Stazza Gigante (Giant Stature):* Come **Azione Bonus**, aumenti la tua taglia a **Grande** (se eri più piccolo) e la portata di **1,5 metri per 1 minuto**. Utilizzabile un numero di volte pari al *mod. Intelligenza* per **riposo lungo**.<br>  - *Palla Demolitrice (Wrecking Ball):* Se colpisci una creatura più piccola di te con il fusto, puoi spingerla o tirarla a te fino a **3 metri**.<br><br>- **Guardiano (Guardian):**<br>  - *Guanti del Tuono (Thunder Gauntlets):* Armi da mischia semplici che infliggono **1d8 danni da Tuono**. Una creatura colpita ha **Svantaggio ai tiri per colpire** contro bersagli diversi da te fino all'inizio del tuo turno successivo.<br>  - *Campo Difensivo (Defensive Field):* Come **Azione Bonus**, ottieni **Punti Ferita Temporanei pari al tuo livello da Artefice** (utilizzabile un numero di volte pari al *bonus di competenza* per **riposo lungo**).<br><br>- **Infiltrato (Infiltrator):**<br>  - *Lanciatore di Fulmini (Lightning Launcher):* Arma a distanza semplice (gittata 27/90 m) che infligge **1d6 danni da Fulmine**. Una volta per turno puoi infliggere **1d6 danni da Fulmine extra** al bersaglio colpitò.<br>  - *Passo Potenziato (Powered Steps):* La tua velocità sul terreno aumenta di **1,5 metri**.<br>  - *Campo Smorzante (Dampening Field):* Ottieni **Vantaggio alle prove di Destrezza (Furtività)**."
+      },
+      {
+        "name": "Attacco Extra (Extra Attack)",
+        "level": 5,
+        "description": "Puoi attaccare **due volte** invece di una quando prendi l'azione di Attacco nel tuo turno."
+      },
+      {
+        "name": "Modifiche all'Armatura (Armor Modifications)",
+        "level": 9,
+        "description": "La tua Armatura Arcana conta come quattro oggetti separati ai fini delle tue Infusioni: **corazza**, **stivali**, **elmo** e **arma speciale dell'armatura** (ciascuno può ospitare un'infusione).<br><br>Inoltre, il numero massimo di oggetti che puoi infondere contemporaneamente **aumenta di 2**, a patto che gli oggetti extra facciano parte della tua Armatura Arcana."
+      },
+      {
+        "name": "Armatura Perfezionata (Perfected Armor)",
+        "level": 15,
+        "description": "La tua Armatura Arcana ottiene benefici aggiuntivi in base al modello scelto:<br><br>- **Corazzata (Dreadnaught):** Il dadi di danno del Fusto d'Armatura aumenta a **2d6 Contondenti**. Con *Stazza Gigante*, la portata aumenta di **3 metri**, puoi diventare **Grande o Enorme** e ottieni una **velocità di volare** pari alla tua velocità di movimento.<br>- **Guardiano (Guardian):** Quando una creatura Enorme o più piccola termina il turno entro 9 metri da te, puoi usare la **Reazione** per costringerla a un tiro di salvezza su **Forza** contro la tua CD: se fallisce, la trascini fino a 9 metri verso di te. Se finisce entro 1,5 metri, puoi effettuare un attacco con arma da mischia come parte della reazione (utilizzabile pari al *bonus competenza* per **riposo lungo**).<br>- **Infiltrato (Infiltrator):** Una creatura colpita dal *Lanciatore di Fulmini* emette luce fioca in un raggio di 1,5 metri, ha **Svantaggio ai tiri per colpire contro di te** fino al tuo turno successivo e il tiro per colpire successivo contro di essa ha **Vantaggio** e infligge **1d6 danni da Fulmine extra**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_artificer_artillerist",
+    "class_id": "artificer",
+    "name": "Artillerist",
+    "name_it": "Artigliere (Artillerist)",
+    "type": "sottoclasse",
+    "source_it": "Tasha's Cauldron of Everything",
+    "description_it": "L'Artigliere è uno specialista nell'uso della magia per scagliare energia, proiettili ed esplosioni sul campo di battaglia. Questo potere distruttivo è apprezzato dagli eserciti, ma alcuni membri usano i propri poteri per proteggere e combattere le minacce in tempi di pace.<br><br><strong>Classe Madre:</strong> Artefice<br><strong>Tratti di Sottoclasse:</strong> Competenza negli Strumenti, Incantesimi da Artigliere, Cannone Arcano, Arma Arcana, Cannone Esplosivo, Posizione Fortificata.",
+    "features": [
+      {
+        "name": "Competenza negli Strumenti (Tool Proficiency)",
+        "level": 3,
+        "description": "Ottieni competenza negli **strumenti da intagliatore di legno**. Se possiedi già questa competenza, ne ottieni una a tua scelta in un altro tipo di strumenti da artigiano."
+      },
+      {
+        "name": "Incantesimi da Artigliere (Artillerist Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Artefice indicati:<br>- **3° Livello:** <em>Scudo (Shield)</em>, <em>Onda Tonante (Thunderwave)</em><br>- **5° Livello:** <em>Raggio Rovente (Scorching Ray)</em>, <em>Frantumazione (Shatter)</em><br>- **9° Livello:** <em>Palla di Fuoco (Fireball)</em>, <em>Muro di Vento (Wind Wall)</em><br>- **13° Livello:** <em>Tempesta di Ghiaccio (Ice Storm)</em>, <em>Muro di Fuoco (Wall of Fire)</em><br>- **17° Livello:** <em>Cono di Freddo (Cone of Cold)</em>, <em>Muro di Forza (Wall of Force)</em>"
+      },
+      {
+        "name": "Cannone Arcano (Eldritch Cannon)",
+        "level": 3,
+        "description": "Usando strumenti da intagliatore o da fabbro, puoi usare un'**Azione** per creare un Cannone Arcano Piccola o Minuscola in uno spazio libero entro 1,5m. Il cannone ha **CA 18**, **PF pari a 5 volte il tuo livello da Artefice**, è immune ai danni da Veleno e Psichici, ed è trattato come se avesse tutte le caratteristiche a 10 (+0). Dura 1 ora o finché non scende a 0 PF.<br><br>Come **Azione Bonus**, se sei entro 18m, puoi attivarlo e (se ha le gambe) farlo muovere/scalare fino a 4,5 metri.<br><br><strong>Tipi di Cannone Arcano:</strong><br>- **Lanciafiamme (Flamethrower):** Cono di 4,5m. TS Des contro la tua CD o subisce **2d8 danni da Fuoco** (dimezzati se supera). Ignora oggetti infiammabili non indossati.<br>- **Balista di Forza (Force Ballista):** Attacco con incantesimo a distanza entro 36m. Se colpisce, infligge **2d8 danni da Forza** e spinge una creatura indietro di 1,5 metri.<br>- **Protettore (Protector):** Emette energia positiva infondendo a sé stesso e alle creature a tua scelta entro 3 metri **Punti Ferita Temporanei pari a 1d8 + mod. Intelligenza** (minimo +1)."
+      },
+      {
+        "name": "Arma Arcana (Arcane Firearm)",
+        "level": 3,
+        "description": "Al termine di un **riposo lungo**, puoi usare strumenti da intagliatore per incidere sigilli su una bacchetta, bastone o verga, trasformandoli in un'Arma Arcana. Puoi usarla come **focus di incantesimo** per i tuoi incantesimi da Artefice. Quando lanci un incantesimo da Artefice attraverso l'arma, tiri un **d8** e aggiungi il risultato come **bonus a un tiro di danno** dell'incantesimo."
+      },
+      {
+        "name": "Cannone Esplosivo (Explosive Cannon)",
+        "level": 9,
+        "description": "Ogni Cannone Arcano che crei è più distruttivo:<br>- Tutti i tiri di danno del cannone aumentano di **1d8**.<br>- Come **Azione**, se sei entro 18m dal cannone, puoi comandargli di autodistruggersi: ogni creatura entro 6m deve effettuare un TS su Destrezza contro la tua CD, subendo **3d8 danni da Forza** se fallisce (o la metà se supera)."
+      },
+      {
+        "name": "Posizione Fortificata (Fortified Position)",
+        "level": 15,
+        "description": "Diventi un maestro nel creare postazioni difensive:<br>- Tu e i tuoi alleati ottenete **mezza copertura (+2 alla CA e ai TS Des)** finché vi trovate entro 3 metri da un tuo Cannone Arcano.<br>- Puoi avere fino a **due Cannoni Arcani contemporaneamente**. Puoi crearli entrambi con la stessa azione (ma spendendo due slot distinti se creati oltre il riposo lungo) e puoi attivarli entrambi con la **stessa Azione Bonus**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_artificer_battle_smith",
+    "class_id": "artificer",
+    "name": "Battle Smith",
+    "name_it": "Fabbro da Battaglia (Battle Smith)",
+    "type": "sottoclasse",
+    "source_it": "Tasha's Cauldron of Everything",
+    "description_it": "Il Fabbro da Battaglia combina il ruolo di protettore e medico, esperto nel difendere gli altri e riparare sia materiale che personale. In combattimento è affiancato da un Difensore D'Acciaio, un fedele compagno meccanico di sua creazione.<br><br><strong>Classe Madre:</strong> Artefice<br><strong>Tratti di Sottoclasse:</strong> Competenza negli Strumenti, Incantesimi da Fabbro da Battaglia, Pronto alla Battaglia, Difensore d'Acciaio, Attacco Extra, Scossa Arcana, Difensore Migliorato.",
+    "features": [
+      {
+        "name": "Competenza negli Strumenti (Tool Proficiency)",
+        "level": 3,
+        "description": "Ottieni competenza negli **strumenti da fabbro**. Se possiedi già questa competenza, ne ottieni una a tua scelta in un altro tipo di strumenti da artigiano."
+      },
+      {
+        "name": "Incantesimi da Fabbro da Battaglia (Battle Smith Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli da Artefice indicati:<br>- **3° Livello:** <em>Eroismo (Heroism)</em>, <em>Scudo (Shield)</em><br>- **5° Livello:** <em>Punizione Radiosa (Shining Smite)</em>, <em>Legame Protetto (Warding Bond)</em><br>- **9° Livello:** <em>Aura di Vitalità (Aura of Vitality)</em>, <em>Evoca Salva (Conjure Barrage)</em><br>- **13° Livello:** <em>Aura di Purezza (Aura of Purity)</em>, <em>Scudo di Fuoco (Fire Shield)</em><br>- **17° Livello:** <em>Punizione Bandente (Banishing Smite)</em>, <em>Cura Ferite di Massa (Mass Cure Wounds)</em>"
+      },
+      {
+        "name": "Pronto alla Battaglia (Battle Ready)",
+        "level": 3,
+        "description": "Il tuo addestramento ti fornisce due benefici:<br>- Ottieni competenza nelle **armi da guerra**.<br>- Quando attacchi con un'**arma magica**, puoi usare il tuo **modificatore di Intelligenza** al posto di Forza o Destrezza per i tiri per colpire e per i danni."
+      },
+      {
+        "name": "Difensore d'Acciaio (Steel Defender)",
+        "level": 3,
+        "description": "Ottieni un compagno meccanico fedele. In combattimento condivide la tua iniziativa ed agisce **subito dopo il tuo turno**. Può muoversi e usare la sua reazione liberamente, ma l'unica azione che compie nel suo turno è l'azione di **Schivata**, a meno che tu non usi un'**Azione Bonus** per comandargli un'altra azione.<br><br>- L'incantesimo *Riparare (Mending)* gli fa recuperare **2d6 PF**.<br>- Se è morto da meno di 1 ora, puoi usare un'**Azione** con strumenti da fabbro e spendere uno **slot di 1° livello o superiore** per rianimarlo entro 1 minuto con tutti i PF.<br>- Al termine di un riposo lungo puoi crearne uno nuovo (il precedente si distrugge)."
+      },
+      {
+        "name": "Attacco Extra (Extra Attack)",
+        "level": 5,
+        "description": "Puoi attaccare due volte, anziché una, ogni volta che usi l'azione di Attacco nel tuo turno."
+      },
+      {
+        "name": "Scossa Arcana (Arcane Jolt)",
+        "level": 9,
+        "description": "Quando tu colpisci un bersaglio con un attacco con arma magica o il tuo *Difensore d'Acciaio* mette a segno un colpo, puoi incanalare energia arcana per produrre uno dei seguenti effetti:<br>- Il bersaglio subisce **2d6 danni da Forza extra**.<br>- Una creatura o oggetto a tua scelta entro 9 metri dal bersaglio **recupera 2d6 Punti Ferita**.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **modificatore di Intelligenza** per **riposo lungo** (massimo una volta per turno)."
+      },
+      {
+        "name": "Difensore Migliorato (Improved Defender)",
+        "level": 15,
+        "description": "Il tuo compagno e la tua Scossa Arcana diventano più potenti:<br>- Il danno extra e la guarigione della tua *Scossa Arcana* aumentano a **4d6**.<br>- Il tuo *Difensore d'Acciaio* ottiene un **bonus di +2 alla Classe Armatura**.<br>- Ogni volta che il tuo Difensore d'Acciaio usa la sua reazione *Deviare Attacco (Deflect Attack)*, l'attaccante subisce **danni da Forza pari a 1d4 + mod. Intelligenza**."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
