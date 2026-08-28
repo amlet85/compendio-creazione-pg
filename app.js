@@ -233,6 +233,7 @@ function filterData() {
     } else if (selectedCategory === "talentoorigine" || selectedCategory === "origine") {
       const isTalento = rawType.includes("talento") || rawCat.includes("talento") || rawType.includes("feat") || rawCat.includes("feat");
       const isOrigine = rawType.includes("origine") || rawCat.includes("origine") || rawType.includes("origin") || rawCat.includes("origin");
+      // Accetta sia chi ha "origine" nella categoria/tipo, sia chi ha entrambi i tag
       matchesCategory = isOrigine || (isTalento && isOrigine);
     } else if (selectedCategory === "stiledicombattimento" || selectedCategory === "stilecombattimento") {
       matchesCategory = rawType.includes("stile") || 
@@ -269,8 +270,9 @@ function filterData() {
       parentClassString = parentClass.toLowerCase();
     }
 
-    // Se l'elemento è un talento/generico senza classe specificata nel JSON, non scartarlo
+    // Se l'elemento è privo di classe assegnata ed è un elemento generico (talento, origine, background, razza), non viene scartato
     const isGenericItem = rawType.includes('talento') || rawCat.includes('talento') || 
+                          rawType.includes('origine') || rawCat.includes('origine') || 
                           rawType.includes('background') || rawCat.includes('background') ||
                           rawType.includes('razza') || rawCat.includes('razza');
 
