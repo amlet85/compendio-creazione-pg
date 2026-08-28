@@ -3639,6 +3639,330 @@
     ]
   },
   {
+    "id": "subclass_wizard_abjurer",
+    "class_id": "wizard",
+    "name": "Abjurer",
+    "name_it": "Abjuratore",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il tuo studio della magia si concentra su incantesimi che bloccano, scacciano o proteggono. Gli Abjuratori sono cercati quando gli spiriti maligni richiedono un esorcismo, quando i luoghi importanti devono essere protetti da spie magiche e quando i portali verso altri piani devono essere chiusi.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Sapiente dell'Abiurazione, Protezione Arcana, Protezione Proiettata, Spezza-Incantesimi, Resistenza agli Incantesimi.",
+    "features": [
+      {
+        "name": "Sapiente dell'Abiurazione (Abjuration Savant)",
+        "level": 3,
+        "description": "Scegli due incantesimi da Mago della scuola di Abiurazione (di livello non superiore al 2°) e aggiungili gratuitamente al tuo libro degli incantesimi.<br><br>Inoltre, ogni volta che ottieni accesso a un nuovo livello di slot incantesimo in questa classe, puoi aggiungere gratuitamente al tuo libro degli incantesimi un incantesimo da Mago della scuola di Abiurazione del livello corrispondente agli slot che possiedi."
+      },
+      {
+        "name": "Protezione Arcana (Arcane Ward)",
+        "level": 3,
+        "description": "Quando lanci un incantesimo di Abiurazione usando uno slot incantesimo, puoi creare una protezione magica su di te che dura fino a un **riposo lungo**. La protezione ha un massimo di Punti Ferita pari a **doppio del tuo livello da Mago + il tuo modificatore di Intelligenza**.<br><br>Quando subisci danni, la protezione assorbe i danni al posto tuo (applica le tue Resistenze o Vulnerabilità prima di ridurre i PF della protezione). Se ridotta a 0 PF, la protezione non può assorbire danni ma la sua magia rimane.<br><br>Ogni volta che lanci un incantesimo di Abiurazione con uno slot, la protezione recupera PF pari al **doppio del livello dello slot spento**. In alternativa, come **Azione Bonus**, puoi spendere uno slot incantesimo per farle recuperare un pari ammontare di PF."
+      },
+      {
+        "name": "Protezione Proiettata (Projected Ward)",
+        "level": 6,
+        "description": "Quando una creatura che puoi vedere entro 9 metri da te subisce danni, puoi usare la tua **Reazione** per fare in modo che la tua Protezione Arcana assorba quel danno.<br><br>Se il danno riduce la protezione a 0 PF, la creatura protetta subisce il danno rimanente. Applica le eventuali Resistenze o Vulnerabilità di quella creatura prima di ridurre i Punti Ferita della protezione."
+      },
+      {
+        "name": "Spezza-Incantesimi (Spell Breaker)",
+        "level": 10,
+        "description": "Hai sempre preparati gli incantesimi <em>Controincantesimo</em> e <em>Dissolvi Magie</em>.<br><br>Inoltre, puoi lanciare <em>Dissolvi Magie</em> come **Azione Bonus** e puoi aggiungere il tuo **Bonus di Competenza** alla relativa prova di caratteristica. Quando lanci uno di questi due incantesimi usando uno slot e l'incantesimo fallisce nel bloccare la magia bersaglio, **lo slot non viene speso**."
+      },
+      {
+        "name": "Resistenza agli Incantesimi (Spell Resistance)",
+        "level": 14,
+        "description": "Hai **Vantaggio ai tiri di salvezza** contro gli incantesimi e ottieni **Resistenza ai danni** provocati dagli incantesimi."
+      }
+    ]
+  },
+  {
+    "id": "subclass_wizard_diviner",
+    "class_id": "wizard",
+    "name": "Diviner",
+    "name_it": "Divinatore",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il consiglio di un Divinatore è ricercato da chiunque cerchi una comprensione più chiara del passato, del presente e del futuro. Come Divinatore, ti sforzi di squarciare i veli dello spazio, del tempo e della coscienza per vedere chiaramente.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Sapiente della Divinazione, Portento, Divinazione Esperta, Il Terzo Occhio, Portento Superiore.",
+    "features": [
+      {
+        "name": "Sapiente della Divinazione (Divination Savant)",
+        "level": 3,
+        "description": "Scegli due incantesimi da Mago della scuola di Divinazione (di livello non superiore al 2°) e aggiungili gratuitamente al tuo libro degli incantesimi.<br><br>Inoltre, ogni volta che ottieni accesso a un nuovo livello di slot incantesimo in questa classe, puoi aggiungere gratuitamente al tuo libro degli incantesimi un incantesimo da Mago della scuola di Divinazione del livello corrispondente agli slot che possiedi."
+      },
+      {
+        "name": "Portento (Portent)",
+        "level": 3,
+        "description": "Ogni volta che completi un **riposo lungo**, tira due **d20** e annota i risultati. Puoi sostituire qualsiasi Tiro con d20 effettuato da te o da una creatura che puoi vedere con uno di questi dadi premonitori.<br><br>Devi scegliere di farlo prima del tiro e puoi sostituire un tiro in questo modo solo una volta per turno. Ogni dado premonitore può essere usato una sola volta e perderai i dadi inutilizzati al termine del riposo lungo successivo."
+      },
+      {
+        "name": "Divinazione Esperta (Expert Divination)",
+        "level": 6,
+        "description": "Quando lanci un incantesimo di Divinazione usando uno slot di 2° livello o superiore, recuperi uno slot incantesimo spento.<br><br>Lo slot recuperato deve essere di livello inferiore rispetto allo slot speso per l'incantesimo e non può essere di livello superiore al 5°."
+      },
+      {
+        "name": "Il Terzo Occhio (The Third Eye)",
+        "level": 10,
+        "description": "Come **Azione Bonus**, puoi scegliere uno dei seguenti benefici, che dura finché non inizi un **riposo breve o lungo** (non puoi riutilizzare questo privilegio finché non completi un riposo breve o lungo):<br>- **Scurovisione:** Ottieni Scurovisione fino a 36 metri.<br>- **Grande Comprensione:** Puoi leggere qualsiasi lingua.<br>- **Vedere l'Invisibile:** Puoi lanciare <em>Vedere l'Invisibile</em> senza spendere uno slot incantesimo."
+      },
+      {
+        "name": "Portento Superiore (Greater Portent)",
+        "level": 14,
+        "description": "Le visioni nei tuoi sogni si intensificano. Tiri **tre d20** per il privilegio Portento anziché due."
+      }
+    ]
+  },
+  {
+    "id": "subclass_wizard_evoker",
+    "class_id": "wizard",
+    "name": "Evoker",
+    "name_it": "Evocatore",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Focalizzi il tuo studio sulla magia che crea potenti effetti elementali come freddo pungente, fiamme ardenti, tuoni e fulmini. Alcuni Evocatori servono nelle forze militari come artiglieria, altri usano il loro potere per proteggere i deboli.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Sapiente dell'Evocazione, Trucchetto Potente, Plasmare Incantesimi, Evocazione Potenziata, Sovraccarico.",
+    "features": [
+      {
+        "name": "Sapiente dell'Evocazione (Evocation Savant)",
+        "level": 3,
+        "description": "Scegli due incantesimi da Mago della scuola di Evocazione (di livello non superiore al 2°) e aggiungili gratuitamente al tuo libro degli incantesimi.<br><br>Inoltre, ogni volta che ottieni accesso a un nuovo livello di slot incantesimo in questa classe, puoi aggiungere gratuitamente al tuo libro degli incantesimi un incantesimo da Mago della scuola di Evocazione del livello corrispondente agli slot che possiedi."
+      },
+      {
+        "name": "Trucchetto Potente (Potent Cantrip)",
+        "level": 3,
+        "description": "I tuoi trucchetti di danno colpiscono anche le creature che evitano il grosso dell'effetto. Quando lanci un trucchetto contro una creatura e manchi il tiro per colpire oppure il bersaglio supera il tiro di salvezza, il bersaglio subisce comunque **metà del danno del trucchetto**, ma non subisce alcun effetto secondario."
+      },
+      {
+        "name": "Plasmare Incantesimi (Sculpt Spells)",
+        "level": 6,
+        "description": "Puoi creare zone di sicurezza all'interno dei tuoi incantesimi di Evocazione. Quando lanci un incantesimo di Evocazione che colpisce altre creature che puoi vedere, puoi sceglierne un numero pari a **1 + il livello dell'incantesimo**.<br><br>Le creature scelte **superano automaticamente i tiri di salvezza** contro l'incantesimo e non subiscono alcun danno se normalmente subirebbero metà danno in caso di salvezza riuscita."
+      },
+      {
+        "name": "Evocazione Potenziata (Empowered Evocation)",
+        "level": 10,
+        "description": "Ogni volta che lanci un incantesimo da Mago della scuola di Evocazione, puoi aggiungere il tuo **modificatore di Intelligenza** a un tiro di danno dell'incantesimo."
+      },
+      {
+        "name": "Sovraccarico (Overchannel)",
+        "level": 14,
+        "description": "Quando lanci un incantesimo da Mago con uno slot dal 1° al 5° livello che infligge danni, puoi infliggere il **danno massimo possibile** con quell'incantesimo nel turno in cui lo lanci.<br><br>La prima volta che lo fai non subisci effetti negativi. Se riutilizzi questo privilegio prima di un **riposo lungo**, subisci **2d12 danni Necrotici per ogni livello dello slot** immediatamente dopo il lancio (ignorando Resistenze e Immunità). Ogni ulteriore utilizzo prima di un riposo lungo aumenta il danno di 1d12 per livello di slot."
+      }
+    ]
+  },
+  {
+    "id": "subclass_wizard_illusionist",
+    "class_id": "wizard",
+    "name": "Illusionist",
+    "name_it": "Illusionista",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Focalizzi il tuo studio sulla magia che abbaglia i sensi e inganna la mente. La tua magia è sottile, ma le illusioni che crei fanno sembrare reale l'impossibile.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Sapiente dell'Illusione, Illusioni Migliorate, Creature Fantasmatiche, Sdoppiamento Illusorio, Realtà Illusoria.",
+    "features": [
+      {
+        "name": "Sapiente dell'Illusione (Illusion Savant)",
+        "level": 3,
+        "description": "Scegli due incantesimi da Mago della scuola di Illusione (di livello non superiore al 2°) e aggiungili gratuitamente al tuo libro degli incantesimi.<br><br>Inoltre, ogni volta che ottieni accesso a un nuovo livello di slot incantesimo in questa classe, puoi aggiungere gratuitamente al tuo libro degli incantesimi un incantesimo da Mago della scuola di Illusione del livello corrispondente agli slot che possiedi."
+      },
+      {
+        "name": "Illusioni Migliorate (Improved Illusions)",
+        "level": 3,
+        "description": "Puoi lanciare incantesimi di Illusione **senza fornire componenti Verbali**. Se un incantesimo di Illusione che lanci ha una gittata di 3 metri o superiore, la gittata **aumenta di 18 metri**.<br><br>Conosci anche il trucchetto <em>Illusione Minore</em> (se lo conosci già, ne scegli un altro da mago). Questo trucchetto non conta ai fini dei trucchetti conosciuti. Puoi creare sia un suono che un'immagine con un singolo lancio di <em>Illusione Minore</em> e puoi lanciarlo come **Azione Bonus**."
+      },
+      {
+        "name": "Creature Fantasmatiche (Phantasmal Creatures)",
+        "level": 6,
+        "description": "Hai sempre preparati gli incantesimi <em>Evoca Bestia</em> ed <em>Evoca Folletto</em>. Ogni volta che lanci uno di questi incantesimi, puoi cambiarne la scuola in **Illusione**, facendo apparire la creatura spettrale.<br><br>Puoi lanciare la versione Illusione di ciascun incantesimo **senza spendere uno slot incantesimo** (in questo modo i Punti Ferita della creatura sono dimezzati). Una volta lanciato uno dei due incantesimi senza slot, devi completare un **riposo breve** prima di poterlo fare di nuovo."
+      },
+      {
+        "name": "Sdoppiamento Illusorio (Illusory Self)",
+        "level": 10,
+        "description": "Quando una creatura effettua un tiro per colpire contro di te, puoi usare la tua **Reazione** per interporre un doppio illusorio tra te e l'attaccante. **L'attacco ti manca automaticamente**, poi l'illusione si dissolve.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un **riposo breve o lungo**. Puoi anche ripristinarne l'uso spendendo uno slot incantesimo di 2° livello o superiore (nessuna azione richiesta)."
+      },
+      {
+        "name": "Realtà Illusoria (Illusory Reality)",
+        "level": 14,
+        "description": "Quando lanci un incantesimo di Illusione con uno slot incantesimo, puoi scegliere un oggetto inanimato e non magico che fa parte dell'illusione e **renderlo reale**.<br><br>Puoi farlo nel tuo turno come **Azione Bonus** mentre l'incantesimo è attivo. L'oggetto rimane reale per 1 minuto, durante il quale non può infliggere danni né applicare condizioni (ad esempio, puoi rendere reale un ponte illusorio per far attraversare un crepaccio ai tuoi alleati)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_wizard_bladesinger",
+    "class_id": "wizard",
+    "name": "Bladesinger",
+    "name_it": "Canto della Lama",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Cantori della Lama padroneggiano una tradizione arcanistica che incorpora la scherma e la danza. In combattimento usano manovre eleganti che respingono i pericoli e incanalano la magia in attacchi devastanti e una difesa astuta.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Addestramento di Guerra e Canto, Canto della Lama, Attacco Extra, Canto di Difesa, Canto di Vittoria.",
+    "features": [
+      {
+        "name": "Addestramento di Guerra e Canto (Training in War and Song)",
+        "level": 3,
+        "description": "Ottieni competenza nelle **armature leggere** e in un tipo di **arma da mischia a una mano** a tua scelta. Ottieni inoltre competenza nell'abilità **Intrattenere** se non la possiedi già."
+      },
+      {
+        "name": "Canto della Lama (Bladesong)",
+        "level": 3,
+        "description": "Puoi invocare la magia elfica del Canto della Lama, a condizione che tu non indossi un'armatura media o pesante o uno scudo. Come **Azione Bonus**, attivi il Canto della Lama per **1 minuto** (termina prima se sei Incapacitato, indossi armature medie/pesanti, porti uno scudo o usi due mani per attaccare con un'arma). Finché è attivo ottieni:<br>- Bonus alla CA pari al tuo **modificatore di Intelligenza** (minimo +1).<br>- La tua velocità sul terreno aumenta di **3 metri**.<br>- **Vantaggio** alle prove di Destrezza (Acrobazia).<br>- Bonus ai tiri di salvezza su Costituzione per mantenere la Concentrazione pari al tuo **modificatore di Intelligenza** (minimo +1).<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **Bonus di Competenza** e recuperi gli utilizzi con un **riposo lungo**."
+      },
+      {
+        "name": "Attacco Extra (Extra Attack)",
+        "level": 6,
+        "description": "Puoi attaccare due volte, anziché una, ogni volta che usi l'azione di Attacco nel tuo turno.<br><br>Inoltre, puoi **lanciare uno dei tuoi trucchetti al posto di uno di questi attacchi**."
+      },
+      {
+        "name": "Canto di Difesa (Song of Defense)",
+        "level": 10,
+        "description": "Finché il tuo Canto della Lama è attivo, quando subisci danni puoi usare la tua **Reazione** e spendere uno slot incantesimo per **ridurre quel danno di un ammontare pari a 5 volte il livello dello slot incantesimo speso**."
+      },
+      {
+        "name": "Canto di Vittoria (Song of Victory)",
+        "level": 14,
+        "description": "Finché il tuo Canto della Lama è attivo, puoi aggiungere il tuo **modificatore di Intelligenza** (minimo +1) ai danni dei tuoi attacchi con armi da mischia."
+      }
+    ]
+  },
+{
+    "id": "subclass_wizard_bladesinger",
+    "class_id": "wizard",
+    "name": "Bladesinger",
+    "name_it": "Canto della Lama",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Cantori della Lama padroneggiano una tradizione arcanistica che incorpora la scherma e la danza. In combattimento usano manovre eleganti che respingono i pericoli e incanalano la magia in attacchi devastanti e una difesa astuta.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Addestramento di Guerra e Canto, Canto della Lama, Attacco Extra, Canto di Difesa, Canto di Vittoria.",
+    "features": [
+      {
+        "name": "Addestramento di Guerra e Canto (Training in War and Song)",
+        "level": 3,
+        "description": "Ottieni competenza nelle **armature leggere** e in un tipo di **arma da mischia a una mano** a tua scelta. Ottieni inoltre competenza nell'abilità **Intrattenere** se non la possiedi già."
+      },
+      {
+        "name": "Canto della Lama (Bladesong)",
+        "level": 3,
+        "description": "Puoi invocare la magia elfica del Canto della Lama, a condizione che tu non indossi un'armatura media o pesante o uno scudo. Come **Azione Bonus**, attivi il Canto della Lama per **1 minuto** (termina prima se sei Incapacitato, indossi armature medie/pesanti, porti uno scudo o usi due mani per attaccare con un'arma). Finché è attivo ottieni:<br>- Bonus alla CA pari al tuo **modificatore di Intelligenza** (minimo +1).<br>- La tua velocità sul terreno aumenta di **3 metri**.<br>- **Vantaggio** alle prove di Destrezza (Acrobazia).<br>- Bonus ai tiri di salvezza su Costituzione per mantenere la Concentrazione pari al tuo **modificatore di Intelligenza** (minimo +1).<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **Bonus di Competenza** e recuperi gli utilizzi con un **riposo lungo**."
+      },
+      {
+        "name": "Attacco Extra (Extra Attack)",
+        "level": 6,
+        "description": "Puoi attaccare due volte, anziché una, ogni volta che usi l'azione di Attacco nel tuo turno.<br><br>Inoltre, puoi **lanciare uno dei tuoi trucchetti al posto di uno di questi attacchi**."
+      },
+      {
+        "name": "Canto di Difesa (Song of Defense)",
+        "level": 10,
+        "description": "Finché il tuo Canto della Lama è attivo, quando subisci danni puoi usare la tua **Reazione** e spendere uno slot incantesimo per **ridurre quel danno di un ammontare pari a 5 volte il livello dello slot incantesimo speso**."
+      },
+      {
+        "name": "Canto di Vittoria (Song of Victory)",
+        "level": 14,
+        "description": "Finché il tuo Canto della Lama è attivo, puoi aggiungere il tuo **modificatore di Intelligenza** (minimo +1) ai danni dei tuoi attacchi con armi da mischia."
+      }
+    ]
+  },
+  {
+    "id": "subclass_wizard_bladesinger",
+    "class_id": "wizard",
+    "name": "Bladesinger",
+    "name_it": "Canto della Lama",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Cantori della Lama padroneggiano una tradizione arcanistica che incorpora la scherma e la danza. In combattimento usano manovre eleganti che respingono i pericoli e incanalano la magia in attacchi devastanti e una difesa astuta.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Addestramento di Guerra e Canto, Canto della Lama, Attacco Extra, Canto di Difesa, Canto di Vittoria.",
+    "features": [
+      {
+        "name": "Addestramento di Guerra e Canto (Training in War and Song)",
+        "level": 3,
+        "description": "Ottieni competenza nelle **armature leggere** e in un tipo di **arma da mischia a una mano** a tua scelta. Ottieni inoltre competenza nell'abilità **Intrattenere** se non la possiedi già."
+      },
+      {
+        "name": "Canto della Lama (Bladesong)",
+        "level": 3,
+        "description": "Puoi invocare la magia elfica del Canto della Lama, a condizione che tu non indossi un'armatura media o pesante o uno scudo. Come **Azione Bonus**, attivi il Canto della Lama per **1 minuto** (termina prima se sei Incapacitato, indossi armature medie/pesanti, porti uno scudo o usi due mani per attaccare con un'arma). Finché è attivo ottieni:<br>- Bonus alla CA pari al tuo **modificatore di Intelligenza** (minimo +1).<br>- La tua velocità sul terreno aumenta di **3 metri**.<br>- **Vantaggio** alle prove di Destrezza (Acrobazia).<br>- Bonus ai tiri di salvezza su Costituzione per mantenere la Concentrazione pari al tuo **modificatore di Intelligenza** (minimo +1).<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **Bonus di Competenza** e recuperi gli utilizzi con un **riposo lungo**."
+      },
+      {
+        "name": "Attacco Extra (Extra Attack)",
+        "level": 6,
+        "description": "Puoi attaccare due volte, anziché una, ogni volta che usi l'azione di Attacco nel tuo turno.<br><br>Inoltre, puoi **lanciare uno dei tuoi trucchetti al posto di uno di questi attacchi**."
+      },
+      {
+        "name": "Canto di Difesa (Song of Defense)",
+        "level": 10,
+        "description": "Finché il tuo Canto della Lama è attivo, quando subisci danni puoi usare la tua **Reazione** e spendere uno slot incantesimo per **ridurre quel danno di un ammontare pari a 5 volte il livello dello slot incantesimo speso**."
+      },
+      {
+        "name": "Canto di Vittoria (Song of Victory)",
+        "level": 14,
+        "description": "Finché il tuo Canto della Lama è attivo, puoi aggiungere il tuo **modificatore di Intelligenza** (minimo +1) ai danni dei tuoi attacchi con armi da mischia."
+      }
+    ]
+  },
+  {
+    "id": "subclass_wizard_order_of_scribes",
+    "class_id": "wizard",
+    "name": "Order of Scribes",
+    "name_it": "Ordine degli Scribi",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Tra i maghi, l'Ordine degli Scribi è il più erudito. La sua missione principale è registrare le scoperte magiche affinché l'arte arcanista possa prosperare. Un mago di questo ordine risveglia magicamente il proprio libro degli incantesimi, trasformandolo in un fidato compagno con cui interagire e comunicare.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Penna Arcanista, Libro degli Incantesimi Risvegliato, Mente Manifesta, Maestro Scrittore, Uno con la Parola.",
+    "features": [
+      {
+        "name": "Penna Arcanista (Wizardly Quill)",
+        "level": 3,
+        "description": "Come **Azione Bonus**, puoi creare magicamente nella tua mano libera una penna di taglia Piccolissima con le seguenti proprietà:<br>- Non richiede inchiostro e scrive nel colore che preferisci sulla superficie di scrittura.<br>- Riduce a **2 minuti per livello di incantesimo** il tempo necessario per trascrivere un incantesimo nel tuo libro.<br>- Con un'**Azione Bonus** puoi cancellare ciò che hai scritto con la penna passando la piuma sopra il testo entro 1,5 metri.<br>- Scompare se ne crei un'altra o se muori."
+      },
+      {
+        "name": "Libro degli Incantesimi Risvegliato (Awakened Spellbook)",
+        "level": 3,
+        "description": "Risvegli una coscienza arcanista all'interno del tuo libro degli incantesimi. Finché lo impugni, ottieni i seguenti benefici:<br>- Puoi usare il libro come **focus di incantamento** per i tuoi incantesimi da mago.<br>- Quando lanci un incantesimo da mago usando uno slot, puoi **sostituire temporaneamente il suo tipo di danno** con un tipo presente in un altro incantesimo del tuo libro dello stesso livello dello slot speso.<br>- Quando lanci un incantesimo da mago come **rituale**, puoi usare il normale tempo di lancio invece di aggiungere 10 minuti (una volta per **riposo lungo**).<br>- Puoi sostituire il libro durante un **riposo breve** usando la Penna Arcanista per tracciare sigilli arcanici su un libro vuoto o magico a cui sei sintonizzato, trasferendovi la coscienza e tutti gli incantesimi (il libro precedente perde tutti gli incantesimi)."
+      },
+      {
+        "name": "Mente Manifesta (Manifest Mind)",
+        "level": 6,
+        "description": "Come **Azione Bonus**, puoi manifestare la mente del tuo libro come un oggetto spettrale Piccolissimo che fluttua entro 18 metri da te. È intangibile, emette luce fioca entro 3 metri, possiede **Scurovisione fino a 18 metri** e condivide telepaticamente con te ciò che vede e sente.<br><br>Quando lanci un incantesimo da mago nel tuo turno, puoi **far originare l'incantesimo dallo spazio della mente spettrale** usando i suoi sensi (un numero di volte al giorno pari al tuo **Bonus di Competenza**, recuperabili con un **riposo lungo**).<br><br>Come **Azione Bonus**, puoi spostarla fluttuando fino a 9 metri. Può attraversare le creature ma non gli oggetti. Scompare se dista più di 90 metri da te, se viene lanciato <em>Dissolvi Magie</em> su di essa, se il libro viene distrutto, se muori o se la congedi con un'Azione Bonus. Puoi rievocarla senza costi una volta per **riposo lungo**, oppure spendendo uno slot incantesimo di qualsiasi livello."
+      },
+      {
+        "name": "Maestro Scrittore (Master Scrivener)",
+        "level": 10,
+        "description": "Al termine di un **riposo lungo**, puoi toccare una carta o pergamena vuota con la tua Penna Arcanista per creare una **pergamena magica** contenente un incantesimo di 1° o 2° livello con tempo di lancio di 1 azione presente nel tuo libro (che deve trovarsi entro 1,5 metri).<br><br>L'incantesimo sulla pergamena è potenziato e **conta come di un livello superiore al normale**. Puoi lanciarlo leggendolo come un'azione (è incomprensibile per chiunque altro e svanisce dopo il lancio o al termine del successivo riposo lungo).<br><br>Inoltre, il costo in oro e il tempo richiesti per creare pergamene di incantesimi standard vengono **dimezzati** se usi la tua Penna Arcanista."
+      },
+      {
+        "name": "Uno con la Parola (One with the Word)",
+        "level": 14,
+        "description": "Finché hai il libro con te, ottieni **Vantaggio a tutte le prove di Intelligenza (Arcana)**.<br><br>Inoltre, se subisci danni mentre la Mente Manifesta è evocata, puoi usare la tua **Reazione** per congedarla e **prevenire completamente quel danno**. Poi tira **3d6**: il libro perde temporaneamente incantesimi a tua scelta per un livello totale combinato pari o superiore al risultato ottenuto (se il libro non ha abbastanza incantesimi per coprire il costo, scendi a 0 Punti Ferita).<br><br>Sei incapace di lanciare gli incantesimi persi per **1d6 riposi lunghi**, al termine dei quali ricompariranno nel libro. Una volta usata questa reazione, non puoi riutilizzarla finché non completi un riposo lungo."
+      }
+    ]
+  },
+  {
+    "id": "subclass_wizard_war_magic",
+    "class_id": "wizard",
+    "name": "War Magic",
+    "name_it": "Magia da Guerra",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "La tradizione della Magia da Guerra fonde i principi dell'evocazione e dell'abiurazione per addestrare i maghi al combattimento. I maghi da guerra vedono la propria magia sia come un'arma che come un'armatura, agendo con rapidità in battaglia per prendere il controllo tattico dello scontro.<br><br><strong>Classe Madre:</strong> Mago<br><strong>Tratti di Sottoclasse:</strong> Deviazione Arcana, Astuzia Tattica, Impulso di Potere, Magia Duratura, Velo Deviante.",
+    "features": [
+      {
+        "name": "Deviazione Arcana (Arcane Deflection)",
+        "level": 3,
+        "description": "Quando vieni colpito da un attacco o fallisci un tiro di salvezza, puoi usare la tua **Reazione** per ottenere un **bonus di +2 alla CA** contro quell'attacco o un **bonus di +4 a quel tiro di salvezza**.<br><br>Quando usi questo privilegio, non puoi lanciare incantesimi diversi dai trucchetti fino alla fine del tuo turno successivo."
+      },
+      {
+        "name": "Astuzia Tattica (Tactical Wit)",
+        "level": 3,
+        "description": "Puoi aggiungere il tuo **modificatore di Intelligenza** ai tuoi tiri di **Iniziativa**."
+      },
+      {
+        "name": "Impulso di Potere (Power Surge)",
+        "level": 6,
+        "description": "Puoi accumulare energia magica per potenziare i tuoi incantesimi di danno, fino a un massimo di impulsi pari al tuo **modificatore di Intelligenza** (minimo 1). Quando completi un **riposo lungo**, il numero di impulsi si reimposta a 1.<br><br>Ottieni un impulso di potere ogni volta che interrompi con successo un incantesimo tramite <em>Dissolvi Magie</em> o <em>Controincantesimo</em>. Se completi un **riposo breve** con 0 impulsi, ne guadagni 1.<br><br>Una volta per turno, quando infliggi danni a una creatura o a un oggetto con un incantesimo da mago, puoi spendere un impulso di potere per infliggere **danni da Forza extra pari a metà del tuo livello da Mago**."
+      },
+      {
+        "name": "Magia Duratura (Durable Magic)",
+        "level": 10,
+        "description": "Finché mantieni la **Concentrazione** su un incantesimo, ottieni un **bonus di +2 alla CA** e a **tutti i tiri di salvezza**."
+      },
+      {
+        "name": "Velo Deviante (Deflecting Shroud)",
+        "level": 14,
+        "description": "Quando usi il privilegio **Deviazione Arcana**, puoi fare in modo che l'energia magica scaturisca da te: fino a tre creature a tua scelta entro 18 metri da te subiscono **danni da Forza pari a metà del tuo livello da Mago**."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
