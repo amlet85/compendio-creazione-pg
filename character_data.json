@@ -3367,6 +3367,278 @@
     ]
   },
   {
+    "id": "subclass_sorcerer_aberrant_sorcery",
+    "class_id": "sorcerer",
+    "name": "Aberrant Sorcery",
+    "name_it": "Magia Aberrante",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Un'influenza aliena ha avvolto i suoi tentacoli attorno alla tua mente, concedendoti poteri psichici. Ora puoi toccare la mente degli altri con quel potere e alterare il mondo circostante usandolo per controllare l'energia magica del multiverso.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Incantesimi Psichici, Parlata Telepatica, Stregoneria Psichica, Difese Psichiche, Rivelazione della Carne, Implosione Distorcente.",
+    "features": [
+      {
+        "name": "Incantesimi Psichici (Psychic Spells)",
+        "level": 3,
+        "description": "Impari incantesimi aggiuntivi quando raggiungi determinati livelli in questa classe. Ciascuno di questi incantesimi conta come un incantesimo da stregone per te, ma non conta ai fini del numero di incantesimi da stregone che conosci.<br><br><strong>Tabella Incantesimi Psichici:</strong><br>- <strong>3° Livello:</strong> <em>Braccia di Hadar</em>, <em>Sussurri Dissonanti</em>, <em>Scheggia Mentale</em>, <em>Calmare Emozioni</em>, <em>Trova Pensieri</em><br>- <strong>5° Livello:</strong> <em>Fame di Hadar</em>, <em>Inviare</em><br>- <strong>7° Livello:</strong> <em>Tentacoli Neri di Evard</em>, <em>Evoca Aberrazione</em><br>- <strong>9° Livello:</strong> <em>Legame Telepatico di Rary</em>, <em>Telecinesi</em>"
+      },
+      {
+        "name": "Parlata Telepatica (Telepathic Speech)",
+        "level": 3,
+        "description": "Puoi formare una connessione telepatica tra la tua mente e quella di un'altra creatura. Come <strong>Azione Bonus</strong>, scegli una creatura che puoi vedere entro 9 metri da te. Tu e la creatura scelta potete parlare telepaticamente tra voi finché vi trovate a una distanza in chilometri non superiore al tuo <strong>modificatore di Carisma</strong> (minimo 1,5 km).<br><br>Per capirvi a vicenda, dovete entrambi parlare mentalmente in una lingua che l'altro conosce. La connessione dura per un numero di minuti pari al tuo livello da stregone e termina prima se usi questo privilegio per connetterti a una creatura diversa."
+      },
+      {
+        "name": "Stregoneria Psichica (Psychic Sorcery)",
+        "level": 6,
+        "description": "Quando lanci un incantesimo di 1° livello o superiore dalla tua lista di Incantesimi Psichici, puoi lanciarlo spendendo uno slot incantesimo come di consueto oppure spendendo un numero di <strong>Punti Stregoneria</strong> pari al livello dell'incantesimo.<br><br>Se lanci l'incantesimo usando i Punti Stregoneria, esso non richiede componenti verbali o somatiche, né componenti materiali (a meno che non vengano consumate dall'incantesimo o abbiano un costo specificato)."
+      },
+      {
+        "name": "Difese Psichiche (Psychic Defenses)",
+        "level": 6,
+        "description": "Ottieni <strong>Resistenza ai danni psichici</strong> e hai <strong>Vantaggio</strong> ai tiri di salvezza per evitare o terminare la condizione Affascinato o Spaventato."
+      },
+      {
+        "name": "Rivelazione della Carne (Revelation in Flesh)",
+        "level": 14,
+        "description": "Puoi scatenare la verità aberrante nascosta dentro di te. Come <strong>Azione Bonus</strong>, puoi spendere 1 o più <strong>Punti Stregoneria</strong> per alterare magicamente il tuo corpo per 10 minuti. Per ogni Punto Stregoneria speso, ottieni uno dei seguenti benefici a tua scelta (gli effetti durano fino al termine dell'alterazione):<br>- <strong>Adattamento Acquatico:</strong> Ottieni una Velocità di Nuoto pari al doppio della tua Velocità e puoi respirare sott'acqua. Branchie crescono sul tuo collo, le dita diventano mebranose o ti crescono ciglia sferzanti.<br>- <strong>Volo Brillante:</strong> Ottieni una Velocità di Volo pari alla tua Velocità e puoi fluttuare. Mentre voli, la tua pelle brilla di muco o luce oltremondana.<br>- <strong>Vedere l'Invisibile:</strong> Puoi vedere qualsiasi creatura Invisibile entro 18 metri da te (purché non sia dietro Copertura Totale). I tuoi occhi diventano neri o si trasformano in tentacoli sensoriali.<br>- <strong>Movimento Vermiforme:</strong> Il tuo corpo (con tutto l'equipaggiamento) diventa viscido e flessibile. Puoi muoverti attraverso spazi stretti fino a 2,5 cm senza stringerti, e puoi spendere 1,5 metri di movimento per liberarti da trattenute non magiche o dalla condizione Afferrato."
+      },
+      {
+        "name": "Implosione Distorcente (Warping Implosion)",
+        "level": 18,
+        "description": "Puoi scatenare un'anomalia che distorce lo spazio. Come <strong>Azione Magica</strong>, ti teletrasporti in uno spazio non occupato che puoi vedere entro 36 metri da te. Immediatamente dopo la tua scomparsa, ogni creatura entro 9 metri dallo spazio che hai lasciato deve effettuare un tiro di salvezza su <strong>Forza</strong> contro la CD dei tuoi incantesimi.<br><br>Se lo fallisce, la creatura subisce <strong>3d10 danni da Forza</strong> e viene tirata in linea retta verso lo spazio che hai lasciato, terminando in uno spazio libero il più vicino possibile ad esso. Se lo supera, subisce solo la metà dei danni.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un <strong>riposo lungo</strong>, a meno che tu non spenda <strong>5 Punti Stregoneria</strong> (nessuna azione richiesta) per ripristinarne l'uso."
+      }
+    ]
+  },
+  {
+    "id": "subclass_sorcerer_clockwork_sorcery",
+    "class_id": "sorcerer",
+    "name": "Clockwork Sorcery",
+    "name_it": "Magia Meccanica",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "La forza cosmica dell'ordine ti ha permeato di magia. Questo potere sorge da Mechanus o da un reame simile, un piano di esistenza plasmato interamente dall'efficienza degli ingranaggi.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Magia Meccanica, Ripristinare l'Equilibrio, Bastione della Legge, Trance dell'Ordine, Cavalcata Meccanica.",
+    "features": [
+      {
+        "name": "Magia Meccanica (Clockwork Magic)",
+        "level": 3,
+        "description": "Impari incantesimi aggiuntivi quando raggiungi determinati livelli in questa classe. Ciascun incantesimo conta come un incantesimo da stregone per te, ma non conta ai fini del numero di incantesimi da stregone che conosci. Questi incantesimi non possono essere sostituiti quando guadagni un livello.<br><br><strong>Tabella Incantesimi Meccanici:</strong><br>- <strong>3° Livello:</strong> <em>Allarme</em>, <em>Protezione dal Bene e dal Male</em>, <em>Aiuto</em>, <em>Ristorare Inferiore</em><br>- <strong>5° Livello:</strong> <em>Dissolvi Magie</em>, <em>Protezione dalle Energie</em><br>- <strong>7° Livello:</strong> <em>Libertà di Movimento</em>, <em>Evoca Costrutto</em><br>- <strong>9° Livello:</strong> <em>Ristorare Superiore</em>, <em>Muro di Forza</em>"
+      },
+      {
+        "name": "Ripristinare l'Equilibrio (Restore Balance)",
+        "level": 3,
+        "description": "La tua connessione con il piano del perfetto ordine ti permette di equalizzare i momenti caotici. Quando una creatura che puoi vedere entro 18 metri sta per tirare un d20 con Vantaggio o Svantaggio, puoi usare la tua <strong>Reazione</strong> per impedire che il tiro sia influenzato da Vantaggio o Svantaggio.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>modificatore di Carisma</strong> (minimo una volta) e recuperi tutti gli utilizzi spesi quando completi un <strong>riposo lungo</strong>."
+      },
+      {
+        "name": "Bastione della Legge (Bastion of Law)",
+        "level": 6,
+        "description": "Puoi attingere alla grande equazione dell'esistenza per imbevere una creatura con uno scudo scintillante d'ordine. Come <strong>Azione Magica</strong>, puoi spendere da <strong>1 a 5 Punti Stregoneria</strong> per creare una protezione magica attorno a te o a un'altra creatura entro 9 metri.<br><br>La protezione è rappresentata da un numero di <strong>d8</strong> pari ai Punti Stregoneria spesi. Quando la creatura protetta subisce danni, può spendere un qualsiasi numero di questi dadi, tirarli e ridurre il danno subito del totale ottenuto. La protezione dura finché non completi un <strong>riposo lungo</strong> o finché non usi nuovamente questo privilegio."
+      },
+      {
+        "name": "Trance dell'Ordine (Trance of Order)",
+        "level": 14,
+        "description": "Ottieni la capacità di allineare la tua coscienza ai calcoli infiniti di Mechanus. Come <strong>Azione Bonus</strong>, puoi entrare in questo stato per 1 minuto. Per la durata, i tiri per colpire contro di te non possono beneficiare di Vantaggio e, ogni volta che effettui una Prova con d20, puoi considerare un risultato pari o inferiore a 9 sul d20 come un <strong>10</strong>.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un <strong>riposo lungo</strong>, a meno che tu non spenda <strong>5 Punti Stregoneria</strong> (nessuna azione richiesta) per ripristinarne l'uso."
+      },
+      {
+        "name": "Cavalcata Meccanica (Clockwork Cavalcade)",
+        "level": 18,
+        "description": "Evochi momentaneamente gli spiriti dell'ordine per purificare il disordine intorno a te. Come <strong>Azione Magica</strong>, evochi gli spiriti in un <strong>Cubo di 9 metri di lato</strong> che origina da te. Gli spiriti appaiono come modron o altri Costrutti a tua scelta, sono intangibili e invulnerabili, e creano i seguenti effetti all'interno del cubo prima di svanire:<br>- <strong>Guarire:</strong> Gli spiriti ripristinano fino a <strong>100 punti ferita</strong>, divisi a tua scelta tra qualsiasi numero di creature nel Cubo.<br>- <strong>Riparare:</strong> Qualsiasi oggetto danneggiato interamente contenuto nel Cubo viene riparato all'istante.<br>- <strong>Dissolvere:</strong> Ogni incantesimo di 6° livello o inferiore termina sulle creature e sugli oggetti a tua scelta nel Cubo.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un <strong>riposo lungo</strong>, a meno che tu non spenda <strong>7 Punti Stregoneria</strong> (nessuna azione richiesta) per ripristinarne l'uso."
+      }
+    ]
+  },
+  {
+    "id": "subclass_sorcerer_draconic_sorcery",
+    "class_id": "sorcerer",
+    "name": "Draconic Sorcery",
+    "name_it": "Magia Draconica",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "La tua magia innata deriva dal dono di un drago. Che sia il lascito di un antico drago o l'eredità di una stirpe legata ai draghi, il potere dei draghi scorre nelle tue vene.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Incantesimi Draconici, Resilienza Draconica, Affinità Elementale, Ali di Drago, Compagno Draconico.",
+    "features": [
+      {
+        "name": "Incantesimi Draconici (Dragon Spells)",
+        "level": 3,
+        "description": "Impari incantesimi aggiuntivi quando raggiungi determinati livelli in questa classe. Ciascuno di questi incantesimi conta come un incantesimo da stregone per te, ma non conta ai fini del numero di incantesimi da stregone che conosci.<br><br><strong>Tabella Incantesimi Draconici:</strong><br>- <strong>3° Livello:</strong> <em>Alterare Se Stessi</em>, <em>Sfera Cromatica</em>, <em>Comando</em>, <em>Soffio di Drago</em><br>- <strong>5° Livello:</strong> <em>Paura</em>, <em>Volare</em><br>- <strong>7° Livello:</strong> <em>Occhio Arcano</em>, <em>Cultura Leggendaria</em><br>- <strong>9° Livello:</strong> <em>Affascinare Mostro</em>, <em>Evoca Drago</em>"
+      },
+      {
+        "name": "Resilienza Draconica (Draconic Resilience)",
+        "level": 3,
+        "description": "La magia nel tuo corpo manifesta tratti fisici del tuo dono draconico. Il tuo massimo dei Punti Ferita aumenta di <strong>3</strong> e aumenta di <strong>1</strong> ogni volta che guadagni un livello da Stregone.<br><br>Inoltre, parti del tuo corpo sono coperte da scaglie simili a quelle di un drago. Finché non indossi un'armatura, la tua Classe Armatura base è pari a <strong>10 + il tuo modificatore di Destrezza + il tuo modificatore di Carisma</strong>."
+      },
+      {
+        "name": "Affinità Elementale (Elemental Affinity)",
+        "level": 6,
+        "description": "La tua magia draconica ha un'affinità con uno dei tipi di danno associati ai draghi. Scegli uno di questi tipi: <strong>Acido, Freddo, Fuoco, Fulmine o Veleno</strong>.<br><br>Ottieni <strong>Resistenza</strong> a quel tipo di danno e, quando lancia un incantesimo che infligge danni di quel tipo, puoi aggiungere il tuo <strong>modificatore di Carisma</strong> a un tiro di danno dell'incantesimo."
+      },
+      {
+        "name": "Ali di Drago (Dragon Wings)",
+        "level": 14,
+        "description": "Come <strong>Azione Bonus</strong>, puoi far apparire ali draconiche sulla tua schiena. Le ali durano per 1 ora o finché non le congedi (nessuna azione richiesta). Per la durata, hai una <strong>Velocità di Volo di 18 metri</strong>.<br><br>Quando le ali si manifestano, decidi se sono spettrali o fisiche (se fisiche, non devi indossare qualcosa che le ostacoli). Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un <strong>riposo lungo</strong>, a meno che tu non spenda <strong>3 Punti Stregoneria</strong> (nessuna azione richiesta) per ripristinarne l'uso."
+      },
+      {
+        "name": "Compagno Draconico (Draconic Companion)",
+        "level": 18,
+        "description": "Puoi lanciare l'incantesimo <em>Evoca Drago</em> senza componenti Materiali. Puoi anche lanciarlo <strong>una volta senza spendere uno slot incantesimo</strong>, e recuperi la capacità di farlo in questo modo quando completi un <strong>riposo lungo</strong>.<br><br>Ogni volta che inizi a lanciare l'incantesimo, puoi modificarlo in modo che <strong>non richieda Concentrazione</strong>. Se lo fai, la durata dell'incantesimo diventa di 1 minuto per quel lancio."
+      }
+    ]
+  },
+  {
+    "id": "subclass_sorcerer_wild_magic_sorcery",
+    "class_id": "sorcerer",
+    "name": "Wild Magic Sorcery",
+    "name_it": "Magia Selvaggia",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "La tua magia innata deriva dalle forze del caos che si trovano alla base dell'ordine della creazione. Tu o un tuo antenato potreste aver subito l'esposizione alla magia pura, forse attraverso un portale planare verso il Limbo o i Piani Elementali, oppure potreste essere stati benedetti da un essere fatato o segnati da un demone.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Impulso di Magia Selvaggia, Maree del Caos, Piegare la Fortuna, Caos Controllato, Impulso Dominato.",
+    "features": [
+      {
+        "name": "Impulso di Magia Selvaggia (Wild Magic Surge)",
+        "level": 3,
+        "description": "I tuoi incantesimi possono scatenare ondate di magia incontrollata. Una volta per turno, puoi tirare un **d20** immediatamente dopo aver lanciato un incantesimo da stregone usando uno slot incantesimo. Se tiri un **20**, tiri sulla **Tabella degli Impulsi di Magia Selvaggia** per creare un effetto magico.<br><br>Se l'effetto magico prodotto è un incantesimo, è troppo selvaggio per essere influenzato dalla tua Metamagia."
+      },
+      {
+        "name": "Maree del Caos (Tides of Chaos)",
+        "level": 3,
+        "description": "Puoi manipolare il caos stesso per ottenere **Vantaggio su un Tiro con d20** prima di effettuare il tiro.<br><br>Una volta fatto, devi lanciare un incantesimo da stregone usando uno slot incantesimo oppure completare un **riposo lungo** prima di poter riutilizzare questo privilegio. Se lanci un incantesimo da stregone usando uno slot prima di completare un riposo lungo, tiri **automaticamente** sulla Tabella degli Impulsi di Magia Selvaggia."
+      },
+      {
+        "name": "Piegare la Fortuna (Bend Luck)",
+        "level": 6,
+        "description": "Hai la capacità di torcere il destino usando la tua magia selvaggia. Immediatamente dopo che un'altra creatura che puoi vedere effettua un Tiro con d20, puoi usare la tua **Reazione** e spendere **1 Punto Stregoneria** per tirare 1d4 e applicare il numero ottenuto come bonus o penalità (a tua scelta) al tiro con il d20."
+      },
+      {
+        "name": "Caos Controllato (Controlled Chaos)",
+        "level": 14,
+        "description": "Ottieni un minimo di controllo sugli impulsi della tua magia selvaggia. Ogni volta che tiri sulla Tabella degli Impulsi di Magia Selvaggia, puoi **tirare due volte e scegliere uno qualsiasi dei due risultati**."
+      },
+      {
+        "name": "Impulso Dominato (Tamed Surge)",
+        "level": 18,
+        "description": "Immediatamente dopo aver lanciato un incantesimo da stregone con uno slot incantesimo, puoi **scegliere un effetto a tua scelta** dalla Tabella degli Impulsi di Magia Selvaggia invece di tirare su di essa.<br><br>Puoi scegliere qualsiasi effetto sulla tabella eccetto l'ultima riga e, se l'effetto scelto richiede un tiro, devi effettuarlo. Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un **riposo lungo**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_sorcerer_divine_soul_sorcerer",
+    "class_id": "sorcerer",
+    "name": "Divine Soul Sorcerer",
+    "name_it": "Stirpe Divina",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "A volte la scintilla di magia che alimenta uno stregone proviene da una fonte divina che brilla nell'anima. Avere un'anima così benedetta è segno che la tua magia innata potrebbe derivare da un lontano ma potente legame familiare con un essere divino.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Magia Divina, Favorito dagli Dei, Guarigione Potenziata, Forma Angelica, Ripresa Sovrannaturale.",
+    "features": [
+      {
+        "name": "Magia Divina (Divine Magic)",
+        "level": 3,
+        "description": "Il tuo legame con il divino ti permette di imparare incantesimi comunemente associati alla classe del Chierico. Quando il tuo privilegio Incantesimi ti permette di imparare un trucchetto o un incantesimo di 1° livello o superiore da stregone, puoi sceglierlo dalla **lista degli incantesimi da chierico** o da stregone. L'incantesimo diventa un incantesimo da stregone per te.<br><br>Inoltre, scegli un'affinità per la fonte del tuo potere divino. Impari un incantesimo aggiuntivo in base a questa scelta che non conta ai fini del numero di incantesimi conosciuti:<br>- **Bene:** <em>Cura Ferite</em><br>- **Male:** <em>Infliggi Ferite</em><br>- **Legge:** <em>Benedizione</em><br>- **Caos:** <em>Rovina</em><br>- **Neutralità:** <em>Protezione dal Bene e dal Male</em><br><br>Se in seguito sostituisci questo incantesimo, devi sostituirlo con un incantesimo dalla lista del chierico."
+      },
+      {
+        "name": "Favorito dagli Dei (Favored)",
+        "level": 3,
+        "description": "Il potere divino protegge il tuo destino. Se fallisci un tiro di salvezza o manchi con un tiro per colpire, puoi **tirare 2d4** e aggiungerli al totale, cambiando potenzialmente l'esito del tiro.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo **Bonus di Competenza** e recuperi tutti gli utilizzi spesi quando completi un **riposo lungo**."
+      },
+      {
+        "name": "Guarigione Potenziata (Empowered Healing)",
+        "level": 6,
+        "description": "L'energia divina che scorre in te può potenziare gli incantesimi di cura. Ogni volta che tu o un alleato entro 1,5 metri da te tirate i dadi per determinare i punti ferita ripristinati da un incantesimo, puoi spendere **1 Punto Stregoneria** per ritirare qualsiasi numero di quei dadi una volta (purché tu non sia Incapacitato). Puoi usare questo privilegio solo una volta per turno."
+      },
+      {
+        "name": "Forma Angelica (Angelic Form)",
+        "level": 14,
+        "description": "Come **Azione Bonus**, puoi far apparire un paio di ali spettrali dalla tua schiena. Finché le ali sono presenti, hai una **Velocità di Volo di 9 metri**. Le ali durano finché non sei Incapacitato, muori o le congedi come Azione Bonus.<br><br>L'aspetto delle ali dipende dall'affinità scelta per Magia Divina: ali d'aquila (Bene/Legge), ali di pipistrello (Male/Caos) o ali di libellula (Neutralità)."
+      },
+      {
+        "name": "Ripresa Sovrannaturale (Unearthly Recovery)",
+        "level": 18,
+        "description": "Ottieni la capacità di superare ferite gravissime. Come **Azione Bonus**, quando ti rimangono meno della metà dei tuoi punti ferita massimi, puoi ripristinare un numero di punti ferita pari alla **metà dei tuoi punti ferita massimi**.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo finché non completi un **riposo lungo**."
+      }
+    ]
+  },
+  {
+    "id": "subclass_sorcerer_shadow_sorcery",
+    "class_id": "sorcerer",
+    "name": "Shadow Sorcery",
+    "name_it": "Magia delle Ombre",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Sei una creatura dell'ombra, poiché la tua magia innata proviene dalla Coltre Oscura (Shadowfell). Potresti tracciare la tua stirpe fino a un'entità di quel luogo, o essere stato esposto alla sua cupa energia rimasuglio.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Incantesimi delle Ombre, Occhi dell'Oscurità, Forza della Tomba, Segugio del Malaugurio, Passo dell'Ombra, Forma Umbratile.",
+    "features": [
+      {
+        "name": "Incantesimi delle Ombre (Shadow Sorcery Spells)",
+        "level": 3,
+        "description": "Impari incantesimi aggiuntivi quando raggiungi determinati livelli in questa classe. Ciascun incantesimo conta come un incantesimo da stregone per te, ma non conta ai fini del numero di incantesimi da stregone che conosci.<br><br>Ogni volta che guadagni un livello da stregone, puoi sostituire uno di questi incantesimi con un altro incantesimo dello stesso livello, purché sia di **Abiurazione** o **Trasmutazione** della lista da Stregone, Warlock o Mago.<br><br><strong>Tabella Incantesimi delle Ombre:</strong><br>- <strong>3° Livello:</strong> <em>Causare Paura</em>, <em>Sonnellino</em>, <em>Oscurità</em>, <em>Invisibilità</em><br>- <strong>5° Livello:</strong> <em>Paura</em>, <em>Evoca Spirito dell'Ombra</em><br>- <strong>7° Livello:</strong> <em>Invisibilità Superiore</em>, <em>Assassino Fantasma</em><br>- <strong>9° Livello:</strong> <em>Fuorviare</em>, <em>Sembianza</em>"
+      },
+      {
+        "name": "Occhi dell'Oscurità (Eyes of the Dark)",
+        "level": 3,
+        "description": "Ottieni **Scurovisione fino a 36 metri**. Inoltre, puoi lanciare l'incantesimo <em>Oscurità</em> spendendo uno slot incantesimo oppure spendendo **2 Punti Stregoneria**.<br><br>Se lo lanci spendendo Punti Stregoneria, **puoi vedere attraverso l'oscurità** creata da questo incantesimo."
+      },
+      {
+        "name": "Forza della Tomba (Strength of the Grave)",
+        "level": 3,
+        "description": "La tua esistenza tra la vita e la morte ti rende difficile da sconfiggere. Quando un danno ti riduce a 0 punti ferita, puoi effettuare un **Tiro di Salvezza su Carisma (CD = 5 + danno subito)**. Se lo superi, scendi invece a 1 punto ferita.<br><br>Non puoi usare questo privilegio se scendi a 0 punti ferita a causa di danni Radiosi o di un Colpo Critico. Una volta superato il tiro di salvezza, non puoi riutilizzarlo finché non completi un **riposo lungo**."
+      },
+      {
+        "name": "Segugio del Malaugurio (Hound of Ill Omen)",
+        "level": 6,
+        "description": "Come **Azione Bonus**, puoi spendere **3 Punti Stregoneria** per evocare un segugio d'ombra che bersaglia una creatura entro 36 metri. Usa le statistiche del *Lupo Diretto* con le seguenti modifiche:<br>- È di taglia Media e tipo Mostruosità.<br>- Appare con Punti Ferita Temporanei pari alla metà del tuo livello da stregone.<br>- Può muoversi attraverso creature e oggetti come se fossero terreno difficile (subisce 5 danni da Forza se termina il turno dentro un oggetto).<br>- Conosce automaticamente la posizione del bersaglio ed evita che si nasconda da lui.<br>- Finché il segugio si trova entro 1,5 metri dal bersaglio, quest'ultimo ha **Svantaggio ai tiri di salvezza** contro qualsiasi incantesimo da te lanciato.<br><br>Scompare se ridotto a 0 PF, se il bersaglio muore o dopo 5 minuti."
+      },
+      {
+        "name": "Passo dell'Ombra (Shadow Walk)",
+        "level": 14,
+        "description": "Quando ti trovi in luce fioca o oscurità, puoi usare un'**Azione Bonus** per teletrasportarti fino a **36 metri** in uno spazio non occupato che puoi vedere, anch'esso situato in luce fioca o oscurità."
+      },
+      {
+        "name": "Forma Umbratile (Umbral Form)",
+        "level": 18,
+        "description": "Puoi spendere **6 Punti Stregoneria** come **Azione Bonus** per trasformarti in una forma d'ombra per 1 minuto. In questa forma:<br>- Ottieni **Resistenza a tutti i danni** eccetto Forza e Radioso.<br>- Puoi muoverti attraverso altre creature e oggetti come se fossero terreno difficile (subisci 5 danni da Forza se termini il turno dentro un oggetto).<br><br>L'effetto termina prima se sei Incapacitato, muori o lo congedi come Azione Bonus."
+      }
+    ]
+  },
+  {
+    "id": "subclass_sorcerer_storm_sorcery",
+    "class_id": "sorcerer",
+    "name": "Storm Sorcery",
+    "name_it": "Magia della Tempesta",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "La tua magia innata proviene dal potere dell'aria elementale. Molti con questo potere tracciano la loro magia da un'esperienza vicina alla morte causata da una Grande Pioggia, oppure dalla nascita durante una tempesta leggendaria.<br><br><strong>Classe Madre:</strong> Stregone<br><strong>Tratti di Sottoclasse:</strong> Magia della Tempesta, Oratore del Vento, Magia Tempestosa, Cuore della Tempesta, Guida della Tempesta, Furia della Tempesta, Anima del Vento.",
+    "features": [
+      {
+        "name": "Magia della Tempesta (Storm Magic)",
+        "level": 3,
+        "description": "Impari incantesimi aggiuntivi quando raggiungi determinati livelli in questa classe. Ciascun incantesimo conta come un incantesimo da stregone per te, ma non conta ai fini del numero di incantesimi da stregone che conosci. Questi incantesimi non possono essere sostituiti quando guadagni un livello.<br><br><strong>Tabella Incantesimi della Tempesta:</strong><br>- <strong>3° Livello:</strong> <em>Nube Nebbiosa</em>, <em>Onda Tonante</em>, <em>Raffica di Vento</em>, <em>Levitazione</em><br>- <strong>5° Livello:</strong> <em>Invocare Fulmini</em>, <em>Tempesta di Nevischio</em><br>- <strong>7° Livello:</strong> <em>Tempesta di Ghiaccio</em>, <em>Sfera Tempestosa</em><br>- <strong>9° Livello:</strong> <em>Cono di Freddo</em>, <em>Controllare Venti</em>"
+      },
+      {
+        "name": "Oratore del Vento (Wind Speaker)",
+        "level": 3,
+        "description": "Puoi parlare, leggere e scrivere in **Primordiale**. Conoscere questa lingua ti permette di comprendere ed essere compreso da chi parla i suoi dialetti: Aquan, Auran, Ignan e Terran."
+      },
+      {
+        "name": "Magia Tempestosa (Tempestuous Magic)",
+        "level": 3,
+        "description": "Puoi usare un'**Azione Bonus** nel tuo turno per far sì che raffiche d'aria elementale ti circondino brevemente, immediatamente prima o dopo aver lanciato un incantesimo di 1° livello o superiore.<br><br>Farlo ti permette di **volare fino a 3 metri senza provocare attacchi di opportunità**."
+      },
+      {
+        "name": "Cuore della Tempesta (Heart of the Storm)",
+        "level": 6,
+        "description": "Ottieni **Resistenza ai danni da Fulmine e Tuono**.<br><br>Inoltre, ogni volta che inizi a lanciare un incantesimo di 1° livello o superiore che infligge danni da Fulmine o Tuono, un'eruzione tempestosa colpisce le creature a tua scelta entro 3 metri da te. Ciascuna creatura scelta subisce **danni da Fulmine o Tuono pari alla metà del tuo livello da Stregone**."
+      },
+      {
+        "name": "Guida della Tempesta (Storm Guide)",
+        "level": 6,
+        "description": "Ottieni la capacità di controllare sottilmente il tempo atmosferico intorno a te:<br>- **Pioggia:** Se sta piovendo, puoi usare un'Azione per far cessare la pioggia in una sfera di 6 metri di raggio centrata su di te. Puoi terminare l'effetto come Azione Bonus.<br>- **Vento:** Se c'è vento, puoi usare un'Azione Bonus in ogni round per scegliere la direzione in cui soffia il vento in una sfera di 30 metri di raggio centrata su di te fino alla fine del tuo turno successivo (non altera la velocità del vento)."
+      },
+      {
+        "name": "Furia della Tempesta (Storm's Fury)",
+        "level": 14,
+        "description": "Quando vieni colpito da un attacco in mischia, puoi usare la tua **Reazione** per infliggere **danni da Fulmine pari al tuo livello da Stregone** all'attaccante.<br><br>L'attaccante deve anche effettuare un tiro di salvezza su **Forza** contro la CD dei tuoi incantesimi: se lo fallisce, viene spinto in linea retta fino a **6 metri di distanza** da te."
+      },
+      {
+        "name": "Anima del Vento (Wind Soul)",
+        "level": 18,
+        "description": "Ottieni **Immunità ai danni da Fulmine e Tuono** e una **Velocità di Volo magica di 18 metri**.<br><br>Come **Azione**, puoi ridurre la tua velocità di volo a 9 metri per 1 ora e concedere a un numero di creature entro 9 metri pari a **3 + il tuo modificatore di Carisma** una velocità di volo magica di 9 metri per 1 ora. Una volta ridotta la velocità in questo modo, non puoi riutilizzare questa capacità finché non completi un riposo breve o lungo."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
