@@ -230,9 +230,9 @@ function filterData() {
 
     if (selectedCategory === '') {
       matchesCategory = true;
-    } else if (selectedCategory === "talentoorigine" || selectedCategory === "origine") {
+    } else if (selectedCategory === "talentoorigine" || selectedCategory === "Origine") {
       const isTalento = rawType.includes("talento") || rawCat.includes("talento") || rawType.includes("feat") || rawCat.includes("feat");
-      const isOrigine = rawType.includes("origine") || rawCat.includes("origine") || rawType.includes("origin") || rawCat.includes("origin");
+      const isOrigine = rawType.includes("Origine") || rawCat.includes("Origine") || rawType.includes("Origin") || rawCat.includes("Origin");
       // Accetta sia chi ha "origine" nella categoria/tipo, sia chi ha entrambi i tag
       matchesCategory = isOrigine || (isTalento && isOrigine);
     } else if (selectedCategory === "stiledicombattimento" || selectedCategory === "stilecombattimento") {
@@ -242,7 +242,7 @@ function filterData() {
                         rawType.includes("fighting") || 
                         rawCat.includes("fighting");
     } else if (selectedCategory === "talentogenerale") {
-      const isOrigin = rawCat.includes("origine") || rawType.includes("origine");
+      const isOrigin = rawCat.includes("Origine") || rawType.includes("Origine");
       const isFightingStyle = rawCat.includes("stile") || rawCat.includes("combattimento") || rawType.includes("stile");
       matchesCategory = (rawType.includes("talento") || rawCat.includes("talento")) && !isOrigin && !isFightingStyle;
     } else if (selectedCategory === "arma") {
