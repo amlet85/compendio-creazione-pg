@@ -1562,6 +1562,233 @@
   ]
 },
 {
+  "id": "subclass_barbarian_berserker",
+  "class_id": "barbarian",
+  "name": "Path of the Berserker",
+  "name_it": "Cammino del Berserker",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "description_it": "Per i barbari che seguono il Cammino del Berserker, l'Ira è una forza indirizzata verso la violenza pura. Il loro è un cammino di furia incontrollata e traggono gioia dal caos della battaglia lasciando che la propria Ira li domini e li potenzi.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Furia, Ira Inconsapevole, Ritorsione, Presenza Intimidatoria.",
+  "features": [
+    {
+      "name": "Furia (Frenzy)",
+      "level": 3,
+      "description": "Se usi <em>Attacco Irruento</em> mentre la tua Ira è attiva, infliggi danni extra al primo bersaglio che colpisci nel tuo turno con un attacco basato sulla Forza. Tira un numero di <strong>d6 pari al tuo bonus Danni dell'Ira</strong> e sommali al danno. Il tipo di danno è lo stesso dell'arma o del colpo senz'arma utilizzato."
+    },
+    {
+      "name": "Ira Inconsapevole (Mindless Rage)",
+      "level": 6,
+      "description": "Mentre la tua Ira è attiva, sei <strong>immune alle condizioni Affascinato e Spaventato</strong>. Se sei già Affascinato o Spaventato quando entri in Ira, tale condizione termina immediatamente per la durata dell'Ira."
+    },
+    {
+      "name": "Ritorsione (Retaliation)",
+      "level": 10,
+      "description": "Quando subisci danni da una creatura situata entro 1,5 metri da te, puoi usare la tua <strong>Reazione</strong> per effettuare un attacco con arma in mischia o un colpo senz'arma contro quella creatura."
+    },
+    {
+      "name": "Presenza Intimidatoria (Intimidating Presence)",
+      "level": 14,
+      "description": "Come <strong>Azione Bonus</strong>, puoi manifestare la tua furia: ciascuna creatura a tua scelta in un'Emanazione di 9 metri attorno a te deve effettuare un tiro salvezza su Saggezza (CD pari a 8 + il tuo bonus di competenza + il tuo modificatore di Forza). Se fallisce, la creatura subisce la condizione <strong>Spaventato</strong> per 1 minuto. La creatura può ripetere il tiro salvezza alla fine di ciascun suo turno, ponendo fine all'effetto se lo supera.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>, a meno che tu non spenda <strong>1 uso della tua Ira</strong> (nessuna azione richiesta) per ripristinarne l'uso."
+    }
+  ]
+},
+{
+  "id": "subclass_barbarian_zealot",
+  "class_id": "barbarian",
+  "name": "Path of the Zealot",
+  "name_it": "Cammino dello Zelota",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "description_it": "Per i barbari che seguono il Cammino dello Zelota, l'Ira è un dono divino. Questi barbari vivono la propria furia come un'esperienza estatica di unione con gli dei, che li infonde di potere divino per perseguire la volontà delle divinità nel mondo.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Furia Divina, Guerriero degli Dei, Focus Fanatico, Presenza Zelante, Ira degli Dei.",
+  "features": [
+    {
+      "name": "Furia Divina (Divine Fury)",
+      "level": 3,
+      "description": "Incanali il potere divino nei tuoi colpi. In ciascuno dei tuoi turni mentre la tua Ira è attiva, la prima creatura che colpisci con un'arma o un colpo senz'arma subisce <strong>1d6 + metà del tuo livello da Barbaro</strong> (arrotondato per difetto) danni extra. Scegli ogni volta se infliggere danni <strong>Necrotici</strong> o <strong>Radiosi</strong>."
+    },
+    {
+      "name": "Guerriero degli Dei (Warrior of the Gods)",
+      "level": 3,
+      "description": "Possiedi una riserva di <strong>4 d12</strong> per curarti. Come <strong>Azione Bonus</strong>, puoi spendere dadi da questa riserva, tirarli e recuperare un numero di Punti Ferita pari al totale ottenuto. Recuperi tutti i dadi spesi quando completi un <strong>Riposo Lungo</strong>.<br><br>La riserva aumenta a <strong>5 d12</strong> al 6° livello, <strong>6 d12</strong> al 12° livello e <strong>7 d12</strong> al 17° livello."
+    },
+    {
+      "name": "Focus Fanatico (Fanatical Focus)",
+      "level": 6,
+      "description": "Una volta per ciascuna Ira attiva, se fallisci un tiro salvezza, puoi ritirarlo aggiungendo un bonus pari al tuo <strong>bonus Danni dell'Ira</strong>. Sei obbligato a utilizzare il nuovo risultato."
+    },
+    {
+      "name": "Presenza Zelante (Zealous Presence)",
+      "level": 10,
+      "description": "Come <strong>Azione Bonus</strong>, emetti un grido di battaglia divino. Fino a 10 creature a tua scelta entro 18 metri da te ottengono <strong>Vantaggio ai tiri per colpire e ai tiri salvezza</strong> fino all'inizio del tuo turno successivo.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>, a meno che tu non spenda <strong>1 uso della tua Ira</strong> (nessuna azione richiesta) per ripristinarne l'uso."
+    },
+    {
+      "name": "Ira degli Dei (Rage of the Gods)",
+      "level": 14,
+      "description": "Quando attivi la tua Ira, puoi assumere una forma divina per 1 minuto o finché non scendi a 0 Punti Ferita. Ottieni i seguenti benefici:<br>- <strong>Volo:</strong> Ottieni una velocità di Volo pari alla tua velocità di movimento sul terreno e puoi fluttuare.<br>- <strong>Resistenze:</strong> Ottieni Resistenza ai danni Necrotici, Psichici e Radiosi.<br>- <strong>Defilare la Morte:</strong> Quando una creatura entro 9 metri da te scenderebbe a 0 Punti Ferita, puoi usare la tua <strong>Reazione</strong> e spendere 1 uso dell'Ira per fare in modo che scenda invece a un numero di Punti Ferita pari al tuo livello da Barbaro.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>."
+    }
+  ]
+},
+{
+  "id": "subclass_barbarian_beast",
+  "class_id": "barbarian",
+  "name": "Path of the Beast",
+  "name_it": "Cammino della Bestia",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "I barbari che seguono il Cammino della Bestia traggono la loro ira da una scintilla ferina che brucia nella loro anima. Tale bestia esplode durante l'Ira, trasformando fisicamente il barbaro con zanne, artigli o code assassine.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Forma della Bestia, Anima Bestiale, Furia Infettiva, Richiamo della Caccia.",
+  "features": [
+    {
+      "name": "Forma della Bestia (Form of the Beast)",
+      "level": 3,
+      "description": "Quando entri in Ira, manifesti un'arma naturale a tua scelta (considerata un'arma semplice in mischia che usa la Forza per i tiri per colpire e per i danni):<br>- <strong>Morso (Bite):</strong> Infligge 1d8 danni perforanti. Una volta per turno, se hai meno della metà dei tuoi Punti Ferita massimi e danneggi una creatura con questo morso, recuperi Punti Ferita pari al tuo bonus di competenza.<br>- <strong>Artigli (Claws):</strong> Infliggono 1d6 danni da taglio. Se attacchi con un artiglio come parte dell'azione di Attacco, puoi effettuare un attacco aggiuntivo con l'artiglio come parte della stessa azione.<br>- <strong>Coda (Tail):</strong> Infligge 1d8 danni perforanti e ha la proprietà Portata. Se una creatura entro 3 metri da te che puoi vedere ti colpisce con un attacco, puoi usare la tua <strong>Reazione</strong> per tirare 1d8 e sommarlo alla tua CA contro quell'attacco."
+    },
+    {
+      "name": "Anima Bestiale (Bestial Soul)",
+      "level": 6,
+      "description": "I danni inflitti dalle tue armi naturali contano come <strong>magici</strong> ai fini di superare la resistenza e l'immunità agli attacchi e ai danni non magici. Inoltre, al termine di un riposo breve o lungo, puoi scegliere un adattamento ambientale attivo fino al tuo riposo successivo:<br>- <strong>Nuotare:</strong> Ottieni una velocità di Nuoto pari alla tua velocità di movimento sul terreno e puoi respirare sott'acqua.<br>- <strong>Scalare:</strong> Ottieni una velocità di Scalata pari alla tua velocità di movimento sul terreno e puoi muoverti lungo superfici verticali o a testa in giù sui soffitti senza bisogno di effettuare prove di caratteristica.<br>- <strong>Salto:</strong> Quando effettui un salto in lungo o in alto, puoi effettuare una prova di Atletica e aumentare la distanza del salto di un numero di metri pari al risultato della prova (utilizzabile una volta per turno)."
+    },
+    {
+      "name": "Furia Infettiva (Infectious Fury)",
+      "level": 10,
+      "description": "Quando colpisci una creatura con le tue armi naturali mentre sei in Ira, il bersaglio deve superare un tiro salvezza su Saggezza (CD pari a 8 + il tuo bonus di competenza + il tuo modificatore di Costituzione) o subire uno dei seguenti effetti a tua scelta:<br>- Usa la sua <strong>Reazione</strong> per effettuare immediatamente un attacco in mischia contro un'altra creatura a tua scelta che puoi vedere.<br>- Subisce <strong>2d12 danni psichici</strong>.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+    },
+    {
+      "name": "Richiamo della Caccia (Call of the Hunt)",
+      "level": 14,
+      "description": "Quando entri in Ira, puoi scegliere fino a un numero di alleati volenterosi entro 9 metri da te pari al tuo <strong>modificatore di Costituzione</strong>. Ottieni <strong>5 Punti Ferita temporanei</strong> per ciascun alleato che accetta questa benedizione.<br><br>Finché la tua Ira dura, ciascun alleato scelto può aggiungere <strong>1d6 danni extra</strong> a un suo attacco andato a segno una volta per ciascun suo turno.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+    }
+  ]
+},
+{
+  "id": "subclass_barbarian_world_tree",
+  "class_id": "barbarian",
+  "name": "Path of the World Tree",
+  "name_it": "Cammino dell'Albero del Mondo",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "description_it": "I barbari che seguono il Cammino dell'Albero del Mondo credono che la propria Ira li colleghi all'imponente frassino cosmico Yggdrasil. Essi attingono a questo legame come fonte di vitale energia e come mezzo di trasporto attraverso il multiverso.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Vitalità dell'Albero, Rami dell'Albero, Radici Travolgenti, Viaggio Lungo l'Albero.",
+  "features": [
+    {
+      "name": "Vitalità dell'Albero (Vitality of the Tree)",
+      "level": 3,
+      "description": "La tua Ira attinge alla forza vitale dell'Albero del Mondo. Ottieni i seguenti benefici:<br>- <strong>Impulso di Vitalità:</strong> Quando attivi la tua Ira, ottieni un numero di <strong>Punti Ferita Temporanei pari al tuo livello da Barbaro</strong>.<br>- <strong>Forza Donatrice di Vita:</strong> All'inizio di ciascuno dei tuoi turni mentre sei in Ira, puoi scegliere un'altra creatura entro 3 metri da te a cui conferire Punti Ferita Temporanei. Tira un numero di <strong>d6 pari al tuo bonus Danni dell'Ira</strong> e sommali per determinarne la quantità. I Punti Ferita temporanei residui svaniscono al termine dell'Ira."
+    },
+    {
+      "name": "Rami dell'Albero (Branches of the Tree)",
+      "level": 6,
+      "description": "Quando una creatura che puoi vedere inizia il suo turno entro 9 metri da te mentre sei in Ira, puoi usare la tua <strong>Reazione</strong> per evocare rami spettrali attorno ad essa. Il bersaglio deve superare un tiro salvezza su Forza (CD pari a 8 + il tuo bonus di competenza + il tuo modificatore di Forza) o essere <strong>teletrasportato</strong> in uno spazio libero a tua scelta entro 1,5 metri da te (o nello spazio libero più vicino). Dopo il teletrasporto, puoi <strong>ridurre la sua velocità a 0</strong> fino alla fine del turno in corso."
+    },
+    {
+      "name": "Radici Travolgenti (Battering Roots)",
+      "level": 10,
+      "description": "Durante il tuo turno, la tua <strong>Portata aumenta di 3 metri</strong> con qualsiasi arma da mischia che possiede la proprietà <em>Pesante</em> o <em>Versatile</em>. Inoltre, quando colpisci con tale arma nel tuo turno, puoi attivare la proprietà di Padronanza <strong>Spingere (Push)</strong> o <strong>Atterrare (Topple)</strong> in aggiunta a qualsiasi altra proprietà di Padronanza dell'arma già in uso."
+    },
+    {
+      "name": "Viaggio Lungo l'Albero (Travel Along the Tree)",
+      "level": 14,
+      "description": "Quando attivi la tua Ira, e successivamente come <strong>Azione Bonus</strong> nei turni successivi mentre la tua Ira è attiva, puoi <strong>teletrasportarti fino a 18 metri</strong> in uno spazio non occupato che puoi vedere.<br><br>Inoltre, <strong>una volta per ciascuna Ira</strong>, puoi aumentare la gittata di questo teletrasporto a <strong>45 metri</strong>. Quando lo fai, puoi portare con te fino a <strong>6 alleati acconsenzienti</strong> situati entro 3 metri da te; ciascun alleato viene teletrasportato in uno spazio non occupato a tua scelta entro 3 metri dalla tua destinazione."
+    }
+  ]
+},
+{
+  "id": "subclass_barbarian_ancestral_guardian",
+  "class_id": "barbarian",
+  "name": "Path of the Ancestral Guardian",
+  "name_it": "Cammino del Guardiano Ancestrale",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "Alcuni barbari provengono da culture che venerano gli antenati, insegnando che i guerrieri del passato rimangono nel mondo sotto forma di potenti spiriti. Quando un barbaro di questo cammino entra in Ira, invoca questi spiriti protettori per guidare e proteggere i suoi alleati in battaglia.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Protettori Ancestrali, Scudo dello Spirito, Consultare gli Spiriti, Antenati Vendicativi.",
+  "features": [
+    {
+      "name": "Protettori Ancestrali (Ancestral Protectors)",
+      "level": 3,
+      "description": "Guerrieri spettrali appaiono quando entri in Ira. La prima creatura che colpisci con un attacco nel tuo turno diventa il bersaglio degli spiriti, che ne ostacolano i colpi. Fino all'inizio del tuo turno successivo, il bersaglio ha <strong>Svantaggio</strong> a tutti i tiri per colpire diretti contro soggetti diversi da te. Inoltre, se quel bersaglio colpisce una creatura diversa da te con un attacco, tale creatura ha <strong>Resistenza</strong> ai danni inflitti da quell'attacco."
+    },
+    {
+      "name": "Scudo dello Spirito (Spirit Shield)",
+      "level": 6,
+      "description": "Se sei in Ira e un'altra creatura che puoi vedere entro 9 metri da te subisce danni, puoi usare la tua <strong>Reazione</strong> per proteggerla, riducendo quei danni di <strong>2d6</strong>.<br><br>La riduzione di danno aumenta a <strong>3d6</strong> al 10° livello e a <strong>4d6</strong> al 14° livello."
+    },
+    {
+      "name": "Consultare gli Spiriti (Consult the Spirits)",
+      "level": 10,
+      "description": "Ottieni la capacità di consultare i tuoi spiriti ancestrali. Puoi lanciare l'incantesimo <em>Augurio</em> o <em>Chiaroveggenza</em> senza consumare slot incantesimo né componenti materiali. Quando lanci <em>Chiaroveggenza</em> in questo modo, l'incantesimo evoca invisibilmente uno dei tuoi spiriti nel luogo scelto al posto del sensore standard.<br><br>La tua caratteristica da incantatore per questi incantesimi è la Saggezza. Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposto Breve</strong> o un <strong>Riposo Lungo</strong>."
+    },
+    {
+      "name": "Antenati Vendicativi (Vengeful Ancestors)",
+      "level": 14,
+      "description": "I tuoi spiriti diventano abbastanza potenti da ritorsi contro i nemici. Quando usi il tuo privilegio <em>Scudo dello Spirito</em> per ridurre i danni di un attacco, l'attaccante subisce un ammontare di <strong>danni da Forza</strong> pari alla quantità di danni che hai prevenuto."
+    }
+  ]
+},
+{
+  "id": "subclass_barbarian_storm_herald",
+  "class_id": "barbarian",
+  "name": "Path of the Storm Herald",
+  "name_it": "Cammino dell'Araldo della Tempesta",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "I barbari che seguono il Cammino dell'Araldo della Tempesta imparano a trasformare la propria ira in un mantello di magia primordiale che si agita intorno a loro, attingendo alla natura per creare potenti effetti magici legati agli elementi.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Aura della Tempesta, Anima della Tempesta, Tempesta Protettrice, Tempesta Furiosa.",
+  "features": [
+    {
+      "name": "Aura della Tempesta (Storm Aura)",
+      "level": 3,
+      "description": "Emani un'aura magica di 3 metri mentre sei in Ira (CD del Tiro Salvezza = 8 + il tuo bonus di competenza + il tuo modificatore di Costituzione). L'effetto si attiva quando entri in Ira e può essere riattivato in ciascuno dei tuoi turni come <strong>Azione Bonus</strong>. Scegli un ambiente (modificabile ogni volta che sali di livello in questa classe):<br>- <strong>Deserto:</strong> Tutte le altre creature nell'aura subiscono <strong>2 danni da Fuoco</strong> (aumentano a 3 al 5° livello, 4 al 10°, 5 al 15° e 6 al 20°).<br>- <strong>Mare:</strong> Una creatura a scelta nell'aura effettua un tiro salvezza su Destrezza: subisce <strong>1d6 danni da Fulmine</strong> se lo fallisce, o la metà se lo supera (aumentano a 2d6 al 10° livello, 3d6 al 15° e 4d6 al 20°).<br>- <strong>Tundra:</strong> Le creature a tua scelta nell'aura ottengono <strong>2 Punti Ferita Temporanei</strong> (aumentano a 3 al 5° livello, 4 al 10°, 5 al 15° e 6 al 20°)."
+    },
+    {
+      "name": "Anima della Tempesta (Storm Soul)",
+      "level": 6,
+      "description": "Ottieni benefici passivi permanenti in base all'ambiente scelto per la tua Aura della Tempesta:<br>- <strong>Deserto:</strong> Ottieni Resistenza ai <strong>danni da Fuoco</strong> e non subisci gli effetti del calore estremo. Inoltre, come <strong>Azione</strong>, puoi dare fuoco a un oggetto infiammabile che non sia indossato o trasportato da un'altra creatura.<br>- <strong>Mare:</strong> Ottieni Resistenza ai <strong>danni da Fulmine</strong>, puoi respirare sott'acqua e ottieni una <strong>velocità di Nuoto di 9 metri</strong>.<br>- <strong>Tundra:</strong> Ottieni Resistenza ai <strong>danni da Freddo</strong> e non subisci gli effetti del freddo estremo. Inoltre, come <strong>Azione</strong>, puoi toccare un cubo d'acqua non recipiente di 1,5 metri per lato e congelarlo (rimane ghiacciato per 1 minuto)."
+    },
+    {
+      "name": "Tempesta Protettrice (Shielding Storm)",
+      "level": 10,
+      "description": "Ciascuna creatura a tua scelta ottiene la <strong>resistenza ai danni</strong> conferita dal tuo privilegio <em>Anima della Tempesta</em> finché si trova all'interno della tua <em>Aura della Tempesta</em>."
+    },
+    {
+      "name": "Tempesta Furiosa (Raging Storm)",
+      "level": 14,
+      "description": "Il potere della tempesta scaglia effetti aggiuntivi in base all'ambiente scelto:<br>- <strong>Deserto:</strong> Quando una creatura nell'aura ti colpisce con un attacco, puoi usare la tua <strong>Reazione</strong> per imporle un tiro salvezza su Destrezza; se lo fallisce, subisce un ammontare di <strong>danni da Fuoco pari a metà del tuo livello da Barbaro</strong>.<br>- <strong>Mare:</strong> Quando colpisci una creatura nell'aura con un attacco in mischia, puoi usare la tua <strong>Reazione</strong> per imporle un tiro salvezza su Forza; se lo fallisce, la creatura cade a terra <strong>Prona</strong>.<br>- <strong>Tundra:</strong> Quando attivi l'effetto dell'Aura della Tempesta, una creatura a tua scelta nell'aura deve superare un tiro salvezza su Forza, altrimenti la sua <strong>velocità è ridotta a 0</strong> fino all'inizio del tuo turno successivo."
+    }
+  ]
+},
+{
+  "id": "subclass_barbarian_wild_magic",
+  "class_id": "barbarian",
+  "name": "Path of Wild Magic",
+  "name_it": "Cammino della Magia Selvaggia",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "Molti luoghi del multiverso abbondano di magia incontrollata che influisce profondamente sulle creature. I barbari che seguono il Cammino della Magia Selvaggia sono permeati da queste forze sovrannaturali, che erompono in modo imprevedibile durante i loro stati di furia.<br><br><strong>Classe Madre:</strong> Barbaro<br><strong>Tratti di Sottoclasse:</strong> Percezione Magica, Impulso Selvaggio, Magia Incoraggiante, Ritorsione Instabile, Impulso Controllato.",
+  "features": [
+    {
+      "name": "Percezione Magica (Magic Awareness)",
+      "level": 3,
+      "description": "Come <strong>Azione</strong>, apri la tua mente alla presenza della magia concentrata. Fino alla fine del tuo turno successivo, conosci la posizione di qualsiasi incantesimo o oggetto magico entro 18 metri da te non protetto da copertura totale. Quando percepisci un incantesimo, ne apprendi la scuola di magia.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+    },
+    {
+      "name": "Impulso Selvaggio (Wild Surge)",
+      "level": 3,
+      "description": "Quando entri in Ira, tira un <strong>d8</strong> sulla tabella della Magia Selvaggia per determinare l'effetto magico generato (CD del Tiro Salvezza = 8 + il tuo bonus di competenza + il tuo modificatore di Costituzione):<br>- <strong>1:</strong> Ciascuna creatura a tua scelta entro 9 metri effettua un tiro salvezza su Costituzione o subisce <strong>1d12 danni Necrotici</strong>. Ottieni <strong>1d12 + livello da Barbaro</strong> Punti Ferita temporanei.<br>- <strong>2:</strong> Ti teletrasporti fino a 9 metri in uno spazio non occupato che puoi vedere. Finché l'Ira dura, puoi riutilizzare questo effetto come <strong>Azione Bonus</strong> nei turni successivi.<br>- <strong>3:</strong> Evochi uno spirito intangibile entro 1,5 metri da una creatura entro 9 metri da te; a fine turno esplode infliggendo <strong>1d6 danni da Forza</strong> a chi fallisce un tiro salvezza su Destrezza. Puoi rievocarlo come <strong>Azione Bonus</strong>.<br>- <strong>4:</strong> Un'arma da mischia impugnata diventa magica, infligge <strong>danni da Forza</strong> e ottiene le proprietà <em>Leggera</em> e <em>Lancio</em> (gittata 6/18 m). Se lanciata, riappare in mano alla fine del turno.<br>- <strong>5:</strong> Ogni creatura che ti colpisce con un attacco prima della fine dell'Ira subisce <strong>1d6 danni da Forza</strong> di ritorsione.<br>- <strong>6:</strong> Protezioni luminose conferiscono un <strong>bonus di +1 alla CA</strong> a te e agli alleati entro 3 metri da te.<br>- <strong>7:</strong> Il terreno entro 4,5 metri da te diventa <strong>terreno difficile</strong> per i nemici.<br>- <strong>8:</strong> Scagli un raggio di luce dal petto verso una creatura entro 9 metri: deve superare un tiro salvezza su Costituzione o subire <strong>1d6 danni Radiosi</strong> ed essere <strong>Accecata</strong> fino all'inizio del tuo turno successivo. Puoi riattivare questo raggio come <strong>Azione Bonus</strong>."
+    },
+    {
+      "name": "Magia Incoraggiante (Bolstering Magic)",
+      "level": 6,
+      "description": "Come <strong>Azione</strong>, tocchi una creatura (incluso te stesso) e le conferisci uno dei seguenti benefici a scelta:<br>- Per 10 minuti, la creatura aggiunge <strong>1d3</strong> a tutti i tiri per colpire o alle prove di caratteristica.<br>- Tiri 1d3: la creatura <strong>recupera uno slot incantesimo speso</strong> di livello pari o inferiore al risultato. Una creatura non può beneficiare di questo recupero di slot più di una volta per <strong>Riposo Lungo</strong>.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>bonus di competenza</strong>, e recuperi tutti gli usi spesi quando completi un <strong>Riposo Lungo</strong>."
+    },
+    {
+      "name": "Ritorsione Instabile (Unstable Backlash)",
+      "level": 10,
+      "description": "Subito dopo aver subito danni o aver fallito un tiro salvezza mentre sei in Ira, puoi usare la tua <strong>Reazione</strong> per tirare sulla tabella dell'<em>Impulso Selvaggio</em> e produrre immediatamente l'effetto tirato. Questo nuovo effetto sostituisce quello attualmente attivo."
+    },
+    {
+      "name": "Impulso Controllato (Controlled Surge)",
+      "level": 14,
+      "description": "Ogni volta che tiri sulla tabella dell'<em>Impulso Selvaggio</em>, puoi <strong>tirare due dadi</strong> e scegliere quale dei due effetti scatenare. Se ottieni lo stesso numero su entrambi i dadi, puoi ignorare il risultato e <strong>scegliere liberamente qualsiasi effetto</strong> dalla tabella da 1 a 8."
+    }
+  ]
+},
+{
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
