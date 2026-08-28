@@ -1789,6 +1789,269 @@
   ]
 },
 {
+  "id": "subclass_bard_lore",
+  "class_id": "bard",
+  "name": "College of Lore",
+  "name_it": "Collegio della Sapienza",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "description_it": "I bardi del Collegio della Sapienza raccolgono verità e segreti da ogni angolo del multiverso, che provengono da storie popolari o da antichi scritti scolastici. Usano la loro erudizione per confondere i nemici, ispirare gli alleati e padroneggiare magie provenienti da qualsiasi tradizione incantatoria.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Sapienza Bonus, Parole Taglienti, Magia Magica Aggiuntiva, Abilità Straordinaria.",
+  "features": [
+    {
+      "name": "Sapienza Bonus (Bonus Proficiencies)",
+      "level": 3,
+      "description": "Ottieni la competenza in tre abilità a tua scelta."
+    },
+    {
+      "name": "Parole Taglienti (Cutting Words)",
+      "level": 3,
+      "description": "Quando una creatura che puoi vedere entro 18 metri da te effettua un tiro per colpire, una prova di caratteristica o un tiro per i danni, puoi usare la tua <strong>Reazione</strong> e spendere un uso della tua <em>Ispirazione Bardica</em>. Tira il dado di Ispirazione Bardica e sottrai il numero ottenuto dal risultato del tiro della creatura.<br><br>Puoi scegliere di usare questo privilegio dopo che la creatura ha effettuato il tiro, ma prima che il DM dichiari se il tiro per colpire o la prova di caratteristica ha avuto successo o fallito, o prima che vengano inflitti i danni."
+    },
+    {
+      "name": "Magia Magica Aggiuntiva (Additional Magical Secrets)",
+      "level": 6,
+      "description": "Impari due incantesimi a tua scelta da qualsiasi lista di incantesimi (Arcana, Divina o Primordiale). Gli incantesimi scelti devono essere di un livello che puoi lanciare (fino al 3° livello) o trucchetti.<br><br>Gli incantesimi scelti contano come incantesimi da Bardo per te e non sono calcolati nel numero di incantesimi da Bardo che conosci già."
+    },
+    {
+      "name": "Abilità Straordinaria (Peerless Skill)",
+      "level": 14,
+      "description": "Quando effettui una prova di caratteristica o un tiro per colpire e fallisci, puoi spendere un uso della tua <em>Ispirazione Bardica</em>, tirare il dado e sommare il risultato ottenuto al tiro, trasformando potenzialmente il fallimento in un successo.<br><br>Se la prova o il tiro per colpire fallisce comunque dopo aver aggiunto il dado, l'uso dell'Ispirazione Bardica <strong>non viene consumato</strong>."
+    }
+  ]
+},
+{
+  "id": "subclass_bard_dance",
+  "class_id": "bard",
+  "name": "College of Dance",
+  "name_it": "Collegio della Danza",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "description_it": "I bardi del Collegio della Danza esprimono la magia della Creazione attraverso il movimento fluido e ritmico del proprio corpo. Sul campo di battaglia si muovono con grazia acrobatica, schivando i colpi, colpendo a mani nude e coordinando la posizione dei propri compagni con passi armoniosi.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Movimento Dantesco, Virtuoso del Senz'Armi, Movimento Ispirato, Evitamento Grazioso, Movimento Incalzante.",
+  "features": [
+    {
+      "name": "Movimento Dantesco (Dazzling Footwork)",
+      "level": 3,
+      "description": "Finché non indossi armature e non impugni uno scudo, ottieni i seguenti benefici:<br>- <strong>Difesa Senz'Armatura:</strong> La tua Classe Armatura di base è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Carisma.<br>- <strong>Iniziativa Agile:</strong> Quando tiri per l'Iniziativa, puoi spendere un uso della tua <em>Ispirazione Bardica</em> per aggiungere il dado di Ispirazione al tuo tiro e a quello di un alleato entro 18 metri che puoi vedere."
+    },
+    {
+      "name": "Virtuoso del Senz'Armi (Unarmored Strike)",
+      "level": 3,
+      "description": "Puoi usare la Destrezza anziché la Forza per i tiri per colpire e per i danni dei tuoi colpi senz'arma.<br><br>Quando effettui un colpo senz'arma, puoi infliggere <strong>danni contundenti pari al tuo dado di Ispirazione Bardica</strong> anziché il normale danno del colpo senz'arma. Inoltre, quando usi la tua Azione Bonus per spendere un uso di Ispirazione Bardica (o usarla tramite un altro privilegio), puoi effettuare un colpo senz'arma come parte di quella stessa Azione Bonus."
+    },
+    {
+      "name": "Movimento Ispirato (Inspiring Movement)",
+      "level": 6,
+      "description": "Quando un nemico termina il suo turno entro 1,5 metri da te o da un alleato che puoi vedere entro 18 metri, puoi usare la tua <strong>Reazione</strong> e spendere un uso della tua <em>Ispirazione Bardica</em>. Tu o l'alleato potete spostarvi fino a metà della velocità di movimento senza provocare attacchi d'opportunità."
+    },
+    {
+      "name": "Evitamento Grazioso (Tumbling Dodge)",
+      "level": 6,
+      "description": "Quando sei soggetto a un effetto che ti permette di effettuare un tiro salvezza su Destrezza per subire solo metà danno, subisci invece <strong>nessun danno</strong> se superi il tiro salvezza, e solo <strong>metà danno</strong> se lo fallisci.<br><br>Non puoi usare questo privilegio se hai la condizione Incapacitato."
+    },
+    {
+      "name": "Movimento Incalzante (Leading Evasion)",
+      "level": 14,
+      "description": "Quando usi il privilegio <em>Evitamento Grazioso</em>, conferisci lo stesso beneficio a tutte le creature alleate a tua scelta entro 1,5 metri da te che stanno effettuando lo stesso tiro salvezza su Destrezza."
+    }
+  ]
+},
+{
+  "id": "subclass_bard_swords",
+  "class_id": "bard",
+  "name": "College of Swords",
+  "name_it": "Collegio delle Spade",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "I bardi del Collegio delle Spade, noti come Lame, si esibiscono in spericolate dimostrazioni di abilità marziale. Oltre a intrattenere il pubblico, sono combattenti altamente qualificati che combinano arte drammatica, scherma e magia sul campo di battaglia.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Stile di Combattimento, Virtuosismo con l'Arma, Attacco Extra, Virtuosismo del Maestro.",
+  "features": [
+    {
+      "name": "Competenze Bonus (Bonus Proficiencies)",
+      "level": 3,
+      "description": "Ottieni la competenza nelle <strong>Armature Medie</strong> e nella <strong>Sciabola (Scimitar)</strong>.<br><br>Inoltre, se hai la competenza in un'arma da mischia semplice o da guerra, puoi utilizzarla come <strong>Focus per Incantesimi</strong> per i tuoi incantesimi da Bardo."
+    },
+    {
+      "name": "Stile di Combattimento (Fighting Style)",
+      "level": 3,
+      "description": "Adotti uno specifico stile di combattimento come tua specialità. Scegli uno dei seguenti talenti Stile di Combattimento:<br>- <strong>Duellare (Dueling):</strong> +2 ai tiri per il danno quando impugni un'arma in una mano e nessuna altra arma.<br>- <strong>Combattere con Due Armi (Two-Weapon Fighting):</strong> Aggiungi il modificatore di caratteristica ai danni dell'attacco con l'arma secondaria."
+    },
+    {
+      "name": "Virtuosismo con l'Arma (Blade Flourish)",
+      "level": 3,
+      "description": "Ogni volta che effettui l'azione di Attacco nel tuo turno, la tua <strong>Velocità aumenta di 3 metri</strong> fino alla fine del turno. Se un attacco con arma che effettui durante questa azione colpisce una creatura, puoi attivare un'opzione di Virtuosismo (massimo una per turno):<br>- <strong>Virtuosismo Difensivo:</strong> Spendi 1 uso di Ispirazione Bardica. Infliggi <strong>danni extra pari al risultato del dado</strong> e aggiungi <strong>lo stesso valore alla tua CA</strong> fino all'inizio del tuo turno successivo.<br>- <strong>Virtuosismo Tagliente:</strong> Spendi 1 uso di Ispirazione Bardica. Infliggi <strong>danni extra pari al risultato del dado</strong> sia al bersaglio colpito sia a un'altra creatura a tua scelta entro 1,5 metri da te.<br>- <strong>Virtuosismo Mobile:</strong> Spendi 1 uso di Ispirazione Bardica. Infliggi <strong>danni extra pari al risultato del dado</strong> e <strong>spingi il bersaglio indietro di 1,5 metri + una distanza pari al risultato ottenuto (in piedi)</strong>. Puoi immediatamente usare la <strong>Reazione</strong> per muoverti fino alla tua Velocità verso uno spazio libero entro 1,5 metri dal bersaglio."
+    },
+    {
+      "name": "Attacco Extra (Extra Attack)",
+      "level": 6,
+      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno."
+    },
+    {
+      "name": "Virtuosismo del Maestro (Master's Flourish)",
+      "level": 14,
+      "description": "Ogni volta che utilizzi un'opzione di Virtuosismo con l'Arma, puoi <strong>tirare un d6 e usarne il risultato al posto di spendere un dado di Ispirazione Bardica</strong>."
+    }
+  ]
+},
+{
+  "id": "subclass_bard_glamour",
+  "class_id": "bard",
+  "name": "College of Glamour",
+  "name_it": "Collegio del Glamour",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "description_it": "Il Collegio del Glamour affonda le sue origini nella magia ammiccante della Selva Fatata. I bardi di questo collegio intrecciano bellezza e terrore nei loro canti, avvolgendosi di una maestosità ultraterrena in grado di manipolare le emozioni di chiunque li ascolti.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Magia Ammiccante, Mantello dell'Ispirazione, Mantello della Maestà, Maestà Infrangibile.",
+  "features": [
+    {
+      "name": "Magia Ammiccante (Beguiling Magic)",
+      "level": 3,
+      "description": "Hai sempre preparati gli incantesimi <em>Carma Persone (Charm Person)</em> e <em>Immagine Speculare (Mirror Image)</em>.<br><br>Inoltre, subito dopo aver lanciato un incantesimo di Ammaliamento o Illusione usando uno slot incantesimo, puoi costringere una creatura che vedi entro 18 metri a effettuare un Tiro Salvezza su Saggezza (CD dei tuoi incantesimi). Se lo fallisce, la creatura subisce la condizione <strong>Affascinato</strong> o <strong>Spaventato</strong> (a tua scelta) per 1 minuto. Il bersaglio ripete il tiro salvezza alla fine di ogni suo turno per terminare l'effetto.<br><br>Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo <strong>1 uso dell'Ispirazione Bardica</strong> (nessuna azione richiesta) per ripristinare il privilegio."
+    },
+    {
+      "name": "Mantello dell'Ispirazione (Mantle of Inspiration)",
+      "level": 3,
+      "description": "Con un'<strong>Azione Bonus</strong>, puoi spendere un uso dell'Ispirazione Bardica e tirare il relativo dado. Scegli un numero di creature entro 18 metri fino a un massimo pari al tuo <strong>Modificatore di Carisma</strong> (minimo 1).<br><br>Ciascuna creatura scelta ottiene <strong>Punti Ferita Temporanei pari a 2 volte il risultato del dado</strong> e può immediatamente usare la propria <strong>Reazione</strong> per muoversi fino alla sua intera Velocità <strong>senza provocare Attacchi di Opportunità</strong>."
+    },
+    {
+      "name": "Mantello della Maestà (Mantle of Majesty)",
+      "level": 6,
+      "description": "Hai sempre preparato l'incantesimo <em>Comando (Command)</em>. Con un'<strong>Azione Bonus</strong>, puoi lanciare <em>Comando</em> senza spendere uno slot incantesimo e assumere un'apparenza ultraterrena per 1 minuto (richiede Concentrazione).<br><br>Per la durata dell'effetto, puoi lanciare <em>Comando</em> come <strong>Azione Bonus</strong> senza spendere slot incantesimo. Qualsiasi creatura <strong>Affascinata da te fallisce automaticamente</strong> il tiro salvezza contro il <em>Comando</em> lanciato tramite questo privilegio.<br><br>Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo <strong>uno slot incantesimo di 3° livello o superiore</strong> (nessuna azione richiesta) per ripristinarlo."
+    },
+    {
+      "name": "Maestà Infrangibile (Unbreakable Majesty)",
+      "level": 14,
+      "description": "Con un'<strong>Azione Bonus</strong>, puoi assumere una presenza magistrale e magica per 1 minuto (o finché non sei Incapacitato).<br><br>Per la durata, ogni volta che una creatura ti colpisce con un tiro per colpire per la prima volta in un turno, l'attaccante deve superare un <strong>Tiro Salvezza su Carisma</strong> contro la CD dei tuoi incantesimi: se lo fallisce, <strong>l'attacco manca automaticamente</strong> poiché la creatura indietreggia di fronte al tuo splendore.<br><br>Usabile una volta per <strong>Riposo Breve o Lungo</strong>."
+    }
+  ]
+},
+{
+  "id": "subclass_bard_valor",
+  "class_id": "bard",
+  "name": "College of Valor",
+  "name_it": "Collegio del Valore",
+  "type": "sottoclasse",
+  "source_it": "Manuale del Giocatore 2024",
+  "description_it": "I bardi del Collegio del Valore sono audaci narratori che mantengono viva la memoria dei grandi eroi del passato. Viaggiano per assistere in prima persona ai grandi eventi e con i loro canti ispirano le nuove generazioni a raggiungere le medesime vette di eroismo.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Ispirazione da Combattimento, Addestramento Marziale, Attacco Extra, Magia da Battaglia.",
+  "features": [
+    {
+      "name": "Ispirazione da Combattimento (Combat Inspiration)",
+      "level": 3,
+      "description": "Una creatura che possiede un tuo dado di Ispirazione Bardica può utilizzarlo per uno dei seguenti effetti aggiuntivi:<br>- <strong>Difesa:</strong> Quando la creatura viene colpita da un tiro per colpire, può usare la sua <strong>Reazione</strong> per tirare il dado di Ispirazione Bardica e sommarne il risultato alla propria CA contro quell'attacco, con la possibilità di farlo fallire.<br>- <strong>Offesa:</strong> Subito dopo aver colpito un bersaglio con un tiro per colpire, la creatura può tirare il dado di Ispirazione Bardica e sommare il risultato ai <strong>danni dell'attacco</strong> contro il bersaglio."
+    },
+    {
+      "name": "Addestramento Marziale (Martial Training)",
+      "level": 3,
+      "description": "Ottieni la competenza nelle <strong>Armi da Guerra</strong>, nelle <strong>Armature Medie</strong> e negli <strong>Scudi</strong>.<br><br>Inoltre, puoi utilizzare un'arma semplice o da guerra come <strong>Focus per Incantesimi</strong> per lanciare gli incantesimi della tua lista da Bardo."
+    },
+    {
+      "name": "Attacco Extra (Extra Attack)",
+      "level": 6,
+      "description": "Puoi attaccare due volte anziché una ogni volta che effettui l'azione di Attacco nel tuo turno.<br><br>Inoltre, puoi <strong>sostituire uno di questi attacchi con il lancio di un tuo trucchetto</strong> che abbia un tempo di lancio di 1 azione."
+    },
+    {
+      "name": "Magia da Battaglia (Battle Magic)",
+      "level": 14,
+      "description": "Subito dopo aver lanciato un incantesimo con tempo di lancio pari a 1 azione, puoi effettuare <strong>un attacco con un'arma</strong> come <strong>Azione Bonus</strong>."
+    }
+  ]
+},
+{
+  "id": "subclass_bard_creation",
+  "class_id": "bard",
+  "name": "College of Creation",
+  "name_it": "Collegio della Creazione",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "I bardi del Collegio della Creazione attingono al Canone della Creazione, la melodia primordiale che ha dato origine al cosmo. Attraverso la musica, la danza e la poesia, essi sono in grado di dare forma alla materia, animare oggetti inanimati e conferire una carica celestiale alle proprie ispirazioni.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Nota di Potenziale, Esibizione della Creazione, Esibizione Animante, Crescendo Creativo.",
+  "features": [
+    {
+      "name": "Nota di Potenziale (Note of Potential)",
+      "level": 3,
+      "description": "Ogni volta che assegni un dado di Ispirazione Bardica, crei un piccolo granello di potenziale intangibile che orbita attorno al bersaglio entro 1,5 metri. Quando la creatura usa il dado, il granello applica un effetto aggiuntivo a seconda del tiro:<br>- <strong>Prova di Caratteristica:</strong> La creatura può tirare due volte il dado di Ispirazione Bardica e scegliere quale risultato utilizzare.<br>- <strong>Tiro per Colpire:</strong> Il bersaglio dell'attacco e le creature a scelta entro 1,5 metri da esso devono superare un TS su Costituzione (CD dei tuoi incantesimi) o subire <strong>danni da tuono pari al risultato del dado di Ispirazione Bardica</strong>.<br>- <strong>Tiro Salvezza:</strong> La creatura ottiene <strong>Punti Ferita Temporanei pari al risultato del dado + il tuo Modificatore di Carisma</strong> (minimo 1)."
+    },
+    {
+      "name": "Esibizione della Creazione (Performance of Creation)",
+      "level": 3,
+      "description": "Con un'<strong>Azione</strong>, puoi creare un oggetto non magico di taglia Media o inferiore in uno spazio libero entro 3 metri. Il valore in monete d'oro non può superare <strong>20 volte il tuo livello da Bardo</strong> e l'oggetto scompare dopo un numero di ore pari al tuo <strong>Bonus Competenza</strong>. Puoi mantenere un solo oggetto creato alla volta.<br><br>La taglia massima aumenta a <strong>Grande al 6° livello</strong> e <strong>Enorme al 14° livello</strong>. Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo uno <strong>slot incantesimo di 2° livello o superiore</strong>."
+    },
+    {
+      "name": "Esibizione Animante (Animating Performance)",
+      "level": 6,
+      "description": "Con un'<strong>Azione</strong>, puoi animare un oggetto non magico di taglia Grande o inferiore entro 9 metri da te. L'oggetto utilizza la scheda del <em>Dancing Item</em> (basata sul tuo Bonus Competenza), è alleato e dura per 1 ora, finché non scende a 0 PF o finché non muori.<br><br>In combattimento agisce subito dopo di te. Utilizza l'azione <em>Schivata</em> a meno che tu non usi un'<strong>Azione Bonus</strong> per impartirgli un ordine (puoi impartire l'ordine come parte della stessa Azione Bonus usata per l'Ispirazione Bardica). Usabile una volta per <strong>Riposo Lungo</strong>, o spendendo uno <strong>slot incantesimo di 3° livello o superiore</strong>."
+    },
+    {
+      "name": "Crescendo Creativo (Creative Crescendo)",
+      "level": 14,
+      "description": "Quando usi <em>Esibizione della Creazione</em>, puoi creare un numero di oggetti contemporaneamente pari al tuo <strong>Modificatore di Carisma</strong> (minimo 2). Soltanto uno degli oggetti può essere della taglia massima consentita, mentre gli altri devono essere di taglia Piccola o Minuta.<br><br>Inoltre, <strong>non sei più limitato dal valore in monete d'oro</strong> per gli oggetti creati."
+    }
+  ]
+},
+{
+  "id": "subclass_bard_eloquence",
+  "class_id": "bard",
+  "name": "College of Eloquence",
+  "name_it": "Collegio dell'Eloquenza",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "I bardi del Collegio dell'Eloquenza padroneggiano l'arte dell'oratoria con argomentazioni logiche ed esibizioni teatrali. Per loro la persuasione è una forma d'arte superiore, capace di far leva sulle emozioni e convertire anche i detrattori più scettici.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Parlantina Sciolta, Parole Inquietanti, Ispirazione Infallibile, Parlato Universale, Ispirazione Contagiosa.",
+  "features": [
+    {
+      "name": "Parlantina Sciolta (Silver Tongue)",
+      "level": 3,
+      "description": "Sei un maestro nell'affermare la cosa giusta al momento giusto. Ogni volta che effettui una prova di <strong>Carisma (Persuasione)</strong> o <strong>Carisma (Inganno)</strong>, puoi considerare qualsiasi risultato pari o inferiore a 9 ottenuto sul d20 come se fosse un <strong>10</strong>."
+    },
+    {
+      "name": "Parole Inquietanti (Unsettling Words)",
+      "level": 3,
+      "description": "Con un'<strong>Azione Bonus</strong>, puoi spendere un uso dell'Ispirazione Bardica e scegliere una creatura che puoi vedere entro 18 metri da te, tirando il dado di Ispirazione Bardica. La creatura deve <strong>sottrarre il risultato ottenuto al prossimo Tiro Salvezza</strong> che effettuerà prima dell'inizio del tuo turno successivo."
+    },
+    {
+      "name": "Ispirazione Infallibile (Unfailing Inspiration)",
+      "level": 3,
+      "description": "Le tue parole sono talmente persuasive che spingono gli altri al successo. Quando una creatura aggiunge un tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e <strong>la prova fallisce comunque</strong>, la creatura <strong>non consuma il dado di Ispirazione Bardica</strong> e può conservarlo."
+    },
+    {
+      "name": "Parlato Universale (Universal Speech)",
+      "level": 6,
+      "description": "Con un'<strong>Azione</strong>, puoi rendere le tue parole intelligibili a un numero di creature entro 18 metri pari al tuo <strong>Modificatore di Carisma</strong> (minimo 1). Le creature scelte riescono a comprenderti magicamente per <strong>1 ora</strong>, a prescindere dalla lingua che parli.<br><br>Usabile una volta per <strong>Riposo Lungo</strong>, oppure spendendo uno <strong>slot incantesimo</strong> di qualsiasi livello per riattivarlo."
+    },
+    {
+      "name": "Ispirazione Contagiosa (Infectious Inspiration)",
+      "level": 14,
+      "description": "Quando una creatura entro 18 metri aggiunge il tuo dado di Ispirazione Bardica a una prova di caratteristica, tiro per colpire o tiro salvezza e <strong>ottiene un successo</strong>, puoi usare la tua <strong>Reazione</strong> per incoraggiare un'altra creatura entro 18 metri che possa sentirti.<br><br>La nuova creatura ottiene un <strong>dado di Ispirazione Bardica senza consumare i tuoi usi</strong>. Puoi usare questa reazione un numero di volte pari al tuo <strong>Modificatore di Carisma</strong> per Riposo Lungo."
+    }
+  ]
+},
+{
+  "id": "subclass_bard_whispers",
+  "class_id": "bard",
+  "name": "College of Whispers",
+  "name_it": "Collegio dei Bisbigli",
+  "type": "sottoclasse",
+  "source_it": "Manuale Integrativo",
+  "description_it": "I bardi del Collegio dei Bisbigli si insinuano tra le persone fingendosi comuni intrattenitori, ma usano le proprie capacità per svelare segreti ed estorcere potere. Maestri dell'inganno e della manipolazione mentale, instillano la paranoia e sfruttano le paure dei propri nemici.<br><br><strong>Classe Madre:</strong> Bardo<br><strong>Tratti di Sottoclasse:</strong> Lame Psichiche, Parole di Terrore, Mantello dei Bisbigli, Conoscenza delle Ombre.",
+  "features": [
+    {
+      "name": "Lame Psichiche (Psychic Blades)",
+      "level": 3,
+      "description": "Quando colpisci una creatura con un attacco con arma nel tuo turno, puoi spendere <strong>1 uso di Ispirazione Bardica</strong> per infliggere <strong>2d6 danni psichici aggiuntivi</strong> al bersaglio (massimo una volta per round).<br><br>I danni psichici aumentano a <strong>3d6 al 5° livello</strong>, <strong>5d6 al 10° livello</strong> e <strong>8d6 al 15° livello</strong>."
+    },
+    {
+      "name": "Parole di Terrore (Words of Terror)",
+      "level": 3,
+      "description": "Se parli da solo con un umanoide per almeno 1 minuto, puoi instillare la paranoia nella sua mente. Al termine della conversazione, il bersaglio deve superare un <strong>Tiro Salvezza su Saggezza</strong> (CD dei tuoi incantesimi) o rimanere <strong>Spaventato</strong> da te o da un'altra creatura a tua scelta per <strong>1 ora</strong> (l'effetto termina prima se viene attaccato, subisce danni o vede un alleato subire danni).<br><br>Se supera il tiro salvezza, non si accorge del tentativo. Usabile una volta per <strong>Riposo Breve o Lungo</strong>."
+    },
+    {
+      "name": "Mantello dei Bisbigli (Mantle of Whispers)",
+      "level": 6,
+      "description": "Quando un umanoide muore entro 9 metri da te, puoi usare la tua <strong>Reazione</strong> per catturarne magicamente l'ombra (conservabile fino al prossimo riposo lungo). Con un'<strong>Azione</strong>, puoi consumare l'ombra per assumere l'aspetto della persona deceduta per <strong>1 ora</strong> (o finché non interrompi l'effetto con un'Azione Bonus).<br><br>Mentre sei travestito, ottieni un <strong>bonus di +5 alle prove di Carisma (Inganno)</strong> per sostenere la copertura e accedi a tutte le informazioni personali generiche che il defunto avrebbe condiviso con un conoscente casuale. Usabile una volta per <strong>Riposo Breve o Lungo</strong>."
+    },
+    {
+      "name": "Conoscenza delle Ombre (Shadow Lore)",
+      "level": 14,
+      "description": "Con un'<strong>Azione</strong>, bisbigli una frase magica a una creatura entro 9 metri che possa sentirti e condivida una lingua con te. Il bersaglio deve superare un <strong>Tiro Salvezza su Saggezza</strong> (CD dei tuoi incantesimi) o rimanere <strong>Affascinato</strong> da te per <strong>8 ore</strong>.<br><br>La creatura si convince che tu conosca il suo segreto più terribile ed esegue i tuoi ordini (senza rischiare la vita né combattere per te) pur di impedire che tu lo riveli. Al termine dell'effetto, non comprende il motivo del terrore provato. Usabile una volta per <strong>Riposo Lungo</strong>."
+    }
+  ]
+},
+{
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
