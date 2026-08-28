@@ -2694,6 +2694,329 @@
     ]
   },
   {
+    "id": "subclass_fighter_rune_knight",
+    "class_id": "fighter",
+    "name": "Rune Knight",
+    "name_it": "Cavaliere Runico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Cavalieri Runici potenziano le proprie capacità marziali utilizzando il potere soprannaturale delle rune, un'antica pratica nata tra i giganti. Tracciando magiche rune sul proprio equipaggiamento e attingendo alla stazza dei giganti, questi guerrieri diventano forze inarrestabili sul campo di battaglia.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Competenze Bonus, Incisore di Rune, Stazza da Gigante, Scudo Runico, Grande Statura, Maestro delle Rune, Juggernaut Runico.",
+    "features": [
+      {
+        "name": "Competenze Bonus (Bonus Proficiencies)",
+        "level": 3,
+        "description": "Ottieni la <strong>competenza negli Strumenti da Fabbro</strong> e impari a <strong>parlare, leggere e scrivere in Gigante</strong>."
+      },
+      {
+        "name": "Incisore di Rune (Rune Carver)",
+        "level": 3,
+        "description": "Impari a incidere rune magiche sul tuo equipaggiamento per ottenerne benefici passivi e attivi:<br>• <strong>Rune Note:</strong> Conosci <strong>2 rune</strong> a tua scelta. Ne impari di aggiuntive al 7° (3 rune), 10° (4 rune) e 15° livello (5 rune). Ogni volta che sali di livello, puoi sostituire una runa nota con un'altra.<br>• <strong>Incisione:</strong> Al termine di un <strong>Riposo Lungo</strong>, puoi incidere ciascuna runa su un oggetto diverso che indossi o impugni (arma, armatura, scudo, gioiello). Un oggetto può ospitare una sola runa alla volta.<br>• <strong>Attivazione:</strong> Ogni runa fornisce un effetto passivo e un'abilità invocabile. Una volta invocata una runa, non puoi riutilizzarla fino a quando non completi un <strong>Riposo Breve o Lungo</strong>.<br>• <strong>CD Tiri Salvezza:</strong> <strong>CD = 8 + Bonus Competenza + Modificatore di Costituzione</strong>.<br><br><strong>Opzioni Rune:</strong><br>• <strong>Runa delle Nubi (Cloud Rune):</strong> Vantaggio a Destrezza (Rapidità di Mano) e Carisma (Inganno). Quando tu o una creatura entro 9 metri venite colpiti da un attacco, puoi usare la <strong>Reazione</strong> per deviare l'attacco su un'altra creatura entro 9 metri dall'attaccante.<br>• <strong>Runa del Fuoco (Fire Rune):</strong> Raddoppia il Bonus di Competenza per le prove con gli strumenti in cui sei competente. Quando colpisci con un'arma, puoi invocare la runa per infliggere <strong>2d6 danni da Fuoco aggiuntivi</strong> e costringere il bersaglio a un tiro salvezza su Forza per non essere <strong>Trattenuto</strong> (subendo 2d6 danni da fuoco all'inizio dei suoi turni).<br>• <strong>Runa del Gelo (Frost Rune):</strong> Vantaggio a Saggezza (Addestrare Animali) e Carisma (Intimidire). Con un'<strong>Azione Bonus</strong>, ottieni <strong>+2 a tutte le prove e tiri salvezza su Forza e Costituzione</strong> per <strong>10 minuti</strong>.<br>• <strong>Runa della Pietra (Stone Rune):</strong> Vantaggio a Saggezza (Intuizione) e <strong>Scurovisione fino a 36 metri</strong>. Quando una creatura termina il turno entro 9 metri da te, puoi usare la <strong>Reazione</strong> per costringerla a un tiro salvezza su Saggezza: se fallisce, è <strong>Affascinata, Incapace e ha velocità 0</strong> per 1 minuto (ripete il TS a fine turno).<br>• <strong>Runa delle Colline (Hill Rune - 7° Livello):</strong> Vantaggio ai tiri salvezza contro il veleno e <strong>Resistenza ai danni da Veleno</strong>. Con un'<strong>Azione Bonus</strong>, ottieni <strong>Resistenza ai danni Contundenti, Perforanti e Taglienti</strong> per <strong>1 minuto</strong>.<br>• <strong>Runa della Tempesta (Storm Rune - 7° Livello):</strong> Vantaggio a Intelligenza (Arcano) e non puoi essere Sorpreso. Con un'<strong>Azione Bonus</strong>, entri in uno stato profetico di 1 minuto: durante questo tempo, quando tu o una creatura entro 18 metri effettua un tiro per colpire, tiro salvezza o prova di abilità, puoi usare la <strong>Reazione</strong> per conferire <strong>Vantaggio o Svantaggio</strong> a quel tiro."
+      },
+      {
+        "name": "Stazza da Gigante (Giant Might)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Bonus</strong>, ti infondi del potere dei giganti per <strong>1 minuto</strong>, ottenendo i seguenti benefici:<br>• Se sei di taglia inferiore a Grande, <strong>diventi di taglia Grande</strong> (insieme al tuo equipaggiamento), spazio permettendo.<br>• Hai <strong>Vantaggio alle prove di Forza e ai tiri salvezza su Forza</strong>.<br>• Una volta per turno, un tuo attacco con un'arma o un colpo nudo infligge <strong>1d6 danni aggiuntivi</strong>.<br><br>Puoi usare questo privilegio un numero di volte pari al tuo <strong>Bonus di Competenza</strong> per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Scudo Runico (Runic Shield)",
+        "level": 7,
+        "description": "Quando un'altra creatura che puoi vedere entro 18 metri da te viene colpita da un tiro per colpire, puoi usare la tua <strong>Reazione</strong> per <strong>costringere l'attaccante a ritirare il d20</strong> e usare il nuovo risultato.<br><br>Usabile un numero di volte pari al tuo <strong>Bonus di Competenza</strong> per <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Grande Statura (Great Stature)",
+        "level": 10,
+        "description": "La magia delle rune ti altera permanentemente: la tua altezza aumenta di 3d4 pollici.<br><br>Inoltre, i danni aggiuntivi del tuo privilegio <em>Stazza da Gigante</em> <strong>aumentano a 1d8</strong>."
+      },
+      {
+        "name": "Maestro delle Rune (Master of Runes)",
+        "level": 15,
+        "description": "Puoi invocare ciascuna delle rune apprese con <em>Incisore di Rune</em> <strong>due volte anziché una</strong> per <strong>Riposo Breve o Lungo</strong>."
+      },
+      {
+        "name": "Juggernaut Runico (Runic Juggernaut)",
+        "level": 18,
+        "description": "Amplifichi la tua trasformazione runica:<br>• I danni aggiuntivi di <em>Stazza da Gigante</em> <strong>aumentano a 1d10</strong>.<br>• Quando attivi <em>Stazza da Gigante</em>, la tua taglia può <strong>aumentare fino a Enorme</strong>.<br>• Mentre sei di taglia Enorme, la tua <strong>portata aumenta di 1,5 metri</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_fighter_champion",
+    "class_id": "fighter",
+    "name": "Champion",
+    "name_it": "Campione",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Campione si concentra sul costante affinamento dell'abilità marziale alla continua ricerca della vittoria. Combinando un allenamento rigoroso con un'eccellenza fisica straordinaria, i Campioni infliggono colpi devastanti, resistono a ogni pericolo e conquistano la gloria in battaglia.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Critico Migliorato, Atleta Straordinario, Stile di Combattimento Aggiuntivo, Guerriero Eroico, Critico Superiore, Sopravvissuto.",
+    "features": [
+      {
+        "name": "Critico Migliorato (Improved Critical)",
+        "level": 3,
+        "description": "I tuoi tiri per colpire effettuati con armi o colpi nudi mettono a segno un <strong>Colpo Critico con un risultato di 19 o 20</strong> sul d20."
+      },
+      {
+        "name": "Atleta Straordinario (Remarkable Athlete)",
+        "level": 3,
+        "description": "Grazie al tuo atletismo, ottieni <strong>Vantaggio ai tiri per l'Iniziativa</strong> e alle <strong>prove di Forza (Atletica)</strong>.<br><br>Inoltre, immediatamente dopo aver messo a segno un Colpo Critico, puoi <strong>muoverti fino a metà della tua Velocità</strong> senza provocare attacchi d'opportunità."
+      },
+      {
+        "name": "Stile di Combattimento Aggiuntivo (Additional Fighting Style)",
+        "level": 7,
+        "description": "Ottieni un ulteriore <strong>talento di Stile di Combattimento</strong> a tua scelta."
+      },
+      {
+        "name": "Guerriero Eroico (Heroic Warrior)",
+        "level": 10,
+        "description": "La foga della battaglia ti spinge verso la vittoria. Durante il combattimento, puoi concederti l'<strong>Ispirazione Eroica</strong> ogni volta che inizi il tuo turno senza averne già una."
+      },
+      {
+        "name": "Critico Superiore (Superior Critical)",
+        "level": 15,
+        "description": "I tuoi tiri per colpire effettuati con armi o colpi nudi mettono ora a segno un <strong>Colpo Critico con un risultato di 18–20</strong> sul d20."
+      },
+      {
+        "name": "Sopravvissuto (Survivor)",
+        "level": 18,
+        "description": "Raggiungi l'apice della resilienza in combattimento, ottenendo i seguenti benefici:<br>• <strong>Sfidare la Morte:</strong> Hai <strong>Vantaggio ai tiri salvezza contro la morte</strong>. Inoltre, quando ottieni un risultato da 18 a 20 in un tiro salvezza contro la morte, ottieni lo stesso beneficio di aver ottenuto un 20 naturale.<br>• <strong>Riscossa Eroica:</strong> All'inizio di ciascun tuo turno, se sei <strong>Ferito (Bloodied)</strong> e hai <strong>almeno 1 Punto Ferita</strong>, recuperi un numero di Punti Ferita pari a <strong>5 + il tuo Modificatore di Costituzione</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_fighter_eldritch_knight",
+    "class_id": "fighter",
+    "name": "Eldritch Knight",
+    "name_it": "Cavaliere Mistico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Cavalieri Mistici combinano la maestria marziale comune a tutti i Guerrieri con uno studio accurato della magia. I loro incantesimi completano e ampliano le loro abilità di combattimento, offrendo protezioni aggiuntive e permettendo loro di affrontare più nemici contemporaneamente con magie esplosive.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Incantesimi, Legame da Guerra, Magia da Guerra, Colpo Mistico, Carica Arcana, Magia da Guerra Migliorata.",
+    "features": [
+      {
+        "name": "Incantesimi (Spellcasting)",
+        "level": 3,
+        "description": "Imparo a lanciare incantesimi dalla lista del Mago:<br>• <strong>Trucchetti:</strong> Conosci 2 trucchetti da Mago a tua scelta. Puoi sostituirne uno ogni volta che sali di livello da Guerriero. Ne impari un terzo al 10° livello.<br>• <strong>Slot Incantesimo:</strong> Usi la tabella del Cavaliere Mistico per determinare i tuoi slot disponibili. Recuperi tutti gli slot spesi al termine di un <strong>Riposo Lungo</strong>.<br>• <strong>Incantesimi Preparati:</strong> Prepari un numero di incantesimi di 1° livello o superiore dalla lista del Mago in base al tuo livello da Guerriero. Ogni volta che sali di livello, puoi sostituire un incantesimo preparato con un altro dalla lista del Mago, purché sia di un livello per cui possiedi slot incantesimo.<br>• <strong>Caratteristica da Incantatore:</strong> <strong>Intelligenza</strong>.<br>• <strong>Focus Arcano:</strong> Puoi usare un Focus Arcano come focus di incantamento per gli incantesimi della sottoclasse."
+      },
+      {
+        "name": "Legame da Guerra (War Bond)",
+        "level": 3,
+        "description": "Esegui un rituale di 1 ora (effettuabile durante un <strong>Riposo Breve</strong>) per creare un legame magico con un'arma a portata:<br>• Non puoi essere disarmato dell'arma legata a meno che tu non abbia la condizione <strong>Incapace</strong>.<br>• Se l'arma si trova sullo stesso piano di esistenza, puoi evocarla con un'<strong>Azione Bonus</strong>, facendola teletrasportare all'istante nella tua mano.<br>• Puoi avere fino a <strong>due armi legate</strong>, ma puoi evocarne solo una alla volta con la tua Azione Bonus. Creare un legame con una terza arma spezza il legame con una delle prime due."
+      },
+      {
+        "name": "Magia da Guerra (War Magic)",
+        "level": 7,
+        "description": "Quando effettui l'azione di <strong>Attacco</strong> nel tuo turno, puoi sostituire uno degli attacchi con il lancio di uno dei tuoi <strong>trucchetti da Mago</strong> che abbia un tempo di lancio di un'azione."
+      },
+      {
+        "name": "Colpo Mistico (Eldritch Strike)",
+        "level": 10,
+        "description": "Quando colpisci una creatura con un attacco effettuato con un'arma, quella creatura subisce <strong>Svantaggio al prossimo tiro salvezza</strong> che effettua contro un incantesimo da te lanciato prima della fine del tuo turno successivo."
+      },
+      {
+        "name": "Carica Arcana (Arcane Charge)",
+        "level": 15,
+        "description": "Quando usi la tua <strong>Azione Aggiuntiva (Action Surge)</strong>, puoi <strong>teletrasportarti fino a 9 metri</strong> in uno spazio libero che puoi vedere. Puoi teletrasportarti prima o dopo aver eseguito l'azione aggiuntiva."
+      },
+      {
+        "name": "Magia da Guerra Migliorata (Improved War Magic)",
+        "level": 18,
+        "description": "Quando effettui l'azione di <strong>Attacco</strong> nel tuo turno, puoi sostituire due dei tuoi attacchi con il lancio di un tuo <strong>incantesimo da Mago di 1° o 2° livello</strong> che abbia un tempo di lancio di un'azione."
+      }
+    ]
+  },
+{
+    "id": "subclass_fighter_psi_warrior",
+    "class_id": "fighter",
+    "name": "Psi Warrior",
+    "name_it": "Guerriero Psionico",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Guerrieri Psionici risvegliano il potere mentale interiore per potenziare le proprie capacità fisiche con colpi intrisi di energia psionica, spintali telecinetiche e barriere di forza mentale.<br><br><strong>Classe Madre:</strong> Guerriero<br><strong>Tratti di Sottoclasse:</strong> Potere Psionico, Adepto Telecinetico, Mente Progetta, Baluardo di Forza, Maestro Telecinetico.",
+    "features": [
+      {
+        "name": "Potere Psionico (Psionic Power)",
+        "level": 3,
+        "description": "Possiedi una riserva di energia psionica rappresentata dai tuoi <strong>Dadi di Energia Psionica</strong> (il cui tipo e quantità aumentano con il livello da Guerriero: d6 al 3°, d8 al 5°, d10 all'11°, d12 al 17°). Recuperi un dado speso al termine di un <strong>Riposo Breve</strong> e tutti i dadi spesi al termine di un <strong>Riposo Lungo</strong>.<br><br>Puoi usare i tuoi dadi per i seguenti poteri:<br>• <strong>Campo Protettivo (Protective Field):</strong> Quando tu o una creatura entro 9 metri subite danni, puoi usare la <strong>Reazione</strong> e spendere un dado per ridurre i danni subiti pari al risultato del dado + il tuo <strong>Modificatore di Intelligenza</strong> (minimo 1).<br>• <strong>Colpo Psionico (Psionic Strike):</strong> Una volta per turno, quando colpisci un bersaglio entro 9 metri con un'arma, puoi spendere un dado per infliggere <strong>danni da Forza aggiuntivi</strong> pari al risultato del dado + il tuo <strong>Modificatore di Intelligenza</strong>.<br>• <strong>Movimento Telecinetico (Telekinetic Movement):</strong> Con un'<strong>Azione</strong>, puoi muovere un oggetto non trasportato di taglia Grande o inferiore o una creatura consensuale entro 9 metri fino a 9 metri in qualsiasi direzione (o spostare un oggetto Minuscolo da/verso la tua mano). Usabile una volta per <strong>Riposo Breve o Lungo</strong> (o spendendo un Dado di Energia Psionica per riutilizzarlo)."
+      },
+      {
+        "name": "Adepto Telecinetico (Telekinetic Adept)",
+        "level": 7,
+        "description": "Padroneggi nuovi modi per usare la telecinesi:<br>• <strong>Balzo Psionico (Psi-Powered Leap):</strong> Con un'<strong>Azione Bonus</strong>, ottieni una <strong>Velocità di Volo pari al doppio della tua Velocità di movimento a terra</strong> fino alla fine del turno attuale. Usabile una volta per <strong>Riposo Breve o Lungo</strong> (o spendendo un Dado di Energia Psionica per ripristinarne l'uso senza azioni).<br>• <strong>Spinta Telecinetica (Telekinetic Thrust):</strong> Quando infliggi danni con <em>Colpo Psionico</em>, puoi costringere il bersaglio a effettuare un <strong>Tiro Salvezza su Forza</strong> (CD = 8 + Bonus Competenza + Mod. Intelligenza). Se fallisce, puoi <strong>pronarlo</strong> o <strong>spostarlo fino a 3 metri</strong> in qualsiasi direzione orizzontale."
+      },
+      {
+        "name": "Mente Protetta (Guarded Mind)",
+        "level": 10,
+        "description": "Ottieni <strong>Resistenza ai danni Psichici</strong>.<br><br>Inoltre, se inizi il tuo turno con la condizione <strong>Affascinato</strong> o <strong>Spaventato</strong>, puoi spendere un Dado di Energia Psionica (nessuna azione richiesta) per <strong>terminare immediatamente tutti gli effetti</strong> che ti infliggono tali condizioni."
+      },
+      {
+        "name": "Baluardo di Forza (Bulwark of Force)",
+        "level": 15,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi proteggere un numero di creature che puoi vedere entro 9 metri da te (incluso te stesso) pari al tuo <strong>Modificatore di Intelligenza</strong> (minimo 1).<br><br>Ciascuna creatura scelta ottiene i benefici di <strong>Copertura Metà (+2 alla CA e ai Tiri Salvezza su Destrezza)</strong> per <strong>1 minuto</strong> o finché non sei Incapace.<br><br>Usabile una volta per <strong>Riposo Lungo</strong> (o spendendo un Dado di Energia Psionica per ripristinarne l'uso senza azioni)."
+      },
+      {
+        "name": "Maestro Telecinetico (Telekinetic Master)",
+        "level": 18,
+        "description": "Hai sempre pronto l'incantesimo <em>Telecinesi (Telekinesis)</em>, che puoi lanciare <strong>senza spendere uno slot incantesimo e senza componenti</strong> (caratteristica da incantatore: Intelligenza).<br><br>In ciascuno dei tuoi turni in cui mantieni la Concentrazione su di esso (compreso il turno di lancio), puoi effettuare <strong>un attacco con un'arma come Azione Bonus</strong>.<br><br>Usabile una volta per <strong>Riposo Lungo</strong> (o spendendo un Dado di Energia Psionica per ripristinarne l'uso senza azioni)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_monk_warrior_of_mercy",
+    "class_id": "monk",
+    "name": "Warrior of Mercy",
+    "name_it": "Guerriero della Misericordia",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Monaci del Sentiero della Misericordia imparano a manipolare l'energia vitale altrui per offrire aiuto a chi ne ha bisogno, agendo come medici vagabondi. Tuttavia, per coloro che sono oltre ogni possibilità di salvezza, portano una rapida fine come atto di estrema misericordia.<br><br><strong>Classe Madre:</strong> Monaco<br><strong>Tratti di Sottoclasse:</strong> Strumenti della Misericordia, Mani della Guarigione, Mani del Dolore, Tocco del Medico, Raffica di Guarigione e Dolore, Mano della Misericordia Suprema.",
+    "features": [
+      {
+        "name": "Strumenti della Misericordia (Implements of Mercy)",
+        "level": 3,
+        "description": "Ottieni la <strong>competenza nelle abilità Intuizione e Medicina</strong>, e la <strong>competenza nella Borsa da Erborista</strong>."
+      },
+      {
+        "name": "Mani della Guarigione (Hands of Healing)",
+        "level": 3,
+        "description": "Con un'<strong>Azione Magica</strong>, puoi spendere <strong>1 Punto Focalizzazione</strong> per toccare una creatura e farle recuperare un numero di Punti Ferita pari a <strong>un tiro del tuo Dado Arti Marziali + il tuo Modificatore di Saggezza</strong>.<br><br>Quando usi <em>Raffica di Colpi</em>, puoi <strong>sostituire uno dei Colpi Nudi</strong> con un uso di questo privilegio <strong>senza spendere il Punto Focalizzazione</strong> per la guarigione."
+      },
+      {
+        "name": "Mani del Dolore (Hands of Harm)",
+        "level": 3,
+        "description": "Una volta per turno, quando colpisci una creatura con un Colpo Nudo, puoi spendere <strong>1 Punto Focalizzazione</strong> per infliggere <strong>danni da Necrotico aggiuntivi</strong> pari a <strong>un tiro del tuo Dado Arti Marziali + il tuo Modificatore di Saggezza</strong>."
+      },
+      {
+        "name": "Tocco del Medico (Physician's Touch)",
+        "level": 6,
+        "description": "I tuoi privilegi <em>Mani del Dolore</em> e <em>Mani della Guarigione</em> migliorano:<br>• <strong>Mani del Dolore:</strong> Quando usi <em>Mani del Dolore</em> su una creatura, puoi anche infliggerle la condizione <strong>Avvelenato</strong> fino alla fine del tuo turno successivo.<br>• <strong>Mani della Guarigione:</strong> Quando usi <em>Mani della Guarigione</em>, puoi anche <strong>rimuovere una delle seguenti condizioni</strong> dalla creatura guarita: <strong>Accecato, Assordato, Paralizzato, Avvelenato o Scioccato</strong>."
+      },
+      {
+        "name": "Raffica di Guarigione e Dolore (Flurry of Healing and Harm)",
+        "level": 11,
+        "description": "Quando usi <em>Raffica di Colpi</em>:<br>• Puoi sostituire <strong>ciascuno dei Colpi Nudi</strong> con un uso di <em>Mani della Guarigione</em>, senza spendere Punti Focalizzazione per la guarigione.<br>• Inoltre, quando a segno un Colpo Nudo con <em>Raffica di Colpi</em> e infliggi danni, puoi usare <em>Mani del Dolore</em> su quel colpo <strong>senza spendere un Punto Focalizzazione</strong> (rispettando comunque il limite di una volta per turno).<br><br>Puoi usare questi benefici un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo una volta) e recuperi tutti gli utilizzi spesi al termine di un <strong>Riposo Lungo</strong>."
+      },
+      {
+        "name": "Mano della Misericordia Suprema (Hand of Ultimate Mercy)",
+        "level": 17,
+        "description": "Con un'<strong>Azione Magica</strong>, puoi toccare il cadavere di una creatura morta nelle ultime 24 ore e spendere <strong>5 Punti Focalizzazione</strong>: la creatura <strong>ritorna in vita</strong> con un numero di Punti Ferita pari a <strong>4d10 + il tuo Modificatore di Saggezza</strong>.<br><br>Se la creatura è deceduta mentre soffriva di una delle seguenti condizioni, si risveglia con tali condizioni rimosse: <strong>Accecato, Assordato, Paralizzato, Avvelenato e Scioccato</strong>.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino a quando non completi un <strong>Riposo Lungo</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_paladin_oath_of_devotion",
+    "class_id": "paladin",
+    "name": "Oath of Devotion",
+    "name_it": "Giuramento di Devozione",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "Il Giuramento di Devozione lega i Paladini ai più alti ideali di giustizia e ordine. Incarnando il cavaliere in armatura splendente, questi paladini proteggono i deboli e affrontano le forze del male con coraggio e onore.<br><br><strong>Dogmi di Devozione:</strong> Onestà, Coraggio, Compassione, Onore, Dovere.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Arma Sacra, Aura di Devozione, Punizione Protettiva, Nimbo Sacro.",
+    "features": [
+      {
+        "name": "Incantesimi del Giuramento (Oath Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli specificati:<br>• <strong>3° livello:</strong> <em>Protezione dal Bene e dal Male (Protection from Evil and Good)</em>, <em>Scudo della Fede (Shield of Faith)</em><br>• <strong>5° livello:</strong> <em>Aiuto (Aid)</em>, <em>Zona di Verità (Zone of Truth)</em><br>• <strong>9° livello:</strong> <em>Faro di Speranza (Beacon of Hope)</em>, <em>Dissolvi Magie (Dispel Magic)</em><br>• <strong>13° livello:</strong> <em>Libertà di Movimento (Freedom of Movement)</em>, <em>Custode della Fede (Guardian of Faith)</em><br>• <strong>17° livello:</strong> <em>Comunione (Commune)</em>, <em>Colpo Infuocato (Flame Strike)</em>"
+      },
+      {
+        "name": "Arma Sacra (Sacred Weapon)",
+        "level": 3,
+        "description": "Quando effettui l'azione di Attacco, puoi spendere <strong>un utilizzo di Incanalare Divinità</strong> per imbuire d'energia positiva un'arma da mischia che impugni per <strong>10 minuti</strong> (o finché non usi di nuovo questo privilegio, o finché non smetti di impugnarla):<br>• Aggiungi il tuo <strong>Modificatore di Carisma ai tiri per colpire</strong> effettuati con quell'arma (bonus minimo +1).<br>• Ogni volta che colpisci, puoi far sì che l'arma infligga il suo normale tipo di danno oppure <strong>danni da Raggiante</strong>.<br>• L'arma emette <strong>Luce Intensa per 6 metri</strong> e <strong>Luce Vaga per ulteriori 6 metri</strong>.<br>• Puoi terminare l'effetto in qualsiasi momento (nessuna azione richiesta)."
+      },
+      {
+        "name": "Aura di Devozione (Aura of Devotion)",
+        "level": 7,
+        "description": "Tu e i tuoi alleati all'interno della tua <em>Aura di Protezione</em> ottenete <strong>Immunità alla condizione Affascinato</strong>.<br><br>Se un alleato affascinato entra nell'aura, la condizione <strong>non ha effetto su di lui</strong> finché vi rimane all'interno."
+      },
+      {
+        "name": "Punizione Protettiva (Smite of Protection)",
+        "level": 15,
+        "description": "Ogni volta che lanci <em>Punizione Divina (Divine Smite)</em>, tu e i tuoi alleati all'interno della tua <em>Aura di Protezione</em> ottenete <strong>Copertura A Metà (+2 alla CA e ai Tiri Salvezza su Destrezza)</strong>.<br><br>L'aura mantiene questo beneficio fino all'inizio del tuo turno successivo."
+      },
+      {
+        "name": "Nimbo Sacro (Holy Nimbus)",
+        "level": 20,
+        "description": "Con un'<strong>Azione Bonus</strong>, puoi imbuire la tua <em>Aura di Protezione</em> di potere sacro per <strong>10 minuti</strong> (o finché non decidi di interromperlo senza spendere un'azione). Ottieni i seguenti benefici:<br>• <strong>Protezione Sacra:</strong> Hai <strong>Vantaggio a qualsiasi tiro salvezza</strong> imposto da un <em>Immondo</em> o un <em>Non Morto</em>.<br>• <strong>Danni Raggianti:</strong> Ogni volta che un nemico inizia il suo turno nell'aura, subisce <strong>danni da Raggiante pari al tuo Bonus di Competenza + il tuo Modificatore di Carisma</strong>.<br>• <strong>Luce Solare:</strong> L'aura è riempita di Luce Intensa che conta come <strong>luce solare reale</strong>.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino al termine di un <strong>Riposo Lungo</strong> (in alternativa, puoi <strong>ripristinarne l'uso spendendo uno slot incantesimo di 5° livello</strong>, nessuna azione richiesta)."
+      }
+    ]
+  },
+  {
+    "id": "subclass_paladin_oath_of_conquest",
+    "class_id": "paladin",
+    "name": "Oath of Conquest",
+    "name_it": "Giuramento di Conquista",
+    "type": "sottoclasse",
+    "source_it": "Guida Omnicomprensiva di Xanathar",
+    "description_it": "Il Giuramento di Conquista richiama i paladini che cercano la gloria in battaglia e la sottomissione dei propri nemici. Per questi paladini non basta stabilire l'ordine: devono schiacciare le forze del caos, usando la paura e una determinazione di ferro come armi principali.<br><br><strong>Dogmi di Conquista:</strong> Spegni la Fiamma della Speranza, Governa con il Pugno di Ferro, La Forza Sopra Ogni Cosa.<br><br><strong>Classe Madre:</strong> Paladino<br><strong>Tratti di Sottoclasse:</strong> Incantesimi del Giuramento, Incanalare Divinità (Presenza Conquistatrice, Colpo Guidato), Aura di Conquista, Riprova Sprezzante, Conquistatore Invincibile.",
+    "features": [
+      {
+        "name": "Incantesimi del Giuramento (Oath Spells)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli specificati:<br>• <strong>3° livello:</strong> <em>Armatura di Agathys (Armor of Agathys)</em>, <em>Comando (Command)</em><br>• <strong>5° livello:</strong> <em>Blocca Persone (Hold Person)</em>, <em>Arma Spirituale (Spiritual Weapon)</em><br>• <strong>9° livello:</strong> <em>Scagliare Maledizione (Bestow Curse)</em>, <em>Paura (Fear)</em><br>• <strong>13° livello:</strong> <em>Dominare Bestie (Dominate Beast)</em>, <em>Pelle di Pietra (Stoneskin)</em><br>• <strong>17° livello:</strong> <em>Nube Mortale (Cloudkill)</em>, <em>Dominare Persone (Dominate Person)</em>"
+      },
+      {
+        "name": "Incanalare Divinità: Presenza Conquistatrice (Channel Divinity: Conquering Presence)",
+        "level": 3,
+        "description": "Con un'<strong>Azione</strong>, usi il tuo <em>Incanalare Divinità</em> per emanare una presenza terrificante.<br><br>Costringi ogni creatura a tua scelta visibile entro <strong>9 metri</strong> da te a effettuare un <strong>Tiro Salvezza su Saggezza</strong>. Se lo fallisce, la creatura diventa <strong>Spaventata da te per 1 minuto</strong>. La creatura spaventata può ripetere il tiro salvezza alla fine di ciascun suo turno, terminando l'effetto su se stessa in caso di successo."
+      },
+      {
+        "name": "Incanalare Divinità: Colpo Guidato (Channel Divinity: Guided Strike)",
+        "level": 3,
+        "description": "Puoi usare il tuo <em>Incanalare Divinità</em> per colpire con precisione soprannaturale.<br><br>Quando effettui un tiro per colpire, puoi ottenere un <strong>bonus di +10 al tiro</strong>. Puoi compiere questa scelta dopo aver visto il risultato del dado, ma prima che il DM dichiari se l'attacco ha colpito o mancato."
+      },
+      {
+        "name": "Aura di Conquista (Aura of Conquest)",
+        "level": 7,
+        "description": "Emani costantemente un'aura minacciosa mentre non sei incapacitato, che si estende per <strong>3 metri</strong> in ogni direzione (non attraversa la copertura totale):<br>• Se una creatura è <strong>Spaventata da te</strong>, la sua <strong>Velocità è ridotta a 0</strong> finché si trova all'interno dell'aura.<br>• Quella creatura subisce <strong>danni psichici pari a metà del tuo livello da Paladino</strong> se inizia il suo turno nell'aura.<br><br>Al 18° livello, il raggio di quest'aura <strong>aumenta a 9 metri</strong>."
+      },
+      {
+        "name": "Riprova Sprezzante (Scornful Rebuke)",
+        "level": 15,
+        "description": "Coloro che osano colpirti vengono puniti psichicamente per la loro audacia.<br><br>Ogni volta che una creatura ti colpisce con un attacco, quella creatura subisce <strong>danni psichici pari al tuo Modificatore di Carisma</strong> (minimo 1) a condizione che tu non sia incapacitato."
+      },
+      {
+        "name": "Conquistatore Invincibile (Invincible Conqueror)",
+        "level": 20,
+        "description": "Con un'<strong>Azione</strong>, ti trasformi magicamente in un avatar della conquista, ottenendo i seguenti benefici per <strong>1 minuto</strong>:<br>• Hai <strong>Resistenza a tutti i danni</strong>.<br>• Quando effettui l'azione di Attacco nel tuo turno, puoi effettuare <strong>un attacco aggiuntivo</strong> come parte di quella stessa azione.<br>• I tuoi attacchi con armi da mischia mettono a segno un <strong>colpo critico con un risultato di 19 o 20</strong> sul d20.<br><br>Una volta usato questo privilegio, non puoi riutilizzarlo fino al termine di un <strong>Riposo Lungo</strong>."
+      }
+    ]
+  },
+  {
+    "id": "subclass_ranger_gloom_stalker",
+    "class_id": "ranger",
+    "name": "Gloom Stalker",
+    "name_it": "Cacciatore delle Ombre",
+    "type": "sottoclasse",
+    "source_it": "Manuale del Giocatore 2024",
+    "description_it": "I Cacciatori delle Ombre si trovano a loro agio nei luoghi più oscuri, impugnando la magia attinta dalla Coltre d'Ombra per combattere i nemici che si annidano nell'oscurità.<br><br><strong>Classe Madre:</strong> Ranger<br><strong>Tratti di Sottoclasse:</strong> Imboscato Terrificante, Magia del Cacciatore delle Ombre, Vista Umbratile, Mente d'Acciaio, Raffiche del Cacciatore, Schivata d'Ombra.",
+    "features": [
+      {
+        "name": "Imboscato Terrificante (Dread Ambusher)",
+        "level": 3,
+        "description": "Hai padroneggiato l'arte di creare imboscate spaventose, ottenendo i seguenti benefici:<br>• <strong>Balzo dell'Imboscato:</strong> All'inizio del primo turno di ogni combattimento, la tua Velocità aumenta di 3 metri fino alla fine di quel turno.<br>• <strong>Colpo Terrificante:</strong> Quando attacchi una creatura e la colpisci con un'arma, puoi infliggere <strong>2d6 danni psichici extra</strong>. Puoi usare questo beneficio solo una volta per turno, per un numero di volte pari al tuo <strong>Modificatore di Saggezza</strong> (minimo 1), e recuperi tutti gli usi spesi al termine di un <strong>Riposo Lungo</strong>.<br>• <strong>Bonus all'Iniziativa:</strong> Quando tiri l'Iniziativa, puoi aggiungere il tuo <strong>Modificatore di Saggezza</strong> al tiro."
+      },
+      {
+        "name": "Magia del Cacciatore delle Ombre (Gloom Stalker Magic)",
+        "level": 3,
+        "description": "Hai sempre preparati i seguenti incantesimi ai livelli specificati:<br>• <strong>3° livello:</strong> <em>Camuffare Se Stesso (Disguise Self)</em><br>• <strong>5° livello:</strong> <em>Trucco della Corda (Rope Trick)</em><br>• <strong>9° livello:</strong> <em>Paura (Fear)</em><br>• <strong>13° livello:</strong> <em>Invisibilità Superiore (Greater Invisibility)</em><br>• <strong>17° livello:</strong> <em>Sembrare (Seeming)</em>"
+      },
+      {
+        "name": "Vista Umbratile (Umbral Sight)",
+        "level": 3,
+        "description": "Ottieni <strong>Scurovisione fino a 18 metri</strong>. Se possiedi già Scurovisione quando ottieni questo privilegio, la sua portata <strong>aumenta di 18 metri</strong>.<br><br>Sei inoltre abile nell'evitare le creature che si affidano alla Scurovisione: mentre ti trovi completamente nell'Oscurità, hai la condizione di <strong>Invisibile</strong> per qualsiasi creatura che si affida alla Scurovisione per vederti in quell'oscurità."
+      },
+      {
+        "name": "Mente d'Acciaio (Iron Mind)",
+        "level": 7,
+        "description": "Hai affinato la tua capacità di resistere ai poteri che alterano la mente.<br><br>Ottieni la competenza nei <strong>Tiri Salvezza su Saggezza</strong>. Se possiedi già questa competenza, ottieni invece la competenza nei <strong>Tiri Salvezza su Intelligenza o Carisma</strong> (a tua scelta)."
+      },
+      {
+        "name": "Raffiche del Cacciatore (Stalker's Flurry)",
+        "level": 11,
+        "description": "Il danno psichico del tuo <em>Colpo Terrificante</em> aumenta a <strong>2d8</strong>.<br><br>Inoltre, quando usi l'effetto Colpo Terrificante del privilegio <em>Imboscato Terrificante</em>, puoi attivare uno dei seguenti effetti aggiuntivi:<br>• <strong>Colpo Improvviso:</strong> Puoi effettuare un altro attacco con la stessa arma contro una creatura diversa situata entro 1,5 metri dal bersaglio originale e ed entro la gittata dell'arma.<br>• <strong>Paura di Massa:</strong> Il bersaglio e ogni creatura entro 3 metri da esso devono effettuare un <strong>Tiro Salvezza su Saggezza</strong> contro la CD dei tuoi incantesimi. Se lo falliscono, subiscono la condizione <strong>Spaventato</strong> fino all'inizio del tuo turno successivo."
+      },
+      {
+        "name": "Schivata d'Ombra (Shadowy Dodge)",
+        "level": 15,
+        "description": "Quando una creatura effettua un tiro per colpire contro di te, puoi usare la tua <strong>Reazione</strong> per <strong>imporre Svantaggio a quel tiro</strong>.<br><br>Che l'attacco colpisca o manchi, puoi <strong>teletrasportarti fino a 9 metri</strong> in uno spazio non occupato che puoi vedere."
+      }
+    ]
+  },
+  {
     "id": "sub_monk_mercy",
     "name": "Way of Mercy",
     "name_it": "Via della Misericordia",
