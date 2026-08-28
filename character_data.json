@@ -5324,7 +5324,7 @@
     "name": "Charger",
     "name_it": "Carica Mortale",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Forza o Destrezza 13+",
     "description_it": "Usi lo slancio della corsa per potenziare i tuoi attacchi.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Scatto Velato:</strong> La tua velocità aumenta di 3 metri quando usi l'azione di Scatto.<br>• <strong>Colpo Iniziale:</strong> Se ti muovi di almeno 3 metri in linea retta prima di colpire con un attacco, puoi aggiungere 1d8 danni extra oppure spingere il bersaglio di 3 metri."
@@ -5334,7 +5334,7 @@
     "name": "Fey Touched",
     "name_it": "Toccato dai Feerici",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024 / Tasha",
     "prerequisite": "Livello 4+",
     "description_it": "La tua esposizione al Reame Feerico ti ha conferito doti magiche uniche.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Intelligenza, Saggezza o Carisma (max 20).<br>• <strong>Passo Nebbioso:</strong> Impari l'incantesimo <i>Passo Nebbioso</i> e puoi lanciarlo 1 volta gratis per riposo lungo.<br>• <strong>Magia Feerica:</strong> Impari 1 incantesimo di 1° livello di Ammaliamento o Divinazione a tua scelta."
@@ -5344,7 +5344,7 @@
     "name": "Great Weapon Master",
     "name_it": "Maestro delle Armi Pesanti",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Forza 13+",
     "description_it": "Sfrutti al massimo il peso e il raggio d'azione delle armi a due mani.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza (max 20).<br>• <strong>Attacco Incalzante:</strong> Quando metti a segno un colpo critico o riduci a 0 HP un nemico, puoi effettuare un attacco con arma come Azione Bonus.<br>• <strong>Danno Pesante:</strong> Quando colpisci con un'arma pesante, aggiungi il tuo Bonus di Competenza al danno."
@@ -5354,7 +5354,7 @@
     "name": "Sharpshooter",
     "name_it": "Tiratore Scelto",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Destrezza 13+",
     "description_it": "Maestro delle armi da tiro, capace di colpire a distanze estreme ignorando le coperture.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Destrezza (max 20).<br>• <strong>Gittata Lunga:</strong> Gli attacchi a distanza non subiscono svantaggio alla gittata massima.<br>• <strong>Ignorare Coperture:</strong> I tuoi attacchi a distanza ignorano la mezza copertura e la copertura a tre quarti.<br>• <strong>Tiro in Mischia:</strong> Non subisci svantaggio se sferri un attacco a distanza con nemici adiacenti."
@@ -5364,7 +5364,7 @@
     "name": "War Caster",
     "name_it": "Incantatore da Guerra",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Capacità di lanciare almeno un incantesimo",
     "description_it": "Hai sviluppato la capacità di mantenere la concentrazione e lanciare incantesimi nel caos della battaglia.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Intelligenza, Saggezza o Carisma (max 20).<br>• <strong>Concentrazione Salda:</strong> Vantaggio ai tiri salvezza di Costituzione per mantenere la concentrazione sugli incantesimi.<br>• <strong>Somatico con Armi:</strong> Puoi compiere le componenti somatiche degli incantesimi anche tenendo armi o scudi in entrambe le mani.<br>• <strong>Incantesimo di Opportunità:</strong> Puoi lanciare un incantesimo a bersaglio singolo al posto di un attacco di opportunità."
@@ -5374,7 +5374,7 @@
     "name": "Sentinel",
     "name_it": "Sentinella",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Forza o Destrezza 13+",
     "description_it": "Sei un maestro nel bloccare i nemici e punire chiunque tenti di attaccare i tuoi compagni.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Arresto:</strong> Quando colpisci una creatura con un attacco di opportunità, la sua velocità diventa 0 per il resto del turno.<br>• <strong>Vigilanza:</strong> Puoi effettuare attacchi di opportunità anche se la creatura usa l'azione di Disimpegno.<br>• <strong>Rappresaglia:</strong> Se un nemico adiacente attacca un tuo alleato, puoi usare la Reazione per attaccarlo."
@@ -5384,7 +5384,7 @@
     "name": "Crusher",
     "name_it": "Frantumatore",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Forza o Costituzione 13+",
     "description_it": "Hai addestrato il tuo corpo a infliggere impatti devastanti con le armi contundenti.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Costituzione (max 20).<br>• <strong>Spostamento con Impatto:</strong> Una volta per turno, quando infliggi danni contundenti a una creatura, puoi spostarla di 1,5 metri in uno spazio libero (se la creatura non è più grande di una taglia rispetto a te).<br>• <strong>Critico Devastante:</strong> Quando metti a segno un colpo critico che infligge danni contundenti, i tiri per colpire effettuati contro quel bersaglio hanno Vantaggio fino all'inizio del tuo turno successivo."
@@ -5394,7 +5394,7 @@
     "name": "Inspiring Leader",
     "name_it": "Leader Ispiratore",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Saggezza o Carisma 13+",
     "description_it": "Sai come infondere determinazione e coraggio nei tuoi compagni di avventura.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Saggezza o Carisma (max 20).<br>• <strong>Discorso Ispiratore:</strong> Al termine di un riposo breve o lungo, puoi tenere un discorso per fino a 6 alleati (incluso te stesso) entro 9 metri. Ciascun bersaglio ottiene Punti Vita Temporanei pari al tuo livello + il modificatore della caratteristica incrementata con questo talento."
@@ -5404,7 +5404,7 @@
     "name": "Keen Mind",
     "name_it": "Mente Acuta",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Intelligenza 13+",
     "description_it": "Possiedi una mente analitica eccezionale capace di assorbire e rielaborare informazioni al volo.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Intelligenza (max 20).<br>• <strong>Studi Accurati:</strong> Scegli un'abilità tra Arcano, Storia, Natura, Religione o Indagare; se hai la competenza, ottieni la Maestria (doppio Bonus di Competenza).<br>• <strong>Conoscenza Rapida:</strong> Puoi effettuare l'azione di Studio (Study) come Azione Bonus."
@@ -5414,7 +5414,7 @@
     "name": "Lightly Armored",
     "name_it": "Armatura Leggera",
     "type": "talento",
-    "category": "Origine / Generale (Livello 4+)",
+    "category": "Talento d'Origine",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Nessuno (Origine) / Livello 4+",
     "description_it": "Hai appreso l'addestramento di base per proteggerti con armature leggere e scudi.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20) se preso dal 4° livello in poi.<br>• <strong>Competenze:</strong> Ottieni competenza nelle Armature Leggere e negli Scudi."
@@ -5424,7 +5424,7 @@
     "name": "Moderately Armored",
     "name_it": "Armatura Media",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Competenza nelle Armature Leggere",
     "description_it": "Hai perfezionato la tua tecnica difensiva per indossare protezioni più pesanti.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Competenze:</strong> Ottieni competenza nelle Armature Medie e negli Scudi (se non già posseduta)."
@@ -5434,7 +5434,7 @@
     "name": "Piercer",
     "name_it": "Perforatore",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Forza o Destrezza 13+",
     "description_it": "Hai una precisione letale nell'affondare armi da punta nei punti vitali del bersaglio.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Ritiro Danno:</strong> Una volta per turno, quando infliggi danni perforanti, puoi ritirare uno dei dadi di danno e devi usare il nuovo risultato.<br>• <strong>Critico Potenziato:</strong> Quando metti a segno un colpo critico che infligge danni perforanti, puoi tirare un dado di danno extra dell'arma e aggiungerlo ai danni totali."
@@ -5444,7 +5444,7 @@
     "name": "Poisoner",
     "name_it": "Avvelenatore",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Destrezza o Intelligenza 13+",
     "description_it": "Sei un esperto nell'uso e nella fabbricazione di tossine micidiali in battaglia.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Destrezza o Intelligenza (max 20).<br>• <strong>Penetrazione Velenosa:</strong> I tuoi attacchi e i tuoi incantesimi ignorano la Resistenza al danno da Veleno.<br>• <strong>Applicazione Rapida:</strong> Con un'Azione Bonus puoi applicare un veleno a un'arma o a un munizione.<br>• <strong>Competenza:</strong> Competenza nel Kit da Avvelenatore."
@@ -5454,7 +5454,7 @@
     "name": "Shadow Touched",
     "name_it": "Toccato dalle Ombre",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+",
     "description_it": "La tua esposizione alla Coltre Oscura (Shadowfell) ti ha conferito un'affinità con le magie d'ombra.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Intelligenza, Saggezza o Carisma (max 20).<br>• <strong>Invisibilità:</strong> Impari l'incantesimo <i>Invisibilità</i> e puoi lanciarlo 1 volta gratis per riposo lungo.<br>• <strong>Magia Oscura:</strong> Impari 1 incantesimo di 1° livello di Illusione o Necromanzia a tua scelta."
@@ -5464,7 +5464,7 @@
     "name": "Skill Expert",
     "name_it": "Esperto nelle Abilità",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+",
     "description_it": "Hai dedicato il tuo tempo ad affinare una disciplina specifica fino al grado di maestria.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a una caratteristica a tua scelta (max 20).<br>• <strong>Nuova Abilità:</strong> Ottieni competenza in 1 Abilità a tua scelta.<br>• <strong>Maestria:</strong> Scegli un'Abilità in cui hai competenza; ottieni la Maestria (doppio Bonus di Competenza)."
@@ -5474,7 +5474,7 @@
     "name": "Slasher",
     "name_it": "Tagliatore",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Forza o Destrezza 13+",
     "description_it": "Sei maestro nel menare colpi di taglio per rallentare ed azzoppare i nemici.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Rallentamento:</strong> Una volta per turno, quando infliggi danni da taglio a una creatura, puoi ridurre la sua velocità di 3 metri fino all'inizio del tuo turno successivo.<br>• <strong>Critico Menomante:</strong> Quando metti a segno un colpo critico che infligge danni da taglio, la creatura subisce Svantaggio a tutti i suoi tiri per colpire fino all'inizio del tuo turno successivo."
@@ -5484,7 +5484,7 @@
     "name": "Spell Sniper",
     "name_it": "Cecchino Incantatore",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Capacità di lanciare almeno un incantesimo",
     "description_it": "Hai imparato ad far giungere i tuoi incantesimi a distanze estreme superando le difese avversarie.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Intelligenza, Saggezza o Carisma (max 20).<br>• <strong>Gittata Raddoppiata:</strong> Quando lanci un incantesimo con gittata di almeno 3 metri che richiede un tiro per colpire, la sua gittata è raddoppiata.<br>• <strong>Ignorare Coperture:</strong> I tuoi tiri per colpire con incantesimi ignorano la mezza copertura e la copertura a tre quarti.<br>• <strong>Casting Ravvicinato:</strong> Essere entro 1,5 metri da un nemico non impone svantaggio ai tuoi tiri per colpire con incantesimi."
@@ -5494,7 +5494,7 @@
     "name": "Medium Armor Master",
     "name_it": "Maestro delle Armature Medie",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+, Competenza nelle Armature Medie",
     "description_it": "Hai imparato a muoverti agilmente ed in silenzio anche indossando armature medie.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Agilità in Armatura:</strong> Il bonus massimo di Destrezza applicabile alla CA quando indossi un'armatura media passa da +2 a +3.<br>• <strong>Movimento Silenzioso:</strong> Indossare un'armatura media non ti impone più Svantaggio alle prove di Destrezza (Furtività)."
@@ -5504,7 +5504,7 @@
     "name": "Weapon Master / Martial Weapon Training",
     "name_it": "Maestro d'Armi / Addestramento Armi da Guerra",
     "type": "talento",
-    "category": "Generale (Livello 4+)",
+    "category": "Talento Generale",
     "source_it": "Manuale del Giocatore 2024",
     "prerequisite": "Livello 4+",
     "description_it": "Hai praticato estensivamente l'uso delle armi da guerra.<br><br><strong>Benefici:</strong><br>• <strong>Incremento Caratteristica:</strong> +1 a Forza o Destrezza (max 20).<br>• <strong>Competenza Armi:</strong> Ottieni la competenza in tutte le Armi da Guerra (Martial Weapons)."
