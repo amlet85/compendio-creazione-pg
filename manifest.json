@@ -1,6 +1,6 @@
 {
-  "name": "Compendio incantesimi D&D 5.5",
-  "short_name": "spellbook 5.5",
+  "name": "Compendio Creazione Personaggio D&D",
+  "short_name": "d&d companion",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#121212",
@@ -8,7 +8,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/8501/8501341.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/11776/11776546.png",
       "sizes": "512x512",
       "type": "image/png"
     }
