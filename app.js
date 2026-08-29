@@ -126,7 +126,7 @@ function renderCards(items) {
     let badgeText = (item.category || item.type || 'INFO').toUpperCase();
 
     // Recupera la tipologia dell'armatura dalle varie combinazioni di chiavi JSON possibili
-    const armorSubtype = item.armor_type || item.subtype || item.sub_category || item.armor_category || item.armor_type_it;
+    const armorSubtype = item.armor_type || item.subtype || item.subcategory || item.armor_category || item.armor_type_it;
     if (badgeText.includes('ARMATURA') && armorSubtype) {
       badgeText = `ARMATURA (${armorSubtype.toUpperCase()})`;
     }
