@@ -122,7 +122,14 @@ function renderCards(items) {
     const card = document.createElement('div');
     card.className = 'spell-card';
 
-    const badgeText = (item.category || item.type || 'INFO').toUpperCase();
+    // Gestione dinamica del testo del badge
+    let badgeText = (item.category || item.type || 'INFO').toUpperCase();
+
+    // Recupera la tipologia dell'armatura dalle varie combinazioni di chiavi JSON possibili
+    const armorSubtype = item.armor_type || item.subtype || item.sub_category || item.armor_category || item.armor_type_it;
+    if (badgeText.includes('ARMATURA') && armorSubtype) {
+      badgeText = `ARMATURA (${armorSubtype.toUpperCase()})`;
+    }
 
     let metaHTML = '';
     
